@@ -32,7 +32,7 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -41,7 +41,7 @@ jobs:
           bundler-cache: true
 
       - name: Build site
-        run: bundle exec jekyll b -d "_site"
+        run: bundle exec jekyll build -d "_site"
         env:
           JEKYLL_ENV: "production"
 
@@ -50,7 +50,7 @@ jobs:
           bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
 
       - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: "_site"
 
@@ -60,7 +60,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    permissions:
+      pages: write
+      id-token: write
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
