@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>전체 문서 목록</title>
+</head>
+<body>
+    {{header}}
+    <main>
+        <section>
+            <h1>전체 문서 목록</h1>
+
+            {{#each categories}}
+            <div class="category">
+                <h2>{{category_name}}</h2>
+                <ul>
+                    {{#each documents}}
+                    <li>
+                        <a href="{{url}}">{{title}}</a>
+                        <span class="lastmod">{{lastmod}}</span>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/each}}
+
+        </section>
+    </main>
+    {{footer}}
+</body>
+</html>
