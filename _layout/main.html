@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>메인 페이지</title>
+</head>
+<body>
+    {{header}}
+    <main>
+        <section>
+            <h1>최근 수정된 문서</h1>
+            <ul class="recent-docs">
+                {{#each recent_docs}}
+                <li>
+                    <a href="{{url}}">{{title}}</a>
+                    <span class="lastmod">{{lastmod}}</span>
+                </li>
+                {{/each}}
+            </ul>
+        </section>
+    </main>
+    {{footer}}
+</body>
+</html>
