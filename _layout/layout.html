@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    {{header}}
+    <main>
+        <nav class="table-of-contents">
+            <h2>목차</h2>
+            <ul>
+                {{table_of_contents}}
+            </ul>
+        </nav>
+
+        <article>
+            {{content}}
+            <p class="lastmod">마지막 수정: {{lastmod}}</p>
+        </article>
+
+        {{#if child_links}}
+        <section class="child-docs">
+            <h2>하위 문서 목록</h2>
+            <ul>
+                {{#each child_links}}
+                <li><a href="{{url}}">{{title}}</a></li>
+                {{/each}}
+            </ul>
+        </section>
+        {{/if}}
+    </main>
+    {{footer}}
+</body>
+</html>
