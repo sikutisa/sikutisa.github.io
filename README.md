@@ -51,6 +51,15 @@ subfolder/테스트2
 * 문서에 커서를 올려놓고 엔터를 치면 해당 문서 열림
 * 백스페이스로 상위 문서로 이동
 
+## Dependencies
+* Node.js v18 이상
+
+| 패키지 | 버전 | 설명 |
+|--------|------|------|
+| [fs-extra](https://www.npmjs.com/package/fs-extra) | `^11.3.0` | 파일 시스템(`fs`) 확장 기능 (폴더 생성, 파일 복사 등) |
+| [gray-matter](https://www.npmjs.com/package/gray-matter) | `^4.0.3` | 마크다운 문서의 메타데이터(`use_math: true`) 파싱 |
+| [marked](https://www.npmjs.com/package/marked) | `^15.0.7` | 마크다운을 HTML로 변환하는 라이브러리 |
+| [mathjax](https://www.npmjs.com/package/mathjax) | `^3.2.2` | LaTeX 수식을 웹에서 렌더링하는 라이브러리 |
 
 
 ## Reference
