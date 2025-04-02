@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 const Handlebars = require('handlebars');
 
 const {
@@ -9,6 +10,18 @@ const {
     HEADER_PATH,
     FOOTER_PATH
 } = require('./const');
+
+// Git 로그 기반 마지막 수정 시간
+function getGitLastModifiedTime(filePath) {
+    try {
+        const result = execSync(`git log -1 --format="%ci" -- "${filePath}"`, {
+            encoding: 'utf8'
+        });
+        return result.trim().replace(' +0900', '');
+    } catch (err) {
+        return null; // Git 로그 없을 경우
+    }
+}
 
 // 재귀적으로 .md 파일 가져오기 (index.md 제외)
 function getAllMarkdownFiles(dir) {
@@ -33,24 +46,20 @@ function getAllMarkdownFiles(dir) {
 function getRecentDocuments(limit = 30) {
     return getAllMarkdownFiles(WIKI_DIR)
         .map(filePath => {
-            const relPath = path.relative(WIKI_DIR, filePath); 
-            const parsed = path.parse(relPath); 
+            const relPath = path.relative(WIKI_DIR, filePath);
+            const parsed = path.parse(relPath);
+
+            const lastmod = getGitLastModifiedTime(filePath) || 'Unknown';
 
             return {
-                // 1. 문서 제목: 폴더 경로 및 '_' 제외
-                title: parsed.name.replace(/_/g, ' '),
-
-                // 2. URL: 상대 경로에서 확장자 제거
+                title: parsed.name.replace(/_/g, ' '), 
                 url: `/wikis/${relPath.replace(/\.md$/, '')}`,
-
-                // 3. 수정 시간
-                lastmod: fs.statSync(filePath).mtime.toISOString().replace('T', ' ').slice(0, 19)
+                lastmod
             };
         })
         .sort((a, b) => new Date(b.lastmod) - new Date(a.lastmod))
         .slice(0, limit);
 }
-
 
 // 메인 페이지 생성
 function generateMainPage() {
@@ -68,13 +77,13 @@ function generateMainPage() {
 
     const finalHtml = template(data);
 
-    // 출력 디렉터리 생성 여부 확인
+    const outputPath = path.join(OUTPUT_DIR, 'index.html');
     if (!fs.existsSync(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR, { recursive: true });
     }
 
-    fs.writeFileSync(path.join(OUTPUT_DIR, 'index.html'), finalHtml, 'utf8');
-    console.log('✔ Generated main page: index.html');
+    fs.writeFileSync(outputPath, finalHtml, 'utf8');
+    console.log(`✔ Generated main page: ${outputPath}`);
 }
 
 generateMainPage();
