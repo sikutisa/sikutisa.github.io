@@ -42,14 +42,14 @@ toc: true
 
 ### Turing Machine
 * Alan Turing이 현대 컴퓨터의 원형을 제시함
-![Turing Machine](./1.png){: w="600" h = "300"}
+![Turing Machine](./img/1.png){: w="600" h = "300"}
 
 ### ISA
 * Neumann이 stored-program 방식을 처음으로 제시
     * A **stored-program** computer is a computer that stores *programs* in a memory.
     * Memory에서 Instruction을 fetch를 해오고 CPU에서 Execute하는 구조
 
-![Stored Program](./2.png){: w="400" h = "400"}
+![Stored Program](./img/2.png){: w="400" h = "400"}
 
 * 따라서, a program is a set of *instructions* that tells a computer's hardware to perform a task.
 
@@ -69,7 +69,7 @@ toc: true
 * The application programs
 * And a user
 
-![Computer System](./3.png){: w="420" h = "400"}
+![Computer System](./img/3.png){: w="420" h = "400"}
 *Abstract view of the components of a computer system*
 
 ### Defining Operating Systems
@@ -85,7 +85,7 @@ toc: true
     * one or more CPUs and
     * a number of device controllers connected through a common **bus**.
 
-![Typical PC](./4.png){: w="500" h = "380"}
+![Typical PC](./img/4.png){: w="500" h = "380"}
 *A typical PC computer system*
 
 ### Bootstrap
@@ -94,7 +94,7 @@ A **bootstrap** program is the first program to run on computer power-on, and th
 ### Interrupt
 Hardware may trigger and interrupt at any time by sending a signal to the CPU, usually by way of the system bus.
 
-![Interrupts](./5.png){: w="520" h = "380"}
+![Interrupts](./img/5.png){: w="520" h = "380"}
 *Interrupt timeline for a single program doing output*
 
 ### von Neumann architecture
@@ -114,13 +114,13 @@ The wide variety of *storage* systems can be organized in a hierarchy according 
 * storage capacity
 * and access time
 
-![Memory Hierarchy](./6.png){: w="440" h = "480"}
+![Memory Hierarchy](./img/6.png){: w="440" h = "480"}
 *Storage-device hierarchy*
 
 ### I/O Structure
 A large portion of OS code is dedicated to managing I/O
 
-![Computer System](./7.png){: w="400" h = "400"}
+![Computer System](./img/7.png){: w="400" h = "400"}
 *How a modern computer system works*
 
 ## Computer System Architecture
@@ -135,13 +135,13 @@ A large portion of OS code is dedicated to managing I/O
 * The most common multiprocessor systems, in which each peer CPU processor performs all tasks.
 * *Asymmetric* multiprocessing: each processor is assigned a specific task.
 
-![SMP](./8.png){: w="400" h = "300"}
+![SMP](./img/8.png){: w="400" h = "300"}
 *Symmetric multiprocessing architecture*
 
 ### Multi-core design
 * With several cores on the same processor chip.
 
-![Multi-core](./9.png){: w="360" h = "300"}
+![Multi-core](./img/9.png){: w="360" h = "300"}
 *_A dual-core design with two cores on the same chip_*
 
 ## Operating System Operations
@@ -150,7 +150,7 @@ A large portion of OS code is dedicated to managing I/O
 * keeps several processes in memory simultaneously.
 * to increase CPU utilization.
 
-![Multiprogramming](./10.png){: w="300" h = "420"}
+![Multiprogramming](./img/10.png){: w="300" h = "420"}
 *Memory layout for a multiprogramming system*
 
 ### Multiprocessing (=multitasking)
@@ -163,7 +163,7 @@ A large portion of OS code is dedicated to managing I/O
 * Two separate mode of operations: **user mode** and **kernel mode** to ensure that an incorrect program.
     * cannot cause other programs to execute incorrectly
 
-![User mode & Kernel mode](./11.png){: w="460" h = "320"}
+![User mode & Kernel mode](./img/11.png){: w="460" h = "320"}
 *Transition from user to kernel mode*
 
 ## Virtualization
@@ -173,7 +173,7 @@ A large portion of OS code is dedicated to managing I/O
 * **VMM**: Virtual Machine Manager
     * VMware, XEN, WSL, ...
 
-![Virtualization](./12.png){: w="480" h = "400"}
+![Virtualization](./img/12.png){: w="480" h = "400"}
 *A computer running (a) a single operating system and (b) three virtual machines*
 
 ## Operating System Services
@@ -188,7 +188,7 @@ A large portion of OS code is dedicated to managing I/O
     * Logging
     * Protection and securit
 
-![Operating System Services](./13.png){: w="600" h = "480"}
+![Operating System Services](./img/13.png){: w="600" h = "480"}
 *A view of operating system services*
 
 ## User and Operating System Interface
@@ -204,11 +204,11 @@ A large portion of OS code is dedicated to managing I/O
 * System calls provides an interface to the services made available by the OS
 * API: Application Programming Interface
 
-![System calls](./14.png){: w="370" h = "330"}
+![System calls](./img/14.png){: w="370" h = "330"}
 *The handling of a user application invoking the open() system call*
 
-![Passing of parameters](./15.png){: w="360" h = "320"}
+![Passing of parameters](./img/15.png){: w="360" h = "320"}
 *Passing of parameters as a table*
 
-![Examples](./16.png){: w="420" h = "440"}
+![Examples](./img/16.png){: w="420" h = "440"}
 *Examples of Windows and UNIX system calls*
