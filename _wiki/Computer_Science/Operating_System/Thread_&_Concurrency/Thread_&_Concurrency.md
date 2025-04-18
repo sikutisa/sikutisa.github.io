@@ -1,6 +1,5 @@
 ---
 tags: [computer science, os]
-toc: true
 ---
 # Thread & Concurrency
 ## Overview

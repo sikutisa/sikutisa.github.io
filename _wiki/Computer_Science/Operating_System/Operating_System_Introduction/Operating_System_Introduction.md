@@ -1,6 +1,5 @@
 ---
 tags: [computer science, os]
-toc: true
 ---
 # Operating System Introduction
 ## 운영체제란
