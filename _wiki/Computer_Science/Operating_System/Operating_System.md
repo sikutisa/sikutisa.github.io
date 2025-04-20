@@ -5,3 +5,4 @@
 * [[CPU_Scheduling/CPU_Scheduling]]
 * [[Synchronization_Tools/Synchronization_Tools]]
 * [[Synchronization_Examples/Synchronization_Examples]]
+* [[Deadlocks/Deadlocks]]
