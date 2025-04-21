@@ -8,3 +8,4 @@
 * [Deadlocks/Deadlocks](Deadlocks/Deadlocks)
 * [Main_Memory/Main_Memory](Main_Memory/Main_Memory)
 * [Virtual_Memory/Virtual_Memory](Virtual_Memory/Virtual_Memory)
+* [Storage_Management/Storage_Management](Storage_Management/Storage_Management)
