@@ -1,3 +1,3 @@
 # Computer Science
-* [[Network/Network]]
-* [[Operating_System/Operating_System]]
+* [Network/Network](Network/Network)
+* [Operating_System/Operating_System](Operating_System/Operating_System)
