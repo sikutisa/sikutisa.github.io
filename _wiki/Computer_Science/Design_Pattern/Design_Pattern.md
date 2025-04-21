@@ -5,3 +5,4 @@
 * [Command_Pattern/Command_Pattern](Command_Pattern/Command_Pattern)
 * [Factory_Method_Pattern/Factory_Method_Pattern](Factory_Method_Pattern/Factory_Method_Pattern)
 * [Abstract_Factory_Pattern/Abstract_Factory_Pattern](Abstract_Factory_Pattern/Abstract_Factory_Pattern)
+* [Adapter_Pattern/Adapter_Pattern](Adapter_Pattern/Adapter_Pattern)
