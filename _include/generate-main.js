@@ -46,7 +46,7 @@ function getAllMarkdownFiles(dir) {
 function getRecentDocuments(limit = 30) {
     return getAllMarkdownFiles(WIKI_DIR)
         .map(filePath => {
-            const relPath = path.relative(WIKI_DIR, filePath);
+            const relPath = path.relative(WIKI_DIR, filePath).replace(/\\/g, '/');;
             const parsed = path.parse(relPath);
 
             const lastmod = getGitLastModifiedTime(filePath) || 'Unknown';
