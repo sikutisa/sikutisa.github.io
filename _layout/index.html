@@ -10,20 +10,21 @@
         <section>
             <h1>전체 문서 목록</h1>
 
+            <div class="page-meta">
+                Last updated: {{last_updated}}
+                <a href="{{history_url}}" target="_blank">View History</a>
+            </div>
+
             {{#each categories}}
             <div class="category">
                 <h2>{{category_name}}</h2>
                 <ul>
                     {{#each documents}}
-                    <li>
-                        <a href="{{url}}">{{title}}</a>
-                        <span class="lastmod">{{lastmod}}</span>
-                    </li>
+                    <li><a href="{{url}}">{{title}}</a></li>
                     {{/each}}
                 </ul>
             </div>
             {{/each}}
-
         </section>
     </main>
     {{footer}}

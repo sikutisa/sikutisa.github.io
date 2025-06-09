@@ -6,11 +6,13 @@ const OUTPUT_DIR = path.join(__dirname, '../public');
 const MAIN_LAYOUT_PATH = path.join(__dirname, '../_layout/main.html');
 const HEADER_PATH = path.join(__dirname, '../_layout/header.html');
 const FOOTER_PATH = path.join(__dirname, '../_layout/footer.html');
+const GITHUB_REPO_URL = 'https://github.com/sikutisa/sikutisa.github.io/blob/master/_wiki/';
 
 module.exports = {
     WIKI_DIR,
     OUTPUT_DIR,
     MAIN_LAYOUT_PATH,
     HEADER_PATH,
-    FOOTER_PATH
+    FOOTER_PATH,
+    GITHUB_REPO_URL
 };
