@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{title}}</title>
     {{#if use_math}}
     <script>
@@ -11,7 +12,7 @@
             svg: { fontCache: 'global' }
         };
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+    <script src="{{base_url}}/assets/mathjax/es5/tex-svg.js" async></script>
     {{/if}}
 </head>
 
@@ -30,9 +31,7 @@
         {{#if table_of_contents}}
         <nav class="table-of-contents">
             <h2>Table of Contents</h2>
-            <ul>
-                {{table_of_contents}}
-            </ul>
+            {{{table_of_contents}}}
         </nav>
         {{/if}}
 

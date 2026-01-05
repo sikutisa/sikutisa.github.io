@@ -8,18 +8,28 @@ const {
     OUTPUT_DIR,
     HEADER_PATH,
     FOOTER_PATH,
-    GITHUB_REPO_URL
+    GITHUB_REPO_URL,
+    BASE_URL
 } = require('./const');
 
 const INDEX_LAYOUT_PATH = path.join(__dirname, '../_layout/index.html');
 
+function formatTimestamp(date) {
+    const iso = date.toISOString();
+    return iso.replace('T', ' ').replace('Z', ' +0000');
+}
+
 function getGitLastModifiedTime(filePath) {
     try {
         const result = execSync(`git log -1 --format="%ci" -- "${filePath}"`, { encoding: 'utf8' });
-        return result.trim().replace(' +0900', '');
+        return result.trim();
     } catch (err) {
         return null;
     }
+}
+
+function getLastModifiedTime(filePath) {
+    return getGitLastModifiedTime(filePath) || formatTimestamp(fs.statSync(filePath).mtime);
 }
 
 function getCategoriesAndDocs(baseDir) {
@@ -37,10 +47,13 @@ function getCategoriesAndDocs(baseDir) {
             for (const file of files) {
                 if (file.isFile() && file.name.endsWith('.md') && file.name !== 'index.md') {
                     const relPath = path.relative(WIKI_DIR, path.join(entryPath, file.name)).replace(/\\/g, '/');
-                    const parsed = path.parse(relPath);
+                    const parsed = path.posix.parse(relPath);
+                    const dirBase = path.posix.basename(parsed.dir);
+                    const isLeaf = dirBase && parsed.name === dirBase;
+                    const urlRel = isLeaf ? parsed.dir : path.posix.join(parsed.dir, parsed.name);
                     documents.push({
                         title: parsed.name.replace(/_/g, ' '),
-                        url: `/wikis/${relPath.replace(/\.md$/, '')}`,
+                        url: `${BASE_URL}/wikis/${urlRel}/`,
                         history_url: GITHUB_REPO_URL + relPath
                     });
                 }
@@ -58,10 +71,19 @@ function getCategoriesAndDocs(baseDir) {
     return categories;
 }
 
+function applyBaseUrlToHtml(html) {
+    if (!BASE_URL) {
+        return html;
+    }
+    return html
+        .replace(/\bhref="\/(?!\/)/g, `href="${BASE_URL}/`)
+        .replace(/\bsrc="\/(?!\/)/g, `src="${BASE_URL}/`);
+}
+
 // Index 페이지 생성
 function generateIndexPage() {
-    const header = fs.readFileSync(HEADER_PATH, 'utf8');
-    const footer = fs.readFileSync(FOOTER_PATH, 'utf8');
+    const header = applyBaseUrlToHtml(fs.readFileSync(HEADER_PATH, 'utf8'));
+    const footer = applyBaseUrlToHtml(fs.readFileSync(FOOTER_PATH, 'utf8'));
     const layout = fs.readFileSync(INDEX_LAYOUT_PATH, 'utf8');
 
     const template = Handlebars.compile(layout);
@@ -70,7 +92,7 @@ function generateIndexPage() {
 
     const indexFilePath = path.join(WIKI_DIR, 'index.md');
     const relPath = path.relative(WIKI_DIR, indexFilePath).replace(/\\/g, '/');
-    const lastmod = getGitLastModifiedTime(indexFilePath) || 'Unknown';
+    const lastmod = getLastModifiedTime(indexFilePath);
     const historyUrl = GITHUB_REPO_URL + relPath;
 
     const data = {

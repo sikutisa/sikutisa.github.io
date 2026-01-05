@@ -8,8 +8,14 @@ const {
     OUTPUT_DIR,
     MAIN_LAYOUT_PATH,
     HEADER_PATH,
-    FOOTER_PATH
+    FOOTER_PATH,
+    BASE_URL
 } = require('./const');
+
+function formatTimestamp(date) {
+    const iso = date.toISOString();
+    return iso.replace('T', ' ').replace('Z', ' +0000');
+}
 
 // Git 로그 기반 마지막 수정 시간
 function getGitLastModifiedTime(filePath) {
@@ -17,10 +23,14 @@ function getGitLastModifiedTime(filePath) {
         const result = execSync(`git log -1 --format="%ci" -- "${filePath}"`, {
             encoding: 'utf8'
         });
-        return result.trim().replace(' +0900', '');
+        return result.trim();
     } catch (err) {
         return null; // Git 로그 없을 경우
     }
+}
+
+function getLastModifiedTime(filePath) {
+    return getGitLastModifiedTime(filePath) || formatTimestamp(fs.statSync(filePath).mtime);
 }
 
 // 재귀적으로 .md 파일 가져오기 (index.md 제외)
@@ -46,14 +56,17 @@ function getAllMarkdownFiles(dir) {
 function getRecentDocuments(limit = 30) {
     return getAllMarkdownFiles(WIKI_DIR)
         .map(filePath => {
-            const relPath = path.relative(WIKI_DIR, filePath).replace(/\\/g, '/');;
-            const parsed = path.parse(relPath);
+            const relPath = path.relative(WIKI_DIR, filePath).replace(/\\/g, '/');
+            const parsed = path.posix.parse(relPath);
+            const dirBase = path.posix.basename(parsed.dir);
+            const isLeaf = dirBase && parsed.name === dirBase;
+            const urlRel = isLeaf ? parsed.dir : path.posix.join(parsed.dir, parsed.name);
 
-            const lastmod = getGitLastModifiedTime(filePath) || 'Unknown';
+            const lastmod = getLastModifiedTime(filePath);
 
             return {
                 title: parsed.name.replace(/_/g, ' '), 
-                url: `/wikis/${relPath.replace(/\.md$/, '')}`,
+                url: `${BASE_URL}/wikis/${urlRel}/`,
                 lastmod
             };
         })
@@ -61,10 +74,19 @@ function getRecentDocuments(limit = 30) {
         .slice(0, limit);
 }
 
+function applyBaseUrlToHtml(html) {
+    if (!BASE_URL) {
+        return html;
+    }
+    return html
+        .replace(/\bhref="\/(?!\/)/g, `href="${BASE_URL}/`)
+        .replace(/\bsrc="\/(?!\/)/g, `src="${BASE_URL}/`);
+}
+
 // 메인 페이지 생성
 function generateMainPage() {
-    const header = fs.readFileSync(HEADER_PATH, 'utf8');
-    const footer = fs.readFileSync(FOOTER_PATH, 'utf8');
+    const header = applyBaseUrlToHtml(fs.readFileSync(HEADER_PATH, 'utf8'));
+    const footer = applyBaseUrlToHtml(fs.readFileSync(FOOTER_PATH, 'utf8'));
     const layout = fs.readFileSync(MAIN_LAYOUT_PATH, 'utf8');
 
     const template = Handlebars.compile(layout);

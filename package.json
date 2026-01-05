@@ -4,6 +4,8 @@
   "description": "* Linux 기준",
   "main": "index.js",
   "scripts": {
+    "build": "node _include/generate-documents.js && node _include/generate-index.js && node _include/generate-main.js",
+    "serve": "npx serve public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,12 +20,19 @@
   },
   "homepage": "https://github.com/sikutisa/sikutisa.github.io#readme",
   "type": "commonjs",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "dependencies": {
-    "fs-extra": "^11.3.0",
+    "fs-extra": "^11.3.3",
     "gray-matter": "^4.0.3",
     "handlebars": "^4.7.8",
-    "jsdom": "^26.1.0",
-    "marked": "^15.0.7",
-    "mathjax": "^3.2.2"
+    "jsdom": "^27.4.0",
+    "marked": "^17.0.1",
+    "mathjax": "^4.1.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.5"
   }
 }
+

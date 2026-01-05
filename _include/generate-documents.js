@@ -1,4 +1,5 @@
 const fs = require('fs');
+const fse = require('fs-extra');
 const path = require('path');
 const matter = require('gray-matter');
 const { marked } = require('marked');
@@ -12,8 +13,14 @@ const {
   HEADER_PATH,
   FOOTER_PATH,
   DOCUMENT_LAYOUT_PATH,
-  GITHUB_REPO_URL
+  GITHUB_REPO_URL,
+  BASE_URL
 } = require('./const');
+
+function formatTimestamp(date) {
+  const iso = date.toISOString();
+  return iso.replace('T', ' ').replace('Z', ' +0000');
+}
 
 // Git 마지막 수정 시간
 function getGitLastModifiedTime(filePath) {
@@ -21,48 +28,157 @@ function getGitLastModifiedTime(filePath) {
     const result = execSync(`git log -1 --format="%ci" -- "${filePath}"`, {
       encoding: 'utf8',
     });
-    return result.trim().replace(' +0900', '');
+    return result.trim();
   } catch {
     return null;
   }
 }
 
-// 목차 생성 + HTML에 id 반영
-function generateTableOfContentsAndUpdateHtml(html) {
-  const dom = new JSDOM(html);
-  const document = dom.window.document;
-  const headings = [...document.querySelectorAll('h2, h3')];
+function getLastModifiedTime(filePath) {
+  return getGitLastModifiedTime(filePath) || formatTimestamp(fs.statSync(filePath).mtime);
+}
 
-  let toc = '';
-  let lastLevel = 2;
+function sanitizeHtml(html) {
+  const dom = new JSDOM(`<!doctype html><body>${html}</body>`);
+  const { document } = dom.window;
 
-  headings.forEach(h => {
-    const level = parseInt(h.tagName[1], 10);
-    const text = h.textContent;
-    const id = text.toLowerCase().replace(/[^\w가-힣]+/g, '-').replace(/^-|-$/g, '');
-    h.id = id;
-
-    if (level > lastLevel) {
-      toc += '<ul>'.repeat(level - lastLevel);
-    } else if (level < lastLevel) {
-      toc += '</ul>'.repeat(lastLevel - level);
-    }
-    toc += `<li><a href="#${id}">${text}</a></li>\n`;
-    lastLevel = level;
+  document.querySelectorAll('script, iframe, object, embed, link, meta, base').forEach(node => {
+    node.remove();
   });
 
-  toc += '</ul>'.repeat(lastLevel - 2);
+  const elements = [...document.querySelectorAll('*')];
+  elements.forEach(el => {
+    [...el.attributes].forEach(attr => {
+      const name = attr.name.toLowerCase();
+      const value = attr.value;
+
+      if (name.startsWith('on') || name === 'style' || name === 'srcdoc') {
+        el.removeAttribute(attr.name);
+        return;
+      }
+
+      if (name === 'href' || name === 'src' || name === 'xlink:href') {
+        const normalized = value.trim().toLowerCase();
+        if (normalized.startsWith('javascript:') || normalized.startsWith('vbscript:')) {
+          el.removeAttribute(attr.name);
+        }
+        if (normalized.startsWith('data:') && !normalized.startsWith('data:image/')) {
+          el.removeAttribute(attr.name);
+        }
+      }
+    });
+  });
+
+  return document.body.innerHTML;
+}
+
+function getUrlRelFromRelPath(relPath) {
+  const cleanRelPath = relPath.replace(/\.md$/, '');
+  const parsed = path.posix.parse(cleanRelPath);
+  const dirBase = path.posix.basename(parsed.dir);
+  const isLeaf = dirBase && parsed.name === dirBase;
+  return isLeaf ? parsed.dir : path.posix.join(parsed.dir, parsed.name);
+}
+
+function withBaseUrl(urlPath) {
+  return `${BASE_URL}${urlPath}`;
+}
+
+function applyBaseUrlToHtml(html) {
+  if (!BASE_URL) {
+    return html;
+  }
+  return html
+    .replace(/\bhref="\/(?!\/)/g, `href="${BASE_URL}/`)
+    .replace(/\bsrc="\/(?!\/)/g, `src="${BASE_URL}/`);
+}
+
+function rewriteImageSources(html, urlRel) {
+  const dom = new JSDOM(`<!doctype html><body>${html}</body>`);
+  const { document } = dom.window;
+
+  document.querySelectorAll('img').forEach(img => {
+    const src = (img.getAttribute('src') || '').trim();
+    if (!src || src.startsWith('http://') || src.startsWith('https://') || src.startsWith('data:')) {
+      return;
+    }
+
+    const normalized = src.replace(/^\.?\//, '');
+    if (normalized.startsWith('img/')) {
+      const rest = normalized.slice('img/'.length);
+      img.setAttribute('src', withBaseUrl(`/wikis/${urlRel}/img/${rest}`));
+    }
+  });
+
+  return document.body.innerHTML;
+}
+
+function copyLocalImages(filePath, outputPath) {
+  const sourceDir = path.join(path.dirname(filePath), 'img');
+  if (!fs.existsSync(sourceDir)) {
+    return;
+  }
+  const targetDir = path.join(path.dirname(outputPath), 'img');
+  fse.ensureDirSync(targetDir);
+  fse.copySync(sourceDir, targetDir, { overwrite: true });
+}
+
+// 목차 생성 + HTML에 id 반영
+function generateTableOfContentsAndUpdateHtml(html) {
+  const dom = new JSDOM(`<!doctype html><body>${html}</body>`);
+  const document = dom.window.document;
+  const headings = [...document.body.querySelectorAll('h2, h3')];
+
+  const idCounts = new Map();
+  const items = headings.map(h => {
+    const level = parseInt(h.tagName[1], 10);
+    const text = h.textContent;
+    const baseId = text.toLowerCase().replace(/[^\w가-힣]+/g, '-').replace(/^-|-$/g, '');
+    const safeBaseId = baseId || 'section';
+    const count = (idCounts.get(safeBaseId) || 0) + 1;
+    idCounts.set(safeBaseId, count);
+    const id = count === 1 ? safeBaseId : `${safeBaseId}-${count}`;
+    h.id = id;
+    return { level, text, id };
+  });
+
+  let toc = '';
+  if (items.length > 0) {
+    const minLevel = 2;
+    let currentLevel = minLevel;
+    toc = '<ul>';
+
+    items.forEach((item, index) => {
+      if (item.level > currentLevel) {
+        toc += '<ul>'.repeat(item.level - currentLevel);
+      } else if (item.level < currentLevel) {
+        toc += '</li>';
+        toc += '</ul></li>'.repeat(currentLevel - item.level);
+      } else if (index > 0) {
+        toc += '</li>';
+      }
+
+      toc += `<li><a href="#${item.id}">${item.text}</a>`;
+      currentLevel = item.level;
+    });
+
+    toc += '</li>';
+    toc += '</ul></li>'.repeat(currentLevel - minLevel);
+    toc += '</ul>';
+  }
 
   return {
-    html: dom.serialize(),
+    html: document.body.innerHTML,
     toc
   };
 }
 
 // VimWiki 스타일 링크 수정
-function patchVimWikiLinks(markdown) {
+function patchVimWikiLinks(markdown, currentRelDir) {
   return markdown.replace(/\[([^\]]+?)\/([^\]]+?)\]\(([^)]+?)\/\3\)/g, (_, folder, title, link) => {
-    return `[${title}](/wikis/${link})`;
+    const linkRelPath = path.posix.join(currentRelDir, link);
+    const urlRel = getUrlRelFromRelPath(linkRelPath);
+    return `[${title}](${withBaseUrl(`/wikis/${urlRel}/`)})`;
   });
 }
 
@@ -71,17 +187,25 @@ function convertMarkdownFile(filePath) {
   const markdownRaw = fs.readFileSync(filePath, 'utf8');
   const { content, data } = matter(markdownRaw);
 
-  const patchedMarkdown = patchVimWikiLinks(content);
+  const relPath = path.relative(WIKI_DIR, filePath).replace(/\\/g, '/');
+  const currentRelDir = path.posix.dirname(relPath);
+  const patchedMarkdown = patchVimWikiLinks(content, currentRelDir);
   let html = marked.parse(patchedMarkdown);
+  html = sanitizeHtml(html);
+
+  const urlRel = getUrlRelFromRelPath(relPath);
+  html = rewriteImageSources(html, urlRel);
 
   const { html: updatedHtml, toc } = generateTableOfContentsAndUpdateHtml(html);
   html = updatedHtml;
 
-  const relPath = path.relative(WIKI_DIR, filePath).replace(/\\/g, '/');
-  const fileName = path.basename(filePath, '.md');
+  const parsed = path.posix.parse(relPath);
+  const fileName = parsed.name;
   const title = fileName.replace(/_/g, ' ');
-  const lastmod = getGitLastModifiedTime(filePath) || 'Unknown';
+  const lastmod = getLastModifiedTime(filePath);
   const historyUrl = GITHUB_REPO_URL + relPath;
+  const outputPath = path.join(OUTPUT_DIR, 'wikis', ...urlRel.split('/'), 'index.html');
+  copyLocalImages(filePath, outputPath);
 
   return {
     html,
@@ -91,16 +215,30 @@ function convertMarkdownFile(filePath) {
     toc,
     tags: Array.isArray(data.tags) ? data.tags : [],
     use_math: !!data.use_math,
-    outputPath: path.join(OUTPUT_DIR, 'wikis', relPath.replace(/\.md$/, '.html')),
+    outputPath
   };
 }
 
 // 전체 변환 실행
+function copyMathJaxBundle() {
+  const sourceDir = path.join(__dirname, '../node_modules/mathjax/es5');
+  const targetDir = path.join(OUTPUT_DIR, 'assets', 'mathjax', 'es5');
+
+  try {
+    fse.ensureDirSync(targetDir);
+    fse.copySync(sourceDir, targetDir, { overwrite: true });
+  } catch (err) {
+    console.warn('MathJax bundle copy failed:', err.message);
+  }
+}
+
 function convertAll() {
-  const header = fs.readFileSync(HEADER_PATH, 'utf8');
-  const footer = fs.readFileSync(FOOTER_PATH, 'utf8');
+  const header = applyBaseUrlToHtml(fs.readFileSync(HEADER_PATH, 'utf8'));
+  const footer = applyBaseUrlToHtml(fs.readFileSync(FOOTER_PATH, 'utf8'));
   const layout = fs.readFileSync(DOCUMENT_LAYOUT_PATH, 'utf8');
   const template = Handlebars.compile(layout);
+
+  copyMathJaxBundle();
 
   function walk(dir) {
     fs.readdirSync(dir, { withFileTypes: true }).forEach(entry => {
@@ -126,7 +264,8 @@ function convertAll() {
         footer: new Handlebars.SafeString(footer),
         table_of_contents: new Handlebars.SafeString(toc),
         content: new Handlebars.SafeString(html),
-        use_math
+        use_math,
+        base_url: BASE_URL
       };
 
       fs.mkdirSync(path.dirname(outputPath), { recursive: true });
