@@ -73,18 +73,14 @@ function sanitizeHtml(html) {
   return document.body.innerHTML;
 }
 
-function removeDuplicateTitle(html, title) {
+function removeDuplicateTitle(html) {
   const dom = new JSDOM(`<!doctype html><body>${html}</body>`);
   const { document } = dom.window;
-  const firstHeading = document.body.querySelector('h1');
-  if (!firstHeading) {
+  const headings = [...document.body.querySelectorAll('h1')];
+  if (headings.length === 0) {
     return html;
   }
-  const normalizedHeading = firstHeading.textContent.trim().replace(/\s+/g, ' ').toLowerCase();
-  const normalizedTitle = title.trim().replace(/\s+/g, ' ').toLowerCase();
-  if (normalizedHeading === normalizedTitle) {
-    firstHeading.remove();
-  }
+  headings.forEach(h1 => h1.remove());
   return document.body.innerHTML;
 }
 
@@ -282,7 +278,7 @@ function convertMarkdownFile(filePath) {
   const parsed = path.posix.parse(relPath);
   const fileName = parsed.name;
   const title = fileName.replace(/_/g, ' ');
-  html = removeDuplicateTitle(html, title);
+  html = removeDuplicateTitle(html);
   const lastmod = getLastModifiedTime(filePath);
   const historyUrl = GITHUB_REPO_URL + relPath;
   const outputPath = path.join(OUTPUT_DIR, 'wikis', ...urlRel.split('/'), 'index.html');
