@@ -1,4 +1,5 @@
 const fs = require('fs');
+const fse = require('fs-extra');
 const path = require('path');
 const Handlebars = require('handlebars');
 const { execSync } = require('child_process');
@@ -9,7 +10,8 @@ const {
     HEADER_PATH,
     FOOTER_PATH,
     GITHUB_REPO_URL,
-    BASE_URL
+    BASE_URL,
+    STYLE_DIR
 } = require('./const');
 
 const INDEX_LAYOUT_PATH = path.join(__dirname, '../_layout/index.html');
@@ -80,6 +82,19 @@ function applyBaseUrlToHtml(html) {
         .replace(/\bsrc="\/(?!\/)/g, `src="${BASE_URL}/`);
 }
 
+function copyStyleAssets() {
+    const targetDir = path.join(OUTPUT_DIR, 'assets', 'style');
+    if (!fs.existsSync(STYLE_DIR)) {
+        return;
+    }
+    try {
+        fse.ensureDirSync(targetDir);
+        fse.copySync(STYLE_DIR, targetDir, { overwrite: true });
+    } catch (err) {
+        console.warn('Style assets copy failed:', err.message);
+    }
+}
+
 // Index 페이지 생성
 function generateIndexPage() {
     const header = applyBaseUrlToHtml(fs.readFileSync(HEADER_PATH, 'utf8'));
@@ -100,13 +115,15 @@ function generateIndexPage() {
         footer: new Handlebars.SafeString(footer),
         categories,
         last_updated: lastmod,
-        history_url: historyUrl
+        history_url: historyUrl,
+        base_url: BASE_URL
     };
 
     const finalHtml = template(data);
 
     const indexOutputPath = path.join(OUTPUT_DIR, 'wikis', 'index.html');
     fs.mkdirSync(path.dirname(indexOutputPath), { recursive: true });
+    copyStyleAssets();
     fs.writeFileSync(indexOutputPath, finalHtml, 'utf8');
 
     console.log(`✔ Generated index page: ${indexOutputPath}`);

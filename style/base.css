@@ -1,0 +1,51 @@
+:root {
+    color-scheme: light;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Linux Libertine", "Georgia", "Times New Roman", serif;
+    background: #f8f9fa;
+    color: #202122;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0 0 8px;
+}
+pre,
+code {
+    font-family: "SFMono-Regular", "Consolas", "Liberation Mono", monospace;
+    font-size: 13px;
+    background: #f8f9fa;
+}
+pre {
+    padding: 12px;
+    overflow-x: auto;
+    border: 1px solid #eaecf0;
+}
+
+@media (max-width: 720px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 520px) {
+    body {
+        font-size: 14px;
+    }
+}

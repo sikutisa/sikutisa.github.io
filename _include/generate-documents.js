@@ -14,7 +14,8 @@ const {
   FOOTER_PATH,
   DOCUMENT_LAYOUT_PATH,
   GITHUB_REPO_URL,
-  BASE_URL
+  BASE_URL,
+  STYLE_DIR
 } = require('./const');
 
 function formatTimestamp(date) {
@@ -69,6 +70,21 @@ function sanitizeHtml(html) {
     });
   });
 
+  return document.body.innerHTML;
+}
+
+function removeDuplicateTitle(html, title) {
+  const dom = new JSDOM(`<!doctype html><body>${html}</body>`);
+  const { document } = dom.window;
+  const firstHeading = document.body.querySelector('h1');
+  if (!firstHeading) {
+    return html;
+  }
+  const normalizedHeading = firstHeading.textContent.trim().replace(/\s+/g, ' ').toLowerCase();
+  const normalizedTitle = title.trim().replace(/\s+/g, ' ').toLowerCase();
+  if (normalizedHeading === normalizedTitle) {
+    firstHeading.remove();
+  }
   return document.body.innerHTML;
 }
 
@@ -128,6 +144,12 @@ function generateTableOfContentsAndUpdateHtml(html) {
   const dom = new JSDOM(`<!doctype html><body>${html}</body>`);
   const document = dom.window.document;
   const headings = [...document.body.querySelectorAll('h2, h3')];
+  if (headings.length === 0) {
+    return {
+      html: document.body.innerHTML,
+      toc: ''
+    };
+  }
 
   const idCounts = new Map();
   const items = headings.map(h => {
@@ -169,7 +191,7 @@ function generateTableOfContentsAndUpdateHtml(html) {
 
   return {
     html: document.body.innerHTML,
-    toc
+    toc: toc.trim()
   };
 }
 
@@ -202,6 +224,7 @@ function convertMarkdownFile(filePath) {
   const parsed = path.posix.parse(relPath);
   const fileName = parsed.name;
   const title = fileName.replace(/_/g, ' ');
+  html = removeDuplicateTitle(html, title);
   const lastmod = getLastModifiedTime(filePath);
   const historyUrl = GITHUB_REPO_URL + relPath;
   const outputPath = path.join(OUTPUT_DIR, 'wikis', ...urlRel.split('/'), 'index.html');
@@ -232,6 +255,19 @@ function copyMathJaxBundle() {
   }
 }
 
+function copyStyleAssets() {
+  const targetDir = path.join(OUTPUT_DIR, 'assets', 'style');
+  if (!fs.existsSync(STYLE_DIR)) {
+    return;
+  }
+  try {
+    fse.ensureDirSync(targetDir);
+    fse.copySync(STYLE_DIR, targetDir, { overwrite: true });
+  } catch (err) {
+    console.warn('Style assets copy failed:', err.message);
+  }
+}
+
 function convertAll() {
   const header = applyBaseUrlToHtml(fs.readFileSync(HEADER_PATH, 'utf8'));
   const footer = applyBaseUrlToHtml(fs.readFileSync(FOOTER_PATH, 'utf8'));
@@ -239,6 +275,7 @@ function convertAll() {
   const template = Handlebars.compile(layout);
 
   copyMathJaxBundle();
+  copyStyleAssets();
 
   function walk(dir) {
     fs.readdirSync(dir, { withFileTypes: true }).forEach(entry => {
@@ -262,7 +299,7 @@ function convertAll() {
         history_url: historyUrl,
         header: new Handlebars.SafeString(header),
         footer: new Handlebars.SafeString(footer),
-        table_of_contents: new Handlebars.SafeString(toc),
+        table_of_contents: toc ? new Handlebars.SafeString(toc) : null,
         content: new Handlebars.SafeString(html),
         use_math,
         base_url: BASE_URL

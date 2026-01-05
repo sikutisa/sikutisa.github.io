@@ -1,4 +1,5 @@
 const fs = require('fs');
+const fse = require('fs-extra');
 const path = require('path');
 const { execSync } = require('child_process');
 const Handlebars = require('handlebars');
@@ -9,7 +10,8 @@ const {
     MAIN_LAYOUT_PATH,
     HEADER_PATH,
     FOOTER_PATH,
-    BASE_URL
+    BASE_URL,
+    STYLE_DIR
 } = require('./const');
 
 function formatTimestamp(date) {
@@ -83,6 +85,19 @@ function applyBaseUrlToHtml(html) {
         .replace(/\bsrc="\/(?!\/)/g, `src="${BASE_URL}/`);
 }
 
+function copyStyleAssets() {
+    const targetDir = path.join(OUTPUT_DIR, 'assets', 'style');
+    if (!fs.existsSync(STYLE_DIR)) {
+        return;
+    }
+    try {
+        fse.ensureDirSync(targetDir);
+        fse.copySync(STYLE_DIR, targetDir, { overwrite: true });
+    } catch (err) {
+        console.warn('Style assets copy failed:', err.message);
+    }
+}
+
 // 메인 페이지 생성
 function generateMainPage() {
     const header = applyBaseUrlToHtml(fs.readFileSync(HEADER_PATH, 'utf8'));
@@ -94,7 +109,8 @@ function generateMainPage() {
     const data = {
         header: new Handlebars.SafeString(header),
         footer: new Handlebars.SafeString(footer),
-        recent_docs: getRecentDocuments()
+        recent_docs: getRecentDocuments(),
+        base_url: BASE_URL
     };
 
     const finalHtml = template(data);
@@ -104,6 +120,7 @@ function generateMainPage() {
         fs.mkdirSync(OUTPUT_DIR, { recursive: true });
     }
 
+    copyStyleAssets();
     fs.writeFileSync(outputPath, finalHtml, 'utf8');
     console.log(`✔ Generated main page: ${outputPath}`);
 }
