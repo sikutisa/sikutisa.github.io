@@ -4,7 +4,9 @@
   "description": "* Linux 기준",
   "main": "index.js",
   "scripts": {
-    "build": "node _include/generate-documents.js && node _include/generate-index.js && node _include/generate-main.js",
+    "clean": "node -e \"require('fs').rmSync('public', { recursive: true, force: true })\"",
+    "build:docs": "node _include/generate-documents.js && node _include/generate-index.js && node _include/generate-main.js",
+    "build": "npm run clean && npm run build:docs",
     "serve": "npx serve public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

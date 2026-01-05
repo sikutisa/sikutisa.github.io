@@ -42,10 +42,13 @@ jobs:
             echo "base_url=$REPO_NAME" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Clean
+        run: npm run clean
+
       - name: Build
         env:
           BASE_URL: ${{ steps.base.outputs.base_url }}
-        run: npm run build
+        run: npm run build:docs
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
