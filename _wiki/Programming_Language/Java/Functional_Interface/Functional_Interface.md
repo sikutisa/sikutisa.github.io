@@ -257,7 +257,7 @@ public class Example {
 InterfaceAB interfaceAB = interfaceA.andThen(interfaceB);
 intrefaceAB.method();
 ```
-![andthen](./img/1.png){: w="330" h = "300"}
+![andthen](./img/1.png){: w="27.5%"}
 *andThen*
 
 * andThen의 경우 interfaceAB의 method를 호출하면
@@ -269,7 +269,7 @@ InterfaceAB interfaceAB = interfaceA.compose(interfaceB);
 intrefaceAB.method();
 ```
 
-![compose](./img/2.png){: w="330" h = "300"}
+![compose](./img/2.png){: w="27.5%"}
 *compose*
 
 
@@ -545,3 +545,4 @@ public class Example {
   }
 }
 ```
+

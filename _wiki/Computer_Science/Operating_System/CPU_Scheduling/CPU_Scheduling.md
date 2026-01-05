@@ -7,10 +7,10 @@ use_math: true
 * CPU *scheduling* is the basis of multiprogrammed operating systems.
 * The objective of *multiprogramming* is to have some processes running at all times to maximize CPU utilization.
 
-![AlternatingSequence](./img/1.png){: w="310" h = "380"}
+![AlternatingSequence](./img/1.png){: w="25.83%"}
 *Alternating sequence of CPU-bursts and I/O-bursts*
 
-![Histogram](./img/2.png){: w="410" h = "360"}
+![Histogram](./img/2.png){: w="34.17%"}
 *Histogram of CPU-burst duration*
 
 * CPU scheduler selects a process from the processes in memory that are *ready* to execute and *allocates* the CPU to that process.
@@ -43,7 +43,7 @@ use_math: true
 * The dispatcher should be as fast as possible since it is invoked during every context switch.
 * The *dispatcher latency* is the time to stop one process and start another running.
 
-![Dispatcher](./img/3.png){: w="310" h = "340"}
+![Dispatcher](./img/3.png){: w="25.83%"}
 *The role of the dispatcher*
 
 ## Scheduling Criteria
@@ -72,11 +72,11 @@ use_math: true
 
 * Consider the following set of processes that arrive at time 0, with the length of the CPU burst given in milliseconds
 
-![Processes](./img/4.png){: w="300" h = "280"}
+![Processes](./img/4.png){: w="25%"}
 
 * If the processes arrive in the *order 𝑃1, 𝑃2, 𝑃3*:
 
-![Chart1](./img/5.png){: w="360" h = "260"}
+![Chart1](./img/5.png){: w="30%"}
 *Gantt Chart served by the FCFS policy*
 
 * Calculate the *Waiting time* of this schedule
@@ -90,7 +90,7 @@ use_math: true
 
 * If the processes arrive in the *order 𝑃2, 𝑃3, 𝑃1*:
 
-![Chart2](./img/6.png){: w="360" h = "260"}
+![Chart2](./img/6.png){: w="30%"}
 *Gantt Chart served by the FCFS policy*
 
 * Calculate the *Waiting time* of this schedule.
@@ -121,9 +121,9 @@ use_math: true
 * When the CPU is available, assign it to the process that has the smallest next CPU burst.
 * If two or more processes are even, break the tie with the FCFS.
 
-![Processes](./img/7.png){: w="300" h = "280"}
+![Processes](./img/7.png){: w="25%"}
 
-![Chart3](./img/8.png){: w="360" h = "260"}
+![Chart3](./img/8.png){: w="30%"}
 *Gantt Chart served by the SJF policy*
 
 * Calculate the *Waiting time*:
@@ -152,7 +152,7 @@ use_math: true
         * $\tau_{n+1}$ is our predicted value for the next CPU burst,
         * for $ 0 <= \alpha <= 1$
 
-![Prediction](./img/9.png){: w="420" h = "380"}
+![Prediction](./img/9.png){: w="35%"}
 *Prediction of the length of the next CPU burst*
 
 * Note also that
@@ -165,9 +165,9 @@ use_math: true
 * Shortest-Remaining-Time-First: **Preemptive SJF** scheduling
 * SRTF will *preempt* the currently running process, whereas a non-preemptive SJF will *allow* it to *finish* its CPU burst.
 
-![Processes](./img/10.png){: w="340" h = "280"}
+![Processes](./img/10.png){: w="28.33%"}
 
-![Chart4](./img/11.png){: w="360" h = "260"}
+![Chart4](./img/11.png){: w="30%"}
 *Gantt Chart served by the SRTF policy*
 
 * In SRTF:
@@ -199,9 +199,9 @@ use_math: true
     * If the CPU burst is *longer than one time quantum*, the timer will go off and will cause an interrupt to the OS.
         * A context switch will be executed, the process will be put at the tail of the ready queue.
 
-![Processes](./img/12.png){: w="300" h = "280"}
+![Processes](./img/12.png){: w="25%"}
 
-![Chart5](./img/13.png){: w="360" h = "260"}
+![Chart5](./img/13.png){: w="30%"}
 *Gantt Chart served by the RR policy when we use a time quantum of 4 milliseconds*
 
 * The *Waiting time*:
@@ -216,10 +216,10 @@ use_math: true
 
 * The performance of the RR scheduling algorithm depends heavily on the *size of the time quantum*.
 
-![TimeContext](./img/14.png){: w="450" h = "350"}
+![TimeContext](./img/14.png){: w="37.5%"}
 *How a smaller time quantum increases context switches*
 
-![TimeTurnaround](./img/15.png){: w="450" h = "430"}
+![TimeTurnaround](./img/15.png){: w="37.5%"}
 *How turnaround time varies with the time quantum*
 
 ### Priority base Scheduling
@@ -229,9 +229,9 @@ use_math: true
     * In this case, the priority is the *inverse* of the *next CPU burst*.
 * We assume that low numbers represent high priority.
 
-![Processes](./img/16.png){: w="340" h = "280"}
+![Processes](./img/16.png){: w="28.33%"}
 
-![Chart6](./img/17.png){: w="360" h = "260"}
+![Chart6](./img/17.png){: w="30%"}
 *Gantt Chart served by the Priority base policy*
 
 * The average waiting time: 8.2
@@ -245,22 +245,22 @@ use_math: true
 
 * Combine RR and Priority scheduling: execute the *highest-priority* process and runs processes with the same priority using *round-robin* scheduling.
 
-![Example](./img/18.png){: w="480" h = "420"}
+![Example](./img/18.png){: w="40%"}
 *Example that combine RR and Priority policy*
 
 ### Multi-Level Queue(MLQ) Scheduling
 
-![MLQ](./img/19.png){: w="340" h = "360"}
+![MLQ](./img/19.png){: w="28.33%"}
 *Separate queues for each priority*
 
-![MLQScheduling](./img/20.png){: w="380" h = "340"}
+![MLQScheduling](./img/20.png){: w="31.67%"}
 *Multi-Level Queue scheduling*
 
 ### Multi-Level Feedback Queue(MLFQ) Scheduling
 * MLQ같은 경우, 우선순위가 낮은 process에서 starvation이 발생할 수 있음
 * 이를 방지하기 위해, Aging 기법으로 우선순위를 바꿔주는 등 다양한 방법을 도입
 
-![MLFQ](./img/21.png){: w="360" h = "360"}
+![MLFQ](./img/21.png){: w="30%"}
 *Multi-Level Feedback Queue scheduling*
 
 * 처음 process가 실행될 때는 quantum이 8만큼 실행
@@ -280,3 +280,4 @@ use_math: true
     * Guarantee only that a critical process is preferred to noncritical one. 
 * Hard real-time systems have stricter requirements.
     * A task must be services by its deadline.
+

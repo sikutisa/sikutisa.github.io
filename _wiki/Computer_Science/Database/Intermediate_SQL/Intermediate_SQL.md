@@ -26,13 +26,13 @@ select name, course_id
 from student natural join takes
 ```
 
-![Student](./img/1.png){: w="340" h = "360"}
+![Student](./img/1.png){: w="28.33%"}
 *Student Relation*
 
-![Takes](./img/2.png){: w="350" h = "430"}
+![Takes](./img/2.png){: w="29.17%"}
 *Takes Relation*
 
-![Result](./img/3.png){: w="450" h = "440"}
+![Result](./img/3.png){: w="37.5%"}
 *student natural join takes*
 
 * The from clause can have *multiple relations* combined using natural join
@@ -106,10 +106,10 @@ from student natural join takes;
     * right outer join
     * full outer join
 
-![Course](./img/4.png){: w="330" h = "290"}
+![Course](./img/4.png){: w="27.5%"}
 *Relation course*
 
-![Prereq](./img/5.png){: w="270" h = "250"}
+![Prereq](./img/5.png){: w="22.5%"}
 *Relation prereq*
 
 * Observe that 
@@ -117,19 +117,19 @@ from student natural join takes;
     * prereq information is missing CS-315
 
 ### Left Outer Join
-![Result](./img/6.png){: w="340" h = "290"}
+![Result](./img/6.png){: w="28.33%"}
 *course natural left outer join prereq*
 
 * In relational algebra: course ⟕ prereq
 
 ### Right Outer Join
-![Result](./img/7.png){: w="340" h = "290"}
+![Result](./img/7.png){: w="28.33%"}
 *course natural right outer join prereq*
 
 * In relational algebra: course ⟖ prereq
 
 ### Full Outer Join
-![Result](./img/8.png){: w="340" h = "300"}
+![Result](./img/8.png){: w="28.33%"}
 *course natural full outer join prereq*
 
 * In relational algebra: course ⟗ prereq

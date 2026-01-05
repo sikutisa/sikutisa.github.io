@@ -17,7 +17,7 @@ tags: [computer science, os]
 * Heap section: memory that is dynamically allocated during program run time
 * Stack section: temporary data storage when invoking functions such as function parameters, return addresses, and local variables
 
-![Process in Memory](./img/1.png){: w="290" h = "400"}
+![Process in Memory](./img/1.png){: w="24.17%"}
 *Layout of a process in memory*
 
 ### State of Process New: the process is being created.
@@ -28,7 +28,7 @@ tags: [computer science, os]
 * **Ready**: The process is waiting to be assigned to a processor.
 * **Terminated**: The process has finished execution.
 
-![Process State](./img/2.png){: w="380" h = "300"}
+![Process State](./img/2.png){: w="31.67%"}
 *Diagram of process state*
 
 ### Process Control Block
@@ -42,7 +42,7 @@ tags: [computer science, os]
     * Accounting information
     * I/O status information
 
-![PCB](./img/3.png){: w="280" h = "365"}
+![PCB](./img/3.png){: w="23.33%"}
 *Process control block (PCB)*
 
 ### Summary
@@ -68,13 +68,13 @@ tags: [computer science, os]
 * These queues are generally implemented 
     * in the linked lists of PCBs.
 
-![ReadyQueueWaitQueue](./img/4.png){: w="400" h = "400"}
+![ReadyQueueWaitQueue](./img/4.png){: w="33.33%"}
 *The ready queue and wait queues*
 
 * Queueing Diagram
     * as a common represemtation of process scheduling.
 
-![QueueingDiagram](./img/5.png){: w="440" h = "380"}
+![QueueingDiagram](./img/5.png){: w="36.67%"}
 *Queueing-diagram representation of process scheduling*
 
 ### Context Switch
@@ -85,7 +85,7 @@ tags: [computer science, os]
     * performs a *state save* of the current process
     * and a *state restore* of a different process.
 
-![ContextSwitch](./img/6.png){: w="400" h = "430"}
+![ContextSwitch](./img/6.png){: w="33.33%"}
 *Diagram showing context switch from process to process*
 
 ## Operations on Processes
@@ -94,7 +94,7 @@ tags: [computer science, os]
     * the creating process: a *parent* process
     * a newly created process: a *child* process
 
-![ProcessTree](./img/7.png){: w="500" h = "450"}
+![ProcessTree](./img/7.png){: w="41.67%"}
 *A tree of processes on a typical Linux system*
 
 * Two possibilities for execution
@@ -129,7 +129,7 @@ int main()
 }
 ```
 
-![CodeExample](./img/8.png){: w="400" h = "350"}
+![CodeExample](./img/8.png){: w="33.33%"}
 *Process creation using the fork() system call*
 
 * A process terminates
@@ -311,7 +311,7 @@ int main()
     * **shared memory**
     * **message passing**
 
-![IPCModel](./img/9.png){: w="430" h = "400"}
+![IPCModel](./img/9.png){: w="35.83%"}
 *Communication models: (a) Shared memory and (b) Message Passing*
 
 ## IPC in Shared-Memory Systems
@@ -557,7 +557,7 @@ int main()
 * *unidirectional*: only *one-way* communication is possible.
 * *two-way* communication? use two pipes!
 
-![OrdinaryPipe](./img/10.png){: w="420" h = "360"}
+![OrdinaryPipe](./img/10.png){: w="35%"}
 *File descriptors for an ordinary pipe*
 
 * On UNIX systems, ordinary pipes are constructed using the function:
@@ -617,7 +617,7 @@ int main()
 ### Socket
 A socket is identified by an *IP address* concatenated with a *port* number.
 
-![Socket](./img/11.png){: w="330" h = "370"}
+![Socket](./img/11.png){: w="27.5%"}
 *Communication using sockets*
 
 * Java provides a much easier interface to sockets and provides three different types of sockets.
@@ -689,3 +689,4 @@ public class DateClient {
 * The RPC system hides the details that allow communication to take place by providing a *stub* on the client side.
 * The stub of client-side locates the server and *marshals* the parameters.
 * The stub of server-side received this message, unpacks the marshalled parameters, and performs the procedure on the server.
+

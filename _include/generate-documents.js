@@ -204,6 +204,63 @@ function patchVimWikiLinks(markdown, currentRelDir) {
   });
 }
 
+function escapeHtml(value) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function preprocessMarkdownImages(markdown) {
+  const lines = markdown.split(/\r?\n/);
+  const output = [];
+
+  for (let i = 0; i < lines.length; i += 1) {
+    const line = lines[i];
+    const match = line.match(/^!\[([^\]]*)\]\(([^)]+)\)\{\:\s*([^}]+)\}\s*$/);
+    if (!match) {
+      output.push(line);
+      continue;
+    }
+
+    const alt = match[1] || '';
+    const src = match[2];
+    const attrs = match[3];
+    const widthMatch = attrs.match(/\bw\s*=\s*"?(\d+(?:\.\d+)?%?)"?/i);
+    const width = widthMatch ? widthMatch[1] : null;
+
+    let caption = null;
+    if (i + 1 < lines.length) {
+      const captionMatch = lines[i + 1].match(/^\*([^*]+)\*\s*$/);
+      if (captionMatch) {
+        caption = captionMatch[1].trim();
+        i += 1;
+      }
+    }
+
+    let img = `<img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}"`;
+    if (width) {
+      if (width.endsWith('%')) {
+        img += ` style="width:${escapeHtml(width)};height:auto;"`;
+      } else {
+        img += ` width="${escapeHtml(width)}"`;
+      }
+    }
+    img += '>';
+
+    let figure = `<figure class="wiki-figure">${img}`;
+    if (caption) {
+      figure += `<figcaption class="wiki-figcaption">${escapeHtml(caption)}</figcaption>`;
+    }
+    figure += '</figure>';
+
+    output.push(figure);
+  }
+
+  return output.join('\n');
+}
+
 // Markdown -> HTML 변환
 function convertMarkdownFile(filePath) {
   const markdownRaw = fs.readFileSync(filePath, 'utf8');
@@ -212,7 +269,8 @@ function convertMarkdownFile(filePath) {
   const relPath = path.relative(WIKI_DIR, filePath).replace(/\\/g, '/');
   const currentRelDir = path.posix.dirname(relPath);
   const patchedMarkdown = patchVimWikiLinks(content, currentRelDir);
-  let html = marked.parse(patchedMarkdown);
+  const preprocessedMarkdown = preprocessMarkdownImages(patchedMarkdown);
+  let html = marked.parse(preprocessedMarkdown);
   html = sanitizeHtml(html);
 
   const urlRel = getUrlRelFromRelPath(relPath);

@@ -9,7 +9,7 @@ tags: [computer science, os]
     * sometimes, magnetic tapes, optical disks, or cloud storage.
         * using the structure of RAID systems.
 
-![HDD](./img/1.png){: w="330" h = "320"}
+![HDD](./img/1.png){: w="27.5%"}
 *HDD moving-head disk mechanism*
 
 * HDD Scheduling
@@ -23,7 +23,7 @@ tags: [computer science, os]
 * Intrinsically fair, but generally does not provide the fastest services.
 * Total head movement of 640 cylinders.
 
-![FIFO](./img/2.png){: w="360" h = "320"}
+![FIFO](./img/2.png){: w="30%"}
 *FCFS disk scheduling*
 
 ### SCAN Scheduling
@@ -33,7 +33,7 @@ tags: [computer science, os]
 * **SCAN Scheduling**: if the direction of head movement is moving towards 0.
 * total head movement of 236 cylinders.
 
-![SCAN](./img/3.png){: w="360" h = "320"}
+![SCAN](./img/3.png){: w="30%"}
 *SCAN disk scheduling*
 
 ### C-SCAN (Circular-SCAN) Scheduling
@@ -45,14 +45,14 @@ tags: [computer science, os]
 * **C-SCAN Scheduling**
     * total head movement of 183 cylinders. (ignore from 199 to 0)
 
-![C-SCAN](./img/4.png){: w="360" h = "320"}
+![C-SCAN](./img/4.png){: w="30%"}
 *C-SCAN disk scheduling*
 
 ### Boot Block
 * For a computer to start running, when it is powered up, it must have an initial program to run.
 * A bootstrap loader is stored in NVM flash memory, and mapped to a known memory location.
 
-![Boot](./img/5.png){: w="320" h = "300"}
+![Boot](./img/5.png){: w="26.67%"}
 *Booting from a storage device in Windows*
 
 ### RAID
@@ -82,10 +82,10 @@ tags: [computer science, os]
         * It enable us to detect an error if f one of the bits is damaged.
     * **RAID levels**: classify these schemes according to different *cost-performance trade-offs*.
 
-![RAID](./img/6.png){: w="420" h = "350"}
+![RAID](./img/6.png){: w="35%"}
 *RAID levels*
 
-![RAID](./img/7.png){: w="340" h = "380"}
+![RAID](./img/7.png){: w="28.33%"}
 *RAID 0 + 1 and 1 + 0 with a single disk failure*
 
 ## I/O System
@@ -93,7 +93,7 @@ tags: [computer science, os]
     * In many cases, the main job is I/O, for instance, web browsing, file editing, youtube, game, and so force.
     * The role of Operating System in I/O is to manage and control I/O operations and I/O devices.
 
-![IO](./img/8.png){: w="400" h = "370"}
+![IO](./img/8.png){: w="33.33%"}
 *A typical PC bus architecture*
 
 * **Memory-Mapped I/O**
@@ -106,7 +106,7 @@ tags: [computer science, os]
     * If the device supports the memory-mapped I/O, control registers are mapped into the address space of the processor.
     * The CPU executes I/O requests using the standard data-transfer instructions to read and write the device-control registers at their mapped locations in physical memory.
 
-![port](./img/9.png){: w="320" h = "300"}
+![port](./img/9.png){: w="26.67%"}
 *Device I/O port locations on PCs (partial)*
 
 ### Three types of I/O
@@ -117,13 +117,13 @@ tags: [computer science, os]
  * **DMA** (Direct Memory Access): used to avoid programmed I/O (one byte at a time).
     * useful for handling large data transfer.
 
-![Interrupt](./img/10.png){: w="320" h = "360"}
+![Interrupt](./img/10.png){: w="26.67%"}
 *Interrupt-driven I/O cycle*
 
-![Interrupt](./img/11.png){: w="320" h = "340"}
+![Interrupt](./img/11.png){: w="26.67%"}
 *Intel Pentium processor event-vector table*
 
-![DMA](./img/12.png){: w="360" h = "360"}
+![DMA](./img/12.png){: w="30%"}
 *Steps in a DMA transfer*
 
 ### Blocking I/O vs Non-blocking I/O
@@ -140,7 +140,7 @@ tags: [computer science, os]
     * An asynchronous read() call 
         * *requests a transfer* that will be performed in its entirety but will complete at some future time.
 
-![Models](./img/13.png){: w="370" h = "340"}
+![Models](./img/13.png){: w="30.83%"}
 *Two I/O methods: (a) synchronous (b) asynchronous*
 
 ## File-System Interface
@@ -153,10 +153,10 @@ tags: [computer science, os]
     * Sequential access: Information in the file is processed in order, one record after the other.
     * Direct access: relative access: A file is made up of fixed-length logical records that allow programs to read and write records rapidly in no particular order.
 
-![Seq](./img/14.png){: w="310" h = "240"}
+![Seq](./img/14.png){: w="25.83%"}
 *Sequential-access file*
 
-![Dir](./img/15.png){: w="310" h = "280"}
+![Dir](./img/15.png){: w="25.83%"}
 *Simulation of sequential access on a directed-access file*
 
 * Directory Structure
@@ -167,25 +167,25 @@ tags: [computer science, os]
         * Tree-Structured Directories
         * Acyclic-Graph Directories
 
-![Single](./img/16.png){: w="350" h = "250"}
+![Single](./img/16.png){: w="29.17%"}
 *Single-level directory*
 
-![Two](./img/17.png){: w="370" h = "300"}
+![Two](./img/17.png){: w="30.83%"}
 *Two-level directory*
 
-![Tree](./img/18.png){: w="380" h = "370"}
+![Tree](./img/18.png){: w="31.67%"}
 *Tree-structured directory structure*
 
-![Acyclic](./img/19.png){: w="340" h = "340"}
+![Acyclic](./img/19.png){: w="28.33%"}
 *Acyclic-graph directory structure*
 
-![General](./img/20.png){: w="350" h = "340"}
+![General](./img/20.png){: w="29.17%"}
 *General graph directory*
 
 ## File-System Implementation
 * The file system itself is generally composed of many different levels.
 
-![Layer](./img/21.png){: w="240" h = "300"}
+![Layer](./img/21.png){: w="20%"}
 *Layered file system*
 
 * **Allocation Method** 
@@ -198,7 +198,7 @@ tags: [computer science, os]
 ### Contiguous Allocation
 * Requires that each file occupy a set of contiguous blocks on the device.
 
-![Contiguous](./img/22.png){: w="350" h = "370"}
+![Contiguous](./img/22.png){: w="29.17%"}
 *Contiguous allocation of disk space*
 
 ### Linked Allocation
@@ -207,7 +207,7 @@ tags: [computer science, os]
     * *need for compaction*
 * **Linked Allocation** solves all problems of contiguous allocation each file is a linked list of storage blocks the blocks may be scattered anywhere on the device.
 
-![Linked](./img/23.png){: w="350" h = "370"}
+![Linked](./img/23.png){: w="29.17%"}
 *Linked allocation of disk space*
 
 ### FAT: File Allocation Table
@@ -219,7 +219,7 @@ tags: [computer science, os]
 * A section of storage at the beginning of each volume is set aside to contain the table. 
     * the table has one entry for each block and is indexed by block number.
 
-![FAT](./img/24.png){: w="330" h = "350"}
+![FAT](./img/24.png){: w="27.5%"}
 *File Allocation Table*
 
 ### Indexed Allocation
@@ -228,11 +228,12 @@ tags: [computer science, os]
 * Each file has its own index block, which is an array of storage-block addresses.
     * the i-th entry in the index block points to the i-th block of the file.
 
-![Indexed](./img/25.png){: w="350" h = "370"}
+![Indexed](./img/25.png){: w="29.17%"}
 *Indexed allocation of disk space*
 
 ### Free-Space Management
 * To keep track of free disk space, the system maintains a *free-space list*.
 
-![Free](./img/26.png){: w="330" h = "370"}
+![Free](./img/26.png){: w="27.5%"}
 *Linked free-space list on disk*
+

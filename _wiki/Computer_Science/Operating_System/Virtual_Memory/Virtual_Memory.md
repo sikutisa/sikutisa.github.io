@@ -8,18 +8,18 @@ use_math: true
 * Abstracts main memory into an extremely large array of storage, separating logical memory from physical memory.
 * Provides an efficient mechanism for sharing files and libraries and process creation.
 
-![Diagram](./img/1.png){: w="370" h = "350"}
+![Diagram](./img/1.png){: w="30.83%"}
 *Diagram showing virtual memory that is larger than physical memory*
 
 * **Virtual Address Space** is the logical (or virtual) view of how a process is stored in memory.
 * Typically, begins a certain logical address, to say, address 0, and exists in contiguous memory.
 
-![Addr](./img/2.png){: w="260" h = "300"}
+![Addr](./img/2.png){: w="21.67%"}
 *Virtual address space of a process in memory*
 
 * Virtual Memory allows *files* and *memory* to be shared by two or more processes through **page sharing**.
 
-![Share](./img/3.png){: w="350" h = "340"}
+![Share](./img/3.png){: w="29.17%"}
 *Shared library using virtual memory*
 
 ## Demand Paging
@@ -35,7 +35,7 @@ use_math: true
         * *valid*: the page is both legal and in memory.
         * *invalid*: the either is not valid or currently in secondary storage.
 
-![PageTable](./img/4.png){: w="370" h = "370"}
+![PageTable](./img/4.png){: w="30.83%"}
 *Page table when some pages are not in main memory*
 
 * The procedure for handling the **Page Fault**:
@@ -46,7 +46,7 @@ use_math: true
     5. When the storage read is complete, *modify the internal table* and the page table to indicate that the page is now in memory.
     6. *Restart the instruction* that was interrupted by the trap.
 
-![PageFault](./img/5.png){: w="360" h = "350"}
+![PageFault](./img/5.png){: w="30%"}
 *Steps in handling a page fault*
 
 ### Pure Demand Paging
@@ -108,7 +108,7 @@ for (i = 0; i < 128; ++i)
 * To resolve page faults, OS maintains the **free frame list**: a pool of free frames for satisfying such requests.
 * Free frames must also be allocated when the stack or heap segments from a process expand.
 
-![List](./img/6.png){: w="320" h = "160"}
+![List](./img/6.png){: w="26.67%"}
 *List of free frames*
 
 ### Performance of Demand Paging
@@ -132,10 +132,10 @@ for (i = 0; i < 128; ++i)
 * *Copy* a shared page *only when* a process *writes* to a shared page.
 * Recall the process creation with **fork()** and **exec()**.
 
-![Before](./img/7.png){: w="350" h = "300"}
+![Before](./img/7.png){: w="29.17%"}
 *Before process 1 modifies page C*
 
-![After](./img/8.png){: w="350" h = "310"}
+![After](./img/8.png){: w="29.17%"}
 *After process 1 modifies page C*
 
 ## Page Replacement
@@ -145,7 +145,7 @@ for (i = 0; i < 128; ++i)
         * Then, we manage to demand-paged system with 10 frames spared.
     * However, what if the processes suddenly want to use all 10 pages, or need a huge buffer consuming more pages than available ones?
 
-![Need](./img/9.png){: w="420" h = "380"}
+![Need](./img/9.png){: w="35%"}
 *Need for page replacement*
 
 * **Page Replacement**
@@ -153,7 +153,7 @@ for (i = 0; i < 128; ++i)
     * Free a frame by writing its contents to swap space and changing the page table to indicate that the page is no longer in memory (invalid or dirty).
     * Now, use the freed frame to hold page for which the process faulted.
 
-![PR](./img/10.png){: w="360" h = "350"}
+![PR](./img/10.png){: w="30%"}
 *Page replacement*
 
 * Page Fault Service Routine includes Page Replacement
@@ -176,28 +176,28 @@ for (i = 0; i < 128; ++i)
 * What about the number of page frames?
     * Obviously, the more frames, the less page faults.
 
-![Graph](./img/11.png){: w="330" h = "300"}
+![Graph](./img/11.png){: w="27.5%"}
 *Graph of page faults versus number of frames*
 
 * An example to evaluate algorithms:
     * reference string: 7 0 1 2 0 3 0 4 2 3 0 3 0 3 2 1 2 0 1 7 0 1 in a memory with *three* frames.
     * 2가 도착했을 때, 7 0 1 중에 누구와 교체할 것 인가?
 
-![Ex](./img/12.png){: w="330" h = "200"}
+![Ex](./img/12.png){: w="27.5%"}
 
 ### FIFO Page Replacement
 * FIFO: First-In-First-Out: the simplest algorithm.
 * Choose **the oldest page** when a page must be replaced.
 * There are 15 page faults with our example.
 
-![FIFO](./img/13.png){: w="350" h = "240"}
+![FIFO](./img/13.png){: w="29.17%"}
 *FIFO page-replacement algorithm*
 
 ### Belady’s Anomaly
 * The page-fault rate **may increase** as *the number of allocated frames* **increases**.
     * e.g. • reference string: 1 2 3 4 1 2 5 1 2 3 4 5
 
-![Graph](./img/14.png){: w="340" h = "300"}
+![Graph](./img/14.png){: w="28.33%"}
 *Page-fault curve of FIFO replacement on a reference string*
 
 ### Optimal Page Replacement
@@ -210,7 +210,7 @@ for (i = 0; i < 128; ++i)
     * OPT requires *future knowledge* of the reference string.
         * used mainly for comparison studies.
 
-![OPT](./img/15.png){: w="350" h = "240"}
+![OPT](./img/15.png){: w="29.17%"}
 *Optimal page-replacement algorithm*
 
 ### LRU Page Replacement
@@ -225,7 +225,7 @@ for (i = 0; i < 128; ++i)
 * Locality of reference 관점에서 보면, 합리적일 수 있는 방법.
 * There are 12 page faults with our example.
 
-![LRU](./img/16.png){: w="350" h = "240"}
+![LRU](./img/16.png){: w="29.17%"}
 *LRU page-replacement algorithm*
 
 * LRU policy is considered to be good and is often used.
@@ -242,7 +242,7 @@ for (i = 0; i < 128; ++i)
         * Keep a stack of page numbers.
         * Note that entries must be removed from the middle of the stack.
 
-![LRU](./img/17.png){: w="320" h = "280"}
+![LRU](./img/17.png){: w="26.67%"}
 *Use of a stack to record the most recent page reference*
 
 * LRU-Approximation
@@ -258,7 +258,7 @@ for (i = 0; i < 128; ++i)
     * If the value is 1, give the page a second change and move on to select the next FIFO page.
 * When a page gets a second chance, its reference bit is cleared, and its arrival time is reset to the current time.
 
-![SC](./img/18.png){: w="330" h = "350"}
+![SC](./img/18.png){: w="27.5%"}
 *Second-chance (clock) page-replacement algorithm*
 
 ## Allocation of Frames
@@ -281,7 +281,7 @@ for (i = 0; i < 128; ++i)
 * **Thrashing** is a situation that a process is busy swapping pages in and out.
 * If a process *does not have enough pages*, the page-fault rate is very high.
 
-![Thrashing](./img/19.png){: w="330" h = "300"}
+![Thrashing](./img/19.png){: w="27.5%"}
 *Thrashing*
 
 ### Working-Set Model
@@ -292,8 +292,9 @@ for (i = 0; i < 128; ++i)
 * If a page is in active use, it will be in the working set.
 * If it is no longer being used, it will drop from the working set time units after its last reference.
 
-![Locality](./img/20.png){: w="310" h = "340"}
+![Locality](./img/20.png){: w="25.83%"}
 *Locality in a memory-reference pattern*
 
-![Working](./img/21.png){: w="340" h = "260"}
+![Working](./img/21.png){: w="28.33%"}
 *Working-set model*
+

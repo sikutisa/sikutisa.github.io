@@ -32,6 +32,21 @@ article img {
     max-width: 100%;
     height: auto;
 }
+.wiki-figure {
+    margin: 16px 0;
+    text-align: center;
+}
+.wiki-figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.wiki-figcaption {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #54595d;
+}
 article table {
     width: 100%;
     border-collapse: collapse;

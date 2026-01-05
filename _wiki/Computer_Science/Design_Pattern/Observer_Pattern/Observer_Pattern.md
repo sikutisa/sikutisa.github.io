@@ -18,7 +18,7 @@ tags: [computer science, oop, design pattern]
 
 ## Example
 ### Application Overview
-![Overview](./img/1.png){: w="420" h = "370"}
+![Overview](./img/1.png){: w="35%"}
 *Create an application using the WeatherData object to update three displays*
 
 ### The WeatherData class
@@ -71,32 +71,32 @@ public class WeatherData {
 * Publisher & Subscriber Model
     * Publisher : Subscriber = Subject : Observer
 
-![Overview](./img/2.png){: w="440" h = "380"}
+![Overview](./img/2.png){: w="36.67%"}
 *Model Overview*
 
-![Example](./img/3.png){: w="440" h = "350"}
+![Example](./img/3.png){: w="36.67%"}
 *Duck wants to subscribe*
 
-![Example](./img/4.png){: w="400" h = "350"}
+![Example](./img/4.png){: w="33.33%"}
 *Duck is now an observer, too*
 
-![Example](./img/5.png){: w="400" h = "350"}
+![Example](./img/5.png){: w="33.33%"}
 *Notifying the observers*
 
-![Example](./img/6.png){: w="400" h = "350"}
+![Example](./img/6.png){: w="33.33%"}
 *Mouse wants to unsubscribe*
 
-![Example](./img/7.png){: w="410" h = "350"}
+![Example](./img/7.png){: w="34.17%"}
 *Notifying the observers*
 
 ### The Observer Pattern Defined
 * The Observer Pattern defines a **one-to-many dependency** between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
-![Example](./img/8.png){: w="440" h = "360"}
+![Example](./img/8.png){: w="36.67%"}
 
 ### Class Diagram for Observer Pattern
 
-![Diagram](./img/9.png){: w="380" h = "360"}
+![Diagram](./img/9.png){: w="31.67%"}
 
 ## The Power of Loose Coupling
 * Principle of loose coupling
@@ -106,7 +106,7 @@ public class WeatherData {
 
 ## Designing the Weather Station
 
-![Diagram](./img/10.png){: w="450" h = "390"}
+![Diagram](./img/10.png){: w="37.5%"}
 
 ### Preparing Interfaces
 ```java
@@ -210,7 +210,7 @@ public class WeatherStation {
 ```
 
 ## Using Java’s Official Observable Class
-![Diagram](./img/11.png){: w="450" h = "390"}
+![Diagram](./img/11.png){: w="37.5%"}
 
 ### How to Use Observable Class
 * Observable (Publisher) side
@@ -324,3 +324,4 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
     }
 }
 ```
+

@@ -107,11 +107,11 @@ public class DuckTestDrive {
 ## Object Adapter v.s. Class Adapter
 * Object Adapter: uses object composition and delegation
 
-![diagram](./img/1.png){: w="350" h = "300"}
+![diagram](./img/1.png){: w="29.17%"}
 
 * Class Adapter: uses inheritance
 
-![diagram](./img/2.png){: w="350" h = "300"}
+![diagram](./img/2.png){: w="29.17%"}
 
 ## Implementation Issues
 * How much adaptation?
@@ -135,7 +135,7 @@ public class DuckTestDrive {
 
 
 ### Adapting Enumeration to Iterator (EnumerationIterator)
-![diagram](./img/3.png){: w="360" h = "320"}
+![diagram](./img/3.png){: w="30%"}
 
 ### EnumerationIterator Adapter
 ```java
@@ -165,3 +165,4 @@ public class EnumerationIterator implements Iterator {
     * Converts the interface of a class into another interface clients expect. 
     * Lets classes work together that couldn’t otherwise because of incompatible interfaces.
     * Class adapter and object adapter.
+

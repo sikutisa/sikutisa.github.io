@@ -9,13 +9,13 @@ tags: [computer science, os]
     * a basic unit of CPU utilization.
     * comprises a *thread ID*, a *program counter*, a *register set*, and a *stack*.
 
-![Threads](./img/1.png){: w="460" h = "350"}
+![Threads](./img/1.png){: w="38.33%"}
 *Single-threaded and multithreaded processes*
 
 ## Multithreading
 * Let us consider the case of client-server system, e.g., a web server.
 
-![Multithread](./img/2.png){: w="420" h = "320"}
+![Multithread](./img/2.png){: w="35%"}
 *Multithread server architecture*
 
 * The benefits of multithreaded programming:
@@ -119,10 +119,10 @@ public class ThreadExample3 {
     * single-core: threads will be interleaved over time.
     * multiple-cores: some threads can run in parallel.
 
-![SingleCore](./img/3.png){: w="480" h = "270"}
+![SingleCore](./img/3.png){: w="40%"}
 *Concurrent execution on a single-core system*
 
-![DualCore](./img/4.png){: w="400" h = "330"}
+![DualCore](./img/4.png){: w="33.33%"}
 *Parallel execution on a multicore system*
 
 * Programming Challenges in Multicore systems.
@@ -135,7 +135,7 @@ public class ThreadExample3 {
 ### Types of parallelism
 * 최근에는 분산 시스템의 발전으로 아래처럼 단순한 예시가 덜 의미있음
 
-![parallelism](./img/5.png){: w="380" h = "350"}
+![parallelism](./img/5.png){: w="31.67%"}
 *Data parallelism and task parallelism*
 
 ### [Amdahl’s Law](https://en.wikipedia.org/wiki/Amdahl%27s_law)
@@ -151,17 +151,17 @@ public class ThreadExample3 {
 * Three relationships between user and kernel threads
 * Many-to-One Model
 
-![ManyToOne](./img/6.png){: w="370" h = "330"}
+![ManyToOne](./img/6.png){: w="30.83%"}
 *Many-to-one model*
 
 * One-to-One Model
 
-![OneToOne](./img/7.png){: w="370" h = "330"}
+![OneToOne](./img/7.png){: w="30.83%"}
 *One-to-one model*
 
 * Many-to-Many Model
 
-![ManyToMany](./img/8.png){: w="370" h = "330"}
+![ManyToMany](./img/8.png){: w="30.83%"}
 *Many-to-Many model*
 
 ## Thread Libraries
@@ -315,3 +315,4 @@ int main(int argc, char *argv[])
     return 0;
 }
 ```
+

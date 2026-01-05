@@ -12,12 +12,12 @@ use_math: true
     * We need to make sure that each process has a *separate memory space*.
     * A pair of registers: *base register* and *limit register* provides the ability to determine the range of *legal* addresses.
 
-![AddressSpace](./img/1.png){: w="290" h = "360"}
+![AddressSpace](./img/1.png){: w="24.17%"}
 *A base and a limit register define a logical address space*
 
 * Protection of memory space is accomplished by having the CPU hardware compare every address generated in user mode with the registers.
 
-![Hardware](./img/2.png){: w="360" h = "320"}
+![Hardware](./img/2.png){: w="30%"}
 *Hardware address protection with base and limit registers*
 
 ### Address Binding
@@ -29,7 +29,7 @@ use_math: true
     * A linker or loader in turn binds the *relocatable* addresses to *absolute* addresses.
 
 
-![Multistep](./img/3.png){: w="310" h = "390"}
+![Multistep](./img/3.png){: w="25.83%"}
 *Multistep processing of a user program*
 
 ### Logical vs Physical Address Space
@@ -41,10 +41,10 @@ use_math: true
 * **MMU** (Memory Management Unit): a hardware device that maps from logical address to physical address.
     * *relocation register*: a base register in MMU.
 
-![MMU](./img/4.png){: w="320" h = "280"}
+![MMU](./img/4.png){: w="26.67%"}
 *Memory management unit (MMU)*
 
-![relocation register](./img/5.png){: w="320" h = "280"}
+![relocation register](./img/5.png){: w="26.67%"}
 *Dynamic relocation using a relocation register*
 
 ### Dynamic Loading
@@ -75,7 +75,7 @@ use_math: true
 * Prevent a process from accessing memory that it does not own.
     * by combining two ideas: *relocation register + limit register*.
 
-![HWSupport](./img/6.png){: w="320" h = "280"}
+![HWSupport](./img/6.png){: w="26.67%"}
 *Hardware support for relocation and limit registers*
 
 ### Memory Allocation
@@ -83,7 +83,7 @@ use_math: true
     * Assign processes to variably sized partitions in memory, where each partition may contain exactly one process.
 * **Hole**: a block of available memory.
 
-![Partition](./img/7.png){: w="340" h = "280"}
+![Partition](./img/7.png){: w="28.33%"}
 *Variable partition*
 
 * The Problem of *Dynamic* Storage Allocation
@@ -115,11 +115,11 @@ use_math: true
         * a **page number** (p)
         * a **page offset** (d)
 
-![address](./img/8.png){: w="340" h = "200"}
+![address](./img/8.png){: w="28.33%"}
 
 * The page number is used as an index into a per-process **page table**.
 
-![Paging hardware](./img/9.png){: w="380" h = "360"}
+![Paging hardware](./img/9.png){: w="31.67%"}
 *Paging hardware*
 
 * Outlines of the steps taken by the CPU to translate a *logical address* to a *physical address*.
@@ -127,21 +127,21 @@ use_math: true
     2. Extract the corresponding frame number 𝑓 from the page table.
     3. Replace the page number 𝑝 with the frame number 𝑓.
 
-![Paging hardware](./img/10.png){: w="360" h = "360"}
+![Paging hardware](./img/10.png){: w="30%"}
 *Paging model of logical and physical memory*
 
 * The *page size* (like the *frame size*) is defined by the hardware.
     * A power of 2: typically varying bet5ween 4KB and 1GB per page.
     * If the size of **logical address space** is $2^𝑚$, and a page size is $2^𝑛$, then the high-order 𝑚 − 𝑛 bits designate the *page number*, and the low-order 𝑛 bits designate *the page offset*.
 
-![address](./img/11.png){: w="340" h = "210"}
+![address](./img/11.png){: w="28.33%"}
 
-![Example](./img/12.png){: w="330" h = "420"}
+![Example](./img/12.png){: w="27.5%"}
 *Paging example for a 32-byte memory with a 4-byte pages*
 
 * When a process arrives in the system to be executed, its size expressed in pages is examined for memory allocation.
 
-![Example](./img/13.png){: w="360" h = "340"}
+![Example](./img/13.png){: w="30%"}
 *Free frames (a) before allocation and (b) after allocation*
 
 * Hardware Support
@@ -156,7 +156,7 @@ use_math: true
 ### Translation Look-aside Buffer (TLB)
 * **TLB** is a special, small, fast-lookup hardware cache memory. 
 
-![TLB](./img/14.png){: w="360" h = "350"}
+![TLB](./img/14.png){: w="30%"}
 *Paging hardware with TLB*
 
 * Effective Memory-Access Time
@@ -174,7 +174,7 @@ use_math: true
     * When this bit is set to **invalid**: the page is not in the process’s logical address space. (*illegal*)
     * Illegal addresses are trapped by use of the valid-invalid bit.
 
-![bits](./img/15.png){: w="350" h = "370"}
+![bits](./img/15.png){: w="29.17%"}
 *Valid bit (v) or invalid bit (i) in a page table*
 
 ### Shared Pages
@@ -184,7 +184,7 @@ use_math: true
     * however, it can be *shared* if the code is *reentrant code*.
 * *Reentrant code* is non-self-modifying code, that is, it never changes during execution.
 
-![Sharing](./img/16.png){: w="350" h = "380"}
+![Sharing](./img/16.png){: w="29.17%"}
 *Sharing of standard C library in a paging environment*
 
 ## Structure of the Page Table
@@ -197,22 +197,22 @@ use_math: true
 ### Hierarchical Paging
 * Breaks up the logical address space into multiple tables.
 
-![Hierarchical](./img/17.png){: w="340" h = "380"}
+![Hierarchical](./img/17.png){: w="28.33%"}
 *A two-level page-table architecture*
 
-![Hierarchical](./img/18.png){: w="320" h = "280"}
+![Hierarchical](./img/18.png){: w="26.67%"}
 *Address translation for a two-level 32-bit paging architecture*
 
 ### Hashed Page Tables
 * Hashed Page Tables for handling address space larger than 32 bits, use a hashed table with the hash value being the virtual page number.
 
-![Hashed](./img/19.png){: w="350" h = "300"}
+![Hashed](./img/19.png){: w="29.17%"}
 *Hashed page table*
 
 ### Inverted Page Tables
 * Rather than having a page table, use an inverted page table one entry for each real page consisting of the virtual address with information about the process.
 
-![Inverted](./img/20.png){: w="350" h = "300"}
+![Inverted](./img/20.png){: w="29.17%"}
 *Inverted page table*
 
 ## Swapping
@@ -224,7 +224,7 @@ use_math: true
 * Standard Swapping moves entire processes between main memory and a backing store.
 * The cost of swapping entire processes is too prohibitive.
 
-![Swap](./img/21.png){: w="340" h = "330"}
+![Swap](./img/21.png){: w="28.33%"}
 *Standard swapping of two processes using a disk as a backing store*
 
 ### Swapping with Paging
@@ -235,5 +235,6 @@ use_math: true
     * **page in**: moves a page from backing store to memory.
 * Paging works well in conjunction with the *virtual memory*.
 
-![Swap](./img/22.png){: w="330" h = "360"}
+![Swap](./img/22.png){: w="27.5%"}
 *Swapping with paging*
+

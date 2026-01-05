@@ -51,7 +51,7 @@ tags: [computer science, database]
 * **View level**: application programs hide details of data types.
     *  Views can also hide information (such as an employee’s salary) for security purposes. 
 
-![Architecture](./img/1.png){: w="350" h = "330"}
+![Architecture](./img/1.png){: w="29.17%"}
 *An architecture for a database system*
 
 ### Instances and Schemas
@@ -172,7 +172,7 @@ tags: [computer science, database]
 2.	Optimization
 3.	Evaluation
 
-![Processing](./img/2.png){: w="440" h = "400"}
+![Processing](./img/2.png){: w="36.67%"}
 
 ### Transaction Management
 * A **transaction** is a collection of operations that performs a single logical function in a database application.
@@ -192,7 +192,7 @@ tags: [computer science, database]
     * Geographical distribution
     * Schema/data heterogeneity
 
-![Architecture](./img/3.png){: w="380" h = "450"}
+![Architecture](./img/3.png){: w="31.67%"}
 *Database Architecture(Centralized/Shared-Memory)*
 
 ### Database Applications
@@ -202,5 +202,6 @@ tags: [computer science, database]
         * The client end communicates with an application server, usually through a forms interface.  
         * The application server in turn communicates with a database system to access data.  
 
-![Architecture](./img/4.png){: w="380" h = "350"}
+![Architecture](./img/4.png){: w="31.67%"}
 *Two-tier and three-tier architectures*
+

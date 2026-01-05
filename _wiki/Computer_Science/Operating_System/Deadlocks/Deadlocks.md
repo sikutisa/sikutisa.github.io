@@ -69,16 +69,16 @@ void *do_work_two(void *param)
     * A directed edge: 𝑅𝑗 → 𝑇𝑖 (**assignment edge**)
         * signifies that an instance of 𝑅𝑗 has been allocated to a thread 𝑇𝑖.
 
-![Example](./img/1.png){: w="340" h = "300"}
+![Example](./img/1.png){: w="28.33%"}
 *Resource-allocation graph for program in upper example code*
 
-![Resource-allocation graph](./img/2.png){: w="480" h = "360"}
+![Resource-allocation graph](./img/2.png){: w="40%"}
 *Resource-allocation graph*
 
-![DeadlockGraph](./img/3.png){: w="460" h = "360"}
+![DeadlockGraph](./img/3.png){: w="38.33%"}
 *Resource-allocation graph with a deadlock*
 
-![DeadlockGraph](./img/4.png){: w="420" h = "360"}
+![DeadlockGraph](./img/4.png){: w="35%"}
 *Resource-allocation graph with a cycle but no deadlock*
 
 * An important observation
@@ -166,7 +166,7 @@ transaction(saving_account, checking_account, 50.0);
 * A system is in a safe state if only if there exists a **safe sequence**.
 * A sequence of threads *〈𝑇1, 𝑇2, ⋯ , 𝑇𝑛〉* is a *safe sequence*, if, for each thread 𝑇𝑖, the resources that 𝑇𝑖 can still request can be satisfied by the currently available resources + resources held by all 𝑇𝑗, with 𝑗 < 𝑖.
 
-![State](./img/5.png){: w="310" h = "310"}
+![State](./img/5.png){: w="25.83%"}
 *Safe, unsafe, and deadlocked state spaces*
 
 * Basic facts
@@ -189,10 +189,10 @@ transaction(saving_account, checking_account, 50.0);
 * If **no cycle** exists, the request can be *granted* immediately, since the resource allocation will leave the system in a *safe state*.
 * If a *cycle* is *detected*, then the request *cannot be granted*, since the resource allocation will put the system in an *unsafe state*.
 
-![Graph1](./img/6.png){: w="300" h = "300"}
+![Graph1](./img/6.png){: w="25%"}
 *Resource-allocation graph for deadlock avoidance*
 
-![Graph2](./img/7.png){: w="300" h = "300"}
+![Graph2](./img/7.png){: w="25%"}
 *An unsafe state in a resource-allocation graph*
 
 ### Banker's Algorithm
@@ -236,11 +236,11 @@ transaction(saving_account, checking_account, 50.0);
 * The number of instances of each resource types: 𝐴 = 10,𝐵 = 5, 𝐶 = 7
 * The snapshot representing the current state of the system:
 
-![Snapshot1](./img/8.png){: w="340" h = "300"}
+![Snapshot1](./img/8.png){: w="28.33%"}
 
 * Note that 𝑁𝑒𝑒𝑑[𝑖][𝑗] = 𝑀𝑎𝑥[𝑖][𝑗] − 𝐴𝑙𝑙𝑜𝑐𝑎𝑡𝑖𝑜𝑛[𝑖][𝑗].
 
-![Snapshot2](./img/9.png){: w="370" h = "300"}
+![Snapshot2](./img/9.png){: w="30.83%"}
 
 * Now we claim that the system is currently in a safe state.
     * In deed, the sequence 〈𝑇1, 𝑇3, 𝑇4, 𝑇2, 𝑇0〉 satisfies the safety criteria.
@@ -301,7 +301,7 @@ all elements in Finish vector are true
         * (3,3,2) − (1,0,2) = (2,3,0)
         * (1,2,2) − (1,0,2) = (0,2,0)
 
-![Snapshot3](./img/10.png){: w="330" h = "290"}
+![Snapshot3](./img/10.png){: w="27.5%"}
 
 * Now, determine whether this new system state is safe.
     * Safety algorithm finds that 〈𝑇1, 𝑇3, 𝑇4, 𝑇0, 𝑇2〉 satisfies the safety. 
@@ -331,7 +331,7 @@ all elements in Finish vector are true
     * Maintain a **wait-for graph**, a variant of the resource-allocation graph.
     * *Periodically, invoke an algorithm* that searches for a cycle in the wait-for graph.
 
-![Graphs](./img/11.png){: w="400" h = "340"}
+![Graphs](./img/11.png){: w="33.33%"}
 *(a) Resource-allocation graph (b) Corresponding wait-for graph*
 
 * *Several Instances* of a Resource Type
@@ -360,14 +360,14 @@ all elements in Finish vector are true
 * The number of instances of each resource types: 𝐴 = 7, 𝐵 = 2, 𝐶 = 6.
 * The snapshot representing the current state of the system:
 
-![Snapshot4](./img/12.png){: w="330" h = "300"}
+![Snapshot4](./img/12.png){: w="27.5%"}
 
 * Now we claim that the system is not in a deadlocked state.
     * the sequence 〈𝑇0, 𝑇2, 𝑇3, 𝑇1, 𝑇4〉 results in 𝐹𝑖𝑛𝑖𝑠ℎ[𝑖] == 𝑡𝑟𝑢𝑒 for all 𝑖.
 * Now we claim that the system is now deadlocked.
     * a deadlock exists, consisting of threads 𝑇1, 𝑇2, 𝑇3, and 𝑇4.
 
-![Snapshot5](./img/13.png){: w="330" h = "300"}
+![Snapshot5](./img/13.png){: w="27.5%"}
 
 ## Recovery from Deadlock
 * *When* should we invoke the detection algorithm?

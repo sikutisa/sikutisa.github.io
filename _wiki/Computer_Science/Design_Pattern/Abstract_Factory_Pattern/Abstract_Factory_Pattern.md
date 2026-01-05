@@ -25,7 +25,7 @@ tags: [computer science, oop, design pattern]
 * Have different appearances and behavior for a large set of subclasses.
     * scroll bars, windows, buttons, etc.
 
-![diagram](./img/1.png){: w="380" h = "340"}
+![diagram](./img/1.png){: w="31.67%"}
 
 ### Factory Object Set-up and Delegation
 ```java
@@ -59,10 +59,10 @@ public class DriverForWinXP {
 ```
 
 ### Class Diagram for GUIFactory
-![diagram](./img/2.png){: w="380" h = "370"}
+![diagram](./img/2.png){: w="31.67%"}
 
 ### Class Diagram for Abstract Factory Pattern
-![diagram](./img/3.png){: w="370" h = "350"}
+![diagram](./img/3.png){: w="30.83%"}
 
 ## Participants
 * AbstractFactory
@@ -250,11 +250,11 @@ public class CheesePizza extends Pizza {
         * Supporting new kinds of products is difficult.
             * Fixes set of parts to be created.
 
-![diagram](./img/4.png){: w="360" h = "390"}
+![diagram](./img/4.png){: w="30%"}
 *Supporting new kinds of products is difficult (not impossible, but costly)*
 
 
-![diagram](./img/5.png){: w="370" h = "350"}
+![diagram](./img/5.png){: w="30.83%"}
 *Supporting additional factory object is easy*
 
 ## Related Patterns
@@ -274,3 +274,4 @@ public class CheesePizza extends Pizza {
 * Abstract Factory
     * Provide an interface for creating **families of** related or dependent **objects** without specifying their concrete classes
     * Object-scope pattern (uses object composition & delegation).
+

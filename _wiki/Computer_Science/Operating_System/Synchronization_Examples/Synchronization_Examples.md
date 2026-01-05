@@ -377,7 +377,7 @@ class SharedDB {
 
 * Need to allocate *several resources* among *several processes* in a **deadlock-free** and **starvation-free manner**.
 
-![Philosopher](./img/1.png){: w="320" h = "320"}
+![Philosopher](./img/1.png){: w="26.67%"}
 *The situation of the dining philosophers*
 
 ### Semaphore Solution
@@ -685,3 +685,4 @@ class DiningPhilosopherMonitor {
     1. **Transactional Memory**
     2. **OpenMP**
     3. **Functional Programming Language**
+

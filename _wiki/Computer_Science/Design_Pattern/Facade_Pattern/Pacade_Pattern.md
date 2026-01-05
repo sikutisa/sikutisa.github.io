@@ -15,7 +15,7 @@ tags: [computer science, oop, design pattern]
 *  Provides a unified interface to a set of interfaces in a subsystem. 
     * It defines a higher-level interface that makes a subsystem easier to use.
 
-![diagram](./img/1.png){: w="340" h = "300"}
+![diagram](./img/1.png){: w="28.33%"}
 
 
 ## Motivation
@@ -40,9 +40,9 @@ tags: [computer science, oop, design pattern]
 
 
 ## Example
-![ex](./img/2.png){: w="320" h = "300"}
+![ex](./img/2.png){: w="26.67%"}
 
-![ex](./img/3.png){: w="310" h = "300"}
+![ex](./img/3.png){: w="25.83%"}
 
 ### Example Code
 ```java
@@ -72,13 +72,13 @@ void Compiler::Compile(istream& input, BytecodeStream& output) {
 ```
 
 ### Facade Example
-![ex](./img/4.png){: w="320" h = "300"}
+![ex](./img/4.png){: w="26.67%"}
 
 ### Known Uses: Web Applications
-![ex](./img/5.png){: w="340" h = "280"}
+![ex](./img/5.png){: w="28.33%"}
 
 ### Facade in Layered Architecture
-![ex](./img/6.png){: w="320" h = "300"}
+![ex](./img/6.png){: w="26.67%"}
 
 ## Comparing the Facade with the Adapter Pattern
 * Are there existing classes?
@@ -108,7 +108,7 @@ public float BetterExample() {
 }
 ```
 
-![ex](./img/7.png){: w="340" h = "280"}
+![ex](./img/7.png){: w="28.33%"}
 
 ```java
 public class Car {
@@ -144,3 +144,4 @@ public class Car {
     * Unidirectional rather than cooperative interactions between object and subsystem.
     * The subsystem doesn’t know about the Facade.
     * Facade doesn’t add functionality, Mediator does.
+

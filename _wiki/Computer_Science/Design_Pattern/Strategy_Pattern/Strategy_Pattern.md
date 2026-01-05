@@ -19,7 +19,7 @@ tags: [computer science, oop, design pattern]
     * Every duck swims in the same way.
     * Every duck requires its own display implementation.
 
-![Original](./img/1.png){: w="420" h = "380"}
+![Original](./img/1.png){: w="35%"}
 *Our Original Design*
 
 ### Requirement Changes...
@@ -27,14 +27,14 @@ tags: [computer science, oop, design pattern]
 * We just got additional requirement - We need to add fly behavior to ducks.
 * Let's add it to the base class!
 
-![First](./img/2.png){: w="420" h = "380"}
+![First](./img/2.png){: w="35%"}
 *Our First Attempt*
 
 ### Add a Rubber Duck
 * A rubber duck can't fly, at least in our application!
 * Overriding RubberDuck would solve the problem.
 
-![Override](./img/3.png){: w="420" h = "380"}
+![Override](./img/3.png){: w="35%"}
 *Overriding RubberDuck*
 
 ### More and More Ducks to Override
@@ -47,7 +47,7 @@ tags: [computer science, oop, design pattern]
 * A great use of inheritance for the purpose of *reuse* hasn't turned out so well when time comes to *maintenance*.
 
 ### Our Second Attempt: How about an Interface?
-![Second](./img/4.png){: w="450" h = "350"}
+![Second](./img/4.png){: w="37.5%"}
 *Our Second Attempt*
 
 * Completely **destroy code reuse**.
@@ -73,7 +73,7 @@ tags: [computer science, oop, design pattern]
 * The declared type of the variables should be a super type.
     * The class declaring them doesn't have to know the actual object types.
 
-![Interface](./img/5.png){: w="430" h = "330"}
+![Interface](./img/5.png){: w="35.83%"}
 
 * **Programming to an implementation** would be:
 
@@ -97,7 +97,7 @@ a.makeSound();
 ```
 
 ## Improved Design
-![Improved](./img/6.png){: w="340" h = "360"}
+![Improved](./img/6.png){: w="28.33%"}
 
 ### Class Duck
 ```java
@@ -212,7 +212,7 @@ public abstract class Duck {
 ```
 
 ### The Big Picture
-![BigPicture](./img/7.png){: w="480" h = "440"}
+![BigPicture](./img/7.png){: w="40%"}
 
 ## Design principle: Favor Composition Over Inheritance (or Composing Objects Principle)
 * Classes should achieve polymorphic behavior and code reuse
@@ -222,7 +222,7 @@ public abstract class Duck {
 * **Favor (Object) Composition over (Class) Inheritance**
     * Most design patterns emphasize object composition over inheritance whenever it is possible.
 
-![Eg](./img/8.png){: w="370" h = "310"}
+![Eg](./img/8.png){: w="30.83%"}
 
 ## Reuse in Object-Oriented System
 1. Class Inheritance
@@ -251,7 +251,7 @@ public abstract class Duck {
     * And makes them interchangeable.
 * Strategy Pattern lets the algorithm vary independently from clients that use it.
 
-![StrategyPattern](./img/9.png){: w="380" h = "340"}
+![StrategyPattern](./img/9.png){: w="31.67%"}
 *Strategy Pattern*
 
 ### Sorting Example
@@ -260,5 +260,5 @@ public abstract class Duck {
 * One way to solve this problem is to write a function for each sorting algorithm.
 * A better way is to use the Strategy pattern.
 
-![StrategyPattern](./img/10.png){: w="380" h = "340"}
+![StrategyPattern](./img/10.png){: w="31.67%"}
 *Sorting Example*

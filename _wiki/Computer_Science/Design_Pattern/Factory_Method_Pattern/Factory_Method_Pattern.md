@@ -122,7 +122,7 @@ pubilc class PizzaStore {
 * It looks like we are just pushing the problem off to another object.
 
 ### Simple Factory (not an official pattern)
-![diagram](./img/1.png){: w="380" h = "340"}
+![diagram](./img/1.png){: w="31.67%"}
 
 ### Franchising the pizza store
 * Different styles
@@ -176,7 +176,7 @@ public abstract class PizzaStore {
     * Any dependencies on concrete “product” classes are encapsulated in the subclass.
 
 ### Allowing the subclasses to decide
-![diagram](./img/2.png){: w="340" h = "330"}
+![diagram](./img/2.png){: w="28.33%"}
 
 ```java
 // NYPizzaStore
@@ -303,13 +303,13 @@ public class PizzaTestDrive {
 ### Applying Factory Method Pattern
 * The Factory Method pattern encapsulates object creation by letting subclasses decide what objects to create.
 
-![diagram](./img/3.png){: w="430" h = "380"}
+![diagram](./img/3.png){: w="35.83%"}
 
 ### Factory Method Pattern
 * Defines an interface for creating an object, but lets subclasses decide which class to instantiate. 
 * Factory Method lets a class defer instantiation to subclasses.
 
-![diagram](./img/4.png){: w="360" h = "340"}
+![diagram](./img/4.png){: w="30%"}
 
 ### A very dependent PizzaStore (bad design)
 ```java
@@ -345,7 +345,7 @@ public class DependentPizzaStore {
 ```
 
 ### Dependent PizzaStore VS Factory Method
-![diagram](./img/5.png){: w="400" h = "370"}
+![diagram](./img/5.png){: w="33.33%"}
 
 ## Design Principle: Dependency Inversion Principle
 * Dependency Inversion Principle
@@ -359,3 +359,4 @@ public class DependentPizzaStore {
     * **Creator class** is written in such a fashion that it does not know what actual Concrete Product class will be instantiated. 
     * The **Concrete Product** class to be instantiated is determined solely by which **Concrete Creator** subclass is instantiated and used by the application.
     * **It does not mean that the subclass decides at runtime which ConcreteProduct class to create**.
+

@@ -3,7 +3,7 @@ tags: [computer science, database]
 use_math: true
 ---
 # Relational Model
-![Example](./img/1.png){: w="360" h = "400"}
+![Example](./img/1.png){: w="30%"}
 *Example of a Instructor  Relation*
 
 ## Structure of Relational Databases
@@ -43,7 +43,7 @@ use_math: true
 * Example
     * schema: *instructor(ID, name, dept_name, salary)*
 
-![Example](./img/2.png){: w="360" h = "400"}
+![Example](./img/2.png){: w="30%"}
 *Example of a Instance*
 
 ## Keys
@@ -74,7 +74,7 @@ use_math: true
 ## Schema Diagrams
 * A database schema, along with primary key and foregin key constraints, can be depicted by **schema diagrams**.
 
-![Schema](./img/3.png){: w="480" h = "420"}
+![Schema](./img/3.png){: w="40%"}
 *Schema Diagram for University Database*
 
 * Primary key attributes are show underlined.
@@ -120,7 +120,7 @@ use_math: true
 * e.g. select those tuples of the *instructor* relation where the instructor is in the “Physics” department.
     * $\sigma_{dept \\_ name = "Physics"}(instructor)$
 
-![Result](./img/4.png){: w="360" h = "300"}
+![Result](./img/4.png){: w="30%"}
 *Result*
 
 * We allow compasions using $=, \neq, >, \geq, <, \leq$ in the selection predicate.
@@ -140,7 +140,7 @@ use_math: true
 * e.g. eliminate the dept_name attribute of instructor
     * $\Pi_{ID, name, salary}(instructor)$
 
-![Result](./img/5.png){: w="320" h = "360"}
+![Result](./img/5.png){: w="26.67%"}
 *Result*
 
 ### Composition of Relational Operations
@@ -159,7 +159,7 @@ use_math: true
     * instructor.ID
     * teaches.ID
 
-![Result](./img/6.png){: w="380" h = "440"}
+![Result](./img/6.png){: w="31.67%"}
 *The  instructor  X  teaches  table*
 
 ### Join Operation
@@ -169,7 +169,7 @@ use_math: true
     * $\sigma_{instructor.id = teaches.id}(instructor \times teaches)$
     * We get only those tuples of “instructor  X  teaches” that pertain to instructors and the courses that they taught.
 
-![Result](./img/7.png){: w="420" h = "360"}
+![Result](./img/7.png){: w="35%"}
 *Result*
 
 * The **join** operation allows us to combine a select operation and a Cartesian-Product operation into a single operation.
@@ -189,7 +189,7 @@ use_math: true
 * e.g. to find all courses taught in the Fall 2017 semester, or in the Spring 2018 semester, or in both
     * $\Pi_{course \\_ id}(\sigma_{semester = "Fall" \wedge year = 2017}(section)) \cup \Pi_{course \\_ id}(\sigma_{semester = "Spring" \wedge year = 2018}(section))$
 
-![Result](./img/8.png){: w="300" h = "360"}
+![Result](./img/8.png){: w="25%"}
 *Result*
 
 ### Set-Intersection Operation
@@ -201,7 +201,7 @@ use_math: true
 * e.g. Find the set of all courses taught in both the Fall 2017 and the Spring 2018 semesters.
     * $\Pi_{course \\_ id}(\sigma_{semester = "Fall" \wedge year = 2017}(section)) \cap \Pi_{course \\_ id}(\sigma_{semester = "Spring" \wedge year = 2018}(section))$
 
-![Result](./img/9.png){: w="300" h = "280"}
+![Result](./img/9.png){: w="25%"}
 *Result*
 
 ### Set Difference Operation
@@ -213,7 +213,7 @@ use_math: true
 * e.g. to find all courses taught in the Fall 2017 semester, but not in the Spring 2018 semester.
     * $\Pi_{course \\_ id}(\sigma_{semester = "Fall" \wedge year = 2017}(section)) - \Pi_{course \\_ id}(\sigma_{semester = "Spring" \wedge year = 2018}(section))$
 
-![Result](./img/10.png){: w="300" h = "280"}
+![Result](./img/10.png){: w="25%"}
 *Result*
 
 ### The Assignment  Operation 
@@ -240,3 +240,4 @@ use_math: true
     * $(\sigma_{dept \\_ name = "Physics"}(instructor)) \Join_{instructor.ID = teaches.ID} teaches$
 * The two queries are not identical; they are, however, equivalent.
     * they give the same result on any database.
+

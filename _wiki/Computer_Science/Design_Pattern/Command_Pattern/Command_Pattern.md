@@ -17,10 +17,10 @@ toc: true
 ## Example
 ### Given Hardware
 
-![hw](./img/1.png){: w="360" h = "360"}
+![hw](./img/1.png){: w="30%"}
 
 ### Our Vendor Classes
-![vendor](./img/2.png){: w="380" h = "380"}
+![vendor](./img/2.png){: w="31.67%"}
 
 ### Without Using Command Pattern
 * Never do this!
@@ -131,15 +131,15 @@ public class LightOffCommand implements Command {
     * Each command object exposes only execute (and undo) method.
 
 ### Our Approach
-![approach](./img/3.png){: w="380" h = "400"}
+![approach](./img/3.png){: w="31.67%"}
 
 * **Encapsulates a request as an object**
     * Thus, let you parameterize clients with different requests, queue or log requests, and support undoable operations.
 
-![uml](./img/4.png){: w="360" h = "340"}
+![uml](./img/4.png){: w="30%"}
 
 ### Collaborations
-![coll](./img/5.png){: w="380" h = "330"}
+![coll](./img/5.png){: w="31.67%"}
 
 ### Extending the Remote Control
 ```java
@@ -210,7 +210,7 @@ public class RemoteLoader {
 ```
 
 ### After Setting the Commands
-![after](./img/6.png){: w="360" h = "360"}
+![after](./img/6.png){: w="30%"}
 
 ### Supporting Undo
 ```java
@@ -374,7 +374,7 @@ public class DelayedTyper implements Command {
 ```
 
 ### Class Diagram for DelayedTyper
-![diagram](./img/7.png){: w="370" h = "340"}
+![diagram](./img/7.png){: w="30.83%"}
 
 ## Review
 * Command **decouples** the **object that invokes** the operation from the **one that knows how to perform it**.
@@ -382,3 +382,4 @@ public class DelayedTyper implements Command {
 * You can assemble commands into a composite command.
     * E.g. MacroCommand class 
     * In general, composite commands are an instance of Composite pattern
+
