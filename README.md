@@ -61,19 +61,18 @@ autocmd BufWritePre * call VimwikiAutoMkDir()
 ```
 
 ### 플러그인 설치
-* Vim을 열고 다음 명령 실행
+* Vim에서 실행
 ```vim
 :PlugInstall
 ```
 
 ## Vimwiki 기본 사용법
-* Vim을 열고 다음 명령어를 실행하면 wiki index가 열림
+* Wiki index 열기
 ```vim
 :VimwikiIndex
 ```
 
-* index에 글을 쓰고, 커서를 올려놓은 상태에서 엔터를 치면 문서 생성
-* 폴더를 만들고 싶으면 폴더명까지 넣으면 됨
+* 문서 생성/폴더 생성
 ```vim
 # Before
 테스트
@@ -84,8 +83,8 @@ subfolder/테스트2
 [[subfolder/테스트2]]
 ```
 
-* 문서에 커서를 올려놓고 엔터를 치면 해당 문서 열림
-* 백스페이스로 상위 문서로 이동
+* 문서 열기: 링크 위에서 Enter
+* 상위 문서: Backspace
 
 ## Dependencies
 * Node.js v22 이상
@@ -107,19 +106,19 @@ npm run build
 npm run serve
 ```
 
-* 빌드 결과는 `public/` 폴더에 생성됩니다.
-* 로컬 서버는 기본적으로 `http://localhost:3000`에서 접근 가능합니다.
+* 출력: `public/`
+* 접속: `http://localhost:3000`
 
 ## GitHub Pages 배포 경로(BASE_URL)
-GitHub Pages 프로젝트 페이지처럼 `/repo-name/` 하위로 서비스되는 경우, 빌드 시 BASE_URL을 지정해야 합니다.
+* 프로젝트 페이지(`/repo-name/`)는 BASE_URL 필요
 
 ```powershell
 $env:BASE_URL="repo-name"
 npm run build
 ```
 
-* 사용자 페이지(`username.github.io`)라면 BASE_URL 없이 빌드하면 됩니다.
-* 이미지/MathJax 등 정적 자산 경로는 BASE_URL 기준으로 자동 보정됩니다.
+* 사용자 페이지(`username.github.io`)는 BASE_URL 불필요
+* 정적 자산 경로는 BASE_URL 기준으로 보정
 
 
 ## Reference
