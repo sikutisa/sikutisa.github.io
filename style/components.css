@@ -54,6 +54,54 @@ article table {
     display: block;
     overflow-x: auto;
 }
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 12px;
+    border-radius: 6px;
+    background: #1f232a;
+    color: #e6edf3;
+}
+.hljs-comment,
+.hljs-quote {
+    color: #8b949e;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+    color: #ff7b72;
+}
+.hljs-string,
+.hljs-title,
+.hljs-name,
+.hljs-type,
+.hljs-attribute,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+    color: #a5d6ff;
+}
+.hljs-number,
+.hljs-literal,
+.hljs-tag .hljs-attr {
+    color: #d2a8ff;
+}
+.hljs-built_in,
+.hljs-doctag,
+.hljs-meta,
+.hljs-meta-string,
+.hljs-section {
+    color: #79c0ff;
+}
+.hljs-emphasis {
+    font-style: italic;
+}
+.hljs-strong {
+    font-weight: 700;
+}
 article th,
 article td {
     border: 1px solid #a2a9b1;

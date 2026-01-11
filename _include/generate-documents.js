@@ -3,6 +3,7 @@ const fse = require('fs-extra');
 const path = require('path');
 const matter = require('gray-matter');
 const { marked } = require('marked');
+const hljs = require('highlight.js');
 const { JSDOM } = require('jsdom');
 const { execSync } = require('child_process');
 const Handlebars = require('handlebars');
@@ -136,6 +137,27 @@ function rewriteImageSources(html, urlRel) {
       const rest = normalized.slice('img/'.length);
       img.setAttribute('src', withBaseUrl(`/wikis/${urlRel}/img/${rest}`));
     }
+  });
+
+  return document.body.innerHTML;
+}
+
+function highlightCodeBlocks(html) {
+  const dom = new JSDOM(`<!doctype html><body>${html}</body>`);
+  const { document } = dom.window;
+
+  document.querySelectorAll('pre code').forEach(codeEl => {
+    const className = codeEl.className || '';
+    const match = className.match(/language-([A-Za-z0-9_-]+)/);
+    const language = match ? match[1].toLowerCase() : null;
+    const code = codeEl.textContent;
+
+    const result = language && hljs.getLanguage(language)
+      ? hljs.highlight(code, { language })
+      : hljs.highlightAuto(code);
+
+    codeEl.innerHTML = result.value;
+    codeEl.className = `hljs${language ? ` language-${language}` : ''}`;
   });
 
   return document.body.innerHTML;
@@ -290,6 +312,7 @@ function convertMarkdownFile(filePath) {
   const patchedMarkdown = patchVimWikiLinks(content, currentRelDir);
   const preprocessedMarkdown = preprocessMarkdownImages(patchedMarkdown);
   let html = marked.parse(preprocessedMarkdown);
+  html = highlightCodeBlocks(html);
   html = sanitizeHtml(html);
 
   const urlRel = getUrlRelFromRelPath(relPath);
