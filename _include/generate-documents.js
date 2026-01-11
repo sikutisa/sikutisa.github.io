@@ -35,8 +35,24 @@ function getGitLastModifiedTime(filePath) {
   }
 }
 
+function getGitStatus(filePath) {
+  try {
+    const result = execSync(`git status --porcelain -- "${filePath}"`, {
+      encoding: 'utf8',
+    });
+    return result.trim();
+  } catch {
+    return null;
+  }
+}
+
 function getLastModifiedTime(filePath) {
-  return getGitLastModifiedTime(filePath) || formatTimestamp(fs.statSync(filePath).mtime);
+  const mtime = formatTimestamp(fs.statSync(filePath).mtime);
+  const status = getGitStatus(filePath);
+  if (status) {
+    return mtime;
+  }
+  return getGitLastModifiedTime(filePath) || mtime;
 }
 
 function sanitizeHtml(html) {
