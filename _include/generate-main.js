@@ -31,23 +31,8 @@ function getGitLastModifiedTime(filePath) {
     }
 }
 
-function getGitStatus(filePath) {
-    try {
-        const result = execSync(`git status --porcelain -- "${filePath}"`, {
-            encoding: 'utf8'
-        });
-        return result.trim();
-    } catch (err) {
-        return null;
-    }
-}
-
 function getLastModifiedTime(filePath) {
     const mtime = formatTimestamp(fs.statSync(filePath).mtime);
-    const status = getGitStatus(filePath);
-    if (status) {
-        return mtime;
-    }
     return getGitLastModifiedTime(filePath) || mtime;
 }
 
