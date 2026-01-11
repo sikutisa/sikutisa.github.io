@@ -193,13 +193,20 @@ function generateTableOfContentsAndUpdateHtml(html) {
 
 // VimWiki 스타일 링크 수정
 function patchVimWikiLinks(markdown, currentRelDir) {
-  return markdown.replace(/\[([^\]]+?)\/([^\]]+?)\]\(([^)]+?)\/\3\)/g, (_, folder, title, link) => {
+  let updated = markdown.replace(/\[\[([^\]]+?)\]\]/g, (_, link) => {
+    const normalized = link.trim().replace(/^\.\//, '');
+    const linkRelPath = path.posix.join(currentRelDir, normalized);
+    const urlRel = getUrlRelFromRelPath(linkRelPath);
+    const title = path.posix.basename(normalized) || normalized;
+    return `[${title}](${withBaseUrl(`/wikis/${urlRel}/`)})`;
+  });
+
+  return updated.replace(/\[([^\]]+?)\/([^\]]+?)\]\(([^)]+?)\/\3\)/g, (_, folder, title, link) => {
     const linkRelPath = path.posix.join(currentRelDir, link);
     const urlRel = getUrlRelFromRelPath(linkRelPath);
     return `[${title}](${withBaseUrl(`/wikis/${urlRel}/`)})`;
   });
 }
-
 function escapeHtml(value) {
   return value
     .replace(/&/g, '&amp;')
