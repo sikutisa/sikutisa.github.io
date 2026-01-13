@@ -76,8 +76,7 @@ WHERE DEPTNO = 10 AND NO = 1;
 * 힌트를 통해 더 효율적인 엑세스 경로를 지정할 수 있음
 
 ```sql
-SELECT /*+ INDEX(A 고객_PK) */
-    *
+SELECT /*+ INDEX(A 고객_PK) */ *
 FROM 고객 A
 WHERE 고객ID = '0'
 ```
