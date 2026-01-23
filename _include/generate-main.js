@@ -14,6 +14,8 @@ const {
     STYLE_DIR
 } = require('./const');
 
+const PROJECT_ROOT = path.join(__dirname, '..');
+
 function formatTimestamp(date) {
     const iso = date.toISOString();
     return iso.replace('T', ' ').replace('Z', ' +0000');
@@ -99,6 +101,27 @@ function copyStyleAssets() {
     }
 }
 
+function copySearchConsoleVerificationFiles() {
+    if (!fs.existsSync(PROJECT_ROOT)) {
+        return;
+    }
+    const entries = fs.readdirSync(PROJECT_ROOT, { withFileTypes: true });
+    const verificationFiles = entries
+        .filter(entry => entry.isFile() && /^google.*\.html$/i.test(entry.name))
+        .map(entry => entry.name);
+
+    if (verificationFiles.length === 0) {
+        return;
+    }
+
+    fse.ensureDirSync(OUTPUT_DIR);
+    verificationFiles.forEach(fileName => {
+        const sourcePath = path.join(PROJECT_ROOT, fileName);
+        const targetPath = path.join(OUTPUT_DIR, fileName);
+        fse.copySync(sourcePath, targetPath, { overwrite: true });
+    });
+}
+
 // 메인 페이지 생성
 function generateMainPage() {
     const header = applyBaseUrlToHtml(fs.readFileSync(HEADER_PATH, 'utf8'));
@@ -122,6 +145,7 @@ function generateMainPage() {
     }
 
     copyStyleAssets();
+    copySearchConsoleVerificationFiles();
     fs.writeFileSync(outputPath, finalHtml, 'utf8');
     console.log(`✔ Generated main page: ${outputPath}`);
 }
