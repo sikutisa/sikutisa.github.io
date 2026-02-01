@@ -244,21 +244,24 @@ function preprocessMarkdownImages(markdown) {
 
   for (let i = 0; i < lines.length; i += 1) {
     const line = lines[i];
-    const match = line.match(/^!\[([^\]]*)\]\(([^)]+)\)\{\:\s*([^}]+)\}\s*$/);
+    const match = line.match(/^(\s*)!\[([^\]]*)\]\(([^)]+)\)\{\:\s*([^}]+)\}\s*$/);
     if (!match) {
       output.push(line);
       continue;
     }
 
-    const alt = match[1] || '';
-    const src = match[2];
-    const attrs = match[3];
+    const indent = match[1] || '';
+    const alt = match[2] || '';
+    const src = match[3];
+    const attrs = match[4];
     const widthMatch = attrs.match(/\bw\s*=\s*"?(\d+(?:\.\d+)?%?)"?/i);
     const width = widthMatch ? widthMatch[1] : null;
 
     let caption = null;
     if (i + 1 < lines.length) {
-      const captionMatch = lines[i + 1].match(/^\*([^*]+)\*\s*$/);
+      const indentPattern = indent.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const captionRegex = new RegExp(`^${indentPattern}\\*([^*]+)\\*\\s*$`);
+      const captionMatch = lines[i + 1].match(captionRegex);
       if (captionMatch) {
         caption = captionMatch[1].trim();
         i += 1;
@@ -275,7 +278,7 @@ function preprocessMarkdownImages(markdown) {
     }
     img += '>';
 
-    let figure = `<figure class="wiki-figure">${img}`;
+    let figure = `${indent}<figure class="wiki-figure">${img}`;
     if (caption) {
       figure += `<figcaption class="wiki-figcaption">${escapeHtml(caption)}</figcaption>`;
     }
