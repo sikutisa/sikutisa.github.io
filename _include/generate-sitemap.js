@@ -149,8 +149,10 @@ function buildSitemap() {
     });
 
     const urls = pages.map(page => {
-        const loc = `${siteUrl}${basePath}${page.path}`;
-        return `  <url>\n    <loc>${escapeXml(loc)}</loc>\n    <lastmod>${page.lastmod}</lastmod>\n  </url>`;
+        const fullUrl = `${siteUrl}${basePath}${page.path}`;
+        const encodedLoc = encodeURI(fullUrl);
+
+        return `  <url>\n    <loc>${escapeXml(encodedLoc)}</loc>\n    <lastmod>${page.lastmod}</lastmod>\n  </url>`;
     });
 
     const xml = [
