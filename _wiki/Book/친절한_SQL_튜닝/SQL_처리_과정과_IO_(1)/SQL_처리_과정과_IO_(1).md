@@ -86,20 +86,20 @@ WHERE 고객ID = '0'
 
     ```sql
     /*+ INDEX(A A_X01) INDEX(B, B_XO3) */ -- 유효한 힌트 사용
-    /*+ INDEX(C), FLL(D) */ -- 첫 힌트만 유효
+    /*+ INDEX(C), FULL(D) */ -- 첫 힌트만 유효
     ```
 
     * 테이블을 지정할 때, 스키마명까지 명시하면 안 됨
 
     ```sql
-    SELECT /*+ FRULL(SCOTT.EMP) */ --무효
+    SELECT /*+ FULL(SCOTT.EMP) */ --무효
     FROM EMP
     ```
 
     * FROM 절 테이블 명에 ALIAS를 지정했다면, 힌트에도 ALIAS가 필수
 
     ```sql
-    SELECT /*+ FRULL(EMP) */ --무효
+    SELECT /*+ FULL(EMP) */ --무효
     FROM EMP E
     ```
 * 자주 사용하는 힌트 목록
@@ -163,7 +163,7 @@ WHERE 고객ID = '0'
     * SQL 최적화 과정에서 사용하는 정보
         * 테이블, 컬럼, 인덱스 구조에 관한 기본 정보
         * 오브젝트 통계: 테이블 통계, 인덱스 통계, 컬럼 통계(히스토그램 포함)
-        * 시스템 통계: CPU 속도, Sing Block I/O 속도, Multiblock I/O 속도 등
+        * 시스템 통계: CPU 속도, Single Block I/O 속도, Multiblock I/O 속도 등
         * 옵티마이저 관련 파라미터
     * 하나의 쿼리를 수행하는 데 있어 후보군이 될만한 무수히 많은 실행경로를 도출하고, 짦은 순간에 딕셔너리와 통계정보를 읽어 각각에 대한 효율성을 판단함
         * CPU를 많이 소비
