@@ -9,6 +9,7 @@ const FOOTER_PATH = path.join(__dirname, '../_layout/footer.html');
 const GITHUB_REPO_URL = 'https://github.com/sikutisa/sikutisa.github.io/blob/master/_wiki/';
 const DOCUMENT_LAYOUT_PATH = path.join(__dirname, '../_layout/layout.html');
 const STYLE_DIR = path.join(__dirname, '../style');
+const SCRIPTS_DIR = path.join(__dirname, '../scripts');
 const BASE_URL = process.env.BASE_URL ? `/${process.env.BASE_URL.replace(/^\/+|\/+$/g, '')}` : '';
 
 module.exports = {
@@ -20,5 +21,6 @@ module.exports = {
     GITHUB_REPO_URL,
     DOCUMENT_LAYOUT_PATH,
     STYLE_DIR,
+    SCRIPTS_DIR,
     BASE_URL
 };

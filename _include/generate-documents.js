@@ -16,7 +16,8 @@ const {
   DOCUMENT_LAYOUT_PATH,
   GITHUB_REPO_URL,
   BASE_URL,
-  STYLE_DIR
+  STYLE_DIR,
+  SCRIPTS_DIR
 } = require('./const');
 
 function formatTimestamp(date) {
@@ -356,6 +357,19 @@ function copyStyleAssets() {
   }
 }
 
+function copyScriptAssets() {
+  const targetDir = path.join(OUTPUT_DIR, 'assets', 'scripts');
+  if (!fs.existsSync(SCRIPTS_DIR)) {
+    return;
+  }
+  try {
+    fse.ensureDirSync(targetDir);
+    fse.copySync(SCRIPTS_DIR, targetDir, { overwrite: true });
+  } catch (err) {
+    console.warn('Script assets copy failed:', err.message);
+  }
+}
+
 function convertAll() {
   const header = applyBaseUrlToHtml(fs.readFileSync(HEADER_PATH, 'utf8'));
   const footer = applyBaseUrlToHtml(fs.readFileSync(FOOTER_PATH, 'utf8'));
@@ -364,6 +378,7 @@ function convertAll() {
 
   copyMathJaxBundle();
   copyStyleAssets();
+  copyScriptAssets();
 
   function walk(dir) {
     fs.readdirSync(dir, { withFileTypes: true }).forEach(entry => {
