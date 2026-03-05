@@ -333,12 +333,26 @@ function convertMarkdownFile(filePath) {
 
 // 전체 변환 실행
 function copyMathJaxBundle() {
-  const sourceDir = path.join(__dirname, '../node_modules/mathjax/es5');
+  const mathjaxDir = path.join(__dirname, '../node_modules/mathjax');
+  const sourceDir = path.join(mathjaxDir, 'es5');
   const targetDir = path.join(OUTPUT_DIR, 'assets', 'mathjax', 'es5');
 
   try {
     fse.ensureDirSync(targetDir);
-    fse.copySync(sourceDir, targetDir, { overwrite: true });
+    if (fs.existsSync(sourceDir)) {
+      fse.copySync(sourceDir, targetDir, { overwrite: true });
+    } else {
+      // MathJax 4+ doesn't have es5/ folder by default, it's at the root.
+      // Copy root files to targetDir (assets/mathjax/es5) to keep the path in layout.html
+      fse.copySync(mathjaxDir, targetDir, {
+        overwrite: true,
+        filter: (src) => {
+          // Ignore node_modules inside mathjax if any, and package.json/README etc. if we want to be clean
+          const rel = path.relative(mathjaxDir, src);
+          return !rel.includes('node_modules') && !rel.startsWith('.git');
+        }
+      });
+    }
   } catch (err) {
     console.warn('MathJax bundle copy failed:', err.message);
   }
