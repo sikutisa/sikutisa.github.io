@@ -26,12 +26,12 @@
     "node": ">=22.0.0"
   },
   "dependencies": {
-    "fs-extra": "^11.3.4",
+    "fs-extra": "^11.3.0",
     "gray-matter": "^4.0.3",
-    "handlebars": "^4.7.8",
+    "handlebars": "^4.7.9",
     "highlight.js": "^11.11.1",
-    "jsdom": "^28.1.0",
-    "marked": "^17.0.4",
+    "jsdom": "^29.0.2",
+    "marked": "^18.0.0",
     "mathjax": "^4.1.1"
   },
   "devDependencies": {

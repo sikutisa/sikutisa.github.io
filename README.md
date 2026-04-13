@@ -91,12 +91,12 @@ subfolder/테스트2
 
 | 패키지 | 버전 | 설명 |
 |--------|------|------|
-| [fs-extra](https://www.npmjs.com/package/fs-extra) | `^11.3.4` | 파일 시스템(`fs`) 확장 기능 (폴더 생성, 파일 복사 등) |
+| [fs-extra](https://www.npmjs.com/package/fs-extra) | `^11.3.0` | 파일 시스템(`fs`) 확장 기능 (폴더 생성, 파일 복사 등) |
 | [gray-matter](https://www.npmjs.com/package/gray-matter) | `^4.0.3` | 마크다운 문서의 메타데이터(`use_math: true`) 파싱 |
-| [handlebars](https://www.npmjs.com/package/handlebars) | `^4.7.8` | HTML 레이아웃 템플릿 렌더링 |
+| [handlebars](https://www.npmjs.com/package/handlebars) | `^4.7.9` | HTML 레이아웃 템플릿 렌더링 |
 | [highlight.js](https://www.npmjs.com/package/highlight.js) | `^11.11.1` | 코드 블록 문법 하이라이팅 |
-| [jsdom](https://www.npmjs.com/package/jsdom) | `^28.1.0` | TOC 생성 및 HTML 정제 처리 |
-| [marked](https://www.npmjs.com/package/marked) | `^17.0.4` | 마크다운을 HTML로 변환하는 라이브러리 |
+| [jsdom](https://www.npmjs.com/package/jsdom) | `^29.0.2` | TOC 생성 및 HTML 정제 처리 |
+| [marked](https://www.npmjs.com/package/marked) | `^18.0.0` | 마크다운을 HTML로 변환하는 라이브러리 |
 | [mathjax](https://www.npmjs.com/package/mathjax) | `^4.1.1` | LaTeX 수식을 웹에서 렌더링하는 라이브러리 |
 | [serve](https://www.npmjs.com/package/serve) | `^14.2.6` | 로컬 정적 서버 실행 (dev) |
 
