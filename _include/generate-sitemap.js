@@ -22,11 +22,11 @@ function parseGitHubRepo(remoteUrl) {
     if (!remoteUrl) {
         return null;
     }
-    const httpsMatch = remoteUrl.match(/^https?:\/\/github\.com\/([^/]+)\/([^/.]+)(?:\.git)?$/i);
+    const httpsMatch = remoteUrl.match(/^https?:\/\/github\.com\/([^/]+)\/([^/]+?)(?:\.git)?$/i);
     if (httpsMatch) {
         return { owner: httpsMatch[1], repo: httpsMatch[2] };
     }
-    const sshMatch = remoteUrl.match(/^git@github\.com:([^/]+)\/([^/.]+)(?:\.git)?$/i);
+    const sshMatch = remoteUrl.match(/^git@github\.com:([^/]+)\/([^/]+?)(?:\.git)?$/i);
     if (sshMatch) {
         return { owner: sshMatch[1], repo: sshMatch[2] };
     }
