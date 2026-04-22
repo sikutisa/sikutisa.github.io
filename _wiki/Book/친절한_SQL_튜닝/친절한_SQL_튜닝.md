@@ -19,3 +19,4 @@
 * [[Sort_Area를_적게_사용하도록_SQL_작성/Sort_Area를_적게_사용하도록_SQL_작성]]
 * [[기본_DML_튜닝/기본_DML_튜닝]]
 * [[Direct_Path_IO_활용/Direct_Path_IO_활용]]
+* [[파티션을_활용한_DML_튜닝/파티션을_활용한_DML_튜닝]]
