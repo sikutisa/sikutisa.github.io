@@ -247,3 +247,221 @@ INDEX_NAME    PAR  PARTITION  LOCALI  ALIGNMENT     설명
 * 대량 데이터 입력/수정/삭제할 때는 인덱스를 Drop하거나 Unusable 상태로 변경하고서 작업하는 방법을 많이 활용
     * 손익분기점은 5% 정도
         * 입력/수정/삭제하는 데이터 비중이 5%를 넘는다면, 인덱스 없이 작업한 후 재생성하는 것이 더 빠름
+
+![img](./img/11.png){: w="25%"}
+*데이터가 10억 건이 있다고 가정*
+
+* UPDATE 문을 이용해 2015년 1월 1일 전에 발생한 거래 데이터를 수정
+    * 거래 일자 조건을 만족하면서 상태코드가 'ZZZ'가 아닌 데이터가 50M(5%)
+* 테이블 레코드 50M건을 변경하면서 거래_X2 인덱스까지 실시간으로 관리하려면 시간이 많이 소요
+    * 10억 건짜리 인덱스를 Drop 했다가 재생성하는 것도 만만치 않음
+    * 실무에서는, 인덱스 전체를 재생성하는 부담이 크기 때문에 이 정도 사이즈면 보통 인덱스를 그대로 두고 작업
+
+### 파티션 Exchange를 이용한 대량 데이터 변경
+![img](./img/12.png){: w="25%"}
+
+* 테이블이 파티셔닝돼 있고, 로컬 파티션인 경우
+    * 수정된 값을 갖는 임시 세그먼트를 만들어 원본 파티션과 바꿔치기 가능
+* 작업 순서
+    * 임시 테이블을 생성. 가능하면 nologging 모드로 생성
+
+    ```sql
+    create table 거래_t
+    nologging
+    as
+    select * from 거래 where 1 = 2;
+    ```
+
+    * 거래 데이터를 읽어 임시 테이블에 입력하면서 상태코드 값을 수정
+
+    ```sql
+    insert /*+ append */ into 거래_t
+    select 고객번호, 거래일자, 거래순번, ...
+        , (case when 상태코드 <> 'ZZZ' then 'ZZZ' else 상태코드 end) 상태코드
+    from   거래
+    where  거래일자 < '20150101';
+    ```
+
+    * 임시 테이블에 원본 테이블과 같은 구조로 인덱스 생성. 가능하다면 nologging 모드로 생성
+
+    ```sql
+    create unique index 거래_t_pk on 거래_t (고객번호, 거래일자, 거래순번) nologging;
+    create index 거래_t_x1 on 거래_t (거래일자, 고객번호) nologging;
+    create index 거래_t_x2 on 거래_t (상태코드, 거래일자) nologging;
+    ```
+
+    * 2014년 12월 파티션과 임시 테이블을 Exchange
+
+    ```sql
+    ALTER TABLE 거래
+    EXCHANGE PARTITION p201412 WITH TABLE 거래_t
+    INCLUDING INDEXES WITHOUT VALIDATION;
+    ```
+
+    ![img](./img/13.png){: w="25%"}
+
+    * 임시 테이블을 Drop
+
+    ```sql
+    drop table 거래_t;
+    ```
+
+    * nologging 모드로 작업했다면, 파티션을 logging으로 전환
+
+    ```sql
+    alter table 거래 modify partition p201412 logging;
+    alter index 거래_pk modify partition p201412 logging;
+    alter index 거래_x1 modify partition p201412 logging;
+    alter index 거래_x2 modify partition p201412 logging;
+    ```
+
+## 파티션을 활용한 대량 DELETE 튜닝
+* 대량 데이터를 삭제할 때도, 인덱스를 관리하려면 많은 시간이 소요
+* 초용량 테이블 인덱스를 모두 Drop 헀다가 다시 생성하기도 만만치 않음
+    * UPDATE는 변경 대상 컬럼을 포함하는 인덱스만 재생성하면 됨
+    * DELETE는 모든 인덱스를 재생성해야 함
+
+### DELETE가 느린 이유
+* 아래와 같은 부수적 작업을 수반
+    * 테이블 레코드 삭제
+    * 테이블 레코드 삭제에 대한 Undo Logging
+    * 테이블 레코드 삭제에 대한 Redo Logging
+    * 인덱스 레코드 삭제
+    * 인덱스 레코드 삭제에 대한 Undo Logging
+    * 인덱스 레코드 삭제에 대한 Redo Logging
+    * Undo에 대한 Redo Logging
+* 각 인덱스 레코드를 찾아서 삭제해 주는 작업에 대한 부담이 큼
+    * 건건이 수직적 탐색 과정을 거쳐 대상 레코드를 찾아야 하기 때문
+
+### 파티션 Drop을 이용한 대량 데이터 삭제
+* 테이블이 삭제 조건절 컬럼 기준으로 파티셔닝돼 있고, 인덱스도 다행히 로컬 파티션 이라면 Drop 이용 가능
+
+```sql
+alter table 거래 drop partition p201412;
+
+-- 오라클 11g부터 대상 파티션 지정 가능
+alter table 거래 drop partition for('20141201');
+```
+
+### 파티션 Truncate를 이용한 대량 데이터 삭제
+* 거래일자 조건에 해당하는 데이터를 일괄 삭제하지 않고 또 다른 삭제 조건이 있는 경우
+    * 조건을 만족하는 데이터가 소수일 경우, DELETE문 사용
+    * 대다수이면, 대량 데이터를 지울 게 아니라 남길 데이터만 백업했다 재입력이 빠름
+* 순서
+    * 임시 테이블을 생성하고, 남길 데이터 복제
+
+    ```sql
+    create table 거래_t
+    as
+    select *
+    from   거래
+    where  거래일자 < '20150101'
+    and    상태코드 = 'ZZZ';  -- 남길 데이터만 임시 세그먼트로 복제
+    ```
+
+    * 삭제 대상 테이블 파티션을 Truncate
+
+    ```sql
+    alter table 거래 truncate partition p201412;
+
+    -- 오라클 11g부터 대상 파티션 지정 가능
+    alter table 거래 truncate partition for('20141201');
+    ```
+
+    * 임시 테이블에 복제해 둔 데이터를 원본 테이블에 입력
+
+    ```sql
+    insert into 거래
+    select * from 거래_t; -- 남길 데이터만 입력
+    ```
+
+    * 임시 테이블 Drop
+
+    ```sql
+    drop table 거래_t;
+    ```
+
+* 서비스 중단 없이 파티션을 Drop 또는 Truncate 하기 위한 조건
+    * 파티션 키와 커팅 기준 컬림이 일치
+        * e.g. 파티션 키와 커팅 기준 컬럼이 모두 '일자'
+    * 파티션 단위와 커팅 주기 일치
+        * e.g. 월 단위 파티션을 월 주기로 커팅
+    * 모든 인덱스가 로컬 파티션 인덱스
+        * e.g. 파티션 키는 '일자', PK는 '일자 + 순번'
+        * PK 인덱스는 지금처럼 삭제 기준(파티션 키) 컬럼이 인덱스 구성 컬럼이어야 로컬 파티셔닝 가능
+
+## 파티션을 활용한 대량 INSERT 튜닝
+### 비파티션 테이블일 때
+* 비파티션 테이블에 손익분기점을 넘는 대량 데이터를 INSERT 하려면, 인덱스를 Unusable 시켰다가 재생성하는 방식이 빠를 수 있음
+
+![img](./img/14.png){: w="30%"}
+
+* 가능하다면, 테이블을 nologging으로 전환
+
+```sql
+alter table target_t nologging;
+```
+
+* 인덱스를 Unusable 상태로 전환
+
+```sql
+alter index target_t_x01 unusable;
+```
+
+* 가능하다면, Direct Path Insert 방식으로 대량 데이터 입력
+
+```sql
+insert /*+ append */ into target_t
+select * from source_t;
+```
+
+* 가능하다면, nologging 모드로 인덱스를 재생성
+
+```sql
+alter index target_t_x01 rebuild nologging;
+```
+
+* nologging 모드로 작업했다면, logging 모드로 전환
+
+```sql
+alter table target_t logging;
+alter index target_t_x01 logging;
+```
+
+### 파티션 테이블일 때
+* 초대용량 인덱스를 재생성하는 부담이 만만치 않기 때문에, 실무에선느 웬만하면 인덱스를 그대로 둔 상태로 INSERT
+    * 테이블이 파티셔닝돼 있고, 인덱스도 로컬 파티션이라면, 파티션 단위로 인덱스를 재생성할 수 있어 한결 쉬운 방법이 존재
+
+![img](./img/15.png){: w="30%"}
+
+* 가능하다면, 작업 대상 테이블 파티션을 nologging 모드로 전환
+
+```sql
+alter table target_t modify partition p_201712 nologging;
+```
+
+* 작업 대상 테이블 파티션과 매칭되는 인덱스 파티션을 Unusable 상태로 전환
+
+```sql
+alter index target_t_x01 modify partition p_201712 unusable;
+```
+
+* 가능하다면, Direct Path Insert 방식으로 대량 데이터를 입력
+
+```sql
+insert /*+ append */ into target_t
+select * from source_t where dt between '20171201' and '20171231';
+```
+
+* 가능하다면, nologging 모드로 인덱스 파티션을 재생성
+
+```sql
+alter index target_t_x01 rebuild partition p_201712 nologging;
+```
+
+* nologging 모드로 작업했다면, 작업 파티션을 logging 모드로 전환
+
+```sql
+alter table target_t modify partition p_201712 logging;
+alter index target_t_x01 modify partition p_201712 logging;
+```
