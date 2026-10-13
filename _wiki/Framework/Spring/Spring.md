@@ -1,2 +1,2 @@
 # Spring
-* [JPA/JPA](JPA/JPA)
+* [[JPA/JPA]]

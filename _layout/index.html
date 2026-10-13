@@ -2,13 +2,19 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>전체 문서 목록</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>wikis</title>
+    <link rel="stylesheet" href="{{base_url}}/assets/style/base.css">
+    <link rel="stylesheet" href="{{base_url}}/assets/style/layout.css">
+    <link rel="stylesheet" href="{{base_url}}/assets/style/components.css">
+    <link rel="stylesheet" href="{{base_url}}/assets/style/pages/index.css">
+    <link rel="stylesheet" href="{{base_url}}/assets/style/search.css">
 </head>
 <body>
     {{header}}
-    <main>
+    <main class="container">
         <section>
-            <h1>전체 문서 목록</h1>
+            <h1 class="index-title">wikis</h1>
 
             <div class="page-meta">
                 Last updated: {{last_updated}}
@@ -17,7 +23,6 @@
 
             {{#each categories}}
             <div class="category">
-                <h2>{{category_name}}</h2>
                 <ul>
                     {{#each documents}}
                     <li><a href="{{url}}">{{title}}</a></li>
@@ -28,5 +33,7 @@
         </section>
     </main>
     {{footer}}
+    <script src="{{base_url}}/assets/scripts/search.js"></script>
 </body>
 </html>
+

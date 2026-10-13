@@ -181,7 +181,12 @@ function retire(manifest, item) {
 function audit(manifest) {
   const refs = activeReferences(); const issues = [];
   for (const ref of refs) if (!fs.existsSync(workspace(ref.source))) issues.push(`Missing reference: ${ref.document}: ${ref.target}`);
-  for (const ref of refs) if (!manifest.images.some(item => ref.source === item.original || ref.source === item.generated)) issues.push(`Uninventoried image: ${ref.source}; run scan`);
+  for (const ref of refs) {
+    if (manifest.images.some(item => ref.source === item.original || ref.source === item.generated)) continue;
+    const upstream = manifest.preservedUpstreamImages?.find(item => item.path === ref.source);
+    if (!upstream) issues.push(`Uninventoried image: ${ref.source}; run scan`);
+    else if (fs.existsSync(workspace(ref.source)) && sha(fs.readFileSync(workspace(ref.source))) !== upstream.sha256) issues.push(`Preserved upstream image changed: ${ref.source}; inspect before expanding scope`);
+  }
   for (const baseline of manifest.documentBaselines) {
     if (!fs.existsSync(workspace(baseline.path))) issues.push(`Document removed: ${baseline.path}`);
     else if (baseline.bodySha256 && bodyHash(fs.readFileSync(workspace(baseline.path), 'utf8')) !== baseline.bodySha256) issues.push(`Document body changed beyond image tokens: ${baseline.path}; inspect user edits`);

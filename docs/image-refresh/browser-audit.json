@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-13T04:05:04.795Z",
+  "at": "2026-10-13T04:45:43.252Z",
   "pages": 36,
   "images": 272,
   "captures": [
@@ -9,8 +9,8 @@
       "viewportWidth": 1440,
       "screenshot": ".cache/image-refresh/아키텍처-b43162264ce3-1440.png",
       "bounds": {
-        "x": 8,
-        "y": 246.375,
+        "x": 340,
+        "y": 246.5,
         "width": 760,
         "height": 506.65625
       },
@@ -25,10 +25,10 @@
       "viewportWidth": 390,
       "screenshot": ".cache/image-refresh/아키텍처-b43162264ce3-390.png",
       "bounds": {
-        "x": 8,
-        "y": 482.71875,
-        "width": 374,
-        "height": 249.328125
+        "x": 19,
+        "y": 499.984375,
+        "width": 352,
+        "height": 234.65625
       },
       "natural": {
         "width": 1536,
@@ -41,8 +41,8 @@
       "viewportWidth": 1440,
       "screenshot": ".cache/image-refresh/Command_Pattern-11bb97690e7e-1440.png",
       "bounds": {
-        "x": 8,
-        "y": 246.25,
+        "x": 340,
+        "y": 246.265625,
         "width": 760,
         "height": 506.65625
       },
@@ -57,10 +57,10 @@
       "viewportWidth": 390,
       "screenshot": ".cache/image-refresh/Command_Pattern-11bb97690e7e-390.png",
       "bounds": {
-        "x": 8,
-        "y": 374.921875,
-        "width": 374,
-        "height": 249.328125
+        "x": 19,
+        "y": 382.359375,
+        "width": 352,
+        "height": 234.65625
       },
       "natural": {
         "width": 1536,
@@ -73,8 +73,8 @@
       "viewportWidth": 1440,
       "screenshot": ".cache/image-refresh/Process-5324d78f9010-1440.png",
       "bounds": {
-        "x": 8,
-        "y": 482.8125,
+        "x": 340,
+        "y": 499.015625,
         "width": 760,
         "height": 380
       },
@@ -89,10 +89,10 @@
       "viewportWidth": 390,
       "screenshot": ".cache/image-refresh/Process-5324d78f9010-390.png",
       "bounds": {
-        "x": 8,
-        "y": 482.40625,
-        "width": 374,
-        "height": 187
+        "x": 19,
+        "y": 499.328125,
+        "width": 352,
+        "height": 176
       },
       "natural": {
         "width": 1774,
@@ -101,6 +101,6 @@
     }
   ],
   "issues": [],
-  "visualInspection": "passed: manually inspected all six screenshots for corrected images at 1440px and 390px; no clipping or aspect distortion; dense text requires full-image enlargement on mobile",
-  "visuallyReviewedAt": "2026-10-13T04:07:51.527Z"
+  "visualInspection": "passed: manually inspected six screenshots with current upstream CSS over localhost at 1440px and 390px; all corrected images fit and preserve proportions",
+  "visuallyReviewedAt": "2026-10-13T04:48:05.447Z"
 }

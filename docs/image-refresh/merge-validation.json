@@ -1,0 +1,215 @@
+{
+  "at": "2026-10-13T04:40:15.042Z",
+  "upstream": "cbb8c19965730842f7a65b1b277d3087a392522b",
+  "retiredChangedOriginals": [
+    {
+      "id": "829b4946e827",
+      "path": "_wiki/Programming_Language/Java/Functional_Interface/img/1.png",
+      "upstreamSha256": "3c8d1cec5d996aafd65a2dfe2441bd9b354538fcdec71d831e8737f206b4ba59",
+      "comparison": "Viewed old/upstream original pair: same educational concept preserved by approved replacement.",
+      "upstream": "cbb8c19965730842f7a65b1b277d3087a392522b"
+    },
+    {
+      "id": "a372ca763862",
+      "path": "_wiki/Programming_Language/Java/Functional_Interface/img/2.png",
+      "upstreamSha256": "e151d4b650eaa0e28eecca1c5ed706d6f88de540ee523d73548b67d3e411f776",
+      "comparison": "Viewed old/upstream original pair: same educational concept preserved by approved replacement.",
+      "upstream": "cbb8c19965730842f7a65b1b277d3087a392522b"
+    },
+    {
+      "id": "5cfdac1eb9bf",
+      "path": "_wiki/Programming_Language/Java/스트림_소개와_파이프라인/img/1.png",
+      "upstreamSha256": "709714a90fdb614637fc89c1dbcfa6cfe5a80ae7c97668057f07cfce092b3e39",
+      "comparison": "Viewed old/upstream original pair: same educational concept preserved by approved replacement.",
+      "upstream": "cbb8c19965730842f7a65b1b277d3087a392522b"
+    },
+    {
+      "id": "bdd620d2839f",
+      "path": "_wiki/Programming_Language/Java/스트림_소개와_파이프라인/img/2.png",
+      "upstreamSha256": "ba605896bec0fe5663c7ed86b7a5e242c5f3b90edb595a205d721901987a01d9",
+      "comparison": "Viewed old/upstream original pair: same educational concept preserved by approved replacement.",
+      "upstream": "cbb8c19965730842f7a65b1b277d3087a392522b"
+    },
+    {
+      "id": "8770af8255a9",
+      "path": "_wiki/Programming_Language/Java/스트림_소개와_파이프라인/img/3.png",
+      "upstreamSha256": "fe0b237f0c92005d2aa30d42a3469ae22b99bd6054ba17172d4c21987e05a9a8",
+      "comparison": "Viewed old/upstream original pair: same educational concept preserved by approved replacement.",
+      "upstream": "cbb8c19965730842f7a65b1b277d3087a392522b"
+    },
+    {
+      "id": "351c7156a8d3",
+      "path": "_wiki/Programming_Language/Java/스트림과_병렬_처리/img/1.png",
+      "upstreamSha256": "c8afb2b1754a38bf23d1a37b57074f38d51626627e99d9466c886e0419b94090",
+      "comparison": "Viewed old/upstream original pair: same educational concept preserved by approved replacement.",
+      "upstream": "cbb8c19965730842f7a65b1b277d3087a392522b"
+    },
+    {
+      "id": "a565584b06db",
+      "path": "_wiki/Programming_Language/Java/스트림과_여러_메소드/img/1.png",
+      "upstreamSha256": "7d2ac602fbeffa900871c9ec5f04205cb47f0118537f69ab815076a9eeb46d74",
+      "comparison": "Viewed old/upstream original pair: same educational concept preserved by approved replacement.",
+      "upstream": "cbb8c19965730842f7a65b1b277d3087a392522b"
+    },
+    {
+      "id": "0befa50742dd",
+      "path": "_wiki/Programming_Language/Java/스트림과_여러_메소드/img/2.png",
+      "upstreamSha256": "3f201bb30ba07610d9631c954327b4ba3219a3e8a5661ee07471702e9b332376",
+      "comparison": "Viewed old/upstream original pair: same educational concept preserved by approved replacement.",
+      "upstream": "cbb8c19965730842f7a65b1b277d3087a392522b"
+    }
+  ],
+  "resolvedDocuments": [
+    {
+      "file": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/구글_드라이브_설계/구글_드라이브_설계.md",
+      "replaced": 2
+    },
+    {
+      "file": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/뉴스_피드_시스템_설계/뉴스_피드_시스템_설계.md",
+      "replaced": 1
+    },
+    {
+      "file": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/사용자_수에_따른_규모_확장성/사용자_수에_따른_규모_확장성.md",
+      "replaced": 6
+    },
+    {
+      "file": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/알림_시스템_설계/알림_시스템_설계.md",
+      "replaced": 2
+    },
+    {
+      "file": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/웹_크롤러_설계/웹_크롤러_설계.md",
+      "replaced": 1
+    },
+    {
+      "file": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/유튜브_설계/유튜브_설계.md",
+      "replaced": 3
+    },
+    {
+      "file": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/채팅_시스템_설계/채팅_시스템_설계.md",
+      "replaced": 1
+    },
+    {
+      "file": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/처리율_제한_장치의_설계/처리율_제한_장치의_설계.md",
+      "replaced": 2
+    },
+    {
+      "file": "_wiki/Computer_Science/Database/DB_Introduction/DB_Introduction.md",
+      "replaced": 4
+    },
+    {
+      "file": "_wiki/Computer_Science/Database/Intermediate_SQL/Intermediate_SQL.md",
+      "replaced": 8
+    },
+    {
+      "file": "_wiki/Computer_Science/Database/Introduction_to_SQL/Introduction_to_SQL.md",
+      "replaced": 3
+    },
+    {
+      "file": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "replaced": 10
+    },
+    {
+      "file": "_wiki/Computer_Science/Design_Pattern/Abstract_Factory_Pattern/Abstract_Factory_Pattern.md",
+      "replaced": 5
+    },
+    {
+      "file": "_wiki/Computer_Science/Design_Pattern/Adapter_Pattern/Adapter_Pattern.md",
+      "replaced": 3
+    },
+    {
+      "file": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/Command_Pattern.md",
+      "replaced": 7
+    },
+    {
+      "file": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/Pacade_Pattern.md",
+      "replaced": 7
+    },
+    {
+      "file": "_wiki/Computer_Science/Design_Pattern/Factory_Method_Pattern/Factory_Method_Pattern.md",
+      "replaced": 5
+    },
+    {
+      "file": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "replaced": 11
+    },
+    {
+      "file": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "replaced": 15
+    },
+    {
+      "file": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/Strategy_Pattern.md",
+      "replaced": 10
+    },
+    {
+      "file": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "replaced": 21
+    },
+    {
+      "file": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "replaced": 13
+    },
+    {
+      "file": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "replaced": 22
+    },
+    {
+      "file": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "replaced": 16
+    },
+    {
+      "file": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "replaced": 11
+    },
+    {
+      "file": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "replaced": 26
+    },
+    {
+      "file": "_wiki/Computer_Science/Operating_System/Synchronization_Examples/Synchronization_Examples.md",
+      "replaced": 1
+    },
+    {
+      "file": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/Synchronization_Tools.md",
+      "replaced": 6
+    },
+    {
+      "file": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/Thread_&_Concurrency.md",
+      "replaced": 8
+    },
+    {
+      "file": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "replaced": 21
+    },
+    {
+      "file": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance와_@MappedSuperClass/Annotation_@Inheritance와_@MappedSuperClass.md",
+      "replaced": 8
+    },
+    {
+      "file": "_wiki/Programming_Language/Java/Functional_Interface/Functional_Interface.md",
+      "replaced": 2
+    },
+    {
+      "file": "_wiki/Programming_Language/Java/스트림_소개와_파이프라인/스트림_소개와_파이프라인.md",
+      "replaced": 3
+    },
+    {
+      "file": "_wiki/Programming_Language/Java/스트림과_병렬_처리/스트림과_병렬_처리.md",
+      "replaced": 1
+    },
+    {
+      "file": "_wiki/Programming_Language/Java/스트림과_여러_메소드/스트림과_여러_메소드.md",
+      "replaced": 2
+    }
+  ],
+  "preservedUpstreamImages": 116,
+  "scope": "Original 272 generated images retained. Later upstream posts/images preserved, outside original regeneration scope.",
+  "validation": {
+    "build": "npm run build:docs passed (84 documents)",
+    "tests": "6/6 passed",
+    "numeric": "8 figure families passed",
+    "imageAudit": "272 completed, zero issues",
+    "output": "36 pages/272 images, zero issues",
+    "browser": "36 pages/272 decoded images, six screenshots manually passed",
+    "upstreamBodyPreservation": "Only the three reviewed educational corrections differ from upstream after removing image tokens."
+  }
+}

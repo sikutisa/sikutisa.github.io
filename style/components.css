@@ -1,0 +1,169 @@
+.page-header h1 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0 0 8px;
+}
+.page-meta {
+    font-size: 13px;
+    color: #54595d;
+}
+.table-of-contents {
+    margin: 24px 0;
+    padding: 16px;
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    overflow-x: auto;
+}
+.table-of-contents h2 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.table-of-contents ul {
+    margin: 0;
+    padding-left: 20px;
+}
+article h2,
+article h3 {
+    font-weight: 600;
+    margin-top: 28px;
+}
+article img {
+    max-width: 100%;
+    height: auto;
+}
+.wiki-figure {
+    margin: 16px 0;
+    text-align: center;
+}
+.wiki-figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.wiki-figcaption {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #54595d;
+}
+article table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    display: block;
+    overflow-x: auto;
+}
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 12px;
+    border-radius: 6px;
+    background: #1f232a;
+    color: #e6edf3;
+}
+.hljs-comment,
+.hljs-quote {
+    color: #8b949e;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+    color: #ff7b72;
+}
+.hljs-string,
+.hljs-title,
+.hljs-name,
+.hljs-type,
+.hljs-attribute,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+    color: #a5d6ff;
+}
+.hljs-number,
+.hljs-literal,
+.hljs-tag .hljs-attr {
+    color: #d2a8ff;
+}
+.hljs-built_in,
+.hljs-doctag,
+.hljs-meta,
+.hljs-meta-string,
+.hljs-section {
+    color: #79c0ff;
+}
+.hljs-emphasis {
+    font-style: italic;
+}
+.hljs-strong {
+    font-weight: 700;
+}
+article th,
+article td {
+    border: 1px solid #a2a9b1;
+    padding: 6px 8px;
+}
+.category {
+    margin-top: 24px;
+}
+.category h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+.category ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.recent-docs {
+    margin: 16px 0 0;
+    padding-left: 20px;
+}
+.recent-docs li {
+    margin-bottom: 10px;
+}
+.recent-docs .lastmod {
+    display: block;
+    color: #54595d;
+    font-size: 12px;
+}
+
+@media (max-width: 720px) {
+    .page-header h1 {
+        font-size: 26px;
+    }
+    .page-meta {
+        display: block;
+        margin-top: 4px;
+    }
+    .table-of-contents {
+        margin: 16px 0;
+        padding: 12px;
+    }
+    article h2,
+    article h3 {
+        margin-top: 22px;
+    }
+    article table {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 520px) {
+    .page-header h1 {
+        font-size: 22px;
+    }
+    .table-of-contents h2 {
+        font-size: 14px;
+    }
+    .category h2 {
+        font-size: 16px;
+    }
+    .recent-docs {
+        padding-left: 16px;
+    }
+}

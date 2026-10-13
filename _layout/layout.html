@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{title}}</title>
+    <link rel="stylesheet" href="{{base_url}}/assets/style/base.css">
+    <link rel="stylesheet" href="{{base_url}}/assets/style/layout.css">
+    <link rel="stylesheet" href="{{base_url}}/assets/style/components.css">
+    <link rel="stylesheet" href="{{base_url}}/assets/style/pages/document.css">
+    <link rel="stylesheet" href="{{base_url}}/assets/style/search.css">
     {{#if use_math}}
     <script>
         window.MathJax = {
@@ -12,14 +17,14 @@
             svg: { fontCache: 'global' }
         };
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+    <script src="{{base_url}}/assets/mathjax/es5/tex-svg.js" async></script>
     {{/if}}
 </head>
 
 <body>
     {{header}}
 
-    <main>
+    <main class="container">
         <section class="page-header">
             <h1>{{title}}</h1>
             <div class="page-meta">
@@ -31,9 +36,7 @@
         {{#if table_of_contents}}
         <nav class="table-of-contents">
             <h2>Table of Contents</h2>
-            <ul>
-                {{table_of_contents}}
-            </ul>
+            {{{table_of_contents}}}
         </nav>
         {{/if}}
 
@@ -43,6 +46,7 @@
     </main>
 
     {{footer}}
+    <script src="{{base_url}}/assets/scripts/search.js"></script>
 </body>
 
 </html>

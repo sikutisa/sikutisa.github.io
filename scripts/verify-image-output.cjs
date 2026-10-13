@@ -3,6 +3,7 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const { JSDOM } = require('jsdom');
 const { references } = require('./image-refresh.cjs');
+const { imagePage } = require('./image-output-path.cjs');
 const root = path.resolve(__dirname, '..');
 const manifest = require('../docs/image-refresh/manifest.json');
 const output = path.join(root, 'public');
@@ -13,7 +14,7 @@ for (const baseline of manifest.documentBaselines) {
   const source = path.join(root, baseline.path);
   const refs = references(source);
   if (!refs.length) continue;
-  const html = path.join(output, 'wikis', path.relative(path.join(root, '_wiki'), source).replace(/\.md$/, '.html'));
+  const html = imagePage(root, baseline.path);
   if (!fs.existsSync(html)) { issues.push(`Missing HTML: ${baseline.path}`); continue; }
   const dom = new JSDOM(fs.readFileSync(html, 'utf8'));
   const rendered = [...dom.window.document.querySelectorAll('article img')];
@@ -23,8 +24,9 @@ for (const baseline of manifest.documentBaselines) {
     const image = rendered[i]; if (!image) continue;
     images++;
     const src = image.getAttribute('src');
-    if (!src || /^(?:[a-z]+:|\/)/i.test(src)) { issues.push(`Unexpected img src in ${baseline.path}: ${src}`); continue; }
-    const asset = path.resolve(path.dirname(html), decodeURIComponent(src.split(/[?#]/)[0]));
+    if (!src || /^(?:[a-z]+:|\/\/)/i.test(src)) { issues.push(`Unexpected img src in ${baseline.path}: ${src}`); continue; }
+    const clean = decodeURIComponent(src.split(/[?#]/)[0]);
+    const asset = clean.startsWith('/') ? path.join(output, clean.replace(/^\//, '')) : path.resolve(path.dirname(html), clean);
     const expected = path.join(root, refs[i].source);
     if (!fs.existsSync(asset)) issues.push(`Image missing from output: ${asset}`);
     else if (!fs.existsSync(expected) || digest(asset) !== digest(expected)) issues.push(`Image copy differs from source: ${asset}`);
