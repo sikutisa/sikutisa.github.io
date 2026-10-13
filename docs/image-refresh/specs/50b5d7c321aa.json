@@ -1,0 +1,17 @@
+{
+  "title": "Smaller quantum, more preemption boundaries",
+  "purpose": "Illustrate number of quantum boundaries within a fixed CPU burst.",
+  "alt": "10ms burst에서 quantum 12·6·1ms에 따른 선점 경계 수가 0·1·9개인 비교",
+  "requiredChecks": [
+    "Burst total10; q12 has0 internal boundaries; q6 has1 at6; q1 has9 at1..9.",
+    "All bars span0..10; no added switch overhead or durations.",
+    "Counts exclude initial dispatch and completion.",
+    "Label potential context switches/preemption boundaries, since same lone process need not switch to another.",
+    "Smaller quantum can increase switching overhead; not a measured scheduler benchmark."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog, opaque white. Navy readable typography, restrained blue/teal/amber, generous padding, flat graphics. Exact listed data only, no copied textbook layout. Title 'Smaller quantum, more preemption boundaries'. Threeequal-length horizontal timelines spanning0..10ms, no overhead drawn. Row q=12:one block0..10, count0. Rowq=6:two blocks0..6and6..10,count1. Rowq=1:tenequalblocks withinternalboundaries1..9,count9. Rightcolumn 'Internal quantum boundaries' counts0,1,9. Subtitle 'One10msCPU burst'. Footer 'Boundaries are potential context switches; excludes initial dispatch and completion'. Clearly mark q12/q6/q1. No claim actual other process runs during each boundary.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "calculationVerified": true,
+  "sourceClarification": "Original calls all internal quantum boundaries context switches. Clarify potential switching because one remaining process may continue; no overhead inserted."
+}

@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Userapplicationcallsopen()→systemcallinterface→dispatchtableentryi→kernelopenimplementation.",
+      "passed": true,
+      "evidence": "open()이 사용자에서 인터페이스,테이블 index i,Implementation of open()으로 순서대로 연결된다."
+    },
+    {
+      "requirement": "User/kernel boundary clear; returnflowimplementation→interface→application distinct fromrequest.",
+      "passed": true,
+      "evidence": "User/Kernel 경계와 구현→인터페이스→사용자 Return 선이 각각 정확하다."
+    }
+  ],
+  "notes": "직접 시각 검수와 PNG 디코딩. 실패한 결과는 원본 참조 유지."
+}

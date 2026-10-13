@@ -7,10 +7,10 @@ use_math: true
 * CPU *scheduling* is the basis of multiprogrammed operating systems.
 * The objective of *multiprogramming* is to have some processes running at all times to maximize CPU utilization.
 
-![AlternatingSequence](./img/1.png){: w="310" h = "380"}
+![프로세스가 CPU 연산과 I/O 대기 구간을 번갈아 수행하는 실행 순서](./img/1-generated.png){: w="760"}
 *Alternating sequence of CPU-bursts and I/O-bursts*
 
-![Histogram](./img/2.png){: w="410" h = "360"}
+![짧은 CPU burst가 많고 긴 burst가 드문 분포를 개념적으로 나타낸 그래프](./img/2-generated.png){: w="760"}
 *Histogram of CPU-burst duration*
 
 * CPU scheduler selects a process from the processes in memory that are *ready* to execute and *allocates* the CPU to that process.
@@ -43,7 +43,7 @@ use_math: true
 * The dispatcher should be as fast as possible since it is invoked during every context switch.
 * The *dispatcher latency* is the time to stop one process and start another running.
 
-![Dispatcher](./img/3.png){: w="310" h = "340"}
+![Dispatcher가 P0 상태를 PCB0에 저장하고 PCB1에서 P1 상태를 복원해 실행을 전환하는 과정](./img/3-generated.png){: w="760"}
 *The role of the dispatcher*
 
 ## Scheduling Criteria
@@ -72,11 +72,11 @@ use_math: true
 
 * Consider the following set of processes that arrive at time 0, with the length of the CPU burst given in milliseconds
 
-![Processes](./img/4.png){: w="300" h = "280"}
+![동시에 도착한 P1·P2·P3의 CPU burst 시간이 각각 24·3·3ms인 FCFS 입력 예시](./img/4-generated.png){: w="760"}
 
 * If the processes arrive in the *order 𝑃1, 𝑃2, 𝑃3*:
 
-![Chart1](./img/5.png){: w="360" h = "260"}
+![FCFS에서 P1·P2·P3 순으로 실행할 때 시간 경계 0·24·27·30ms와 평균 대기 17ms](./img/5-generated.png){: w="760"}
 *Gantt Chart served by the FCFS policy*
 
 * Calculate the *Waiting time* of this schedule
@@ -90,7 +90,7 @@ use_math: true
 
 * If the processes arrive in the *order 𝑃2, 𝑃3, 𝑃1*:
 
-![Chart2](./img/6.png){: w="360" h = "260"}
+![FCFS에서 P2·P3·P1 순으로 실행할 때 시간 경계 0·3·6·30ms와 평균 대기 3ms](./img/6-generated.png){: w="760"}
 *Gantt Chart served by the FCFS policy*
 
 * Calculate the *Waiting time* of this schedule.
@@ -121,9 +121,9 @@ use_math: true
 * When the CPU is available, assign it to the process that has the smallest next CPU burst.
 * If two or more processes are even, break the tie with the FCFS.
 
-![Processes](./img/7.png){: w="300" h = "280"}
+![SJF 예시의 P1·P2·P3·P4 burst 시간이 각각 6·8·7·3ms인 입력표](./img/7-generated.png){: w="760"}
 
-![Chart3](./img/8.png){: w="360" h = "260"}
+![비선점 SJF의 P4·P1·P3·P2 실행 순서와 경계 0·3·9·16·24ms, 평균 대기 7ms](./img/8-generated.png){: w="760"}
 *Gantt Chart served by the SJF policy*
 
 * Calculate the *Waiting time*:
@@ -147,12 +147,13 @@ use_math: true
         * Pick a process with the shortest predicted CPU burst.
 * How to predict the next CPU burst?
     * *Exponential average* of the measured lengths of *previous* CPU burst.
-    * **$\tau_{n + 1} = \alpha\tau_n + (1 - \alpha)\tau_n$**, where
-        * $\tau_n$ is the length of 𝑛th CPU burst,
+    * **$\tau_{n + 1} = \alpha t_n + (1 - \alpha)\tau_n$**, where
+        * $t_n$ is the measured length of the 𝑛th CPU burst,
+        * $\tau_n$ is the previous predicted value for that burst,
         * $\tau_{n+1}$ is our predicted value for the next CPU burst,
         * for $ 0 <= \alpha <= 1$
 
-![Prediction](./img/9.png){: w="420" h = "380"}
+![alpha 0.5와 초기 예측 10에서 burst 6·4·6·4·13·13·13을 반영해 8·6·6·5·9·11·12로 갱신하는 지수 평균](./img/9-generated.png){: w="760"}
 *Prediction of the length of the next CPU burst*
 
 * Note also that
@@ -165,9 +166,9 @@ use_math: true
 * Shortest-Remaining-Time-First: **Preemptive SJF** scheduling
 * SRTF will *preempt* the currently running process, whereas a non-preemptive SJF will *allow* it to *finish* its CPU burst.
 
-![Processes](./img/10.png){: w="340" h = "280"}
+![SRTF 예시의 P1·P2·P3·P4 도착 시각 0·1·2·3ms와 burst 8·4·9·5ms](./img/10-generated.png){: w="760"}
 
-![Chart4](./img/11.png){: w="360" h = "260"}
+![SRTF의 P1·P2·P4·P1·P3 실행 구간과 평균 대기 6.5ms·반환 13ms](./img/11-generated.png){: w="760"}
 *Gantt Chart served by the SRTF policy*
 
 * In SRTF:
@@ -199,9 +200,9 @@ use_math: true
     * If the CPU burst is *longer than one time quantum*, the timer will go off and will cause an interrupt to the OS.
         * A context switch will be executed, the process will be put at the tail of the ready queue.
 
-![Processes](./img/12.png){: w="300" h = "280"}
+![라운드 로빈 예시의 P1 24ms·P2 3ms·P3 3ms와 초기 준비 큐 순서](./img/12-generated.png){: w="760"}
 
-![Chart5](./img/13.png){: w="360" h = "260"}
+![Quantum 4ms인 라운드 로빈의 P1·P2·P3 실행 조각과 대기 시간 6·4·7ms](./img/13-generated.png){: w="760"}
 *Gantt Chart served by the RR policy when we use a time quantum of 4 milliseconds*
 
 * The *Waiting time*:
@@ -216,10 +217,10 @@ use_math: true
 
 * The performance of the RR scheduling algorithm depends heavily on the *size of the time quantum*.
 
-![TimeContext](./img/14.png){: w="450" h = "350"}
+![10ms burst에서 quantum 12·6·1ms에 따른 선점 경계 수가 0·1·9개인 비교](./img/14-generated.png){: w="760"}
 *How a smaller time quantum increases context switches*
 
-![TimeTurnaround](./img/15.png){: w="450" h = "430"}
+![Burst 6·3·1·7ms인 네 프로세스에서 quantum 1~7ms에 따라 평균 반환 시간이 비단조적으로 달라지는 그래프](./img/15-generated.png){: w="760"}
 *How turnaround time varies with the time quantum*
 
 ### Priority base Scheduling
@@ -229,9 +230,9 @@ use_math: true
     * In this case, the priority is the *inverse* of the *next CPU burst*.
 * We assume that low numbers represent high priority.
 
-![Processes](./img/16.png){: w="340" h = "280"}
+![우선순위 스케줄링의 P1~P5 burst·priority 입력표와 작은 번호가 높은 우선순위라는 규칙](./img/16-generated.png){: w="760"}
 
-![Chart6](./img/17.png){: w="360" h = "260"}
+![작은 번호를 먼저 실행하는 P2·P5·P1·P3·P4 우선순위 시간표와 평균 대기 8.2ms](./img/17-generated.png){: w="760"}
 *Gantt Chart served by the Priority base policy*
 
 * The average waiting time: 8.2
@@ -245,22 +246,22 @@ use_math: true
 
 * Combine RR and Priority scheduling: execute the *highest-priority* process and runs processes with the same priority using *round-robin* scheduling.
 
-![Example](./img/18.png){: w="480" h = "420"}
+![우선순위 그룹 간에는 priority를 적용하고 같은 그룹에서는 quantum 2ms로 순환하는 실행 예시](./img/18-generated.png){: w="760"}
 *Example that combine RR and Priority policy*
 
 ### Multi-Level Queue(MLQ) Scheduling
 
-![MLQ](./img/19.png){: w="340" h = "360"}
+![Priority 0·1·2·n마다 별도의 준비 큐를 두고 높은 우선순위 큐부터 선택하는 구조](./img/19-generated.png){: w="760"}
 *Separate queues for each priority*
 
-![MLQScheduling](./img/20.png){: w="380" h = "340"}
+![실시간·시스템·대화형·배치 프로세스를 고정된 다단계 큐에 분류한 우선순위 계층](./img/20-generated.png){: w="760"}
 *Multi-Level Queue scheduling*
 
 ### Multi-Level Feedback Queue(MLFQ) Scheduling
 * MLQ같은 경우, 우선순위가 낮은 process에서 starvation이 발생할 수 있음
 * 이를 방지하기 위해, Aging 기법으로 우선순위를 바꿔주는 등 다양한 방법을 도입
 
-![MLFQ](./img/21.png){: w="360" h = "360"}
+![처음 8ms·다음 16ms quantum을 쓰고 미완료 작업을 하위 FCFS 큐로 이동시키는 MLFQ 예시](./img/21-generated.png){: w="760"}
 *Multi-Level Feedback Queue scheduling*
 
 * 처음 process가 실행될 때는 quantum이 8만큼 실행

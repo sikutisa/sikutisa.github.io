@@ -1,0 +1,15 @@
+{
+  "title": "Weather station with custom interfaces",
+  "purpose": "Explain article's push-style custom Subject Observer DisplayElement classes.",
+  "alt": "WeatherData의 Subject 구현과 Observer·DisplayElement를 구현한 세 디스플레이의 측정값 푸시 갱신",
+  "requiredChecks": [
+    "Custom Subject, Observer and DisplayElement interfaces show correct methods.",
+    "WeatherData implements Subject and keeps observer list plus temperature/humidity/pressure/getters/measurementsChanged.",
+    "CurrentConditionDisplay, StatisticsDisplay, ForecastDisplay implement both Observer and DisplayElement.",
+    "notifyObservers pushes update(temp,humidity,pressure) to registered displays; each display can render via display().",
+    "Displays can register/remove via Subject; not Java Observable inheritance."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference study blog. Opaque white background, large readable navy sans-serif text, monospaced identifiers, blue/teal/amber flat cards and roomy gutters. No copied irregular bubbles, photographed source or logos. Use plain labelled rectangles for Cat/Dog/Mouse/Duck object names, no animal illustration needed. Include only listed identifiers; do not invent code bodies, modifiers, state values, extra arrows or recipients. Title 'Weather station with custom interfaces'. TOPthreeinterfacecards Subject 'registerObserver(o); removeObserver(o); notifyObservers()', Observer 'update(temp, humidity, pressure)', DisplayElement 'display()'. MIDDLE WeatherData card 'implements Subject' 'observers: Observer list' 'temperature, humidity, pressure' 'getTemperature(); getHumidity(); getPressure()' 'measurementsChanged() → notifyObservers()'. BOTTOMthree equalcards CurrentConditionDisplay, StatisticsDisplay, ForecastDisplay eachcaption 'implements Observer, DisplayElement' 'subject: Subject' 'update(temp, humidity, pressure)' 'display()'; respective display captions currentmeasurements / avg,min,max / forecast. WeatherData→threedisplays updatearrows labelled 'push latest measurements'. Bottomsmallflow 'registerObserver(this) → receive update(...) → display()'; footer 'Custom interfaces; subscribers may be added or removed'. No WeatherDataextendsObservable inthisdiagram. No unsupported weatherforecastalgorithm.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

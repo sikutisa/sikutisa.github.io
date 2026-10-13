@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Left RAG T1..T5,R1..R5 one instance each. Requests T1→R1,T2→R3,T2→R4,T2→R5,T3→R5,T4→R2.",
+      "passed": true,
+      "evidence": "Six requests exact."
+    },
+    {
+      "requirement": "Assignments R1→T2,R2→T1,R3→T5,R4→T3,R5→T4, exactly eleven edges left.",
+      "passed": false,
+      "evidence": "Left unchanged incorrect blue R2→T2 and extra teal T2→T1 still present; R2→T1 missing."
+    },
+    {
+      "requirement": "Right wait-for edges exactly T1→T2,T2→T5,T2→T3,T2→T4,T3→T4,T4→T1; no resource nodes right.",
+      "passed": true,
+      "evidence": "Right now all six edges correct including addedT3→T4."
+    },
+    {
+      "requirement": "Clear conversion rule Ti→Rk→Tj becomes Ti→Tj. T1,T2,T3,T4 blocked cycle, T5 no outgoing edge. No reversed or missing arrowheads.",
+      "passed": false,
+      "evidence": "Left/right conversion still inconsistent. Reject while left arrows await final fix."
+    }
+  ],
+  "notes": "Third output fixed right but did not change two left edges. No markdown replacement.",
+  "at": "2026-10-12T22:58:35.255Z",
+  "generatedSha256": "30ef09c748b9d4c417a5205803dde975de3202cde8571668716cb28b8b5c6b83",
+  "specSha256": "1d46817aff8b6a5854f75d6341aa4e16eaa87170f7297a835161fb30636c83e0"
+}

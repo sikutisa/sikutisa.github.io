@@ -1,0 +1,13 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Four-byte paging example",
+  "alt": "4바이트 페이지를 사용하는 32바이트 물리 메모리의 정확한 바이트 매핑",
+  "requiredChecks": [
+    "Logicalbytes0..15=a..p: page0abcd,page1efgh,page2ijkl,page3mnop; page/frame size4bytes.",
+    "Pagetable0→5,1→6,2→1,3→2; physicalmemory32bytes eightframes.",
+    "Frame1 addresses4..7=ijkl,frame2addresses8..11=mnop,frame5addresses20..23=abcd,frame6addresses24..27=efgh; frames0/3/4/7unused.",
+    "Byte ordering preserved, no counts/addresses dropped or invented; label 32-bytephysicalmemory not32-byteslogical."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Paging example: 4-byte pages. Three clear panels. Logicalmemory16bytes:Page0addresses0–3 bytesa b c d; Page1addresses4–7bytese f g h; Page2addresses8–11bytesi j k l; Page3addresses12–15bytesm n o p. PagetablePage|Frame:0|5;1|6;2|1;3|2. Physicalmemory32bytes tableFrame|Addressrange|Contents withrows0|0–3|Unused;1|4–7|i j k l;2|8–11|m n o p;3|12–15|Unused;4|16–19|Unused;5|20–23|a b c d;6|24–27|e f g h;7|28–31|Unused. Colorcodeeachpage consistently. FooterPage size=Frame size=4 bytes. No extra arrowsorunrelatedgraphs."
+}

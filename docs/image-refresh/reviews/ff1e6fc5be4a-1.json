@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "SQL query→Parser/translator→Relational-algebra expression→Optimizer→Execution plan→Evaluation engine→Query result in that exact order.",
+      "passed": true,
+      "evidence": "Main arrows run SQL query→Parser/translator→Relational-algebra expression→Optimizer, around far right to Execution plan, left to Evaluation engine→Query result."
+    },
+    {
+      "requirement": "Data statistics feed Optimizer, not directly Query result.",
+      "passed": true,
+      "evidence": "Data statistics card below Optimizer has a separate teal upward arrow directly into Optimizer."
+    },
+    {
+      "requirement": "Database data connects bidirectionally to Evaluation engine, separate from statistics.",
+      "passed": true,
+      "evidence": "Database data cylinder is below Evaluation engine with doubleheaded teal connector; statistics is a separate input."
+    },
+    {
+      "requirement": "Parsing/translation, optimization and evaluation are distinguishable stages without shortcut/cycle.",
+      "passed": true,
+      "evidence": "Numbered Parse/translate, Optimize, Evaluate labels match the main stages; no unintended shortcuts or cycles."
+    }
+  ],
+  "notes": "Pass after full visual review; labels/arrows match article and specification.",
+  "at": "2026-10-12T13:37:07.511Z",
+  "generatedSha256": "3a9ed5029e08316b471c2e979bc2ca1abdf91bacf94df206b2c9383f84a3e77a",
+  "specSha256": "20c68ac89104f93e0779243c63c486f039f98c2f3c677325d8d9b916290558e0"
+}

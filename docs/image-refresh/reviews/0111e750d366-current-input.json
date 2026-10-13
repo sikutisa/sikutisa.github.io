@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Process A and Process B have distinct virtual address-space rows, each with text, data, heap, shared library and stack regions.",
+      "passed": true,
+      "evidence": "Two process address-space bars each show text,data,heap,Shared library,stack with correct spelling."
+    },
+    {
+      "requirement": "Both shared-library regions point to the same one physical shared-pages container.",
+      "passed": false,
+      "evidence": "FAILED: The upper shared-library connector passes through the lower Process B heap region, and re-emerges under that heap cell. Its visible endpoint looks like a heap mapping rather than an independent library mapping."
+    },
+    {
+      "requirement": "The physical container has Library page 0 and Library page 1 exactly once; it is not duplicated per process.",
+      "passed": true,
+      "evidence": "There is only one shared-pages container with Library page0 and Library page1 exactly once."
+    },
+    {
+      "requirement": "Private-region labels remain separate from shared library; all text and arrows are legible.",
+      "passed": false,
+      "evidence": "FAILED: The crossing/occlusion makes the private heap region look shared; rearrange bars and route arrows in clear whitespace."
+    }
+  ],
+  "notes": "Do not apply. Text and page counts are correct, but the upper connector is obscured by the second process's heap cell. Generate a targeted layout correction with separate process columns and connectors in the central gap."
+}

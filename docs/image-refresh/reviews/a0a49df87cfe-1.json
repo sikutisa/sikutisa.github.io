@@ -1,0 +1,36 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Exactly five boxes: Context, Strategy interface, ConcreteStrategyA, ConcreteStrategyB, ConcreteStrategyC.",
+      "passed": true,
+      "evidence": "The generated diagram visibly has Context, Strategy and precisely ConcreteStrategyA/B/C, with no extra boxes."
+    },
+    {
+      "requirement": "Context contains strategy: Strategy and ContextInterface(); Strategy and each concrete strategy contain AlgorithmInterface().",
+      "passed": true,
+      "evidence": "Context shows '- strategy: Strategy' and '+ ContextInterface()'. Strategy and all three concrete boxes show '+ AlgorithmInterface()' with matching capitalization."
+    },
+    {
+      "requirement": "Solid directed association goes from Context to Strategy and is labeled delegates to; no diamond or inheritance at Context.",
+      "passed": true,
+      "evidence": "The Context–Strategy connector is solid, points at Strategy, and bears 'delegates to'. No diamond or Context inheritance triangle is present."
+    },
+    {
+      "requirement": "Three dashed realization connectors have hollow triangular heads pointing to Strategy, one per concrete implementation.",
+      "passed": true,
+      "evidence": "Each lower concrete box has a dashed path ending in its own unfilled triangular head against the bottom edge of Strategy. Heads point toward the interface."
+    },
+    {
+      "requirement": "Title, identifiers, punctuation and footer are legible and complete without clipping.",
+      "passed": true,
+      "evidence": "The Strategy pattern title, interface stereotype, every identifier and the full swap-algorithms footer are readable. No text crosses connectors or is cut off."
+    }
+  ],
+  "notes": "Compared to generic Strategy figure and full Strategy_Pattern.md. Association/realization semantics are correct, and the new landscape arrangement preserves all three implementations. PIL verify/load succeeded for 1536×1024 RGB. Slight panel shading is acceptable and does not affect legibility.",
+  "at": "2026-10-12T11:58:04.603Z",
+  "generatedSha256": "5d7ac6145e60102e9cd09072a3fa009ce904e2245bf5cf3454eed395296c151e",
+  "specSha256": "86d47b3c1b7d3860dc9bb056e6d21a90a98391077ff5d988593102d7921eefb9"
+}

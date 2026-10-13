@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Logicalbytes0..15=a..p: page0abcd,page1efgh,page2ijkl,page3mnop; page/frame size4bytes.",
+      "passed": true,
+      "evidence": "Logicalbytesa..p nowlowercaseell inPage2 andcorrespondingphysicalFrame1;fourpagesof4bytes."
+    },
+    {
+      "requirement": "Pagetable0→5,1→6,2→1,3→2; physicalmemory32bytes eightframes.",
+      "passed": true,
+      "evidence": "Mapping0→5,1→6,2→1,3→2and32bytephysicalextentexact."
+    },
+    {
+      "requirement": "Frame1 addresses4..7=ijkl,frame2addresses8..11=mnop,frame5addresses20..23=abcd,frame6addresses24..27=efgh; frames0/3/4/7unused.",
+      "passed": true,
+      "evidence": "Allbyteplacements/ranges4..7ijkl,8..11mnop,20..23abcd,24..27efghandunusedframecorrect."
+    },
+    {
+      "requirement": "Byte ordering preserved, no counts/addresses dropped or invented; label 32-bytephysicalmemory not32-byteslogical.",
+      "passed": true,
+      "evidence": "Casecorrected,16logical/32physicalbytecounts andframe4sizecaptionexact, noextraentries."
+    }
+  ],
+  "notes": "Second output personally inspected after exact targeted edit; field identifiers, block sizes and lowercase byte values verified.",
+  "at": "2026-10-12T23:31:29.815Z",
+  "generatedSha256": "608d3ecc8f34f3ab20f0bc6360301c7be7a8bcfa63c033311bca8d3a2b049988",
+  "specSha256": "62e188d095598170f8d8515ca822a263b8706a50209819e6669ac6a70adfd3ef"
+}

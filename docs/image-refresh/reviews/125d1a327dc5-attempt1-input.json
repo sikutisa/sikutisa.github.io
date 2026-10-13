@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Queue98,183,37,122,14,124,65,67;start53;servicedexactqueueorder.",
+      "passed": true,
+      "evidence": "queue8値とstart53、53→98→183→37→122→14→124→65→67順が正確。"
+    },
+    {
+      "requirement": "Stepdistances45,85,146,85,108,110,59,2 sum640; cylinderbounds0..199; no shortestpathclaim.",
+      "passed": true,
+      "evidence": "8距離45,85,146,85,108,110,59,2および計算式・合計640、0–199を確認。"
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

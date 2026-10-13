@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "MonitorShareddata/Operations/Initialization,entryqueueoutside;conditionx3waiters,y2.",
+      "passed": true,
+      "evidence": "진입 큐, x의 3대기자·y의 2대기자, 모니터 3영역 및 active 하나 확인."
+    },
+    {
+      "requirement": "x.waitreleasesmonitorandsuspendsconditionqueue;x.signalnotifyconditionwaiter,noguaranteeimmediatelockhandoff.",
+      "passed": false,
+      "evidence": "x.wait 해제·대기와 signal 통지는 맞으나 하단이 모든 모니터에서 즉시 handoff 없다고 단정. signal scheduling depends on semantics로 수정 필요."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:31:07.591Z",
+  "generatedSha256": "13d07011dc0b2f8b65a2912b56428db2705cf3a2c4a814b43562052600c084e8",
+  "specSha256": "7544f132ae3fbca44c0151bedfd9350ca97aad644459045093faed740699ee22"
+}

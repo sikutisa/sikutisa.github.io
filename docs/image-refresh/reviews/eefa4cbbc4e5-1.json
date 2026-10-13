@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "CPU logical address346 enters MMU adder; relocation register14000 supplies addition.",
+      "passed": true,
+      "evidence": "346CPUlogicaladdress and14000relocationregisterfeedMMUplus."
+    },
+    {
+      "requirement": "Output physical address14346 reaches Memory; formula346+14000=14346; plus operation not comparator.",
+      "passed": true,
+      "evidence": "14346physicaloutputand346+14000=14346equationexact."
+    }
+  ],
+  "notes": "Direct full-image visual review against article and original, all arrow endpoints/branches/values checked. Failed item keeps original reference.",
+  "at": "2026-10-12T23:03:49.350Z",
+  "generatedSha256": "68af9f1a58363d2ca6aca156c6656dd6ab8eef9c17ad41f16f0f0cff4fba130f",
+  "specSha256": "89f00c1afe08bbab3e83240608e7b06fb11d1fc845432e0f5e70eff3676254fa"
+}

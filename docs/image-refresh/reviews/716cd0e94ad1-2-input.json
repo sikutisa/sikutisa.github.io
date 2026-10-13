@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "MySQL executor connects through Handler API to InnoDB; MySQL optimizer/executor are outside InnoDB.",
+      "passed": true,
+      "evidence": "Optimizer/Executor inside separate MySQL boundary; Handler API reaches buffer-pool boundary."
+    },
+    {
+      "requirement": "InnoDB buffer pool encloses cached data/index pages, undo pages and change-buffer pages; adaptive hash index is optional derived lookup outside that box.",
+      "passed": true,
+      "evidence": "Buffer pool encloses data/index, undo and change-buffer pages; optional AHI outside with dotted derived link."
+    },
+    {
+      "requirement": "Redo log buffer is separate from buffer pool; page flush goes to tablespaces and redo writer to redo log files.",
+      "passed": true,
+      "evidence": "Corrected buffer pool→Page flush→Tablespaces is independent from redo buffer→Redo write→Redo log files; merge→flush arrow removed."
+    },
+    {
+      "requirement": "Background work includes change-buffer merge, page flush and redo write; memory and disk are distinct with explicit simplified-scope caption.",
+      "passed": true,
+      "evidence": "Change-buffer pages→Merge→Cached data/index pages; separated Memory/Background/Disk bands and omitted-doublewrite caption."
+    }
+  ],
+  "notes": "Individually viewed full raster and traced connectors against full article. Source tool-output PNGs verified and loaded with PIL in exec82; approved SHA binds copied bytes."
+}

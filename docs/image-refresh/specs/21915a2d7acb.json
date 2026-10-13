@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Copy-on-write: after Process 1 writes C",
+  "purpose": "Show Process1 taking a private copy of C while A/B remain shared and Process2 keeps original C.",
+  "requiredChecks": [
+    "Physical memory has exactly A,B,C,and C′ (private copy) boxes.",
+    "Both processes still map A→A and B→B.",
+    "Process1 C maps only to C′ and Process2 C maps only to original C.",
+    "The write is by Process1, and labels distinguish original C from the private copy without implying Process2 sees the write."
+  ],
+  "alt": "After Process 1 writes page C: A and B remain shared, Process 1 uses a private copy, and Process 2 retains the original C",
+  "prompt": "Create a NEW original English technical blog diagram. White background, crisp dark navy large sans-serif labels, flat blue/teal outlined shapes, generous whitespace, simple unambiguous connectors, no decorative art, no logos or watermark. TITLE \"Copy-on-write: after Process 1 writes C\". Three separate well-spaced columns: left \"Process 1 — virtual pages\" A,B,C; center \"Physical memory\" four rows A,B,\"C — original\",\"C′ — private copy\"; right \"Process 2 — virtual pages\" A,B,C. Both processes' A arrows map to physical A and B arrows map to physical B. Process 2's C maps only to \"C — original\". Process 1's C maps ONLY to \"C′ — private copy\", using an elbow connector in the left gap to the fourth physical row. Exactly SIX mapping arrows pointing into physical memory. There is NO remaining Process1→originalC arrow and NO Process2→privatecopy arrow. Highlight the private copy in teal. Put a small note under Process1 \"Write to C triggers a copy\". Footer exactly \"A and B stay shared; only C is copied\". All arrow endpoints must be correct and readable; no connectors cross labels."
+}

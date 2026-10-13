@@ -1,0 +1,14 @@
+{
+  "title": "Adding a new product type",
+  "purpose": "Show new category changes the abstract contract and every concrete factory.",
+  "alt": "Slider 타입 추가로 GUIFactory와 세 구체 팩토리 전체에 발생하는 변경",
+  "requiredChecks": [
+    "GUIFactory adds createSlider(): Slider as new product category.",
+    "MotifFactory, WinXPFactory, MacFactory all add createSlider() returning matching MotifSlider/WinXPSlider/MacSlider.",
+    "Existing Button/TextBox/ScrollBar categories remain; no additional factory family is confused with new product type.",
+    "Caption states interface and all concrete factories change, without claiming impossible."
+  ],
+  "prompt": "Create a NEW original English raster technical diagram for a design-pattern study blog. White background, navy large sans-serif labels, flat blue and teal cards, spacious connectors, no copied slide layout or logos. Monospaced class/method identifiers. Distinguish uses, implements and creates via labels on directional connectors. Title \"Adding a new product type\". TOP GUIFactory card lists Existing createButton(), createTextBox(), createScrollBar(); highlight NEW \"+ createSlider(): Slider\". Fanout three arrows down labelled must implement to MotifFactory, WinXPFactory, MacFactory cards. Each highlights createSlider() then downward returns arrow to matching MotifSlider, WinXPSlider, MacSlider respectively. Subtitle \"New product category: Slider\". Footer \"Change the interface and every concrete factory\". Amber accent only for new method, blue/teal base. No new factory family; no statement that extension is impossible. All three factories visibly changed.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

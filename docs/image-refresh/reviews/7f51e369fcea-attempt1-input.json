@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "UserthreadsU1..U4aboveboundary,maponeK1below.",
+      "passed": true,
+      "evidence": "U1~U4 네 사용자 스레드와 K1 하나에 모이는 4선 확인."
+    },
+    {
+      "requirement": "Four→one,nounintendedextraKthreads;clearuserspace/kernelspace.",
+      "passed": true,
+      "evidence": "User/Kernel 경계와 4:1 대응, 추가 K 없음."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

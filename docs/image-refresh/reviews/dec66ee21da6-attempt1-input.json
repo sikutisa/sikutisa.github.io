@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Platters,spindle,armassembly,arms,read-writeheads;rotationaroundspindle.",
+      "passed": true,
+      "evidence": "三枚のプラッター、spindle、arm assembly、arm、read-write headsとrotationは正確。"
+    },
+    {
+      "requirement": "Track t circularring,sector s wedgepartoftrack,cylinder c alignedsam eradiustracksonplatters; preciseannotationtargets.",
+      "passed": false,
+      "evidence": "Track tは環だがSector sは複数トラックを覆う扇形。Cylinder cガイドは同じ青トラックの半径と一致せず要修正。"
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Type view ClassA has an Interface reference; Implementation implements Interface.",
+      "passed": true,
+      "evidence": "Type view ClassA contains Interface reference; Implementation upward implements interface."
+    },
+    {
+      "requirement": "Runtime view :ClassA holds a reference to :Implementation object.",
+      "passed": true,
+      "evidence": "Runtime objects :ClassA→:Implementation labelled holds reference to."
+    },
+    {
+      "requirement": "No ClassA extends Implementation relationship.",
+      "passed": true,
+      "evidence": "No ClassA extends Implementation relationship."
+    },
+    {
+      "requirement": "Caption distinguishes compile-time contract from selected runtime implementation.",
+      "passed": true,
+      "evidence": "Panel headers type/runtime and footer contract vs composed object clear."
+    }
+  ],
+  "notes": "Direct visual inspection confirms method identifiers, delegation targets, interface ownership and relationships. PNG decode before approval.",
+  "at": "2026-10-12T21:48:42.300Z",
+  "generatedSha256": "a9b66c1d3b1d098c60afea087f86c9ec3663bd3d9a33c96225e36eb123e8b6c8",
+  "specSha256": "104b8683049f67bca9bd484d64c9c5aa6d2a14468006981636d99d9cef9528da"
+}

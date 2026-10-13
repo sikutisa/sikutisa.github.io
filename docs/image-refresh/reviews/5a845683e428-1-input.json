@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Plot is explicitly labeled Illustrative reference trace, not presented as original measured data.",
+      "passed": false,
+      "evidence": "The required Illustrative reference trace caption is missing, so this version is rejected."
+    },
+    {
+      "requirement": "Horizontal axis Execution time and vertical Page number are correct.",
+      "passed": true,
+      "evidence": "Read Execution time horizontal, Page number vertical."
+    },
+    {
+      "requirement": "Four phases show clusters at18–20,22–24,30–32,then18–20, rather than uniform random references.",
+      "passed": true,
+      "evidence": "Four boxes and dots cluster at18–20,22–24,30–32,18–20; phasesA–D correctly ordered."
+    },
+    {
+      "requirement": "The caption explains clustering and changing locality; all labels remain legible.",
+      "passed": true,
+      "evidence": "Footer References cluster, then shift to a new locality is readable."
+    }
+  ],
+  "notes": "Individually inspected full generated raster and decoded via PIL verify/load."
+}

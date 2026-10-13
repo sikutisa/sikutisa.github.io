@@ -1,0 +1,33 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Duck abstract retains swim/shared and display/abstract; no fly/quack methods.",
+      "passed": true,
+      "evidence": "Duck abstract only shared swim and abstract display."
+    },
+    {
+      "requirement": "Flyable interface fly(); Quackable interface quack().",
+      "passed": true,
+      "evidence": "Flyable interface fly(),Quackable interface quack()."
+    },
+    {
+      "requirement": "MallardDuck and RedheadDuck extend Duck and implement Flyable,Quackable with display/fly/quack.",
+      "passed": true,
+      "evidence": "MallardDuck/RedheadDuck extend Duck implement both capabilities, display/fly/quack each."
+    },
+    {
+      "requirement": "RubberDuck extends Duck implements only Quackable with squeak; DecoyDuck extends Duck display only.",
+      "passed": true,
+      "evidence": "RubberDuck implements Quackable only and squeak; DecoyDuck display only, both extend Duck."
+    },
+    {
+      "requirement": "Caption interface contracts alone do not reuse behavior implementation.",
+      "passed": true,
+      "evidence": "Footer interfaces define capabilities, each class still implements own behavior."
+    }
+  ],
+  "notes": "Direct visual inspection confirms exact methods and subtype capabilities; no ambiguous relationship arrows. PNG decode before approval."
+}

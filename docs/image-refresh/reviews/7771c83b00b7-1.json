@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "BACKGROUNDPRICE/ID/BACKGROUND_NAME/URL;PROPPRICE/ID/PROP_NAME/URL.",
+      "passed": true,
+      "evidence": "Both tables contain inherited ID PRICE URL and respective subtype names."
+    },
+    {
+      "requirement": "Item@MappedSuperclassnoITEMtable;inheritedID/PRICE/URLineachchild,noFKtoItem.",
+      "passed": true,
+      "evidence": "Dashed mapping flow down from class-only Item explicitly no ITEM table; no FK or discriminator."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T02:03:07.912Z",
+  "generatedSha256": "62a23968fb32d1c016e2d0b10d200e787380484bb4f240ba9bd53aa8174a37bf",
+  "specSha256": "1c3eba39ca10091afe0165b6c51c1829ddc1eef3f0646e0c5d3265fa999c8593"
+}

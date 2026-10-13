@@ -1,0 +1,14 @@
+{
+  "title": "Web and database routing",
+  "purpose": "Combine DNS, load distribution and single-primary read/write routing in clear original layout.",
+  "alt": "DNS·로드밸런서·웹 서버와 주 DB 쓰기·복제 DB 읽기를 결합한 서비스 구조",
+  "requiredChecks": [
+    "DNS exchanges endpoint with Client, while HTTP goes Client→Load balancer→two parallel Web servers.",
+    "Both web servers can write to Primary and read from Replica through distinct labeled group buses.",
+    "Primary→Replica replication is one-way, unlike request/response pairs.",
+    "Public/private network boundaries and operation labels are readable."
+  ],
+  "prompt": "Create a NEW original English technical educational raster diagram, white background, large navy sans-serif labels, flat blue/teal cards, clear separated orthogonal arrows and generous gutters. No logos, decorative imagery, copied textbook composition, numeric benchmarks or absolute availability promises. TITLE \"Web and database routing\". Left Client and small DNSresolverabove, separate paired DNSlookup/endpoint arrows. Client→Loadbalancer labelled \"HTTP / public endpoint\". To right \"Private network\" boundary contains group \"Web tier\" with exactly2cards \"Web A\",\"Web B\" both receiving balancerarrows. On farright two database cards \"Primary\" upper and \"Replica\" lower. Connect grouped webtier→Primary solid arrow labelled \"Writes\" and webtier→Replica solid arrow \"Reads\"; branch from both WebA/B onto these TWO separate shared request buses in empty gutter. Primary→Replica dashed downward arrow labelled \"Replication\", only one-way. Footer \"Route changes to primary, reads to replica\". No request goes throughDNS; replication separate from query arrows. If connector complexity excessive, use Web tiergroupboundarystart on both DB arrows rather than 4crossedindividualarrows; retain twoWebcards.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

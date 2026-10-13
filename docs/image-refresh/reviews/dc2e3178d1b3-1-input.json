@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Four lifelines labelled Receiver, Client, Command, Invoker run top to bottom.",
+      "passed": true,
+      "evidence": "Four lifelines left-to-right Receiver, Client, Command, Invoker, with time downward."
+    },
+    {
+      "requirement": "Setup: Client→Command new Command(receiver), then Client→Invoker setCommand(command).",
+      "passed": true,
+      "evidence": "First Client→Command new Command(receiver), then Client→Invoker setCommand(command), both exact endpoints."
+    },
+    {
+      "requirement": "Invocation: Invoker→Command execute(), then Command→Receiver action().",
+      "passed": true,
+      "evidence": "Later Invoker→Command execute arrow points left, then Command→Receiver action arrow points left."
+    },
+    {
+      "requirement": "Time flows downward; the receiver action follows execute and no reverse delegation.",
+      "passed": true,
+      "evidence": "Message rows ordered 1–4 top-to-bottom with Later divider; no reverse delegation."
+    }
+  ],
+  "notes": "Pass. Roles, interface dependency, sequence lifelines, command array mapping and undo verified visually."
+}

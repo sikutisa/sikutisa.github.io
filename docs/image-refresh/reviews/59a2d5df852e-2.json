@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Command interface declares execute(); Invoker stores Command and invokes execute().",
+      "passed": true,
+      "evidence": "Invoker now has direct top-edge uses arrow into Command interface; no arrow to ConcreteCommand."
+    },
+    {
+      "requirement": "ConcreteCommand implements Command and stores receiver: Receiver.",
+      "passed": true,
+      "evidence": "ConcreteCommand implements Command and stores Receiver explicitly."
+    },
+    {
+      "requirement": "ConcreteCommand.execute() delegates to receiver.action(); Receiver declares action().",
+      "passed": true,
+      "evidence": "Delegation arrow and execute receiver.action() correctly match Receiver.action()."
+    },
+    {
+      "requirement": "Client creates receiver/command and configures invoker; no Invoker→Receiver dependency.",
+      "passed": true,
+      "evidence": "Client creates/configures correct participants; no direct Invoker→Receiver dependency."
+    }
+  ],
+  "notes": "Pass. Roles, interface dependency, sequence lifelines, command array mapping and undo verified visually.",
+  "at": "2026-10-12T14:41:33.463Z",
+  "generatedSha256": "57cae93cc095fc949f487437870b6a5feb82b6219c98b54eebcbfbe205cec1ff",
+  "specSha256": "91b42a80ab06d9fb447ab78cb7b5a3527c8a5cfd40922e3bf9bc280f1b41678d"
+}

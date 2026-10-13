@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "RAID0+1two4diskstripegroupsmirrored,topfirstdiskfailed;survivingbottomgroupvalid.",
+      "passed": true,
+      "evidence": "4디스크 Stripe A/B가 미러링되고 A1 한 곳의 장애와 B 전체 생존 표시 확인."
+    },
+    {
+      "requirement": "RAID1+0fourmirroredpairsstripedacrosspairs,firstupperdiskfailedbutlowermirroravailable;singlefailureonly.",
+      "passed": true,
+      "evidence": "네 미러 쌍 위에 Stripe 연결, 첫 쌍의 A1 장애와 A1′ 생존 표시. 추가 장애 가정 없음."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:56:00.410Z",
+  "generatedSha256": "b57819736543d728237c697270f55bf856e62b1644b8d68f096abc0af3941094",
+  "specSha256": "12ca1a17304a28cd863b4cd4eba2ead1c2b142bc2b179163246c5962867d5929"
+}

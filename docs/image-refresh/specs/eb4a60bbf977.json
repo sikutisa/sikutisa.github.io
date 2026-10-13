@@ -1,0 +1,14 @@
+{
+  "title": "Video upload and processing",
+  "purpose": "Explain illustrative video platform's separate media upload/transcoding/CDN and metadata/control/completion-event paths.",
+  "alt": "비디오 원본 업로드·트랜스코딩·CDN 배포와 메타데이터 및 완료 이벤트 처리 경로",
+  "requiredChecks": [
+    "Client uploads bytes directly to Original blob storage, while metadata requests go via Load balancer→API servers.",
+    "Original storage→Transcoding workers→Encoded video storage→CDN; client playback uses CDN independently from API metadata path.",
+    "Transcoding workers also emit Completion events→Completion handler, which updates both Metadata DB and Metadata cache.",
+    "API servers separately access DB/cache; completion queue contains events, not video bytes, and diagram is illustrative."
+  ],
+  "prompt": "Create a NEW original English raster diagram for a technical study blog. White background, large navy sans-serif labels, flat blue/teal cards, generous whitespace, clearly separated arrows. No copied book composition, provider logos, numeric prices or promise of uninterrupted service. TITLE \"Video upload and processing\". Subtitle \"Illustrative video-platform design\". THREEhorizontal lanes, singleClientleft. Top \"Media\": Client→\"Original blob storage\" labelled\"Upload bytes\"; original→\"Transcoding workers\"→\"Encoded video storage\"→\"CDN\". CDNhas separateouterTOPreturnarrow→Client labelled\"Playback\", noAPIinmedia path. Middle \"Metadata\": Client→\"Load balancer\"→\"API servers\"; APIbranches to parallel\"Metadata DB\" and\"Metadata cache\" onright. Bottom \"Completion events\": shortdownarrowfromTranscodingworkers to\"Completion event queue\"→\"Completion handler\". Queue subtitle\"Events, not video bytes\". HandlerbranchesupinRIGHTgutter to BOTHMetadataDB/cache labelled\"Update status\". APIalsoaccessDB/cachebidirectionally, separationclear. Footer \"Separate video bytes from metadata and completion events\". Keep data/eventpathsdistinct; no eventqueuebetweenworkerandencodedstore, noDBcontainsactualvideo.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

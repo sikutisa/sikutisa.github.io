@@ -1,0 +1,1 @@
+{"prompt":"Keep all five P nodes and positions, table and rice bowl and captions. Replace each of the FIVE pairs of brown chopsticks C0,C1,C2,C3,C4 with EXACTLY ONE single slender straight stick. There must be FIVE sticks total, not ten. Each C0..C4 labels a SINGLE stick, not a pair. Delete one stick from every pair. Preserve one between each adjacent pair of philosophers."}

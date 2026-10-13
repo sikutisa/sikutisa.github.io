@@ -1,0 +1,36 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Fourlevels real-time,system,interactive,batch highesttolowest.",
+      "passed": true,
+      "evidence": "Exactfourclasses top-to-bottom."
+    },
+    {
+      "requirement": "Separate fixed queues; no automaticfeedbackmigration.",
+      "passed": true,
+      "evidence": "Separatefixedqueues no feedbackmigration."
+    },
+    {
+      "requirement": "Priority order indicated clearly; no invented quantumvalues.",
+      "passed": true,
+      "evidence": "Priorityindicatorhighest/lowest, no quantum."
+    },
+    {
+      "requirement": "Illustrative policy, not universal OS scheduling guarantee.",
+      "passed": true,
+      "evidence": "Subtitle illustrativefixed-queuepolicy, no universalguarantee."
+    },
+    {
+      "requirement": "Queues feed one shared scheduler and CPU; do not imply one separate CPU per class.",
+      "passed": false,
+      "evidence": "Four separateCPUicons could imply dedicatedCPUperclass; repair to one shared scheduler andCPU."
+    }
+  ],
+  "notes": "Fail: duplicated CPUs misrepresent shared scheduling resource. Original retained until repair.",
+  "at": "2026-10-12T22:35:52.978Z",
+  "generatedSha256": "e5d2c2e4dd89b5e7c002e4787cdeda95733a5eb6f8707651481e6e3aa9394b08",
+  "specSha256": "61f15214b72b4fb7feec5bfa5b6d76e7f03a27e0c4a8be9a79cf8a62bfc0fe5a"
+}

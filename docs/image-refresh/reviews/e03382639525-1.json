@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Column order: ID | name | dept_name | salary",
+      "passed": true,
+      "evidence": "Headers ID,name,dept_name,salary in exact order."
+    },
+    {
+      "requirement": "Exactly 4 rows: 201 | Dana | Comp. Sci. | 60000 ; 202 | Eli | Comp. Sci. | 80000 ; 203 | Faye | Physics | 90000 ; 204 | Gus | Physics | 110000",
+      "passed": true,
+      "evidence": "Four rows Dana201Comp. Sci.60000, Eli202Comp. Sci.80000, Faye203Physics90000, Gus204Physics110000 match fixture."
+    },
+    {
+      "requirement": "Group instructors by dept_name, then average salary.",
+      "passed": true,
+      "evidence": "Two instructors ineachdepartment shown; caption describesgroupbydeptthenaveragesalary."
+    },
+    {
+      "requirement": "Original illustrative dataset footer; no copied textbook names, all cells legible.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer present and everyfieldreadable."
+    }
+  ],
+  "notes": "Pass after checking every cell and the independent product/mean calculations in examples/sql-product-aggregation.json.",
+  "at": "2026-10-12T13:54:07.338Z",
+  "generatedSha256": "f92059b88474eddb605a624151c7aa81466b577295c8e7b7c48e3251a2a88d72",
+  "specSha256": "c381b762dc69c1b7853587a4f4896f381d98b00f2699351faf136241537f5cbf"
+}

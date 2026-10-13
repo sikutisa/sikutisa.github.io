@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "SingleOSprocesses→kernel→hardware; virtualizedthreeVM1/2/3 eachprocesses→ownkernel.",
+      "passed": true,
+      "evidence": "왼쪽 단일 Processes/Kernel/Hardware,오른쪽 VM1/2/3 각각 Processes→Kernel이 정확하다."
+    },
+    {
+      "requirement": "Threeguestkernels above one VMM above sharedhardware; guestprogramminginterfaces retained.",
+      "passed": true,
+      "evidence": "독립 커널 세 개 아래 공통 VMM과 Hardware가 있고 Programming interface가 각 VM에 보인다."
+    }
+  ],
+  "notes": "직접 시각 검수와 PNG 디코딩.",
+  "at": "2026-10-13T00:04:10.355Z",
+  "generatedSha256": "f2302b5f1be2122191392991c38d7ce17353a28c71a206ca04c85f18013900ed",
+  "specSha256": "a741ff6a0eea6a8f147ab6c6e28d0d8a8f7412bd8102f11b3ea961615f1ec51a"
+}

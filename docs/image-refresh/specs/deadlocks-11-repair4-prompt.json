@@ -1,0 +1,5 @@
+{
+  "id": "724d56fe0f43",
+  "attempt": 4,
+  "prompt": "Fix ONLY the left panel. There is an erroneous teal curved arrow from T2 to T1 above the blue T2→R3 arrow: erase that entire teal curve. There is an erroneous blue arrow from R2 box up to T2: erase it completely. In place draw a new teal assignment arrow starting at R2 single instance dot and curving around far left/top whitespace, ending with a clear arrowhead at T1 circle. Label the new arrow R2 → T1 if needed. Do not alter existing R1→T2 or T1→R1 or T4→R2 or any other edge. Do not alter the now-correct right panel. EXACTLY one new teal assignment R2→T1, no T2→T1 and no R2→T2. Nothing else changes."
+}

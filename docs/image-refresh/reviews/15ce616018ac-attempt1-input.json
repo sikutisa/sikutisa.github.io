@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "53→65→67→98→122→124→183→199;wrap199→0withoutservice;0→14→37.",
+      "passed": true,
+      "evidence": "53から199までの昇順、破線199→0無サービス復帰、0→14→37が正確。"
+    },
+    {
+      "requirement": "Countedmovement146+37=183excludingwrap199;physicalmovementincludingwrap382;labelsconventionexplicit.",
+      "passed": true,
+      "evidence": "復帰除外183と復帰込み382の式・注記、0/199境界表記が正確。"
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "ReadyheadPCB7→PCB2→null,tailPCB2;diskunit0headPCB3→PCB14→PCB6→null,tailPCB6.",
+      "passed": true,
+      "evidence": "Ready HEAD→PCB7→PCB2→null TAIL→PCB2, Disk HEAD→PCB3→PCB14→PCB6→null TAIL→PCB6가 맞다."
+    },
+    {
+      "requirement": "Magnetic tapeunits0/1 emptyheadtailnull;Terminalunit0headandtailPCB5→null;queueheaderslabelled.",
+      "passed": true,
+      "evidence": "두 Magnetic tape 빈 HEAD/TAIL→null,Terminal HEAD/TAIL→PCB5→null이 정확하고 행 사이 링크는 없다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

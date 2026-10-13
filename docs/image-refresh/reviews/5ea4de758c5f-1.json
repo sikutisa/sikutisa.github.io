@@ -1,0 +1,36 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Six virtual pages P0–P5 and four physical frames F0–F3, marked as an illustrative example.",
+      "passed": true,
+      "evidence": "The image visibly contains six rows P0,P1,P2,P3,P4,P5, four frame rows F0–F3, and the subtitle Illustrative example."
+    },
+    {
+      "requirement": "Page-table rows are P0/F2/1, P1/—/0, P2/—/0, P3/F0/1, P4/—/0, P5/—/0.",
+      "passed": true,
+      "evidence": "All six page-table rows match the specified page/frame/present values; P0 maps to F2 with present=1 and P3 maps to F0 with present=1, all other rows show dash/0."
+    },
+    {
+      "requirement": "Physical memory contains F0:P3, F1:free, F2:P0, F3:free; backing storage contains P1,P2,P4,P5.",
+      "passed": true,
+      "evidence": "RAM labels are F0:P3, F1:free, F2:P0, F3:free. Backing storage has exactly P1,P2,P4,P5 and is labeled Nonresident pages."
+    },
+    {
+      "requirement": "Mapping arrows connect P0 to F2 and P3 to F0; no nonresident mapping to RAM; page-in/page-out is bidirectional.",
+      "passed": true,
+      "evidence": "Followed P0 connector to the F2 row and P3 connector to F0. The crossing has no junction marker. The dashed storage connector has two opposite arrowheads and its Page in / page out label is readable."
+    },
+    {
+      "requirement": "All English labels are legible and complete, including the six-page/four-frame footer; no decorative copied artwork.",
+      "passed": true,
+      "evidence": "Title, panel headings, row labels, Address translation, page-in/out label, and footer are complete and legible. Original cylindrical store artwork is replaced by a flat original composition."
+    }
+  ],
+  "notes": "Compared the generated image with the full Virtual_Memory document and original 1.png. The new illustrative mappings preserve the intended larger virtual space and resident/nonresident distinction. PIL verify() and load() succeeded for 1774×887 RGB. Minor light shading does not obscure content. No factual mismatch found.",
+  "at": "2026-10-12T11:55:26.913Z",
+  "generatedSha256": "e906b49edc0374e0927b6cfe2001d74a1b5814806f757adf927fcefc82ab94cf",
+  "specSha256": "dc112d31453e0aa04c2d2dd91c1f5399cda5b11d3fab692f28aa4be4f0438869"
+}

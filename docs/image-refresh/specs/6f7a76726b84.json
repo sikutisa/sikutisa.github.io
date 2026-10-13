@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Blocking synchronous vs asynchronous I/O",
+  "alt": "동기 블로킹 I/O의 완료 대기와 비동기 I/O의 요청 수락·완료 통지 비교",
+  "requiredChecks": [
+    "Synchronousrequestwaitsuntiltransfercompletion;asynchronousrequestreturnsacceptanceearlyandcompletionnotificationlater.",
+    "Twotimepanelsuserprocess/kerneldriver/handler/hardwaretransfer;timeincreasesright,noconfusionacceptance/completion."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Two stacked panels with horizontal time axis to right and clear matching labels. (a) Blocking synchronous I/O: User process requests I/O through kernel driver, hardware data transfer spans time; user WAIT band for full duration; after transfer complete interrupt handler and return to user. (b) Asynchronous I/O: same user/kernel/device layers; user requests I/O then immediate return labelled Request accepted, user continues while hardware transfer occurs; at transfer end separate interrupt handler and Completion notification to user. Label request acceptance separately from completion, do not label nonblocking equivalent to async. Use explicit arrows and broad readable whitespace."
+}

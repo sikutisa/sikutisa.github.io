@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Policy package owns Policy Layer and Policy Service interface; Policy Layer uses Policy Service.",
+      "passed": true,
+      "evidence": "Policy bounded package includes Policy Layer and Policy Service interface with down uses arrow."
+    },
+    {
+      "requirement": "Mechanism package owns Mechanism Layer and Mechanism Service; Mechanism Layer implements Policy Service and uses Mechanism Service.",
+      "passed": true,
+      "evidence": "Mechanism package contains Layer and Mechanism Service; layer uses its Service and leftward implements Policy Service."
+    },
+    {
+      "requirement": "Utility Layer implements Mechanism Service.",
+      "passed": true,
+      "evidence": "Utility Layer leftward implements arrow targets Mechanism Service."
+    },
+    {
+      "requirement": "Cross-package source dependencies run Mechanism→Policy and Utility→Mechanism, while interfaces stay owned by their clients.",
+      "passed": true,
+      "evidence": "Interface ownership boundaries correct; bottom source dependencies Mechanism→Policy,Utility→Mechanism."
+    }
+  ],
+  "notes": "Direct visual inspection confirms all contract labels, ownership, arrow directions and multiplicities; PNG decode before approval.",
+  "at": "2026-10-12T15:56:51.910Z",
+  "generatedSha256": "dbe47e0197aa58af67899aad5eea0e99dd009fc9972acf2b31a6396ce9559f75",
+  "specSha256": "cee14f7099d20045b79a0b91a91a13ae938cef53bb7157f34e1605f07fd7c9ec"
+}

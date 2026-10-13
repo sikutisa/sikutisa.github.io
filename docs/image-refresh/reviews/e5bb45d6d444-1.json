@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Column headers in exact order: ID | course_id | sec_id | semester | year | grade",
+      "passed": true,
+      "evidence": "Header reads ID,course_id,sec_id,semester,year,grade in exact order."
+    },
+    {
+      "requirement": "Exactly 3 data rows in exact order: 101 | CS-210 | 1 | Fall | 2026 | A ; 101 | CS-315 | 1 | Spring | 2027 | B+ ; 102 | HIS-220 | 1 | Fall | 2026 | A-",
+      "passed": true,
+      "evidence": "Rows match fixture:101 CS-210 1 Fall2026 A;101 CS-315 1 Spring2027 B+;102 HIS-220 1 Fall2026 A-."
+    },
+    {
+      "requirement": "101 has two course records; 102 has one, and student 103 has none.",
+      "passed": true,
+      "evidence": "Caption states101 two records,102 one,103 none; shown records match."
+    },
+    {
+      "requirement": "Footer explicitly identifies an original illustrative dataset; all table cells readable without copied textbook names/data.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer present, all cells readable; no copied textbook names."
+    }
+  ],
+  "notes": "Pass. Every cell visually compared to independently calculated examples/sql-joins.json.",
+  "at": "2026-10-12T13:39:25.258Z",
+  "generatedSha256": "9359004cbc13a4281a47477baf986fce7c434bb1cae0223929969771e5f86545",
+  "specSha256": "547ba7185e9dab2490226086922ed90c8623cd605d0d5c053ff89d58ece99a14"
+}

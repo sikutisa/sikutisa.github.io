@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "DataChannel interface send(char), receive(): char.",
+      "passed": true,
+      "evidence": "DataChannel send(char) and receive():char correct."
+    },
+    {
+      "requirement": "Connection interface dial(String num), hangup().",
+      "passed": true,
+      "evidence": "Connection dial(String num) and hangup() correct."
+    },
+    {
+      "requirement": "ModemImpl implements both interfaces; methods not swapped between responsibilities.",
+      "passed": false,
+      "evidence": "Class explicitly implements both but arrows incorrectly point from interfaces DOWN to ModemImpl; repair required."
+    },
+    {
+      "requirement": "Caption says split when change patterns justify it; avoid needless complexity.",
+      "passed": true,
+      "evidence": "Footer conditions separation on independently changing responsibilities and warns needless complexity."
+    }
+  ],
+  "notes": "Fail: reversed implementation arrows; original retained until revised output passes."
+}

@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Multiprogramming memory",
+  "alt": "주소 0부터 512M까지 운영체제와 작업 네 개가 동시에 상주하는 예시 메모리",
+  "requiredChecks": [
+    "Verticalmemoryaddress0atupperboundary512Matlowerboundary; OSthenjob1,2,3,4.",
+    "Allfourjobsresidentatonce; schematicnotactualequalpartitions or simultaneousCPUexecution."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Memory in a multiprogramming system. Tall vertical memory bar split top Operating system then Job1,Job2,Job3,Job4 downward. Address0 upperboundaryleft,512M lowerboundaryleft. Distincttealshadesjobs. Right caption Several jobs stay in memory; CPU selects a job to run. Footer Illustrative memory layout — not to scale. No numericinternaladdresses. No simultaneousCPU execution claim."
+}

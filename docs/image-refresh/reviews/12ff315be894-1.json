@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Core1T1,T3,T1,T3,T1,...;Core2T2,T4,T2,T4,T2,...",
+      "passed": true,
+      "evidence": "Core1 T1/T3/T1/T3/T1, Core2 T2/T4/T2/T4/T2 정확."
+    },
+    {
+      "requirement": "Alignedslotsconcurrentacrosscores,time→right.",
+      "passed": true,
+      "evidence": "수직 슬롯이 같은 시간에 맞춰 정렬되고 두 코어 동시 실행 설명 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:38:24.412Z",
+  "generatedSha256": "2ef31036975fd1be0b7985c6031bb48c3a563c2608af892e77f41f9c274a1406",
+  "specSha256": "5d4f0e08d162a57cc7e69e4742ef001ae45932a0fbfdc183918e57995f82cdd3"
+}

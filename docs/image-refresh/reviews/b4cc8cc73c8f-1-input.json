@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Duck has shared quack/swim/fly and abstract display.",
+      "passed": true,
+      "evidence": "Abstract Duck shared quack/swim/fly and abstract display exact."
+    },
+    {
+      "requirement": "MallardDuck and RedheadDuck display specializations remain.",
+      "passed": true,
+      "evidence": "MallardDuck/RedheadDuck extends Duck, correct display appearance."
+    },
+    {
+      "requirement": "RubberDuck extends Duck; quack() squeaks, display() rubber appearance, fly() does nothing.",
+      "passed": true,
+      "evidence": "RubberDuck extends Duck with quack:squeak,display:rubberduck,fly:do nothing exact."
+    },
+    {
+      "requirement": "Caption identifies per-subtype overrides, not standalone strategy objects.",
+      "passed": true,
+      "evidence": "Footer each exception needs subtype override, no strategies introduced."
+    }
+  ],
+  "notes": "Direct visual inspection confirms exact methods and subtype capabilities; no ambiguous relationship arrows. PNG decode before approval."
+}

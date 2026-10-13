@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "RootaviDirA,tcfile,jimDirJ;Atext/mail/countC/bookB;JbookB/mail/unhexU/hypH.",
+      "passed": false,
+      "evidence": "A 첫 행 text가 distinct로 잘못 생성되고 J의 unhex 외부선이 File C로 향해 공유 대상이 잘못됨."
+    },
+    {
+      "requirement": "Bavi→A,count→C;Hunhex→U,hexfile;A↔Bcyclehighlight;sharedCandUconverge.",
+      "passed": false,
+      "evidence": "B의 avi 외부 화살표가 실제 A 디렉터리 대신 B 참조칸에 도착. ID 참조 표로 재구성 필요."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:09:20.095Z",
+  "generatedSha256": "756b119944ce7d477bc8ff3191c0a9580b9607a0fe49abb98b6b8c1512d98a55",
+  "specSha256": "a8275ff56e6d7fa2dcd7b66f8db41aa3d955a51d21be6688ba89322197aa0dfb"
+}

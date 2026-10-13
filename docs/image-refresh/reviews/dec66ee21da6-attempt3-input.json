@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Platters,spindle,armassembly,arms,read-writeheads;rotationaroundspindle.",
+      "passed": true,
+      "evidence": "3장 플래터·중앙 스핀들·헤드와 암·암 조립체의 명칭과 회전 표시 확인."
+    },
+    {
+      "requirement": "Track t circularring,sector s wedgepartoftrack,cylinder c alignedsam eradiustracksonplatters; preciseannotationtargets.",
+      "passed": true,
+      "evidence": "청색 Track t와 그 안의 Sector s, 3장 플래터의 같은 반지름 청색 트랙 및 그 위를 잇는 점선 확인. Cylinder c 설명도 일치."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

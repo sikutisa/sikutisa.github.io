@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Process thread resources",
+  "alt": "한 개·여러 개 스레드의 공유 코드·데이터·파일과 개별 PC·레지스터·스택",
+  "requiredChecks": [
+    "Singlethread1PC/registers/stack;multithread3separatePC/registers/stacks.",
+    "Code/data/filessharedwithinprocess;twoprocessboundariesnotcrossshared."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Single-threaded and multithreaded processes. Two process boundaries side by side. Left top Shared process resources: Code, Data, Files. Below one Thread 1 card with Registers, PC, Stack. Right top single Shared process resources strip Code, Data, Files. Below THREE separate cards Thread1/Thread2/Thread3, each exact Registers, PC, Stack. No stack shared. Caption Each thread has its own execution state; threads in the same process share code, data, and files."
+}

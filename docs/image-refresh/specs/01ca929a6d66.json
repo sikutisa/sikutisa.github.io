@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Pages mapped to noncontiguous frames",
+  "alt": "논리 페이지 0·1·2·3이 물리 프레임 1·4·3·7에 흩어져 배치되는 예제",
+  "requiredChecks": [
+    "Logicalpages0..3; pagetable0→1,1→4,2→3,3→7.",
+    "Physicalframes0..7: frame1Page0,3Page2,4Page1,7Page3; remaining0,2,5,6 unused.",
+    "Equal-sized pages/frames; noncontiguous physical layout clear, no substituted mapping."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Contiguous logical pages, scattered physical frames. Three panels Logical memory four equalblocksPage0,Page1,Page2,Page3; Page table simpletwo-columnPage|Frame rows0|1,1|4,2|3,3|7; Physicalmemory eight equalblocksFrame0Unused,Frame1Page0,Frame2Unused,Frame3Page2,Frame4Page1,Frame5Unused,Frame6Unused,Frame7Page3. Use consistentfourpagecolorsonallpanels. LabelPhysicalframes0through7clearly. No crossarrows needed; tableisexactmapping. Footer Pages and frames have the same size; frames need not be adjacent."
+}

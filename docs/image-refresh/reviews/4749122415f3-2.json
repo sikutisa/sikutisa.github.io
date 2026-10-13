@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "ColumnsID,BACKGROUND_NAME;singlerow2,back1.",
+      "passed": true,
+      "evidence": "Single BACKGROUND table, ID/BACKGROUND_NAME, row2/back1."
+    },
+    {
+      "requirement": "ID2sameITEMID2PK/FK,commonprice/urlnotduplicatedchild.",
+      "passed": true,
+      "evidence": "PK+FK note correctly refers ITEM.ID2; no invented parent fields."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T02:08:00.927Z",
+  "generatedSha256": "4309d3c5d4c244cd7386e9fc3a5e275ae3fac947a2c467ac84324674c2ded9e0",
+  "specSha256": "1118a07d0b4d016ac37b76af373a9fd15f0434bf2333dc09953ed1cabd8fd365"
+}

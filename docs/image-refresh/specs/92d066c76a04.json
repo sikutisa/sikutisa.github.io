@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Thrashing",
+  "purpose": "Illustrate CPU utilization rising with multiprogramming then collapsing under page swapping pressure.",
+  "requiredChecks": [
+    "Horizontal axis is Degree of multiprogramming and vertical axis CPU utilization.",
+    "A qualitative curve first rises, peaks, then drops steeply under high multiprogramming.",
+    "Thrashing region is clearly labeled after the peak/drop, with an explanation of excessive paging.",
+    "No invented numeric measurements; caption marks the curve conceptual."
+  ],
+  "alt": "Conceptual thrashing curve: CPU utilization drops when too many processes spend time paging",
+  "prompt": "Create a NEW original English technical educational diagram. White background, crisp large navy sans-serif text, flat blue/teal shapes, minimal clean connectors, generous margins, no logos or watermark, no decorative or traced textbook artwork. TITLE \"Thrashing\". A qualitative line plot with navy axes and NO numeric data/ticks. Exact horizontal label \"Degree of multiprogramming\" and vertical label \"CPU utilization\". Draw one blue curve starting low at left, rising smoothly to a broad peak, then dropping STEEPLY toward the baseline on the right. Add a pale teal shaded band only over the right-hand drop region, labeled \"Thrashing\". Under the plot, note exactly \"Too few frames → frequent page faults → excessive paging\". Footer exactly \"Conceptual curve, not measured data\". Keep the label within the high-multiprogramming drop region, not on the ascending portion. Do not invent performance percentages or make the curve increase throughout."
+}

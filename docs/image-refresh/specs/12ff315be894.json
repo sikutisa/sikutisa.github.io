@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Multicore parallel execution",
+  "alt": "두 코어에서 T1·T3와 T2·T4가 동시에 실행되는 시간표",
+  "requiredChecks": [
+    "Core1T1,T3,T1,T3,T1,...;Core2T2,T4,T2,T4,T2,...",
+    "Alignedslotsconcurrentacrosscores,time→right."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Parallel execution on two cores. Two aligned equal-width slot rows. Core1 T1,T3,T1,T3,T1,... . Core2 T2,T4,T2,T4,T2,... . Shared rightward Time axis beneath. Slots align vertically across cores. Caption Different cores can execute threads simultaneously."
+}

@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Applicationprograms→Logicalfilesystem→File-organizationmodule.",
+      "passed": true,
+      "evidence": "Application programs→Logical file system→File-organization module 순서 정확."
+    },
+    {
+      "requirement": "Basicfilesystem→I/Ocontrol→Devices;6exactlayersadjacentdownwardconnections.",
+      "passed": true,
+      "evidence": "Basic file system→I/O control→Devices까지 총 6층과 인접 하향 연결 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

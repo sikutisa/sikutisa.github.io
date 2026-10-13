@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Two-level directory",
+  "alt": "사용자별 디렉터리에서 같은 이름을 별개 파일로 사용하는 2단계 디렉터리",
+  "requiredChecks": [
+    "Masterdirectoryfourusers1..4eachseparateUFD.",
+    "User1cat/bo/a/test;User2a/data;User3a/test;User4x/data/a;11distinctfiles."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Two-level directory. Master file directory contains User 1, User 2, User 3, User 4. Four separate USER FILE DIRECTORY cards below, each connected only to corresponding user. Exact file contents: User1 cat, bo, a, test; User2 a, data; User3 a, test; User4 x, data, a. All eleven file icons separate identities, no shared arrows. Caption Same filename may exist in different user directories."
+}

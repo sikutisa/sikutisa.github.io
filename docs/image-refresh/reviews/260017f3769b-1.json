@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "CPU logical address checked logical address<limit; Yes goes to plus adder with relocation register; output physical address→memory.",
+      "passed": true,
+      "evidence": "Logicaladdress<limit andYes→plus→physicalmemorycorrect; registersfeedcorrectstage."
+    },
+    {
+      "requirement": "No branch to OS trap addressing error; limit controls comparison, relocation controls adder; no reversed yes/no.",
+      "passed": false,
+      "evidence": "No branchandTrap:addressingerror entirelymissing. Rejectuntilinvalidaddresspathadded."
+    }
+  ],
+  "notes": "Direct full-image visual review against article and original, all arrow endpoints/branches/values checked. Failed item keeps original reference.",
+  "at": "2026-10-12T23:03:50.007Z",
+  "generatedSha256": "b221b429bd446c96f3041be571513107d536dc6c1cf01e157377f61f95a046ab",
+  "specSha256": "a642831fcf3fafed6a5b1e3d12aa9d79c46692224c6b0bd99ee26b046d16b5a1"
+}

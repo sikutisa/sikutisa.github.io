@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "One Subject owns state and has many registered observers.",
+      "passed": true,
+      "evidence": "Single Subject owns int state2 and three registered observers."
+    },
+    {
+      "requirement": "Example state 2 reaches Cat, Dog, Mouse through update(2).",
+      "passed": true,
+      "evidence": "Cat/Dog/Mouse each receive update(2) through correct arrows."
+    },
+    {
+      "requirement": "Observer dependency and notification direction are distinguished.",
+      "passed": true,
+      "evidence": "Dependency explained in top caption; actual arrows are labelled notification update(2)."
+    },
+    {
+      "requirement": "No guaranteed notification ordering or independent observer source of state.",
+      "passed": true,
+      "evidence": "No ordering numbers or observer state-write arrows."
+    }
+  ],
+  "notes": "Pass. Visually verified abstraction implementations, observer membership, state direction, custom push vs legacy pull signatures, and changed-flag notification semantics against original and article; legacy API checked against Oracle documentation."
+}

@@ -1,0 +1,16 @@
+{
+  "title": "FCFS: P1 → P2 → P3",
+  "purpose": "Show first FCFS order and its exact waiting/turnaround values.",
+  "alt": "FCFS에서 P1·P2·P3 순으로 실행할 때 시간 경계 0·24·27·30ms와 평균 대기 17ms",
+  "requiredChecks": [
+    "Gantt intervals P1[0,24],P2[24,27],P3[27,30] and durations24,3,3ms exact; explicitly mark schematic timeline not to scale when widths are illustrative.",
+    "All arrivals0; nonpreemptive order P1,P2,P3.",
+    "Waiting P1=0,P2=24,P3=27, average17ms.",
+    "Turnaround24,27,30 average27ms; no context-switch overhead included."
+  ],
+  "prompt": "Create an ORIGINAL English technical raster figure, opaque white, navy readable type, blue/teal/amber. Title 'FCFS: P1 → P2 → P3'. All arrive at0; nonpreemptive. An explicitly labelled 'Schematic timeline — not to scale' with P1 duration24ms, P2duration3ms,P3duration3ms, boundaries0,24,27,30ms. Table Process|Waiting(ms)|Turnaround(ms):P1|0|24,P2|24|27,P3|27|30. Footer Average waiting17ms,average turnaround27ms. Explicit durations and timestamps convey time; decorative widths not metric.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "calculationVerified": true,
+  "designRevision": "Three inspected generated results failed proportional widths despite exact timestamps. Use an explicitly not-to-scale schematic with exact duration labels rather than presenting misleading quantitative geometry. All scheduling data and metrics retained; old failed reviews preserved."
+}

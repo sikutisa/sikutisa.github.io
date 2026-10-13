@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Subject interface registerObserver(), removeObserver(), notifyObservers(); Observer interface update().",
+      "passed": true,
+      "evidence": "Subject register/remove/notify interface and Observer update exact."
+    },
+    {
+      "requirement": "ConcreteSubject implements Subject; has getState()/setState() and an observer list.",
+      "passed": true,
+      "evidence": "ConcreteSubject implements Subject, with state/getState/setState; Subject association observers:many establishes held observer collection."
+    },
+    {
+      "requirement": "ConcreteObserver implements Observer and references ConcreteSubject for state access.",
+      "passed": true,
+      "evidence": "ConcreteObserver implements Observer, stores subject:ConcreteSubject."
+    },
+    {
+      "requirement": "Subject notifies Observer.update(); observer reads subject state, not reverse inheritance.",
+      "passed": true,
+      "evidence": "Subject notification rightward; concrete observer pull read state leftward. No reverse implementation."
+    }
+  ],
+  "notes": "Pass. Visually verified abstraction implementations, observer membership, state direction, custom push vs legacy pull signatures, and changed-flag notification semantics against original and article; legacy API checked against Oracle documentation.",
+  "at": "2026-10-12T15:33:45.170Z",
+  "generatedSha256": "5c5c65ba398b22a73dc8ea2b1ea07da268224612937d4e26cdf5a123e8afbd18",
+  "specSha256": "cf289be585970e6f93fae19f9b36afa51ad1913b326e0a59ba0c900dfe6fbab3"
+}

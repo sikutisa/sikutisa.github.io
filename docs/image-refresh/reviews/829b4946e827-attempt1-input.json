@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Input x → A → B → Output B(A(x)).",
+      "passed": true,
+      "evidence": "x passes A then B to B(A(x)) exact."
+    },
+    {
+      "requirement": "A.andThen(B), Function composition case, one arrow each left-to-right.",
+      "passed": true,
+      "evidence": "andThen spelling and Step1/2 correct, all arrows rightward."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

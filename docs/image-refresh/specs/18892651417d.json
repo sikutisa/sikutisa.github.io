@@ -1,0 +1,17 @@
+{
+  "title": "MySQL query execution",
+  "purpose": "Explain SQL parsing, pre-processing, optimization and execution and handler API access to alternative storage engines.",
+  "alt": "SQL 파서·전처리기·옵티마이저·실행기 순서와 핸들러 API를 통한 스토리지 엔진 접근",
+  "requiredChecks": [
+    "SQL request enters Parser then Preprocessor then Optimizer then Executor in that order within MySQL engine.",
+    "Optimizer includes rewrite, cost estimation and execution plan; parser and preprocessor roles are distinct.",
+    "Executor alone connects to Handler API, which branches to InnoDB, MyISAM and MEMORY as alternatives, not a sequential chain.",
+    "SQL result returns from Executor to Client; request and response directions are unambiguous."
+  ],
+  "sources": [
+    "https://dev.mysql.com/doc/refman/8.0/en/pluggable-storage-overview.html"
+  ],
+  "prompt": "Create a NEW original raster diagram for a technical study blog. English labels verbatim, large crisp navy sans-serif text on white, restrained flat blue and teal cards, orthogonal connectors, generous whitespace, no gears, gradients, stock icons, copied textbook composition, logos or watermark. Labels must be comfortably legible. TITLE \"MySQL query execution\". Horizontal pipeline with generous wide canvas. Far left \"Client\", to its right boundary \"MySQL engine\" with FOUR successive boxes \"Parser\", \"Preprocessor\", \"Optimizer\", \"Executor\", linked left→right by individual arrows. Client→Parser arrow labelled \"SQL request\". Each box subtitle respectively \"Syntax / parse tree\", \"Resolve objects / permissions\", \"Rewrite / cost / execution plan\", \"Run the plan\". Below Executor a separate \"Handler API\" box connected with double-headed vertical arrow labelled \"Read / write requests\". API branches through one clear bus to three parallel boxes in boundary \"Storage engines\": \"InnoDB\",\"MyISAM\",\"MEMORY\". Connectors bidirectional, no link engine-to-engine. Route an independent long return arrow from bottom-left corner of Executor outside/below MySQL engine boundary back to Client, labelled \"SQL result\"; keep result arrow ABOVE storage-engine row in its own gutter so it never crosses handler connectors. If impossible, put client request at top-left and same client response endpoint directly bottom-left. Final diagram must make execution and result directions explicit. No disk boxes in this image; no SQL optimizer inside storage engines.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

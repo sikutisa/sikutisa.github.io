@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Process-state transitions",
+  "alt": "new·ready·running·waiting·terminated 상태와 여섯 전이",
+  "requiredChecks": [
+    "Exactly5statesNew,Ready,Running,Waiting,Terminated.",
+    "New→Ready admitted;Ready→Running schedulerdispatch;Running→Ready interrupt;Running→Waiting I/O/eventwait;Waiting→Ready I/O/eventcompletion;Running→Terminated exit."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Process states. Draw5boxes New,Ready,Running,Waiting,Terminated. Place Ready leftmiddle,Running rightmiddle,Waiting belowcenter,New upperleft,Terminatedupperright. EXACT6labelleddirectedarrows: New→Ready admitted;Ready→Running scheduler dispatch;Running→Ready interrupt;Running→Waiting I/O or event wait;Waiting→Ready I/O or event completion;Running→Terminated exit. Separate Ready/Running arrows curves withheads clearlydistinct. No extraedges."
+}

@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "HRMgr incAll(Employee[]) contains explicit type branches to incFacultySalary/incStaffSalary/incSecretarySalary.",
+      "passed": true,
+      "evidence": "HRMgr incAll(Employee[] employees) branches to the three exact concrete salary handlers."
+    },
+    {
+      "requirement": "Faculty,Staff,Secretary extend Employee.",
+      "passed": false,
+      "evidence": "All subclass captions extend Employee, but disconnected inheritance arrows and Staff dependency to Employee make relationships ambiguous; repair."
+    },
+    {
+      "requirement": "Adding an employee type requires changing HRMgr dispatch logic in this design.",
+      "passed": true,
+      "evidence": "New employee type footer explicitly requires another branch and handler."
+    },
+    {
+      "requirement": "No polymorphic incSalary dispatch is presented as current bad behavior.",
+      "passed": true,
+      "evidence": "Current design uses specific incFacultySalary/incStaffSalary/incSecretarySalary, no polymorphic incSalary."
+    }
+  ],
+  "notes": "Fail: connectors or invented examples need revision; preserve original.",
+  "at": "2026-10-12T15:53:10.287Z",
+  "generatedSha256": "d468c5ecd88b004d95d4534866f41bfb416c201aa4dabf811e90abdd112a397e",
+  "specSha256": "1c612699e0b1e9c223ba1eb5f292a1d678911ce399c213c826afe6c4556ab6fd"
+}

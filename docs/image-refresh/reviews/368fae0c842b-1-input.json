@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "CPU logical address(p,d); p indexes page table returningframef; d bypasses lookup unchanged; output(f,d) tophysicalmemory.",
+      "passed": true,
+      "evidence": "CPU(p,d),pindex→fpage-tableentry, separateddunchangedbypassandoutput(f,d)."
+    },
+    {
+      "requirement": "Physicalmemory framef selected and offsetd insideit; illustrative offsetrange0x000..0xFFF, not universal pagesize.",
+      "passed": true,
+      "evidence": "SelectedFramef offsetd000..FFF andexplicitillustrated4KiB; neighborse/gascontext."
+    },
+    {
+      "requirement": "No offsetusedaspageindex, noincorrectadditionofp; visible directions and field labels.",
+      "passed": true,
+      "evidence": "Lookupnotusingd, noaddedp; directionsandlabelslegible."
+    }
+  ],
+  "notes": "All mappings and memory bytes compared visually. Reject size/identifier/case ambiguities before applying."
+}

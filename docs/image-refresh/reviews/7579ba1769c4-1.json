@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Producerregister1=count;register1=register1+1;count=register1.",
+      "passed": true,
+      "evidence": "생산자의 register1 읽기·+1·쓰기 3행 대조."
+    },
+    {
+      "requirement": "Consumerregister2=count;register2=register2−1;count=register2;notatomiccombined.",
+      "passed": true,
+      "evidence": "소비자의 register2 읽기·-1·쓰기 3행 및 개별 단계 설명 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:30:42.460Z",
+  "generatedSha256": "018e12caefcc4e3b7aec168e8ea30e921d49e92534a925442a5e506df587951a",
+  "specSha256": "b1fae3fd6a2ae750d6c213254eb5900b46af4b33e0f0d4269496b8919082e5aa"
+}

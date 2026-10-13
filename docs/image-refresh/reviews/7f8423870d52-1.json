@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Bottom0,text,data,heap,freegap,stack,max top in order.",
+      "passed": true,
+      "evidence": "0→Text→Data→Heap→Free space→Stack→Max address 순서가 정확하다."
+    },
+    {
+      "requirement": "Heap grows toward higheraddresses/up, stacktowardlower/down into gap; no mandatory universalarchitecture.",
+      "passed": true,
+      "evidence": "Heap은 위로,Stack은 아래로 빈 공간을 향하고 illustrative 캡션이 있다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:20:37.936Z",
+  "generatedSha256": "46f57a6b00754916083caaa232405700a4101ba35daf29ce1919241f83a2ef04",
+  "specSha256": "b696141131ec3ebacf267f0d925d5b26e1aa9342f57d2b558a5580c2450f9822"
+}

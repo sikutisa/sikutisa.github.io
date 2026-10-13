@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Four threads T1,T2,T3,T4; resources R1 and R2 each two instances, all allocated.",
+      "passed": true,
+      "evidence": "Four thread circles and two resource boxes each with two dots."
+    },
+    {
+      "requirement": "Requests T1→R1,T3→R2; assignments R1→T2,R1→T3,R2→T1,R2→T4; exactly these six edges.",
+      "passed": true,
+      "evidence": "Six arrows match specified requests/assignments; T2 and T4 leaves have no outgoing arrows."
+    },
+    {
+      "requirement": "Cycle T1→R1→T3→R2→T1; T2 or T4 can finish and release resources, so a cycle does not imply deadlock with multiple instances.",
+      "passed": true,
+      "evidence": "Printed cycle matches ring; T2/T4 release explanation and Cycle but no deadlock status clear."
+    }
+  ],
+  "notes": "Direct visual comparison with original graph and full article. Exact edge endpoints and instance counts checked; PNG decoder checked separately.",
+  "at": "2026-10-12T22:43:56.834Z",
+  "generatedSha256": "53dc55886860eeccd7dba8b47caa1ffa46c67be22355518efd0d1d9448600380",
+  "specSha256": "33fec23a3d627bcb2abc9efddf900489f65af82597e14926a0408948cd416680"
+}

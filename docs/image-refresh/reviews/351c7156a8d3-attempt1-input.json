@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Task forks into2 then4 subtasks; four leaf results join pairwise then final.",
+      "passed": true,
+      "evidence": "Task→2subtasks→4leaves→4results→2combine→final."
+    },
+    {
+      "requirement": "Correct directed fork down, join down, four workers illustration not fixed-core rule.",
+      "passed": true,
+      "evidence": "All arrows downward with pairwise correct grouping and example scheduling caption."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

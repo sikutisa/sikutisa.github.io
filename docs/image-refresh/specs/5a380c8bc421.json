@@ -1,0 +1,14 @@
+{
+  "title": "student natural join takes",
+  "purpose": "Illustrate student natural join takes using an original small dataset calculated in examples/sql-joins.json.",
+  "alt": "ID 기준 자연 조인으로 결합된 학생·수강 기록 3행",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "requiredChecks": [
+    "Column headers in exact order: ID | name | dept_name | tot_cred | course_id | sec_id | semester | year | grade",
+    "Exactly 3 data rows in exact order: 101 | Ari | Comp. Sci. | 32 | CS-210 | 1 | Fall | 2026 | A ; 101 | Ari | Comp. Sci. | 32 | CS-315 | 1 | Spring | 2027 | B+ ; 102 | Bo | History | 28 | HIS-220 | 1 | Fall | 2026 | A-",
+    "Join on ID only; each matching pair produces one row and only one ID column; no student 103 row.",
+    "Footer explicitly identifies an original illustrative dataset; all table cells readable without copied textbook names/data."
+  ],
+  "prompt": "Use case scientific-educational. Create a new original raster table illustration for an English technical blog, white background, navy crisp text, flat blue header, alternating pale teal rows, generous cell padding, light thin rules, no decorative icons or arrows. Title \"student natural join takes\". Render ONE table only. EXACT column order: ID | name | dept_name | tot_cred | course_id | sec_id | semester | year | grade. EXACT data rows (pipe-separated cells):\n101 | Ari | Comp. Sci. | 32 | CS-210 | 1 | Fall | 2026 | A\n101 | Ari | Comp. Sci. | 32 | CS-315 | 1 | Spring | 2027 | B+\n102 | Bo | History | 28 | HIS-220 | 1 | Fall | 2026 | A-\nThere are exactly 3 body rows. Use monospaced readable identifiers and normal names; do not invent rows, omit columns or duplicate headers. Literal NULL uppercase denotes absent values and must be visibly muted italic with all letters, no empty blanks. Footer \"Original illustrative dataset\". Below table short note \"Join on ID only; each matching pair produces one row and only one ID column; no student 103 row.\". Fit wide landscape especially for nine-column join output; large text, no clipped cells. Data and column names must be exact."
+}

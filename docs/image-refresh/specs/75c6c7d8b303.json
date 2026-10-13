@@ -1,0 +1,14 @@
+{
+  "title": "Facade in a web application",
+  "purpose": "Locate facade within application server between web requests and subsystem work.",
+  "alt": "Browser·Web Server·Application Server 내부 Facade·하위 시스템·Database Server의 호출 경로",
+  "requiredChecks": [
+    "Browser→Web Server→Application Server facade entry path is clear.",
+    "Facade and subsystem services reside inside Application Server boundary.",
+    "Facade delegates to subsystem services, which access Database Server.",
+    "Database Server is outside application server; no claim facade replaces networking or database."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif labels, exact monospaced code identifiers, restrained blue/teal cards, ample spacing, no logos or copied source composition. Title 'Facade in a web application'. Large horizontal flow Browser → Web Server → Application Server boundary containing Facade → subsystem services (three small Service A/B/C cards) → Database Server outside boundary. Route arrow Facade→services as branch, services→Database as shared outgoing connector. Appserver box encloses only Facade and subsystem. Use labels 'request', 'delegates', 'data access'. Footer 'A unified application interface hides subsystem coordination'. No reverse dependency arrows, no invented protocols, no cloud logos.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

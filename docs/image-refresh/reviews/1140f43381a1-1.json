@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "FouruserU1..U4mappedrespectivelyK1..K4.",
+      "passed": true,
+      "evidence": "U1~U4가 각각 K1~K4와 대응."
+    },
+    {
+      "requirement": "Separate4verticallinksacrossuser/kernelboundarynocrossmaps.",
+      "passed": true,
+      "evidence": "경계 너머 별개 수직4선, 합류·교차 없음."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:38:46.348Z",
+  "generatedSha256": "4c4f52c8443b9052b8ac4c0196aa8825e39474eb6553ab6d7829f6fc63de315f",
+  "specSha256": "2830891c41542683f9df8d88716876402346c929a7ae4a717b0052e7eaee4215"
+}

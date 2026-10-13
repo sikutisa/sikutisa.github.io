@@ -1,0 +1,4 @@
+{
+  "940da0cb2f0c": "Move only the source of the vertical p lookup branch from beneath the d field to beneath the p field. All p lookup arrows to TLB and Page table must originate at logical address p rectangle. Keep d separate unchanged top route to outputd. Preserve TLBhit/miss/outputfandalltext. Clear no path from d to page tables.",
+  "c4de306634c0": "Remove ALL five connector arrows between process cards and Shared physical memory table, keeping exact tables intact. Add a short centered caption All three page tables map to the same shared code frames. Preserve ALL P1/P2/P3 mappings libc1→3,libc2→4,libc3→6,libc4→1 and singlephysicaltableframe1libc4,3libc1,4libc2,6libc3. Preserve footer. No row-level arrows."
+}

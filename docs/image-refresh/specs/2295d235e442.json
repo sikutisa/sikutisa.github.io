@@ -1,0 +1,14 @@
+{
+  "title": "A change reaches four observers",
+  "purpose": "Show first state change broadcast after Duck registered.",
+  "alt": "Subject 상태가 2에서 5로 바뀌면 등록된 Cat·Dog·Mouse·Duck 네 관찰자에게 5를 전달하는 과정",
+  "requiredChecks": [
+    "Subject changes from 2 to 5.",
+    "Registered roster exactly Cat, Dog, Mouse, Duck.",
+    "Each of four receives update(5) from Subject.",
+    "No ordering guarantee between the four observers is implied."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference study blog. Opaque white background, large readable navy sans-serif text, monospaced identifiers, blue/teal/amber flat cards and roomy gutters. No copied irregular bubbles, photographed source or logos. Use plain labelled rectangles for Cat/Dog/Mouse/Duck object names, no animal illustration needed. Include only listed identifiers; do not invent code bodies, modifiers, state values, extra arrows or recipients. Title 'A change reaches four observers'. Subject LEFT 'state: 2 → 5' 'notifyObservers()'. RIGHT roster four separatecardsCat/Dog/Mouse/Duck. FOUR separateSubject→eachcardarrows labelled update(5), allsamevalue. Caption 'Broadcast to current subscribers'. No numberedobservernotificationorder. Footer 'All four are registered, so all four receive the new value'.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Copy-on-write: before a write",
+  "purpose": "Show two processes sharing pages A,B,C until a write triggers copying.",
+  "requiredChecks": [
+    "Process 1 and Process 2 each have virtual pages A,B,C.",
+    "There are exactly three physical page boxes A,B,C, each shared by both processes.",
+    "Exactly six distinct mapping arrows connect each process page to its matching physical page; no private copy exists yet.",
+    "The title states before a write and the shared page C is visibly read-only/COW-protected, with legible labels."
+  ],
+  "alt": "Before copy-on-write: both processes share the same physical pages A, B and C",
+  "prompt": "Create a NEW original English technical blog diagram. White background, crisp dark navy large sans-serif labels, flat blue/teal outlined shapes, generous whitespace, simple unambiguous connectors, no decorative art, no logos or watermark. TITLE \"Copy-on-write: before a write\". Three vertical columns: left \"Process 1 — virtual pages\" with A,B,C; center \"Physical memory\" with A,B,C; right \"Process 2 — virtual pages\" with A,B,C. The columns are widely spaced with clean connector channels. Each process's virtual A maps only to physical A, B only to physical B, C only to physical C. Exactly SIX arrows, all arrowheads pointing to physical memory, with straight horizontal routes aligned to the corresponding page rows. Label physical C \"C — COW protected\". Show no duplicated C page yet and no write arrow. Use text only, no memory-stick artwork. Footer exactly \"Shared pages are copied only when written\". All A/B/C identifiers and both process numbers must be exact."
+}

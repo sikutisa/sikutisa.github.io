@@ -1,0 +1,36 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "NewjobsenterhighestqueueQ0quantum8.",
+      "passed": true,
+      "evidence": "NewjobenterQ0RRquantum8ms highest."
+    },
+    {
+      "requirement": "Unfinishedafter8demotesQ1quantum16;unfinishedafter16demotesQ2FCFS.",
+      "passed": true,
+      "evidence": "Q0unfinished→Q1RR16ms→Q2FCFS correct."
+    },
+    {
+      "requirement": "Completionexitfromeachqueue;demotionarrowsdistinctfromcompletion.",
+      "passed": true,
+      "evidence": "Separate completionarrowrighttoDone fromeachqueue,downunfinisheddemotiondistinct."
+    },
+    {
+      "requirement": "Higherpriorityqueuesselectedfirst; no inventedagingarrowsoradditionalquantum.",
+      "passed": true,
+      "evidence": "Higher/lowerpriorityside, noextraagingarrows orquantum."
+    },
+    {
+      "requirement": "Example policy, not universal fixed MLFQ rule.",
+      "passed": true,
+      "evidence": "Exampleconfiguration subtitle."
+    }
+  ],
+  "notes": "Direct visual inspection confirms numerical chronology, priority hierarchy, shared resource and feedback semantics; decode before approval.",
+  "at": "2026-10-12T22:35:53.913Z",
+  "generatedSha256": "75db30b6f0522bb7511793e59f3c08d2807ed218ee95a510d34f61e8c395d632",
+  "specSha256": "098562ac7b5949048b7405aa3b2cee7c9639dd9ccd2bd947d53ec5180adf04bb"
+}

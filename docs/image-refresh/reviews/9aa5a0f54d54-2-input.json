@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Client HTTP→Load balancer→API servers is separate from bidirectional WebSocket path Client↔Real-time services.",
+      "passed": true,
+      "evidence": "HTTP Client→Load balancer→API is separate from the bent bidirectional WS link with arrowheads at Client and Real-time services. The extra fading dangling arrow from attempt 1 has been removed; margin is clean."
+    },
+    {
+      "requirement": "Real-time services boundary contains Chat servers and Presence servers; KV store contains chat history and presence state.",
+      "passed": true,
+      "evidence": "Chat servers and Presence servers are inside Real-time services, which exchanges Persist/read with Key-value store captioned Chat history/presence state."
+    },
+    {
+      "requirement": "API handles Login/profile and user data DB; API service discovery returns server endpoint without relaying every chat message.",
+      "passed": true,
+      "evidence": "API Login/profile exchanges with User data DB Profiles/settings and Service discovery Select chat endpoint. Server registry dotted line does not relay the chat payload through API."
+    },
+    {
+      "requirement": "Offline notifications go through Notification server and Push provider to Client, distinct from online WebSocket messages.",
+      "passed": true,
+      "evidence": "Offline recipient path goes Real-time services→Notification server→Push provider, whose outer Push notification arrow returns to Client, independently of online WS."
+    }
+  ],
+  "notes": "Pass after targeted edit removing the unexplained arrow. All labels remain legible and intended paths preserved."
+}

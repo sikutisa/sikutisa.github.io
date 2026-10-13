@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Two-tier has user/application in Client tier connected directly over network to Database server.",
+      "passed": false,
+      "evidence": "Two-tier correctly groups UI/application and Database server into two boundaries, but its connector has extra arrowhead near Network rather than one continuous doubleheaded endpoint connection."
+    },
+    {
+      "requirement": "Three-tier has UI/application client→Application server→Database server, all three tiers separately labelled.",
+      "passed": false,
+      "evidence": "Three-tier correctly labels all three boundaries, but request connector ends at Network separator with no continuation into Application server; second connector similarly stops at separator before Database server. Connection topology is incomplete."
+    },
+    {
+      "requirement": "Three-tier UI has no direct Database server link.",
+      "passed": true,
+      "evidence": "No direct UI→Database shortcut is present in right panel."
+    },
+    {
+      "requirement": "User boxes are not mistaken for separate server tiers; application server performs DB calls.",
+      "passed": true,
+      "evidence": "UI resides inside Client tier, Application server within Application tier, and captions describe direct versus mediated DB access; no fourth user tier."
+    }
+  ],
+  "notes": "Fail: complete each network-crossing connection between component endpoints and remove extra arrowheads."
+}

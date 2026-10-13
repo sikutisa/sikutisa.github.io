@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "UserparametersstoredattableX; loadaddressX into register; call13invokesOS code.",
+      "passed": true,
+      "evidence": "사용자 Table X,주소를 Register X로 로드하는 선,system call13 호출과 운영체제 코드가 있다."
+    },
+    {
+      "requirement": "Register contains addressX, OSreadsparametersfromtableXnotactualparametersinregister; systemcall13illustrative.",
+      "passed": true,
+      "evidence": "X(address of table),readparametersfromtableX,점선Read가 정확하며13은 illustrative임을 명시한다."
+    }
+  ],
+  "notes": "직접 시각 검수와 PNG 디코딩. 실패한 결과는 원본 참조 유지."
+}

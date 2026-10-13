@@ -1,0 +1,16 @@
+{
+  "title": "Priority between groups, Round Robin within",
+  "purpose": "Show combined fixed-priority/RR example with exact slices.",
+  "alt": "우선순위 그룹 간에는 priority를 적용하고 같은 그룹에서는 quantum 2ms로 순환하는 실행 예시",
+  "requiredChecks": [
+    "Input P1(b4,p3),P2(b5,p2),P3(b8,p2),P4(b7,p1),P5(b3,p3),allarrivals0,q2.",
+    "Priority1:P4[0,7]; priority2:P2[7,9],P3[9,11],P2[11,13],P3[13,15],P2[15,16],P3[16,20].",
+    "Priority3:P1[20,22],P5[22,24],P1[24,26],P5[26,27].",
+    "Adjacent same-process quanta coalesced when alone; no wrongclaim7msquantumforP4.",
+    "Lowernumberhigherpriority; overheadexcluded andtotal27."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT reference blog. Opaque white, navy highly legible type, restrained blue/teal/amber flat cards, generous gutters. Exact specified numericdata and arrows, no copied textbook arrangement. Title 'Priority between groups, Round Robin within'. Top tableProcess|Burst(ms)|Priority:P1|4|3,P2|5|2,P3|8|2,P4|7|1,P5|3|3. Subtitle 'All arrive0; quantum=2ms; smallerprioritynumber=higherpriority'. Below THREE chronological row timelines with exact boundarytimes: 'Priority1' singleP4[0,7] ticks0,7; 'Priority2' P2[7,9],P3[9,11],P2[11,13],P3[13,15],P2[15,16],P3[16,20], ticks7,9,11,13,15,16,20; 'Priority3'P1[20,22],P5[22,24],P1[24,26],P5[26,27], ticks20,22,24,26,27. Above timelinerows label 'Schematic timelines — not to scale'. Footer 'Overhead omitted; adjacent quanta of the same process are combined'. Do not introduce1msquantum orextraP2.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "calculationVerified": true
+}

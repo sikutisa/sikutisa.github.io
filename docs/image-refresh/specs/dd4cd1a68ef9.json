@@ -1,0 +1,14 @@
+{
+  "title": "DIP: both depend on abstractions",
+  "purpose": "Show higher-level program and concrete classes depend on interfaces.",
+  "alt": "Program과 구체 Class가 공통 인터페이스에 의존하도록 구체 구현 의존을 역전한 구조",
+  "requiredChecks": [
+    "Program uses two interfaces instead of concrete lower-level classes.",
+    "One concrete Class implements first interface; two implement second.",
+    "Implementation dependency arrows point from concrete classes into interfaces.",
+    "No interface depends on a concrete implementation and no runtime direction confused with dependency."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif typography, readable monospaced identifiers, restrained blue/teal/amber cards, wide gutters, no copied slide composition or logo. Include only the listed operations and labels: do not invent full code bodies, access modifiers, methods or extra relationships. Title 'DIP: both depend on abstractions'. TOP Program. MIDDLE Interface A and Interface B cards marked interface. BOTTOM Class A 'implements Interface A', Class B1 and Class B2 'implements Interface B'. Program downwardusesarrows tobothinterfaces; concreteclassesupwardimplementsarrows intoactualmatchinginterfacecards. Footer 'High-level policy and implementation details depend on abstractions'. Use explicit labels on everydirection, no interface→class dependency.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

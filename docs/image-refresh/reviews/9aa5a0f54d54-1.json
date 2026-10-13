@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Client HTTP→Load balancer→API servers is separate from bidirectional WebSocket path Client↔Real-time services.",
+      "passed": false,
+      "evidence": "The HTTP lane links Client→Load balancer→API. The lower bent WebSocket line has arrowheads at Client and Real-time services, but an additional fading dangling arrow also points into Client from nowhere; this unexplained path fails clean topology."
+    },
+    {
+      "requirement": "Real-time services boundary contains Chat servers and Presence servers; KV store contains chat history and presence state.",
+      "passed": true,
+      "evidence": "Chat servers and Presence servers are within the Real-time services box; bidirectional Persist/read points to Key-value store labelled Chat history/presence state."
+    },
+    {
+      "requirement": "API handles Login/profile and user data DB; API service discovery returns server endpoint without relaying every chat message.",
+      "passed": true,
+      "evidence": "API caption Login/profile and User data DB Profiles/settings appear; Select chat endpoint connects API and Service discovery, with dotted registry connector outside HTTP message path."
+    },
+    {
+      "requirement": "Offline notifications go through Notification server and Push provider to Client, distinct from online WebSocket messages.",
+      "passed": true,
+      "evidence": "Offline recipient connects real-time group→Notification server→Push provider; outer Push notification line terminates at Client separately from WebSocket."
+    }
+  ],
+  "notes": "Fail: remove the extra fading dangling arrow at far lower left. Remaining intended architecture is readable.",
+  "at": "2026-10-12T13:29:27.975Z",
+  "generatedSha256": "7fd6e80bc1a7103f54ece4da70c11aeabbae99c6726fbfa5456bd90d5fc91a64",
+  "specSha256": "8588e632aa36a14349cef2e21da40aa19b0a059d7c54a7b6e6ca8072c290bf46"
+}

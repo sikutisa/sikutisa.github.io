@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Hardware base-limit protection",
+  "alt": "CPU 주소를 base 이상·base+limit 미만 조건으로 검사하는 보호 회로",
+  "requiredChecks": [
+    "CPU address checks address≥base then address<base+limit; both Yes lead memory.",
+    "Either No branches to OS trap illegal addressing error; upper check strictly< not≤.",
+    "Distinguishes absolute physical address comparison from adding relocation; no invented add stage."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Base and limit: hardware address protection. Left-to-right flow CPU —address→ diamond address ≥ base? Yes→ diamond address < base + limit? Yes→ Memory. Each diamond No branch downward to shared Trap to operating system: illegal addressing error box. Base register card feeds first comparator, Base+limit card feeds second comparator. Exactly two comparisons; not relocationadd. Caption: Access is permitted only when base ≤ address < base + limit. Clear yes/no label and arrowheads."
+}

@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Claim graph before proposed allocation",
+  "alt": "R1은 T1에 할당되고 T2가 요청하며 R2에는 미래 요청 가능성을 표시한 그래프",
+  "requiredChecks": [
+    "Nodes T1,T2 and single-instance resources R1,R2.",
+    "Solid assignment R1→T1, solid request T2→R1; dashed claim edges T1→R2 and T2→R2 only.",
+    "R2 unallocated; no cycle even including claims; legend separates claim from current request."
+  ],
+  "prompt": "Use case: scientific-educational. Original raster PNG educational diagram for IT technical blog. White opaque background, clean dark navy sans-serif text, blue and teal accents, no logo/watermark/decoration. Big readable English labels, generous spacing, original composition. For graphs thread circles, resource boxes, distinct arrowhead at destination. Blue solid requests, teal solid assignments, gray dashed potential claims. Title: Claim edges before allocation. Four-node fresh layout T1 upper left, R1 upper right, R2 lower left, T2 lower right. Teal solid R1→T1, blue solid T2→R1, gray dashed T1→R2 and gray dashed T2→R2. Each resource single instance; R2 dot unallocated. Exactly these four edges. Legend: Solid thread→resource = current request; Dashed thread→resource = possible future request; Resource→thread = assignment. Caption: R2 is unallocated. There is no cycle."
+}

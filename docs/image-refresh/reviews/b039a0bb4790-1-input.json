@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "ScheduleP2[0,1],P5[1,6],P1[6,16],P3[16,18],P4[18,19].",
+      "passed": true,
+      "evidence": "Five exact intervals0..1..6..16..18..19 anddurations1,5,10,2,1."
+    },
+    {
+      "requirement": "Allarrivals0,nonpreemptive; lowernumberhigherpriority.",
+      "passed": true,
+      "evidence": "Allarrivals0,nonpreemptive,smallernumberhigher."
+    },
+    {
+      "requirement": "WaitingP1=6,P2=0,P3=16,P4=18,P5=1 avg8.2ms.",
+      "passed": true,
+      "evidence": "Wait6,0,16,18,1avg8.2exact."
+    },
+    {
+      "requirement": "TurnaroundP1=16,P2=1,P3=18,P4=19,P5=6 avg12ms.",
+      "passed": true,
+      "evidence": "Turnaround16,1,18,19,6avg12exact."
+    }
+  ],
+  "notes": "Direct visual inspection confirms numerical chronology, priority hierarchy, shared resource and feedback semantics; decode before approval."
+}

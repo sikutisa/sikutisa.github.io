@@ -1,0 +1,5 @@
+{
+  "id": "260017f3769b",
+  "attempt": 2,
+  "prompt": "Add ONLY the missing invalid-address branch: a downward arrow starting at bottom of Logical address < limit? diamond, labelled No, ending in a clear red-outlined box Trap: addressing error beneath the diamond. Make room by moving footer lower if needed. Preserve all other existing elements, yespath/registers/plus/memory exactly. One No branch required. Do not add other checks or numeric values."
+}

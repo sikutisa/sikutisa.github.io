@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Directorycount0/2,tr14/3,mail19/6,list28/4,f6/2.",
+      "passed": true,
+      "evidence": "count 0/2, tr 14/3, mail 19/6, list 28/4, f 6/2 표 확인."
+    },
+    {
+      "requirement": "Blocks0..31exact;count0–1,f6–7,tr14–16,mail19–24,list28–31;othersfree.",
+      "passed": true,
+      "evidence": "0~31 번호 모두 정확, 0~1·6~7·14~16·19~24·28~31 강조와 범례 일치. 나머지 빈 블록."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:13:00.136Z",
+  "generatedSha256": "0f0c5492dcc56d87fa5474474aaa169c8c9c078fecad9faac068ff710067cc63",
+  "specSha256": "0391c18aeb7d5c3761ea76e470635d104c5f1790f582758b54ebc3e9b913e5d4"
+}

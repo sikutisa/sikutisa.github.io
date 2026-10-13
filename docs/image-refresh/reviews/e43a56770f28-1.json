@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "SixpanelsRAID0 nonredundantstriping,RAID1 mirrors,RAID4dedicatedparity,RAID5distributedparity.",
+      "passed": true,
+      "evidence": "RAID 0의 비중복 분산, RAID 1의 두 미러 쌍, RAID 4 전용 P, RAID 5 행별 분산 P 확인."
+    },
+    {
+      "requirement": "RAID6twoindependentP/Q redundancy;multidimensionalRAID6illustrative4x4dataarraywithrightP/QcolumnsandbottomP/Qrows;nobackupclaim.",
+      "passed": false,
+      "evidence": "RAID 6 둘째 행은 Q만, 셋째 행은 P만 있어 이중 패리티 누락. 다차원 배열은 오른쪽 P/Q와 아래 P/Q 확인. 수정 필요."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:55:56.897Z",
+  "generatedSha256": "a4d8fc89f152a28dade6e9c6314fd8cdcdc00bc114ef37c68b6da4221637a696",
+  "specSha256": "5d596cb57c76898082dd3ca8bc39510ece917ed4d4c11683597d8c6961f9e05b"
+}

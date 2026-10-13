@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "GeoDNS exchanges DNS query/selected regional endpoint with Client, while HTTP connects Client directly to regional load balancer, not through DNS.",
+      "passed": true,
+      "evidence": "Client→GeoDNSquery andGeoDNS→Clientregionalendpoint; HTTPdirecttoeachregionalLB."
+    },
+    {
+      "requirement": "Two data-center boundaries each contain local Load balancer→Web servers and local DB/Cache.",
+      "passed": true,
+      "evidence": "BothDCboundarieshaveRegionalLB→Webservers→localDB/Cache."
+    },
+    {
+      "requirement": "Regional DBs have a dashed data synchronization link with policy-dependent qualification; both regional web tiers access external Shared storage.",
+      "passed": false,
+      "evidence": "REJECT: Data synchronization line has leftendpoint onCacheA rather thanDatabaseA; rightendpointDatabaseB. BothWebgroupsseparatelyaccessSharedstorage."
+    },
+    {
+      "requirement": "CDN serves client static assets separately; failover caption acknowledges health checks and DNS caching.",
+      "passed": true,
+      "evidence": "Client↔CDNstaticassets; footer healthchecks andDNScaching caveat legible."
+    }
+  ],
+  "notes": "Viewed complete raster; decoded via PIL. One incorrect data connector requires targeted edit.",
+  "at": "2026-10-12T12:55:23.800Z",
+  "generatedSha256": "1b8176af3318e35c20539f15acacf1a71e2d40036d71fe330e953e49d8f78fb1",
+  "specSha256": "954601058d42bfd02ee048f867551978fb57f1af4caa8a2448ef4c593873d1d8"
+}

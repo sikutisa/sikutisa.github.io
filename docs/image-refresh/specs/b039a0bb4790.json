@@ -1,0 +1,15 @@
+{
+  "title": "Priority scheduling: highest priority first",
+  "purpose": "Show exact nonpreemptive priority schedule and metrics.",
+  "alt": "작은 번호를 먼저 실행하는 P2·P5·P1·P3·P4 우선순위 시간표와 평균 대기 8.2ms",
+  "requiredChecks": [
+    "ScheduleP2[0,1],P5[1,6],P1[6,16],P3[16,18],P4[18,19].",
+    "Allarrivals0,nonpreemptive; lowernumberhigherpriority.",
+    "WaitingP1=6,P2=0,P3=16,P4=18,P5=1 avg8.2ms.",
+    "TurnaroundP1=16,P2=1,P3=18,P4=19,P5=6 avg12ms."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT reference blog. Opaque white, navy highly legible type, restrained blue/teal/amber flat cards, generous gutters. Exact specified numericdata and arrows, no copied textbook arrangement. Title 'Priority scheduling: highest priority first'. Subtitle 'All arrive at0; non-preemptive; smaller number=higherpriority'. Horizontal Gantt P2(1ms),P5(5ms),P1(10ms),P3(2ms),P4(1ms); boundaries0,1,6,16,18,19ms. Explicit 'Schematic timeline — not to scale' permits readabletinyblocks without false metricgeometry. TableProcess|Waiting(ms)|Turnaround(ms):P1|6|16,P2|0|1,P3|16|18,P4|18|19,P5|1|6. Footer 'Average waiting8.2ms • Average turnaround12ms'. No reversedsort.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "calculationVerified": true
+}

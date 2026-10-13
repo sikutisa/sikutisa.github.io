@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "5stepsdriverrequesteddrive2→controllercbytestox→initDMA→addressincreases/countdecreasesto0→interruptCPU.",
+      "passed": true,
+      "evidence": "5단계 요청·c 바이트 및 x 주소 설정·DMA 시작·주소 증가와 c 감소·완료 인터럽트 확인."
+    },
+    {
+      "requirement": "CPU/cache/memorybus/PCIebus/SAScontrollerdrives1/2,bufferx;dataflowbypassesCPU,countercnotaddressx.",
+      "passed": true,
+      "evidence": "Drive 2→SAS→PCIe→메모리 경로가 CPU를 우회하며 명령과 완료 인터럽트가 별색으로 분리됨."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

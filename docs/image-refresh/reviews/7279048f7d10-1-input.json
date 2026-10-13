@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Exactly seven numbered slots are shown, each with one ON and one OFF button.",
+      "passed": true,
+      "evidence": "Exactly rows 0–6, fourteen aligned ON/OFF buttons, no duplicate slots."
+    },
+    {
+      "requirement": "Slot labels are programmable device assignments; no fixed vendor dependency is implied.",
+      "passed": true,
+      "evidence": "All seven DEVICE fields say assign device; side text says assignment can vary."
+    },
+    {
+      "requirement": "One global UNDO button reverses the last executed command, not all seven slots.",
+      "passed": true,
+      "evidence": "One bottom button states Undo the last command."
+    }
+  ],
+  "notes": "Pass. All labels, operations, slot counts, stage order and direction verified visually against full article and original."
+}

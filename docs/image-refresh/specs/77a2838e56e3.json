@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Data and task parallelism",
+  "alt": "분할 데이터에 같은 연산을 적용하는 데이터 병렬성과 서로 다른 작업 병렬성",
+  "requiredChecks": [
+    "Dataparallel4partitionsA/B/C/Dsameoperationoncores0..3.",
+    "TaskparalleloneinputdatasetdistinctTaskA/B/C/Dcores0..3;noconfusewithdata partitions."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Data parallelism and task parallelism. Two panels. Data parallelism: one data bar divided four sections Partition A/B/C/D, each arrow to Core0/Core1/Core2/Core3 respectively; all cores label SAME operation. Task parallelism: one undivided Shared input data box, four arrows to Core0 Task A, Core1 Task B, Core2 Task C, Core3 Task D. Caption Different tasks may operate on the same data. No fabricated performance claims."
+}

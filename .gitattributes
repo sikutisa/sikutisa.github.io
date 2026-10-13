@@ -1,0 +1,2 @@
+# Review hashes refer to the exact JSON bytes; keep them stable across checkouts.
+docs/image-refresh/** text eol=lf

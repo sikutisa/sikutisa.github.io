@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Contiguous allocation",
+  "alt": "시작 블록과 길이로 연속 구간을 지정하는 count·tr·mail·list·f의 할당",
+  "requiredChecks": [
+    "Directorycount0/2,tr14/3,mail19/6,list28/4,f6/2.",
+    "Blocks0..31exact;count0–1,f6–7,tr14–16,mail19–24,list28–31;othersfree."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Contiguous allocation. Left two-column directory table File | Start | Length rows count 0 2; tr 14 3; mail 19 6; list 28 4; f 6 2. Right disk map 4 columns ×8 rows, numbered 0..31 in row-major order. Highlight exact groups with distinct blue/teal shades and file labels: count blocks0,1; f6,7; tr14,15,16; mail19,20,21,22,23,24; list28,29,30,31. All others white free. No pointers between data blocks. Keep number of each block visible. Can use separate range legend for file color names."
+}

@@ -1,0 +1,14 @@
+{
+  "title": "CPU bursts: many short, few long",
+  "purpose": "Illustrate skewed frequency distribution of CPU burst duration without invented measurements.",
+  "alt": "짧은 CPU burst가 많고 긴 burst가 드문 분포를 개념적으로 나타낸 그래프",
+  "requiredChecks": [
+    "Horizontal axis CPU burst duration; vertical frequency.",
+    "Peak at short durations and long low tail toward larger durations.",
+    "Clearly schematic qualitative distribution, not measured dataset.",
+    "No numerical ticks or unsupported distribution law or percentages."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog. Opaque white background, navy highly readable type, restrained blue/teal/amber, flat design, generous margins. Exact data and labels only, no logos/copying textbook composition. Title 'CPU bursts: many short, few long'. One generous clean qualitative frequency plot. x-axis 'CPU burst duration' increasing right; y-axis 'Frequency' increasing up. Single smooth navy line rises early to peak near left then declines steeply into a low long right tail. Highlight early peak 'Many short bursts', far tail 'Few long bursts'. Subtitle 'Schematic distribution — not measured data'. No numeric ticks, no formula/distribution name, no invented percentages.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

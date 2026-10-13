@@ -1,0 +1,14 @@
+{
+  "title": "Single-primary database replication",
+  "purpose": "Explain write/read routing and primary-to-replica data flow, correcting ambiguous bidirectional original replication arrows.",
+  "alt": "주 DB 쓰기와 복제 DB 읽기 분산, 주 DB에서 복제 DB로 향하는 복제 흐름",
+  "requiredChecks": [
+    "Web application writes to one Primary and reads from two Replicas; no write request to replicas.",
+    "Replication arrows run only Primary→Replica A/B, not bidirectional.",
+    "Caption notes replicas may lag; does not promise zero loss or automatic safe promotion.",
+    "Read/write/replication arrows are distinct and all labels readable."
+  ],
+  "prompt": "Create a NEW original English technical educational raster diagram, white background, large navy sans-serif labels, flat blue/teal cards, clear separated orthogonal arrows and generous gutters. No logos, decorative imagery, copied textbook composition, numeric benchmarks or absolute availability promises. TITLE \"Single-primary database replication\". Three-row layout. Top \"Web application\". Middle \"Primary\" to left, \"Replica A\" and \"Replica B\" to right side-by-side. Solid arrow from application down-left to Primary labelled \"Writes\". Solid read request arrows application down-right to both replicas labelled \"Reads\". Distinct dashed arrows from Primary to Replica A and Replica B, arrowheads ONLY at replicas, labelled \"Replication\". Use lower routing gutter for second replication path so it cannot cross unrelated database card or application request arrows. DB cards simpleflat with subtitleprimary\"Source of changes\", replicas\"Read copies\". Footer \"Replicas may lag; promotion requires coordination\". No replica→primary arrows, no multi-primary or sync guarantees.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Address 0 is at the bottom and higher addresses are at the top.",
+      "passed": true,
+      "evidence": "Higher addresses is above the stack, and Address 0 is below text at bottom."
+    },
+    {
+      "requirement": "The region order from bottom to top is text, data, heap, unallocated space, stack.",
+      "passed": true,
+      "evidence": "Reading the column upward: text, data, heap, white Unallocated space, stack."
+    },
+    {
+      "requirement": "The heap growth arrow points upward into unallocated space; the stack growth arrow points downward into unallocated space.",
+      "passed": true,
+      "evidence": "Blue stack-growth arrow visibly points down; teal heap-growth arrow points up, both inside the unused region without crossing labels."
+    },
+    {
+      "requirement": "All region and growth labels are readable, and the layout is explicitly conceptual.",
+      "passed": true,
+      "evidence": "All labels, Process virtual address space title and Conceptual layout footer are complete and readable."
+    }
+  ],
+  "notes": "Directly inspected all labels/topology against the document and original. PNG verify/load passed; this result is suitable for replacement.",
+  "at": "2026-10-12T12:04:51.113Z",
+  "generatedSha256": "895a001a5cb4a20d5d53c320775114b365d26c0daddcc5d5a4d4cf197c5e4d5f",
+  "specSha256": "01fd5416a6f22d54c0254f9ba3540755a6b8f9d792e4cb1dafe698fc529ec715"
+}

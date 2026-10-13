@@ -1,0 +1,14 @@
+{
+  "title": "course natural right outer join prereq",
+  "purpose": "Illustrate course natural right outer join prereq using an original small dataset calculated in examples/sql-joins.json.",
+  "alt": "오른쪽 외부 조인에서 CS-347의 과목 정보를 NULL로 보존한 결과",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "requiredChecks": [
+    "Column headers in exact order: course_id | title | dept_name | credits | prereq_id",
+    "Exactly 2 data rows in exact order: CS-210 | Systems | Comp. Sci. | 4 | CS-101 ; CS-347 | NULL | NULL | NULL | CS-101",
+    "Preserve every prereq row: CS-347 title/dept_name/credits are NULL. CS-315 is absent.",
+    "Footer explicitly identifies an original illustrative dataset; all table cells readable without copied textbook names/data."
+  ],
+  "prompt": "Use case scientific-educational. Create a new original raster table illustration for an English technical blog, white background, navy crisp text, flat blue header, alternating pale teal rows, generous cell padding, light thin rules, no decorative icons or arrows. Title \"course natural right outer join prereq\". Render ONE table only. EXACT column order: course_id | title | dept_name | credits | prereq_id. EXACT data rows (pipe-separated cells):\nCS-210 | Systems | Comp. Sci. | 4 | CS-101\nCS-347 | NULL | NULL | NULL | CS-101\nThere are exactly 2 body rows. Use monospaced readable identifiers and normal names; do not invent rows, omit columns or duplicate headers. Literal NULL uppercase denotes absent values and must be visibly muted italic with all letters, no empty blanks. Footer \"Original illustrative dataset\". Below table short note \"Preserve every prereq row: CS-347 title/dept_name/credits are NULL. CS-315 is absent.\". Fit wide landscape especially for nine-column join output; large text, no clipped cells. Data and column names must be exact."
+}

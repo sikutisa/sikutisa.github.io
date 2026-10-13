@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Whole-process swapping",
+  "alt": "전체 프로세스 P1을 메모리에서 내보내고 P2를 디스크에서 불러오는 스와핑",
+  "requiredChecks": [
+    "MainmemoryOS/user space; backingstorecontainsprocesses; step1P1swapoutmemory→disk, step2P2swapindisk→memory.",
+    "Wholeprocessmovement notpagefragment; OSremainsresident; arrowsdifferentdirectionscorrect."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Standard swapping moves whole processes. Left Main memory box split Operating system at top and User spacebelow. Right diskcylinder Backing store. Upperarrow1 Swap out: P1 points Memory user space→diskP1. Lowerarrow2 Swap in: P2 points diskP2→Memoryuserspace. ShowentireP1/P2processcards,notindividualpages. Caption Operating system stays in main memory. No extraprocesses/numbers. Clear oppositearrowheads."
+}

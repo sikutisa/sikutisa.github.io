@@ -1,0 +1,18 @@
+{
+  "title": "Rate limiting at the API boundary",
+  "purpose": "Show middleware's atomic shared-state check, allowed API path and explicit 429 rejection response.",
+  "alt": "레디스 상태를 원자적으로 확인·갱신하는 처리율 제한 미들웨어와 허용·429 거부 경로",
+  "sources": [
+    "https://www.rfc-editor.org/rfc/rfc6585#section-4",
+    "https://redis.io/docs/latest/develop/programmability/eval-intro/"
+  ],
+  "requiredChecks": [
+    "Request travels Client→Rate-limit middleware and allowed outcome→API servers.",
+    "Middleware exchanges an Atomic check/update with Redis shared state before the allow/reject outcome.",
+    "Rejected outcome returns HTTP429 Too Many Requests to Client, bypassing API servers.",
+    "Redis is counter/timestamp state, not a substitute API server; no non-atomic read-then-update race is depicted."
+  ],
+  "prompt": "Create a NEW original English technical diagram, raster image for a study blog. White background, large navy sans-serif text, flat blue/teal cards, uncluttered orthogonal arrows, plenty of routing gutters, no logos, copied book layout or availability guarantees. TITLE \"Rate limiting at the API boundary\". Left-to-right \"Client\"→\"Rate-limit middleware\"→\"API servers\". Clientarrow\"Request\"; middlewareAPIarrow\"Allowed\". Beneathmiddleware \"Redis\"card subtitle\"Shared counters / timestamps\", doubleheadedmiddleware↔Redisarrow\"Atomic check / update\". SeparatebottomreturnarrowfrommiddlewaretoClient labelled\"Rejected: HTTP 429 Too Many Requests\"; noarrowfromRedistoAPI. Footer \"Check and update shared state before forwarding\". Do not show read-onlycounterlookupfollowedbyforwardbeforeupdate; check/updateexplicitlyatomic, notsequentialreadwriteboxes. Bothdecisionbranchesclear, no numericalrateexamples.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

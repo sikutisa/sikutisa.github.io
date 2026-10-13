@@ -1,0 +1,13 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "JOINED schema",
+  "alt": "JOINED의 ITEM 공통 컬럼과 BACKGROUND·PROP의 PK 겸 FK ID",
+  "requiredChecks": [
+    "ITEMID/PRICE/ITEM_TYPE/URL;BACKGROUNDID/BACKGROUND_NAME;PROPID/PROP_NAME.",
+    "ChildIDPK+FKtoITEM.ID;discriminatorITEM_TYPEinparentforthisconfiguredexample."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title @Inheritance(strategy = JOINED). Three schema cards ITEM with ID (PK), PRICE, ITEM_TYPE, URL; BACKGROUND with ID (PK, FK → ITEM.ID), BACKGROUND_NAME; PROP with ID (PK, FK → ITEM.ID), PROP_NAME. Parent ITEM above children. Exact arrows from child ID to parent ID. Footer Common fields in ITEM; subtype fields in child tables. ITEM_TYPE configured by @DiscriminatorColumn in this example. No generic claim joined always requires discriminator.",
+  "referenceSource": "https://jakarta.ee/specifications/persistence/3.1/apidocs/jakarta.persistence/jakarta/persistence/mappedsuperclass",
+  "repairPrompt2": "Remove the downward arrowhead pointing into BACKGROUND. Both connector arrows must have ONLY one arrowhead each pointing UP into parent ITEM. Child ID is FK to ITEM.ID. Keep all text and fields unchanged. No extra arrowheads."
+}

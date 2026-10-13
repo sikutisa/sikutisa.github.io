@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Load balancer sends requests to interchangeable Web A/B/C within Autoscaling group, with no per-node session store.",
+      "passed": true,
+      "evidence": "Autoscaling group contains WebA/B/C, Any node can serve a request, incoming LB targetsgroup."
+    },
+    {
+      "requirement": "All web nodes access one external Shared session store, so routing is not tied to a particular node.",
+      "passed": true,
+      "evidence": "AllthreeWebnodesjoinsharedbus Read/update session toexternalsharedsessionstore."
+    },
+    {
+      "requirement": "Application cache and primary/replica data routes are distinct from session store; replication is Primary→Replica.",
+      "passed": false,
+      "evidence": "REJECT: Reads branch incorrectly targetsPrimary then has extraPrimary→Replica solidarrow instead ofwebgroup→Replica."
+    },
+    {
+      "requirement": "Client static content goes to CDN separately; captions and routes readable.",
+      "passed": true,
+      "evidence": "SeparateStaticassetsClient↔CDN, allreadable."
+    }
+  ],
+  "notes": "Viewed complete raster; decoded via PIL. One incorrect data connector requires targeted edit.",
+  "at": "2026-10-12T12:55:19.977Z",
+  "generatedSha256": "98618354ed7377b6c7c3fc036413fa435a2d14c5e0cb77fff32005eae7b4d522",
+  "specSha256": "89c83e48b13ffb1ac36a7d62a96c1bbed70ea0200ee05561649deac8230fbeaa"
+}

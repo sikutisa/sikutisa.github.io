@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Logicalpages0..3; pagetable0→1,1→4,2→3,3→7.",
+      "passed": true,
+      "evidence": "Exact0→1/1→4/2→3/3→7unchanged."
+    },
+    {
+      "requirement": "Physicalframes0..7: frame1Page0,3Page2,4Page1,7Page3; remaining0,2,5,6 unused.",
+      "passed": true,
+      "evidence": "EightframecontentsandUnusedrowscorrect."
+    },
+    {
+      "requirement": "Equal-sized pages/frames; noncontiguous physical layout clear, no substituted mapping.",
+      "passed": true,
+      "evidence": "Logicalbarshortenedtohalfphysicalheight; individualblockheightsnowapproximatelyequal,noncontiguouslayoutclear."
+    }
+  ],
+  "notes": "Second output personally inspected after exact targeted edit; field identifiers, block sizes and lowercase byte values verified.",
+  "at": "2026-10-12T23:31:28.497Z",
+  "generatedSha256": "3a557a5785aa4ec59315edd1ebba7d6b55904ac4c82fd2aca22281079efe68bc",
+  "specSha256": "be95ad88904439f970d2879f2dcd760f44ac72922847a9e7b10a4bfd380791fa"
+}

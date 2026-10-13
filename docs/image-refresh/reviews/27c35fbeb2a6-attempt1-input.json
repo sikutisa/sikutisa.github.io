@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "P0waitSthenwaitQthen signalS/Q;P1waitQthenwaitSthen signalQ/S.",
+      "passed": true,
+      "evidence": "P0 waitS·waitQ·signalS·signalQ, P1 waitQ·waitS·signalQ·signalS 순서 대조."
+    },
+    {
+      "requirement": "S=Q=1 initially;P0holdsSwaitsQ,P1holdsQwaitsS;deadlockcycleaccurate.",
+      "passed": true,
+      "evidence": "초기S=Q=1, P0 holdsS/waitsQ 및 P1 holdsQ/waitsS의 상대 대기 화살표와 가능한 교차 실행 설명 정확."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

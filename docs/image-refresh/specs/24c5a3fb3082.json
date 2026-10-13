@@ -1,0 +1,14 @@
+{
+  "title": "Queued notification delivery",
+  "purpose": "Show API/worker decoupling, independent channel queues, metadata/cache and failed-send retry path with deduplication caveat.",
+  "alt": "채널별 큐와 작업 서버로 분리한 알림 처리, 메타데이터 조회 및 전송 실패 재시도 경로",
+  "requiredChecks": [
+    "Producers→Notification API; API validates/authenticates and separately accesses Metadata DB and Metadata cache.",
+    "Four separate APNs/FCM/SMS/Email queues feed matching worker pools, which call matching providers and endpoints.",
+    "Failure from worker delivery returns through Retry queue to corresponding channel queue; no retry arrow from successful user delivery.",
+    "Caption mentions event-ID deduplication; no guaranteed exactly-once delivery, all labels legible."
+  ],
+  "prompt": "Create a NEW original raster system-design diagram for a technical blog. English labels, large navy sans-serif text on white, flat blue/teal cards, clear numbered or labelled arrows with empty routing gutters. No logos, copied textbook composition or guarantee of exactly-once delivery. TITLE \"Queued notification delivery\". Wide diagram. Left \"Producers\"→\"Notification API\" subtitle \"Authenticate / validate / preferences\". BeneathAPI two independentexternalcards \"Metadata DB\" and \"Metadata cache\", separate bidirectionallinks. To right fourparallel horizontalchannelrows; EACHrow API→queue→worker→provider→endpoint with verbatimlabels: row1\"APNs queue\",\"APNs workers\",\"APNs\",\"iOS device\"; row2\"FCM queue\",\"FCM workers\",\"FCM\",\"Android device\"; row3\"SMS queue\",\"SMS workers\",\"SMS provider\",\"Phone\"; row4\"Email queue\",\"Email workers\",\"Email provider\",\"Mailbox\". UseONE APIoutputbus feedingallfourqueues. DoNOTcollapse allchannelsintoonequeue orcrossproviders. Workercolumngroup enclosed faint \"Worker pools\" boundary. Underallchannelrows one \"Retry queue\" card: dotted arrow FROMworkerpoolboundary downintoRetryqueue labelled \"Failed sends\"; dottedretryarrow fromRetryqueue aroundBOTTOMandLEFTgutter backintoCHANNELQUEUEgroupboundary labelled \"Retry matching channel\". ItmustnotconnecttoAPIoruserendpoints andmustnotimply retryeverydelivery. Footer \"Use event IDs to detect duplicate sends\". Keep allnames readable, prefer landscape up to2.5:1; no brandicons or exactlyonceclaim.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

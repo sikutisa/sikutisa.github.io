@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Mode transition",
+  "alt": "사용자 모드에서 시스템 호출로 커널 모드로 전환하고 반환하는 과정",
+  "requiredChecks": [
+    "Usermodemodebit1; kernelmodemodebit0; userprocess→call→trap→executesystemcall→return→user.",
+    "Trap enters kernel0, return restores user1, no swappedmodebitvalues."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title User mode and kernel mode. Two horizontal swimlanes: TOP User mode (mode bit = 1), BOTTOM Kernel mode (mode bit = 0). Flow User process executing → Calls system call onTOP. Downwardarrow Trap: mode bit = 0 to Execute system call onBOTTOM. Then upwardarrow Return: mode bit = 1 to Return from system call TOP. Connect finalReturntoResumeuserprocess. Exactmodebits1/0; clearflow. No unrelatedexceptions."
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Notify registered observers only",
+  "purpose": "Show initial subject/subscriber membership and exclusion.",
+  "alt": "상태 2를 가진 Subject가 등록된 Cat·Dog·Mouse에만 알리고 미등록 Duck에는 알리지 않는 모델",
+  "requiredChecks": [
+    "Subject holds integer state 2.",
+    "Exactly Cat, Dog and Mouse are registered observers; each receives update(2).",
+    "Duck is outside observer list and receives no notification.",
+    "Notifications originate from Subject to observers on state change."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference study blog. Opaque white background, large readable navy sans-serif text, monospaced identifiers, blue/teal/amber flat cards and roomy gutters. No copied irregular bubbles, photographed source or logos. Use plain labelled rectangles for Cat/Dog/Mouse/Duck object names, no animal illustration needed. Include only listed identifiers; do not invent code bodies, modifiers, state values, extra arrows or recipients. Title 'Notify registered observers only'. Subject card LEFT 'state: int = 2'. RIGHT container 'Registered observers' three separate cards Cat, Dog, Mouse. Three Subject→observer arrows each labelled update(2). Below outsidecontainer Duck card grey 'Not registered — no notification', NO arrow fromSubjecttoDuck. Footer 'Subject owns state; registered observers receive change notifications'. Do not draw decorative arrows that imply Duck notified.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

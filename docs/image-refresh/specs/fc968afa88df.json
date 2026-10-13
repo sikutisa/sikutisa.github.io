@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Two mutex circular wait",
+  "alt": "first_mutex를 보유한 thread_one과 second_mutex를 보유한 thread_two의 순환 대기",
+  "requiredChecks": [
+    "Exactly two mutex boxes first_mutex and second_mutex, each one instance; two thread circles thread_one and thread_two.",
+    "Assignment first_mutex→thread_one and second_mutex→thread_two; request thread_one→second_mutex and thread_two→first_mutex.",
+    "Legend clearly distinguishes held assignment and waiting request; closed cycle communicates deadlock; all labels readable."
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: original raster PNG diagram for an IT technical blog. White opaque background, crisp dark navy sans-serif text, blue request arrows and teal assignment arrows, generous spacing, flat professional educational design. Large legible English identifiers, no logos/watermark, no shadows/decoration. Recompose from this semantic specification, not a source slide. Directed arrows must have one clear arrowhead at the stated destination; circles are threads, boxes resources, dots are instances. Title: Two mutexes: circular wait. Arrange four nodes around a clockwise rectangular loop: first_mutex upper left, thread_one upper right, second_mutex lower right, thread_two lower left. Directed clockwise edges first_mutex→thread_one (held, teal), thread_one→second_mutex (waiting, blue), second_mutex→thread_two (held, teal), thread_two→first_mutex (waiting, blue). Each mutex contains exactly one instance dot. Footer: Each thread holds one mutex and waits for the other. Status Deadlock. Compact legend held/resource→thread and waiting/thread→resource."
+}

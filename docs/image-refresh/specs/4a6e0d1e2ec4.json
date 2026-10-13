@@ -1,0 +1,14 @@
+{
+  "title": "Registration adds the observer",
+  "purpose": "Show subscriber list after Duck added.",
+  "alt": "Duck 등록이 완료되어 Cat·Dog·Mouse·Duck 네 객체가 관찰자 목록에 포함된 단계",
+  "requiredChecks": [
+    "Registered observers now include exactly Cat, Dog, Mouse, Duck.",
+    "Subject state stays 2.",
+    "Duck is shown inside registered roster, not still outside.",
+    "Registration alone is not depicted as a new state notification."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference study blog. Opaque white background, large readable navy sans-serif text, monospaced identifiers, blue/teal/amber flat cards and roomy gutters. No copied irregular bubbles, photographed source or logos. Use plain labelled rectangles for Cat/Dog/Mouse/Duck object names, no animal illustration needed. Include only listed identifiers; do not invent code bodies, modifiers, state values, extra arrows or recipients. Title 'Registration adds the observer'. Subject LEFT 'state: int = 2' and RIGHT clearly enclosed roster 'Registered observers after registration' four equalcards Cat, Dog, Mouse, Duck. Duckcard highlightedteal 'new subscriber'. Thin nondirectional association fromSubjecttoroster labelled 'observer list' if needed, NO update arrows or newstate. Footer 'registerObserver(duck) adds Duck to the subscriber list'.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

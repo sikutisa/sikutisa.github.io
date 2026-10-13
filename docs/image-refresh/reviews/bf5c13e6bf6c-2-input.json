@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Nodes T1,T2; R1,R2 single instances assigned respectively to T1 and T2.",
+      "passed": true,
+      "evidence": "R1/R2 now rectangular boxes each one dot; T1/T2 circles."
+    },
+    {
+      "requirement": "Solid assignment R1→T1 and R2→T2; solid request T2→R1; dashed claim T1→R2 only.",
+      "passed": true,
+      "evidence": "Four arrows unchanged and exact: R1→T1,R2→T2 assignment,T2→R1 request,T1⇢R2 claim."
+    },
+    {
+      "requirement": "Cycle R1→T1⇢R2→T2→R1 includes a potential claim; label Unsafe allocation, not asserted currently deadlocked.",
+      "passed": true,
+      "evidence": "Unsafe allocation caption distinguishes potential claim cycle from present deadlock; clear legend."
+    }
+  ],
+  "notes": "Second output inspected in full. Earlier graph/shape error repaired; all numeric and relationship checks passed."
+}

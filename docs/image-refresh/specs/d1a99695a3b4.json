@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Virtualization comparison",
+  "alt": "단일 운영체제와 VMM 위의 독립 커널을 가진 세 가상 머신 비교",
+  "requiredChecks": [
+    "SingleOSprocesses→kernel→hardware; virtualizedthreeVM1/2/3 eachprocesses→ownkernel.",
+    "Threeguestkernels above one VMM above sharedhardware; guestprogramminginterfaces retained."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title One operating system and three virtual machines. LEFT (a) Single OS: stacked Processes, Kernel, Hardware; arrowProcesses→Kernel labelled Programming interface. RIGHT (b) Virtualized system: oneouterhardwarebase, Virtual machine manager layer above, aboveVMM threeequalcolumns VM1 VM2 VM3 eachownKernel andProcesses. EachProcesses→ownKernel arrow labelled Programming interface. Allguestkernels supported bysingleVMM. No guest sharingonekernel. No vendorlogos."
+}

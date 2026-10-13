@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Bottom0,text,data,heap,freegap,stack,max top in order.",
+      "passed": true,
+      "evidence": "0→Text→Data→Heap→Free space→Stack→Max address 순서가 정확하다."
+    },
+    {
+      "requirement": "Heap grows toward higheraddresses/up, stacktowardlower/down into gap; no mandatory universalarchitecture.",
+      "passed": true,
+      "evidence": "Heap은 위로,Stack은 아래로 빈 공간을 향하고 illustrative 캡션이 있다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

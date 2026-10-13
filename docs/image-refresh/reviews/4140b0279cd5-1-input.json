@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Headers in exact order: course_id",
+      "passed": true,
+      "evidence": "Resultonecourse_idheader, sourcecardsseparate."
+    },
+    {
+      "requirement": "Exactly 1 rows: CS-210",
+      "passed": true,
+      "evidence": "Exactlyone resultrowCS-210, matchingintersection."
+    },
+    {
+      "requirement": "Fall 2017: CS-210, PHY-220. Spring 2018: CS-210, HIS-230. Keep only shared CS-210.",
+      "passed": true,
+      "evidence": "Fall{CS-210,PHY-220} andSpring{CS-210,HIS-230} shownwithintersectionglyph; onlysharedCS-210retained."
+    },
+    {
+      "requirement": "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer andallrowsreadable."
+    }
+  ],
+  "notes": "Pass. Every result/source cell visually compared with independent examples/relational-algebra.json."
+}

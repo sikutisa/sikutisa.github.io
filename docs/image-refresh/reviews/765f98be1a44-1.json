@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Source video splits to Video, Audio and Metadata; no directed edge returns to an ancestor.",
+      "passed": true,
+      "evidence": "Sourcevideo branchesVideo,Audio,Metadata; all edgesflowforward, no cycles."
+    },
+    {
+      "requirement": "Video→Inspection, then Optional watermark→Video encoding→Mux/package; Audio→Audio encoding→Mux/package and Metadata→Mux/package.",
+      "passed": true,
+      "evidence": "VideoInspection→Optionalwatermark→Videoencoding→Mux; Audio→Audioencoding→Mux; Metadata→Mux all3inputs visible."
+    },
+    {
+      "requirement": "Thumbnail generation branches from inspected video and produces Thumbnail output separately from mux/package.",
+      "passed": true,
+      "evidence": "InspectionupbranchThumbnailgeneration→Thumbnailoutput separatefromMux."
+    },
+    {
+      "requirement": "Caption clearly says example DAG; all task labels and branch directions legible.",
+      "passed": true,
+      "evidence": "Exampletaskdependencies subtitle; labelslarge/readable, independentaudio branch."
+    }
+  ],
+  "notes": "Viewed raster, traced branch directions/task graph and compared to fullarticle; PIL verify/load passed. Completion-event topology and task/assignment wording flagged for correction.",
+  "at": "2026-10-12T13:09:43.677Z",
+  "generatedSha256": "542a837e93c115fc20c8c3e0d9d83026313367cf62f44d50aabde05e6762aa9d",
+  "specSha256": "63031dafe3e6fa21776f67d160903fa0248036b117dbc357ecc8e3eab9917ea5"
+}

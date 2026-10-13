@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Horizontal axis is Number of frames and vertical axis is Number of page faults.",
+      "passed": true,
+      "evidence": "Horizontal axis Number of frames and vertical Number of page faults are correct."
+    },
+    {
+      "requirement": "A smooth decreasing illustrative curve is shown, without invented numeric data/tick values.",
+      "passed": true,
+      "evidence": "One blue curve decreases steeply then flattens. No numeric ticks or invented measurements are present."
+    },
+    {
+      "requirement": "Caption states Conceptual trend, not measured data.",
+      "passed": true,
+      "evidence": "The visible caption explicitly says Conceptual trend, not measured data."
+    },
+    {
+      "requirement": "A visible caveat states Some policies, such as FIFO, can exhibit Belady’s anomaly; no universal monotonicity claim.",
+      "passed": true,
+      "evidence": "The bottom note names FIFO and Belady's anomaly, so the downward schematic is not presented as universal."
+    }
+  ],
+  "notes": "Viewed all labels, digits and frame/axis values against original and document. The Belady curve was also checked against independently simulated data in examples/virtual-memory.json. PIL verify/load succeeded.",
+  "at": "2026-10-12T12:26:57.526Z",
+  "generatedSha256": "2a900c098cacecb3c53e5844fe6497fad6a2d46d636747e8c79cd09252793fbf",
+  "specSha256": "871d5d964d7f96ea987785d0f171f90bb3c40c7cdc2b7262aaa056fb76d7f9fb"
+}

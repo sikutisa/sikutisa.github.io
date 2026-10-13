@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "pipefd0read,fd1write inheritedbybothparentandchild; no pipebidirectionalclaim.",
+      "passed": true,
+      "evidence": "부모 fd0 read closed/fd1 write open,자식 fd0 read open/fd1 write closed 및 상속 캡션이 맞다."
+    },
+    {
+      "requirement": "Illustratedbodyparentclosesfd0/writesfd1;childclosesfd1/readsfd0; dataflowparent→pipe→child.",
+      "passed": true,
+      "evidence": "부모fd1→Kernel buffer→자식fd0 오른쪽 데이터 흐름이 정확하며 닫힌 끝의 활동선은 없다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "ColumnsPRICE,ID,BACKGROUND_NAME,URL.",
+      "passed": true,
+      "evidence": "All four headers exact."
+    },
+    {
+      "requirement": "Row2000|1|back1|backUrl1;inheritedcommonfieldsinline,noparenttablejoin.",
+      "passed": false,
+      "evidence": "Correct row but authoring instruction leaked as footer; remove Preserve line."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T02:03:15.227Z",
+  "generatedSha256": "2c8b9e050abacdd6bd4150f522e5c86df67d27e6dc21b0176d4aa794e70c26c1",
+  "specSha256": "d9c35f0452b41aa938f7edbed1b1da82c8e5723528cf45e98f1b10f17e883c89"
+}

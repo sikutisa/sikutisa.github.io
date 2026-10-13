@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "RAID01 vs RAID10 after failure",
+  "alt": "RAID 0+1의 스트라이프 그룹 미러와 RAID 1+0의 미러 쌍 스트라이프를 단일 디스크 고장으로 비교",
+  "requiredChecks": [
+    "RAID0+1two4diskstripegroupsmirrored,topfirstdiskfailed;survivingbottomgroupvalid.",
+    "RAID1+0fourmirroredpairsstripedacrosspairs,firstupperdiskfailedbutlowermirroravailable;singlefailureonly."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title RAID0+1 and RAID1+0 after one disk failure. TWO stackedpanels each8diskcards2rows4columns. TOP RAID0+1 (mirror of stripes): mark upperrow group StripeA,lower StripeB; eachrow4cards; one redX onupperleftdisk; oneverticaldoubleheadlinebetweenGROUPbrackets labelledMirror; uppergroupdegraded/unavailableforfullstripe,lowergroupsurvives. BOTTOM RAID1+0 (stripe of mirrors):fourverticalpairbrackets Mirror1..4 connectingtop/bottomdisk; stripehorizontal acrossfourPAIRS; redXtopfirstdisk;bottomfirstdiskhighlightsurvivingmirror. OneXperpanelonly. Keepmirrorgroupvspairclear,noextra failurecountclaim."
+}

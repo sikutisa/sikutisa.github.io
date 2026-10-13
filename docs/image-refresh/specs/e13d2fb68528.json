@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "PC bus architecture",
+  "alt": "프로세서·캐시·메모리·PCIe 버스와 그래픽·SAS·확장 버스 장치 연결",
+  "requiredChecks": [
+    "Processor→bridge/memorycontroller→PCIebus;cacheoffprocessorlink,memoryoffbridge;monitorvia graphicscontroller.",
+    "PCIe→SAScontroller→4disks;PCIe→expansioninterface→expansionbus→keyboard+2USBports."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title A typical PC bus architecture. Top Processor connects to Bridge / memory controller below. Cache branches fromprocessorlinkabovebridge; Memory branchesfrombridge. BridgeconnectscentralhorizontalPCIe bus. Monitor→Graphicscontroller→PCIebus onleft. PCIebus→SAScontroller→fourDiskcards lowerleft. PCIebus→Expansion bus interface→secondhorizontalExpansion bus lowerright. Keyboard andtwoUSBportcardsconnecttosecondexpansionbusONLY. Flatcards/plainlines. Exactly4disks,2USBports,no incorrectmemoryonUSB."
+}

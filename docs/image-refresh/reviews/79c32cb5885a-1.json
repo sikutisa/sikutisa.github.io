@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Before Client depends directly on concrete Server.",
+      "passed": true,
+      "evidence": "Before Client depends rightward directly on concrete Server."
+    },
+    {
+      "requirement": "After Client uses ClientInterface; Server implements ClientInterface.",
+      "passed": true,
+      "evidence": "After Client uses stable ClientInterface; Server implements it via upward arrow."
+    },
+    {
+      "requirement": "Client-facing contract remains stable while server implementation changes.",
+      "passed": true,
+      "evidence": "Footer extend implementations behind contract; keep Client dependency on abstraction."
+    },
+    {
+      "requirement": "No ClientInterface→Server dependency or reversed implementation relationship.",
+      "passed": true,
+      "evidence": "Server upward implementation arrow correctly targets interface; no interface-to-Server dependency."
+    }
+  ],
+  "notes": "Direct visual inspection confirms text, dependencies and boundaries; PNG decode before approval.",
+  "at": "2026-10-12T15:53:11.195Z",
+  "generatedSha256": "ac638ad6c2744baee29122a8d656e193fc058e35804294a0ba1d24461c7fc8ba",
+  "specSha256": "bc302ad276e6c416ba23004a804c5bb721595cd6ce33b55f3c29fe5a2a403afd"
+}

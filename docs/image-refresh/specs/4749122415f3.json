@@ -1,0 +1,13 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "JOINED BACKGROUND data",
+  "alt": "BACKGROUND의 ID 2와 back1이 ITEM의 ID 2를 참조",
+  "requiredChecks": [
+    "ColumnsID,BACKGROUND_NAME;singlerow2,back1.",
+    "ID2sameITEMID2PK/FK,commonprice/urlnotduplicatedchild."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title JOINED: BACKGROUND data. Table exact columns ID | BACKGROUND_NAME, one row 2 | back1. Small note ID 2 references ITEM.ID 2 (PK + FK). Only2columns, no price/url added. Generous whitespace compact composition.",
+  "referenceSource": "https://jakarta.ee/specifications/persistence/3.1/apidocs/jakarta.persistence/jakarta/persistence/mappedsuperclass",
+  "repairPrompt2": "Replace entire diagram with a single centered BACKGROUND table only. Title JOINED: BACKGROUND data. Columns exactly ID | BACKGROUND_NAME. One row exactly 2 | back1. Underneath plain text 'ID 2 references ITEM.ID 2 (PK + FK)'. Delete all ITEM table cards and all arrows. No other columns, tables or data."
+}

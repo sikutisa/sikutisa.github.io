@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Resetcp=0;read_nextreadcpthenincrement;write_nextwritecpthenincrement.",
+      "passed": true,
+      "evidence": "reset cp=0, read_next read cp 후 +1, write_next write cp 후 +1 정확."
+    },
+    {
+      "requirement": "Twocolumn3rowtableexactpseudocode,noreorderedincrement.",
+      "passed": true,
+      "evidence": "두 열 세 행의 의사코드 순서 및 cp 설명 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:04:07.025Z",
+  "generatedSha256": "7a903622201d92b2f315310fdc4606d31365d3d0df1331ad4d3f7217a0b324f2",
+  "specSha256": "db52cbe5e14390812d428929b22a3c5d2e82e9e583b3c129f400396ccfba345d"
+}

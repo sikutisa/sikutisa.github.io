@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Column headers in exact order: course_id | title | dept_name | credits",
+      "passed": true,
+      "evidence": "Headers course_id,title,dept_name,credits in correct order."
+    },
+    {
+      "requirement": "Exactly 2 data rows in exact order: CS-210 | Systems | Comp. Sci. | 4 ; CS-315 | Robot Control | Comp. Sci. | 3",
+      "passed": true,
+      "evidence": "Rows CS-210 Systems Comp. Sci.4 andCS-315 Robot Control Comp. Sci.3 match fixture."
+    },
+    {
+      "requirement": "CS-347 is absent from course. CS-315 is present.",
+      "passed": true,
+      "evidence": "CS-347 not present; note confirms missingCS-347 and presentCS-315 as prose requires."
+    },
+    {
+      "requirement": "Footer explicitly identifies an original illustrative dataset; all table cells readable without copied textbook names/data.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer present; two rows readable with new course titles."
+    }
+  ],
+  "notes": "Pass. Every cell visually compared to independently calculated examples/sql-joins.json."
+}

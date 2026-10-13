@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "10hexranges000–00F,020–021,040–043,200–20F,2F8–2FF,320–32F,378–37F,3D0–3DF,3F0–3F7,3F8–3FF.",
+      "passed": true,
+      "evidence": "000–00F부터 3F8–3FF까지 10개 16진수 범위가 명세와 일치."
+    },
+    {
+      "requirement": "CorrespondingDMA,interrupt,timer,game,secondaryserial,HDD,parallel,graphics,diskette,primaryserial; portmappedI/OnotRAM/MMIOandlegacyexample.",
+      "passed": true,
+      "evidence": "각 행의 DMA·인터럽트·타이머·게임·직렬·디스크·병렬·그래픽 대응과 port-mapped I/O 설명 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:57:51.211Z",
+  "generatedSha256": "a2bda4c7d68827a0dca311e3314cdbb336629850ec6cb10775a652ac211e57e2",
+  "specSha256": "ae1e128efa177caacea47b67b13aebdc67cfc5fc4e14007f4a781f696a8f1f7c"
+}

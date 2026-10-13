@@ -1,0 +1,14 @@
+{
+  "title": "One subject, many observers",
+  "purpose": "Explain one-to-many dependency and automatic notification on state change.",
+  "alt": "하나의 Subject 상태 변화가 여러 등록 Observer의 자동 알림·갱신으로 이어지는 일대다 관계",
+  "requiredChecks": [
+    "One Subject owns state and has many registered observers.",
+    "Example state 2 reaches Cat, Dog, Mouse through update(2).",
+    "Observer dependency and notification direction are distinguished.",
+    "No guaranteed notification ordering or independent observer source of state."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference study blog. Opaque white background, large readable navy sans-serif text, monospaced identifiers, blue/teal/amber flat cards and roomy gutters. No copied irregular bubbles, photographed source or logos. Use plain labelled rectangles for Cat/Dog/Mouse/Duck object names, no animal illustration needed. Include only listed identifiers; do not invent code bodies, modifiers, state values, extra arrows or recipients. Title 'One subject, many observers'. OneLEFTSubjectcard 'owns state: int = 2'. ThreeRIGHT observercardsCat/Dog/Mouse inregisteredcontainer. Subject→eacharrow 'update(2)'. Across top note 'One-to-many dependency: observers depend on one subject'. Acrossbottom 'When subject state changes, it notifies every registered observer'. Notificationarrowsrightwards, no observer→subjectstatewritearrowsororderingnumbers.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

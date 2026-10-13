@@ -1,0 +1,14 @@
+{
+  "title": "A database facade for product storage",
+  "purpose": "Show Db wraps data-access framework and works with product data.",
+  "alt": "Application이 Db 파사드와 ProductData를 사용하고 Db가 System.Data 세부 객체를 조율하는 구조",
+  "requiredChecks": [
+    "Application uses Db and ProductData.",
+    "Db exposes Store(ProductData), GetProduct(sku), DeleteProductData(Sku).",
+    "Db uses System.Data components SqlConnection, SqlCommand, IDataReader.",
+    "The application does not need direct dependencies on the three framework classes."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif labels, exact monospaced code identifiers, restrained blue/teal cards, ample spacing, no logos or copied source composition. Title 'A database facade for product storage'. Top Application card arrows to Db and ProductData cards. Db exact method list Store(ProductData), GetProduct(sku), DeleteProductData(Sku). Db→ProductData labelled 'reads / writes product data'. Bottom subsystem panel 'System.Data' with three distinct cards SqlConnection, SqlCommand, IDataReader. Db→panel arrow 'coordinates data access'. No Application→framework shortcuts or inheritance arrows. Footer 'Application uses the product-storage interface; Db handles framework details'.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

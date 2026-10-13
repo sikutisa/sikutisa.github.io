@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "CPUlogical(p,d); pagepsearchedinTLB; hitreturnsf withoutpage-tablelookup.",
+      "passed": true,
+      "evidence": "pbranch now originates beneath logicalp field; TLBCachepsearchandhitdirectfcorrect."
+    },
+    {
+      "requirement": "Miss→pagetableindexedp→f; bothpathsconstructphysical(f,d); offsetd bypasseslookupunchanged.",
+      "passed": true,
+      "evidence": "Misspagetablep→f;dseparatetopbypass unchangedoutputd; output(f,d)."
+    },
+    {
+      "requirement": "No hitpaththroughpagetable; physicaladdressreachesphysicalmemory; cachemissnotautomaticallypagefault.",
+      "passed": true,
+      "evidence": "Hitdoesnotlookuppagetable; memorydirectionandnotautomaticpagefaultcaptioncorrect."
+    }
+  ],
+  "notes": "Second output personally inspected; source fields and mapping relationships repaired and rechecked."
+}

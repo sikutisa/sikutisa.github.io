@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "CPU logical address checked logical address<limit; Yes goes to plus adder with relocation register; output physical address→memory.",
+      "passed": true,
+      "evidence": "Logicaloffset<limit comparatorYes→relocationplus→physicalmemory; correctregisterfeeds."
+    },
+    {
+      "requirement": "No branch to OS trap addressing error; limit controls comparison, relocation controls adder; no reversed yes/no.",
+      "passed": true,
+      "evidence": "NewNoarrowfromdiamondbottomendsredTrap:addressingerror; nootherstageschanged."
+    }
+  ],
+  "notes": "Second output visually inspected. Missing invalid-address path fixed. PNG independently decoded.",
+  "at": "2026-10-12T23:07:37.341Z",
+  "generatedSha256": "3f857728c235d067b91b4687c62c04c742412afcf9e3cf2ac0af6d2e2c25e6bd",
+  "specSha256": "a642831fcf3fafed6a5b1e3d12aa9d79c46692224c6b0bd99ee26b046d16b5a1"
+}

@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Client requests go Client→Load balancer→API servers in that direction.",
+      "passed": true,
+      "evidence": "Client→Load balancer→API servers arrows point right, labeled HTTPS/Route requests."
+    },
+    {
+      "requirement": "API servers connect separately to Metadata database and Object storage, not sequentially through one another.",
+      "passed": true,
+      "evidence": "API group has separate bidirectional links to DB and object storage; no DB-to-object chain."
+    },
+    {
+      "requirement": "Metadata contains users/files/versions; file bytes belong in object storage.",
+      "passed": true,
+      "evidence": "DB Users/files/versions; Object storage File bytes."
+    },
+    {
+      "requirement": "Diagram is labeled illustrative scalable file service and does not claim actual Google internal architecture or zero-loss guarantees.",
+      "passed": true,
+      "evidence": "Illustrative scalable file service subtitle, no Google internal or zero-loss claim."
+    }
+  ],
+  "notes": "Individually viewed full raster and traced connectors against full article. Source tool-output PNGs verified and loaded with PIL in exec82; approved SHA binds copied bytes."
+}

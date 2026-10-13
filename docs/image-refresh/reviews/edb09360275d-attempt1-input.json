@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Head→2→3→4→5→8→9→10→11→12→13→17→18→25→26→27→NULL.",
+      "passed": true,
+      "evidence": "Head부터 2·3·4·5·8·9·10·11·12·13·17·18·25·26·27을 순서대로 대조."
+    },
+    {
+      "requirement": "Everylistedblockfree;allocatedblocksabsent;chaincompleteorderandendmarker.",
+      "passed": true,
+      "evidence": "행 넘어가는 8→9·13→17 선과 마지막27 next NULL 확인. 빈 블록만 포함."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

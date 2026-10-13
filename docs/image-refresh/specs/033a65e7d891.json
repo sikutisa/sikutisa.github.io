@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Socket endpoints",
+  "alt": "호스트 IP와 포트 번호를 조합한 두 소켓 끝점의 통신 예시",
+  "requiredChecks": [
+    "HostX146.86.5.20socket146.86.5.20:1625;webserver161.25.19.8socket161.25.19.8:80.",
+    "Twoendpointsconnect,IP+port distinguishesocket; illustrativeaddressesnotlocalDateServer127.0.0.1:6013example."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Communication using sockets. Left Host X card IP146.86.5.20 containingSocket146.86.5.20:1625. Right Web server card IP161.25.19.8 containingSocket161.25.19.8:80. DoubleheadhorizontalCommunicationarrowbetween sockets. Footer A socket endpoint is identified by an IP address and a port. Small Example addresses. Exactdigits,dots,colons. No protocol/securityclaim,noshowingthirdhost."
+}

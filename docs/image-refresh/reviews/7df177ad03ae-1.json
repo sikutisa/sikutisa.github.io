@@ -1,0 +1,36 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Exactly eleven table cards: student, instructor, department, advisor, course, prereq, section, classroom, time_slot, takes, teaches. Each card has exact PK and other attributes as specified.",
+      "passed": true,
+      "evidence": "Eleven cardsstudent,instructor,department,advisor,course,prereq,section,classroom,time_slot,takes,teaches. Each exact field list inspected: studentname/dept/tot_cred, instructorname/dept/salary, departmentbuilding/budget, advisori_ID, coursetitle/dept/credits, sectionbuilding/room/time_slot, classroomcapacity, time_slotend_time, takesgrade; prereq/teaches onlykeys."
+    },
+    {
+      "requirement": "All primary key attribute names are underlined and identified as PK. section PK course_id/sec_id/semester/year; takes and teaches PK additionally ID; time_slot PK time_slot_id/day/start_time.",
+      "passed": true,
+      "evidence": "PK fields allunderlined:student/instructorID;departmentdept_name;advisors_ID;coursecourse_id;prereqcourse_id+prereq_id;sectionfour-section-key;classroombuilding+room;time_slottime_slot_id/day/start_time;takes/teachesIDplusfoursectionfields."
+    },
+    {
+      "requirement": "People/course references: student.dept_name → department.dept_name ; instructor.dept_name → department.dept_name ; course.dept_name → department.dept_name ; advisor.s_ID → student.ID ; advisor.i_ID → instructor.ID ; section.course_id → course.course_id ; section.(building, room_number) → classroom.(building, room_number) ; prereq.course_id → course.course_id ; prereq.prereq_id → course.course_id. Arrows point FK→referenced key, not reverse.",
+      "passed": true,
+      "evidence": "Nine initialFK register rows inspected: student/instructor/course dept→department; advisor s_ID→student andi_ID→instructor; sectioncourse→course, building/room→classroom; prereqbothkeycolumns→course. All arrowsrightpointingFK→referencedkey."
+    },
+    {
+      "requirement": "takes has exactly two FK groups ID→student and four-column section key→section; teaches ID→instructor and same section key→section.",
+      "passed": true,
+      "evidence": "takes.ID→student.ID and fullfoursectionkey→section;teaches.ID→instructor.ID andsamefoursectionkey→section. All 13 referencescorrectgrouping."
+    },
+    {
+      "requirement": "time_slot_id alone is not unique under this composite key; section.time_slot_id↔time_slot.time_slot_id is explicitly association only, not a foreign key. No time_slot→section FK is invented.",
+      "passed": true,
+      "evidence": "Bottom explicitlyTime-slot association(notanFK); section.time_slot_id andtime_slot.time_slot_ididentified, notecompositePKalsoincludesday/start_time andtime_slot_idalone notunique. NoformalFK invented. SingleleftarrowinassociationnoteisnotFKunderitsheading."
+    }
+  ],
+  "notes": "Pass. Original-resolution view inspected every table field, underlined composite PK and all thirteen FK rows; time-slot association explicitly separate.",
+  "at": "2026-10-12T14:06:11.208Z",
+  "generatedSha256": "32b97db41384c92d3fe3dd8accc3411b143a0c06a823707e7217c3ed03a85529",
+  "specSha256": "9182bd2d7699fcf9d62b2f54e6bcef9d187abec338ae903643f554811840a9f2"
+}

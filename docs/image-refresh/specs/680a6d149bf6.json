@@ -1,0 +1,14 @@
+{
+  "title": "Class Adapter: inheritance",
+  "purpose": "Distinguish subclass-based adaptation from object composition in languages supporting required inheritance.",
+  "alt": "Target과 Adaptee의 상속으로 request를 specificRequest에 맞추는 클래스 어댑터",
+  "requiredChecks": [
+    "Client uses Target.request() with no direct Adaptee dependency.",
+    "Adapter inherits both Target and Adaptee in the class-adapter concept, with arrows pointing toward base types.",
+    "Target has request(); Adaptee has specificRequest(); Adapter overrides request().",
+    "No stored adaptee field or composition link; inherited specificRequest() translation explicit and language dependence acknowledged."
+  ],
+  "prompt": "Create a NEW original English raster technical diagram for an IT design-pattern blog. White background, navy large text, flat blue/teal cards, generous whitespace, precise method spelling, arrows labelled for semantics. No logos or copied slide composition. Title \"Class Adapter: inheritance\". TOP three separated cards Client, Target with request(), Adaptee with specificRequest(). Client→Target arrow uses. BELOW centered Adapter with request(). Two distinct solid arrows Adapter→Target and Adapter→Adaptee each labelled inherits. Do notdraw Adaptee→Adapter. Bottom code callout \"Adapter.request() → inherited specificRequest()\". Footer \"Inheritance-based adaptation; depends on language support\". No adaptee instancefield, no wraps/delegates composition arrow, no Java-specific multiple-class-inheritance claim. No unlabelled triangle arrowhead.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

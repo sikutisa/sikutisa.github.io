@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Before free-frame list in order14,13,18,20,15; newprocesspages0..3.",
+      "passed": true,
+      "evidence": "Beforefree-list14,13,18,20,15 andprocesspages0..3exact."
+    },
+    {
+      "requirement": "After pagetable0→14,1→13,2→18,3→20; free listonly15.",
+      "passed": true,
+      "evidence": "Aftertable0→14,1→13,2→18,3→20, remaining15."
+    },
+    {
+      "requirement": "Memoryframes13Page1,14Page0,18Page2,20Page3,15Free; nearby16,17,19,21Otherallocated; consistent pre/post allocation.",
+      "passed": true,
+      "evidence": "Both13..21snapshotscorrectincludingunchangedOtherprocess16/17/19/21; legendmatches."
+    }
+  ],
+  "notes": "Exact original values and complete article checked; reject misleading field connections or ambiguous per-row mapping arrows.",
+  "at": "2026-10-12T23:26:45.893Z",
+  "generatedSha256": "95fb2492ef81985961527f4b4b1d23b9366847b746787c1e5207a4c730aae6cd",
+  "specSha256": "aae2657ddcbdd2b3a57176119d2c1fd2b1ceb7e8feb1b944ee956f6a61cefa73"
+}

@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Single core concurrency",
+  "alt": "단일 코어에서 T1·T2·T3·T4가 시간에 따라 교차 실행",
+  "requiredChecks": [
+    "OnecoretimelineT1,T2,T3,T4,T1,T2,T3,T4,T1,...",
+    "Time→rightoneexecutingatonce,noparallelclaim."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Concurrency on one core. One horizontal Core row EXACT9 equal slots T1,T2,T3,T4,T1,T2,T3,T4,T1 then ellipsis. Time arrow right. Each slot distinct thread color reused consistently. Caption One thread runs at a time; threads are interleaved. No simultaneous rows or numeric timing."
+}

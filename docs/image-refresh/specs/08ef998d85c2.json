@@ -1,0 +1,14 @@
+{
+  "title": "Regional creators and pizza products",
+  "purpose": "Show Factory Method participants and consistent regional creation mappings.",
+  "alt": "NY·Chicago PizzaStore가 대응하는 Cheese·Veggie 제품을 생성하고 추상 Pizza에 반환하는 구조",
+  "requiredChecks": [
+    "PizzaStore is abstract creator with orderPizza and createPizza returning Pizza.",
+    "NYPizzaStore and ChicagoPizzaStore extend PizzaStore.",
+    "NYPizzaStore creates NYStyleCheesePizza and NYStyleVeggiePizza; ChicagoPizzaStore creates ChicagoStyleCheesePizza and ChicagoStyleVeggiePizza.",
+    "All four concrete products extend abstract Pizza; base creator depends on Pizza abstraction."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for a design-pattern reference blog. Opaque white background, large navy sans-serif typography, readable monospaced class/method names, restrained blue/teal panels, large gutters, no logos or copied slide. Title 'Regional creators and pizza products'. TOP PizzaStore (abstract creator) card 'orderPizza(type): Pizza' 'createPizza(type): Pizza' arrow uses to Pizza (abstract product) card 'prepare(), bake(), cut(), box()'. BELOW two roomy family panels. LEFT NYPizzaStore card 'extends PizzaStore' 'createPizza(type): Pizza' down createsbranch to NYStyleCheesePizza 'extends Pizza' and NYStyleVeggiePizza 'extends Pizza'. RIGHT ChicagoPizzaStore analogousbranchto ChicagoStyleCheesePizza and ChicagoStyleVeggiePizza, each extendsPizza. Use explicit extends captions instead of crowded upward inheritance links. No mixed region product creation or baseclass→concreteproduct arrows.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Abstract Duck contains quack/swim, abstract display and new shared fly().",
+      "passed": true,
+      "evidence": "Abstract class Duck quack/swim shared,display abstract, new fly shared highlighted."
+    },
+    {
+      "requirement": "MallardDuck and RedheadDuck extend Duck with own display().",
+      "passed": true,
+      "evidence": "MallardDuck and RedheadDuck extend Duck, own display implementation."
+    },
+    {
+      "requirement": "All subclasses including other duck types inherit the new fly behavior.",
+      "passed": true,
+      "evidence": "Generic OtherDuck subtype extends Duck, footer every subtype inherits base change."
+    },
+    {
+      "requirement": "Highlight base-class change and inherited effect without introducing RubberDuck yet.",
+      "passed": true,
+      "evidence": "NEW base fly highlighted; RubberDuck absent at this stage."
+    }
+  ],
+  "notes": "Direct visual inspection confirms exact methods and subtype capabilities; no ambiguous relationship arrows. PNG decode before approval."
+}

@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Abstract PizzaStore declares orderPizza(type): Pizza and protected abstract createPizza(type): Pizza.",
+      "passed": false,
+      "evidence": "Protected abstract createPizza and Pizza return readable, but orderPizza has invented final modifier absent from article; remove added constraint and explicitly mark PizzaStore abstract."
+    },
+    {
+      "requirement": "NYPizzaStore and ChicagoPizzaStore extend PizzaStore and override createPizza(type).",
+      "passed": true,
+      "evidence": "Both subclasses extend PizzaStore and override createPizza."
+    },
+    {
+      "requirement": "Common ordering sequence createPizza→prepare→bake→cut→box remains in PizzaStore.",
+      "passed": true,
+      "evidence": "Base flow exact create→prepare→bake→cut→box."
+    },
+    {
+      "requirement": "Concrete subclass determines regional product creation; no separate factory field required.",
+      "passed": true,
+      "evidence": "Regional subclass concrete creation shown without separate factory field."
+    }
+  ],
+  "notes": "Fail. Source does not declare orderPizza final; remove invented restriction before replacement.",
+  "at": "2026-10-12T15:01:48.125Z",
+  "generatedSha256": "10ec7cc31f3ef7fde647a2c68e88dedcbb9f6a90393e227557b8db7f99aff423",
+  "specSha256": "966adca4730c12cd408939150de021ac4ed0369ff33b8a1d1d6fd79623eface8"
+}

@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "P1=6,P2=8,P3=7,P4=3ms.",
+      "passed": true,
+      "evidence": "Four exact bursts P1=6,P2=8,P3=7,P4=3."
+    },
+    {
+      "requirement": "All processes arrive at0 for subsequent nonpreemptive SJF example.",
+      "passed": true,
+      "evidence": "Allarrivetime0 subtitle."
+    },
+    {
+      "requirement": "Table only, no unprovided priorities or deadlines.",
+      "passed": true,
+      "evidence": "Inputtableonly,noaddedpriorities/deadlines."
+    },
+    {
+      "requirement": "Units and four identifiers exact.",
+      "passed": true,
+      "evidence": "CPUburst(ms)fouridentifiersclear."
+    }
+  ],
+  "notes": "Visual inspection confirms all data and proportional chart. PNG decoded before approval.",
+  "at": "2026-10-12T22:08:10.241Z",
+  "generatedSha256": "e30682076305011f55e282a9d53f09f06f48d4bdae6b153af0ad3e1acfc36046",
+  "specSha256": "4ba1ebe2e137cec82fa2df9069feb318ac4fd1ac21a35d13c1b2fd99d2370784"
+}

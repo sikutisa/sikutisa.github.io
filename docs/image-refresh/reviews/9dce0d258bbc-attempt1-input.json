@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Users/systemprograms aboveGUI,batch,commandline interfaces andsystemcalls; OSabovehardware.",
+      "passed": true,
+      "evidence": "프로그램→GUI/Batch/Command line→System calls→OS→Hardware 계층이 정확하다."
+    },
+    {
+      "requirement": "Services programexecution,I/O,filesystems,communications,resourc eallocation,logging/accounting,errordetection,protection/security all present.",
+      "passed": true,
+      "evidence": "필수 여덟 서비스 Program execution,I/O,File systems,Communications,Resource allocation,Logging/accounting,Error detection,Protection/security가 모두 있다."
+    }
+  ],
+  "notes": "직접 시각 검수와 PNG 디코딩. 실패한 결과는 원본 참조 유지."
+}

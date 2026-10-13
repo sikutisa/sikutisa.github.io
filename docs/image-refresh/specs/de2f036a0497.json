@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Layered file system",
+  "alt": "응용 프로그램부터 장치까지 이어지는 파일 시스템의 6계층",
+  "requiredChecks": [
+    "Applicationprograms→Logicalfilesystem→File-organizationmodule.",
+    "Basicfilesystem→I/Ocontrol→Devices;6exactlayersadjacentdownwardconnections."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Layered file system. Six wide vertically stacked cards in exact order, adjacent down arrows only: Application programs; Logical file system; File-organization module; Basic file system; I/O control; Devices. No extra layers or invented numeric values."
+}

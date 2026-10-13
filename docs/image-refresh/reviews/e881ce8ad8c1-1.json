@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Creator.factoryMethod(): Product and anOperation() uses product=factoryMethod().",
+      "passed": true,
+      "evidence": "Creator factoryMethod returns Product and anOperation uses result of factoryMethod."
+    },
+    {
+      "requirement": "ConcreteCreator extends Creator and overrides factoryMethod returning new ConcreteProduct().",
+      "passed": true,
+      "evidence": "ConcreteCreator extends Creator, override returns new ConcreteProduct."
+    },
+    {
+      "requirement": "ConcreteProduct extends Product.",
+      "passed": true,
+      "evidence": "ConcreteProduct explicit extends Product and arrow upward into Product."
+    },
+    {
+      "requirement": "Creator uses Product abstraction; ConcreteCreator creates ConcreteProduct; inheritance directions not reversed.",
+      "passed": true,
+      "evidence": "Creator uses Product; ConcreteCreator creates concrete product; both extends arrows correctly point at parent."
+    }
+  ],
+  "notes": "Pass. Abstract/concrete roles, returned types, preparation order, inheritance and family mappings visually verified.",
+  "at": "2026-10-12T15:01:49.070Z",
+  "generatedSha256": "9fef7c33dca1883732dceb25f5d2e1eeb5567e50bf0203703032f7543dcd85a1",
+  "specSha256": "ef5d0e493831372dc30a52a7a4659973025221a5b7118406f024751b321681ed"
+}

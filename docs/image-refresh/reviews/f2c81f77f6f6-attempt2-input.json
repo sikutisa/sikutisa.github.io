@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Logical(p,d); p→hashfunction→hashbucket collisionchain(q,s,next)→(p,r,next)→ellipsis.",
+      "passed": true,
+      "evidence": "p에서 Hash function, bucket, q/s/Next, p/r/Next, 말줄임으로 이어진다."
+    },
+    {
+      "requirement": "Comparevirtualpagekeys q≠p thenp=p; selectedframe r; physicaladdress(r,d) memory; d unchangedbypass.",
+      "passed": true,
+      "evidence": "q≠p continue와 p matches select r가 보인다. 선택 출력선이 Frame r 셀에서 시작하며 d 우회선은 출력 d에 도착한다."
+    },
+    {
+      "requirement": "Pointer chainforward, q mapsframe s but isnotselected, nohashvalueuseddirectlyasphysicalframe.",
+      "passed": true,
+      "evidence": "Next는 오른쪽 연결 전용이며 s에서 물리 주소를 선택하는 선은 없다."
+    }
+  ],
+  "notes": "직접 원본 해상도에서 시각 검수. PNG 디코딩 확인. "
+}

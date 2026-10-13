@@ -1,0 +1,4 @@
+{
+  "a370283240f1": "Change ONLY the four destination labels in the RIGHT physical-memory panel: second card Frame100→Frame500; thirdcardFrame500→Frame100; fifthcardFrame900→Frame929; sixthcardFrame929→Frame900. Right finaltop-to-bottomlabels1,500,100,708,929,900 soall existingarrowsnowendatmatchingframevalue. Keepallinnerleaflabelsandallarrowpathsunchanged. Also remove subtitle (Pages of the page table) ONLY under Outer page table; preserveinner subtitles. No extraelements.",
+  "f2c81f77f6f6": "Move ONLY the start of the vertical arrow that leads to Physical address: currently it originates under the Next column of matched(p,r,Next) entry. Make it originate at the Frame r cell instead and end at physical output r field. The Next cell retains ONLY its horizontal next-chain arrow toellipsis. Preserveq/s/p/rvalues, hashpath,d bypass, text andallotherarrows. No arrowfromNext tophysicaladdress."
+}

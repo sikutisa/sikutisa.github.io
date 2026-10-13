@@ -25,7 +25,7 @@ tags: [computer science, oop, design pattern]
 * Have different appearances and behavior for a large set of subclasses.
     * scroll bars, windows, buttons, etc.
 
-![diagram](./img/1.png){: w="380" h = "340"}
+![추상 WidgetFactory에 의존하는 툴킷과 WinXP·Motif의 TextBox·ScrollBar 제품군](./img/1-generated.png){: w="760"}
 
 ### Factory Object Set-up and Delegation
 ```java
@@ -59,10 +59,10 @@ public class DriverForWinXP {
 ```
 
 ### Class Diagram for GUIFactory
-![diagram](./img/2.png){: w="380" h = "370"}
+![GUIFactory 인터페이스로 Motif·WinXP·Mac 제품군을 선택하는 생성 구조](./img/2-generated.png){: w="760"}
 
 ### Class Diagram for Abstract Factory Pattern
-![diagram](./img/3.png){: w="370" h = "350"}
+![클라이언트의 추상 팩토리·제품 의존과 두 구체 팩토리의 일관된 A/B 제품군](./img/3-generated.png){: w="760"}
 
 ## Participants
 * AbstractFactory
@@ -250,11 +250,11 @@ public class CheesePizza extends Pizza {
         * Supporting new kinds of products is difficult.
             * Fixes set of parts to be created.
 
-![diagram](./img/4.png){: w="360" h = "390"}
+![Slider 타입 추가로 GUIFactory와 세 구체 팩토리 전체에 발생하는 변경](./img/4-generated.png){: w="760"}
 *Supporting new kinds of products is difficult (not impossible, but costly)*
 
 
-![diagram](./img/5.png){: w="370" h = "350"}
+![추상 인터페이스를 유지하며 ConcreteFactory3와 ProductA3·ProductB3를 추가하는 확장](./img/5-generated.png){: w="760"}
 *Supporting additional factory object is easy*
 
 ## Related Patterns

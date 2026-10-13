@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Page table0→2v,1→3v,2→4v,3→7v,4→8v,5→9v,6→0i,7→0i; invalid framefieldsignored.",
+      "passed": true,
+      "evidence": "All8page/frame/bittriplesexact; invalidframe0ignoredcaption."
+    },
+    {
+      "requirement": "Physicalframes2Page0,3Page1,4Page2,7Page3,8Page4,9Page5;0,1,5,6notallocatedtothisprocess.",
+      "passed": true,
+      "evidence": "Physicalframes2/3/4/7/8/9containpages0..5; othersUnused."
+    },
+    {
+      "requirement": "Six2048-bytepagescover0..12287; programendmarker10468withinPage5; invalidbitsrejectpages6,7, not claim byteprecisioninsidevalidlastpage.",
+      "passed": true,
+      "evidence": "Six2048bytepages,0/end12287and10468markerinsidePage5; footeraccuratelystatespagegranularitylimitation."
+    },
+    {
+      "requirement": "Clearvvalid/iinvalid legend and trapforinvalidpage; readableexactcells.",
+      "passed": true,
+      "evidence": "v/ilegendandPages6/7invalidtrapclear; allcellsreadable."
+    }
+  ],
+  "notes": "Exact original values and complete article checked; reject misleading field connections or ambiguous per-row mapping arrows."
+}

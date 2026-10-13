@@ -1,0 +1,29 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Show every FIFO fault transition, with exact verified frame/victim values for the document's full22-reference example.",
+  "requiredChecks": [
+    "The full reference string has22 references: 7 0 1 2 0 3 0 4 2 3 0 3 0 3 2 1 2 0 1 7 0 1; capacity is3 frames, initially empty.",
+    "Policy isFIFO and total faults is15; table shows only page-fault steps, omitting hit steps.",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 1 | 7 | 7, —, — | —",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 2 | 0 | 7, 0, — | —",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 3 | 1 | 7, 0, 1 | —",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 4 | 2 | 2, 0, 1 | 7",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 6 | 3 | 2, 3, 1 | 0",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 7 | 0 | 2, 3, 0 | 1",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 8 | 4 | 4, 3, 0 | 2",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 9 | 2 | 4, 2, 0 | 3",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 10 | 3 | 4, 2, 3 | 0",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 11 | 0 | 0, 2, 3 | 4",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 16 | 1 | 0, 1, 3 | 2",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 17 | 2 | 0, 1, 2 | 3",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 20 | 7 | 7, 1, 2 | 0",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 21 | 0 | 7, 0, 2 | 1",
+    "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 22 | 1 | 7, 0, 1 | 2",
+    "All text/table digits are legible, empty frames and no-victim entries are em dashes, and frame order is fixed."
+  ],
+  "alt": "FIFO page replacement with three frames: 15 page faults and the frame state at each fault",
+  "dataSource": "docs/image-refresh/examples/virtual-memory.json",
+  "sourceNote": "Original figures use a 20-reference version; the Markdown contains two additional hit references 0,3. New tables use the complete 22-reference Markdown sequence. Fault totals remain 15/9/12.",
+  "prompt": "Create a NEW original English technical educational diagram. White background, crisp large navy sans-serif text, flat blue/teal shapes, minimal clean connectors, generous margins, no logos or watermark, no decorative or traced textbook artwork. TITLE \"FIFO page replacement\". Subtitle exactly \"3 frames · 15 page faults\". Below title show the COMPLETE exact reference sequence on two readable lines, labeled \"Reference string\": \"7 0 1 2 0 3 0 4 2 3 0 3 0 3 2 1 2 0 1 7 0 1\". Make a large readable table with FOUR columns titled \"Step\", \"Page\", \"Frames (F1, F2, F3)\", \"Evicted\". The Frames column displays three comma-separated values in fixed slot order. There are EXACTLY15 data rows, copied VERBATIM below. Split into two side-by-side continuation tables if needed for generous spacing, maintaining chronology. Data rows:\n1 | 7 | 7, —, — | —\n2 | 0 | 7, 0, — | —\n3 | 1 | 7, 0, 1 | —\n4 | 2 | 2, 0, 1 | 7\n6 | 3 | 2, 3, 1 | 0\n7 | 0 | 2, 3, 0 | 1\n8 | 4 | 4, 3, 0 | 2\n9 | 2 | 4, 2, 0 | 3\n10 | 3 | 4, 2, 3 | 0\n11 | 0 | 0, 2, 3 | 4\n16 | 1 | 0, 1, 3 | 2\n17 | 2 | 0, 1, 2 | 3\n20 | 7 | 7, 1, 2 | 0\n21 | 0 | 7, 0, 2 | 1\n22 | 1 | 7, 0, 1 | 2\nCaption exactly \"Only page-fault steps shown; hit steps omitted\". Policy note exactly \"Replace the oldest loaded page; hits do not reset queue order.\". Em dash means empty/no victim. Footer exactly \"Total page faults: 15\". This is verified numerical data: do not recompute, add, remove or alter any row, reference, comma-separated frame triple or evicted page. All rows must be present and legible. The initial empty frames are implied by the first rows, not an extra table row. No other illustrations or decorative arrows."
+}

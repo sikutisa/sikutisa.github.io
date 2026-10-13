@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Client uses Target.request(), not Adaptee.specificRequest().",
+      "passed": true,
+      "evidence": "ClientusesTargetrequest();nodirectClientAdapteeconnection."
+    },
+    {
+      "requirement": "Adapter implements Target, with request() and stored adaptee: Adaptee field.",
+      "passed": true,
+      "evidence": "Adapterhasadaptee:Adapteefieldandrequest();dashedimplementsarrowpointsupintoTargetinterface."
+    },
+    {
+      "requirement": "Adapter wraps/delegates to an Adaptee instance instead of inheriting Adaptee.",
+      "passed": true,
+      "evidence": "Adapter→Adapteeislabelledwraps/delegates;noinheritancearrowtoAdaptee."
+    },
+    {
+      "requirement": "Mapping request()→adaptee.specificRequest() is explicit with correct direction.",
+      "passed": true,
+      "evidence": "Bottommappingrequest()→adaptee.specificRequest()exactly andcorrectdirection."
+    }
+  ],
+  "notes": "Pass. Interfaces, fields, relationship direction and method mappings verified visually against article/code."
+}

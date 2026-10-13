@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Main chain Source program→Compiler→Object file→Linker→Executable file→Loader→Program in memory.",
+      "passed": true,
+      "evidence": "SevenmainstagechainSourceprogram,Compiler,Objectfile,Linker,Executablefile,Loader,Programinmemoryexact."
+    },
+    {
+      "requirement": "Other object files join Linker; Dynamically linked libraries join Program in memory at runtime; no reversed arrows.",
+      "passed": true,
+      "evidence": "OtherobjectfilesarrowendsLinker; DynamicallylinkedlibrariesarrowendsPrograminmemory runtimelinking."
+    },
+    {
+      "requirement": "Compile time, linking/loading, execution time distinguished; no technical dependency invented; labels legible.",
+      "passed": true,
+      "evidence": "Phaseheadingscompile/linkingloading/runtimeclear; stagesnotduplicated, labelsfullyvisible."
+    }
+  ],
+  "notes": "Full generated image visually compared with original and complete Main Memory article; numbers, predicates, directions, dependencies and clipping checked.",
+  "at": "2026-10-12T23:01:18.632Z",
+  "generatedSha256": "e7fe8e4b092d7c9fb610d2735ce6e0e8d69d862b1c6c8b0f0c63ab3dd85950a6",
+  "specSha256": "bd6843d232b766a19d7ad695274013f8eb303a7ef7c55167b2e9e7bf4ba21385"
+}

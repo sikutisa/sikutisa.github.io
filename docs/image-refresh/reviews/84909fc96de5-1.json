@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "DNS lookup and public endpoint response are separate from the HTTP path; DNS does not forward HTTP.",
+      "passed": true,
+      "evidence": "Separate upwardDNSlookup and downwardPublicendpoint betweenClient/resolver; horizontalHTTP toLB."
+    },
+    {
+      "requirement": "Client HTTP enters public Load balancer, which distributes to two Web servers within Private network.",
+      "passed": true,
+      "evidence": "LBpublicendpoint→twoWebservers parallel insidePrivate network."
+    },
+    {
+      "requirement": "Private connections are clearly labeled; server pair is parallel, not chained.",
+      "passed": true,
+      "evidence": "TwoPrivateIP connectors fromLB; no server-to-serverchain."
+    },
+    {
+      "requirement": "Labels and arrow directions readable; no guarantee that a single balancer removes all failure points.",
+      "passed": true,
+      "evidence": "Alllabels readable, footer healthyservers, no eliminated-SPOFclaim."
+    }
+  ],
+  "notes": "Inspected each generated label and connector against full document. PIL verify/load passed. Missing shared query routes rejected.",
+  "at": "2026-10-12T12:49:37.552Z",
+  "generatedSha256": "1fec37066be28a22bcb06a732ef704f7c8d3b4c9ea2e4263e56bd347e2401f66",
+  "specSha256": "0c273f2fdaf04083af7ec054e80d952cf5e8286867a6202d58b44e2186e354bb"
+}

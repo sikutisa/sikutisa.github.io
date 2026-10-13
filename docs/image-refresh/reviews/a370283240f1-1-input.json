@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Outerpage-tableentries pointtothreeinnerpage-tablepages; sixleafentryvalues1,500;100,708;929,900.",
+      "passed": true,
+      "evidence": "Threeouterentryarrowsleadthreeinnerpages; values1/500,100/708,929/900correct."
+    },
+    {
+      "requirement": "Eachleafentryselectsitsmatchingphysicalframe1/500/100/708/929/900; no interpretation ofleafvaluesasvirtualpageindexes.",
+      "passed": false,
+      "evidence": "Edgeswrong:Frame500→physical100,Frame100→physical500,Frame929→physical900,Frame900→physical929; needlabelswap or reroute."
+    },
+    {
+      "requirement": "Page table itself split into pages, intermediate leaf-tablepagesdistinctfromfinaldataframes; readablearrows.",
+      "passed": true,
+      "evidence": "Intermediateinnerpagesdistinctfromphysicalframes, captioncorrect; outerextraPagesofthepagetablesubtitleunnecessary."
+    }
+  ],
+  "notes": "Direct full visual graph review; exact per-entry destination and source fields checked; incorrect arrows reject."
+}

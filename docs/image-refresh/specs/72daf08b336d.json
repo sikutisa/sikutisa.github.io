@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "MMU address translation",
+  "alt": "CPU의 논리 주소를 MMU가 물리 주소로 변환하는 경로",
+  "requiredChecks": [
+    "CPU→MMU edge labelled Logical address; MMU→Physical memory edge labelled Physical address.",
+    "MMU maps logical to physical addresses; no direction reversal, numerical assumption or unrelated protection check."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Logical to physical address translation. Exactly three large boxes CPU, MMU, Physical memory connected horizontally left-to-right. Arrow CPU→MMU label Logical address. Arrow MMU→Physical memory label Physical address. Small text inside MMU Address mapping. Footer MMU = Memory Management Unit. Keep minimal; no formulas, tables, extra nodes or sample numbers."
+}

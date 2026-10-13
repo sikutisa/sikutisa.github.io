@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Subject changes from 5 to 8.",
+      "passed": true,
+      "evidence": "State5→8 and notifyObservers shown."
+    },
+    {
+      "requirement": "Registered roster exactly Cat, Dog and Duck.",
+      "passed": true,
+      "evidence": "Registered Cat,Dog,Duck exactly."
+    },
+    {
+      "requirement": "Each of those three receives update(8).",
+      "passed": true,
+      "evidence": "Three Subject→recipient arrows each update(8)."
+    },
+    {
+      "requirement": "Mouse is outside roster and receives no arrow/update.",
+      "passed": true,
+      "evidence": "Mouse separate unsubscribed panel and no arrow."
+    }
+  ],
+  "notes": "Pass. Native visual inspection verified object membership, state transitions, notification/removal directions and abstraction dependency."
+}

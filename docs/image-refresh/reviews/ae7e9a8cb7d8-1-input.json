@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Column headers in exact order: course_id | title | dept_name | credits | prereq_id",
+      "passed": true,
+      "evidence": "Headers course_id,title,dept_name,credits,prereq_id in exact order."
+    },
+    {
+      "requirement": "Exactly 2 data rows in exact order: CS-210 | Systems | Comp. Sci. | 4 | CS-101 ; CS-347 | NULL | NULL | NULL | CS-101",
+      "passed": true,
+      "evidence": "Two data rows CS-210 Systems Comp. Sci.4 CS-101;CS-347 NULL NULL NULL CS-101 match calculated right join. Footer band is a caption, not a data row."
+    },
+    {
+      "requirement": "Preserve every prereq row: CS-347 title/dept_name/credits are NULL. CS-315 is absent.",
+      "passed": true,
+      "evidence": "Right unmatchedCS-347 retainsCS-101 while title/dept/credits NULL;CS-315 absent."
+    },
+    {
+      "requirement": "Footer explicitly identifies an original illustrative dataset; all table cells readable without copied textbook names/data.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer present and all cells readable."
+    }
+  ],
+  "notes": "Pass. Each row, field and NULL position compared visually with independently computed examples/sql-joins.json."
+}

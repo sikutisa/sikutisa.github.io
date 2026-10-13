@@ -1,0 +1,14 @@
+{
+  "title": "RubberDuck must override inherited behavior",
+  "purpose": "Show explicit RubberDuck exceptions to shared base quack/fly.",
+  "alt": "RubberDuck이 Duck을 상속하면서 quack은 squeak으로, fly는 아무것도 하지 않도록 재정의하는 예시",
+  "requiredChecks": [
+    "Duck has shared quack/swim/fly and abstract display.",
+    "MallardDuck and RedheadDuck display specializations remain.",
+    "RubberDuck extends Duck; quack() squeaks, display() rubber appearance, fly() does nothing.",
+    "Caption identifies per-subtype overrides, not standalone strategy objects."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT blog, opaque white background. Navy readable sans serif, monospace method names, blue/teal/amber flat cards, generous padding. Use exact identifiers, no extra methods or access modifiers or copied slide arrangement. Title 'RubberDuck must override inherited behavior'. Top abstract Duck card shared quack(), swim(), fly(); abstract display(). Bottom three classes with explicit extends Duck captions and no inheritance arrows. MallardDuck display():mallard; RedheadDuck display():redhead; RubberDuck 'quack(): squeak', 'display(): rubber duck', 'fly(): do nothing' highlighted overrides. Footer 'Each exception needs an override in the subtype'. No behavior strategy interfaces.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

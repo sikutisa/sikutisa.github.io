@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Platters,spindle,armassembly,arms,read-writeheads;rotationaroundspindle.",
+      "passed": true,
+      "evidence": "플래터·스핀들·암·헤드와 같은 반지름의 세 파란 트랙은 있다."
+    },
+    {
+      "requirement": "Track t circularring,sector s wedgepartoftrack,cylinder c alignedsam eradiustracksonplatters; preciseannotationtargets.",
+      "passed": false,
+      "evidence": "실린더 세로선이 여전히 허브 근처에서 시작해 플래터 외곽에 끝난다. 트랙의 일치 지점을 연결하지 않아 실패."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

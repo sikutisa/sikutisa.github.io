@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Single logical address split left Page number p and right Page offset d.",
+      "passed": true,
+      "evidence": "Singlebar leftPage numberp/rightPage offsetd."
+    },
+    {
+      "requirement": "p selects a page-table entry; d is displacement insidepage; no specific bit width or sample values.",
+      "passed": true,
+      "evidence": "Perfieldcaptionsmatch selectionanddisplacement; noextraassumptionsorvalues."
+    }
+  ],
+  "notes": "Direct full-image visual review against article and original, all arrow endpoints/branches/values checked. Failed item keeps original reference.",
+  "at": "2026-10-12T23:03:50.928Z",
+  "generatedSha256": "8a2628874f92278ed57525b20284f40bdb713b6a35502ecaeb62c5df12450a36",
+  "specSha256": "9df459e67f35756ce20aac7839f2907a6b75ded6f979dc2be3504dad036644e0"
+}

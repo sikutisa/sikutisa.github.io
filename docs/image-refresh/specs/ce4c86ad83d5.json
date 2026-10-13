@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "JOINED ITEM data",
+  "alt": "ITEM에 저장된 prop 1번과 Background 2번의 가격·URL",
+  "requiredChecks": [
+    "ColumnsPRICE,ID,ITEM_TYPE,URL.",
+    "Rows1000|1|prop|propUrl1and2000|2|Background|backUrl1exactcase."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title JOINED: ITEM data. One clean table columns PRICE | ID | ITEM_TYPE | URL. Exactly2rows 1000 | 1 | prop | propUrl1 ; 2000 | 2 | Background | backUrl1. Keep spelling and case exactly, capital U in Url, capital B in Background. No SQL/editor chrome. Footer Common fields of both item subtypes.",
+  "referenceSource": "https://jakarta.ee/specifications/persistence/3.1/apidocs/jakarta.persistence/jakarta/persistence/mappedsuperclass"
+}

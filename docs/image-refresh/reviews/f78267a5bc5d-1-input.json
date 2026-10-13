@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Abstract Duck provides shared quack() and swim(), abstract display(); no fly().",
+      "passed": true,
+      "evidence": "Duck shared quack/swim and abstract display (therefore abstract base), no fly method."
+    },
+    {
+      "requirement": "MallardDuck and RedheadDuck extend Duck and each implement display().",
+      "passed": true,
+      "evidence": "MallardDuck and RedheadDuck explicitly extend Duck, display mallard/redhead appearance."
+    },
+    {
+      "requirement": "Other duck subclasses also inherit Duck; do not invent species or behaviors.",
+      "passed": true,
+      "evidence": "Generic other duck subclasses card extends Duck; no new behavioral operation."
+    },
+    {
+      "requirement": "Caption separates shared inherited behavior from per-duck display.",
+      "passed": true,
+      "evidence": "Footer share quack/swim, specialize display; ducks small illustrative original icons."
+    }
+  ],
+  "notes": "Direct visual inspection confirms exact methods and subtype capabilities; no ambiguous relationship arrows. PNG decode before approval."
+}

@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Rootdict/spell;dictlistdistinct,all→sharedL,w→sharedDir,count→sharedC;spellcount→sameC,words→sameDir,listdistinct.",
+      "passed": false,
+      "evidence": "행별 식별자는 맞으나 dict의 w/count 외부 선이 공유 File L로 분기하고 spell list 선도 words로 합쳐 잘못 연결됨."
+    },
+    {
+      "requirement": "SharedDirlist→sharedL,rade,w7;sharingarrowsconvergeidentity,no cycles.",
+      "passed": false,
+      "evidence": "공유 Dir D의 list/rade/w7 텍스트는 맞으나 중복 객체 상자와 부정확 외부 선을 제거하고 참조 표 방식으로 재구성 필요."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:09:16.558Z",
+  "generatedSha256": "9c00bab2a0ca177f44f0f825f460026d06aeb09e8a69102adba6e88137cc8a72",
+  "specSha256": "24b61f0160ef33d69b41b49198d8282481c9f3dafc6cc8632f8ec5260ca56998"
+}

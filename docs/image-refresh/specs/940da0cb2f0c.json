@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "TLB hit and miss translation",
+  "alt": "TLB 적중 시 프레임을 바로 얻고 미적중 시 페이지 테이블을 조회하는 주소 변환",
+  "requiredChecks": [
+    "CPUlogical(p,d); pagepsearchedinTLB; hitreturnsf withoutpage-tablelookup.",
+    "Miss→pagetableindexedp→f; bothpathsconstructphysical(f,d); offsetd bypasseslookupunchanged.",
+    "No hitpaththroughpagetable; physicaladdressreachesphysicalmemory; cachemissnotautomaticallypagefault."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Paging with a Translation Look-aside Buffer. CPU→Logicaladdress(p|d). p→TLB cachetable headersPage number|Frame number. TLB hit arrowreturnsf directlyto physicaladdress(f|d). TLB missarrowdown→Page tableindexp returnsf→samephysicalframefieldf. Routeoffsetd separatelyaroundtopstraighttooutputdunchanged. Physicaladdress→Physicalmemory. Caption: A TLB miss needs a page-table lookup; it is not automatically a page fault. ExactlyoneTLB/onepagetable/onephysicalmemory. No random entriesorEATvalues."
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Ask a direct collaborator",
+  "purpose": "Explain article's Law of Demeter example using thermometer delegation.",
+  "alt": "Host가 Station을 통해 Thermometer까지 탐색하는 호출과 Station.GetTemperature로 위임하는 호출 비교",
+  "requiredChecks": [
+    "Worse: Host calls station.GetThermometer(), then thermometer.GetTemperature().",
+    "Better: Host calls station.GetTemperature(); Station delegates to its Thermometer.GetTemperature().",
+    "Host stores Station; Station stores Thermometer; better caller avoids knowledge of returned internal object.",
+    "Thermometer still performs temperature reading; no removal of underlying behavior."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif labels, exact monospaced code identifiers, restrained blue/teal cards, ample spacing, no logos or copied source composition. Title 'Ask a direct collaborator'. Two panels 'Worse: reach through a returned object' and 'Better: ask your direct collaborator'. Worse shows Host card 'station: Station' arrow to Station 'GetThermometer()' and second Host→Thermometer arrow 'thermometer.GetTemperature()' routed under or over station to clearly originate Host. Station card 'thermometer: Thermometer'. Better flow Host → Station 'GetTemperature()' → Thermometer 'GetTemperature()', label second arrow 'internal delegation'. Under Worse code 'thermometer = station.GetThermometer(); thermometer.GetTemperature();'. Under Better code 'station.GetTemperature();'. Footer 'The Host depends on Station; Station handles its own thermometer'. No false inheritance, no collapsed Host→Thermometer in better panel.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

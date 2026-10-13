@@ -1,0 +1,14 @@
+{
+  "title": "Command pattern participants",
+  "purpose": "Represent class responsibilities and abstraction dependencies accurately.",
+  "alt": "Command 인터페이스, Invoker, ConcreteCommand, Receiver, Client의 역할과 의존 관계",
+  "requiredChecks": [
+    "Command interface declares execute(); Invoker stores Command and invokes execute().",
+    "ConcreteCommand implements Command and stores receiver: Receiver.",
+    "ConcreteCommand.execute() delegates to receiver.action(); Receiver declares action().",
+    "Client creates receiver/command and configures invoker; no Invoker→Receiver dependency."
+  ],
+  "prompt": "Create a NEW ORIGINAL raster technical diagram for an IT study blog, opaque white background, clean navy sans-serif typography, restrained blue/teal/amber flat cards, spacious margins, exact monospaced class and method identifiers, no logos, source screenshots or copied slide composition. All English text clearly readable. Title 'Command pattern participants'. Create readable responsibility diagram with five cards, explicit relationship text wherever arrows would crowd. TOP Command <<interface>> execute(); LEFT Invoker 'command: Command' 'invoke(): command.execute()' arrow uses→Command. CENTER ConcreteCommand 'implements Command' 'receiver: Receiver' 'execute(): receiver.action()'. RIGHT Receiver 'action()'. ConcreteCommand→Receiver arrow labelled 'delegates action()'. BOTTOM Client 'creates Receiver and ConcreteCommand(receiver)' 'sets the command on Invoker'; configuration arrow Client→Invoker labelled 'configure Command'. Dashed creates arrow Client→ConcreteCommand and Client→Receiver routed separate gutters if clear, otherwise text in Client suffices. Implement relationship explicit inside ConcreteCommand avoids detached UML arrows. No Invoker→Receiver or inverse delegation.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

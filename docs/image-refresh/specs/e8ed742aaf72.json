@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Item ownership and inheritance",
+  "alt": "Member·Owned·Item의 외래키 소유 관계와 Background·Prop의 Item 상속",
+  "requiredChecks": [
+    "Memberid/username/point;Ownedid/item/member_id;Itemid/url/price;OwnedFKsitem→Item.id,member_id→Member.id.",
+    "Member1→0..manyOwned,Item1→0..manyOwned;Background/PropextendIteminheritancenotFKrelation."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Item ownership and entity inheritance. Upper entity cards Member (id PK, username, point), Owned (id PK, item FK, member_id FK), Item (id PK, url, price). Two clear arrows Owned.item→Item.id and Owned.member_id→Member.id, labelled references. Labels One member can have many Owned rows; One item can appear in many Owned rows. Below separate CLASS INHERITANCE area: Background and Prop two boxes, each hollow triangle generalization arrow pointing upward to Item. Label extends Item; inheritance is a class relationship. Do not fabricate missing member tables or columns. Owned field exact item, not item_id. Clear distinction FK and extends.",
+  "referenceSource": "https://jakarta.ee/specifications/persistence/3.1/apidocs/jakarta.persistence/jakarta/persistence/mappedsuperclass"
+}

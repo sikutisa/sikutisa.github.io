@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Logical(p,d); p→hashfunction→hashbucket collisionchain(q,s,next)→(p,r,next)→ellipsis.",
+      "passed": true,
+      "evidence": "p→hashfunction→bucket→q/s/next→p/r/next→ellipsisexact."
+    },
+    {
+      "requirement": "Comparevirtualpagekeys q≠p thenp=p; selectedframe r; physicaladdress(r,d) memory; d unchangedbypass.",
+      "passed": false,
+      "evidence": "p-matchselectrtextcorrect,butverticaloutputarrowstartsfromNextcolumn ratherthanFrame r column. Misleading link pointer→physicalframe."
+    },
+    {
+      "requirement": "Pointer chainforward, q mapsframe s but isnotselected, nohashvalueuseddirectlyasphysicalframe.",
+      "passed": true,
+      "evidence": "q≠pcontinueandforwardnextchaincorrect; hashbucketnotframe."
+    }
+  ],
+  "notes": "Direct full visual graph review; exact per-entry destination and source fields checked; incorrect arrows reject.",
+  "at": "2026-10-12T23:36:35.329Z",
+  "generatedSha256": "b26fdfd7154d39d61d1ab8acf56cf95dbe93db8fe4906db49a296ff7569123ac",
+  "specSha256": "84e28961c4fde9a4579bf4909e0d27b9068c09cf08d2a9be86460b54acb76cd4"
+}

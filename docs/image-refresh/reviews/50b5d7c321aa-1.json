@@ -1,0 +1,36 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Burst total10; q12 has0 internal boundaries; q6 has1 at6; q1 has9 at1..9.",
+      "passed": true,
+      "evidence": "q12nointernalcut;q6cutat6;q1ninecuts1..9,counts0/1/9."
+    },
+    {
+      "requirement": "All bars span0..10; no added switch overhead or durations.",
+      "passed": true,
+      "evidence": "Allrowsspan0..10 nooverhead, q6width6:4."
+    },
+    {
+      "requirement": "Counts exclude initial dispatch and completion.",
+      "passed": true,
+      "evidence": "Footer excludesinitialdispatch/completion."
+    },
+    {
+      "requirement": "Label potential context switches/preemption boundaries, since same lone process need not switch to another.",
+      "passed": true,
+      "evidence": "Caption boundaries are potentialcontextswitches, noforcedotherprocess."
+    },
+    {
+      "requirement": "Smaller quantum can increase switching overhead; not a measured scheduler benchmark.",
+      "passed": true,
+      "evidence": "Schematic one10msburst, title increasingpreemptionboundaries no benchmarkclaim."
+    }
+  ],
+  "notes": "Direct visual inspection and independently calculated schedule/plot agree. Explicit schematic scale where appropriate; decode before approval.",
+  "at": "2026-10-12T22:27:34.816Z",
+  "generatedSha256": "005f9d2565cf79ce7a39bc636ec0bb7fcd3bdc5b6a2adf89cc10aa9b1b3a723a",
+  "specSha256": "cf8f4dba4a0bd103183930d69b1e1f6c298f4e1b8c05a5730026c6032dd0bed3"
+}

@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "DNS exchanges endpoint with Client, while HTTP goes Client→Load balancer→two parallel Web servers.",
+      "passed": true,
+      "evidence": "DNS query/endpoint exchangedClient-resolver, HTTPClient→LB→bothWebA/B retained."
+    },
+    {
+      "requirement": "Both web servers can write to Primary and read from Replica through distinct labeled group buses.",
+      "passed": true,
+      "evidence": "BothWebA/B nowjoinoneverticalbus insideWebtier; busbranchesWrites→Primary andReads→Replica."
+    },
+    {
+      "requirement": "Primary→Replica replication is one-way, unlike request/response pairs.",
+      "passed": true,
+      "evidence": "DashedPrimary→Replica downwardreplication independentfromsharedquerybus."
+    },
+    {
+      "requirement": "Public/private network boundaries and operation labels are readable.",
+      "passed": true,
+      "evidence": "Privateboundary, HTTP/publicendpoint, Reads/Writes labels legible, no crossedboxes."
+    }
+  ],
+  "notes": "Targeted generation corrected shared query bus; directly traced both nodes to both DB roles. PIL verify/load passed.",
+  "at": "2026-10-12T12:52:52.320Z",
+  "generatedSha256": "39d0fd80e330e16016ee1922bb26b9701d49d5a0caaf88862c2333f28989e90f",
+  "specSha256": "49c705aed01b2e99e452cb17b5a790b71c07287c631eee137a7806355a8096f6"
+}

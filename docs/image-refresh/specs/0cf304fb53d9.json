@@ -1,0 +1,14 @@
+{
+  "title": "Union: Fall 2017 or Spring 2018",
+  "purpose": "Teach Union: Fall 2017 or Spring 2018 using original illustrative data and independently computed algebra.",
+  "alt": "2017년 가을·2018년 봄 과목 집합의 합집합",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "requiredChecks": [
+    "Headers in exact order: course_id",
+    "Exactly 3 rows: CS-210 ; HIS-230 ; PHY-220",
+    "Fall 2017: CS-210, PHY-220. Spring 2018: CS-210, HIS-230. Remove duplicate CS-210.",
+    "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset."
+  ],
+  "prompt": "Create a NEW original English raster table diagram for an IT blog, white background, navy crisp sans-serif, blue header and pale teal alternating rows, light rules and ample padding. Title \"Union: Fall 2017 or Spring 2018\". ONE table. EXACT headers: course_id. EXACT data rows:\nCS-210\nHIS-230\nPHY-220\nExactly 3 rows. No extra row, no ellipsis, no duplicate headers. Footer \"Original illustrative dataset\". Separate note \"Fall 2017: CS-210, PHY-220. Spring 2018: CS-210, HIS-230. Remove duplicate CS-210.\". Show two small source set cards above result table to explain the operation: \"Fall 2017\" withCS-210, PHY-220 and \"Spring 2018\" withCS-210, HIS-230. The result table below has one course_id column."
+}

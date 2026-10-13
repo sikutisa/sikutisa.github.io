@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Logical32-bitaddressp1(10bits),p2(10bits),d(12bits) illustrated4KiBexample.",
+      "passed": true,
+      "evidence": "p1,p2,dwidth10/10/12sum32,4KiB=2^12exact."
+    },
+    {
+      "requirement": "p1 indexes outerpage-table, selectedentrypointsinnerpagetable; p2 indexesinner, entryreturnsframef.",
+      "passed": true,
+      "evidence": "p1toouterindex,outerpointertoinner,p2toinner, selectedFramef."
+    },
+    {
+      "requirement": "Offsetdunchanged combinesf,dphysicalmemory; dnotindexouter/inner, no10+12+12mistake.",
+      "passed": true,
+      "evidence": "dseparatebypass,labelOffsetd;output(f,d)→Framefmemory; nooffsetindexerror."
+    }
+  ],
+  "notes": "Direct full visual graph review; exact per-entry destination and source fields checked; incorrect arrows reject."
+}

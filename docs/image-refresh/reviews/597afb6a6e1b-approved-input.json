@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Four numbered stages are page out dirty victim if needed, invalidate victim mapping, page in requested page to same frame f, update requested mapping.",
+      "passed": true,
+      "evidence": "Four numbered stages run1dirtypageout→2invalidate→3requestedpagein→4mappingupdate. All text is correct."
+    },
+    {
+      "requirement": "Outgoing transfer points RAM→storage and incoming transfer points storage→RAM.",
+      "passed": true,
+      "evidence": "Victimpageout arrow points leftRAM→rightstorage; Requestedpagein points rightstorage→leftRAM."
+    },
+    {
+      "requirement": "Victim ends present0 and requested page ends framef/present1; both cannot remain mapped to framef.",
+      "passed": true,
+      "evidence": "Final table gives Victim/dash/0 and Requested/f/1, consistently reusing one framef."
+    },
+    {
+      "requirement": "The dirty-page condition is explicit; do not imply every clean victim needs disk write.",
+      "passed": true,
+      "evidence": "Both stage1 and outgoingtransfer state dirty/ifneeded; clean-page writes are not implied. Footer requires restart only after mapping ready."
+    }
+  ],
+  "notes": "Directly compared frame states and all connector endpoints to the full document/original; PNG verify/load succeeded. Page replacement uses a generic new storage-cylinder shape despite the prompt preference for flat boxes, but the composition and facts are newly constructed and no distinctive source artwork is embedded."
+}

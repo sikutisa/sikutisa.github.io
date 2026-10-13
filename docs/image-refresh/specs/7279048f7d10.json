@@ -1,0 +1,13 @@
+{
+  "title": "Seven programmable remote slots",
+  "purpose": "Show the physical problem without reproducing the original photographed remote.",
+  "alt": "7개 장치 슬롯마다 ON·OFF 버튼이 있고 최근 명령을 취소하는 공통 UNDO 버튼을 둔 리모컨",
+  "requiredChecks": [
+    "Exactly seven numbered slots are shown, each with one ON and one OFF button.",
+    "Slot labels are programmable device assignments; no fixed vendor dependency is implied.",
+    "One global UNDO button reverses the last executed command, not all seven slots."
+  ],
+  "prompt": "Create a NEW ORIGINAL raster technical diagram for an IT study blog, opaque white background, clean navy sans-serif typography, restrained blue/teal/amber flat cards, spacious margins, exact monospaced class and method identifiers, no logos, source screenshots or copied slide composition. All English text clearly readable. Title 'Seven programmable remote slots'. Draw a clean original front-facing schematic remote with exactly SEVEN rows numbered 0–6, columns SLOT / DEVICE / ON / OFF. Each DEVICE field is blank dash or 'assign device'; 14 buttons total in aligned ON/OFF columns. Beneath all rows ONE separate UNDO button caption 'Undo the last command'. Side explanatory cards 'Assign a device to each slot' and 'Each slot has an ON and an OFF action'. Use a flat rectangular diagram, no photorealistic hardware, no copied handwriting, no branding.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

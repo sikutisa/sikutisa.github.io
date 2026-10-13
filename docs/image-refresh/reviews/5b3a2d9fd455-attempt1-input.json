@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "SharedmemorybothAandBaccesssameuserregion;kernelbelownotper-messagedatapath.",
+      "passed": true,
+      "evidence": "왼쪽 A/B 양방향이 공유 사용자 영역을 가리키며 Kernel은 아래에 분리된다."
+    },
+    {
+      "requirement": "MessagepassingA/Bsend/receiveviakernelqueue m0,m1,m2,m3,…mn; modelsdistinct.",
+      "passed": true,
+      "evidence": "오른쪽 A/B Send/Receive는 메시지 큐를 포함한 Kernel으로 연결되고 m0,m1,m2,m3,…mn이 정확하다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

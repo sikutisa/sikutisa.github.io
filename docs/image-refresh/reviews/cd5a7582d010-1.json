@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Client uses AbstractFactory and AbstractProductA/AbstractProductB only.",
+      "passed": false,
+      "evidence": "Client→AbstractFactoryusescorrect, but secondusesarroworiginatesatAbstractFactory ratherthanClient, so directclientproductdependency notshown."
+    },
+    {
+      "requirement": "AbstractFactory createProductA(): AbstractProductA and createProductB(): AbstractProductB are readable.",
+      "passed": true,
+      "evidence": "FactorymethodscreateProductA/BreturncorrectAbstractProductA/B."
+    },
+    {
+      "requirement": "ConcreteFactory1 creates ProductA1/ProductB1; ConcreteFactory2 creates ProductA2/ProductB2.",
+      "passed": true,
+      "evidence": "ConcreteFactory1createsA1/B1 andFactory2createsA2/B2 withcorrectcaptions."
+    },
+    {
+      "requirement": "Concrete factories implement AbstractFactory; concrete A/B products implement corresponding abstract A/B product; no client→concrete dependency.",
+      "passed": false,
+      "evidence": "Bothupwardsimplementslinesendattargetbutbeginatfamilyboundary notactualfactorycard. Productimplementscaptionscorrect; no clientconcretedependency."
+    }
+  ],
+  "notes": "Fail: diagram has missing/misattributed dependency connectors; edit and re-inspect before replacement.",
+  "at": "2026-10-12T14:13:02.013Z",
+  "generatedSha256": "0efab26920556d5540ee0706a09825cefc6237b3afbf19f1a1590d9195d69aae",
+  "specSha256": "6f42d66decffb3f745f4bd0dc191146a1193a6027010e8d05b8603e48c31d1e4"
+}

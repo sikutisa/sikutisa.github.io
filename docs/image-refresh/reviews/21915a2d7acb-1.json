@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Physical memory has exactly A,B,C,and C′ (private copy) boxes.",
+      "passed": true,
+      "evidence": "Physical memory has exactly four boxes A,B,C-original,C′-privatecopy; the copy is teal and distinct."
+    },
+    {
+      "requirement": "Both processes still map A→A and B→B.",
+      "passed": true,
+      "evidence": "Both A arrows converge on physicalA, bothB arrows on physicalB."
+    },
+    {
+      "requirement": "Process1 C maps only to C′ and Process2 C maps only to original C.",
+      "passed": true,
+      "evidence": "Process1C elbow enters C′ only; Process2C horizontal arrow enters originalC only. No duplicate mapping from Process1 to originalC remains."
+    },
+    {
+      "requirement": "The write is by Process1, and labels distinguish original C from the private copy without implying Process2 sees the write.",
+      "passed": true,
+      "evidence": "Title specifies Process1 writesC and note under Process1 repeats write trigger. Process2 retains originalC; footer says A/B stay shared."
+    }
+  ],
+  "notes": "Directly compared frame states and all connector endpoints to the full document/original; PNG verify/load succeeded. Page replacement uses a generic new storage-cylinder shape despite the prompt preference for flat boxes, but the composition and facts are newly constructed and no distinctive source artwork is embedded.",
+  "at": "2026-10-12T12:21:16.046Z",
+  "generatedSha256": "a56cfe7a4e6a862f87c260d66d455e7585a86be50e8c7c9c07f69065e9d9330f",
+  "specSha256": "d851c0c48c9910b490b0d0f6ddc224df1d5039b3a710b93d084e620f4b23bf55"
+}

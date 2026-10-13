@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Inverted page table lookup",
+  "alt": "프로세스 식별자와 페이지 번호로 역 페이지 테이블을 검색해 물리 프레임 인덱스 i를 얻는 과정",
+  "requiredChecks": [
+    "CPU logical(pid,p,d); searchtableby(pid,p) matching rowfields(pid,p), rowindex iisphysicalframenumber.",
+    "Oneentryperphysicalframe, tableindexedbyphysicalframe, notper-processoneentrypervirtualpage.",
+    "Outputphysical(i,d), offsetunchanged; no pidusedasframeorvirtualpindexinterpretedframe."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Inverted page-table lookup. CPU→Logicaladdress(pid|p|d). pid andp→Search by (pid,p) arrow toInvertedpage-table withcolumns Physical frame index | Process ID | Virtual page; rows…;highlightedrow i | pid | p;… . ArrowfromrowINDEX i→Physicaladdress(i|d)→Physicalmemory. Separatedunchangedbypass tooutputd. Caption One table entry per physical frame; matching (pid,p) identifies framei. Exactlyoneglobaltable, noper-processarrays."
+}

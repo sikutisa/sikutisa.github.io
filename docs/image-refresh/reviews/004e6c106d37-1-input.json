@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Headers in exact order: instructor.ID | name | dept_name | salary | teaches.ID | course_id | sec_id | semester | year",
+      "passed": true,
+      "evidence": "All nine headers retained in exact order, including bothqualifiedIDcolumns."
+    },
+    {
+      "requirement": "Exactly 2 rows: 201 | Dana | Comp. Sci. | 60000 | 201 | CS-210 | 1 | Fall | 2017 ; 202 | Eli | Comp. Sci. | 80000 | 202 | CS-315 | 1 | Spring | 2018",
+      "passed": true,
+      "evidence": "ExactlyDana20160000 withteaches201CS-2101Fall2017 andEli20280000 withteaches202CS-3151Spring2018; bothComp. Sci., matching equalityfilter."
+    },
+    {
+      "requirement": "Filter the Cartesian product by equal IDs; both ID columns are retained.",
+      "passed": true,
+      "evidence": "Equal-ID pairs only; note explicitly saysbothIDcolumnsretained, representingtheta join notnaturaljoin."
+    },
+    {
+      "requirement": "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer and allcellsreadable."
+    }
+  ],
+  "notes": "Pass. Every result/source cell visually compared with independent examples/relational-algebra.json."
+}

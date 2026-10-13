@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Parentfork→parentpid>0wait→resume;childpid0exec→exit.",
+      "passed": true,
+      "evidence": "fork pid>0 부모wait→resume 및 pid0 자식exec→exit가 맞다."
+    },
+    {
+      "requirement": "Childexitunblocksparentwait,execchangeschildprogramnotnewprocess; forkfailure optionalnotneeded.",
+      "passed": true,
+      "evidence": "수정 점선은 exit() 상단에서 시작해 wait() 하단에 닿는다. exec는 프로그램 교체 캡션과 연결되고 대기 해제 선이 없다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

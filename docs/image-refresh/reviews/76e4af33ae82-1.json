@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Logicalbytes0..15=a..p: page0abcd,page1efgh,page2ijkl,page3mnop; page/frame size4bytes.",
+      "passed": false,
+      "evidence": "Logicalrange0..15andpagescorrect, but logicalPage2 finalglyphlooksuppercaseL instead ofrequiredlowercasel."
+    },
+    {
+      "requirement": "Pagetable0→5,1→6,2→1,3→2; physicalmemory32bytes eightframes.",
+      "passed": true,
+      "evidence": "Table0→5,1→6,2→1,3→2;32-bytephysicalmemoryeightframes."
+    },
+    {
+      "requirement": "Frame1 addresses4..7=ijkl,frame2addresses8..11=mnop,frame5addresses20..23=abcd,frame6addresses24..27=efgh; frames0/3/4/7unused.",
+      "passed": true,
+      "evidence": "Physical4..7ijkl,8..11mnop,20..23abcd,24..27efgh; unusedotherscorrect."
+    },
+    {
+      "requirement": "Byte ordering preserved, no counts/addresses dropped or invented; label 32-bytephysicalmemory not32-byteslogical.",
+      "passed": false,
+      "evidence": "Lowercasecaseconsistencyrequiresrepair; allnumericrangesandcountsotherwiseexact."
+    }
+  ],
+  "notes": "All mappings and memory bytes compared visually. Reject size/identifier/case ambiguities before applying.",
+  "at": "2026-10-12T23:18:51.907Z",
+  "generatedSha256": "83f1769167fd8c7d595109714f140de1083ff1b4cfe5a23df22aa7415dc398d8",
+  "specSha256": "62e188d095598170f8d8515ca822a263b8706a50209819e6669ac6a70adfd3ef"
+}

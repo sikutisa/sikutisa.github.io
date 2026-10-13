@@ -1,0 +1,14 @@
+{
+  "title": "Database engine components",
+  "purpose": "Provide a readable conceptual engine overview of compiled application calls/DML and DDL, query processor, storage managers and disk structures.",
+  "alt": "DML·DDL 질의 처리기, 네 가지 저장 관리자, 데이터·인덱스·메타데이터 저장소의 개념 구조",
+  "requiredChecks": [
+    "DML queries→DML compiler/optimizer→Query evaluation engine; application calls also reach engine; DDL interpreter updates metadata separately.",
+    "Query processor boundary includes DML compiler/optimizer, Query evaluation engine and DDL interpreter.",
+    "Storage manager boundary contains Buffer manager, File manager, Authorization/integrity manager, Transaction manager.",
+    "Disk storage contains Data files, Indexes, Data dictionary and Data statistics; no DDL→query-result path or sequential chain through all managers."
+  ],
+  "prompt": "Create a new original English raster technical diagram for an IT study blog. White background, flat blue and teal cards, navy large sans-serif text, generous whitespace, clean orthogonal connectors, no logos or copied textbook composition. All labels readable and uncropped. Title \"Database engine components\". Clear conceptual overview, generous large canvas. TOP input cards \"Application calls\", \"DML queries\", \"DDL statements\". MIDDLE broad \"Query processor\" boundary. Inside left \"DML compiler / optimizer\" then downward arrow to \"Query evaluation engine\". DML queries points into compiler; Application calls left gutter arrow to evaluation engine directly. Right inside boundary \"DDL interpreter\" receiving DDL statements. BELOW separate broad \"Storage manager\" boundary contains FOUR side-by-side cards \"Buffer manager\", \"File manager\", \"Authorization / integrity manager\", \"Transaction manager\". ONE thick engine→Storage manager boundary arrow, label \"Read / write requests\"; do NOT sequentially link four managers. BOTTOM broad \"Disk storage\" boundary contains \"Data files\", \"Indexes\", \"Data dictionary\", \"Data statistics\". ONE broad Storage manager↔Disk storage group connector. DDL interpreter has distinct thin teal line routed down FAR RIGHT outer gutter to Data dictionary card, label \"Schema metadata\", avoiding other boxes. Footer \"Conceptual components; internal paths vary by DBMS\". Do not draw compiler/linker input details, do not draw dataflow through all managers in series. No tiny arrows crossing labels.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

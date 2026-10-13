@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Free frames before and after allocation",
+  "alt": "네 페이지를 프레임 14·13·18·20에 배치하고 free list에 15가 남는 과정",
+  "requiredChecks": [
+    "Before free-frame list in order14,13,18,20,15; newprocesspages0..3.",
+    "After pagetable0→14,1→13,2→18,3→20; free listonly15.",
+    "Memoryframes13Page1,14Page0,18Page2,20Page3,15Free; nearby16,17,19,21Otherallocated; consistent pre/post allocation."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Allocating four pages from a free-frame list. Two panels Before and After. Before: New process pages0,1,2,3 waiting; Free-frame list shown exactorder14 → 13 → 18 → 20 → 15. Beforememorysnapshotrowsframe13Free,14Free,15Free,16Otherprocess,17Otherprocess,18Free,19Otherprocess,20Free,21Otherprocess. AfterpagetablerowsPage0Frame14,Page1Frame13,Page2Frame18,Page3Frame20; Free-frame list15alone. Aftermemoryrows13Page1,14Page0,15Free,16Otherprocess,17Otherprocess,18Page2,19Otherprocess,20Page3,21Otherprocess. Clear free/allocatedcolorsandlegend. No swapped mappings."
+}

@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Headers in exact order: course_id",
+      "passed": true,
+      "evidence": "Result table onlycourse_idheader; sourcecards separatelyidentifiedFall2017 andSpring2018."
+    },
+    {
+      "requirement": "Exactly 3 rows: CS-210 ; HIS-230 ; PHY-220",
+      "passed": true,
+      "evidence": "Resultthree rowsCS-210,HIS-230,PHY-220exactly ascalculated."
+    },
+    {
+      "requirement": "Fall 2017: CS-210, PHY-220. Spring 2018: CS-210, HIS-230. Remove duplicate CS-210.",
+      "passed": true,
+      "evidence": "SourcecardsFall{CS-210,PHY-220} Spring{CS-210,HIS-230}; note removedduplicateCS-210; resultcontainsoneCS-210."
+    },
+    {
+      "requirement": "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer, sources/resultreadable."
+    }
+  ],
+  "notes": "Pass. Every result/source cell visually compared with independent examples/relational-algebra.json."
+}

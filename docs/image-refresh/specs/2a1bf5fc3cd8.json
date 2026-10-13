@@ -1,0 +1,20 @@
+{
+  "title": "Predict the next CPU burst",
+  "purpose": "Show exponential-average example with exact predictions.",
+  "alt": "alpha 0.5와 초기 예측 10에서 burst 6·4·6·4·13·13·13을 반영해 8·6·6·5·9·11·12로 갱신하는 지수 평균",
+  "requiredChecks": [
+    "Prediction formula tau[n+1]=alpha*t[n]+(1-alpha)*tau[n]; measured t and previous tau distinct.",
+    "Alpha0.5 initial tau1=10; measured bursts6,4,6,4,13,13,13.",
+    "Next predictions8,6,6,5,9,11,12 exact without smoothing-derived extra values.",
+    "Table or plotted series aligns prediction before versus after observation.",
+    "Explain alpha weighs latest actual burst; no repeat-tau typo."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog. Opaque white background, navy highly readable type, restrained blue/teal/amber, flat graphics generous margins. Exact listed calculations only, no logos or copied textbook arrangement. Title 'Predict the next CPU burst'. Toplarge readable formula 'tau[n+1] = alpha × t[n] + (1 − alpha) × tau[n]'. Smallline 't[n]: measured burst; tau[n]: previous estimate'. Highlight 'alpha = 0.5; initial estimate = 10'. Main table columns n|Actual t[n]|Previous tau[n]|Next tau[n+1], exactrows 1|6|10|8,2|4|8|6,3|6|6|6,4|4|6|5,5|13|5|9,6|13|9|11,7|13|11|12. Footer 'Weight the latest measured burst and the previous estimate equally'. Table replaces ambiguous smoothed chart; no extraplotneeded. Make all7rowslegible.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "calculationVerified": true,
+  "sourceCorrection": "Body repeats tau_n in both weighted terms. Preserve body but use actual measured t_n term in regenerated figure; all calculations verified.",
+  "references": [
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6_CPU_Scheduling.html"
+  ]
+}

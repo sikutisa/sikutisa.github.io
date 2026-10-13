@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Many-to-many",
+  "alt": "사용자 스레드 4개를 커널 스레드 3개에 다중화하는 모델",
+  "requiredChecks": [
+    "FouruserthreadsU1..U4,threeK1..K3.",
+    "Explicitmultiplexermapsmanyusertomanykernel,notone-to-onenoronekernel."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Many-to-many model. Four user nodes U1,U2,U3,U4 in User space, three kernel nodes K1,K2,K3 in Kernel space. Central small Multiplexer on boundary. Four links from user nodes to Multiplexer, three links Multiplexer to each kernel node. Caption User threads are multiplexed onto kernel threads. Exactly4user3kernel. Clear mapping links not arrows between kernels."
+}

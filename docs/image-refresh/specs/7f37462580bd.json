@@ -1,0 +1,15 @@
+{
+  "title": "Web crawler pipeline",
+  "purpose": "Replace ambiguous source flow with explicit unique-content and unseen-URL branches, DNS-assisted fetching and discovery feedback.",
+  "alt": "웹 크롤러의 미수집 URL·HTML 다운로드·중복 콘텐츠 검증·링크 추출·URL 중복 검사와 재투입 흐름",
+  "requiredChecks": [
+    "Seed URLs→URL frontier→HTML downloader→Parser/validator→Content duplicate check in order; DNS resolver is a side dependency of downloader.",
+    "Duplicate-content Yes discards; No both stores Content storage and continues to URL extractor→URL filter→Seen URL check.",
+    "Seen URL Yes discards, while No records URL in Seen/queued URL store and enqueues in URL frontier.",
+    "Content storage and Seen/queued URL store are separate; feedback arrow joins frontier, not downloader/parser.",
+    "Labels and Yes/No branch directions are legible; no DNS forwards HTML or duplicate URLs endlessly loop."
+  ],
+  "prompt": "Create a NEW original raster system-design diagram for a technical blog. English labels, large navy sans-serif text on white, flat blue/teal cards, clear numbered or labelled arrows with empty routing gutters. No logos, copied textbook composition or guarantee of exactly-once delivery. TITLE \"Web crawler pipeline\". Use wide two-row loopdiagram. TOProwleft→right \"Seed URLs\"→\"URL frontier\"→\"HTML downloader\"→\"Parser / validator\"→diamond \"Duplicate content?\". Small \"DNS resolver\" ABOVEdownloader connects ONLYwithdownloader by doubleheadedarrow \"Resolve host\". Yesbranchfromcontentdiamond upwardto small \"Discard duplicate\"; Nobranchdownward into shortclearjunction: one arrow \"Store\" to separate \"Content storage\" card, anotherarrowlabel\"New content\" downinto BOTTOMrow rightmost \"URL extractor\". BOTTOMrow proceeds RIGHT→LEFT: \"URL extractor\"→\"URL filter\"→diamond \"Seen / queued URL?\". Explainright-to-leftflowwithcleararrowheads. Yesbranchdownfromseendiamond to \"Discard URL\". Nobranchleftinto separate \"Record URL\" processcard; thiscard points DOWNto \"Seen / queued URL store\", and also a left/up outergutterarrow labelled \"Enqueue new URL\" backtoURLfrontier. Seendiamond has dottedquerylinktoSeenstore ifroutingreadable. No branch must be ambiguity betweenStoreandEnqueue: both happen fornewURL. Footer \"Separate content deduplication from URL deduplication\". Original independentlayout, generousmargin for loop, no falseDNSHTMLtransit. Use simplecards insteadofbusyicons.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

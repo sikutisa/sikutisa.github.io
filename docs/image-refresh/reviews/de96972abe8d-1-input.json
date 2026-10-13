@@ -1,0 +1,33 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Gantt P1[0,1],P2[1,5],P4[5,10],P1[10,17],P3[17,26], proportional1:4:5:7:9.",
+      "passed": true,
+      "evidence": "Exact fiveslicesP1[0,1],P2[1,5],P4[5,10],P1[10,17],P3[17,26]; durations1/4/5/7/9, widths approximately proportional."
+    },
+    {
+      "requirement": "P1 preempted at1 by P2, resumes10; no unneeded preemption at2 or3.",
+      "passed": true,
+      "evidence": "Annotation at1P2preemptsP1, nextP1resume10."
+    },
+    {
+      "requirement": "Wait P1=9,P2=0,P3=15,P4=2 avg6.5ms.",
+      "passed": true,
+      "evidence": "Waiting9,0,15,2average6.5 exact."
+    },
+    {
+      "requirement": "Turnaround17,4,24,7 avg13ms.",
+      "passed": true,
+      "evidence": "Turnaround17,4,24,7average13 exact."
+    },
+    {
+      "requirement": "Arrivals0,1,2,3; overhead excluded.",
+      "passed": true,
+      "evidence": "Input arrival table verified, overhead omitted subtitle."
+    }
+  ],
+  "notes": "Full visual inspection and independently computed numerical checks agree; decode before approval."
+}

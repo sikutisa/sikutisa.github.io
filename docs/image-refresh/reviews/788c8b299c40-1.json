@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Horizontal axis CPU burst duration; vertical frequency.",
+      "passed": true,
+      "evidence": "x CPU burst duration, y Frequency."
+    },
+    {
+      "requirement": "Peak at short durations and long low tail toward larger durations.",
+      "passed": true,
+      "evidence": "Early high short-burst peak, low long right tail."
+    },
+    {
+      "requirement": "Clearly schematic qualitative distribution, not measured dataset.",
+      "passed": true,
+      "evidence": "Subtitle schematic distribution, not measured data."
+    },
+    {
+      "requirement": "No numerical ticks or unsupported distribution law or percentages.",
+      "passed": true,
+      "evidence": "No numeric ticks, percentages, distribution-law formula."
+    }
+  ],
+  "notes": "Direct visual inspection confirms exact labels, chronology and input data. PNG decode before approval.",
+  "at": "2026-10-12T21:55:28.405Z",
+  "generatedSha256": "af0b6425f762a1289bdd4aec1519f567e4c8110470e18d3c0d973b3e63801142",
+  "specSha256": "b9f4a185a39e528b7645a7269548ef7eac9e385e3119ed9b15a9e283c2b5e0c1"
+}

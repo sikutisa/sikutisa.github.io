@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Sequential access",
+  "alt": "현재 위치에서 읽고 쓰며 처음으로 되감는 순차 파일 접근",
+  "requiredChecks": [
+    "Beginning,currentposition,Endofonefile;read/writeadvancesright.",
+    "Rewindreturnslefttobeginning,noarbitrarydirectindex."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Sequential file access. A wide horizontal file bar labelled Beginning left, End right, Current position at middle marker. Arrow right from current labelled Read or write (advance). Separate arrow left toward beginning labelled Rewind. No invented numeric indexes or random-access links."
+}

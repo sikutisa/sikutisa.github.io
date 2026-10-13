@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Source to running program pipeline",
+  "alt": "소스·컴파일러·링커·로더를 거쳐 실행 중인 프로그램이 되는 과정",
+  "requiredChecks": [
+    "Main chain Source program→Compiler→Object file→Linker→Executable file→Loader→Program in memory.",
+    "Other object files join Linker; Dynamically linked libraries join Program in memory at runtime; no reversed arrows.",
+    "Compile time, linking/loading, execution time distinguished; no technical dependency invented; labels legible."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: From source code to a running program. Fresh left-to-right three-phase workflow panels. Compile time: Source program→Compiler→Object file. Linking / loading: Object file→Linker→Executable file→Loader. Execution time (run time): Loader→Program in memory. Connect chain acrosspanels exactlyonce; do not duplicateObjectfile/Loader when crossingpanel. Side input Other object files→Linker. Side input Dynamically linked libraries→Program in memory labelled run-time linking. All seven main stagesexactlabels, two sideinputs only. Schematic educationalflow, no address numbers."
+}

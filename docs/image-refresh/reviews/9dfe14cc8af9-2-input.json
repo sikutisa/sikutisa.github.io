@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "HRMgr incAll(Employee[]) contains explicit type branches to incFacultySalary/incStaffSalary/incSecretarySalary.",
+      "passed": true,
+      "evidence": "HRMgr table branches FACULTY/STAFF/SECRETARY to three matching handlers."
+    },
+    {
+      "requirement": "Faculty,Staff,Secretary extend Employee.",
+      "passed": true,
+      "evidence": "Faculty,Staff,Secretary each explicitly extend Employee; redundant disconnected extends arrows removed."
+    },
+    {
+      "requirement": "Adding an employee type requires changing HRMgr dispatch logic in this design.",
+      "passed": true,
+      "evidence": "New type footer requires another branch/handler; all three HRMgr dependencies now terminate on actual concrete cards including Staff routed around Employee."
+    },
+    {
+      "requirement": "No polymorphic incSalary dispatch is presented as current bad behavior.",
+      "passed": true,
+      "evidence": "Table specific handlers, no polymorphic employee.incSalary shown."
+    }
+  ],
+  "notes": "Direct visual inspection confirms text, dependencies and boundaries; PNG decode before approval."
+}

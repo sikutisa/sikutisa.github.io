@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Worse: Host calls station.GetThermometer(), then thermometer.GetTemperature().",
+      "passed": true,
+      "evidence": "Worse Host→Station GetThermometer and Host→Thermometer GetTemperature clearly separate; exact two-call code."
+    },
+    {
+      "requirement": "Better: Host calls station.GetTemperature(); Station delegates to its Thermometer.GetTemperature().",
+      "passed": true,
+      "evidence": "Better Host→Station GetTemperature→Thermometer GetTemperature with internal delegation label."
+    },
+    {
+      "requirement": "Host stores Station; Station stores Thermometer; better caller avoids knowledge of returned internal object.",
+      "passed": true,
+      "evidence": "Host holds Station and Station holds Thermometer in both panels; better hides internal object from caller."
+    },
+    {
+      "requirement": "Thermometer still performs temperature reading; no removal of underlying behavior.",
+      "passed": true,
+      "evidence": "Thermometer still gets temperature; footer says Station handles its own thermometer."
+    }
+  ],
+  "notes": "Pass. Visual inspection at native resolution confirmed correct dependency direction, layer boundaries, code identifiers and internal delegation.",
+  "at": "2026-10-12T14:54:26.210Z",
+  "generatedSha256": "3a1c03216ab3741b9b172c22237c819a1841b2785be9fa844868e1e93bad1159",
+  "specSha256": "2e9d99918dff769d52fa506dde8f0ac755796bd81a5bd5a5c951b61b191c1fc3"
+}

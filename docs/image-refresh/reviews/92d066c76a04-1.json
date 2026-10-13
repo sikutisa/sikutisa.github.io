@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Horizontal axis is Degree of multiprogramming and vertical axis CPU utilization.",
+      "passed": true,
+      "evidence": "Read Degree of multiprogramming horizontal and CPU utilization vertical."
+    },
+    {
+      "requirement": "A qualitative curve first rises, peaks, then drops steeply under high multiprogramming.",
+      "passed": true,
+      "evidence": "Curve rises from origin to central peak and drops steeply on right."
+    },
+    {
+      "requirement": "Thrashing region is clearly labeled after the peak/drop, with an explanation of excessive paging.",
+      "passed": true,
+      "evidence": "Right shaded area labeledThrashing; footer reads Too few frames→frequent page faults→excessive paging."
+    },
+    {
+      "requirement": "No invented numeric measurements; caption marks the curve conceptual.",
+      "passed": true,
+      "evidence": "No numeric ticks. Bottom caption Conceptual curve, not measured data visible."
+    }
+  ],
+  "notes": "Individually inspected full generated raster and decoded via PIL verify/load.",
+  "at": "2026-10-12T12:33:44.802Z",
+  "generatedSha256": "f6ef1852d89089d3beb6621b6e6a08c790e3d228a84f77f5c4a20fbbd274eb52",
+  "specSha256": "4202bd43947285c387c296bbb35f110020ead3e52cf9cf8e726d9140a9a2d4e8"
+}

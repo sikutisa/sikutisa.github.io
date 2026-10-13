@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Readyqueue→CPU→exit;I/Orequest→I/Oqueue→I/Ocompletion→Ready;timesliceexpired→Ready.",
+      "passed": false,
+      "evidence": "주경로와 I/O queue→completion→Ready는 맞지만 CPU에서 나온 세 선이 첫 행에서 끊겨 다른 행에 연결되지 않는다."
+    },
+    {
+      "requirement": "Forkchild→childexecutes/completes→Ready;waitforinterrupt→interruptoccurs→Ready; waitingparentpathillustrative notallforkblock.",
+      "passed": false,
+      "evidence": "시간 만료·자식·인터럽트 행의 선이 CPU가 아닌 패널 경계에서 시작하여 분기 경로가 실패한다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:23:50.963Z",
+  "generatedSha256": "2c29bfe2fdb1a361b448231606d0e28fbac6be93982a9b5e219db745e65f5a07",
+  "specSha256": "4b874b27c45f3f53fad6c9a4d4df52c931f76255cf356ac5acd6799af1d4ae84"
+}

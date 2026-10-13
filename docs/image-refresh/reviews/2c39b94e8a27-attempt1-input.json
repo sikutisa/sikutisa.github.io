@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "1Clientrequest→Server,2ServercreatesWorkerthread.",
+      "passed": true,
+      "evidence": "1 Client→Server 요청 및 2 Server→Worker 생성 연결 정확."
+    },
+    {
+      "requirement": "3Serverresumeslisteningwhileworkerhandlesrequest;loopnotworkerrequiredcompletion.",
+      "passed": true,
+      "evidence": "3 Server 자기 루프 재수신과 독립 Worker 설명, 작업 완료 대기 연결 없음."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

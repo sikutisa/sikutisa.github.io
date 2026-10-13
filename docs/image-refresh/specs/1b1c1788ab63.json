@@ -1,0 +1,14 @@
+{
+  "title": "Cartesian product: instructor × teaches",
+  "purpose": "Illustrate Cartesian product: instructor × teaches with an original small dataset and independently calculated product/means.",
+  "alt": "강사 2명×강의 2행의 직적으로 ID 미일치도 남기는 4행",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "requiredChecks": [
+    "Column order: instructor.ID | name | dept_name | salary | teaches.ID | course_id | sec_id | semester | year",
+    "Exactly 4 rows: 201 | Dana | Comp. Sci. | 60000 | 201 | CS-210 | 1 | Fall | 2026 ; 201 | Dana | Comp. Sci. | 60000 | 202 | CS-315 | 1 | Spring | 2027 ; 202 | Eli | Comp. Sci. | 80000 | 201 | CS-210 | 1 | Fall | 2026 ; 202 | Eli | Comp. Sci. | 80000 | 202 | CS-315 | 1 | Spring | 2027",
+    "Two instructors × two teaches rows = four pairs; no ID filter applied.",
+    "Original illustrative dataset footer; no copied textbook names, all cells legible."
+  ],
+  "prompt": "Create a NEW original raster educational table graphic for an English IT blog. White background, navy sans-serif text, blue header, pale teal alternating rows, light rules, generous padding, crisp identifiers. Title \"Cartesian product: instructor × teaches\". ONE table, EXACT headers: instructor.ID | name | dept_name | salary | teaches.ID | course_id | sec_id | semester | year. EXACT 4 data rows:\n201 | Dana | Comp. Sci. | 60000 | 201 | CS-210 | 1 | Fall | 2026\n201 | Dana | Comp. Sci. | 60000 | 202 | CS-315 | 1 | Spring | 2027\n202 | Eli | Comp. Sci. | 80000 | 201 | CS-210 | 1 | Fall | 2026\n202 | Eli | Comp. Sci. | 80000 | 202 | CS-315 | 1 | Spring | 2027\nNo extra rows or header duplicates. Footer \"Original illustrative dataset\". Separate note \"Two instructors × two teaches rows = four pairs; no ID filter applied.\". Wide landscape for nine columns. Both instructor.ID and teaches.ID columns MUST appear; retain mismatched201/202 and202/201 pairs as this is a Cartesian product, not join. No filtering, no ellipsis."
+}

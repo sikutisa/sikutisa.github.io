@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Client uses Iterator interface hasNext()/next()/remove(); EnumerationIterator implements Iterator.",
+      "passed": true,
+      "evidence": "Client→IteratorinterfacewithbooleanhasNext(),Enext(),voidremove();EnumerationIteratorupimplementsarrow."
+    },
+    {
+      "requirement": "EnumerationIterator holds enumeration: Enumeration and delegates to it, with no inheritance from Enumeration.",
+      "passed": true,
+      "evidence": "EnumerationIteratorfieldenumeration:Enumeration,wraps/delegatesarrowtoseparateEnumerationinterface."
+    },
+    {
+      "requirement": "hasNext()→hasMoreElements(); next()→nextElement() exact mappings.",
+      "passed": true,
+      "evidence": "MappingtablehasNext→enumeration.hasMoreElements()andnext→enumeration.nextElement();exactspelling."
+    },
+    {
+      "requirement": "remove()→throws UnsupportedOperationException because Enumeration lacks removal; no invented Enumeration.remove().",
+      "passed": true,
+      "evidence": "AmberremoverowthrowUnsupportedOperationException;Enumerationonlytraversalmethods,footerexplicitlynotremoval."
+    }
+  ],
+  "notes": "Pass. Interfaces, fields, relationship direction and method mappings verified visually against article/code."
+}

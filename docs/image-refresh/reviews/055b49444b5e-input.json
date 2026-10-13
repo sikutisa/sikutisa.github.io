@@ -1,0 +1,38 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Client API tier lists Java, C++, .NET, PHP, Python, Go and Ruby; it lies outside MySQL server.",
+      "passed": true,
+      "evidence": "All seven client languages are spelled correctly in a tier outside server."
+    },
+    {
+      "requirement": "MySQL engine contains connection handler, SQL parser/preprocessor, optimizer, execution engine, and a separate cache/buffer supporting box.",
+      "passed": true,
+      "evidence": "Four pipeline boxes plus a separate cache/buffer band are present inside the MySQL engine boundary."
+    },
+    {
+      "requirement": "SQL pipeline arrows run client→connection→parser/preprocessor→optimizer→execution, and execution accesses Handler API.",
+      "passed": true,
+      "evidence": "Client/connection bidirectional arrow and left-to-right processing arrows have correct direction; execution connects to Handler API."
+    },
+    {
+      "requirement": "Storage engines InnoDB, MyISAM, Memory are peers separate from SQL-processing; each connects bidirectionally with Handler API.",
+      "passed": true,
+      "evidence": "Three peers InnoDB, MyISAM, Memory have their own bidirectional Handler API connectors, and sit below the SQL engine."
+    },
+    {
+      "requirement": "Operating system/disk tier includes data files and log files outside server; InnoDB and MyISAM reach disk; Memory has no direct disk connector.",
+      "passed": false,
+      "evidence": "FAILED: although Memory has no disk link, InnoDB's arrow terminates at the data-files box while MyISAM's arrow terminates only at log files. This misleadingly assigns MyISAM to log files and fails to show shared file I/O. Need connectors to a common disk I/O boundary/bus instead of exclusive file types."
+    },
+    {
+      "requirement": "All required Korean labels and MySQL-server boundaries are readable and accurate; no copied logos or gears.",
+      "passed": true,
+      "evidence": "Korean lettering, title/footer and server boundary are all legible and intact. No logos or gears."
+    }
+  ],
+  "notes": "Do not apply this image. SQL-processing tiers are correct, but disk connector endpoints imply an incorrect exclusive engine/file-type mapping. Correct only the bottom I/O connectors in a targeted edit. PIL verify/load passed."
+}

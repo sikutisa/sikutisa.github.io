@@ -1,0 +1,14 @@
+{
+  "title": "Subclasses provide the factory method",
+  "purpose": "Explain abstract store owns ordering workflow while regional subclasses override creation.",
+  "alt": "추상 PizzaStore의 공통 orderPizza 흐름과 NY·Chicago 하위 클래스의 createPizza 구현",
+  "requiredChecks": [
+    "Abstract PizzaStore declares orderPizza(type): Pizza and protected abstract createPizza(type): Pizza.",
+    "NYPizzaStore and ChicagoPizzaStore extend PizzaStore and override createPizza(type).",
+    "Common ordering sequence createPizza→prepare→bake→cut→box remains in PizzaStore.",
+    "Concrete subclass determines regional product creation; no separate factory field required."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for a design-pattern reference blog. Opaque white background, large navy sans-serif typography, readable monospaced class/method names, restrained blue/teal panels, large gutters, no logos or copied slide. Title 'Subclasses provide the factory method'. TOP wide abstract PizzaStore card 'orderPizza(type): Pizza' 'protected abstract createPizza(type): Pizza'. Inside smaller workflow 'createPizza → prepare → bake → cut → box'. BELOW TWO equal child cards NYPizzaStore 'extends PizzaStore' 'override createPizza(type): Pizza', ChicagoPizzaStore sameextendsandmethod. No ambiguous disconnected inheritance arrows; explicit extends textinsideclasscards. Footer 'The store workflow stays in the base class; subclasses supply creation'. No SimplePizzaFactory composition field.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

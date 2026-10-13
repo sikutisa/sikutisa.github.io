@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Shared library pages",
+  "purpose": "Explain two processes mapping their virtual shared-library regions to the same physical pages.",
+  "requiredChecks": [
+    "Process A and Process B have distinct virtual address-space rows, each with text, data, heap, shared library and stack regions.",
+    "Both shared-library regions point to the same one physical shared-pages container.",
+    "The physical container has Library page 0 and Library page 1 exactly once; it is not duplicated per process.",
+    "Private-region labels remain separate from shared library; all text and arrows are legible."
+  ],
+  "alt": "Two processes map their shared-library regions to the same physical library pages",
+  "prompt": "Create a NEW original technical educational diagram for an English operating-systems blog. White background, dark navy crisp sans-serif text, blue and teal flat boxes, clean thin arrows, ample whitespace, large legible labels, no copied textbook artwork, no logos or watermark. TITLE \"Shared library pages\". Use a NEW landscape composition: two separate horizontal address-space bars at the top, one labeled \"Process A — virtual address space\", the other below labeled \"Process B — virtual address space\". Each bar contains five regions with exact labels left-to-right \"text\", \"data\", \"heap\", \"Shared library\", \"stack\". Highlight only the Shared library regions in teal; other regions blue. Under both bars, show a single container \"Physical memory — shared pages\" holding exactly two boxes \"Library page 0\" and \"Library page 1\", each only once. Draw exactly one mapping arrow from the Shared library region of each virtual bar to this SAME single physical-memory shared-pages container. Route the arrows outside unrelated region text, with distinct paths and no arrow from private regions to the shared pages. Footer verbatim \"Different virtual address spaces, the same physical library pages\". Do not add invented physical address numbers or imply all process memory is shared."
+}

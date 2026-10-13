@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Developer supplies action, parallelStream runtime divides elements into two example workers.",
+      "passed": true,
+      "evidence": "Developer→runtime→two worker examples with separate directed lanes."
+    },
+    {
+      "requirement": "Two workers each process three elements; illustrative workers, no fixed core/thread rule.",
+      "passed": true,
+      "evidence": "A1/2/3 B4/5/6, runtime scheduling variable footer correct."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

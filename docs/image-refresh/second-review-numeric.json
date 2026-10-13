@@ -1,0 +1,114 @@
+{
+  "at": "2026-10-13T04:03:33.524Z",
+  "passed": true,
+  "results": [
+    {
+      "subject": "FIFO page-replacement figure",
+      "faults": 15,
+      "allFrameStatesAndVictimsMatch": true
+    },
+    {
+      "subject": "OPT page-replacement figure",
+      "faults": 9,
+      "allFrameStatesAndVictimsMatch": true
+    },
+    {
+      "subject": "LRU page-replacement figure",
+      "faults": 12,
+      "allFrameStatesAndVictimsMatch": true
+    },
+    {
+      "subject": "Belady anomaly figure",
+      "faultsByFrames": [
+        12,
+        12,
+        9,
+        10,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "subject": "RR turnaround graph and quantum-4 waiting table",
+      "averages": [
+        11,
+        11.5,
+        10.75,
+        11.5,
+        12.25,
+        10.5,
+        10.5
+      ],
+      "waiting": [
+        6,
+        4,
+        7
+      ]
+    },
+    {
+      "subject": "Exponential average figure",
+      "prediction": [
+        8,
+        6,
+        6,
+        5,
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "subject": "Disk scheduling figures",
+      "FCFS": 640,
+      "SCAN": 236,
+      "CSCANIncludingReturn": 382,
+      "CSCANExcludingReturn": 183
+    },
+    {
+      "subject": "Banker request and safe sequence figure",
+      "sequence": [
+        {
+          "process": "T1",
+          "work": [
+            5,
+            3,
+            2
+          ]
+        },
+        {
+          "process": "T3",
+          "work": [
+            7,
+            4,
+            3
+          ]
+        },
+        {
+          "process": "T4",
+          "work": [
+            7,
+            4,
+            5
+          ]
+        },
+        {
+          "process": "T0",
+          "work": [
+            7,
+            5,
+            5
+          ]
+        },
+        {
+          "process": "T2",
+          "work": [
+            10,
+            5,
+            7
+          ]
+        }
+      ]
+    }
+  ]
+}

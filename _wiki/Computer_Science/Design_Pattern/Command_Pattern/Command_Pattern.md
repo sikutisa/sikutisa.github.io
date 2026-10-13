@@ -17,10 +17,10 @@ toc: true
 ## Example
 ### Given Hardware
 
-![hw](./img/1.png){: w="360" h = "360"}
+![7개 장치 슬롯마다 ON·OFF 버튼이 있고 최근 명령을 취소하는 공통 UNDO 버튼을 둔 리모컨](./img/1-generated.png){: w="760"}
 
 ### Our Vendor Classes
-![vendor](./img/2.png){: w="380" h = "380"}
+![서로 다른 메서드를 제공하는 14개 가전 수신자 클래스와 공통 명령 인터페이스가 필요한 이유](./img/2-generated.png){: w="760"}
 
 ### Without Using Command Pattern
 * Never do this!
@@ -131,15 +131,15 @@ public class LightOffCommand implements Command {
     * Each command object exposes only execute (and undo) method.
 
 ### Our Approach
-![approach](./img/3.png){: w="380" h = "400"}
+![클라이언트의 명령 생성·등록과 리모컨의 execute 호출, Light 수신자의 on 실행 과정](./img/3-generated.png){: w="760"}
 
 * **Encapsulates a request as an object**
     * Thus, let you parameterize clients with different requests, queue or log requests, and support undoable operations.
 
-![uml](./img/4.png){: w="360" h = "340"}
+![Command 인터페이스, Invoker, ConcreteCommand, Receiver, Client의 역할과 의존 관계](./img/4-generated.png){: w="760"}
 
 ### Collaborations
-![coll](./img/5.png){: w="380" h = "330"}
+![Receiver·Client·Command·Invoker 사이에서 생성, 등록, execute, action 순서로 진행되는 시퀀스](./img/5-generated.png){: w="760"}
 
 ### Extending the Remote Control
 ```java
@@ -210,7 +210,7 @@ public class RemoteLoader {
 ```
 
 ### After Setting the Commands
-![after](./img/6.png){: w="360" h = "360"}
+![리모컨의 ON·OFF 명령 배열과 장치 수신자 연결, 빈 슬롯 NoCommand, 최근 명령 UNDO](./img/6-generated.png){: w="760"}
 
 ### Supporting Undo
 ```java
@@ -374,7 +374,7 @@ public class DelayedTyper implements Command {
 ```
 
 ### Class Diagram for DelayedTyper
-![diagram](./img/7.png){: w="370" h = "340"}
+![ActiveObjectEngine 큐에서 DelayedTyper와 SleepCommand를 실행하고 경과 시간에 따라 자신 또는 깨울 명령을 재등록하는 구조](./img/7-generated.png){: w="760"}
 
 ## Review
 * Command **decouples** the **object that invokes** the operation from the **one that knows how to perform it**.

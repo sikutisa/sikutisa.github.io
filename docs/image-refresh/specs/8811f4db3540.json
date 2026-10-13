@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Deadlock detection unblocked snapshot",
+  "alt": "현재 Request가 충족되어 모든 스레드가 완료될 수 있는 교착 탐지 표",
+  "requiredChecks": [
+    "Allocation T0 0 1 0,T1 2 0 0,T2 3 0 3,T3 2 1 1,T4 0 0 2.",
+    "Request T0 0 0 0,T1 2 0 2,T2 0 0 0,T3 1 0 0,T4 0 0 2; Available=(0,0,0); totals7,2,6.",
+    "Detection uses current Request, not Max/Need. Completion sequence T0→T2→T3→T1→T4; no deadlock; Work final=(7,2,6)."
+  ],
+  "prompt": "Use case: scientific-educational. Original raster PNG educational diagram for IT technical blog. White opaque background, clean dark navy sans-serif text, blue and teal accents, no logo/watermark/decoration. Big readable English labels, generous spacing, original composition. For graphs thread circles, resource boxes, distinct arrowhead at destination. Blue solid requests, teal solid assignments, gray dashed potential claims. Title: Deadlock detection: all threads can finish. Table Thread | Allocation A B C | Current Request A B C. EXACT rows T0|0 1 0|0 0 0; T1|2 0 0|2 0 2; T2|3 0 3|0 0 0; T3|2 1 1|1 0 0; T4|0 0 2|0 0 2. Single system card Available = (0, 0, 0). Bottom sequence T0 → T2 → T3 → T1 → T4. Final Work = (7, 2, 6). Status No deadlock. Small explanation: Request is the current outstanding request, not the maximum remaining need. Do not replaceRequestwithNeed."
+}

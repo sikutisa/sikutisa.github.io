@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Verticalmemoryaddress0atupperboundary512Matlowerboundary; OSthenjob1,2,3,4.",
+      "passed": true,
+      "evidence": "위쪽 Address0,아래512M 사이 OS→Job1→Job2→Job3→Job4 순서다."
+    },
+    {
+      "requirement": "Allfourjobsresidentatonce; schematicnotactualequalpartitions or simultaneousCPUexecution.",
+      "passed": true,
+      "evidence": "CPU selects a job과 not to scale 캡션이 있으며 네 작업이 모두 메모리에 상주한 그림이다."
+    }
+  ],
+  "notes": "직접 시각 검수와 PNG 디코딩.",
+  "at": "2026-10-13T00:03:55.677Z",
+  "generatedSha256": "b88ca8220036b0c5616a1ca17ac8f434dac106ad503fee9b024425022a19e01b",
+  "specSha256": "69d369c63d55fa15f9ba36594ee41b38147aff2386fd8d74d69d8ac7beaf8fef"
+}

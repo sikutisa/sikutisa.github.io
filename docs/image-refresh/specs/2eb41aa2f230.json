@@ -1,0 +1,16 @@
+{
+  "title": "Legacy Java Observable and Observer",
+  "purpose": "Preserve historic Java implementation while clearly marking legacy API and correct changed/pull behavior.",
+  "alt": "레거시 Java Observable을 상속한 WeatherData와 Observer·DisplayElement 구현, setChanged 알림과 데이터 조회 흐름",
+  "requiredChecks": [
+    "WeatherData extends java.util.Observable class; display classes implement java.util.Observer and DisplayElement.",
+    "Observable addObserver(o), deleteObserver(o), protected setChanged(), notifyObservers() methods are correct.",
+    "WeatherData measurementsChanged calls setChanged() then notifyObservers(); no-arg notification passes null argument.",
+    "Observer update(Observable o,Object arg) pulls data via WeatherData getters; CurrentConditionsDisplay does not depend on pushed float arguments here.",
+    "Legacy APIs are labelled deprecated since Java 9; no guarantee of observer notification order."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference study blog. Opaque white background, large readable navy sans-serif text, monospaced identifiers, blue/teal/amber flat cards and roomy gutters. No copied irregular bubbles, photographed source or logos. Use plain labelled rectangles for Cat/Dog/Mouse/Duck object names, no animal illustration needed. Include only listed identifiers; do not invent code bodies, modifiers, state values, extra arrows or recipients. Title 'Legacy Java Observable and Observer'. TOP Observable (class) 'addObserver(o); deleteObserver(o); protected setChanged(); notifyObservers()' and Observer (interface) 'update(Observable o, Object arg)' and DisplayElement(interface) 'display()'. MIDDLEWeatherData 'extends java.util.Observable' getters getTemperature/getHumidity/getPressure and 'measurementsChanged(): setChanged(); notifyObservers();'. BOTTOMthreedisplays CurrentConditionsDisplay, StatisticsDisplay, ForecastDisplay each 'implements java.util.Observer, DisplayElement'. Show one clear notifyarrow WeatherData→displaygroup 'update(this, null)' and a separate opposite getdataarrow displaygroup→WeatherData 'pull via getters'. Addsmall exampleflow 'CurrentConditionsDisplay.update(o,arg) → cast to WeatherData → getTemperature()/getHumidity() → display()'. Footer 'Legacy API: Observable and Observer deprecated since Java 9'. No sequentialnotifyorder guarantee, no pushfloat signature. Do not invent new modern API replacement advice.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "reference": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Observable.html"
+}

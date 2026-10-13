@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "GET feed request travels Client→Load balancer→Web servers→News feed service; Web servers authenticate and rate limit.",
+      "passed": true,
+      "evidence": "GET feed Client→LB→Web servers→News feed service, Authenticate/rate limit under Web servers."
+    },
+    {
+      "requirement": "News feed cache provides Post IDs, while User cache and Post cache provide profile and post content to service.",
+      "passed": true,
+      "evidence": "Service connects to Feed cache Post IDs, User cache Names/photos, Post cache Post content/media."
+    },
+    {
+      "requirement": "User DB and Post DB are fallback sources through cache-miss paths, not mandatory sequential reads for each cached response.",
+      "passed": true,
+      "evidence": "Dashed Cache miss links from User/Post cache to respective DBs; cache hits avoid DB."
+    },
+    {
+      "requirement": "JSON feed response goes back to Client; request/response directions and labels legible.",
+      "passed": true,
+      "evidence": "Separate top JSON feed arrow from service into Client; all arrowheads and labels readable."
+    }
+  ],
+  "notes": "Individually viewed full raster and traced connectors against full article. Source tool-output PNGs verified and loaded with PIL in exec82; approved SHA binds copied bytes.",
+  "at": "2026-10-12T12:47:52.350Z",
+  "generatedSha256": "1726f52d868c0ecf1e396b046af0ad5532add8abacb3800bb9f52cbe49fb73e0",
+  "specSha256": "f25ee2d613ca389629d2363e9c06c3c4013bea149340e63078780fe17d59d2f2"
+}

@@ -1,0 +1,33 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "ActiveObjectEngine owns a Command queue; addCommand(c) appends, run() removes first and calls execute() until queue empty.",
+      "passed": false,
+      "evidence": "Engine shows queue append/remove-first/execute/repeat, but expired-delay caption says wakeup command executes next, which is not guaranteed when existing queued commands precede it. Needs explicit queue-empty loop condition and future dequeued execution caption."
+    },
+    {
+      "requirement": "SleepCommand and DelayedTyper implement Command.execute(); the engine does not implement Command.",
+      "passed": true,
+      "evidence": "Only SleepCommand and DelayedTyper implement Command, engine explicitly not a Command."
+    },
+    {
+      "requirement": "DelayedTyper.execute() prints mChar; when !stop it queues new SleepCommand(mDelay, engine, this).",
+      "passed": true,
+      "evidence": "DelayedTyper prints char then if !stop queues SleepCommand(mDelay,engine,this)."
+    },
+    {
+      "requirement": "SleepCommand first records startTime and requeues itself; before delay expiry requeues itself; after expiry queues wakeupCommand.",
+      "passed": true,
+      "evidence": "Three mutually exclusive cases correctly record/requeue self twice and enqueue wakeupCommand after expiry."
+    },
+    {
+      "requirement": "No sleeping worker threads are implied; this example repeatedly polls/requeues on one engine loop.",
+      "passed": true,
+      "evidence": "Footer explicitly one cooperative polling/requeue loop, not sleeping worker thread."
+    }
+  ],
+  "notes": "Fail. Queue ordering caption incorrectly implies immediate next execution; clarify when dequeued and empty-queue stopping condition."
+}

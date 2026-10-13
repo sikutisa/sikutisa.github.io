@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Top-to-bottom layers: Chess User Interface, Facade boundary, Chess Logic, XML Reading/Writing and GTK GUI Toolkit peers, Linux, Hardware.",
+      "passed": true,
+      "evidence": "UI, Facade, ChessLogic, XML/GTK, Linux, Hardware exact top-to-bottom order."
+    },
+    {
+      "requirement": "Facade mediates the UI-to-logic boundary; it is not the operating system.",
+      "passed": true,
+      "evidence": "Facade between UI and logic, distinct from Linux."
+    },
+    {
+      "requirement": "XML and GTK remain separate peer components above Linux.",
+      "passed": true,
+      "evidence": "XML and GTK equal peer cards with own uses Linux connectors."
+    },
+    {
+      "requirement": "Layer ordering and names match original; no inverted platform hierarchy.",
+      "passed": true,
+      "evidence": "All conceptual dependency arrows downward; no inverted platform layer."
+    }
+  ],
+  "notes": "Pass. Visual inspection at native resolution confirmed correct dependency direction, layer boundaries, code identifiers and internal delegation.",
+  "at": "2026-10-12T14:54:25.543Z",
+  "generatedSha256": "68e8df299ca9a04242c8d2c9f61a7966a51914aa2c1fba87b4d9ffc4667a6f05",
+  "specSha256": "2ac52288de74cb04610936331a30b635f0c1102e3e0de33dd9de7c510b80e64d"
+}

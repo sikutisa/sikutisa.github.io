@@ -1,0 +1,15 @@
+{
+  "title": "Multi-level feedback: demote unfinished jobs",
+  "purpose": "Show original three-queue feedback configuration.",
+  "alt": "처음 8ms·다음 16ms quantum을 쓰고 미완료 작업을 하위 FCFS 큐로 이동시키는 MLFQ 예시",
+  "requiredChecks": [
+    "NewjobsenterhighestqueueQ0quantum8.",
+    "Unfinishedafter8demotesQ1quantum16;unfinishedafter16demotesQ2FCFS.",
+    "Completionexitfromeachqueue;demotionarrowsdistinctfromcompletion.",
+    "Higherpriorityqueuesselectedfirst; no inventedagingarrowsoradditionalquantum.",
+    "Example policy, not universal fixed MLFQ rule."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT reference blog. Opaque white, navy highly legible type, restrained blue/teal/amber flat cards, generous gutters. Exact specified numericdata and arrows, no copied textbook arrangement. Title 'Multi-level feedback: demote unfinished jobs'. Three large horizontal queue cards stacked Q0 'Round Robin; quantum8ms', Q1 'Round Robin; quantum16ms', Q2 'FCFS'. NewjobsarrowonlyintoQ0 labelled 'New job'. FromQ0 downwardarrowtoQ1 'Quantum expires; unfinished'. Q1 downwardarrowtoQ2 same. EachcardseparateRIGHTarrow 'CPU burst completes' to 'Done' badge; don'troutecompletionintolowerqueue. Besidestack 'Higher priority' top 'Lower priority' bottom. Subtitle 'Example configuration'. Footer 'Unfinished jobs move to lower-priority queues'. No18msoragingpromotion invention.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

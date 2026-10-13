@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Directoryteststart217;FAT217=618,618=339,339=EOF.",
+      "passed": true,
+      "evidence": "test 시작217, FAT 217=618·618=339·339=EOF 정확."
+    },
+    {
+      "requirement": "FATcentralpointertableindexedblock;chain217→618→339→EOF;EOFsymbolillustrativenotactualuniversalencoding.",
+      "passed": true,
+      "evidence": "인덱스/다음 블록 두 열 구분과 중앙 FAT 포인터, EOF 형식별 상징 표기 설명 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:13:14.506Z",
+  "generatedSha256": "7daa89ce6ab4dafb94b3afa42172d49736c9599d63f2ef21926e923d3281a6fb",
+  "specSha256": "60bb1f8d96a6e220e1847e04936114a67d212ca3b4eaa0cf7b09b96606603f67"
+}

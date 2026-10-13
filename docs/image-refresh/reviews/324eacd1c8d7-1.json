@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Logicaladdressm bits split high-orderp(m−n bits) andlow-orderd(n bits).",
+      "passed": false,
+      "evidence": "m-bitbraceandm−n/nwidthstextcorrect,butp/dfieldidentifiersomitted."
+    },
+    {
+      "requirement": "Page size=2^n bytes, logicaladdressspace=2^m bytes; nofixedbitcounts or wrongexponents.",
+      "passed": true,
+      "evidence": "2^n pageand2^m logicalextentcorrect, nofixedbitcounts."
+    }
+  ],
+  "notes": "All mappings and memory bytes compared visually. Reject size/identifier/case ambiguities before applying.",
+  "at": "2026-10-12T23:18:51.629Z",
+  "generatedSha256": "06b8386b7cbfb2481c6c03e88da7a142b2316fea7fa86101deb4d5dafa55c256",
+  "specSha256": "4d1d1ea444cf2115305ebc8dca215876a4365a40889966a6b57e7352b81fece7"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Query processing",
+  "purpose": "Describe parse/translate, optimize using statistics, execute using data and return result.",
+  "alt": "질의 파싱·관계대수 변환·통계 기반 최적화·실행 계획 평가와 결과 반환 흐름",
+  "requiredChecks": [
+    "SQL query→Parser/translator→Relational-algebra expression→Optimizer→Execution plan→Evaluation engine→Query result in that exact order.",
+    "Data statistics feed Optimizer, not directly Query result.",
+    "Database data connects bidirectionally to Evaluation engine, separate from statistics.",
+    "Parsing/translation, optimization and evaluation are distinguishable stages without shortcut/cycle."
+  ],
+  "prompt": "Create a new original English raster technical diagram for an IT study blog. White background, flat blue and teal cards, navy large sans-serif text, generous whitespace, clean orthogonal connectors, no logos or copied textbook composition. All labels readable and uncropped. Title \"Query processing\". Wide landscape, main flow in TWO ROWS joined at far right. TOP left-to-right \"SQL query\"→\"Parser / translator\"→\"Relational-algebra expression\"→\"Optimizer\". From Optimizer descend to bottom-right \"Execution plan\", then bottom right-to-left \"Evaluation engine\"→\"Query result\" at left. Main arrows all navy. Beneath Optimizer a separate small \"Data statistics\" card with thin teal arrow pointing UP into Optimizer routed to right side, never into execution plan. Beneath Evaluation engine a separate \"Database data\" cylinder with bidirectional teal connector to Evaluation engine. Labels \"1 Parse / translate\" under Parser, \"2 Optimize\" above Optimizer, \"3 Evaluate\" above engine. Large routing gutters so statistics→optimizer does not touch plan arrow. Footer \"Statistics guide planning; data is accessed during execution\".",
+  "originalViewed": true,
+  "documentReviewed": true
+}

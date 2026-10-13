@@ -1,0 +1,15 @@
+{
+  "title": "Sorting algorithms as strategies",
+  "purpose": "Show SortedList delegates to interchangeable SortStrategy implementations.",
+  "alt": "SortedList가 SortStrategy에 정렬을 위임하고 QuickSort·HashSort·MergeSort 구현을 교체하는 예시",
+  "requiredChecks": [
+    "SortedList list:ArrayList, setSortAlgo(SortStrategy s), sort() delegates s.sort(list).",
+    "SortStrategy interface sort(ArrayList list).",
+    "QuickSort,HashSort,MergeSort implement SortStrategy each sort(ArrayList list).",
+    "SortedList contains strategy reference; setter changes algorithm without rewriting context.",
+    "Do not invent sorting complexity or actual algorithm body."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT blog, opaque white background. Navy readable sans serif, monospaced method names, blue/teal/amber flat cards and generous padding. Use exact identifiers, no extra methods/access modifiers/complexity claims/copied slide arrangement. Title 'Sorting algorithms as strategies'. Top LEFT SortedList card list:ArrayList; setSortAlgo(SortStrategy s); sort()→s.sort(list). TOP RIGHT SortStrategy(interface) sort(ArrayList list). Arrow from SortedList to SortStrategy labelled 'contains selected strategy'. Bottom three cards QuickSort, HashSort, MergeSort each explicit 'implements SortStrategy' and 'sort(ArrayList list)'; no implementation arrows needed. Footer 'Select or replace the sorting strategy through setSortAlgo'. Keep original exact HashSort identifier; no complexity claims or full code.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

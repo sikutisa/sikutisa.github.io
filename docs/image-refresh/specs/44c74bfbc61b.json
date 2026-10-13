@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Legacy PC I/O port map",
+  "alt": "전통적 PC의 16진수 입출력 포트 주소 일부와 장치 대응 표",
+  "requiredChecks": [
+    "10hexranges000–00F,020–021,040–043,200–20F,2F8–2FF,320–32F,378–37F,3D0–3DF,3F0–3F7,3F8–3FF.",
+    "CorrespondingDMA,interrupt,timer,game,secondaryserial,HDD,parallel,graphics,diskette,primaryserial; portmappedI/OnotRAM/MMIOandlegacyexample."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Legacy PC I/O port locations (partial). Tabletwo columns I/O port range (hexadecimal) | Device. EXACT10rows 000–00F|DMA controller;020–021|Interrupt controller;040–043|Timer;200–20F|Game controller;2F8–2FF|Serial port (secondary);320–32F|Hard-disk controller;378–37F|Parallel port;3D0–3DF|Graphics controller;3F0–3F7|Diskette-drive controller;3F8–3FF|Serial port (primary). Footer Illustrative legacy port-mapped I/O addresses; not RAM or MMIO addresses. Noconnections."
+}

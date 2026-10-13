@@ -1,0 +1,14 @@
+{
+  "title": "Cartesian product: instructor × teaches",
+  "purpose": "Teach Cartesian product: instructor × teaches using original illustrative data and independently computed algebra.",
+  "alt": "강사 4명×강의 2행의 직적 8행",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "requiredChecks": [
+    "Headers in exact order: instructor.ID | name | dept_name | salary | teaches.ID | course_id | sec_id | semester | year",
+    "Exactly 8 rows: 201 | Dana | Comp. Sci. | 60000 | 201 | CS-210 | 1 | Fall | 2017 ; 201 | Dana | Comp. Sci. | 60000 | 202 | CS-315 | 1 | Spring | 2018 ; 202 | Eli | Comp. Sci. | 80000 | 201 | CS-210 | 1 | Fall | 2017 ; 202 | Eli | Comp. Sci. | 80000 | 202 | CS-315 | 1 | Spring | 2018 ; 203 | Faye | Physics | 90000 | 201 | CS-210 | 1 | Fall | 2017 ; 203 | Faye | Physics | 90000 | 202 | CS-315 | 1 | Spring | 2018 ; 204 | Gus | Physics | 110000 | 201 | CS-210 | 1 | Fall | 2017 ; 204 | Gus | Physics | 110000 | 202 | CS-315 | 1 | Spring | 2018",
+    "Four instructors × two teaches records = eight pairs, including unmatched IDs.",
+    "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset."
+  ],
+  "prompt": "Create a NEW original English raster table diagram for an IT blog, white background, navy crisp sans-serif, blue header and pale teal alternating rows, light rules and ample padding. Title \"Cartesian product: instructor × teaches\". ONE table. EXACT headers: instructor.ID | name | dept_name | salary | teaches.ID | course_id | sec_id | semester | year. EXACT data rows:\n201 | Dana | Comp. Sci. | 60000 | 201 | CS-210 | 1 | Fall | 2017\n201 | Dana | Comp. Sci. | 60000 | 202 | CS-315 | 1 | Spring | 2018\n202 | Eli | Comp. Sci. | 80000 | 201 | CS-210 | 1 | Fall | 2017\n202 | Eli | Comp. Sci. | 80000 | 202 | CS-315 | 1 | Spring | 2018\n203 | Faye | Physics | 90000 | 201 | CS-210 | 1 | Fall | 2017\n203 | Faye | Physics | 90000 | 202 | CS-315 | 1 | Spring | 2018\n204 | Gus | Physics | 110000 | 201 | CS-210 | 1 | Fall | 2017\n204 | Gus | Physics | 110000 | 202 | CS-315 | 1 | Spring | 2018\nExactly 8 rows. No extra row, no ellipsis, no duplicate headers. Footer \"Original illustrative dataset\". Separate note \"Four instructors × two teaches records = eight pairs, including unmatched IDs.\". Use very wide landscape, nine columns and eight rows. All pairs including different instructor.ID and teaches.ID MUST remain; do not turn this into join."
+}

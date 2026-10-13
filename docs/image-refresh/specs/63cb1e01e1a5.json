@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "When no free frame remains",
+  "purpose": "Explain a reference to absent B while all user RAM frames are occupied.",
+  "requiredChecks": [
+    "Process1 table is A/page0/frame6/resident, B/page1/absent, C/page2/frame3/resident, D/page3/frame2/resident.",
+    "Available user frames are all occupied: frame2 D,3 C,4 F,5 H,6 A,7 E.",
+    "Backing storage contains B and G, with B the referenced missing page.",
+    "The request to load B requires selecting a victim; diagram does not invent a selected victim or place B into a free frame."
+  ],
+  "alt": "Page B causes a fault while all user frames are occupied, so a victim frame must be selected",
+  "prompt": "Create a NEW original English technical blog diagram. White background, crisp dark navy large sans-serif labels, flat blue/teal outlined shapes, generous whitespace, simple unambiguous connectors, no decorative art, no logos or watermark. TITLE \"When no free frame remains\". NEW wide readable layout with THREE panels. Left \"Process 1 page table\" with headers \"Page\",\"Contents\",\"Frame\",\"Present\" and four exact rows \"0 | A | 6 | 1\", \"1 | B | — | 0\", \"2 | C | 3 | 1\", \"3 | D | 2 | 1\". Highlight B row and add nearby text \"Reference to B → page fault\". Middle \"Physical memory — occupied user frames\" with six equal entries \"Frame 2: D\", \"Frame 3: C\", \"Frame 4: F\", \"Frame 5: H\", \"Frame 6: A\", \"Frame 7: E\". Do not show any free entry; a note below reads \"Other frames reserved\". Right \"Backing storage\" with two boxes B and G. A dashed arrow from backing storage B toward the middle panel is labeled \"Select a victim before loading B\", and it terminates at the panel border, not a chosen frame. Footer exactly \"No free user frame: page replacement is required\". Keep all numbers consistent, no invented victim or duplicate B in RAM, no cylindrical disk artwork."
+}

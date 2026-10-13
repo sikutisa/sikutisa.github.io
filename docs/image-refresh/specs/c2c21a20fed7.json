@@ -1,0 +1,14 @@
+{
+  "title": "instructor relation",
+  "purpose": "Teach instructor relation using original illustrative data and independently computed algebra.",
+  "alt": "ID·이름·학과·급여 속성을 갖는 강사 릴레이션 자체 예시",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "requiredChecks": [
+    "Headers in exact order: ID | name | dept_name | salary",
+    "Exactly 4 rows: 201 | Dana | Comp. Sci. | 60000 ; 202 | Eli | Comp. Sci. | 80000 ; 203 | Faye | Physics | 90000 ; 204 | Gus | Physics | 110000",
+    "One tuple per row; ID, name, dept_name and salary are attributes.",
+    "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset."
+  ],
+  "prompt": "Create a NEW original English raster table diagram for an IT blog, white background, navy crisp sans-serif, blue header and pale teal alternating rows, light rules and ample padding. Title \"instructor relation\". ONE table. EXACT headers: ID | name | dept_name | salary. EXACT data rows:\n201 | Dana | Comp. Sci. | 60000\n202 | Eli | Comp. Sci. | 80000\n203 | Faye | Physics | 90000\n204 | Gus | Physics | 110000\nExactly 4 rows. No extra row, no ellipsis, no duplicate headers. Footer \"Original illustrative dataset\". Separate note \"One tuple per row; ID, name, dept_name and salary are attributes.\". Keep row order precisely as provided for visual verification; tuples remain a set."
+}

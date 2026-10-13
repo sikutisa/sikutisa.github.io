@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "CPU(s) with cache and thread of execution; memory instructions/data; I/O devices.",
+      "passed": true,
+      "evidence": "CPU(s) 내부 스레드/캐시, 메모리 명령/데이터, 장치가 정확하다."
+    },
+    {
+      "requirement": "CPU↔memory instruction/data paths, CPU→device I/O request, device↔CPU data, device→CPU interrupt, device↔memory DMA bypasses CPU.",
+      "passed": true,
+      "evidence": "CPU-memory 두 양방향,CPU→I/O request,I/O→CPU interrupt,CPU↔device Data,device↔memory DMA가 각 상자에 닿는다."
+    }
+  ],
+  "notes": "직접 시각 검수와 PNG 디코딩. 실패한 결과는 원본 참조 유지.",
+  "at": "2026-10-13T00:07:20.650Z",
+  "generatedSha256": "14d29256077fb90a9b502a249d7798ce9db5946957902846665528cf0d884716",
+  "specSha256": "143757826634c09df70ffed12fa2d107a89e8188d48ce5c365fa09eebf4d9a42"
+}

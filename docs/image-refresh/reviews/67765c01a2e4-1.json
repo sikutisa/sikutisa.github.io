@@ -1,0 +1,36 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "SortedList list:ArrayList, setSortAlgo(SortStrategy s), sort() delegates s.sort(list).",
+      "passed": true,
+      "evidence": "SortedList list:ArrayList, typed setter and sort→s.sort(list) exact."
+    },
+    {
+      "requirement": "SortStrategy interface sort(ArrayList list).",
+      "passed": true,
+      "evidence": "SortStrategy interface sort(ArrayList list)."
+    },
+    {
+      "requirement": "QuickSort,HashSort,MergeSort implement SortStrategy each sort(ArrayList list).",
+      "passed": true,
+      "evidence": "QuickSort/HashSort/MergeSort exact original identifiers each explicitly implement SortStrategy with matching method."
+    },
+    {
+      "requirement": "SortedList contains strategy reference; setter changes algorithm without rewriting context.",
+      "passed": true,
+      "evidence": "Selected strategy contains arrow; footer setter permits replacement."
+    },
+    {
+      "requirement": "Do not invent sorting complexity or actual algorithm body.",
+      "passed": true,
+      "evidence": "No invented complexity or algorithm bodies."
+    }
+  ],
+  "notes": "Direct visual inspection confirms method identifiers, delegation targets, interface ownership and relationships. PNG decode before approval.",
+  "at": "2026-10-12T21:48:42.951Z",
+  "generatedSha256": "8d98f34f5e06e4f39e434b9705cd3e2cbe006d1357217212a500ea11733759e5",
+  "specSha256": "b617cbadef9b66846b3aa889490836f5707c35a8d99e7ef7468b73cd34129b51"
+}

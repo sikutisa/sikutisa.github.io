@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "스트림 파이프라인",
+  "alt": "소스에서 filter와 map을 거쳐 최종 count로 이어지는 파이프라인",
+  "requiredChecks": [
+    "Source4 shapes square,circle,square,square; filter squares3; map each square to triangle3; count returns3.",
+    "filter/map labeled intermediate, count terminal, arrows in order; conceptual values not physical buffers."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Stream pipeline. Four numbered stages left-to-right. Source has 4 tokens square,circle,square,square. filter(isSquare) has exactly3 squares. map(toTriangle) has exactly3 triangles. count() → Result 3. Bracket filter and map together as Intermediate operations, count as Terminal operation. Footer Conceptual stages; execution starts with terminal operation. Do not draw extra shapes or counts.",
+  "referenceSource": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/package-summary.html"
+}

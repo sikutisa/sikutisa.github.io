@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "File allocation table",
+  "alt": "test의 시작 블록 217에서 FAT 618·339를 따라가는 중앙 포인터 표",
+  "requiredChecks": [
+    "Directoryteststart217;FAT217=618,618=339,339=EOF.",
+    "FATcentralpointertableindexedblock;chain217→618→339→EOF;EOFsymbolillustrativenotactualuniversalencoding."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title File Allocation Table (FAT). Directory entry: File test | Start block 217. Arrow to a centralized FAT table with columns Block number | Next block and exact three rows 217 | 618; 618 | 339; 339 | EOF. Adjacent chain strip 217 → 618 → 339 → EOF, exact left-right arrows. Differentiate row index from next value. Caption Next-block pointers are stored in the FAT. Footer EOF shown symbolically; actual end markers depend on FAT format. No invented numeric EOFencoding."
+}

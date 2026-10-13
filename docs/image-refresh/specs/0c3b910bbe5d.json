@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Stored-program computer",
+  "alt": "메모리에 저장한 명령어와 데이터를 버스로 읽고 쓰는 CPU 구조",
+  "requiredChecks": [
+    "CPU and RAM joined by bus; RAM contains instructions and data.",
+    "CPU fetches instructions from RAM and data/result exchanges are bidirectional, no disk required."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Stored-program computer. Left CPU card, right RAM card containing two subdivisions Instructions and Data. Connect using labelled Bus with bidirectional arrows. Caption CPU fetches instructions from memory, then executes them. No disks/controllers extra."
+}

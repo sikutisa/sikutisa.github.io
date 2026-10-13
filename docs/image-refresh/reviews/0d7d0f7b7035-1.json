@@ -1,0 +1,36 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "EnrolmentAPI contains getSSN/getName; AccountAPI contains getInvoice/postPayment.",
+      "passed": true,
+      "evidence": "Exact EnrolmentAPI has getSSN/getName; AccountAPI getInvoice/postPayment."
+    },
+    {
+      "requirement": "RoasterApplication uses EnrolmentAPI only; AccountApplication uses AccountAPI only.",
+      "passed": true,
+      "evidence": "RoasterApplication uses EnrolmentAPI; AccountApplication only AccountAPI."
+    },
+    {
+      "requirement": "StudentEnrollment implements both interfaces and retains four operations.",
+      "passed": true,
+      "evidence": "One StudentEnrollment explicitly implements both and four exact methods; upward arrows target matching contracts."
+    },
+    {
+      "requirement": "Course has zero-or-more StudentEnrollment records; client Course dependencies remain.",
+      "passed": true,
+      "evidence": "0..* at Enrollment and 1 at Course; both outer clients uses Course."
+    },
+    {
+      "requirement": "Client-facing segregation does not require two separate domain entities.",
+      "passed": true,
+      "evidence": "Footer One domain object, separate cohesive contracts; one implementation card."
+    }
+  ],
+  "notes": "Direct visual inspection confirms all contract labels, ownership, arrow directions and multiplicities; PNG decode before approval.",
+  "at": "2026-10-12T15:56:53.510Z",
+  "generatedSha256": "a16415e0ece627640d88e1e54a95a78a89d72c75939243e07044b5bcb2e329ce",
+  "specSha256": "5e181096548baa353421ae7940b498601e21d34bf86bb19658f45031757a786d"
+}

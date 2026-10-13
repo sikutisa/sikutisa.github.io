@@ -1,0 +1,2975 @@
+{
+  "startedAt": "2026-10-13",
+  "scope": "Compare all generated images against document semantics and available original pixels; review independently of prior approval records.",
+  "reviewedGroups": [
+    {
+      "group": 0,
+      "result": "One error: binary log cache incorrectly shared. Other four diagrams preserve SQL/storage separation, request/results, threads/cache, page/redo paths. Original five untracked PNGs unavailable after prior retirement; document/spec plus official MySQL evidence used instead.",
+      "document": "_wiki/Book/Real_MySQL/아키텍처/아키텍처.md",
+      "imageIds": [
+        "055b49444b5e",
+        "090d41040473",
+        "b43162264ce3",
+        "18892651417d",
+        "716cd0e94ad1"
+      ],
+      "sheets": [
+        "00-00.png",
+        "00-01.png"
+      ]
+    },
+    {
+      "group": 1,
+      "result": "Both images preserve metadata versus bytes, block storage, long-poll events and offline queue.",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/구글_드라이브_설계/구글_드라이브_설계.md",
+      "imageIds": [
+        "05657bc4ef26",
+        "2b492357863f"
+      ],
+      "sheets": [
+        "01-00.png"
+      ]
+    },
+    {
+      "group": 2,
+      "result": "Feed ID lookup, hydration caches, fallback DB and JSON return match the document.",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/뉴스_피드_시스템_설계/뉴스_피드_시스템_설계.md",
+      "imageIds": [
+        "e8387fa4cc4f"
+      ],
+      "sheets": [
+        "02-00.png"
+      ]
+    },
+    {
+      "group": 3,
+      "result": "All six images preserve DNS/HTTP separation, write-primary/read-replica, replication direction, cache/CDN, external sessions and regional storage/synchronization.",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/사용자_수에_따른_규모_확장성/사용자_수에_따른_규모_확장성.md",
+      "imageIds": [
+        "84909fc96de5",
+        "a540db058669",
+        "2772add96130",
+        "fe40fc6f0e92",
+        "ed4e9853d778",
+        "57ea4f12a0b6"
+      ],
+      "sheets": [
+        "03-00.png",
+        "03-01.png"
+      ]
+    },
+    {
+      "group": 4,
+      "result": "Channel-specific providers/queues/workers and failure retry path preserve original meaning.",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/알림_시스템_설계/알림_시스템_설계.md",
+      "imageIds": [
+        "676c48e515a3",
+        "24c5a3fb3082"
+      ],
+      "sheets": [
+        "04-00.png"
+      ]
+    },
+    {
+      "group": 5,
+      "result": "Content and URL duplicate branches, record-before-enqueue and downloader DNS lookup correct.",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/웹_크롤러_설계/웹_크롤러_설계.md",
+      "imageIds": [
+        "7f37462580bd"
+      ],
+      "sheets": [
+        "05-00.png"
+      ]
+    },
+    {
+      "group": 6,
+      "result": "All three preserve byte/event/metadata separation, acyclic mux dependencies and control versus media storage.",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/유튜브_설계/유튜브_설계.md",
+      "imageIds": [
+        "eb4a60bbf977",
+        "765f98be1a44",
+        "bfb19771f963"
+      ],
+      "sheets": [
+        "06-00.png"
+      ]
+    },
+    {
+      "group": 7,
+      "result": "HTTP and persistent WebSocket paths, discovery, history/presence and offline push correctly separated.",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/채팅_시스템_설계/채팅_시스템_설계.md",
+      "imageIds": [
+        "9aa5a0f54d54"
+      ],
+      "sheets": [
+        "07-00.png"
+      ]
+    },
+    {
+      "group": 8,
+      "result": "Policy loading separate from atomic Redis request state, allowed and 429 rejected branches correct.",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/처리율_제한_장치의_설계/처리율_제한_장치의_설계.md",
+      "imageIds": [
+        "621c94519658",
+        "d03945569e50"
+      ],
+      "sheets": [
+        "08-00.png"
+      ]
+    },
+    {
+      "group": 9,
+      "result": "View/logical/physical abstractions, query optimization statistics, engine components and two/three tiers preserve original concepts.",
+      "document": "_wiki/Computer_Science/Database/DB_Introduction/DB_Introduction.md",
+      "imageIds": [
+        "c0cd5e269426",
+        "ff1e6fc5be4a",
+        "c90a66d96003",
+        "7af461f51982"
+      ],
+      "sheets": [
+        "09-00.png",
+        "09-01.png"
+      ]
+    },
+    {
+      "group": 10,
+      "result": "SQL joins: student/takes dataset consistent, natural join 3, left 2, right 2, full 3; NULL rows and course/prerequisite misses checked.",
+      "document": "_wiki/Computer_Science/Database/Intermediate_SQL/Intermediate_SQL.md",
+      "imageIds": [
+        "9c7843d55b8d",
+        "e5bb45d6d444",
+        "5a380c8bc421",
+        "412f26c5bc02",
+        "88ddeb2b7b33",
+        "2ec9359b5fee",
+        "ae7e9a8cb7d8",
+        "b86638352704"
+      ],
+      "sheets": [
+        "10-00.png",
+        "10-01.png",
+        "10-02.png"
+      ]
+    },
+    {
+      "group": 11,
+      "result": "SQL aggregation: 70000 and 100000 means checked; Cartesian product 2×2 has all four pairs including mismatched IDs.",
+      "document": "_wiki/Computer_Science/Database/Introduction_to_SQL/Introduction_to_SQL.md",
+      "imageIds": [
+        "1b1c1788ab63",
+        "e03382639525",
+        "0f7c837e0da4"
+      ],
+      "sheets": [
+        "11-00.png"
+      ]
+    },
+    {
+      "group": 12,
+      "result": "Relational algebra: selection/projection, 4×2 Cartesian product, two theta-join rows, union/intersection/difference checked; 11-table schema with 13 FKs and time-slot association. Corrected contradictory time-slot paragraph.",
+      "document": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "imageIds": [
+        "c2c21a20fed7",
+        "a681198f7af1",
+        "7df177ad03ae",
+        "3612f8352a59",
+        "b84ec5cd06f3",
+        "b59346c5dda6",
+        "004e6c106d37",
+        "0cf304fb53d9",
+        "4140b0279cd5",
+        "34680191a523"
+      ],
+      "sheets": [
+        "12-00.png",
+        "12-01.png",
+        "12-02.png",
+        "12-03.png"
+      ]
+    },
+    {
+      "group": 13,
+      "result": "Abstract Factory: product families and factories, creation dependencies and adding Slider/new family contracts preserved.",
+      "document": "_wiki/Computer_Science/Design_Pattern/Abstract_Factory_Pattern/Abstract_Factory_Pattern.md",
+      "imageIds": [
+        "a859b8e43af3",
+        "80c595f9a821",
+        "cd5a7582d010",
+        "38bc8cb4f7bd",
+        "5a3d5960a5c2"
+      ],
+      "sheets": [
+        "13-00.png",
+        "13-01.png"
+      ]
+    },
+    {
+      "group": 14,
+      "result": "Adapter: object wrapping/delegation, class inheritance and Enumeration/Iterator unsupported remove semantics preserved.",
+      "document": "_wiki/Computer_Science/Design_Pattern/Adapter_Pattern/Adapter_Pattern.md",
+      "imageIds": [
+        "2637a415c6eb",
+        "680a6d149bf6",
+        "7e31cf479233"
+      ],
+      "sheets": [
+        "14-00.png"
+      ]
+    },
+    {
+      "group": 15,
+      "result": "Command: seven-slot remote, receiver/invoker/client/command roles, configured NoCommand and queue cases preserved. Restored omitted SecurityControl in vendor chart, corrected Valve and 14-class alt text.",
+      "document": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/Command_Pattern.md",
+      "imageIds": [
+        "7279048f7d10",
+        "11bb97690e7e",
+        "fcbcaaa8f879",
+        "59a2d5df852e",
+        "dc2e3178d1b3",
+        "e9b0bcb352a8",
+        "883811e8d6c2"
+      ],
+      "sheets": [
+        "15-00.png",
+        "15-01.png",
+        "15-02.png"
+      ]
+    },
+    {
+      "group": 16,
+      "result": "Facade: before/after three clients/subsystems, database layers, compiler stages, return Y, web and Chess/XML/GTK/Linux stacks and Law of Demeter preserved.",
+      "document": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/Pacade_Pattern.md",
+      "imageIds": [
+        "0fcd5b18031b",
+        "bd119854b4c0",
+        "03790c3df5bf",
+        "d83b3a51753c",
+        "75c6c7d8b303",
+        "99901f2a4cb2",
+        "b39ce7ee92ed"
+      ],
+      "sheets": [
+        "16-00.png",
+        "16-01.png",
+        "16-02.png"
+      ]
+    },
+    {
+      "group": 17,
+      "result": "Factory Method: composition versus overridable factory, pizza lifecycle and regional products, Creator/Product and dependency inversion preserved.",
+      "document": "_wiki/Computer_Science/Design_Pattern/Factory_Method_Pattern/Factory_Method_Pattern.md",
+      "imageIds": [
+        "d80b23b4c106",
+        "0b2642db90ad",
+        "08ef998d85c2",
+        "e881ce8ad8c1",
+        "73b23b56e916"
+      ],
+      "sheets": [
+        "17-00.png",
+        "17-01.png"
+      ]
+    },
+    {
+      "group": 18,
+      "result": "Observer: all subscribe/notify/unsubscribe examples, push/pull and deprecated Observable setChanged/notifyObservers/update(this,null) semantics checked.",
+      "document": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "imageIds": [
+        "9c92dd182c57",
+        "071f52382b16",
+        "b580c708b5d7",
+        "4a6e0d1e2ec4",
+        "2295d235e442",
+        "2adc8ff58942",
+        "e9cb03f3c8e0",
+        "f476feccd7aa",
+        "a95c6dfb6341",
+        "f6d765015a36",
+        "2eb41aa2f230"
+      ],
+      "sheets": [
+        "18-00.png",
+        "18-01.png",
+        "18-02.png",
+        "18-03.png"
+      ]
+    },
+    {
+      "group": 19,
+      "result": "SOLID: responsibility separation, abstract dispatch, queue composition, dependency ownership and segregated interfaces checked; cardinalities preserved.",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "imageIds": [
+        "e34dab46b62b",
+        "5ef80d83906f",
+        "991f25565390",
+        "813d3d3c3f46",
+        "187214e79280",
+        "9dfe14cc8af9",
+        "67515af5f425",
+        "79c32cb5885a",
+        "e3f7b3cb1279",
+        "48b4d1ea0a9e",
+        "dd4cd1a68ef9",
+        "3d06bf2e6cd5",
+        "81fa39fb3002",
+        "f9a1b0b366c5",
+        "0d7d0f7b7035"
+      ],
+      "sheets": [
+        "19-00.png",
+        "19-01.png",
+        "19-02.png",
+        "19-03.png",
+        "19-04.png"
+      ]
+    },
+    {
+      "group": 20,
+      "result": "Strategy: duck inheritance problems, behavior families/delegation/setters and three sorting strategies preserved.",
+      "document": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/Strategy_Pattern.md",
+      "imageIds": [
+        "f78267a5bc5d",
+        "b5dc5a166468",
+        "b4cc8cc73c8f",
+        "4b0b359cb438",
+        "2cebce069ab4",
+        "3740e7783a1f",
+        "1d1bc626b931",
+        "6978570c8eba",
+        "a0a49df87cfe",
+        "67765c01a2e4"
+      ],
+      "sheets": [
+        "20-00.png",
+        "20-01.png",
+        "20-02.png",
+        "20-03.png"
+      ]
+    },
+    {
+      "group": 21,
+      "result": "CPU: input tables, Gantt boundaries, wait/turnaround values, RR graph, priority groups and MLFQ demotion checked. Corrected document exponential-average formula to match correct figure.",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "imageIds": [
+        "a67fdedd42fb",
+        "788c8b299c40",
+        "3bbf9be2f497",
+        "d813f46a1af9",
+        "bfefa2b0c7e4",
+        "d2b520dea1a6",
+        "cec25d81cb3c",
+        "76b0840b41fc",
+        "2a1bf5fc3cd8",
+        "688fd8d31941",
+        "de96972abe8d",
+        "49f6da494ac9",
+        "cef4aa12b611",
+        "50b5d7c321aa",
+        "f60185d45367",
+        "6763c4dc1e0f",
+        "b039a0bb4790",
+        "687fce398ddf",
+        "1b88ef0c039e",
+        "2522caa14715",
+        "cdc04ed84c42"
+      ],
+      "sheets": [
+        "21-00.png",
+        "21-01.png",
+        "21-02.png",
+        "21-03.png",
+        "21-04.png",
+        "21-05.png",
+        "21-06.png"
+      ]
+    },
+    {
+      "group": 22,
+      "result": "Deadlocks: graph arrow direction/instance counts, cycles versus deadlock, safe/unsafe sets, claim edges, Banker request/Need and safe sequence, wait-for graph and detection matrices checked.",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "imageIds": [
+        "fc968afa88df",
+        "d78382b3e6c5",
+        "0acede667cc1",
+        "9b98737b45e5",
+        "16feaa22f32a",
+        "b8bd50189660",
+        "bf5c13e6bf6c",
+        "5e546acac98e",
+        "74d2c6034554",
+        "e6f16b67f59c",
+        "724d56fe0f43",
+        "8811f4db3540",
+        "ffc5b8731bf6"
+      ],
+      "sheets": [
+        "22-00.png",
+        "22-01.png",
+        "22-02.png",
+        "22-03.png",
+        "22-04.png"
+      ]
+    },
+    {
+      "group": 23,
+      "result": "Main memory: base/limit boundaries, relocation arithmetic, page/frame mappings, free list, TLB miss versus fault, page-granular protection, shared libraries, two-level/hash/inverted tables and swap paths checked.",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "imageIds": [
+        "530181df4ca9",
+        "ca27eccfb353",
+        "50a166fda122",
+        "72daf08b336d",
+        "eefa4cbbc4e5",
+        "260017f3769b",
+        "09c0e02f4760",
+        "995401bd63a6",
+        "368fae0c842b",
+        "01ca929a6d66",
+        "324eacd1c8d7",
+        "76e4af33ae82",
+        "29ce5a3ea205",
+        "940da0cb2f0c",
+        "da7166f5cd21",
+        "c4de306634c0",
+        "a370283240f1",
+        "f411a8ced807",
+        "f2c81f77f6f6",
+        "155cea3e30a4",
+        "33247869ab45",
+        "673905b44e57"
+      ],
+      "sheets": [
+        "23-00.png",
+        "23-01.png",
+        "23-02.png",
+        "23-03.png",
+        "23-04.png",
+        "23-05.png",
+        "23-06.png",
+        "23-07.png"
+      ]
+    },
+    {
+      "group": 24,
+      "result": "OS introduction: CPU/RAM/bus and interrupts, conceptual storage hierarchy, DMA, SMP/multicore, resident jobs, user/kernel modes, VMs, service categories, syscall parameters and historical APIs checked.",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "imageIds": [
+        "22af983c4117",
+        "0c3b910bbe5d",
+        "f299d8e1337f",
+        "2f853b4950b0",
+        "ef5c85ab06e3",
+        "344c8b8971bf",
+        "e42ce35e0ff6",
+        "d89bd1137598",
+        "d73d972a90dc",
+        "04766c08a7dc",
+        "605ed3b4d441",
+        "d1a99695a3b4",
+        "9dce0d258bbc",
+        "d41121678834",
+        "399a2f0f1860",
+        "a423afae9f42"
+      ],
+      "sheets": [
+        "24-00.png",
+        "24-01.png",
+        "24-02.png",
+        "24-03.png",
+        "24-04.png",
+        "24-05.png"
+      ]
+    },
+    {
+      "group": 25,
+      "result": "Process: layout growth, six state transitions, PCB/context save/restore, linked queues, scheduling outcomes, PID tree/fork/exec, IPC and socket endpoints preserved. Pipe output routing clarified to open child fd[0].",
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "imageIds": [
+        "7f8423870d52",
+        "faeee01f9e52",
+        "d77a02650593",
+        "e8c99231554e",
+        "d2e840cb77b6",
+        "72d11610391d",
+        "2878aac55873",
+        "72955e208c58",
+        "5b3a2d9fd455",
+        "5324d78f9010",
+        "033a65e7d891"
+      ],
+      "sheets": [
+        "25-00.png",
+        "25-01.png",
+        "25-02.png",
+        "25-03.png"
+      ]
+    },
+    {
+      "group": 26,
+      "result": "Storage: HDD geometry, FCFS/SCAN/C-SCAN travel, MBR, RAID redundancy/parity, ports, interrupts/DMA, blocking/asynchronous flows, directory graphs, layering, contiguous/linked/FAT/index allocations and all free-list nodes checked.",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "imageIds": [
+        "dec66ee21da6",
+        "125d1a327dc5",
+        "693d89ffd436",
+        "15ce616018ac",
+        "c8722b598662",
+        "e43a56770f28",
+        "bd637aaf3eff",
+        "e13d2fb68528",
+        "44c74bfbc61b",
+        "73a137320996",
+        "8e2d78055ba8",
+        "a864c5cc279f",
+        "6f7a76726b84",
+        "08117acb2825",
+        "9e848b62dd52",
+        "96d71f158bc5",
+        "137af4a9f053",
+        "966a6db4c82d",
+        "3462195e416d",
+        "c29bed96343e",
+        "de2f036a0497",
+        "9d0a7b311af1",
+        "fb6824bf1f30",
+        "c50a6264c275",
+        "1cc1604b6ae8",
+        "edb09360275d"
+      ],
+      "sheets": [
+        "26-00.png",
+        "26-01.png",
+        "26-02.png",
+        "26-03.png",
+        "26-04.png",
+        "26-05.png",
+        "26-06.png",
+        "26-07.png",
+        "26-08.png"
+      ]
+    },
+    {
+      "group": 27,
+      "result": "Dining philosophers: all five philosophers/chopsticks and adjacent ownership preserved.",
+      "document": "_wiki/Computer_Science/Operating_System/Synchronization_Examples/Synchronization_Examples.md",
+      "imageIds": [
+        "c1bbaed43ef0"
+      ],
+      "sheets": [
+        "27-00.png"
+      ]
+    },
+    {
+      "group": 28,
+      "result": "Synchronization: lost-update read/modify/write, unprotected illustrative PID race, monitor mutual exclusion/condition queues and possible opposite-lock deadlock preserved.",
+      "document": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/Synchronization_Tools.md",
+      "imageIds": [
+        "7579ba1769c4",
+        "fb5d7da557d8",
+        "93c880715f8d",
+        "21520a662098",
+        "e61e170d0846",
+        "27c35fbeb2a6"
+      ],
+      "sheets": [
+        "28-00.png",
+        "28-01.png"
+      ]
+    },
+    {
+      "group": 29,
+      "result": "Threads: shared code/data/files and private registers/stacks, server steps, concurrency/parallelism, data/task parallelism, many-to-one/one-to-one/many-to-many mappings checked.",
+      "document": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/Thread_&_Concurrency.md",
+      "imageIds": [
+        "96ef89abae37",
+        "2c39b94e8a27",
+        "1126b9dfc0d7",
+        "12ff315be894",
+        "77a2838e56e3",
+        "7f51e369fcea",
+        "1140f43381a1",
+        "4acda1c4af12"
+      ],
+      "sheets": [
+        "29-00.png",
+        "29-01.png",
+        "29-02.png"
+      ]
+    },
+    {
+      "group": 30,
+      "result": "Virtual memory: resident/nonresident mappings, growth, shared library, fault branches/free frames, COW maps, replacement dirty/valid handling, FIFO/OPT/LRU states and counts, Belady graph, second chance, locality and distinct working sets checked. Fixed valid-address branch in prose and EAT parentheses.",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "imageIds": [
+        "5ea4de758c5f",
+        "83249cf9a160",
+        "0111e750d366",
+        "41075bf181f7",
+        "4deee55dae11",
+        "1e3ee4653f40",
+        "8a7781e579b0",
+        "21915a2d7acb",
+        "63cb1e01e1a5",
+        "597afb6a6e1b",
+        "1f140333bad8",
+        "13e77d8715e8",
+        "f0c01825bfc6",
+        "f2abbf24b38a",
+        "52939d721a6c",
+        "0d32f376b334",
+        "0ef69041a5d9",
+        "9225483afd24",
+        "92d066c76a04",
+        "5a845683e428",
+        "3ebb7b743264"
+      ],
+      "sheets": [
+        "30-00.png",
+        "30-01.png",
+        "30-02.png",
+        "30-03.png",
+        "30-04.png",
+        "30-05.png",
+        "30-06.png"
+      ]
+    },
+    {
+      "group": 31,
+      "result": "JPA: Owned foreign-key direction separated from Item inheritance, JOINED PK/FK and discriminator, exact example data, MappedSuperclass separate tables/no parent table verified.",
+      "document": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance와_@MappedSuperClass/Annotation_@Inheritance와_@MappedSuperClass.md",
+      "imageIds": [
+        "e8ed742aaf72",
+        "0b1c38edf052",
+        "ce4c86ad83d5",
+        "4749122415f3",
+        "a7dbc523341e",
+        "7771c83b00b7",
+        "30841f9200e2",
+        "e127a6742954"
+      ],
+      "sheets": [
+        "31-00.png",
+        "31-01.png",
+        "31-02.png"
+      ]
+    },
+    {
+      "group": 32,
+      "result": "Functional interfaces: andThen A→B yields B(A(x)); compose B→A yields A(B(x)); labels and arrows checked.",
+      "document": "_wiki/Programming_Language/Java/Functional_Interface/Functional_Interface.md",
+      "imageIds": [
+        "829b4946e827",
+        "a372ca763862"
+      ],
+      "sheets": [
+        "32-00.png"
+      ]
+    },
+    {
+      "group": 33,
+      "result": "Stream pipeline: caller loop versus internal traversal, runtime-dependent worker example, filter three squares/map three triangles/count 3 and lazy execution caption checked.",
+      "document": "_wiki/Programming_Language/Java/스트림_소개와_파이프라인/스트림_소개와_파이프라인.md",
+      "imageIds": [
+        "5cfdac1eb9bf",
+        "bdd620d2839f",
+        "8770af8255a9"
+      ],
+      "sheets": [
+        "33-00.png"
+      ]
+    },
+    {
+      "group": 34,
+      "result": "Parallel streams: four illustrative leaf tasks, pairwise combines and final join preserve meaning without fixed core claim.",
+      "document": "_wiki/Programming_Language/Java/스트림과_병렬_처리/스트림과_병렬_처리.md",
+      "imageIds": [
+        "351c7156a8d3"
+      ],
+      "sheets": [
+        "34-00.png"
+      ]
+    },
+    {
+      "group": 35,
+      "result": "Stream methods: flatMap two strings→four words and map two items→two names preserve original one-to-many versus one-to-one distinction.",
+      "document": "_wiki/Programming_Language/Java/스트림과_여러_메소드/스트림과_여러_메소드.md",
+      "imageIds": [
+        "a565584b06db",
+        "0befa50742dd"
+      ],
+      "sheets": [
+        "35-00.png"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "b43162264ce3",
+      "issue": "Binary log buffer shown as shared; the document correctly lists binary log cache as session-local. Adaptive hash index omitted.",
+      "status": "corrected-and-verified",
+      "source": "https://dev.mysql.com/doc/refman/8.0/en/replication-options-binary-log.html",
+      "generatedSource": "C:/Users/luke1046/.codex/generated_images/01a13349-6ff4-7122-b1a7-cb95b88e8257/exec-7bfbd28b-61db-4cb8-8280-46f7549249a6.png"
+    },
+    {
+      "id": "11bb97690e7e",
+      "issue": "Restore omitted SecurityControl with arm/disarm; correct Valve spelling and class count.",
+      "status": "corrected-and-verified",
+      "generatedSource": "C:/Users/luke1046/.codex/generated_images/01a13349-6ff4-7122-b1a7-cb95b88e8257/exec-73e1fc7f-c3c9-43fc-9cf7-4d94e2047890.png"
+    },
+    {
+      "id": "5324d78f9010",
+      "issue": "Route buffer output directly to child open read descriptor, removing arrowhead beside closed descriptor.",
+      "status": "corrected-and-verified",
+      "generatedSource": "C:/Users/luke1046/.codex/generated_images/01a13349-6ff4-7122-b1a7-cb95b88e8257/exec-03ca52ae-418b-4ca7-928b-951d124ca6ff.png"
+    }
+  ],
+  "originalsUnavailable": [
+    "055b49444b5e",
+    "090d41040473",
+    "b43162264ce3",
+    "18892651417d",
+    "716cd0e94ad1"
+  ],
+  "status": "completed",
+  "documentCorrections": [
+    {
+      "document": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "amendments": [
+        {
+          "at": "2026-10-13T04:01:37.861Z",
+          "reason": "Correct time-slot association direction and the composite-key reason to match schema image 3.",
+          "source": "https://www.db-book.com/slides-dir/PDF-dir/ch4.pdf",
+          "beforeSha256": "c3d57abfbf68be543ffd7b4ecfe21ea64ae422c8911ea841543c252e6e874719",
+          "afterSha256": "8b82c195e7dcd1eb513f95f1a46717ae86333b661c1fde16a1007125db1aaf0c",
+          "beforeBodySha256": "3e6c42f91af3657d2259bbac17f47d2229331d78ed2426b35b296eb0b9c94d8b",
+          "afterBodySha256": "5272ef94422bf9b42595ccb1b37d5f447a3d1fd3fcd547a0071d233d8a1941db"
+        }
+      ]
+    },
+    {
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "amendments": [
+        {
+          "at": "2026-10-13T04:01:37.861Z",
+          "reason": "Correct exponential-average formula and distinguish measured burst from previous estimate to match image 9.",
+          "source": "https://www.ics.uci.edu/~ics143/lectures/oslectureset3-spr20.pdf",
+          "beforeSha256": "e3c09876969c2e3daf01ee99f6377154452ef72bfaf50686d06ae76c9d1650f7",
+          "afterSha256": "1718ea043d1a3045dd8ec589f160e2539cb8da95243f04190ca2fdd2d4b01d19",
+          "beforeBodySha256": "3abdc4e119bcc1d9cad80358ab1066c5faac4bdc9daaa51b7d01d01b2cb501ec",
+          "afterBodySha256": "ab5e60372dcaea98878b5e00a3fff6c3ae54e68c380b3a14f96059761b421dc1"
+        }
+      ]
+    },
+    {
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "amendments": [
+        {
+          "at": "2026-10-13T04:01:37.861Z",
+          "reason": "Correct reversed valid-address termination condition to match image 5 and restore missing probability parentheses in EAT.",
+          "source": "Document page-fault diagram and the following numeric EAT example.",
+          "beforeSha256": "4e29c558fdec5953b9d3d410f8bbfc629274c4079118c43b0b0ebb99c5abe40c",
+          "afterSha256": "30d8e4a7cf7f92a2fb87d43823825f00872d5196267c7fc4403958247fdfa480",
+          "beforeBodySha256": "c3134d4a037743d46c4a09feeb1512c9370a66efc4fae8ef04946dc140f8046f",
+          "afterBodySha256": "4b21164084c0be3c022a3ed5980102701beb1c0a5cb8732b20a6635e70d9789b"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "055b49444b5e",
+      "document": "_wiki/Book/Real_MySQL/아키텍처/아키텍처.md",
+      "currentSha256": "0442bbaecadbd1bed7f1f0fce8bdd0e5a3c91e27425ffee0af410123f48e4ab3",
+      "originalPixelsCompared": false,
+      "result": "passed",
+      "reviewGroup": 0
+    },
+    {
+      "id": "090d41040473",
+      "document": "_wiki/Book/Real_MySQL/아키텍처/아키텍처.md",
+      "currentSha256": "091495481ed609c52da4b3ccca55cec7c3a2e528256954afdf9259c301d3d471",
+      "originalPixelsCompared": false,
+      "result": "passed",
+      "reviewGroup": 0
+    },
+    {
+      "id": "b43162264ce3",
+      "document": "_wiki/Book/Real_MySQL/아키텍처/아키텍처.md",
+      "currentSha256": "0caeb6bc54ba9f3a1f3e93f3a175cae774901b0ac54589134120f7eb3f92b9e4",
+      "originalPixelsCompared": false,
+      "result": "corrected-and-passed",
+      "reviewGroup": 0
+    },
+    {
+      "id": "18892651417d",
+      "document": "_wiki/Book/Real_MySQL/아키텍처/아키텍처.md",
+      "currentSha256": "33d894419e2738c18bc3831302d2f0c1487f458ca74bc725c589e3c9aebf92bd",
+      "originalPixelsCompared": false,
+      "result": "passed",
+      "reviewGroup": 0
+    },
+    {
+      "id": "716cd0e94ad1",
+      "document": "_wiki/Book/Real_MySQL/아키텍처/아키텍처.md",
+      "currentSha256": "75f8593d09e3b9d19ed132bc0a0291a5fedb0d0a0b22db40d17dba096215f582",
+      "originalPixelsCompared": false,
+      "result": "passed",
+      "reviewGroup": 0
+    },
+    {
+      "id": "05657bc4ef26",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/구글_드라이브_설계/구글_드라이브_설계.md",
+      "currentSha256": "ea689c3dd1b39adf37be1fa99fc164fbf89ba99257b58cab6e15fdb7590c0f9c",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 1
+    },
+    {
+      "id": "2b492357863f",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/구글_드라이브_설계/구글_드라이브_설계.md",
+      "currentSha256": "b7f78c2801b17a28eff05bcbab92ec2493c4e663e9b60a330cec2ded4405a02d",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 1
+    },
+    {
+      "id": "e8387fa4cc4f",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/뉴스_피드_시스템_설계/뉴스_피드_시스템_설계.md",
+      "currentSha256": "1726f52d868c0ecf1e396b046af0ad5532add8abacb3800bb9f52cbe49fb73e0",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 2
+    },
+    {
+      "id": "84909fc96de5",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/사용자_수에_따른_규모_확장성/사용자_수에_따른_규모_확장성.md",
+      "currentSha256": "1fec37066be28a22bcb06a732ef704f7c8d3b4c9ea2e4263e56bd347e2401f66",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 3
+    },
+    {
+      "id": "a540db058669",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/사용자_수에_따른_규모_확장성/사용자_수에_따른_규모_확장성.md",
+      "currentSha256": "775ee304cc3c496b71b9bf0ba0b1f1e293a1be5381c1c55e7f60402eb5403944",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 3
+    },
+    {
+      "id": "2772add96130",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/사용자_수에_따른_규모_확장성/사용자_수에_따른_규모_확장성.md",
+      "currentSha256": "39d0fd80e330e16016ee1922bb26b9701d49d5a0caaf88862c2333f28989e90f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 3
+    },
+    {
+      "id": "fe40fc6f0e92",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/사용자_수에_따른_규모_확장성/사용자_수에_따른_규모_확장성.md",
+      "currentSha256": "38010bba22d34db7936c8ea79d27baaca678e12ad1309d97ee47537a7bb62c6a",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 3
+    },
+    {
+      "id": "ed4e9853d778",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/사용자_수에_따른_규모_확장성/사용자_수에_따른_규모_확장성.md",
+      "currentSha256": "b829dd3337c89fc33e61efce31683b70099b3004afa8ed64716174f0e0930d2a",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 3
+    },
+    {
+      "id": "57ea4f12a0b6",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/사용자_수에_따른_규모_확장성/사용자_수에_따른_규모_확장성.md",
+      "currentSha256": "fe59612ca3e79a5ac738e158657462d9a3d93d4943fdc81641b4d64f5640c9f8",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 3
+    },
+    {
+      "id": "676c48e515a3",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/알림_시스템_설계/알림_시스템_설계.md",
+      "currentSha256": "e30ca2ae270195c1759fb41710d10f611a617a36b979fcae352d8b99a6eb50e3",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 4
+    },
+    {
+      "id": "24c5a3fb3082",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/알림_시스템_설계/알림_시스템_설계.md",
+      "currentSha256": "34e9edfe9126cff3500059c5006478fb1437fef23f8e7aa9aaeed760fb4df112",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 4
+    },
+    {
+      "id": "7f37462580bd",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/웹_크롤러_설계/웹_크롤러_설계.md",
+      "currentSha256": "b990382c823a216034cd79ee80e408f3905ea54ad0bac051b8270038d977539e",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 5
+    },
+    {
+      "id": "eb4a60bbf977",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/유튜브_설계/유튜브_설계.md",
+      "currentSha256": "210bfd32ee0b603f2033e41ef6f7de217c62bfa3ec0a5c173d5e8850234f1878",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 6
+    },
+    {
+      "id": "765f98be1a44",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/유튜브_설계/유튜브_설계.md",
+      "currentSha256": "542a837e93c115fc20c8c3e0d9d83026313367cf62f44d50aabde05e6762aa9d",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 6
+    },
+    {
+      "id": "bfb19771f963",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/유튜브_설계/유튜브_설계.md",
+      "currentSha256": "a6ae798528f79adb2d57e5378d077c8b50f8ebc711e2297706c14b1af317f644",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 6
+    },
+    {
+      "id": "9aa5a0f54d54",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/채팅_시스템_설계/채팅_시스템_설계.md",
+      "currentSha256": "6e6cfb98d825b969d7a2abb7c00956ecd8eb2bb8db97d629c6d0ac1b8680be47",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 7
+    },
+    {
+      "id": "621c94519658",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/처리율_제한_장치의_설계/처리율_제한_장치의_설계.md",
+      "currentSha256": "844c242a0fba449b6a057b41cdc85664d1d1ee319022fcf0f917d097fbe25a7c",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 8
+    },
+    {
+      "id": "d03945569e50",
+      "document": "_wiki/Book/가상_면접_사례로_배우는_대규모_시스템_설계_기초_1권/처리율_제한_장치의_설계/처리율_제한_장치의_설계.md",
+      "currentSha256": "edda52934782ab77abf3fd7f1c7ea4f078f8d9f81d31e7bad2ae8d5555b8daca",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 8
+    },
+    {
+      "id": "c0cd5e269426",
+      "document": "_wiki/Computer_Science/Database/DB_Introduction/DB_Introduction.md",
+      "currentSha256": "704ecb12fa2685aed8711f4e26779429b843e2d0b5af639b48a99ebd71321014",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 9
+    },
+    {
+      "id": "ff1e6fc5be4a",
+      "document": "_wiki/Computer_Science/Database/DB_Introduction/DB_Introduction.md",
+      "currentSha256": "3a9ed5029e08316b471c2e979bc2ca1abdf91bacf94df206b2c9383f84a3e77a",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 9
+    },
+    {
+      "id": "c90a66d96003",
+      "document": "_wiki/Computer_Science/Database/DB_Introduction/DB_Introduction.md",
+      "currentSha256": "35e99cb4911cc04521b47d5d40ee4488a28cce15542a16b93a973d981ce14508",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 9
+    },
+    {
+      "id": "7af461f51982",
+      "document": "_wiki/Computer_Science/Database/DB_Introduction/DB_Introduction.md",
+      "currentSha256": "9fca6a1a9cd3debf0853a0574b65d4f1f7d32470cc40a1b9571491d9ff3cbb19",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 9
+    },
+    {
+      "id": "9c7843d55b8d",
+      "document": "_wiki/Computer_Science/Database/Intermediate_SQL/Intermediate_SQL.md",
+      "currentSha256": "ca9d66b1290e1e2707dcd62dae628470184d2da68ec4292362ed0a1912ebef2b",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 10
+    },
+    {
+      "id": "e5bb45d6d444",
+      "document": "_wiki/Computer_Science/Database/Intermediate_SQL/Intermediate_SQL.md",
+      "currentSha256": "9359004cbc13a4281a47477baf986fce7c434bb1cae0223929969771e5f86545",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 10
+    },
+    {
+      "id": "5a380c8bc421",
+      "document": "_wiki/Computer_Science/Database/Intermediate_SQL/Intermediate_SQL.md",
+      "currentSha256": "9405370ae5683b4aa7ead7f71f959609579a690eb850d99cd23a1da30467e0d9",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 10
+    },
+    {
+      "id": "412f26c5bc02",
+      "document": "_wiki/Computer_Science/Database/Intermediate_SQL/Intermediate_SQL.md",
+      "currentSha256": "d266731502f23b0c1ef3709b4ea63d902bdbe6516e27f94b18e29d8358c56161",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 10
+    },
+    {
+      "id": "88ddeb2b7b33",
+      "document": "_wiki/Computer_Science/Database/Intermediate_SQL/Intermediate_SQL.md",
+      "currentSha256": "1be3a867a15f9a61539375af9295b2d6388389a36d13dcb662ac86e04ce06c06",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 10
+    },
+    {
+      "id": "2ec9359b5fee",
+      "document": "_wiki/Computer_Science/Database/Intermediate_SQL/Intermediate_SQL.md",
+      "currentSha256": "b787acc7e527a980d155ee922c70ea15f7f6493fd180cf84b568964eceeabdab",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 10
+    },
+    {
+      "id": "ae7e9a8cb7d8",
+      "document": "_wiki/Computer_Science/Database/Intermediate_SQL/Intermediate_SQL.md",
+      "currentSha256": "8eebd76070a30ce7ded63f3f6559263b2754d7ab808dec128b5f5f1751fb3ba2",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 10
+    },
+    {
+      "id": "b86638352704",
+      "document": "_wiki/Computer_Science/Database/Intermediate_SQL/Intermediate_SQL.md",
+      "currentSha256": "441dc9740455ae11651034a87189a884028da176950bf62b77afa246824d5a29",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 10
+    },
+    {
+      "id": "1b1c1788ab63",
+      "document": "_wiki/Computer_Science/Database/Introduction_to_SQL/Introduction_to_SQL.md",
+      "currentSha256": "9c5a469c3bcb1fe8bed0d60a495220cb55e4d3625332e7aa6621c74aefd12892",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 11
+    },
+    {
+      "id": "e03382639525",
+      "document": "_wiki/Computer_Science/Database/Introduction_to_SQL/Introduction_to_SQL.md",
+      "currentSha256": "f92059b88474eddb605a624151c7aa81466b577295c8e7b7c48e3251a2a88d72",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 11
+    },
+    {
+      "id": "0f7c837e0da4",
+      "document": "_wiki/Computer_Science/Database/Introduction_to_SQL/Introduction_to_SQL.md",
+      "currentSha256": "6ef015f028f5d5ec1d589ec43cba0f5085792ec09267de39f5f9b1cd5af0f1a1",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 11
+    },
+    {
+      "id": "c2c21a20fed7",
+      "document": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "currentSha256": "87112c8789685d65aa1969eafd8138d9b2f3a3b8da3032a7cbc198d63fe794e6",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 12
+    },
+    {
+      "id": "a681198f7af1",
+      "document": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "currentSha256": "48b494b29e557bce005eb0165af817da653fbc6d2146fdb209ad31b191e6b34b",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 12
+    },
+    {
+      "id": "7df177ad03ae",
+      "document": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "currentSha256": "32b97db41384c92d3fe3dd8accc3411b143a0c06a823707e7217c3ed03a85529",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 12
+    },
+    {
+      "id": "3612f8352a59",
+      "document": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "currentSha256": "3f019ce4cd9548df8d39d13d1e347983fc684cd6ae8180427ea845ae24acaa61",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 12
+    },
+    {
+      "id": "b84ec5cd06f3",
+      "document": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "currentSha256": "d4b28b1918484733a9ee22d3e0841ee2ca0664e0b7c91b3129fe10b95300c402",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 12
+    },
+    {
+      "id": "b59346c5dda6",
+      "document": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "currentSha256": "daea845a8956c0752a2f88898041749fd4308011a7fc4e1f8619d761eda820ea",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 12
+    },
+    {
+      "id": "004e6c106d37",
+      "document": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "currentSha256": "563620d6ee955414c0110d16818b9996be32b823461aa3aef85441c6cb1f4f25",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 12
+    },
+    {
+      "id": "0cf304fb53d9",
+      "document": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "currentSha256": "a34dce21eaa9f249a12d438ad94aeb164f7046e801f663792b994cfd3882849e",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 12
+    },
+    {
+      "id": "4140b0279cd5",
+      "document": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "currentSha256": "4696ca057085550321492133918fcbcaf84f2055270a5c1e4252c0bedc0ce493",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 12
+    },
+    {
+      "id": "34680191a523",
+      "document": "_wiki/Computer_Science/Database/Relational_Model/Relational_Model.md",
+      "currentSha256": "d87e32a944d9dbe0b8c8b4c60be00128d5f77730df5c977e6945078eeb498019",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 12
+    },
+    {
+      "id": "a859b8e43af3",
+      "document": "_wiki/Computer_Science/Design_Pattern/Abstract_Factory_Pattern/Abstract_Factory_Pattern.md",
+      "currentSha256": "91ab76e5db64b07e96199c2dbc7d04c2c49e31e0b41531159818f1b7041d10f2",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 13
+    },
+    {
+      "id": "80c595f9a821",
+      "document": "_wiki/Computer_Science/Design_Pattern/Abstract_Factory_Pattern/Abstract_Factory_Pattern.md",
+      "currentSha256": "a99a4ada9a9fb41147aab6c69663be5c50b6b5f296a01e07253d02265427a048",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 13
+    },
+    {
+      "id": "cd5a7582d010",
+      "document": "_wiki/Computer_Science/Design_Pattern/Abstract_Factory_Pattern/Abstract_Factory_Pattern.md",
+      "currentSha256": "e48e0fa9a34cdd97be30105d01791a1708ba35a5d43b520c7fad110f66c5f630",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 13
+    },
+    {
+      "id": "38bc8cb4f7bd",
+      "document": "_wiki/Computer_Science/Design_Pattern/Abstract_Factory_Pattern/Abstract_Factory_Pattern.md",
+      "currentSha256": "9213140fa99df4ba9b0a9541a1e2636a5961577c1a1ebeb7e57a10044cf2398b",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 13
+    },
+    {
+      "id": "5a3d5960a5c2",
+      "document": "_wiki/Computer_Science/Design_Pattern/Abstract_Factory_Pattern/Abstract_Factory_Pattern.md",
+      "currentSha256": "9ef01ca507628e11e992c60ca11a1a1970b8a13d62c79b1bc11c04654ae4daaa",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 13
+    },
+    {
+      "id": "2637a415c6eb",
+      "document": "_wiki/Computer_Science/Design_Pattern/Adapter_Pattern/Adapter_Pattern.md",
+      "currentSha256": "056aca075e8f054d057ee51ac2089e1aa3458f95861f0e503c53a1b6083742b2",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 14
+    },
+    {
+      "id": "680a6d149bf6",
+      "document": "_wiki/Computer_Science/Design_Pattern/Adapter_Pattern/Adapter_Pattern.md",
+      "currentSha256": "e2802000d64dc28ac2131d4406bc2bf30ddc6445f34cbcc0049d31e01602389e",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 14
+    },
+    {
+      "id": "7e31cf479233",
+      "document": "_wiki/Computer_Science/Design_Pattern/Adapter_Pattern/Adapter_Pattern.md",
+      "currentSha256": "80adc37dd993f003274347050e87be2090891731f44bc13592b83661135b36c3",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 14
+    },
+    {
+      "id": "7279048f7d10",
+      "document": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/Command_Pattern.md",
+      "currentSha256": "9a55ade8de1a737538d856d57c1b1f2d9f30c4a8f28767005ea57df3ecee2991",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 15
+    },
+    {
+      "id": "11bb97690e7e",
+      "document": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/Command_Pattern.md",
+      "currentSha256": "9e97ba8433f7da67a741edf75541a109a2d68909ca752c17018811d7761de643",
+      "originalPixelsCompared": true,
+      "result": "corrected-and-passed",
+      "reviewGroup": 15
+    },
+    {
+      "id": "fcbcaaa8f879",
+      "document": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/Command_Pattern.md",
+      "currentSha256": "742fa33ff31458cccd06a512b548a4f3ec8df32f2184d66ef615d1857e62e5e2",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 15
+    },
+    {
+      "id": "59a2d5df852e",
+      "document": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/Command_Pattern.md",
+      "currentSha256": "57cae93cc095fc949f487437870b6a5feb82b6219c98b54eebcbfbe205cec1ff",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 15
+    },
+    {
+      "id": "dc2e3178d1b3",
+      "document": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/Command_Pattern.md",
+      "currentSha256": "10234ceb4134724e28fcadac3e4c22e2ff1fff1c5e87ad2b098b682836d84cef",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 15
+    },
+    {
+      "id": "e9b0bcb352a8",
+      "document": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/Command_Pattern.md",
+      "currentSha256": "177ef315b93e35b3653ad9796d4061862a35408690abc8a23196193bffb33edd",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 15
+    },
+    {
+      "id": "883811e8d6c2",
+      "document": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/Command_Pattern.md",
+      "currentSha256": "9366df71529ce86a7b0bb037827a91d6efe7558f5dfd0808df9465aa1e253332",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 15
+    },
+    {
+      "id": "0fcd5b18031b",
+      "document": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/Pacade_Pattern.md",
+      "currentSha256": "6a90432c642afdcb5354d5c8b478a6b14e1ef310031371ba3d4f8ecc584165e5",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 16
+    },
+    {
+      "id": "bd119854b4c0",
+      "document": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/Pacade_Pattern.md",
+      "currentSha256": "d2263e1a1c699799128e03770484c3bad512324b46542b40329bdfa458a4d6fb",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 16
+    },
+    {
+      "id": "03790c3df5bf",
+      "document": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/Pacade_Pattern.md",
+      "currentSha256": "cd135698dcd2095222fe410f1fe0fc359cf7d7632eb370b9aad10226611b395c",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 16
+    },
+    {
+      "id": "d83b3a51753c",
+      "document": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/Pacade_Pattern.md",
+      "currentSha256": "8633cd668aace3c90bdd63d3871e10110e0e488d8e4c0ff84f2723b906ec943c",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 16
+    },
+    {
+      "id": "75c6c7d8b303",
+      "document": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/Pacade_Pattern.md",
+      "currentSha256": "dba50d6d0e715d818224302dddf0477e068062a5c35796dd223f32ef6b044dab",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 16
+    },
+    {
+      "id": "99901f2a4cb2",
+      "document": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/Pacade_Pattern.md",
+      "currentSha256": "68e8df299ca9a04242c8d2c9f61a7966a51914aa2c1fba87b4d9ffc4667a6f05",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 16
+    },
+    {
+      "id": "b39ce7ee92ed",
+      "document": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/Pacade_Pattern.md",
+      "currentSha256": "3a1c03216ab3741b9b172c22237c819a1841b2785be9fa844868e1e93bad1159",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 16
+    },
+    {
+      "id": "d80b23b4c106",
+      "document": "_wiki/Computer_Science/Design_Pattern/Factory_Method_Pattern/Factory_Method_Pattern.md",
+      "currentSha256": "f2c31dc1e3ca2139b6b8378b602056302f8a0887ffc124911ed53fb91db36aac",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 17
+    },
+    {
+      "id": "0b2642db90ad",
+      "document": "_wiki/Computer_Science/Design_Pattern/Factory_Method_Pattern/Factory_Method_Pattern.md",
+      "currentSha256": "e8e30d6c89ec6bdefe804a6277a9c53bc05520d888b10b2672df61ee0e349831",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 17
+    },
+    {
+      "id": "08ef998d85c2",
+      "document": "_wiki/Computer_Science/Design_Pattern/Factory_Method_Pattern/Factory_Method_Pattern.md",
+      "currentSha256": "548bd07da405247828614c422c1e51992e91abe9eac21ed097a790db5a66647e",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 17
+    },
+    {
+      "id": "e881ce8ad8c1",
+      "document": "_wiki/Computer_Science/Design_Pattern/Factory_Method_Pattern/Factory_Method_Pattern.md",
+      "currentSha256": "9fef7c33dca1883732dceb25f5d2e1eeb5567e50bf0203703032f7543dcd85a1",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 17
+    },
+    {
+      "id": "73b23b56e916",
+      "document": "_wiki/Computer_Science/Design_Pattern/Factory_Method_Pattern/Factory_Method_Pattern.md",
+      "currentSha256": "cd483390be33b7ca894d15b012da322bf5d6b45f08266f2c302b0e2ec64fb68c",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 17
+    },
+    {
+      "id": "9c92dd182c57",
+      "document": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "currentSha256": "f5038b27aba521682ee315c60c65f771714be80406eaf9c81f3b845b877c2f7b",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 18
+    },
+    {
+      "id": "071f52382b16",
+      "document": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "currentSha256": "ca7f9f75bbfb0e3bc8234eef7080b2d9cd3181f98fc27708ab113edf2980ba07",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 18
+    },
+    {
+      "id": "b580c708b5d7",
+      "document": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "currentSha256": "5597bb457dd56c866d6d34dc12c53c7881ddd325956e8e0672a4874453291d10",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 18
+    },
+    {
+      "id": "4a6e0d1e2ec4",
+      "document": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "currentSha256": "d46548f8b9eef78b549791e9bd814b570e3817dc93099319f02d93a3095f3938",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 18
+    },
+    {
+      "id": "2295d235e442",
+      "document": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "currentSha256": "d3510c29b96e494e8acab6344d4cddde8928cb19af73784364385bc8aa5f7944",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 18
+    },
+    {
+      "id": "2adc8ff58942",
+      "document": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "currentSha256": "4832d01f1680a6eef5e7a25d6bf0acc32f151d44d8bcdfbd51a523d8b5127aa2",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 18
+    },
+    {
+      "id": "e9cb03f3c8e0",
+      "document": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "currentSha256": "e9d208076ef136396ffbffdf9a27fdb9a3126e24e8f7adfe09f3b9752df823a5",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 18
+    },
+    {
+      "id": "f476feccd7aa",
+      "document": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "currentSha256": "2e55f906c39f7cbfae4a1799b8642679db9f2f6b4ba3cdbae42f9c068e1d82a7",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 18
+    },
+    {
+      "id": "a95c6dfb6341",
+      "document": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "currentSha256": "5c5c65ba398b22a73dc8ea2b1ea07da268224612937d4e26cdf5a123e8afbd18",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 18
+    },
+    {
+      "id": "f6d765015a36",
+      "document": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "currentSha256": "31bd9ecd35ac779d944810bec6a5432188e9ca5bc257996366169ca1329c45f3",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 18
+    },
+    {
+      "id": "2eb41aa2f230",
+      "document": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/Observer_Pattern.md",
+      "currentSha256": "e1a22f376dd8445b241d2baaeb9ac6f24f0d30a6927af61fc7c66db6fd35befc",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 18
+    },
+    {
+      "id": "e34dab46b62b",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "708021a94e210fc05cf46b20683d94a0488844ca82dc0f44a940ff0ae0583f27",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "5ef80d83906f",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "c149ef1e9152df8afa53c812fefcbb5881d8f18ce1cf9e95b5c042918263c197",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "991f25565390",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "e1d47c99be0590c77c1a1e920e484449e8f9d3282e48c09ddb5bdf5e2d8123fa",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "813d3d3c3f46",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "09ddc19ff61f59774ed5e0c01ffd1c2a65249c147454cb0d412f60a314223c1f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "187214e79280",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "5a7310ea20aaa46c3811df872f265d9716be5dee450061fb3c9a993e108112f1",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "9dfe14cc8af9",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "eb0ddfb5a08924b1bb03db408a0913f30f93dc3ef181bca5c0cb6b43eda8aab9",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "67515af5f425",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "b83b65f9462ca20f8e3ce973c413e4e27014632780a691c0688c8dbb697ce52b",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "79c32cb5885a",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "ac638ad6c2744baee29122a8d656e193fc058e35804294a0ba1d24461c7fc8ba",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "e3f7b3cb1279",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "cb0ab994efbadd3c78b59920d01b6b47b84a397799502c02a90bf2fff9615029",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "48b4d1ea0a9e",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "5a7c83ac3a6577ef454e8a39075e67d77f092f81d30d8c25d0a8a0cf11999006",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "dd4cd1a68ef9",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "d5a6c8fd2f5c22071a7c2c614dfe6ac6a66ca0df31a33e56ca888291460f262c",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "3d06bf2e6cd5",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "d13249103b4249105a4681988baa6d011af9e618317b9c75152f5179480d795f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "81fa39fb3002",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "dbe47e0197aa58af67899aad5eea0e99dd009fc9972acf2b31a6396ce9559f75",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "f9a1b0b366c5",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "38e8bdcf4691ea732f227a5c74e6b3db3e2f86dd36d5a7d8309bff586ce1ae7b",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "0d7d0f7b7035",
+      "document": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/SOLID_Design_Principle.md",
+      "currentSha256": "a16415e0ece627640d88e1e54a95a78a89d72c75939243e07044b5bcb2e329ce",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 19
+    },
+    {
+      "id": "f78267a5bc5d",
+      "document": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/Strategy_Pattern.md",
+      "currentSha256": "9b67bc1bd52bc0e6e7ec4242fcaf1c81daa140ef2db1d402b7a08ff1517c096f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 20
+    },
+    {
+      "id": "b5dc5a166468",
+      "document": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/Strategy_Pattern.md",
+      "currentSha256": "fca296a3a883765ec9f8b46a560eaa8d8d2375ad5413fb2378fd1c58865eb9d4",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 20
+    },
+    {
+      "id": "b4cc8cc73c8f",
+      "document": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/Strategy_Pattern.md",
+      "currentSha256": "34c4e0e484cbb8d4f967eaf1c607cf17996f7f52d9bd752a4c55ea7998b2b078",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 20
+    },
+    {
+      "id": "4b0b359cb438",
+      "document": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/Strategy_Pattern.md",
+      "currentSha256": "2f2fe5aa0e63574c66a1ab2e71cd7bde155cd998f4e372479569e911f7554ad1",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 20
+    },
+    {
+      "id": "2cebce069ab4",
+      "document": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/Strategy_Pattern.md",
+      "currentSha256": "2aaeed81dc690679b2a0a30f51b61a90ddd5d65d40aa2a77f1dd61252ab4f300",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 20
+    },
+    {
+      "id": "3740e7783a1f",
+      "document": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/Strategy_Pattern.md",
+      "currentSha256": "e57d1df03e79a43a65420b634718d662cbe4700cde09f41156c6ff2a20ebb59c",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 20
+    },
+    {
+      "id": "1d1bc626b931",
+      "document": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/Strategy_Pattern.md",
+      "currentSha256": "cf4c7e2d6a655b06ce005265ad89889b4f19adf1fbd1bdf94c3a7edcd8ff39a0",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 20
+    },
+    {
+      "id": "6978570c8eba",
+      "document": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/Strategy_Pattern.md",
+      "currentSha256": "a9b66c1d3b1d098c60afea087f86c9ec3663bd3d9a33c96225e36eb123e8b6c8",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 20
+    },
+    {
+      "id": "a0a49df87cfe",
+      "document": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/Strategy_Pattern.md",
+      "currentSha256": "5d7ac6145e60102e9cd09072a3fa009ce904e2245bf5cf3454eed395296c151e",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 20
+    },
+    {
+      "id": "67765c01a2e4",
+      "document": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/Strategy_Pattern.md",
+      "currentSha256": "8d98f34f5e06e4f39e434b9705cd3e2cbe006d1357217212a500ea11733759e5",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 20
+    },
+    {
+      "id": "a67fdedd42fb",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "2af23f88463db8da5f3c8020f904250be8213d5880c4a8a5f3d191e93c763e7e",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "788c8b299c40",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "af0b6425f762a1289bdd4aec1519f567e4c8110470e18d3c0d973b3e63801142",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "3bbf9be2f497",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "9c555736e9304b81fcc5765804fce592d23eb5b5148f87fb3c62d4151760f334",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "d813f46a1af9",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "f8d3c2369dcdabff7b1b0f889602a4396650dfc5853a2d4400efbadd3929385b",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "bfefa2b0c7e4",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "e040433e67b39aef8ab773b55c3f2ce6d36d63caeafe242d7c9c16fbc15be69a",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "d2b520dea1a6",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "5023645fd7c0672fd1ea0cd539ee391377c96e3da28c232ee50996598930784d",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "cec25d81cb3c",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "e30682076305011f55e282a9d53f09f06f48d4bdae6b153af0ad3e1acfc36046",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "76b0840b41fc",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "7be0319ce73b8f6a4142465db6736e8ce6af32cc08acf73bcfc67a4ccdca6c94",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "2a1bf5fc3cd8",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "e9c7641c069eb36702fa4b1ac15ea3aba85a5cbc055a390bb270aea2f95e44ed",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "688fd8d31941",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "8966303aafd33c3fd9fd0ab19c90bd158ebc175d79a8d2a04bb5e87d3d3e1b6e",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "de96972abe8d",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "c937a42253368910906b1c7216dcf96cd1809e4c1a38a11af04e7e87e2c6f741",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "49f6da494ac9",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "a00c7f9030fb15520671f29dd9b5f76ca28564cb65952b39270d1e81f9681f4a",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "cef4aa12b611",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "f789351ee927ae9eb3d93720fdb3ce222489586700f81616a08047a4849742e9",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "50b5d7c321aa",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "005f9d2565cf79ce7a39bc636ec0bb7fcd3bdc5b6a2adf89cc10aa9b1b3a723a",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "f60185d45367",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "e8eafe1fe87fbf3f208ab7a5326fb6dff411d815ec0dbbec557ae11463892b4c",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "6763c4dc1e0f",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "3549aee311a636e3087680d3f87077e25ff9ca263f0852621e7c417593b83851",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "b039a0bb4790",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "383a48ab6b362a21cd1a307c54a29f4f38f46678a94a9d1f511acbd014f02112",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "687fce398ddf",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "2aa77ec768e22c3260083d9af1ee4255b4a2ab2cb0af7693701a5446530610a1",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "1b88ef0c039e",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "fa3aef081e3f870a7c15840e7c47d4da15ca5afe338c429bc62eac40fe072418",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "2522caa14715",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "921de03f767686e070866cbd176209a41dc26a563347d6d0d5ace1c78f729519",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "cdc04ed84c42",
+      "document": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/CPU_Scheduling.md",
+      "currentSha256": "75db30b6f0522bb7511793e59f3c08d2807ed218ee95a510d34f61e8c395d632",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 21
+    },
+    {
+      "id": "fc968afa88df",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "c611bcd6d1b481c397622fa0fe9b43074bd39547b9d51fd6660c0bc5cdf4c5e8",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "d78382b3e6c5",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "de0051ed79540aceebf9e72dae3a015e99bda3ce9d33f1aaed866d154021eb2d",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "0acede667cc1",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "7db8a09a17f916732b4be5a94063543ba68d15af75633d6cce52f71816987ab0",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "9b98737b45e5",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "53dc55886860eeccd7dba8b47caa1ffa46c67be22355518efd0d1d9448600380",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "16feaa22f32a",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "45a3de6e70d6e99bff3e3001b7867623c60a3c5c1c7db9e72a96446cd9712691",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "b8bd50189660",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "a0f76de2853f3b1ab7fb0ee8e4a81d88d9158ae4b5c4e6db6394f2d4e3b8096f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "bf5c13e6bf6c",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "d324ff6842608c087c58143f6b384101d492e300c7a7728fa1f61892814bff17",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "5e546acac98e",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "9f9a3747e90a7bb2fd00dcb78be4da6ff8849c69175c78c4c49eda40b3b39e14",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "74d2c6034554",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "25d0a88b43e625ab5a1acddf202810d318b1ea7e35f7843caf377ee9421b26c9",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "e6f16b67f59c",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "63f016ccb7e338b2373f69434aa8965fec7cfc874f1dc5c96f16514573bb7db3",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "724d56fe0f43",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "1f5f8f5e5f2368060ccfec5d5c26f0f52edf01b403fc73eebbee4ad42c614695",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "8811f4db3540",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "69eb81d082284df18e01732ff9b660ff47fac508550f11ca9829786c2f170558",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "ffc5b8731bf6",
+      "document": "_wiki/Computer_Science/Operating_System/Deadlocks/Deadlocks.md",
+      "currentSha256": "5bdf2eb04f85729650361890866eed19a0f8035620b30dfe328937fe9a83ec5f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 22
+    },
+    {
+      "id": "530181df4ca9",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "914eabb33666b24a0f1879da1b8fb8fdb7ba0851397e679eb8aefd06d3e67b82",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "ca27eccfb353",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "97ff524ff264a5c74ee2db30315181804cd141d803704ee6604d70ce973fe49e",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "50a166fda122",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "e7fe8e4b092d7c9fb610d2735ce6e0e8d69d862b1c6c8b0f0c63ab3dd85950a6",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "72daf08b336d",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "a132d56f778f6ad26169e3aa4a78fc1710e309122dfb43b76749f91d77967fe4",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "eefa4cbbc4e5",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "68af9f1a58363d2ca6aca156c6656dd6ab8eef9c17ad41f16f0f0cff4fba130f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "260017f3769b",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "3f857728c235d067b91b4687c62c04c742412afcf9e3cf2ac0af6d2e2c25e6bd",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "09c0e02f4760",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "eb507ecb76a5ae512026bcf8009ae31213bd67b9c5e027f1fd1a8a7cedf4b43b",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "995401bd63a6",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "8a2628874f92278ed57525b20284f40bdb713b6a35502ecaeb62c5df12450a36",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "368fae0c842b",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "baca673955a4f23115eaf1cc3c287eae9c1d5828d53174c2ee05f2222090ed26",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "01ca929a6d66",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "3a557a5785aa4ec59315edd1ebba7d6b55904ac4c82fd2aca22281079efe68bc",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "324eacd1c8d7",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "2c61f797f42f221ab65095e7dd2f9eaf1ddb3178ac1dbfdf510340c6458573a6",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "76e4af33ae82",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "608d3ecc8f34f3ab20f0bc6360301c7be7a8bcfa63c033311bca8d3a2b049988",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "29ce5a3ea205",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "95fb2492ef81985961527f4b4b1d23b9366847b746787c1e5207a4c730aae6cd",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "940da0cb2f0c",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "ecbc3f7f20d1254da1daddea74e235d0c1de42efe242508b6ffb81877ad5b92a",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "da7166f5cd21",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "51bff52cb16811c754bef319855d06d061667cc8c6ce2b2672eb0053ddd2b6d0",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "c4de306634c0",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "8fe32d00eefe9ebc23d492204e45b767878663964b515eed105f4d8e6ad86e43",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "a370283240f1",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "30639cd41d6c0a0aaf4ca7cccdda22ac991146a3fcb0ed1c0b0b8e5a73627295",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "f411a8ced807",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "2a9263cd8e3b6b3d3cec0608ce3b4fe437b94e3fe33c7d0c5698319042dbf754",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "f2c81f77f6f6",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "78361d91a20dfdf8301a97d1b8bf57f1b48f9b62e979826b907800ae8c817bcb",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "155cea3e30a4",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "8c201eb7f4f7396cd0109ace74c68b30a358296ed72d93f182a86fbc9e1af053",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "33247869ab45",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "db59283ae73fd6bb2e8ee59ff8b2d7809321943e9a3038228b2b1d834ddf2c60",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "673905b44e57",
+      "document": "_wiki/Computer_Science/Operating_System/Main_Memory/Main_Memory.md",
+      "currentSha256": "422ded7f27407947cb6c8c39bbbf7affecb908437c59d699b4d8ede9364fa0d3",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 23
+    },
+    {
+      "id": "22af983c4117",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "8fc3d5a155f599e359feed5d99393ff8a1764fa35304e719dfc6712bfd020a27",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "0c3b910bbe5d",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "0af8fefa1f2405f66720c16f0522bf04a3d5317f752d59547f531acd1f10c43a",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "f299d8e1337f",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "a99003eb81e82ce7b3b166cec72aeff13f2bb3f6759588ab7c7aa6e27f6ec91e",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "2f853b4950b0",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "c202c34952f575174881f2474ef82970ceabb0fd7a9de7215e4b76cdfca0ba38",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "ef5c85ab06e3",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "3efaa5404fb1d3465dd4102b217b22cb955bfe8a209bba70113b113516ec9502",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "344c8b8971bf",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "9fa18311efed0f954ad249b87af4dd3d36ec662527f42674d462dbaa97614c8b",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "e42ce35e0ff6",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "14d29256077fb90a9b502a249d7798ce9db5946957902846665528cf0d884716",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "d89bd1137598",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "4e1532b23443e44f7286e4bcc3ca6d1556768d377acd927d8420a859b5b291ee",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "d73d972a90dc",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "1c64d1fa019af80d29ea2802704a9728cec5b35aaa9a14295665fc922150ed88",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "04766c08a7dc",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "b88ca8220036b0c5616a1ca17ac8f434dac106ad503fee9b024425022a19e01b",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "605ed3b4d441",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "9ee91c1430e7c6f1f7a9c82e6e7c0be6672faa9684d81decaa234e16876cf51a",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "d1a99695a3b4",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "f2302b5f1be2122191392991c38d7ce17353a28c71a206ca04c85f18013900ed",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "9dce0d258bbc",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "838ef762f6e844c22d45ee0dda4a2f259d75720cbeb6480ed3e1b0fa5b2d5173",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "d41121678834",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "0c1e5f30a14a51269c740b7079e1851dad41f652528e85df18932be5aaa9ea77",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "399a2f0f1860",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "97b0abe81c1fa30445a28b96dcf5d6a5b300255db22ee27d5cb641119b8755cd",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "a423afae9f42",
+      "document": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/Operating_System_Introduction.md",
+      "currentSha256": "110d1ae1954bfb8669e72a15bedceac09cc69fd6efc4482465e7f015e9d4e924",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 24
+    },
+    {
+      "id": "7f8423870d52",
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "currentSha256": "46f57a6b00754916083caaa232405700a4101ba35daf29ce1919241f83a2ef04",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 25
+    },
+    {
+      "id": "faeee01f9e52",
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "currentSha256": "acf0a9107b1e7303edfa2cf8e018ccff4c84dcd1cf56db81e4f0b115fc4d7085",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 25
+    },
+    {
+      "id": "d77a02650593",
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "currentSha256": "d71fdf07e76d85306d87fb8fe2425e622b367d8a4a7695c381cc1a10b99d995c",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 25
+    },
+    {
+      "id": "e8c99231554e",
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "currentSha256": "f37f96bcdb229c28b1d10938b0560eadc25c2900c915057937ace5c584ee7cc1",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 25
+    },
+    {
+      "id": "d2e840cb77b6",
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "currentSha256": "6236213986de14fb8340700176a7d8db806b6ea584329b5af77327689689d294",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 25
+    },
+    {
+      "id": "72d11610391d",
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "currentSha256": "53cb238f14694aab0b1b25efb0cb1f15c80e40f5fa49e2c5374be5c88669c48b",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 25
+    },
+    {
+      "id": "2878aac55873",
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "currentSha256": "86181864c061b56e1ae78e8716ccac3537a90f032f68bc3034fb4c8abf55e082",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 25
+    },
+    {
+      "id": "72955e208c58",
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "currentSha256": "434b8a6091322c0a1ae371fceeebad50e1cebd95f41fe9c50a4122a1d3792701",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 25
+    },
+    {
+      "id": "5b3a2d9fd455",
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "currentSha256": "cf40c7c6d4bfd0f5aa5fd8f03b926a93542b0bd4ffe8313384d6cfb333c75184",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 25
+    },
+    {
+      "id": "5324d78f9010",
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "currentSha256": "309c2d23997e9d86f605494203d66ba0c8f62edf0a989b69494a199142960116",
+      "originalPixelsCompared": true,
+      "result": "corrected-and-passed",
+      "reviewGroup": 25
+    },
+    {
+      "id": "033a65e7d891",
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "currentSha256": "e3245c933a67a8fa2389e16ee5d3b558906233b1c590e53ecf486963e8af5948",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 25
+    },
+    {
+      "id": "dec66ee21da6",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "1f31aeaa287ffdba43e5e8f9a6a2318d2fd35e601b37318b5a63b1d5ccb1d7ac",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "125d1a327dc5",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "58816b2f4af132abfe8a65580fb093283a1a2ae88f7519b75ef5d049a0c6efa5",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "693d89ffd436",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "e4fb01218fe5d82766a38b491ba51e742d32b161c11698c2805ee7787b220255",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "15ce616018ac",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "3657d97213e205792e8370102bf26ac9df04ead90d976d01b0e910dc9daac234",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "c8722b598662",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "28f98b4392872239f94135b271556e266e3dfab53375b81ead756d5e641545a4",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "e43a56770f28",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "02a0ede1e5301762f2a00fdc0a30d02ee66e0fb0a9796081c3766908282ac420",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "bd637aaf3eff",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "b57819736543d728237c697270f55bf856e62b1644b8d68f096abc0af3941094",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "e13d2fb68528",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "9f84875f8c761441da66ed80f81136264b571dcfb7d85a7ffff8aa9f796920e1",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "44c74bfbc61b",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "a2bda4c7d68827a0dca311e3314cdbb336629850ec6cb10775a652ac211e57e2",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "73a137320996",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "d9ce22ba4771d37affe2a45a7919d321a9498b00070bba8259e4dca524042bfa",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "8e2d78055ba8",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "024bbb3ce3febdf8fe588b0c8ab797b588aabbddb3e31ecc8d9ee349153248dc",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "a864c5cc279f",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "6d74d91bc30ae4f03c21f2a17e20700b48788a0a13b504f5c1c0fbbf11a2371f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "6f7a76726b84",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "21e04b64e8807797782c092508fd210b10fe08ab5488548634dc7f7f8b87b301",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "08117acb2825",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "5ae60632e649a4d946a433ecdd8da10481d1a3014848fd49acb624598cc6c719",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "9e848b62dd52",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "7a903622201d92b2f315310fdc4606d31365d3d0df1331ad4d3f7217a0b324f2",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "96d71f158bc5",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "3c15f996ab4b416c6d28e1911c0cbb3161cb79dfe84dddae07a435a177c51495",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "137af4a9f053",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "48db7cce3658b96ba20bff7e85296d211e8d261045bd554560e3353cffbebda5",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "966a6db4c82d",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "adc28e759878a14bea4361e0788737e6a76b35bada1ef4fa9023bdab15bd7fd7",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "3462195e416d",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "c5cf12baf13bbd98d5b66cbb344efeb3dd6a18b62cf3fe53b93fd097752195e0",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "c29bed96343e",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "d017f4e3271c93e349795715e98e0e8383b1ffba1f5ccca01d8119f595bcaf24",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "de2f036a0497",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "5cfb50417ff1dca568c1a4853bea7bc04ca0deda7325b55e26308e9d96573bf4",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "9d0a7b311af1",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "0f0c5492dcc56d87fa5474474aaa169c8c9c078fecad9faac068ff710067cc63",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "fb6824bf1f30",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "8888ed0e025888876512d0ea12742ef5ffefe7f536d8131b78680653d6fe65d8",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "c50a6264c275",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "7daa89ce6ab4dafb94b3afa42172d49736c9599d63f2ef21926e923d3281a6fb",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "1cc1604b6ae8",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "a2a4fe3709636c969618790af940667a2cc61e56fc5dc1137f7b095da135834e",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "edb09360275d",
+      "document": "_wiki/Computer_Science/Operating_System/Storage_Management/Storage_Management.md",
+      "currentSha256": "a0c4b7ea89041b2197a936daf146b9897369ed1e77d4e6ce5d3907942ffff91b",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 26
+    },
+    {
+      "id": "c1bbaed43ef0",
+      "document": "_wiki/Computer_Science/Operating_System/Synchronization_Examples/Synchronization_Examples.md",
+      "currentSha256": "1153e4046e60e4154474175480f1bb46549c34eee4c24064ce4d0e9b6fc5fb18",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 27
+    },
+    {
+      "id": "7579ba1769c4",
+      "document": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/Synchronization_Tools.md",
+      "currentSha256": "018e12caefcc4e3b7aec168e8ea30e921d49e92534a925442a5e506df587951a",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 28
+    },
+    {
+      "id": "fb5d7da557d8",
+      "document": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/Synchronization_Tools.md",
+      "currentSha256": "2e23c721e96ffec7c2125fbeb6b726017b7a387049b91a241c8e40a113d27120",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 28
+    },
+    {
+      "id": "93c880715f8d",
+      "document": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/Synchronization_Tools.md",
+      "currentSha256": "0d3d3824de0a4c58a415d15090f315198edc3365150c914496409f59cdf12f34",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 28
+    },
+    {
+      "id": "21520a662098",
+      "document": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/Synchronization_Tools.md",
+      "currentSha256": "d866e540dc41d99f4e972ae469fb2c716a0062e10c35ec4cb659ceb3ca04659a",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 28
+    },
+    {
+      "id": "e61e170d0846",
+      "document": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/Synchronization_Tools.md",
+      "currentSha256": "6fd8e1b0b96316d39e59bc4dc0f5cc848c1409de1722099c9a2de7e1dbb33383",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 28
+    },
+    {
+      "id": "27c35fbeb2a6",
+      "document": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/Synchronization_Tools.md",
+      "currentSha256": "d713a543114bb41b9efa2d194983c21b38e7ecd59b162a4ca3163918112880da",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 28
+    },
+    {
+      "id": "96ef89abae37",
+      "document": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/Thread_&_Concurrency.md",
+      "currentSha256": "ea8a6e44365f2dd197eab3d4ee8e2e657a1fd38945cfec288bb1ccff201dedb6",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 29
+    },
+    {
+      "id": "2c39b94e8a27",
+      "document": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/Thread_&_Concurrency.md",
+      "currentSha256": "876833d57ee656d38334727e44b4f308fb77ab5387ed0320971c151482fba55d",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 29
+    },
+    {
+      "id": "1126b9dfc0d7",
+      "document": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/Thread_&_Concurrency.md",
+      "currentSha256": "06517f30a0c3c34598a9a311a551f4b573227938c593e23bd8c798195dc927fc",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 29
+    },
+    {
+      "id": "12ff315be894",
+      "document": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/Thread_&_Concurrency.md",
+      "currentSha256": "2ef31036975fd1be0b7985c6031bb48c3a563c2608af892e77f41f9c274a1406",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 29
+    },
+    {
+      "id": "77a2838e56e3",
+      "document": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/Thread_&_Concurrency.md",
+      "currentSha256": "0aa30c84425658838a4f6d86b23dd93dc7b88054a9de827ec6ccf9e8f3a822d8",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 29
+    },
+    {
+      "id": "7f51e369fcea",
+      "document": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/Thread_&_Concurrency.md",
+      "currentSha256": "3c8d085b5687b17458d08fa445162d4f619c1c4cb0be615c5e048ed8d09bcd4c",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 29
+    },
+    {
+      "id": "1140f43381a1",
+      "document": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/Thread_&_Concurrency.md",
+      "currentSha256": "4c4f52c8443b9052b8ac4c0196aa8825e39474eb6553ab6d7829f6fc63de315f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 29
+    },
+    {
+      "id": "4acda1c4af12",
+      "document": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/Thread_&_Concurrency.md",
+      "currentSha256": "c3840e4244d274186c070d2efdabfbe074821c3b5508a5da5a6791abea7845b3",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 29
+    },
+    {
+      "id": "5ea4de758c5f",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "e906b49edc0374e0927b6cfe2001d74a1b5814806f757adf927fcefc82ab94cf",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "83249cf9a160",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "895a001a5cb4a20d5d53c320775114b365d26c0daddcc5d5a4d4cf197c5e4d5f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "0111e750d366",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "c8a44af626e195b92f1e51686903bbe37cce0d810b976d550fa1adaa33b39e55",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "41075bf181f7",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "7ac1d019b857cf90255a9ed7501c661ec3cca81d772e8da60e137e1b90bc7df3",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "4deee55dae11",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "df0e44c150b0117880688f5ea1f067777c1a9e702782ade8577b1eb14c286cd8",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "1e3ee4653f40",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "6054a7f6b2cb01179b9ac761242786b4400ef5f604207c390798ec2aa09e8d9f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "8a7781e579b0",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "bdb37b4819965c9d358f9880024bab28887f4bd41bdf0b76b27f4c2a7ab415a1",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "21915a2d7acb",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "a56cfe7a4e6a862f87c260d66d455e7585a86be50e8c7c9c07f69065e9d9330f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "63cb1e01e1a5",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "d25216ca03fcfc93fbffbf950a715d71df6078c3231b25584d4d30908918ce52",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "597afb6a6e1b",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "3f6e4fe283adebbaea28675d7076ecce5ae47b0c44d1a46d56a9a9f7d799d687",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "1f140333bad8",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "2a900c098cacecb3c53e5844fe6497fad6a2d46d636747e8c79cd09252793fbf",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "13e77d8715e8",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "1a9ca620402c4ba9616bac2dcece028af64360876d8e587fb696dad5b9f8c834",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "f0c01825bfc6",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "d345f6ce8a91aed59ef9778d86525f5afb868100c214c1c96c98932ea526932e",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "f2abbf24b38a",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "0a7012452f4ed159fc65173f0d2a95415d5676e61dab4b5fb9648649a9f2a620",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "52939d721a6c",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "cf5a51a7c47e1106e2d88ed223b4724c3f94de01d3ef89b2e1ea4f3377042c7c",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "0d32f376b334",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "dfed1e70aad3cbc59454176d7dbd03b079461be44a7ae723eedc85f67cc8104a",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "0ef69041a5d9",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "d3c9381121f585a11353093d5888876f1a720460dd74849bdf5dc184bbac0bcb",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "9225483afd24",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "aadd5ff1117ecb0944edbcf7094ae7d9b25b489ffe6e81956d783e6f8355db50",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "92d066c76a04",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "f6ef1852d89089d3beb6621b6e6a08c790e3d228a84f77f5c4a20fbbd274eb52",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "5a845683e428",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "a10a628cee1af2228ee85ed18d8cbe9fdcc3497507f75c2a6db736e98d6ca5ee",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "3ebb7b743264",
+      "document": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+      "currentSha256": "b896bc46823101d1894af0179cd84ee5fea336bbdde351c43c0429b78fdf5d0f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 30
+    },
+    {
+      "id": "e8ed742aaf72",
+      "document": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance와_@MappedSuperClass/Annotation_@Inheritance와_@MappedSuperClass.md",
+      "currentSha256": "8c52d8168836a3cf06de3e2f6277dac905aa9bea85f2a4c6d08785455188b1b2",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 31
+    },
+    {
+      "id": "0b1c38edf052",
+      "document": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance와_@MappedSuperClass/Annotation_@Inheritance와_@MappedSuperClass.md",
+      "currentSha256": "e2bbc4bb103ae8e8b6a8051d24b57303169c3ea1ba9c2f8a385047b621947a4c",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 31
+    },
+    {
+      "id": "ce4c86ad83d5",
+      "document": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance와_@MappedSuperClass/Annotation_@Inheritance와_@MappedSuperClass.md",
+      "currentSha256": "f5e70b884c46efb338c127d7e9b699abcf71ec31a1d47fa3c69f49aead1e8159",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 31
+    },
+    {
+      "id": "4749122415f3",
+      "document": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance와_@MappedSuperClass/Annotation_@Inheritance와_@MappedSuperClass.md",
+      "currentSha256": "4309d3c5d4c244cd7386e9fc3a5e275ae3fac947a2c467ac84324674c2ded9e0",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 31
+    },
+    {
+      "id": "a7dbc523341e",
+      "document": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance와_@MappedSuperClass/Annotation_@Inheritance와_@MappedSuperClass.md",
+      "currentSha256": "1523443d2b1884626861b0405980798fa85575fab4e2e581f8de6a7e9c52843d",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 31
+    },
+    {
+      "id": "7771c83b00b7",
+      "document": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance와_@MappedSuperClass/Annotation_@Inheritance와_@MappedSuperClass.md",
+      "currentSha256": "62a23968fb32d1c016e2d0b10d200e787380484bb4f240ba9bd53aa8174a37bf",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 31
+    },
+    {
+      "id": "30841f9200e2",
+      "document": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance와_@MappedSuperClass/Annotation_@Inheritance와_@MappedSuperClass.md",
+      "currentSha256": "fc0d3fef651e46bb5cd1ecb39813e540f86036ced42e437b0eb46542062aee76",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 31
+    },
+    {
+      "id": "e127a6742954",
+      "document": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance와_@MappedSuperClass/Annotation_@Inheritance와_@MappedSuperClass.md",
+      "currentSha256": "720a8ad5f9dae21df14ea7c96a73a08aeefb4efcc4a3873abdcd550290cf46bd",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 31
+    },
+    {
+      "id": "829b4946e827",
+      "document": "_wiki/Programming_Language/Java/Functional_Interface/Functional_Interface.md",
+      "currentSha256": "6114d538543d3b199979736c0b47948ea6b92db62530c47c37403fcc191c878f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 32
+    },
+    {
+      "id": "a372ca763862",
+      "document": "_wiki/Programming_Language/Java/Functional_Interface/Functional_Interface.md",
+      "currentSha256": "23aec1a65d45bdb7a5cb036d434b501bbe6a2a170b0344e742c296b25a0d3d33",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 32
+    },
+    {
+      "id": "5cfdac1eb9bf",
+      "document": "_wiki/Programming_Language/Java/스트림_소개와_파이프라인/스트림_소개와_파이프라인.md",
+      "currentSha256": "f4b06139fa5d538e62eaa6cca9f26d68442c8d9e61e186dfaa00f9f1ec37b72e",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 33
+    },
+    {
+      "id": "bdd620d2839f",
+      "document": "_wiki/Programming_Language/Java/스트림_소개와_파이프라인/스트림_소개와_파이프라인.md",
+      "currentSha256": "7aaa25bb73780874217dfd67c3862660b18617062704badd09883ad44f556400",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 33
+    },
+    {
+      "id": "8770af8255a9",
+      "document": "_wiki/Programming_Language/Java/스트림_소개와_파이프라인/스트림_소개와_파이프라인.md",
+      "currentSha256": "3e148eca6f54fda355cbe1a7ecaa07331c8b6ba868b05f8c802033eaa9200d73",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 33
+    },
+    {
+      "id": "351c7156a8d3",
+      "document": "_wiki/Programming_Language/Java/스트림과_병렬_처리/스트림과_병렬_처리.md",
+      "currentSha256": "853c45a2856100634e4b7c4dbc445395809a47c63fa4ce9e98a6f96fb6d058da",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 34
+    },
+    {
+      "id": "a565584b06db",
+      "document": "_wiki/Programming_Language/Java/스트림과_여러_메소드/스트림과_여러_메소드.md",
+      "currentSha256": "d08564eb720e53e6d0e53d456de4d059372a9b0175fe9069cac908b50528e699",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 35
+    },
+    {
+      "id": "0befa50742dd",
+      "document": "_wiki/Programming_Language/Java/스트림과_여러_메소드/스트림과_여러_메소드.md",
+      "currentSha256": "4371b34eff37a09e599be337efc42b70d07c0f30805b6fcf67fd4a04ce8b689f",
+      "originalPixelsCompared": true,
+      "result": "passed",
+      "reviewGroup": 35
+    }
+  ],
+  "summary": {
+    "documents": 36,
+    "generatedImagesReviewed": 272,
+    "originalPixelPairsCompared": 267,
+    "unavailableOriginals": 5,
+    "correctedImages": 3,
+    "correctedDocuments": 3
+  },
+  "validation": {
+    "numeric": "docs/image-refresh/second-review-numeric.json",
+    "integrity": "docs/image-refresh/audit.json",
+    "output": "docs/image-refresh/output-audit.json",
+    "browser": "docs/image-refresh/browser-audit.json",
+    "safetyTests": "6/6 passed",
+    "pngDecode": "3/3 corrected PNGs verified and loaded using Pillow"
+  },
+  "completedAt": "2026-10-13T04:07:51.530Z",
+  "humanReport": "docs/image-refresh/second-review.md"
+}

@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Column headers in exact order: course_id | prereq_id",
+      "passed": true,
+      "evidence": "Headers course_id,prereq_id appear in correct order."
+    },
+    {
+      "requirement": "Exactly 2 data rows in exact order: CS-210 | CS-101 ; CS-347 | CS-101",
+      "passed": true,
+      "evidence": "Exactly two data rows CS-210 CS-101 andCS-347 CS-101, matching fixture."
+    },
+    {
+      "requirement": "CS-315 is absent from prereq. CS-347 is present.",
+      "passed": true,
+      "evidence": "CS-315 absent andCS-347 present, also explicitly noted below table."
+    },
+    {
+      "requirement": "Footer explicitly identifies an original illustrative dataset; all table cells readable without copied textbook names/data.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer present and all identifiers readable."
+    }
+  ],
+  "notes": "Pass. Each row, field and NULL position compared visually with independently computed examples/sql-joins.json."
+}

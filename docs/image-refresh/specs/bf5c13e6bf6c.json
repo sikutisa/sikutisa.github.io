@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Unsafe allocation with claim cycle",
+  "alt": "R2를 T2에 할당하면 미래 요청 간선을 포함한 순환이 생기는 불안전 상태",
+  "requiredChecks": [
+    "Nodes T1,T2; R1,R2 single instances assigned respectively to T1 and T2.",
+    "Solid assignment R1→T1 and R2→T2; solid request T2→R1; dashed claim T1→R2 only.",
+    "Cycle R1→T1⇢R2→T2→R1 includes a potential claim; label Unsafe allocation, not asserted currently deadlocked."
+  ],
+  "prompt": "Use case: scientific-educational. Original raster PNG educational diagram for IT technical blog. White opaque background, clean dark navy sans-serif text, blue and teal accents, no logo/watermark/decoration. Big readable English labels, generous spacing, original composition. For graphs thread circles, resource boxes, distinct arrowhead at destination. Blue solid requests, teal solid assignments, gray dashed potential claims. Title: A proposed allocation makes the state unsafe. Clockwise four-node ring R1 upper left, T1 upper right, R2 lower right, T2 lower left. Edges: R1→T1 teal solid assigned; T1→R2 gray dashed future claim; R2→T2 teal solid assigned; T2→R1 blue solid current request. Each resource one dot. Exactly four edges, no extra T2→R2 claim. Caption: Allocating R2 to T2 creates a cycle including a claim edge. Status: Unsafe allocation. Footer: Unsafe does not necessarily mean already deadlocked. Legend solid request/assignment and dashed claim."
+}

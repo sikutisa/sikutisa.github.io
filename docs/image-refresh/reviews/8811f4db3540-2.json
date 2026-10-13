@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Allocation T0 0 1 0,T1 2 0 0,T2 3 0 3,T3 2 1 1,T4 0 0 2.",
+      "passed": true,
+      "evidence": "Allocation010/200/303/211/002 exact."
+    },
+    {
+      "requirement": "Request T0 0 0 0,T1 2 0 2,T2 0 0 0,T3 1 0 0,T4 0 0 2; Available=(0,0,0); totals7,2,6.",
+      "passed": true,
+      "evidence": "Request000/202/000/100/002,Available000 exact."
+    },
+    {
+      "requirement": "Detection uses current Request, not Max/Need. Completion sequence T0→T2→T3→T1→T4; no deadlock; Work final=(7,2,6).",
+      "passed": true,
+      "evidence": "CurrentRequestdistinction, orderT0,T2,T3,T1,T4, finalWork726 andnodeadlockcorrect; graphremoved."
+    }
+  ],
+  "notes": "Second output inspected in full; numeric tables and calculations match originals and article; incorrect added graph removed.",
+  "at": "2026-10-12T22:54:23.752Z",
+  "generatedSha256": "69eb81d082284df18e01732ff9b660ff47fac508550f11ca9829786c2f170558",
+  "specSha256": "714f6bf8eeaa3a92c6d29a89883eacd75df370d497714bd7379943baf5e799fd"
+}

@@ -122,7 +122,7 @@ pubilc class PizzaStore {
 * It looks like we are just pushing the problem off to another object.
 
 ### Simple Factory (not an official pattern)
-![diagram](./img/1.png){: w="380" h = "340"}
+![PizzaStore가 SimplePizzaFactory에 생성을 위임하고 Pizza 공통 인터페이스로 조리하는 구조](./img/1-generated.png){: w="760"}
 
 ### Franchising the pizza store
 * Different styles
@@ -176,7 +176,7 @@ public abstract class PizzaStore {
     * Any dependencies on concrete “product” classes are encapsulated in the subclass.
 
 ### Allowing the subclasses to decide
-![diagram](./img/2.png){: w="340" h = "330"}
+![추상 PizzaStore의 공통 orderPizza 흐름과 NY·Chicago 하위 클래스의 createPizza 구현](./img/2-generated.png){: w="760"}
 
 ```java
 // NYPizzaStore
@@ -303,13 +303,13 @@ public class PizzaTestDrive {
 ### Applying Factory Method Pattern
 * The Factory Method pattern encapsulates object creation by letting subclasses decide what objects to create.
 
-![diagram](./img/3.png){: w="430" h = "380"}
+![NY·Chicago PizzaStore가 대응하는 Cheese·Veggie 제품을 생성하고 추상 Pizza에 반환하는 구조](./img/3-generated.png){: w="760"}
 
 ### Factory Method Pattern
 * Defines an interface for creating an object, but lets subclasses decide which class to instantiate. 
 * Factory Method lets a class defer instantiation to subclasses.
 
-![diagram](./img/4.png){: w="360" h = "340"}
+![Creator가 factoryMethod를 호출하고 ConcreteCreator가 ConcreteProduct를 생성하는 일반 구조](./img/4-generated.png){: w="760"}
 
 ### A very dependent PizzaStore (bad design)
 ```java
@@ -345,7 +345,7 @@ public class DependentPizzaStore {
 ```
 
 ### Dependent PizzaStore VS Factory Method
-![diagram](./img/5.png){: w="400" h = "370"}
+![구체 피자에 직접 의존하는 DependentPizzaStore와 추상 Pizza에 의존하는 Factory Method 구조 비교](./img/5-generated.png){: w="760"}
 
 ## Design Principle: Dependency Inversion Principle
 * Dependency Inversion Principle

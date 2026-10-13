@@ -1,0 +1,14 @@
+{
+  "title": "SRP: geometry and rendering are coupled",
+  "purpose": "Show Rectangle area/draw responsibilities link geometry to GUI.",
+  "alt": "Rectangle의 area와 draw가 함께 있어 계산 기하와 그래픽 요구 사항이 결합된 구조",
+  "requiredChecks": [
+    "Rectangle stores length/width, getLength/getWidth and both area()/draw().",
+    "Computational Geometry Application uses area(); Graphical Application uses draw().",
+    "Rectangle.draw() depends on GUI, creating unnecessary graphical dependency for geometry client.",
+    "Two distinct change sources are labelled without claiming every build tool recompiles everything."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif typography, readable monospaced identifiers, restrained blue/teal/amber cards, wide gutters, no copied slide composition or logo. Include only the listed operations and labels: do not invent full code bodies, access modifiers, methods or extra relationships. Title 'SRP: geometry and rendering are coupled'. CENTER Rectangle card fields length,width; methods getLength(),getWidth(),area():float,draw():void. LEFT Computational Geometry Application →Rectangle label uses area(). RIGHT Graphical Application →Rectangle label uses draw(). Rectangle →GUI card label 'rendering dependency'. Highlight areaanddraw in differentcolors inside same Rectangle. Footer 'Geometry rules and rendering platforms are separate reasons to change'. No invented geometryformulaorGUIAPI.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

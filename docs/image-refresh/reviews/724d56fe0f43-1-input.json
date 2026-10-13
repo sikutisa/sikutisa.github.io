@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Left RAG T1..T5,R1..R5 one instance each. Requests T1→R1,T2→R3,T2→R4,T2→R5,T3→R5,T4→R2.",
+      "passed": true,
+      "evidence": "Thread/resource labels and six request edges match."
+    },
+    {
+      "requirement": "Assignments R1→T2,R2→T1,R3→T5,R4→T3,R5→T4, exactly eleven edges left.",
+      "passed": false,
+      "evidence": "Left assignments wrong: R1→T1/R2→T2 rather than R1→T2/R2→T1; others R3→T5,R4→T3,R5→T4 correct."
+    },
+    {
+      "requirement": "Right wait-for edges exactly T1→T2,T2→T5,T2→T3,T2→T4,T3→T4,T4→T1; no resource nodes right.",
+      "passed": false,
+      "evidence": "Right T1→T2,T2→T5/T3/T4,T3→T4 correct; T4→T1 replaced by wrong T3→T1."
+    },
+    {
+      "requirement": "Clear conversion rule Ti→Rk→Tj becomes Ti→Tj. T1,T2,T3,T4 blocked cycle, T5 no outgoing edge. No reversed or missing arrowheads.",
+      "passed": false,
+      "evidence": "Conversion text correct but graphs disagree; redraw both with specified endpoints."
+    }
+  ],
+  "notes": "Rejected despite correct matrix entries: additional graph relationships or actual graph endpoints inconsistent with source. Preserve original until repaired."
+}

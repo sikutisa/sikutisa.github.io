@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "RemoteControl contains onCommands[7] and offCommands[7]; ON slot i uses onCommands[i].execute(), OFF uses offCommands[i].execute().",
+      "passed": true,
+      "evidence": "RemoteControl fields onCommands[7]/offCommands[7]; correct independent ON/OFF execution strips."
+    },
+    {
+      "requirement": "Slot 0 binds Living Room LightOnCommand/LightOffCommand and slot 1 Kitchen LightOnCommand/LightOffCommand to their matching receiver.",
+      "passed": true,
+      "evidence": "Slot0 living room and slot1 kitchen have matching LightOn/LightOff commands and receiver labels."
+    },
+    {
+      "requirement": "Seven total slots are shown; unconfigured slots 2–6 contain NoCommand for both actions.",
+      "passed": true,
+      "evidence": "All seven rows 0–6 present; slots2–6 NoCommand in both command columns."
+    },
+    {
+      "requirement": "Global UNDO invokes undoCommand.undo() for last executed command; no ON/OFF array mix-up.",
+      "passed": true,
+      "evidence": "UNDO invokes undoCommand.undo; footer says record command after execution and NoCommand no-op."
+    }
+  ],
+  "notes": "Pass. Roles, interface dependency, sequence lifelines, command array mapping and undo verified visually.",
+  "at": "2026-10-12T14:41:34.766Z",
+  "generatedSha256": "177ef315b93e35b3653ad9796d4061862a35408690abc8a23196193bffb33edd",
+  "specSha256": "2bca727270f4b0d51cd13a0986853765fa55ca1b1aab46e0b1d4396693a639d3"
+}

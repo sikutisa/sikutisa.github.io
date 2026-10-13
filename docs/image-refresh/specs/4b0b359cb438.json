@@ -1,0 +1,15 @@
+{
+  "title": "Interfaces separate capabilities but duplicate code",
+  "purpose": "Explain interface-only approach and loss of reusable behavioral implementation.",
+  "alt": "Flyable·Quackable 능력을 인터페이스로 분리하지만 각 오리 클래스에서 구현이 중복되는 두 번째 시도",
+  "requiredChecks": [
+    "Duck abstract retains swim/shared and display/abstract; no fly/quack methods.",
+    "Flyable interface fly(); Quackable interface quack().",
+    "MallardDuck and RedheadDuck extend Duck and implement Flyable,Quackable with display/fly/quack.",
+    "RubberDuck extends Duck implements only Quackable with squeak; DecoyDuck extends Duck display only.",
+    "Caption interface contracts alone do not reuse behavior implementation."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT blog, opaque white background. Navy readable sans serif, monospace method names, blue/teal/amber flat cards, generous padding. Use exact identifiers, no extra methods or access modifiers or copied slide arrangement. Title 'Interfaces separate capabilities but duplicate code'. Two small top capability interface cards Flyable 'fly()', Quackable 'quack()'; third top abstract Duck 'swim(): shared', 'display(): abstract'. Bottom four equally readable concrete cards: MallardDuck 'extends Duck' 'implements Flyable, Quackable' display/fly/quack; RedheadDuck same; RubberDuck 'extends Duck' 'implements Quackable' display and quack():squeak only; DecoyDuck 'extends Duck' display() only. Explicit extends/implements captions suffice; NO connector arrows to avoid clutter. Footer 'Interfaces define capabilities; each class still implements its own behavior'. Do not give RubberDuck fly() or DecoyDuck quack/fly. No strategy classes yet.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Working-set window",
+  "purpose": "Explain working set as distinct pages in the lastΔ references, using exact10-reference examples.",
+  "requiredChecks": [
+    "Δ is10 references; each of two windows has exactly10 values.",
+    "Windowt1 is2,6,1,5,7,7,7,7,5,1 with WS(t1)={1,2,5,6,7}.",
+    "Windowt2 is3,4,3,4,4,3,4,3,4,4 with WS(t2)={3,4}.",
+    "Working set is distinct pages, not count of all references; arrows/brackets denote the past window ending at each time."
+  ],
+  "alt": "Working-set examples with a ten-reference window: five distinct pages at t1 and two at t2",
+  "prompt": "Create a NEW original English technical educational diagram. White background, crisp large navy sans-serif text, flat blue/teal shapes, minimal clean connectors, generous margins, no logos or watermark, no decorative or traced textbook artwork. TITLE \"Working-set window\". Subtitle exactly \"Δ = 10 most recent references\". Two independent example rows. Upper row heading \"Window ending at t1\", with EXACTLY10 equal cells LEFT-TO-RIGHT: 2,6,1,5,7,7,7,7,5,1. Under this row text exactly \"WS(t1) = {1, 2, 5, 6, 7}\". Lower row heading \"Window ending at t2\", EXACTLY10 equal cells: 3,4,3,4,4,3,4,3,4,4. Under this row text exactly \"WS(t2) = {3, 4}\". For each row add a thin bracket spanning ALL ten cells labeled \"Δ\" and a time marker at its RIGHT edge labeled t1 or t2. Arrows/brackets must indicate the immediately preceding window, not a future window. Alternate blue/teal for page group distinction, but do not change digits or merge repeated cells. Footer exactly \"Working set = distinct pages in the window\". These are explicitly illustrative windows, not a measured trace. All braces, commas and digits mandatory."
+}

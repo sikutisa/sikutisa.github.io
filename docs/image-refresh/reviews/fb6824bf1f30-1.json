@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Jeepdirectorystart9,end25;chain9→16→1→10→25→EOF.",
+      "passed": true,
+      "evidence": "jeep 시작9 끝25 및 9→16→1→10→25, 각 Next 16·1·10·25·EOF 대조."
+    },
+    {
+      "requirement": "Scatteredblockslinkednotcontiguous;sourceorderpreserved,separatelegendendmarker.",
+      "passed": true,
+      "evidence": "연결 포인터는 데이터 블록 안에 있고 논리적 순서·물리적 분산 설명 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:13:07.294Z",
+  "generatedSha256": "8888ed0e025888876512d0ea12742ef5ffefe7f536d8131b78680653d6fe65d8",
+  "specSha256": "9a80d6a7962ef501b02820c8b21397ee36a9ede8c419b7a201feb5857d9807af"
+}

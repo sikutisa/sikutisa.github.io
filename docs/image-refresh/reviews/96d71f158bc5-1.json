@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Oneflatdirectorycontainscat,bo,a,test,data,mail,cont,hex,records.",
+      "passed": true,
+      "evidence": "단일 Directory 경계 안에 cat·bo·a·test·data·mail·cont·hex·records 정확."
+    },
+    {
+      "requirement": "9uniqueentrieslink9distinctfiles;nosubdirectory.",
+      "passed": true,
+      "evidence": "아홉 개 고유 항목에서 각각 별개 파일로 연결, 하위 디렉터리 없음."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:04:14.212Z",
+  "generatedSha256": "3c15f996ab4b416c6d28e1911c0cbb3161cb79dfe84dddae07a435a177c51495",
+  "specSha256": "c2782ca29fb9d36cf0f8f7e26d6e1d09bd590186ae57962501fd4702ade84828"
+}

@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Belady’s anomaly with FIFO",
+  "purpose": "Show verified FIFO fault counts as frames increase, especially3→4 causing9→10.",
+  "requiredChecks": [
+    "Reference string is1 2 3 4 1 2 5 1 2 3 4 5 and policy is FIFO.",
+    "Plot points are(1,12),(2,12),(3,9),(4,10),(5,5),(6,5),(7,5).",
+    "Axes are Number of frames and Page faults; point3/9 and4/10 are clearly annotated.",
+    "The highlighted anomaly shows adding a frame increases faults9→10, without claiming this for all policies."
+  ],
+  "alt": "FIFO Belady’s anomaly: increasing from three frames to four increases page faults from nine to ten",
+  "prompt": "Create a NEW original English technical educational diagram. White background, crisp large navy sans-serif text, flat blue/teal shapes, minimal clean connectors, generous margins, no logos or watermark, no decorative or traced textbook artwork. TITLE \"Belady’s anomaly with FIFO\". Make a clear scientific line chart with labeled axes \"Number of frames\" (horizontal) and \"Page faults\" (vertical). Plot EXACTLY these seven connected points: (1,12),(2,12),(3,9),(4,10),(5,5),(6,5),(7,5). Horizontal ticks1 through7, vertical ticks0,2,4,6,8,10,12. Add compact numeric value labels to every point. Highlight only the rising segment from(3,9) to(4,10) in teal or orange, keeping other segments blue. A callout above those two points reads exactly \"3 frames: 9 faults\" and \"4 frames: 10 faults\". Below the chart, two lines exactly \"FIFO reference string:\" and \"1 2 3 4 1 2 5 1 2 3 4 5\". Footer exactly \"More frames can cause more faults with FIFO\". Do not invent data, reverse axes, smooth away the increase, or clip any label."
+}

@@ -1,0 +1,16 @@
+{
+  "title": "SRTF: preempt for a shorter remaining time",
+  "purpose": "Show exact preemptive SJF schedule and metrics.",
+  "alt": "SRTF의 P1·P2·P4·P1·P3 실행 구간과 평균 대기 6.5ms·반환 13ms",
+  "requiredChecks": [
+    "Gantt P1[0,1],P2[1,5],P4[5,10],P1[10,17],P3[17,26], proportional1:4:5:7:9.",
+    "P1 preempted at1 by P2, resumes10; no unneeded preemption at2 or3.",
+    "Wait P1=9,P2=0,P3=15,P4=2 avg6.5ms.",
+    "Turnaround17,4,24,7 avg13ms.",
+    "Arrivals0,1,2,3; overhead excluded."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog. Opaque white background, navy highly readable type, restrained blue/teal/amber, flat graphics generous margins. Exact listed calculations only, no logos or copied textbook arrangement. Title 'SRTF: preempt for a shorter remaining time'. Subtitle 'Preemptive SJF; context-switch overhead omitted'. PROPORTIONAL horizontal Gantt five segments P1duration1,P2duration4,P4duration5,P1duration7,P3duration9. Onlyticks0,1,5,10,17,26ms. MakefirsttinysegmentP1labelaboveviafineleaderifneeded. Annotate 't=1: P2 preempts P1'. Table Process|Waiting(ms)|Turnaround(ms): P1|9|17,P2|0|4,P3|15|24,P4|2|7. Footer 'Average waiting: 6.5 ms • Average turnaround: 13 ms'. No arrival-type labels oncompletionticks.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "calculationVerified": true
+}

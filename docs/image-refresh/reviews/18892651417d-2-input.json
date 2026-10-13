@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "SQL request enters Parser then Preprocessor then Optimizer then Executor in that order within MySQL engine.",
+      "passed": true,
+      "evidence": "Client→Parser→Preprocessor→Optimizer→Executor all arrowheads right within engine boundary."
+    },
+    {
+      "requirement": "Optimizer includes rewrite, cost estimation and execution plan; parser and preprocessor roles are distinct.",
+      "passed": true,
+      "evidence": "Distinct Syntax/parse tree, Resolve objects/permissions, Rewrite/cost/execution plan and Run the plan subtitles."
+    },
+    {
+      "requirement": "Executor alone connects to Handler API, which branches to InnoDB, MyISAM and MEMORY as alternatives, not a sequential chain.",
+      "passed": true,
+      "evidence": "Executor↔Handler API and bus↔three parallel engines preserved."
+    },
+    {
+      "requirement": "SQL result returns from Executor to Client; request and response directions are unambiguous.",
+      "passed": true,
+      "evidence": "SQL result originates at Executor bottom-left, routes left above Handler API and enters Client, separate from handler requests."
+    }
+  ],
+  "notes": "Individually viewed full raster and traced connectors against full article. Source tool-output PNGs verified and loaded with PIL in exec82; approved SHA binds copied bytes."
+}

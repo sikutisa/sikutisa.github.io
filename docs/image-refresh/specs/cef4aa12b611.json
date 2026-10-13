@@ -1,0 +1,16 @@
+{
+  "title": "Round Robin with a 4 ms quantum",
+  "purpose": "Show complete slice sequence and waits for the RR example.",
+  "alt": "Quantum 4ms인 라운드 로빈의 P1·P2·P3 실행 조각과 대기 시간 6·4·7ms",
+  "requiredChecks": [
+    "Slices P1[0,4],P2[4,7],P3[7,10],thenP1[10,14],[14,18],[18,22],[22,26],[26,30].",
+    "All arrivals0, initial queueP1,P2,P3,quantum4; overhead excluded.",
+    "WaitingP1=6,P2=4,P3=7,avg17/3≈5.67ms.",
+    "P2/P3 finish before quantum expires; onlyP1 remains after10.",
+    "Slice boundaries after10 are quantum boundaries, not necessarily switching to another process."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog, opaque white. Navy readable typography, restrained blue/teal/amber, generous padding, flat graphics. Exact listed data only, no copied textbook layout. Title 'Round Robin with a 4 ms quantum'. Subtitle 'All arrive at 0; initial queue P1→P2→P3; quantum4ms; overhead omitted'. Single horizontal Gantt eight blocks durations4,3,3,4,4,4,4,4 (proportional if possible), labelsP1,P2,P3,P1,P1,P1,P1,P1. Onlyboundaryticks0,4,7,10,14,18,22,26,30ms. Bottom Waiting(ms) tableP1|6,P2|4,P3|7, footer 'Average waiting =17/3 ≈5.67ms'. Smallnote 'After t=10 only P1 remains; quantum boundaries do not require a different process'. No inventedextraP2/P3slices.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "calculationVerified": true
+}

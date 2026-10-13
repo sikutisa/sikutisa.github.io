@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Two I/O cycles: request→device transferring→transferdone; device idle between cycles.",
+      "passed": true,
+      "evidence": "두 요청→전송→완료 구간과 장치 Idle/Transferring 순서는 맞다."
+    },
+    {
+      "requirement": "CPU executes user process during transfers and briefly handles interrupt after each completion, then resumes; shared time axis no numerical durations.",
+      "passed": false,
+      "evidence": "첫 인터럽트는 Completion1 뒤에 있으나 두 번째는 Completion2 전에 있어 시간 관계가 실패한다."
+    }
+  ],
+  "notes": "직접 시각 검수 및 PNG 디코딩. 불합격 그림은 원본 참조를 유지한다.",
+  "at": "2026-10-13T00:00:13.530Z",
+  "generatedSha256": "9b85b742943e7b09b0b94005fb6156dd9116abd9ad138fee061227ccca130df0",
+  "specSha256": "42cb446897f691b2fa624cd2b6d2915b383b64fe3f84b82a6555b1d61b677494"
+}

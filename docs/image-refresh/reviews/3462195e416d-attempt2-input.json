@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Rootdict/spell;dictlistdistinct,all→sharedL,w→sharedDir,count→sharedC;spellcount→sameC,words→sameDir,listdistinct.",
+      "passed": true,
+      "evidence": "root dict→D1·spell→D2, D1 list A/all L/w D3/count C, D2 count C/words D3/list B 전 행 대조."
+    },
+    {
+      "requirement": "SharedDirlist→sharedL,rade,w7;sharingarrowsconvergeidentity,no cycles.",
+      "passed": true,
+      "evidence": "D3 list L/rade R/w7 W와 객체 범례 정확. 같은 ID가 같은 객체임을 명시하여 공유 관계가 일치하고 역참조·순환 없음."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

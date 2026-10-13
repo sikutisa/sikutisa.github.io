@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Banker algorithm need matrix",
+  "alt": "초기 상태의 Need=Max−Allocation 표와 안전 순서",
+  "requiredChecks": [
+    "Five rows T0..T4, A B C; Allocation 0 1 0;2 0 0;3 0 2;2 1 1;0 0 2 and Max 7 5 3;3 2 2;9 0 2;2 2 2;4 3 3.",
+    "Need=Max−Allocation rows 7 4 3;1 2 2;6 0 0;0 1 1;4 3 1; Available=(3,3,2).",
+    "Safe sequence T1→T3→T4→T0→T2 is valid; Work final10 5 7; exact aligned table, readable."
+  ],
+  "prompt": "Use case: scientific-educational. Original raster PNG educational diagram for IT technical blog. White opaque background, clean dark navy sans-serif text, blue and teal accents, no logo/watermark/decoration. Big readable English labels, generous spacing, original composition. For graphs thread circles, resource boxes, distinct arrowhead at destination. Blue solid requests, teal solid assignments, gray dashed potential claims. Title: Need = Max − Allocation. Wide table Thread | Allocation A B C | Max A B C | Need A B C. EXACT rows T0 | 0 1 0 | 7 5 3 | 7 4 3; T1 | 2 0 0 | 3 2 2 | 1 2 2; T2 | 3 0 2 | 9 0 2 | 6 0 0; T3 | 2 1 1 | 2 2 2 | 0 1 1; T4 | 0 0 2 | 4 3 3 | 4 3 1. Single system Available = (3, 3, 2). Highlight Need column softly. Footer One safe sequence: T1 → T3 → T4 → T0 → T2. Final Work = (10, 5, 7)."
+}

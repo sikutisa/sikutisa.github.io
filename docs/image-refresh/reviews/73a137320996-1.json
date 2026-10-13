@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "DriverinitiatesI/O→controllerstarts→ready/completed/errorinterruptsignal→CPUreceive/ISR.",
+      "passed": true,
+      "evidence": "드라이버 요청→컨트롤러 처리→완료/입력/오류 신호→CPU 핸들러 전환 연결 확인."
+    },
+    {
+      "requirement": "CPUexecutesbetweenrequest/completion;handlerprocessesdata/returns→CPUresumes→nextI/O;exactsevennumberedsteps.",
+      "passed": true,
+      "evidence": "CPU 실행 점선과 5 핸들러 처리·복귀, 6 작업 재개, 7 다음 I/O 루프까지 1~7 순서 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:57:58.394Z",
+  "generatedSha256": "d9ce22ba4771d37affe2a45a7919d321a9498b00070bba8259e4dca524042bfa",
+  "specSha256": "ffe5cc195cc7a4c98a6abcb9010614a6eb53c3a3524414d3af772fffb60e4659"
+}

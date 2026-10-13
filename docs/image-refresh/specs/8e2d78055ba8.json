@@ -1,0 +1,15 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Legacy Pentium vectors",
+  "alt": "기존 Pentium의 예외·인터럽트 벡터와 2번 NMI를 정리한 역사적 표",
+  "requiredChecks": [
+    "Vectors0..18 plus19–31reserved and32–255maskable withexacthistoricaldescriptions; vector2NMI notnull.",
+    "ExplicitoriginalPentiumhistoricalmodel notmodernallx86; 9reserved,15reserved,19–31historicallyreserved."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Original Pentium event vectors (historical). Readabletwo-columntable Vector | Description. EXACTrows:0 Divide error;1 Debug exception;2 Non-maskable interrupt (NMI);3 Breakpoint;4 INTO-detected overflow;5 BOUND range exception;6 Invalid opcode;7 Device not available;8 Double fault;9 Coprocessor segment overrun (reserved);10 Invalid task-state segment;11 Segment not present;12 Stack fault;13 General protection;14 Page fault;15 Reserved;16 Floating-point error;17 Alignment check;18 Machine check;19–31 Reserved;32–255 Maskable interrupts. Footer Historical original-Pentium table; later x86 processors assign additional vectors. Do not imply19–31reservedonmodernx86. No logo.",
+  "sourceClarification": "원본 vector2의 null interrupt를 Intel 공식 문서의 NMI로 정정. 원본 Pentium 역사적 표로 한정해 현대 x86 예약 벡터 오해를 피함.",
+  "sources": [
+    "https://www.intel.com/content/dam/support/us/en/documents/processors/pentium4/sb/25366821.pdf#page=181"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Shared region includes InnoDB buffer pool, MyISAM key cache, Adaptive hash index, Redo log buffer and Table cache; no shared Binary log buffer.",
+      "passed": true,
+      "evidence": "Read all five shared labels; Adaptive hash index replaces incorrectly shared binary log buffer."
+    },
+    {
+      "requirement": "Each separate session contains Join, Sort, Network and Read buffers plus Binary log cache; no cross-session sharing connector.",
+      "passed": true,
+      "evidence": "Read five private labels independently in Session A and Session B, including Binary log cache in each."
+    },
+    {
+      "requirement": "Both connection headings have access arrows to shared scope; the caption states query buffers are allocated as needed.",
+      "passed": true,
+      "evidence": "Both Shared access arrows target shared heading; footer and private ownership caption are legible."
+    }
+  ],
+  "notes": "Independent second review: full-size generated PNG inspected against document and available original. Binary log cache is private per connection; restore omitted adaptive hash index.",
+  "at": "2026-10-13T04:01:37.861Z",
+  "generatedSha256": "0caeb6bc54ba9f3a1f3e93f3a175cae774901b0ac54589134120f7eb3f92b9e4",
+  "specSha256": "6d82b772a910b722658602490b83c8f74a0a3387dfeb23f3143ae726ee624e0b",
+  "originalReviewBasis": "Original untracked PNG was retired in the prior session and cannot be recovered; independently reviewed current document and official MySQL sources. originalViewed records the historical first pass, not this second pass."
+}

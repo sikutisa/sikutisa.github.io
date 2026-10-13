@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "CPU burst and I/O burst alternate in sequence at least three times.",
+      "passed": true,
+      "evidence": "Exactly six cards CPU/I/O alternate three cycles downward."
+    },
+    {
+      "requirement": "CPU bursts execute instructions; I/O bursts wait for I/O completion.",
+      "passed": true,
+      "evidence": "CPU execute instructions; I/O wait for completion exact."
+    },
+    {
+      "requirement": "Read/write requests occur on CPU side before waiting; no CPU execution during wait.",
+      "passed": true,
+      "evidence": "I/O request issued on CPU card, wait card no execution."
+    },
+    {
+      "requirement": "Schematic sequence has no invented time values or parallel execution.",
+      "passed": true,
+      "evidence": "No durations/parallel claim; down timeline and continuation dots."
+    }
+  ],
+  "notes": "Direct visual inspection confirms exact labels, chronology and input data. PNG decode before approval.",
+  "at": "2026-10-12T21:55:27.758Z",
+  "generatedSha256": "2af23f88463db8da5f3c8020f904250be8213d5880c4a8a5f3d191e93c763e7e",
+  "specSha256": "dc5e9705579a49c14313846ddd0e41fb923e3d457af0bd5d440e50d5fed8d9de"
+}

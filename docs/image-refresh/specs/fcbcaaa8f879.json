@@ -1,0 +1,14 @@
+{
+  "title": "Create, configure, execute",
+  "purpose": "Explain command encapsulation and deferred invocation using the article's Light example.",
+  "alt": "클라이언트의 명령 생성·등록과 리모컨의 execute 호출, Light 수신자의 on 실행 과정",
+  "requiredChecks": [
+    "Client creates Light receiver and LightOnCommand(light), then passes that command to SimpleRemoteControl.setCommand().",
+    "Invoker holds a Command and buttonWasPressed() calls slot.execute().",
+    "LightOnCommand encapsulates the Light receiver; its execute() delegates to light.on().",
+    "Creation/configuration precede later invocation; invoker does not call Light.on() directly."
+  ],
+  "prompt": "Create a NEW ORIGINAL raster technical diagram for an IT study blog, opaque white background, clean navy sans-serif typography, restrained blue/teal/amber flat cards, spacious margins, exact monospaced class and method identifiers, no logos, source screenshots or copied slide composition. All English text clearly readable. Title 'Create, configure, execute'. Make two horizontal stages labelled '1. Setup' and '2. Later: button press'. Setup three boxes Client, SimpleRemoteControl (Invoker), LightOnCommand (Command object). Clearly numbered text inside Client 'Create Light; create LightOnCommand(light); remote.setCommand(lightOn)'. Arrow Client→Invoker labelled 'setCommand(lightOn)' and invoker caption 'stores slot: Command'. Command card includes 'receiver: Light'. Later flow Invoker 'buttonWasPressed()' → LightOnCommand 'execute()' → Light 'on()'; arrows labelled 'slot.execute()' then 'light.on()'. Footer 'The invoker knows Command, not the receiver API'. No Invoker→Light shortcut. No confusing reverse creation arrows.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

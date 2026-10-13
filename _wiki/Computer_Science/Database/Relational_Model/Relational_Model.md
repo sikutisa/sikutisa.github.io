@@ -3,7 +3,7 @@ tags: [computer science, database]
 use_math: true
 ---
 # Relational Model
-![Example](./img/1.png){: w="360" h = "400"}
+![ID·이름·학과·급여 속성을 갖는 강사 릴레이션 자체 예시](./img/1-generated.png){: w="760"}
 *Example of a Instructor  Relation*
 
 ## Structure of Relational Databases
@@ -43,7 +43,7 @@ use_math: true
 * Example
     * schema: *instructor(ID, name, dept_name, salary)*
 
-![Example](./img/2.png){: w="360" h = "400"}
+![튜플 순서만 달라진 같은 릴레이션 인스턴스](./img/2-generated.png){: w="760"}
 *Example of a Instance*
 
 ## Keys
@@ -74,16 +74,16 @@ use_math: true
 ## Schema Diagrams
 * A database schema, along with primary key and foregin key constraints, can be depicted by **schema diagrams**.
 
-![Schema](./img/3.png){: w="480" h = "420"}
+![대학교 스키마 11개 테이블의 기본키·속성, 13개 외래키 참조와 시간대 연관 관계](./img/3-generated.png){: w="760"}
 *Schema Diagram for University Database*
 
 * Primary key attributes are show underlined.
 * *takes* 테이블의 외래키는 2개.
     * *ID*
     * *{course_id, sec_id, semester, year}*
-* *time_slot* 테이블의 *time_slot_id*는 외래키가 아님.
-    * *section* 테이블의 *time_slot_id*를 단순 참조 중.
-    * *section* 테이블의 *time_slot_id*이 primary key가 아니기 때문.
+* *section* 테이블의 *time_slot_id*는 *time_slot* 테이블의 시간대 식별자와 연관됨.
+    * 이 스키마에서 *time_slot*의 기본키는 *{time_slot_id, day, start_time}*이며, *time_slot_id*만으로는 행을 유일하게 식별할 수 없음.
+    * 따라서 이 연관 관계를 *time_slot_id* 하나의 외래키 제약으로 선언할 수 없음.
 
 ## Relational Query Languages
 * A **query language** is a language in which a user requests information from the database.
@@ -120,7 +120,7 @@ use_math: true
 * e.g. select those tuples of the *instructor* relation where the instructor is in the “Physics” department.
     * $\sigma_{dept \\_ name = "Physics"}(instructor)$
 
-![Result](./img/4.png){: w="360" h = "300"}
+![Physics 학과의 튜플만 선택한 결과](./img/4-generated.png){: w="760"}
 *Result*
 
 * We allow compasions using $=, \neq, >, \geq, <, \leq$ in the selection predicate.
@@ -140,7 +140,7 @@ use_math: true
 * e.g. eliminate the dept_name attribute of instructor
     * $\Pi_{ID, name, salary}(instructor)$
 
-![Result](./img/5.png){: w="320" h = "360"}
+![학과를 제외하고 ID·이름·급여를 투영한 결과](./img/5-generated.png){: w="760"}
 *Result*
 
 ### Composition of Relational Operations
@@ -159,7 +159,7 @@ use_math: true
     * instructor.ID
     * teaches.ID
 
-![Result](./img/6.png){: w="380" h = "440"}
+![강사 4명×강의 2행의 직적 8행](./img/6-generated.png){: w="760"}
 *The  instructor  X  teaches  table*
 
 ### Join Operation
@@ -169,7 +169,7 @@ use_math: true
     * $\sigma_{instructor.id = teaches.id}(instructor \times teaches)$
     * We get only those tuples of “instructor  X  teaches” that pertain to instructors and the courses that they taught.
 
-![Result](./img/7.png){: w="420" h = "360"}
+![ID 일치 조건으로 직적을 필터링한 세타 조인 2행](./img/7-generated.png){: w="760"}
 *Result*
 
 * The **join** operation allows us to combine a select operation and a Cartesian-Product operation into a single operation.
@@ -189,7 +189,7 @@ use_math: true
 * e.g. to find all courses taught in the Fall 2017 semester, or in the Spring 2018 semester, or in both
     * $\Pi_{course \\_ id}(\sigma_{semester = "Fall" \wedge year = 2017}(section)) \cup \Pi_{course \\_ id}(\sigma_{semester = "Spring" \wedge year = 2018}(section))$
 
-![Result](./img/8.png){: w="300" h = "360"}
+![2017년 가을·2018년 봄 과목 집합의 합집합](./img/8-generated.png){: w="760"}
 *Result*
 
 ### Set-Intersection Operation
@@ -201,7 +201,7 @@ use_math: true
 * e.g. Find the set of all courses taught in both the Fall 2017 and the Spring 2018 semesters.
     * $\Pi_{course \\_ id}(\sigma_{semester = "Fall" \wedge year = 2017}(section)) \cap \Pi_{course \\_ id}(\sigma_{semester = "Spring" \wedge year = 2018}(section))$
 
-![Result](./img/9.png){: w="300" h = "280"}
+![2017년 가을·2018년 봄 과목 집합의 교집합](./img/9-generated.png){: w="760"}
 *Result*
 
 ### Set Difference Operation
@@ -213,7 +213,7 @@ use_math: true
 * e.g. to find all courses taught in the Fall 2017 semester, but not in the Spring 2018 semester.
     * $\Pi_{course \\_ id}(\sigma_{semester = "Fall" \wedge year = 2017}(section)) - \Pi_{course \\_ id}(\sigma_{semester = "Spring" \wedge year = 2018}(section))$
 
-![Result](./img/10.png){: w="300" h = "280"}
+![2017년 가을에서 2018년 봄 과목을 뺀 차집합](./img/10-generated.png){: w="760"}
 *Result*
 
 ### The Assignment  Operation 

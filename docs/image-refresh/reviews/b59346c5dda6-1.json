@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Headers in exact order: instructor.ID | name | dept_name | salary | teaches.ID | course_id | sec_id | semester | year",
+      "passed": true,
+      "evidence": "Nine headers instructor.ID,name,dept_name,salary,teaches.ID,course_id,sec_id,semester,year in exact order."
+    },
+    {
+      "requirement": "Exactly 8 rows: 201 | Dana | Comp. Sci. | 60000 | 201 | CS-210 | 1 | Fall | 2017 ; 201 | Dana | Comp. Sci. | 60000 | 202 | CS-315 | 1 | Spring | 2018 ; 202 | Eli | Comp. Sci. | 80000 | 201 | CS-210 | 1 | Fall | 2017 ; 202 | Eli | Comp. Sci. | 80000 | 202 | CS-315 | 1 | Spring | 2018 ; 203 | Faye | Physics | 90000 | 201 | CS-210 | 1 | Fall | 2017 ; 203 | Faye | Physics | 90000 | 202 | CS-315 | 1 | Spring | 2018 ; 204 | Gus | Physics | 110000 | 201 | CS-210 | 1 | Fall | 2017 ; 204 | Gus | Physics | 110000 | 202 | CS-315 | 1 | Spring | 2018",
+      "passed": true,
+      "evidence": "Eight rows correctly paireachDana20160000,Eli20280000,Faye20390000,Gus204110000 withteaches201CS-210Fall2017 and202CS-315Spring2018; section1; departments correct."
+    },
+    {
+      "requirement": "Four instructors × two teaches records = eight pairs, including unmatched IDs.",
+      "passed": true,
+      "evidence": "All six ID-mismatch rows retained and caption statesfour×two=eightpairs."
+    },
+    {
+      "requirement": "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer; every row and header legible with no ellipsis."
+    }
+  ],
+  "notes": "Pass. Every result/source cell visually compared with independent examples/relational-algebra.json.",
+  "at": "2026-10-12T14:06:07.921Z",
+  "generatedSha256": "daea845a8956c0752a2f88898041749fd4308011a7fc4e1f8619d761eda820ea",
+  "specSha256": "249f227ec597643068011b50dbfacde70fcdf9acdca9c6708979f109e39f465f"
+}

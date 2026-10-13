@@ -1,0 +1,18 @@
+{
+  "title": "InnoDB architecture",
+  "purpose": "Provide simplified original architecture separating MySQL executor, InnoDB in-memory structures, background I/O and disk data versus redo paths.",
+  "alt": "InnoDB 버퍼 풀·어댑티브 해시 인덱스·로그 버퍼와 백그라운드 처리 및 디스크 저장 구조",
+  "requiredChecks": [
+    "MySQL executor connects through Handler API to InnoDB; MySQL optimizer/executor are outside InnoDB.",
+    "InnoDB buffer pool encloses cached data/index pages, undo pages and change-buffer pages; adaptive hash index is optional derived lookup outside that box.",
+    "Redo log buffer is separate from buffer pool; page flush goes to tablespaces and redo writer to redo log files.",
+    "Background work includes change-buffer merge, page flush and redo write; memory and disk are distinct with explicit simplified-scope caption."
+  ],
+  "sources": [
+    "https://dev.mysql.com/doc/refman/8.0/en/innodb-architecture.html",
+    "https://dev.mysql.com/doc/refman/8.0/en/innodb-buffer-pool.html"
+  ],
+  "prompt": "Create a NEW original raster diagram for a technical study blog. English labels verbatim, large crisp navy sans-serif text on white, restrained flat blue and teal cards, orthogonal connectors, generous whitespace, no gears, gradients, stock icons, copied textbook composition, logos or watermark. Labels must be comfortably legible. TITLE \"InnoDB architecture\". Landscape diagram, use simple labelled cards instead of checkerboards/gears. Top-left separate boundary \"MySQL engine\" with \"Optimizer\"→\"Executor\". Executor doubleheaded arrow through small \"Handler API\" card at boundary into large separate \"InnoDB\" boundary. In InnoDB, top band explicitly \"Memory\": left wide \"Buffer pool\" enclosing THREE smaller stacked cards \"Cached data / index pages\",\"Undo pages\",\"Change-buffer pages\". A small adjacent card \"Adaptive hash index\" with subtitle \"Optional derived lookup\" connects by thin dotted line to data/index pages, no disk persistence arrow. Right \"Redo log buffer\" card distinct from buffer pool, not nested. Below a band \"Background work\" with THREE separate cards: \"Change-buffer merge\", \"Page flush\", \"Redo write\". Merge card connects upward to change-buffer pages and data/index pages with label \"Apply buffered changes\". Buffer pool→Page flush→disk \"Tablespaces\" clear downward path. Redo log buffer→Redo write→disk \"Redo log files\" separate downward path. Disk cards bottom in their own \"Disk\" band. Tablespaces card subtitle \"Data / indexes / undo\"; redo files are not data-file substitute. Show Executor handler request to buffer-pool region, not through adaptive index always. Footer \"Simplified view; doublewrite and other subsystems omitted\". Text and connectors readable, no lines through unrelated boxes, memory above background work above disk.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

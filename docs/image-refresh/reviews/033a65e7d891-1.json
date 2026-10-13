@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "HostX146.86.5.20socket146.86.5.20:1625;webserver161.25.19.8socket161.25.19.8:80.",
+      "passed": true,
+      "evidence": "HostX146.86.5.20:1625,Webserver161.25.19.8:80의 IP 및 포트 문자열을 확인했다."
+    },
+    {
+      "requirement": "Twoendpointsconnect,IP+port distinguishesocket; illustrativeaddressesnotlocalDateServer127.0.0.1:6013example.",
+      "passed": true,
+      "evidence": "두 소켓 양방향과 IP+port 캡션 및 example addresses 표기가 정확하다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:27:24.070Z",
+  "generatedSha256": "e3245c933a67a8fa2389e16ee5d3b558906233b1c590e53ecf486963e8af5948",
+  "specSha256": "4a8790575764b2154f7ba60ff6b00075faa4326d9572fea9e262586edd2aa2cb"
+}

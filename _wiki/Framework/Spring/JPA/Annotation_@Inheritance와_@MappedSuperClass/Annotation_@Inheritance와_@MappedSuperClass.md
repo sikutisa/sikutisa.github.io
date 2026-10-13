@@ -5,7 +5,7 @@ tags: [spring framework, spring data jpa, database]
 # Annotation @Inheritance와 @MappedSuperClass
 ## Overview
 ### ERD
-![ERD](./img/1.png){: w="380" h = "300"}
+![Member·Owned·Item의 외래키 소유 관계와 Background·Prop의 Item 상속](./img/1-generated.png){: w="760"}
 
 ### 의문점
 * @Inheritance(strategy=JOINED)와 @MappedSuperClass를 사용했을 때, 각각에 대해
@@ -64,7 +64,7 @@ public class Background extends Item{
 ### 생성된 테이블 및 데이터
 * 테이블
 
-    ![table](./img/2.png){: w="280" h = "320"}
+    ![JOINED의 ITEM 공통 컬럼과 BACKGROUND·PROP의 PK 겸 FK ID](./img/2-generated.png){: w="760"}
 
     * 자식 엔티티 타입을 구분하기 위한 컬럼(이 경우 ITEM_TYPE)이 부모 테이블에 생성됨
     * 자식 엔티티가 개별적으로 가지는 컬럼은, 각 자식 테이블에 별도로 생성됨
@@ -74,15 +74,15 @@ public class Background extends Item{
 * 테이블 별 데이터
     * ITEM 테이블
     
-    ![item](./img/3.png){: w="310" h = "270"}
+    ![ITEM에 저장된 prop 1번과 Background 2번의 가격·URL](./img/3-generated.png){: w="760"}
     
     * BACKGROUND 테이블
     
-    ![background](./img/4.png){: w="300" h = "250"}
+    ![BACKGROUND의 ID 2와 back1이 ITEM의 ID 2를 참조](./img/4-generated.png){: w="760"}
     
     * PROP 테이블
     
-    ![prop](./img/5.png){: w="300" h = "250"}
+    ![PROP의 ID 1과 prop1이 ITEM의 ID 1을 참조](./img/5-generated.png){: w="760"}
     
     * 자식 테이블은 부모 테이블의 PK를 FK로 들고 있음
 
@@ -136,18 +136,18 @@ public class Prop extends Item{
 ### 생성된 테이블 및 데이터
 * 테이블
 
-    ![table](./img/6.png){: w="280" h = "320"}
+    ![Item의 매핑을 각 BACKGROUND·PROP 테이블에 상속하고 별도 ITEM 테이블은 없는 구조](./img/6-generated.png){: w="760"}
 
     * 부모 클래스의 모든 컬럼을 가지고 자식 테이블이 각각 생성 됨
 
 * 테이블 별 데이터
     * BACKGROUND 테이블
     
-    ![background](./img/7.png){: w="340" h = "250"}
+    ![BACKGROUND 한 테이블에 가격 2000·ID 1·back1·backUrl1이 저장된 예시](./img/7-generated.png){: w="760"}
 
     * PROP 테이블
     
-    ![prop](./img/8.png){: w="330" h = "250"}
+    ![PROP 한 테이블에 가격 1000·ID 1·prop1·propUrl1이 저장된 예시](./img/8-generated.png){: w="760"}
     
     * 데이터가 각각 생성돼서 들어감
 

@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Three designs shown: Queue extends List; Queue contains List; Queue contains List interface implemented by MyList.",
+      "passed": true,
+      "evidence": "Three panels: Queue extends List; contains List; contains List interface implemented by MyList."
+    },
+    {
+      "requirement": "List operations insert/delete/find; Queue operations insert/delete/isEmpty.",
+      "passed": true,
+      "evidence": "All List cards show insert/delete/find; all Queue cards insert/delete/isEmpty."
+    },
+    {
+      "requirement": "Bad inheritance is explicitly conditional on Queue not honoring the full List contract in this example.",
+      "passed": true,
+      "evidence": "Problematic inheritance explicitly qualified 'this example' and cannot honor full List contract."
+    },
+    {
+      "requirement": "Composition arrows mean has-a/delegates, not inheritance; MyList implements List interface.",
+      "passed": true,
+      "evidence": "Composition arrows downward labelled contains/delegates; MyList upward hollow implements arrow to interface."
+    }
+  ],
+  "notes": "Direct visual inspection confirms required text and dependency semantics; PNG decode performed before approval."
+}

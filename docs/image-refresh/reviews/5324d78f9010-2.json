@@ -1,0 +1,27 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Parent fd[0] read CLOSED and fd[1] write OPEN; child fd[0] read OPEN and fd[1] write CLOSED.",
+      "passed": true,
+      "evidence": "Read the four fd labels and OPEN/CLOSED states individually."
+    },
+    {
+      "requirement": "Exactly two data arrowheads show parent OPEN fd[1] → Kernel buffer → child OPEN fd[0]; no arrow touches CLOSED cards or follows child border.",
+      "passed": true,
+      "evidence": "Output bends upward in the empty gap before child boundary and ends at fd[0]; input ends at kernel buffer; neither CLOSED card has an arrow."
+    },
+    {
+      "requirement": "Both descriptors inherited after fork; unused ends closed; one-way parent-write child-read caption preserved.",
+      "passed": true,
+      "evidence": "Both inheritance and one-way example captions are legible and match article code."
+    }
+  ],
+  "notes": "Independent second review: full-size generated PNG inspected against document and available original. Route buffer output directly to child open read descriptor, removing arrowhead beside closed descriptor.",
+  "at": "2026-10-13T04:01:37.861Z",
+  "generatedSha256": "309c2d23997e9d86f605494203d66ba0c8f62edf0a989b69494a199142960116",
+  "specSha256": "1db4c76c324e519da76f5e8b273c10ea3049a6f785ca06c87539378f184e62da",
+  "originalReviewBasis": "Recovered original PNG hash matches inventory; original and generated pixels compared side by side."
+}

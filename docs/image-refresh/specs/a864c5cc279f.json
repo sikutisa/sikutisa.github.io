@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "DMA transfer sequence",
+  "alt": "드라이브 2의 c바이트를 주소 x 버퍼로 DMA 전송하고 완료 인터럽트를 보내는 과정",
+  "requiredChecks": [
+    "5stepsdriverrequesteddrive2→controllercbytestox→initDMA→addressincreases/countdecreasesto0→interruptCPU.",
+    "CPU/cache/memorybus/PCIebus/SAScontrollerdrives1/2,bufferx;dataflowbypassesCPU,countercnotaddressx."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Steps in a DMA transfer. UpperCPUwithCache beside;CPU→CPU-memory bus/controller→Memory Buffer at addressx. Busbridge toPCIe bus below→SAS drivecontroller→Drive1 andDrive2,highlightdataonlyDrive2. Thicktealdataarrow Drive2→controller→buses→Bufferx bypassCPU. Right5 numberedtextsteps:1 Driver receives request: Drive2 data→bufferx.2 Program controller: c bytes, destinationx.3 Controller initiates DMA.4 Transfer bytes; memory address increases, c decreases untilc=0.5 When c=0, completion interrupt toCPU. ThinbluecommandCPU→controller andthinorangeinterruptcontroller→CPU clearlydifferentfromdatapath. No cacheCPUdatahop."
+}

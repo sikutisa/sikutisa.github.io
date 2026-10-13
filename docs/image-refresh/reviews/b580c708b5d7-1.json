@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Duck→Subject registration request is explicit.",
+      "passed": true,
+      "evidence": "Duck rightward registerObserver(duck) arrow reaches Subject."
+    },
+    {
+      "requirement": "Subject state stays 2.",
+      "passed": true,
+      "evidence": "Subject state2 unchanged."
+    },
+    {
+      "requirement": "Existing registered list remains Cat, Dog, Mouse in this request snapshot.",
+      "passed": true,
+      "evidence": "Current list Cat/Dog/Mouse only, caption before roster update."
+    },
+    {
+      "requirement": "No notification or automatic state change is implied by registration.",
+      "passed": true,
+      "evidence": "No notification arrows; footer registration does not change state."
+    }
+  ],
+  "notes": "Pass. Article and original roles, state values, registration membership, direction and class semantics visually verified.",
+  "at": "2026-10-12T15:10:13.624Z",
+  "generatedSha256": "5597bb457dd56c866d6d34dc12c53c7881ddd325956e8e0672a4874453291d10",
+  "specSha256": "958937c68c1697b13917d05600974401cbf464f7ee658a112e48c0ebdd7f8004"
+}

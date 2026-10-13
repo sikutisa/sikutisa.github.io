@@ -1,0 +1,14 @@
+{
+  "title": "Transcoding orchestration",
+  "purpose": "Separate DAG scheduling/resource allocation from temporary media data flow, retaining internal task, worker and running queues.",
+  "alt": "전처리·DAG 스케줄러·자원 관리자의 작업 배정과 작업 서버·임시 저장소·인코딩 출력",
+  "requiredChecks": [
+    "Preprocessor→DAG scheduler→Resource manager→Worker pools control sequence; preprocessor splits GOPs and builds DAG.",
+    "Resource manager contains Task queue, Available worker queue, Scheduler and Running jobs; task/worker inputs feed scheduler and assignments are recorded.",
+    "Preprocessor stores GOPs/metadata in Temporary storage; workers read/write it separately from control path.",
+    "Worker pools produce Encoded video output; no temporary-storage dependency mistaken for scheduler control flow."
+  ],
+  "prompt": "Create a NEW original English raster diagram for a technical study blog. White background, large navy sans-serif labels, flat blue/teal cards, generous whitespace, clearly separated arrows. No copied book composition, provider logos, numeric prices or promise of uninterrupted service. TITLE \"Transcoding orchestration\". Use clean two-band originaldiagram. TOPband \"Control\": \"Preprocessor\" subtitle\"Split GOPs / build DAG\"→\"DAG scheduler\"→large\"Resource manager\"boundary→\"Worker pools\". Dashedarrows labelled\"Tasks\" and\"Assignments\" indicatecontrol. InsideResourcemanager2smallinputcards \"Task queue\",\"Available worker queue\" both→\"Scheduler\", then Scheduler→\"Running jobs\" withlabel\"Record assignments\". SchedulerassignsworkerpoolfromGROUPboundary, notqueue-to-queuechain. Workerpoolcontains3smallcards\"Video\",\"Audio\",\"Thumbnail\" asworkerroles. BOTTOMband \"Media data\": one\"Temporary storage\"card subtitle\"GOPs / metadata\" receives SOLIDdownarrowfromPreprocessorlabel\"Store inputs\"; solidbidirectionallinkWorkerpool↔Temporarystoragelabel\"Read / write intermediates\", routedbelowcontrolgroupandnotthroughit. Workerpool→\"Encoded video output\" onfarrightSOLIDarrow\"Output\". Footer \"Schedule tasks separately from media storage\". No media bytes passedthroughTaskqueue/Scheduler; keepdatapathsblueandcontroldashednavy withtinylegend ifneeded. Allnamesreadable, no extraedgeTemporaryStorage→DAGScheduler.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

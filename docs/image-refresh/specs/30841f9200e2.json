@@ -1,0 +1,13 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "MappedSuperclass BACKGROUND data",
+  "alt": "BACKGROUND 한 테이블에 가격 2000·ID 1·back1·backUrl1이 저장된 예시",
+  "requiredChecks": [
+    "ColumnsPRICE,ID,BACKGROUND_NAME,URL.",
+    "Row2000|1|back1|backUrl1;inheritedcommonfieldsinline,noparenttablejoin."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title @MappedSuperclass: BACKGROUND data. Single table columns PRICE | ID | BACKGROUND_NAME | URL. One row 2000 | 1 | back1 | backUrl1. Caption Inherited and subtype fields in one entity table. No ITEM parent table or FK implied. Preserve ID 1 unlike joined background2.",
+  "referenceSource": "https://jakarta.ee/specifications/persistence/3.1/apidocs/jakarta.persistence/jakarta/persistence/mappedsuperclass",
+  "repairPrompt2": "Delete ONLY the bottom line 'Preserve ID 1 unlike joined background2.' Keep table and all other text unchanged. Do not add substitute text. This is a published tutorial image, no authoring instructions."
+}

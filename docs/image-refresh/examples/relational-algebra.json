@@ -1,0 +1,310 @@
+{
+  "note": "Original illustrative data; chronological course sets are independent of instructor/teaches example.",
+  "courseSets": {
+    "Fall 2017": [
+      "CS-210",
+      "PHY-220"
+    ],
+    "Spring 2018": [
+      "CS-210",
+      "HIS-230"
+    ]
+  },
+  "tables": {
+    "base": {
+      "columns": [
+        "ID",
+        "name",
+        "dept_name",
+        "salary"
+      ],
+      "rows": [
+        {
+          "ID": "201",
+          "name": "Dana",
+          "dept_name": "Comp. Sci.",
+          "salary": 60000
+        },
+        {
+          "ID": "202",
+          "name": "Eli",
+          "dept_name": "Comp. Sci.",
+          "salary": 80000
+        },
+        {
+          "ID": "203",
+          "name": "Faye",
+          "dept_name": "Physics",
+          "salary": 90000
+        },
+        {
+          "ID": "204",
+          "name": "Gus",
+          "dept_name": "Physics",
+          "salary": 110000
+        }
+      ]
+    },
+    "instance": {
+      "columns": [
+        "ID",
+        "name",
+        "dept_name",
+        "salary"
+      ],
+      "rows": [
+        {
+          "ID": "203",
+          "name": "Faye",
+          "dept_name": "Physics",
+          "salary": 90000
+        },
+        {
+          "ID": "201",
+          "name": "Dana",
+          "dept_name": "Comp. Sci.",
+          "salary": 60000
+        },
+        {
+          "ID": "204",
+          "name": "Gus",
+          "dept_name": "Physics",
+          "salary": 110000
+        },
+        {
+          "ID": "202",
+          "name": "Eli",
+          "dept_name": "Comp. Sci.",
+          "salary": 80000
+        }
+      ]
+    },
+    "selection": {
+      "columns": [
+        "ID",
+        "name",
+        "dept_name",
+        "salary"
+      ],
+      "rows": [
+        {
+          "ID": "203",
+          "name": "Faye",
+          "dept_name": "Physics",
+          "salary": 90000
+        },
+        {
+          "ID": "204",
+          "name": "Gus",
+          "dept_name": "Physics",
+          "salary": 110000
+        }
+      ]
+    },
+    "projection": {
+      "columns": [
+        "ID",
+        "name",
+        "salary"
+      ],
+      "rows": [
+        {
+          "ID": "201",
+          "name": "Dana",
+          "salary": 60000
+        },
+        {
+          "ID": "202",
+          "name": "Eli",
+          "salary": 80000
+        },
+        {
+          "ID": "203",
+          "name": "Faye",
+          "salary": 90000
+        },
+        {
+          "ID": "204",
+          "name": "Gus",
+          "salary": 110000
+        }
+      ]
+    },
+    "product": {
+      "columns": [
+        "instructor.ID",
+        "name",
+        "dept_name",
+        "salary",
+        "teaches.ID",
+        "course_id",
+        "sec_id",
+        "semester",
+        "year"
+      ],
+      "rows": [
+        {
+          "instructor.ID": "201",
+          "name": "Dana",
+          "dept_name": "Comp. Sci.",
+          "salary": 60000,
+          "teaches.ID": "201",
+          "course_id": "CS-210",
+          "sec_id": "1",
+          "semester": "Fall",
+          "year": 2017
+        },
+        {
+          "instructor.ID": "201",
+          "name": "Dana",
+          "dept_name": "Comp. Sci.",
+          "salary": 60000,
+          "teaches.ID": "202",
+          "course_id": "CS-315",
+          "sec_id": "1",
+          "semester": "Spring",
+          "year": 2018
+        },
+        {
+          "instructor.ID": "202",
+          "name": "Eli",
+          "dept_name": "Comp. Sci.",
+          "salary": 80000,
+          "teaches.ID": "201",
+          "course_id": "CS-210",
+          "sec_id": "1",
+          "semester": "Fall",
+          "year": 2017
+        },
+        {
+          "instructor.ID": "202",
+          "name": "Eli",
+          "dept_name": "Comp. Sci.",
+          "salary": 80000,
+          "teaches.ID": "202",
+          "course_id": "CS-315",
+          "sec_id": "1",
+          "semester": "Spring",
+          "year": 2018
+        },
+        {
+          "instructor.ID": "203",
+          "name": "Faye",
+          "dept_name": "Physics",
+          "salary": 90000,
+          "teaches.ID": "201",
+          "course_id": "CS-210",
+          "sec_id": "1",
+          "semester": "Fall",
+          "year": 2017
+        },
+        {
+          "instructor.ID": "203",
+          "name": "Faye",
+          "dept_name": "Physics",
+          "salary": 90000,
+          "teaches.ID": "202",
+          "course_id": "CS-315",
+          "sec_id": "1",
+          "semester": "Spring",
+          "year": 2018
+        },
+        {
+          "instructor.ID": "204",
+          "name": "Gus",
+          "dept_name": "Physics",
+          "salary": 110000,
+          "teaches.ID": "201",
+          "course_id": "CS-210",
+          "sec_id": "1",
+          "semester": "Fall",
+          "year": 2017
+        },
+        {
+          "instructor.ID": "204",
+          "name": "Gus",
+          "dept_name": "Physics",
+          "salary": 110000,
+          "teaches.ID": "202",
+          "course_id": "CS-315",
+          "sec_id": "1",
+          "semester": "Spring",
+          "year": 2018
+        }
+      ]
+    },
+    "joined": {
+      "columns": [
+        "instructor.ID",
+        "name",
+        "dept_name",
+        "salary",
+        "teaches.ID",
+        "course_id",
+        "sec_id",
+        "semester",
+        "year"
+      ],
+      "rows": [
+        {
+          "instructor.ID": "201",
+          "name": "Dana",
+          "dept_name": "Comp. Sci.",
+          "salary": 60000,
+          "teaches.ID": "201",
+          "course_id": "CS-210",
+          "sec_id": "1",
+          "semester": "Fall",
+          "year": 2017
+        },
+        {
+          "instructor.ID": "202",
+          "name": "Eli",
+          "dept_name": "Comp. Sci.",
+          "salary": 80000,
+          "teaches.ID": "202",
+          "course_id": "CS-315",
+          "sec_id": "1",
+          "semester": "Spring",
+          "year": 2018
+        }
+      ]
+    },
+    "union": {
+      "columns": [
+        "course_id"
+      ],
+      "rows": [
+        {
+          "course_id": "CS-210"
+        },
+        {
+          "course_id": "HIS-230"
+        },
+        {
+          "course_id": "PHY-220"
+        }
+      ]
+    },
+    "intersection": {
+      "columns": [
+        "course_id"
+      ],
+      "rows": [
+        {
+          "course_id": "CS-210"
+        }
+      ]
+    },
+    "difference": {
+      "columns": [
+        "course_id"
+      ],
+      "rows": [
+        {
+          "course_id": "PHY-220"
+        }
+      ]
+    }
+  }
+}

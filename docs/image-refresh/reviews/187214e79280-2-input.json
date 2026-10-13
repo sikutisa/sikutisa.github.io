@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "DataChannel interface send(char), receive(): char.",
+      "passed": true,
+      "evidence": "DataChannel send(char),receive():char correct."
+    },
+    {
+      "requirement": "Connection interface dial(String num), hangup().",
+      "passed": true,
+      "evidence": "Connection dial(String num),hangup() correct."
+    },
+    {
+      "requirement": "ModemImpl implements both interfaces; methods not swapped between responsibilities.",
+      "passed": true,
+      "evidence": "ModemImpl implementation arrows now point UP to both actual interface boundaries, explicit implements caption unchanged."
+    },
+    {
+      "requirement": "Caption says split when change patterns justify it; avoid needless complexity.",
+      "passed": true,
+      "evidence": "Footer separation when needed, avoid needless complexity."
+    }
+  ],
+  "notes": "Direct visual inspection confirms required text and dependency semantics; PNG decode performed before approval."
+}

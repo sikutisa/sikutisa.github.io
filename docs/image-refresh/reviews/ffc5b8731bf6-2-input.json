@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Allocation T0 0 1 0,T1 2 0 0,T2 3 0 3,T3 2 1 1,T4 0 0 2.",
+      "passed": true,
+      "evidence": "Allocation010/200/303/211/002 exact."
+    },
+    {
+      "requirement": "Request T0 0 0 0,T1 2 0 2,T2 0 0 1,T3 1 0 0,T4 0 0 2; Available=(0,0,0); only T2 Request changed.",
+      "passed": true,
+      "evidence": "Request000/202/001/100/002 andAvailable000 exact; onlyT2Requesthighlighted."
+    },
+    {
+      "requirement": "T0 finishes releases B, Work=(0,1,0); none of T1,T2,T3,T4 can proceed. Deadlocked set exactly T1,T2,T3,T4.",
+      "passed": true,
+      "evidence": "T0 releases010→Work010; setT1,T2,T3,T4 exactly; graphremoved."
+    }
+  ],
+  "notes": "Second output inspected in full; numeric tables and calculations match originals and article; incorrect added graph removed."
+}

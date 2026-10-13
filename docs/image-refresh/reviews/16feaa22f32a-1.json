@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "System states partition into disjoint Safe and Unsafe regions; Deadlocked is a proper subset fully inside Unsafe.",
+      "passed": true,
+      "evidence": "Safe and Unsafe panels separate, Deadlocked inset wholly inside Unsafe."
+    },
+    {
+      "requirement": "Unsafe includes states outside Deadlocked; clearly states unsafe does not necessarily mean deadlocked and Safe has a completion sequence.",
+      "passed": false,
+      "evidence": "Labels correct, but unsolicited illustrative unsafe graph has P2 with no outgoing request and no explicit maximum claims; does not establish unsafe status. Remove all added graph examples."
+    }
+  ],
+  "notes": "Direct visual inspection. Reject invented or misleading graph content even when numeric table is accurate. Only passed image may replace original.",
+  "at": "2026-10-12T22:45:03.477Z",
+  "generatedSha256": "634ffdad3f28097be77bf4425ac563eb7a158e980db4f0ee95e3bf89d50ef16c",
+  "specSha256": "e1d895f059c09ff587069308e55a308e4481b5bba18ba320d70be966a8edc89a"
+}

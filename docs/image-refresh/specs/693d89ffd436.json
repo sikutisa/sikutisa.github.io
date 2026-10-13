@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "SCAN disk scheduling",
+  "alt": "헤드 53에서 0 방향으로 이동·반전하여 요청들을 처리하는 SCAN 예시",
+  "requiredChecks": [
+    "Samequeue/start53;53→37→14→0→65→67→98→122→124→183.",
+    "Directionfirsttoward0,reverseat0;movement53+183=236 throughlastrequest;no199edgeincludedafterlastrequest."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title SCAN disk scheduling. Header Queue98,183,37,122,14,124,65,67;Head starts at53;Initialdirection toward0;Cylinder range0–199. TWOclearsequences: leftwardtoward0 cards53→37→14→0 then Reverseat0; rightward cards0→65→67→98→122→124→183. Distinguish0turnaroundpointnotrequest,shared0connectssequences. Footer Movement until all listed requests are served:53+183=236cylinders. Traversalnotproportionalplot. Do not extendpath183to199,noduplicate servicing."
+}

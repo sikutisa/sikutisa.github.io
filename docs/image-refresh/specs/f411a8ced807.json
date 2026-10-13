@@ -1,0 +1,15 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Two-level 32-bit address translation",
+  "alt": "32비트 주소의 p1·p2·d를 순서대로 사용하여 두 단계 페이지 테이블을 조회",
+  "requiredChecks": [
+    "Logical32-bitaddressp1(10bits),p2(10bits),d(12bits) illustrated4KiBexample.",
+    "p1 indexes outerpage-table, selectedentrypointsinnerpagetable; p2 indexesinner, entryreturnsframef.",
+    "Offsetdunchanged combinesf,dphysicalmemory; dnotindexouter/inner, no10+12+12mistake."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Two-level translation of a 32-bit address. Topbitfieldp1|p2|d withwidthlabels10bits|10bits|12bits andtotal32bits, illustrated4KiBpages. Beneath left-to-rightlookup: Outer page table indexed byp1→Page of page table indexed byp2→Physicalframef offsetd. Drawp1arrowtouterindex,p2arrowtoinnerindex,dseparatebypass toPhysicaladdress(f|d) leadingmemory. Outerselectedentrylabel Pointer to inner page table; innerselectedentry Framef. Footer 10 + 10 + 12 = 32 bits. Noothergraphs.",
+  "sources": [
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8_MainMemory.html"
+  ]
+}

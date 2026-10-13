@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Masterdirectoryfourusers1..4eachseparateUFD.",
+      "passed": true,
+      "evidence": "Master file directory의 User 1~4가 대응 사용자 디렉터리 하나씩 연결."
+    },
+    {
+      "requirement": "User1cat/bo/a/test;User2a/data;User3a/test;User4x/data/a;11distinctfiles.",
+      "passed": true,
+      "evidence": "4·2·2·3개 파일과 각 이름을 원본과 대조. 중복 a는 서로 별개 아이콘."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:09:02.297Z",
+  "generatedSha256": "48db7cce3658b96ba20bff7e85296d211e8d261045bd554560e3353cffbebda5",
+  "specSha256": "f7746f6482274e0552d29f41c01cabbf93e64573cd965cd68eb8b809cc9e7d0b"
+}

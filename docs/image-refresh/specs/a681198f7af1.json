@@ -1,0 +1,14 @@
+{
+  "title": "Same relation, different row order",
+  "purpose": "Teach Same relation, different row order using original illustrative data and independently computed algebra.",
+  "alt": "튜플 순서만 달라진 같은 릴레이션 인스턴스",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "requiredChecks": [
+    "Headers in exact order: ID | name | dept_name | salary",
+    "Exactly 4 rows: 203 | Faye | Physics | 90000 ; 201 | Dana | Comp. Sci. | 60000 ; 204 | Gus | Physics | 110000 ; 202 | Eli | Comp. Sci. | 80000",
+    "The same four tuples in a different order; relation rows are unordered.",
+    "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset."
+  ],
+  "prompt": "Create a NEW original English raster table diagram for an IT blog, white background, navy crisp sans-serif, blue header and pale teal alternating rows, light rules and ample padding. Title \"Same relation, different row order\". ONE table. EXACT headers: ID | name | dept_name | salary. EXACT data rows:\n203 | Faye | Physics | 90000\n201 | Dana | Comp. Sci. | 60000\n204 | Gus | Physics | 110000\n202 | Eli | Comp. Sci. | 80000\nExactly 4 rows. No extra row, no ellipsis, no duplicate headers. Footer \"Original illustrative dataset\". Separate note \"The same four tuples in a different order; relation rows are unordered.\". Keep row order precisely as provided for visual verification; tuples remain a set."
+}

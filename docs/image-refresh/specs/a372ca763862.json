@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Function compose 실행 순서",
+  "alt": "A.compose(B)가 입력을 B, A 순서로 처리하는 함수 합성",
+  "requiredChecks": [
+    "Input x → B → A → Output A(B(x)).",
+    "A.compose(B), Function case, B before A."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Function: compose. Subtitle A.compose(B). Single flow Input x → Function B → Function A → Output A(B(x)). Labels Step 1 under B and Step 2 under A. Caption B first, then A. No other flow/arrows.",
+  "referenceSource": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html"
+}

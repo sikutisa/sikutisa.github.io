@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "MySQL executor connects through Handler API to InnoDB; MySQL optimizer/executor are outside InnoDB.",
+      "passed": true,
+      "evidence": "Separate MySQL engine containsOptimizer→Executor, and HandlerAPI connectsExecutor with InnoDBBufferpool."
+    },
+    {
+      "requirement": "InnoDB buffer pool encloses cached data/index pages, undo pages and change-buffer pages; adaptive hash index is optional derived lookup outside that box.",
+      "passed": true,
+      "evidence": "Bufferpool contains3named cachedpagescards; AHI outside with Optionalderivedlookup dottedlink."
+    },
+    {
+      "requirement": "Redo log buffer is separate from buffer pool; page flush goes to tablespaces and redo writer to redo log files.",
+      "passed": false,
+      "evidence": "REJECT: Redobuffer→Redowrite→Redofiles is correct, but pool has no direct pageflushpath; instead merge→pageflush incorrectly implies flushing exclusively from merge."
+    },
+    {
+      "requirement": "Background work includes change-buffer merge, page flush and redo write; memory and disk are distinct with explicit simplified-scope caption.",
+      "passed": false,
+      "evidence": "3backgroundcards visible, memory and disk separated, simplified footer names omitted doublewrite; however merge arrows both terminate on changebufferpages so topology needs correction."
+    }
+  ],
+  "notes": "Inspected each arrow endpoint, region boundary and label. PIL verify/load passed. Failed results are not applied.",
+  "at": "2026-10-12T12:42:48.012Z",
+  "generatedSha256": "a3e9b9324651367c26b6ae7c78720954d72650847032a71d7f1099e1af69c0c2",
+  "specSha256": "a03455dc5860d8ec7717818b64220452d6ce5d670a1842d6159c8361eafbaca9"
+}

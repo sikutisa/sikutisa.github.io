@@ -15,7 +15,7 @@ tags: [computer science, oop, design pattern]
 *  Provides a unified interface to a set of interfaces in a subsystem. 
     * It defines a higher-level interface that makes a subsystem easier to use.
 
-![diagram](./img/1.png){: w="340" h = "300"}
+![파사드 도입 전후 클라이언트와 하위 시스템의 의존 관계 비교](./img/1-generated.png){: w="760"}
 
 
 ## Motivation
@@ -40,9 +40,9 @@ tags: [computer science, oop, design pattern]
 
 
 ## Example
-![ex](./img/2.png){: w="320" h = "300"}
+![Application이 Db 파사드와 ProductData를 사용하고 Db가 System.Data 세부 객체를 조율하는 구조](./img/2-generated.png){: w="760"}
 
-![ex](./img/3.png){: w="310" h = "300"}
+![Compiler 파사드가 Scanner·Parser·ProgramNodeBuilder·CodeGenerator를 조율하는 컴파일 과정](./img/3-generated.png){: w="760"}
 
 ### Example Code
 ```java
@@ -72,13 +72,13 @@ void Compiler::Compile(istream& input, BytecodeStream& output) {
 ```
 
 ### Facade Example
-![ex](./img/4.png){: w="320" h = "300"}
+![두 클라이언트의 doSomething 호출을 파사드가 세 패키지의 클래스 작업으로 조율하는 예시](./img/4-generated.png){: w="760"}
 
 ### Known Uses: Web Applications
-![ex](./img/5.png){: w="340" h = "280"}
+![Browser·Web Server·Application Server 내부 Facade·하위 시스템·Database Server의 호출 경로](./img/5-generated.png){: w="760"}
 
 ### Facade in Layered Architecture
-![ex](./img/6.png){: w="320" h = "300"}
+![체스 UI와 Chess Logic 사이의 Facade, XML·GTK·Linux·Hardware로 이어지는 계층 구조](./img/6-generated.png){: w="760"}
 
 ## Comparing the Facade with the Adapter Pattern
 * Are there existing classes?
@@ -108,7 +108,7 @@ public float BetterExample() {
 }
 ```
 
-![ex](./img/7.png){: w="340" h = "280"}
+![Host가 Station을 통해 Thermometer까지 탐색하는 호출과 Station.GetTemperature로 위임하는 호출 비교](./img/7-generated.png){: w="760"}
 
 ```java
 public class Car {

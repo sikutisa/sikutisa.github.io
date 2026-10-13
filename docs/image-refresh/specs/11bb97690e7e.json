@@ -1,0 +1,14 @@
+{
+  "title": "Receivers expose different operations",
+  "purpose": "Explain heterogeneous vendor receiver interfaces that Command hides from the invoker.",
+  "alt": "서로 다른 메서드를 제공하는 14개 가전 수신자 클래스와 공통 명령 인터페이스가 필요한 이유",
+  "requiredChecks": [
+    "All fourteen original receiver classes are present, including SecurityControl.arm() and disarm().",
+    "All methods remain under the correct receiver; FaucetControl uses openValve() and closeValve().",
+    "Independent class cards show varied APIs and the Command-wrapping caption; no invented superclass."
+  ],
+  "prompt": "Edit vendor chart: preserve existing thirteen receivers and methods; add SecurityControl with arm() and disarm(). Put Light and SecurityControl in the last row; correct FaucetControl openValve()/closeValve(); retain differing APIs caption.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "secondReviewOriginalViewed": true
+}

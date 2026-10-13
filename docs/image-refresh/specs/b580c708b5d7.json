@@ -1,0 +1,14 @@
+{
+  "title": "An observer requests registration",
+  "purpose": "Show Duck subscription request before membership update.",
+  "alt": "Duck이 Subject에 등록을 요청하고 기존 관찰자 목록에는 Cat·Dog·Mouse가 있는 단계",
+  "requiredChecks": [
+    "Duck→Subject registration request is explicit.",
+    "Subject state stays 2.",
+    "Existing registered list remains Cat, Dog, Mouse in this request snapshot.",
+    "No notification or automatic state change is implied by registration."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference study blog. Opaque white background, large readable navy sans-serif text, monospaced identifiers, blue/teal/amber flat cards and roomy gutters. No copied irregular bubbles, photographed source or logos. Use plain labelled rectangles for Cat/Dog/Mouse/Duck object names, no animal illustration needed. Include only listed identifiers; do not invent code bodies, modifiers, state values, extra arrows or recipients. Title 'An observer requests registration'. LEFT Duck card 'Wants to subscribe' arrow right to Subject 'state: int = 2', label 'registerObserver(duck)'. RIGHT separate roster panel 'Current registered observers' Cat, Dog, Mouse only. Top small phasecaption 'Registration request — before roster update'. Footer 'The Subject adds the observer; registration does not change state'. No Subject→observer notification arrows in this snapshot, no Duck alreadyinsidecurrentroster.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

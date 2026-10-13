@@ -1,0 +1,14 @@
+{
+  "title": "Widget families through one factory",
+  "purpose": "Show toolkit depends on abstract factory/products; concrete factories create consistent families.",
+  "alt": "추상 WidgetFactory에 의존하는 툴킷과 WinXP·Motif의 TextBox·ScrollBar 제품군",
+  "requiredChecks": [
+    "UIToolKit uses only WidgetFactory, TextBox and ScrollBar abstractions; no client→concrete product creation.",
+    "WidgetFactory declares createTextBox(): TextBox and createScrollBar(): ScrollBar.",
+    "WinXPWidgetFactory and MotifWidgetFactory implement WidgetFactory; each creates its matching TextBox/ScrollBar family.",
+    "WinXPTextBox/MotifTextBox implement TextBox; WinXPScrollBar/MotifScrollBar implement ScrollBar; no cross-family creation."
+  ],
+  "prompt": "Create a NEW original English raster technical diagram for a design-pattern study blog. White background, navy large sans-serif labels, flat blue and teal cards, spacious connectors, no copied slide layout or logos. Monospaced class/method identifiers. Distinguish uses, implements and creates via labels on directional connectors. Title \"Widget families through one factory\". TOP: UIToolKit→WidgetFactory labelled uses. WidgetFactory lists createTextBox(): TextBox and createScrollBar(): ScrollBar. Top-right \"Product interfaces: TextBox, ScrollBar\"; UIToolKit→this card \"uses returned products\". BELOW TWO panels. WinXP panel: WinXPWidgetFactory upward arrow toWidgetFactory labelled implements, downward creates branch to WinXPTextBox caption implements TextBox and WinXPScrollBar caption implements ScrollBar. Motif panel: MotifWidgetFactory implements WidgetFactory; creates MotifTextBox caption implements TextBox and MotifScrollBar caption implements ScrollBar. No client→concrete classes or cross-family creates links. Footer \"Inject a factory; the toolkit uses abstract products\". Large clean gutters, no unlabeled UML triangles.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Gantt P1[0,24],P2[24,27],P3[27,30], proportional durations24:3:3.",
+      "passed": false,
+      "evidence": "Pixel-coordinate repair still fails scale; P1≈71.5%, P2≈16%,P3≈12.5%. Exact timestamps preserved but cannot approve proportional chart."
+    },
+    {
+      "requirement": "All arrivals0; nonpreemptive order P1,P2,P3.",
+      "passed": true,
+      "evidence": "Nonpreemptive FCFS order correct."
+    },
+    {
+      "requirement": "Waiting P1=0,P2=24,P3=27, average17ms.",
+      "passed": true,
+      "evidence": "Wait values0,24,27 average17 unchanged."
+    },
+    {
+      "requirement": "Turnaround24,27,30 average27ms; no context-switch overhead included.",
+      "passed": true,
+      "evidence": "Turnaround24,27,30 average27 unchanged."
+    }
+  ],
+  "notes": "Failed time scale; preserve original, redesign representation before new approval.",
+  "at": "2026-10-12T22:08:09.285Z",
+  "generatedSha256": "d7f220ee9457ebe4dc4986ef9ecaa7d96296785a71d5aace7372d638cf19bb91",
+  "specSha256": "51f2a582d246b3f878999c8e4923de3393b5f152d886b23869c53c0208db9778"
+}

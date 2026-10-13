@@ -1,0 +1,19 @@
+{
+  "title": "MySQL memory scopes",
+  "purpose": "Show one shared scope versus independent session-local allocations, matching examples from document and original.",
+  "alt": "MySQL 공유 메모리와 세션별 독립 메모리의 대표 버퍼 및 캐시",
+  "requiredChecks": [
+    "Shared region includes InnoDB buffer pool, MyISAM key cache, Adaptive hash index, Redo log buffer and Table cache; no shared Binary log buffer.",
+    "Each separate session contains Join, Sort, Network and Read buffers plus Binary log cache; no cross-session sharing connector.",
+    "Both connection headings have access arrows to shared scope; the caption states query buffers are allocated as needed."
+  ],
+  "sources": [
+    "https://dev.mysql.com/doc/refman/8.0/en/memory-use.html",
+    "https://dev.mysql.com/doc/refman/8.0/en/replication-options-binary-log.html"
+  ],
+  "prompt": "Edit MySQL memory scopes: shared five cards InnoDB buffer pool, MyISAM key cache, Adaptive hash index, Redo log buffer, Table cache. Session A and B each have private Join buffer, Sort buffer, Network buffer, Read buffer, Binary log cache. Preserve shared access arrows and allocation-as-needed caption.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "secondReviewOriginalViewed": false,
+  "secondReviewOriginalBasis": "Original untracked PNG was retired in the prior session and cannot be recovered; independently reviewed current document and official MySQL sources. originalViewed records the historical first pass, not this second pass."
+}

@@ -1,0 +1,14 @@
+{
+  "title": "File storage: separate metadata and content",
+  "purpose": "Replace initial scalable design overview with accurate request route and separation of metadata DB from object files.",
+  "alt": "파일 서비스의 로드밸런서·API 서버·메타데이터 DB·객체 저장소 분리",
+  "requiredChecks": [
+    "Client requests go Client→Load balancer→API servers in that direction.",
+    "API servers connect separately to Metadata database and Object storage, not sequentially through one another.",
+    "Metadata contains users/files/versions; file bytes belong in object storage.",
+    "Diagram is labeled illustrative scalable file service and does not claim actual Google internal architecture or zero-loss guarantees."
+  ],
+  "prompt": "Create a NEW original raster diagram for a technical blog. Clear English labels, large navy sans-serif on white, flat blue/teal cards, no logos, no copied-book layout or decorations, generous connector gutters. TITLE \"File storage: separate metadata and content\". Subtitle \"Illustrative scalable file service\". Original LEFT-TO-RIGHT layout. \"Client\"→\"Load balancer\"→\"API servers\" as primary request chain, each arrow labelled short \"HTTPS\" or \"Route requests\". API servers represented by three small equal cards within one labelled group. To right of API group TWO parallel distinct cards: \"Metadata database\" subtitle \"Users / files / versions\" and \"Object storage\" subtitle \"File bytes\". Bidirectional connectors from API group to each, label \"Metadata\" upper and \"Upload / download\" lower. Database never connects to object storage in a chain. Footer \"Scale API, metadata, and file storage independently\". No provider logos, no real Google-internals claim, no total durability guarantees.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

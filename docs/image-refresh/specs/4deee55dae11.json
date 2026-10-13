@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Handling a page fault",
+  "purpose": "Explain the ordered valid nonresident-page fault handling path, including rejecting illegal accesses.",
+  "requiredChecks": [
+    "Six numbered steps appear in correct order: reference, trap, validate/locate, acquire frame/load, update page table, restart.",
+    "Illegal address terminates/raises an error; only a valid nonresident page proceeds to disk load.",
+    "Backing storage supplies the missing page to a free frame, and present bit becomes1 before restart.",
+    "Restart is the interrupted instruction, not a new process; every label is complete and arrows follow the stated order."
+  ],
+  "alt": "Page fault handling: trap, validate the address, load a valid missing page, update the page table, and restart the interrupted instruction",
+  "prompt": "Create a NEW original technical educational diagram for an English operating-systems blog. White background, dark navy crisp sans-serif text, blue and teal flat boxes, clean thin arrows, ample whitespace, large legible labels, no copied textbook artwork, no logos or watermark. TITLE \"Handling a page fault\". Make a readable landscape FLOWCHART with exactly six numbered main boxes, alternating across TWO rows with clear connecting arrows in ascending numeric order. Use these exact texts, line breaks as needed:\n\"1  Reference a nonresident page\"\n\"2  Trap to the operating system\"\n\"3  Validate address and locate page\"\n\"4  Acquire a free frame and load page\"\n\"5  Update page table: Present = 1\"\n\"6  Restart the interrupted instruction\".\nUnder step3 add a short branch labeled \"Illegal address\" leading to a separate red-outline box \"Terminate / report error\". The main step3→4 arrow is labeled \"Valid address\". Near step4 put simple small supporting boxes \"Backing storage\" and \"Physical memory — free frame\" with a one-way arrow labeled \"Read missing page\" from Backing storage to the free frame. Step5 must come AFTER this disk read. Do not draw a loop that restarts before the table is updated. At final step label the restart as the interrupted instruction (not a fresh process). Keep arrows and branch topology simple and unambiguous. Exact spelling mandatory; no more than these six numbered steps."
+}

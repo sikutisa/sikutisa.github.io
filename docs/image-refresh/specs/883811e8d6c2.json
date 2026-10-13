@@ -1,0 +1,15 @@
+{
+  "title": "Queued delayed commands",
+  "purpose": "Explain article's cooperative active-object queue and elapsed-time requeue logic.",
+  "alt": "ActiveObjectEngine 큐에서 DelayedTyper와 SleepCommand를 실행하고 경과 시간에 따라 자신 또는 깨울 명령을 재등록하는 구조",
+  "requiredChecks": [
+    "ActiveObjectEngine owns a Command queue; addCommand(c) appends, run() removes first and calls execute() until queue empty.",
+    "SleepCommand and DelayedTyper implement Command.execute(); the engine does not implement Command.",
+    "DelayedTyper.execute() prints mChar; when !stop it queues new SleepCommand(mDelay, engine, this).",
+    "SleepCommand first records startTime and requeues itself; before delay expiry requeues itself; after expiry queues wakeupCommand.",
+    "No sleeping worker threads are implied; this example repeatedly polls/requeues on one engine loop."
+  ],
+  "prompt": "Create a NEW ORIGINAL raster technical diagram for an IT study blog, opaque white background, clean navy sans-serif typography, restrained blue/teal/amber flat cards, spacious margins, exact monospaced class and method identifiers, no logos, source screenshots or copied slide composition. All English text clearly readable. Title 'Queued delayed commands'. Create a two-panel technical diagram with large readable exact identifiers. LEFT class responsibility cards: Command interface execute(); ActiveObjectEngine 'queue: Command[]' 'addCommand(c): append' 'run(): remove first; execute(); repeat'. SleepCommand 'implements Command' 'engine: ActiveObjectEngine' 'wakeupCommand: Command' 'sleepTime, startTime, started'. DelayedTyper 'implements Command' 'execute(): print(mChar)' 'if !stop: addCommand(new SleepCommand(mDelay, engine, this))'. Use relation text inside cards; engine holds Command queue but is not Command. RIGHT ordered SleepCommand.execute() decision steps 1 'First call: started=true; startTime=now; enqueue(this)' 2 'elapsed < sleepTime: enqueue(this)' 3 'elapsed >= sleepTime: enqueue(wakeupCommand)'. Footer 'One cooperative engine loop; repeated polling/requeue, not a sleeping worker thread'. Distinguish the three mutually exclusive cases with numbered boxes, not an ambiguous linear flow where all occur at once.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

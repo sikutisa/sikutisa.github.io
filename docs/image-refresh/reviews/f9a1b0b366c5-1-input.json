@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "StudentEnrollment has getSSN/getName/getInvoice/postPayment.",
+      "passed": true,
+      "evidence": "StudentEnrollment has all four exact methods, grouped two responsibilities."
+    },
+    {
+      "requirement": "RoasterApplication uses getSSN/getName only; AccountApplication uses getInvoice/postPayment only.",
+      "passed": false,
+      "evidence": "Method subsets correct but left client misspelled RosterApplication instead of exact RoasterApplication; repair label."
+    },
+    {
+      "requirement": "Both depend on same broad interface, so unrelated method changes can affect client dependency.",
+      "passed": true,
+      "evidence": "Both clients depend on same broad class; footer postPayment change can affect noncalling client."
+    },
+    {
+      "requirement": "Course association retains one Course to zero-or-more StudentEnrollment records; clients also use Course.",
+      "passed": true,
+      "evidence": "Association 0..* near Enrollment and 1 near Course; both clients use Course."
+    }
+  ],
+  "notes": "Fail exact client identifier; original retained until repair."
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Facade at a layer boundary",
+  "purpose": "Show chess UI accesses logic through facade above platform layers.",
+  "alt": "체스 UI와 Chess Logic 사이의 Facade, XML·GTK·Linux·Hardware로 이어지는 계층 구조",
+  "requiredChecks": [
+    "Top-to-bottom layers: Chess User Interface, Facade boundary, Chess Logic, XML Reading/Writing and GTK GUI Toolkit peers, Linux, Hardware.",
+    "Facade mediates the UI-to-logic boundary; it is not the operating system.",
+    "XML and GTK remain separate peer components above Linux.",
+    "Layer ordering and names match original; no inverted platform hierarchy."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif labels, exact monospaced code identifiers, restrained blue/teal cards, ample spacing, no logos or copied source composition. Title 'Facade at a layer boundary'. Draw clean stacked horizontal layers: top Chess User Interface, beneath small Facade card centered at boundary, beneath Chess Logic, beneath TWO side-by-side equal cards XML Reading/Writing and GTK GUI Toolkit, beneath full-width Linux, bottom Hardware. Large navy text. Single downward 'uses' arrow UI→Facade→Chess Logic, then simple down arrows logic→the TWO peer components→Linux→Hardware if roomy. All connectors label conceptual dependency not execution sequence. Footer 'Facade presents the logic layer through one entry point'.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

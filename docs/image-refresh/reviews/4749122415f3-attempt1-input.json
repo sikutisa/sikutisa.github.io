@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "ColumnsID,BACKGROUND_NAME;singlerow2,back1.",
+      "passed": false,
+      "evidence": "BACKGROUND row correct but extra ITEM table invents BACKGROUND_NAME."
+    },
+    {
+      "requirement": "ID2sameITEMID2PK/FK,commonprice/urlnotduplicatedchild.",
+      "passed": false,
+      "evidence": "Invented parent data erroneous; remove extra table."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Symmetric multiprocessing",
+  "alt": "각 레지스터·캐시를 가진 CPU 세 개가 동일한 메모리를 공유하는 SMP 구조",
+  "requiredChecks": [
+    "ExactlyCPU0,CPU1,CPU2 each has registers and cache.",
+    "AllthreepeerCPUs join shared bus and one shared memory; no master/slave roles."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Symmetric multiprocessing (SMP). Three peer boxes CPU0 CPU1 CPU2 each with Registers above Cache connected locally. Each Cache connects to single horizontal Shared bus beneath all3. Bus connects to ONE Main memory card. Plain connection lines, not directional control arrows. No CPU hierarchy/master/slave. Equal size CPU boxes."
+}

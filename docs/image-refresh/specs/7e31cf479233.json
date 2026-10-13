@@ -1,0 +1,14 @@
+{
+  "title": "Enumeration adapted to Iterator",
+  "purpose": "Show exact method mappings and unsupported remove for a Java object adapter.",
+  "alt": "EnumerationIterator의 hasNext·next 매핑과 remove 미지원, Iterator 구현·Enumeration 위임",
+  "requiredChecks": [
+    "Client uses Iterator interface hasNext()/next()/remove(); EnumerationIterator implements Iterator.",
+    "EnumerationIterator holds enumeration: Enumeration and delegates to it, with no inheritance from Enumeration.",
+    "hasNext()→hasMoreElements(); next()→nextElement() exact mappings.",
+    "remove()→throws UnsupportedOperationException because Enumeration lacks removal; no invented Enumeration.remove()."
+  ],
+  "prompt": "Create a NEW original English raster technical diagram for an IT design-pattern blog. White background, navy large text, flat blue/teal cards, generous whitespace, precise method spelling, arrows labelled for semantics. No logos or copied slide composition. Title \"Enumeration adapted to Iterator\". TOP Client→Iterator interface uses. Iterator lists hasNext(), next(), remove(). BELOW EnumerationIterator card \"- enumeration: Enumeration\"; dashed upward implements arrow toIterator. RIGHT Enumeration interface lists hasMoreElements(), nextElement(); EnumerationIterator→Enumeration arrow wraps / delegates. BOTTOM separate three-row mapping table headers \"Iterator call\" / \"Adapter behavior\": hasNext() | enumeration.hasMoreElements(); next() | enumeration.nextElement(); remove() | throws UnsupportedOperationException. Highlight remove row subtleamber. Footer \"Enumeration exposes traversal, not removal\". No enumeration.remove(), no iterator inheritance fromEnumeration, no unqualified method name error.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

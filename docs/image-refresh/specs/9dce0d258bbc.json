@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "OS services",
+  "alt": "사용자 인터페이스·시스템 호출·운영체제 서비스와 하드웨어의 계층",
+  "requiredChecks": [
+    "Users/systemprograms aboveGUI,batch,commandline interfaces andsystemcalls; OSabovehardware.",
+    "Services programexecution,I/O,filesystems,communications,resourc eallocation,logging/accounting,errordetection,protection/security all present."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Operating-system services. Stacked tiers: User and other system programs; User interfaces with GUI / Batch / Command line; System calls; large Operating system containing servicecards Program execution, I/O operations, File systems, Communications, Resource allocation, Logging / accounting, Error detection, Protection and security; Hardware bottom. All8servicecards readable in2rows4columns. Flowprograms→interfaces→systemcalls→services→hardware; canuseplainlayerswithoutarrows. Do not add kernels/VMs."
+}

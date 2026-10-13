@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "CPUlogical(p,d); pagepsearchedinTLB; hitreturnsf withoutpage-tablelookup.",
+      "passed": false,
+      "evidence": "TLBhitfcorrectbutpindexpathincorrectlystartsunderlogicaldfield ratherthanpfield."
+    },
+    {
+      "requirement": "Miss→pagetableindexedp→f; bothpathsconstructphysical(f,d); offsetd bypasseslookupunchanged.",
+      "passed": true,
+      "evidence": "Misspagetable→f/output(f,d),dtopbypasslabelunchanged."
+    },
+    {
+      "requirement": "No hitpaththroughpagetable; physicaladdressreachesphysicalmemory; cachemissnotautomaticallypagefault.",
+      "passed": true,
+      "evidence": "Hitdirect,noautomaticpagefaultcaptioncorrect; memoryforward."
+    }
+  ],
+  "notes": "Exact original values and complete article checked; reject misleading field connections or ambiguous per-row mapping arrows."
+}

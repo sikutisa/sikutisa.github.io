@@ -1,0 +1,17 @@
+{
+  "title": "Stateless web tier",
+  "purpose": "Show horizontally scalable interchangeable web nodes with external shared session state, retaining application cache/DB/CDN context.",
+  "alt": "무상태 웹 서버의 수평 확장과 외부 공유 세션 저장소, 캐시·DB·CDN 구조",
+  "sources": [
+    "https://docs.aws.amazon.com/wellarchitected/latest/framework/rel_mitigate_interaction_failure_stateless.html"
+  ],
+  "requiredChecks": [
+    "Load balancer sends requests to interchangeable Web A/B/C within Autoscaling group, with no per-node session store.",
+    "All web nodes access one external Shared session store, so routing is not tied to a particular node.",
+    "Application cache and primary/replica data routes are distinct from session store; replication is Primary→Replica.",
+    "Client static content goes to CDN separately; captions and routes readable."
+  ],
+  "prompt": "Create a NEW original technical blog raster diagram. English labels with large navy sans-serif text on white, flat blue/teal cards, wide clean routing gutters, no copied textbook composition, vendor logos or decoration. TITLE \"Stateless web tier\". Horizontal request Client→Load balancer→\"Autoscaling group\" boundary containing exactly3smallcards \"Web A\",\"Web B\",\"Web C\", subtitle \"Any node can serve a request\". Direct separate Client↔\"CDN\" path ABOVE requestrow labelled \"Static assets\". Below webgroup, place one large outsidecard \"Shared session store\" subtitle \"External session state\", connected bidirectionally to WEBGROUPBOUNDARY labelled \"Read / update session\"; connect shortbus to all3nodes insidegroup if readable. Rightofwebgroup parallel \"Application cache\" and \"Data tier\" group containing \"Primary\" and \"Replica\". Separate bidirectional webgroup→Applicationcache label \"Cached data\", solidwebgroup→Primary \"Writes\", solidwebgroup→Replica \"Reads\"; dashedPrimary→Replica labelled\"Replication\". Neverroute sessionstore throughapplicationcacheorDB, sessionstorestandaloneexamplebackingstore. Footer \"Add or remove web nodes without pinning sessions to one node\". No sessionblob in individualservers, no sticky-routingpath. Prioritize obviousexternalstate path over intricate internalrouting.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

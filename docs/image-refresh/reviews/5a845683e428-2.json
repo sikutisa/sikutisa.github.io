@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Plot is explicitly labeled Illustrative reference trace, not presented as original measured data.",
+      "passed": true,
+      "evidence": "New subtitle Illustrative reference trace is clearly visible directly below title."
+    },
+    {
+      "requirement": "Horizontal axis Execution time and vertical Page number are correct.",
+      "passed": true,
+      "evidence": "Execution time horizontal and Page number vertical still visible."
+    },
+    {
+      "requirement": "Four phases show clusters at18–20,22–24,30–32,then18–20, rather than uniform random references.",
+      "passed": true,
+      "evidence": "Inspected unchanged dots in four clusters18–20,22–24,30–32,18–20, phasesA–D."
+    },
+    {
+      "requirement": "The caption explains clustering and changing locality; all labels remain legible.",
+      "passed": true,
+      "evidence": "Unchanged footer References cluster, then shift to a new locality legible; no clipped labels."
+    }
+  ],
+  "notes": "Targeted generative edit added missing qualification only; visually compared all chart content against earlier attempt. PIL verify/load passed.",
+  "at": "2026-10-12T12:36:49.691Z",
+  "generatedSha256": "a10a628cee1af2228ee85ed18d8cbe9fdcc3497507f75c2a6db736e98d6ca5ee",
+  "specSha256": "1d5a2725f5a8106ce34209e930dc5dc0c6d9f0ca466af63921f3211e780157a3"
+}

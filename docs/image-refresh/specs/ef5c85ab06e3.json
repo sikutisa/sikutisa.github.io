@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Interrupt timeline",
+  "alt": "입출력 전송 중 CPU는 사용자 프로세스를 실행하고 완료 인터럽트 때 잠시 처리하는 타임라인",
+  "requiredChecks": [
+    "Two I/O cycles: request→device transferring→transferdone; device idle between cycles.",
+    "CPU executes user process during transfers and briefly handles interrupt after each completion, then resumes; shared time axis no numerical durations."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Interrupt-driven I/O timeline. Horizontal time axis increasing right. Two synchronized lanes CPU and I/O device. Device lane shows Idle, Transferring, Idle, Transferring, Idle. Mark request1 before transfer1, completion1 at its end, request2 before transfer2, completion2 at its end. CPU lane stays User process executing for most time, switches to brief Interrupt processing segment immediately AFTER each completion, returns to User process executing. Use labelled interval bars, not complicated waveforms. Dashed vertical guides align the four events. Caption CPU can execute while I/O transfers data. Do not interrupt at request times."
+}

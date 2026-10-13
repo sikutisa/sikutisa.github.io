@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Linked allocation",
+  "alt": "jeep 파일의 9→16→1→10→25 연결 할당과 시작·끝 항목",
+  "requiredChecks": [
+    "Jeepdirectorystart9,end25;chain9→16→1→10→25→EOF.",
+    "Scatteredblockslinkednotcontiguous;sourceorderpreserved,separatelegendendmarker."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Linked allocation. Directory card File jeep | Start 9 | End 25. Below a wide readable chain of EXACT five disk-block cards in file order: Block 9 → Block 16 → Block 1 → Block 10 → Block 25 → EOF. Each card split Data and Next pointer, NEXT values respectively16,1,10,25,EOF. All arrows clear left-to-right, no extra block. Caption Blocks may be scattered on disk; pointers are stored in data blocks. This is a logical chain, positions do not imply physical adjacency."
+}

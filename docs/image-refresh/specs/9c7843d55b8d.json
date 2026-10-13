@@ -1,0 +1,14 @@
+{
+  "title": "student relation",
+  "purpose": "Illustrate student relation using an original small dataset calculated in examples/sql-joins.json.",
+  "alt": "학생 3명의 ID·이름·학과·이수 학점 예시 테이블",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "requiredChecks": [
+    "Column headers in exact order: ID | name | dept_name | tot_cred",
+    "Exactly 3 data rows in exact order: 101 | Ari | Comp. Sci. | 32 ; 102 | Bo | History | 28 ; 103 | Cy | Biology | 20",
+    "ID is the matching key shared with takes; student 103 has no takes record.",
+    "Footer explicitly identifies an original illustrative dataset; all table cells readable without copied textbook names/data."
+  ],
+  "prompt": "Use case scientific-educational. Create a new original raster table illustration for an English technical blog, white background, navy crisp text, flat blue header, alternating pale teal rows, generous cell padding, light thin rules, no decorative icons or arrows. Title \"student relation\". Render ONE table only. EXACT column order: ID | name | dept_name | tot_cred. EXACT data rows (pipe-separated cells):\n101 | Ari | Comp. Sci. | 32\n102 | Bo | History | 28\n103 | Cy | Biology | 20\nThere are exactly 3 body rows. Use monospaced readable identifiers and normal names; do not invent rows, omit columns or duplicate headers. Literal NULL uppercase denotes absent values and must be visibly muted italic with all letters, no empty blanks. Footer \"Original illustrative dataset\". Below table short note \"ID is the matching key shared with takes; student 103 has no takes record.\". Fit wide landscape especially for nine-column join output; large text, no clipped cells. Data and column names must be exact."
+}

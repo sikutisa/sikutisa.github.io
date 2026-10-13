@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Before: clients depend directly on multiple subsystem classes.",
+      "passed": true,
+      "evidence": "Before three clients each depend on multiple S1/S2/S3 via direct arrows."
+    },
+    {
+      "requirement": "After: clients use a single Facade that delegates to subsystem classes.",
+      "passed": true,
+      "evidence": "After three clients enter Facade which delegates down to each S1/S2/S3."
+    },
+    {
+      "requirement": "The subsystem remains internally complex; advanced direct access is permitted, not prohibited.",
+      "passed": true,
+      "evidence": "Both subsystem panels retain internal S1→S2→S3; note permits advanced direct access."
+    },
+    {
+      "requirement": "No new domain capability or subsystem→Facade dependency is claimed.",
+      "passed": true,
+      "evidence": "Footer keeps existing behavior; all facade/subsystem arrows point downward, never reverse dependency."
+    }
+  ],
+  "notes": "Pass. Full visual review of participants, delegation, call order, identifiers and queue semantics against article and original."
+}

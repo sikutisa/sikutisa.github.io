@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Logicalpages0..3; pagetable0→1,1→4,2→3,3→7.",
+      "passed": true,
+      "evidence": "Logicalpages0..3, table0→1,1→4,2→3,3→7 exact."
+    },
+    {
+      "requirement": "Physicalframes0..7: frame1Page0,3Page2,4Page1,7Page3; remaining0,2,5,6 unused.",
+      "passed": true,
+      "evidence": "Frames1Page0,3Page2,4Page1,7Page3;0/2/5/6Unused."
+    },
+    {
+      "requirement": "Equal-sized pages/frames; noncontiguous physical layout clear, no substituted mapping.",
+      "passed": false,
+      "evidence": "Numericmappingcorrectbutlogicalblockheights~2×physicalframeheightsdespiteEqualSizecaption. Set common blockheight or explicitly schematic and still depict same block dimensions."
+    }
+  ],
+  "notes": "All mappings and memory bytes compared visually. Reject size/identifier/case ambiguities before applying."
+}

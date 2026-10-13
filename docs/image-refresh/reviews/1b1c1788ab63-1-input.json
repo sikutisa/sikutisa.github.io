@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Column order: instructor.ID | name | dept_name | salary | teaches.ID | course_id | sec_id | semester | year",
+      "passed": true,
+      "evidence": "All nine headers instructor.ID,name,dept_name,salary,teaches.ID,course_id,sec_id,semester,year appear in exact order."
+    },
+    {
+      "requirement": "Exactly 4 rows: 201 | Dana | Comp. Sci. | 60000 | 201 | CS-210 | 1 | Fall | 2026 ; 201 | Dana | Comp. Sci. | 60000 | 202 | CS-315 | 1 | Spring | 2027 ; 202 | Eli | Comp. Sci. | 80000 | 201 | CS-210 | 1 | Fall | 2026 ; 202 | Eli | Comp. Sci. | 80000 | 202 | CS-315 | 1 | Spring | 2027",
+      "passed": true,
+      "evidence": "Four rows pair Dana20160000 andEli20280000 withteaches201CS-210Fall2026 and202CS-315Spring2027; section1; repeateddepartmentsComp. Sci., matching fixture."
+    },
+    {
+      "requirement": "Two instructors × two teaches rows = four pairs; no ID filter applied.",
+      "passed": true,
+      "evidence": "Both mismatches201/202 and202/201 retained; note states2×2 fourpairs withnoIDfilter."
+    },
+    {
+      "requirement": "Original illustrative dataset footer; no copied textbook names, all cells legible.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer present and all cells legible, no textbook instructor names."
+    }
+  ],
+  "notes": "Pass after checking every cell and the independent product/mean calculations in examples/sql-product-aggregation.json."
+}

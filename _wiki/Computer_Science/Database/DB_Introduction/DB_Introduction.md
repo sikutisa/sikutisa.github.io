@@ -51,7 +51,7 @@ tags: [computer science, database]
 * **View level**: application programs hide details of data types.
     *  Views can also hide information (such as an employee’s salary) for security purposes. 
 
-![Architecture](./img/1.png){: w="350" h = "330"}
+![여러 사용자 뷰와 하나의 논리 스키마·물리 저장 구조로 구분되는 데이터 추상화 3단계](./img/1-generated.png){: w="760"}
 *An architecture for a database system*
 
 ### Instances and Schemas
@@ -172,7 +172,7 @@ tags: [computer science, database]
 2.	Optimization
 3.	Evaluation
 
-![Processing](./img/2.png){: w="440" h = "400"}
+![질의 파싱·관계대수 변환·통계 기반 최적화·실행 계획 평가와 결과 반환 흐름](./img/2-generated.png){: w="760"}
 
 ### Transaction Management
 * A **transaction** is a collection of operations that performs a single logical function in a database application.
@@ -192,7 +192,7 @@ tags: [computer science, database]
     * Geographical distribution
     * Schema/data heterogeneity
 
-![Architecture](./img/3.png){: w="380" h = "450"}
+![DML·DDL 질의 처리기, 네 가지 저장 관리자, 데이터·인덱스·메타데이터 저장소의 개념 구조](./img/3-generated.png){: w="760"}
 *Database Architecture(Centralized/Shared-Memory)*
 
 ### Database Applications
@@ -202,5 +202,5 @@ tags: [computer science, database]
         * The client end communicates with an application server, usually through a forms interface.  
         * The application server in turn communicates with a database system to access data.  
 
-![Architecture](./img/4.png){: w="380" h = "350"}
+![클라이언트의 직접 DB 호출과 애플리케이션 서버를 경유하는 2계층·3계층 비교](./img/4-generated.png){: w="760"}
 *Two-tier and three-tier architectures*

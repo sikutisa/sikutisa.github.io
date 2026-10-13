@@ -1,0 +1,5 @@
+{
+  "01ca929a6d66": "Change only logical-memory bar geometry: make the four logical page blocks exactly the SAME individual height as each of eight physical frame blocks. Thus logical-memory bar has half the height of physical-memory bar. Align their tops, keep wider logicalbar ifneededforlabels. Preserve all exact table mappings, labels, colors, physicalmemory and footer. No newcontent.",
+  "324eacd1c8d7": "Add exact field identifiers to bitfieldlabels: left Page number (p), right Page offset (d). Preserve m−n bits/n bits, m-bit wholebrace, high/loworderlabels and 2^n/2^m formulas. No other changes.",
+  "76e4af33ae82": "Correct only byte characters in logical Page2 row to four clearly lowercase glyphs i j k l, matching physicalFrame1contents i j k l. The final character must be lowercase letter ell (l), not uppercase L. Use a lowercase ell with curved bottom rather than capital L. Keep all numbers/mappings/otherbytesandlayoutunchanged."
+}

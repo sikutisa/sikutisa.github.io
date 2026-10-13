@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Before: DependentPizzaStore directly creates concrete regional pizza classes.",
+      "passed": false,
+      "evidence": "Correct three concrete creates arrows, but DependentPizzaStore card invents orderPizza(type) and private createPizza(type); source has public createPizza(style,type). Remove unsupported method rows."
+    },
+    {
+      "requirement": "After: abstract PizzaStore uses abstract Pizza instead of directly creating concrete products.",
+      "passed": true,
+      "evidence": "After base PizzaStore uses abstract Pizza, no direct concrete creation."
+    },
+    {
+      "requirement": "Regional creator subclasses perform concrete instantiation; creation dependencies still exist in subclasses.",
+      "passed": true,
+      "evidence": "Creator subclasses note locates concrete creation in regional subclass rather than eliminating it."
+    },
+    {
+      "requirement": "Concrete NYStyleCheesePizza, NYStyleClamPizza, ChicagoStyleCheesePizza extend Pizza in the after panel.",
+      "passed": true,
+      "evidence": "Three source concrete product names extend Pizza and inherited operations present."
+    }
+  ],
+  "notes": "Fail. Invented method declarations do not match source DependentPizzaStore; remove unsupported API rows.",
+  "at": "2026-10-12T15:10:12.046Z",
+  "generatedSha256": "ebd9eb87d39ebfb137aef236f098607738774b91aaa8c059bf33e80688fdf3d7",
+  "specSha256": "0101bdf752d3bdecd728fa8f60d5f1fcb47834aaa48048cd1a8272e9d812c5a3"
+}

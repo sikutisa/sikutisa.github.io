@@ -1,0 +1,14 @@
+{
+  "title": "A simpler subsystem entry point",
+  "purpose": "Show reduced client dependencies with a facade, while preserving optional direct access.",
+  "alt": "파사드 도입 전후 클라이언트와 하위 시스템의 의존 관계 비교",
+  "requiredChecks": [
+    "Before: clients depend directly on multiple subsystem classes.",
+    "After: clients use a single Facade that delegates to subsystem classes.",
+    "The subsystem remains internally complex; advanced direct access is permitted, not prohibited.",
+    "No new domain capability or subsystem→Facade dependency is claimed."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif labels, exact monospaced code identifiers, restrained blue/teal cards, ample spacing, no logos or copied source composition. Title 'A simpler subsystem entry point'. Two side-by-side panels 'Before' and 'With Facade'. Each has three clients A/B/C above subsystem containing classes S1/S2/S3. Before show clients arrows to multiple classes. After all client arrows to Facade; Facade arrows to S1/S2/S3. Keep subsystem's internal S1→S2→S3 links in both panels. Small note 'Advanced clients may still use subsystem APIs directly'. Footer 'Simplify the entry point; keep existing subsystem behavior'. All arrows one-way use/delegation, no backwards subsystem→facade links.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

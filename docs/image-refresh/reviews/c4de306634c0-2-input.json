@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "ThreeprocessesP1/P2/P3 eachlogicalcodepageslibc1..4; eachpagetablemaps3,4,6,1 respectively.",
+      "passed": true,
+      "evidence": "P1/P2/P3 exactsamefourlibcmappings3,4,6,1."
+    },
+    {
+      "requirement": "Singlephysicalsharedcopy libc1frame3,libc2frame4,libc3frame6,libc4frame1.",
+      "passed": true,
+      "evidence": "Singlephysicalsharedcopy libcpagesatframes3/4/6/1 exact."
+    },
+    {
+      "requirement": "Commonreentrantnon-self-modifyingcodeshared, private data notshownasone shared mutablecopy; no triplicatedphysicalcode.",
+      "passed": true,
+      "evidence": "Ambiguousarrowsremoved; allthree map sameframescaption, reentrantcodeandprivatedataclarificationcorrect."
+    }
+  ],
+  "notes": "Second output personally inspected; source fields and mapping relationships repaired and rechecked."
+}

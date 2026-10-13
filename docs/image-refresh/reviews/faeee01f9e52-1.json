@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Exactly5statesNew,Ready,Running,Waiting,Terminated.",
+      "passed": true,
+      "evidence": "New,Ready,Running,Waiting,Terminated 5상태다."
+    },
+    {
+      "requirement": "New→Ready admitted;Ready→Running schedulerdispatch;Running→Ready interrupt;Running→Waiting I/O/eventwait;Waiting→Ready I/O/eventcompletion;Running→Terminated exit.",
+      "passed": true,
+      "evidence": "admitted/dispatch/interrupt/wait/completion/exit 6화살표의 출발·도착 상태를 각각 확인했다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:20:45.183Z",
+  "generatedSha256": "acf0a9107b1e7303edfa2cf8e018ccff4c84dcd1cf56db81e4f0b115fc4d7085",
+  "specSha256": "00c5a4d24ec7ce748a44784f0c741191e0e3a719c9de0f2e4f993dfa89bc058e"
+}

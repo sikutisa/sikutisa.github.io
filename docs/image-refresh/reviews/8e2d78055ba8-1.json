@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Vectors0..18 plus19–31reserved and32–255maskable withexacthistoricaldescriptions; vector2NMI notnull.",
+      "passed": true,
+      "evidence": "0~18 및 19–31·32–255 모든 행 대조. 벡터 2는 Non-maskable interrupt (NMI)."
+    },
+    {
+      "requirement": "ExplicitoriginalPentiumhistoricalmodel notmodernallx86; 9reserved,15reserved,19–31historicallyreserved.",
+      "passed": true,
+      "evidence": "Original Pentium historical 제목과 후대 x86의 추가 벡터 안내, 9·15·19–31 reserved 표시 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:58:05.570Z",
+  "generatedSha256": "024bbb3ce3febdf8fe588b0c8ab797b588aabbddb3e31ecc8d9ee349153248dc",
+  "specSha256": "0cca13ea8ef44576af770cd2efdc99a998ebe85e02dd0c67c1b455ee24062ade"
+}

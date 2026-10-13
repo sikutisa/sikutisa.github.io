@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Δ is10 references; each of two windows has exactly10 values.",
+      "passed": true,
+      "evidence": "Δ=10 most recent references header; counted10cells in eachrow."
+    },
+    {
+      "requirement": "Windowt1 is2,6,1,5,7,7,7,7,5,1 with WS(t1)={1,2,5,6,7}.",
+      "passed": true,
+      "evidence": "Read t1 row2,6,1,5,7,7,7,7,5,1 and WS(t1)={1,2,5,6,7}."
+    },
+    {
+      "requirement": "Windowt2 is3,4,3,4,4,3,4,3,4,4 with WS(t2)={3,4}.",
+      "passed": true,
+      "evidence": "Read t2 row3,4,3,4,4,3,4,3,4,4 and WS(t2)={3,4}."
+    },
+    {
+      "requirement": "Working set is distinct pages, not count of all references; arrows/brackets denote the past window ending at each time.",
+      "passed": true,
+      "evidence": "Footer defines distinct pages; brackets end at t1/t2 arrows on lastcells."
+    }
+  ],
+  "notes": "Individually inspected full generated raster and decoded via PIL verify/load."
+}

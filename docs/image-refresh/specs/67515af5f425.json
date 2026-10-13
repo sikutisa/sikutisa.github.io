@@ -1,0 +1,14 @@
+{
+  "title": "OCP: dispatch through an abstraction",
+  "purpose": "Show new employee type plugs into unchanged salary-increase loop.",
+  "alt": "HRMgr가 Employee.incSalary를 호출하고 하위 직원 유형이 구현해 새 Engineer 유형을 확장하는 구조",
+  "requiredChecks": [
+    "HRMgr incAll(Employee[]) only calls employee.incSalary().",
+    "Employee declares incSalary(); Faculty,Staff,Secretary override it.",
+    "Engineer can extend Employee and implement incSalary without a new type branch in HRMgr.",
+    "High-level manager depends on Employee abstraction, not direct concrete salary handlers."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif typography, readable monospaced identifiers, restrained blue/teal/amber cards, wide gutters, no copied slide composition or logo. Include only the listed operations and labels: do not invent full code bodies, access modifiers, methods or extra relationships. Title 'OCP: dispatch through an abstraction'. TOP HRMgr 'incAll(Employee[])' 'for each employee: employee.incSalary()' →Employee abstract 'incSalary()' label usesabstraction. BELOWfourcardsFaculty,Staff,Secretary,Engineer (new), each 'extends Employee' 'incSalary()'. HighlightEngineer newextensiongreen. No HRMgr→subclassarrowsortypeifbranches. Footer 'Add a subtype; keep the salary-increase loop unchanged'. No invented final modifieror salaryalgorithm.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

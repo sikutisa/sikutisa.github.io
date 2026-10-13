@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "fork exec wait exit flow",
+  "alt": "fork() 반환값으로 분기한 부모 wait()와 자식 exec()·exit() 후 부모 재개",
+  "requiredChecks": [
+    "Parentfork→parentpid>0wait→resume;childpid0exec→exit.",
+    "Childexitunblocksparentwait,execchangeschildprogramnotnewprocess; forkfailure optionalnotneeded."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Process creation with fork(). LeftParent→pid=fork(). Split top Parent branch (pid>0)→wait()→Parent resumes. Split bottom Child branch (pid=0)→exec()→exit(). Upwarddependencyarrow exit()→wait() label Child termination unblocks wait. Caption exec() replaces the child's program. No extraprocesscreationat exec(),no fixednumericPID,noerrorbranch."
+}

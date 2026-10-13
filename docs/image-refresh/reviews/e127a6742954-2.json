@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "ColumnsPRICE,ID,PROP_NAME,URL.",
+      "passed": true,
+      "evidence": "PRICE ID PROP_NAME URL exact."
+    },
+    {
+      "requirement": "Row1000|1|prop1|propUrl1;ID1examplewithinownentitytable,noparentFK.",
+      "passed": true,
+      "evidence": "Row1000/1/prop1/propUrl1; no false class diagram or parent FK."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T02:08:22.786Z",
+  "generatedSha256": "720a8ad5f9dae21df14ea7c96a73a08aeefb4efcc4a3873abdcd550290cf46bd",
+  "specSha256": "7896bc126d38e20105c0b1759d5e0aac0a556f25ce838bf1e7d09febb8f1185d"
+}

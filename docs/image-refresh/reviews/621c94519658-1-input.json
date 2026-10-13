@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Request travels Client→Rate-limit middleware and allowed outcome→API servers.",
+      "passed": true,
+      "evidence": "Request arrow connects Client→Rate-limit middleware and Allowed arrow connects middleware→API servers."
+    },
+    {
+      "requirement": "Middleware exchanges an Atomic check/update with Redis shared state before the allow/reject outcome.",
+      "passed": true,
+      "evidence": "Doubleheaded Atomic check/update connector joins middleware to Redis below, and footer states state is checked before forwarding."
+    },
+    {
+      "requirement": "Rejected outcome returns HTTP429 Too Many Requests to Client, bypassing API servers.",
+      "passed": true,
+      "evidence": "Separate bent Rejected: HTTP 429 Too Many Requests arrow returns middleware→Client without crossing API."
+    },
+    {
+      "requirement": "Redis is counter/timestamp state, not a substitute API server; no non-atomic read-then-update race is depicted.",
+      "passed": true,
+      "evidence": "Redis is explicitly Shared counters/timestamps; no Redis→API or separate delayed-update path is drawn."
+    }
+  ],
+  "notes": "Pass after visual inspection of labels, arrow directions and PNG decoding."
+}

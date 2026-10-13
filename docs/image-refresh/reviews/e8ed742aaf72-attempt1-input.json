@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Memberid/username/point;Ownedid/item/member_id;Itemid/url/price;OwnedFKsitem→Item.id,member_id→Member.id.",
+      "passed": true,
+      "evidence": "Member,Owned,Item fields and FK labels exact; Owned arrows point Member and Item."
+    },
+    {
+      "requirement": "Member1→0..manyOwned,Item1→0..manyOwned;Background/PropextendIteminheritancenotFKrelation.",
+      "passed": true,
+      "evidence": "Each one-to-many caption clear; two hollow class triangles point upward to Item."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

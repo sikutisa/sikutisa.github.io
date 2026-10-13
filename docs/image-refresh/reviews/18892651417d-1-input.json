@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "SQL request enters Parser then Preprocessor then Optimizer then Executor in that order within MySQL engine.",
+      "passed": true,
+      "evidence": "SQLrequestarrow Client→Parser→Preprocessor→Optimizer→Executor correctly pointsright."
+    },
+    {
+      "requirement": "Optimizer includes rewrite, cost estimation and execution plan; parser and preprocessor roles are distinct.",
+      "passed": true,
+      "evidence": "Syntax/parse tree, resolveobjects/permissions and rewrite/cost/executionplan subtitles correctlyplaced."
+    },
+    {
+      "requirement": "Executor alone connects to Handler API, which branches to InnoDB, MyISAM and MEMORY as alternatives, not a sequential chain.",
+      "passed": true,
+      "evidence": "OnlyExecutor has handlerrequestlink;3enginecards areparallelbidirectionalbranches."
+    },
+    {
+      "requirement": "SQL result returns from Executor to Client; request and response directions are unambiguous.",
+      "passed": false,
+      "evidence": "REJECT: SQLresult longarrow starts at HandlerAPI, and Executor has dangling stub instead of connected resultpath."
+    }
+  ],
+  "notes": "Inspected each arrow endpoint, region boundary and label. PIL verify/load passed. Failed results are not applied."
+}

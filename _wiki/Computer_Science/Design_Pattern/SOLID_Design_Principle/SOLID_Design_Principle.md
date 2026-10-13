@@ -17,7 +17,7 @@ tags: [computer science, oop, design pattern]
         how strongly-realted and foucused are the various responsibilities of a module
 
 ### Example
-![Bad](./img/1.png){: w="400" h = "370"}
+![Student 비즈니스 데이터와 변경되는 정렬 정책이 Comparable 구현 하나에 결합된 SRP 위반 예시](./img/1-generated.png){: w="760"}
 *Example of SRP violation*
 
 * Often we need to sort students by their name, or SSN. So one may make Class Student *implement the Java Comparable interface*.
@@ -26,13 +26,13 @@ tags: [computer science, oop, design pattern]
 * Worse: every time students need to be ordered differently, we have to recompile Student and all its client.
 * Cause of the problems: we bundled two separate responsibilities (i.e., student as a business entity with ordering) into one class – **a violation of SRP**
 
-![Good](./img/2.png){: w="420" h = "390"}
+![Student 데이터와 Comparator 기반 SSN·이름 정렬 정책을 분리해 클라이언트가 선택하는 구조](./img/2-generated.png){: w="760"}
 *Example of design following SRP*
 
 * The solution is to **separate the different responsibilities** into two separate classes and use another version of Collections.sort().
 
 ### Another Example
-![Bad](./img/3.png){: w="340" h = "320"}
+![Rectangle의 area와 draw가 함께 있어 계산 기하와 그래픽 요구 사항이 결합된 구조](./img/3-generated.png){: w="760"}
 *Example of SRP violation*
 
 * Class Rectangle may be forced to make changes from two different unrelated sources
@@ -40,7 +40,7 @@ tags: [computer science, oop, design pattern]
 * The other is from Graphical Application (GA). E.g., modifying draw() for different platforms. 
 * A change from either of the two source would still cause the other application to recompile.
 
-![Good](./img/4.png){: w="410" h = "350"}
+![공통 Rectangle 데이터 위에 GeometricRectangle과 GraphicalRectangle의 역할·GUI 의존을 분리한 구조](./img/4-generated.png){: w="760"}
 *Example of design following SRP*
 
 * Package CGA is no longer dependent on graphical side of Rectangle and thus it becomes independent of package GUI. 
@@ -50,7 +50,7 @@ tags: [computer science, oop, design pattern]
     *A change from either side of CGA or GA, it would not cause the other side to be recompiled.
 
 ### Identifying Responsibilities Can be Tricky
-![Eg](./img/5.png){: w="320" h = "300"}
+![ModemImpl이 연결 관리 Connection과 데이터 통신 DataChannel 인터페이스를 각각 구현하는 예시](./img/5-generated.png){: w="760"}
 
 * Two responsibilities: Connection management and Data communication.
 * Lesson: It depends on how the application is changing.
@@ -72,7 +72,7 @@ tags: [computer science, oop, design pattern]
     * A single change to a program results in a **cascade of changes to dependent modules**.
 
 ### Example
-![Bad](./img/6.png){: w="390" h = "350"}
+![HRMgr가 Faculty·Staff·Secretary 유형별 급여 증가 함수를 직접 선택해 새 유형 추가 때 변경되는 구조](./img/6-generated.png){: w="760"}
 *Bad Example*
 
 ```java
@@ -97,7 +97,7 @@ void incAll(Employee[] emps) {
     * To reuse incAll( ) → we need Faculty, Staff, Secretary, too! 
     * What if we need just Faculty and Staff only?
 
-![Good](./img/7.png){: w="370" h = "320"}
+![HRMgr가 Employee.incSalary를 호출하고 하위 직원 유형이 구현해 새 Engineer 유형을 확장하는 구조](./img/7-generated.png){: w="760"}
 *Better Example*
 
 ```java
@@ -117,7 +117,7 @@ void incAll(Employee[] emps) {
     * All the possible derived classes : unbounded group of possible behaviors.
 * Program the class  to interfaces (or abstract classes) not to implementation (concrete classes).
 
-![Eg](./img/8.png){: w="330" h = "320"}
+![Client가 구체 Server 대신 ClientInterface에 의존하고 Server가 이를 구현하는 구조](./img/8-generated.png){: w="760"}
 
 ### Anticipating Future Changes
 * Strategy is needed
@@ -159,7 +159,7 @@ void incAll(Employee[] emps) {
     * If you want to reuse implementation of List, you had better **exploit object composition, not inheritance**.
     * If you inherit Queue from List, then you violate LSP since Queue object cannot be substitutable for List.
 
-![Eg](./img/9.png){: w="380" h = "330"}
+![List 계약을 충족하지 못하는 Queue 상속과 List 객체·인터페이스를 합성하는 재사용 방식 비교](./img/9-generated.png){: w="760"}
 
 ### Violation of LSP may lead to another violation
 * Assume that when CType is passed to f() instead of PType, it causes f to misbehave.
@@ -193,13 +193,13 @@ void f(PType x) {
 * Why Inversion?
     * DIP attempts to **“invert” the dependencies** that result from a structured analysis and design approach.
 
-![Eg](./img/10.png){: w="320" h = "310"}
+![Program이 구체 Module과 Function 세부 구현에 직접 의존하는 전통적인 계층 구조](./img/10-generated.png){: w="760"}
 *Typical in Structured Analysis & Design*
 
 * Interfaces and abstract classes are high-level resources
 * Concrete classes are low-level resources
 
-![Eg](./img/11.png){: w="320" h = "310"}
+![Program과 구체 Class가 공통 인터페이스에 의존하도록 구체 구현 의존을 역전한 구조](./img/11-generated.png){: w="760"}
 *Dependency Inversion Principle*
 
 ### Inversion of Ownership
@@ -208,12 +208,12 @@ void f(PType x) {
     * **DIP → Clients should own the interface**.
 
 ### The dependency inversion principle
-![Bad](./img/12.png){: w="370" h = "310"}
+![Policy Layer가 Mechanism Layer에, Mechanism Layer가 Utility Layer에 직접 의존하는 구조](./img/12-generated.png){: w="760"}
 
 * High-level modules make calls to low-level modules. 
 * The upper-level layer is dependent upon lower-level layers. 
 
-![Good](./img/13.png){: w="420" h = "360"}
+![Policy가 Policy Service를 소유하고 Mechanism이 Mechanism Service를 소유해 하위 구현의 의존이 위로 향하는 구조](./img/13-generated.png){: w="760"}
 
 * Dependency Inversion: Lower-level layers is dependent upon upper-level layers.
 * The client (upper-level layer) owns the interface, not the lower-level layers.
@@ -231,7 +231,7 @@ void f(PType x) {
     * Clients should know only abstract base classes that have cohesive interfaces.
 
 ### Example
-![Bad](./img/14.png){: w="370" h = "370"}
+![RoasterApplication과 AccountApplication이 서로 다른 메서드 집합을 쓰지만 하나의 StudentEnrollment에 의존하는 구조](./img/14-generated.png){: w="760"}
 *Original Design*
 
 * Suppose that RoasterApplication does not invoke methods getInvoice() or postPayment().
@@ -239,7 +239,7 @@ void f(PType x) {
 * Requirements change: add a new argument to the postPayment().
 * This change force us to recompile and redeploy RoasterApplication, which does not care at all about the postPayment().
 
-![Good](./img/15.png){: w="390" h = "390"}
+![StudentEnrollment가 EnrolmentAPI와 AccountAPI를 구현하고 각 클라이언트가 필요한 인터페이스만 사용하는 구조](./img/15-generated.png){: w="760"}
 *Better Design*
 
 * Now, each user of a StudentEnrollment object is given an interface that provides just the methods that it is interested in.

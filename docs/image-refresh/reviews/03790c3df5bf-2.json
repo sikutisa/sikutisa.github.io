@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Compiler exposes Compile(input, output) and coordinates Scanner, Parser, ProgramNodeBuilder, CodeGenerator.",
+      "passed": true,
+      "evidence": "Compiler Compile coordinates Scanner, Parser, Builder and Generator cards."
+    },
+    {
+      "requirement": "Input→Scanner→Parser/Builder→ProgramNode tree→CodeGenerator→BytecodeStream output is clear.",
+      "passed": true,
+      "evidence": "Input→Scanner→Parser→Builder tree→Generator→bytecode exact; edit now uses parseTree.Traverse(generator) camelCase source variable."
+    },
+    {
+      "requirement": "RISCCodeGenerator and StackMachineCodeGenerator are CodeGenerator implementations; StatementNode, ExpressionNode, VariableNode are ProgramNode specializations.",
+      "passed": true,
+      "evidence": "Generator and ProgramNode subclass relationships explicitly extend correct base types."
+    },
+    {
+      "requirement": "Token, Symbol and Stream/BytecodeStream supporting types appear without reversing inheritance.",
+      "passed": true,
+      "evidence": "Token, Symbol, Stream/BytecodeStream all preserved; no reversed inheritance."
+    }
+  ],
+  "notes": "Pass. Visual inspection at native resolution confirmed correct dependency direction, layer boundaries, code identifiers and internal delegation.",
+  "at": "2026-10-12T14:54:26.874Z",
+  "generatedSha256": "cd135698dcd2095222fe410f1fe0fc359cf7d7632eb370b9aad10226611b395c",
+  "specSha256": "11b7c29cddddfdce1da4f13e564d5bbcbbc15076e11b74f7551d9f76e0bc2a90"
+}

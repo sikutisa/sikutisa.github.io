@@ -1,0 +1,17 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Ordinary pipe descriptors",
+  "alt": "fork 후 물려받은 읽기·쓰기 디스크립터를 정리하고 부모에서 자식으로 데이터를 보내는 파이프",
+  "requiredChecks": [
+    "Parent fd[0] read CLOSED and fd[1] write OPEN; child fd[0] read OPEN and fd[1] write CLOSED.",
+    "Exactly two data arrowheads show parent OPEN fd[1] → Kernel buffer → child OPEN fd[0]; no arrow touches CLOSED cards or follows child border.",
+    "Both descriptors inherited after fork; unused ends closed; one-way parent-write child-read caption preserved."
+  ],
+  "prompt": "Edit ordinary pipe after fork: preserve descriptor states and captions. Parent open fd[1] → kernel buffer → child open fd[0]. Route output upward in empty gap and right with one arrowhead on child fd[0]; no arrowhead at closed fd[1] row or container border.",
+  "sourceClarification": "원본의 양쪽 fd 화살표는 fork 뒤 디스크립터 상속과 혼동될 수 있다. 본문 코드의 부모 쓰기/자식 읽기, 불필요한 끝 close를 정확히 표현한다.",
+  "sources": [
+    "https://man7.org/linux/man-pages/man2/pipe.2.html"
+  ],
+  "secondReviewOriginalViewed": true
+}

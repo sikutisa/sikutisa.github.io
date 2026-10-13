@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "PCB contents",
+  "alt": "프로세스 상태·번호·프로그램 카운터·레지스터·메모리 한계·열린 파일을 포함한 PCB",
+  "requiredChecks": [
+    "SixexplicitfieldsProcessstate,Processnumber,Programcounter,Registers,Memorylimits,Listofopenfiles plusellipsis.",
+    "PCBholdsper-processcontextnotCPUitself; readablefieldlabels."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Process control block (PCB). One vertical recordtable6namedrows Process state,Process number,Program counter,Registers,Memory limits,List of open files, then Other process information … . Registerrow slightly taller. Caption Saved information for one process. No randomvalues,noarrows,nosystem-widecontext."
+}

@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Six numbered steps appear in correct order: reference, trap, validate/locate, acquire frame/load, update page table, restart.",
+      "passed": false,
+      "evidence": "FAILED: While six correctly numbered/texted boxes exist, the main connector goes from step3 directly to step5; it skips step4 and loading the page."
+    },
+    {
+      "requirement": "Illegal address terminates/raises an error; only a valid nonresident page proceeds to disk load.",
+      "passed": true,
+      "evidence": "Illegal-address branch correctly leads to Terminate/report error; Valid address label is on the main continuation, but its endpoint must be step4 rather than5."
+    },
+    {
+      "requirement": "Backing storage supplies the missing page to a free frame, and present bit becomes1 before restart.",
+      "passed": false,
+      "evidence": "Backing storage→freeframe arrow points in the right transfer direction, but main control flow reaches the table-update stage without passing load stage4."
+    },
+    {
+      "requirement": "Restart is the interrupted instruction, not a new process; every label is complete and arrows follow the stated order.",
+      "passed": true,
+      "evidence": "Restart box explicitly says interrupted instruction; spelling is readable, but the skipped control stage makes the whole flow incorrect."
+    }
+  ],
+  "notes": "Do not apply: valid-address control flow currently points to step5 instead of step4. Targeted arrow correction is required. Text itself is correct; decoding passed.",
+  "at": "2026-10-12T12:09:10.528Z",
+  "generatedSha256": "78fed85cd4c7023b69011233d18a607c80180fc1baa8332a4757085fa44f77ea",
+  "specSha256": "0c540692977d680a202e52fbc92e57e8e9e006956d2ecea7ab124ba97b76b452"
+}

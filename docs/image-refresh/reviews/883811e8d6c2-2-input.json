@@ -1,0 +1,33 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "ActiveObjectEngine owns a Command queue; addCommand(c) appends, run() removes first and calls execute() until queue empty.",
+      "passed": true,
+      "evidence": "Engine appends, removes first, executes and now explicitly repeats while queue not empty; wakeup caption correctly says runs when dequeued."
+    },
+    {
+      "requirement": "SleepCommand and DelayedTyper implement Command.execute(); the engine does not implement Command.",
+      "passed": true,
+      "evidence": "SleepCommand and DelayedTyper implement Command; engine holds queue and explicitly not Command."
+    },
+    {
+      "requirement": "DelayedTyper.execute() prints mChar; when !stop it queues new SleepCommand(mDelay, engine, this).",
+      "passed": true,
+      "evidence": "Print mChar then if !stop queues SleepCommand(mDelay,engine,this)."
+    },
+    {
+      "requirement": "SleepCommand first records startTime and requeues itself; before delay expiry requeues itself; after expiry queues wakeupCommand.",
+      "passed": true,
+      "evidence": "All three exclusive started/elapsed cases show self or wakeup enqueue precisely."
+    },
+    {
+      "requirement": "No sleeping worker threads are implied; this example repeatedly polls/requeues on one engine loop.",
+      "passed": true,
+      "evidence": "Footer identifies cooperative loop and polling/requeue; no worker-thread sleep."
+    }
+  ],
+  "notes": "Pass. Full visual review of participants, delegation, call order, identifiers and queue semantics against article and original."
+}

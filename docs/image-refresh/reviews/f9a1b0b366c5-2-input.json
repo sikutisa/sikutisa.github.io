@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "StudentEnrollment has getSSN/getName/getInvoice/postPayment.",
+      "passed": true,
+      "evidence": "StudentEnrollment getSSN/getName/getInvoice/postPayment exact."
+    },
+    {
+      "requirement": "RoasterApplication uses getSSN/getName only; AccountApplication uses getInvoice/postPayment only.",
+      "passed": true,
+      "evidence": "RoasterApplication corrected exact name, uses name/SSN only; AccountApplication invoice/payment only."
+    },
+    {
+      "requirement": "Both depend on same broad interface, so unrelated method changes can affect client dependency.",
+      "passed": true,
+      "evidence": "Both target broad StudentEnrollment; footer unrelated method change can affect dependency."
+    },
+    {
+      "requirement": "Course association retains one Course to zero-or-more StudentEnrollment records; clients also use Course.",
+      "passed": true,
+      "evidence": "Association 0..* at Enrollment, 1 at Course, both client Course dependencies correct."
+    }
+  ],
+  "notes": "Direct visual inspection confirms all contract labels, ownership, arrow directions and multiplicities; PNG decode before approval."
+}

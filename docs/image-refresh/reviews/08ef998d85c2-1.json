@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "PizzaStore is abstract creator with orderPizza and createPizza returning Pizza.",
+      "passed": true,
+      "evidence": "Abstract creator PizzaStore has orderPizza/createPizza returning Pizza and uses abstract product."
+    },
+    {
+      "requirement": "NYPizzaStore and ChicagoPizzaStore extend PizzaStore.",
+      "passed": true,
+      "evidence": "Both regional stores explicitly extend PizzaStore."
+    },
+    {
+      "requirement": "NYPizzaStore creates NYStyleCheesePizza and NYStyleVeggiePizza; ChicagoPizzaStore creates ChicagoStyleCheesePizza and ChicagoStyleVeggiePizza.",
+      "passed": true,
+      "evidence": "NY and Chicago branches create correct own-region Cheese/Veggie pair; no crossover."
+    },
+    {
+      "requirement": "All four concrete products extend abstract Pizza; base creator depends on Pizza abstraction.",
+      "passed": true,
+      "evidence": "All products extend Pizza; base creator only uses product abstraction."
+    }
+  ],
+  "notes": "Pass. Abstract/concrete roles, returned types, preparation order, inheritance and family mappings visually verified.",
+  "at": "2026-10-12T15:01:48.411Z",
+  "generatedSha256": "548bd07da405247828614c422c1e51992e91abe9eac21ed097a790db5a66647e",
+  "specSha256": "0531a6886dfa1e7fa947b915eb0f1caec8e85ae8c8bd63d11f674afaedecc9e3"
+}

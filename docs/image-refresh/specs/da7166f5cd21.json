@@ -1,0 +1,17 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Valid-invalid page entries",
+  "alt": "유효 비트가 있는 페이지 0∼5와 무효 페이지 6·7의 보호 예제",
+  "requiredChecks": [
+    "Page table0→2v,1→3v,2→4v,3→7v,4→8v,5→9v,6→0i,7→0i; invalid framefieldsignored.",
+    "Physicalframes2Page0,3Page1,4Page2,7Page3,8Page4,9Page5;0,1,5,6notallocatedtothisprocess.",
+    "Six2048-bytepagescover0..12287; programendmarker10468withinPage5; invalidbitsrejectpages6,7, not claim byteprecisioninsidevalidlastpage.",
+    "Clearvvalid/iinvalid legend and trapforinvalidpage; readableexactcells."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Valid and invalid page-table entries. Main table Page|Frame|Bit rows0|2|v;1|3|v;2|4|v;3|7|v;4|8|v;5|9|v;6|0|i;7|0|i. Greenvalidrows0..5, redinvalid6,7. SmallphysicalmemorytableFrame|Contents0Unused,1Unused,2Page0,3Page1,4Page2,5Unused,6Unused,7Page3,8Page4,9Page5. SeparatelogicalmemorystripPages0..5 equalblocks; address0atstart,12287atend; marker Program end10468 withinlastPage5. Annotation Page size2048bytes. Legendv=valid,i=invalid. Text Pages6and7→Trap: invalidpage. Framefieldignoredwhenbitisi. Smallfooter Page bits protect at page granularity; they do not check the exact end inside Page5. No moregraph.",
+  "sources": [
+    "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8_MainMemory.html#8.5.3"
+  ],
+  "sourceClarification": "Original markers0,10468,12287 and valid page5 retained; derived2048-bytepage from6 pages/12288byteextent. Page-granularity limitation checked in UIC section8.5.3. No added exact byte bound assumption."
+}

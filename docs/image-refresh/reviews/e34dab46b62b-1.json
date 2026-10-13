@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Student domain fields SSN/name/major and getters are shown.",
+      "passed": true,
+      "evidence": "Student fields SSN/name/major and three getters present."
+    },
+    {
+      "requirement": "Student implements Comparable<Student> with compareTo(Student): int; Java method name is correct.",
+      "passed": true,
+      "evidence": "Student implements Comparable<Student>, compareTo(Student):int correctly named at interface and class."
+    },
+    {
+      "requirement": "AClient uses Collections.sort(group), relying on Student ordering; Register uses Student for enrollment.",
+      "passed": true,
+      "evidence": "AClient natural-order sort uses Student; Register add uses Student with correct leftward arrow."
+    },
+    {
+      "requirement": "Caption limits SRP issue to this example's independently changing sorting policy, not all Comparable implementations.",
+      "passed": true,
+      "evidence": "Footer explicitly says In this example, independent changing client-specific order policy vs student data."
+    }
+  ],
+  "notes": "Pass. Exact responsibilities, method names, client dependencies and scoped SRP explanation visually verified against full article and original.",
+  "at": "2026-10-12T15:40:19.482Z",
+  "generatedSha256": "708021a94e210fc05cf46b20683d94a0488844ca82dc0f44a940ff0ae0583f27",
+  "specSha256": "480dc1fdd8e215ccc1b7034b34cad460f6cce478080bdb9a9e9630ebf286a19a"
+}

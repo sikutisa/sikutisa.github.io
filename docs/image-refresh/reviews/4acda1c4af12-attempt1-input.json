@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "FouruserthreadsU1..U4,threeK1..K3.",
+      "passed": true,
+      "evidence": "User space의 U1~U4 및 Kernel space K1~K3 수량 확인."
+    },
+    {
+      "requirement": "Explicitmultiplexermapsmanyusertomanykernel,notone-to-onenoronekernel.",
+      "passed": true,
+      "evidence": "4선→Multiplexer→3선의 다중화 관계와 문구 정확."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

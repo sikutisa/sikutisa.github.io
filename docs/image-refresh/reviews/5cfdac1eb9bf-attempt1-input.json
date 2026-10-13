@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "External: developer loops, next() retrieves element and developer processes it.",
+      "passed": true,
+      "evidence": "External caller box next→element→process→repeat; collection retrieval distinct."
+    },
+    {
+      "requirement": "Internal: developer supplies action to stream.forEach(action); stream handles traversal, no guaranteed speedup.",
+      "passed": true,
+      "evidence": "Internal caller supplies action to forEach; internal traversal loop clearly inside stream, no speed claim."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

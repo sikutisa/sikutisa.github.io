@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Default one-thread-per-connection model is identified; two clients have two independent active foreground threads.",
+      "passed": true,
+      "evidence": "Subtitle Default one thread per connection; ClientA→ForegroundA and ClientB→ForegroundB distinct."
+    },
+    {
+      "requirement": "Thread cache is idle foreground threads, with arrows reuse into active and return on disconnect back to cache.",
+      "passed": true,
+      "evidence": "Thread cache marked Idle foreground threads; return arrow right into cache, reuse arrow left toward active group."
+    },
+    {
+      "requirement": "Foreground accesses shared buffers; background flushes dirty pages and writes redo logs to respective disk files.",
+      "passed": true,
+      "evidence": "Shared memory band separates data caches and redo; downward pageflush→datafiles and redowriter→redofiles."
+    },
+    {
+      "requirement": "Data-page flushing and redo writing are separate; no claim that every commit avoids synchronous durability waits.",
+      "passed": true,
+      "evidence": "Independent two flush paths; footer durability depends on configuration, no alwaysasync commitclaim."
+    }
+  ],
+  "notes": "Inspected each arrow endpoint, region boundary and label. PIL verify/load passed. Failed results are not applied.",
+  "at": "2026-10-12T12:42:27.939Z",
+  "generatedSha256": "091495481ed609c52da4b3ccca55cec7c3a2e528256954afdf9259c301d3d471",
+  "specSha256": "abf5a929697a6078703119ac775a39bbdd9e2b1d314be7f85578dd96e6ade633"
+}

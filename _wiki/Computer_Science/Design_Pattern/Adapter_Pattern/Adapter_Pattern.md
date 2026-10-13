@@ -107,11 +107,11 @@ public class DuckTestDrive {
 ## Object Adapter v.s. Class Adapter
 * Object Adapter: uses object composition and delegation
 
-![diagram](./img/1.png){: w="350" h = "300"}
+![Target 인터페이스를 구현하고 Adaptee 인스턴스를 감싸 요청을 위임하는 객체 어댑터](./img/1-generated.png){: w="760"}
 
 * Class Adapter: uses inheritance
 
-![diagram](./img/2.png){: w="350" h = "300"}
+![Target과 Adaptee의 상속으로 request를 specificRequest에 맞추는 클래스 어댑터](./img/2-generated.png){: w="760"}
 
 ## Implementation Issues
 * How much adaptation?
@@ -135,7 +135,7 @@ public class DuckTestDrive {
 
 
 ### Adapting Enumeration to Iterator (EnumerationIterator)
-![diagram](./img/3.png){: w="360" h = "320"}
+![EnumerationIterator의 hasNext·next 매핑과 remove 미지원, Iterator 구현·Enumeration 위임](./img/3-generated.png){: w="760"}
 
 ### EnumerationIterator Adapter
 ```java

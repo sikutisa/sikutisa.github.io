@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Registered observers now include exactly Cat, Dog, Mouse, Duck.",
+      "passed": true,
+      "evidence": "Registered roster exactly Cat,Dog,Mouse,Duck."
+    },
+    {
+      "requirement": "Subject state stays 2.",
+      "passed": true,
+      "evidence": "Subject state2 exact unchanged."
+    },
+    {
+      "requirement": "Duck is shown inside registered roster, not still outside.",
+      "passed": true,
+      "evidence": "Duck highlighted new subscriber inside roster."
+    },
+    {
+      "requirement": "Registration alone is not depicted as a new state notification.",
+      "passed": true,
+      "evidence": "Nondirectional list association only; footer registerObserver adds Duck, no change notifications."
+    }
+  ],
+  "notes": "Pass. Native visual inspection verified object membership, state transitions, notification/removal directions and abstraction dependency."
+}

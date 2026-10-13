@@ -1,0 +1,15 @@
+{
+  "title": "Block-based file synchronization",
+  "purpose": "Replace overview with independent content, metadata and notification lanes, matching full article and distinguishing metadata cache.",
+  "alt": "블록 기반 파일 동기화의 콘텐츠·메타데이터·알림 경로와 오프라인 알림 큐",
+  "requiredChecks": [
+    "Content path is Client↔Block servers↔Cloud object storage, with cold archive linked from storage.",
+    "Metadata path is Client↔Load balancer↔API servers, which separately access Metadata DB and Metadata cache; DB stores no file bytes.",
+    "API servers publish events to Notification service; Notification service→Client path is labeled Long polling.",
+    "Offline backup queue retains pending change notifications; no direct client file upload to metadata DB or notification queue.",
+    "All components readable; caption marks hypothetical design, not actual Google Drive internals."
+  ],
+  "prompt": "Create a NEW original raster diagram for a technical blog. Clear English labels, large navy sans-serif on white, flat blue/teal cards, no logos, no copied-book layout or decorations, generous connector gutters. TITLE \"Block-based file synchronization\". Subtitle \"Illustrative system-design exercise\". Design THREE horizontal labelled lanes; a single tall \"Client\" card far left touches all lane routing gutters. Top lane \"Content\": Client↔\"Block servers\"↔\"Cloud object storage\"→\"Cold archive\". Block servers subtitle \"Split / compress / encrypt\"; object subtitle \"File blocks\"; archive arrow \"Archive inactive blocks\". Middle lane \"Metadata\": Client↔\"Load balancer\"↔\"API servers\"; API servers branch to TWO separate \"Metadata DB\" and \"Metadata cache\" cards, both subtitle \"No file bytes\". Bottom lane \"Notifications\": API servers connects downward via empty gap arrow \"Publish change events\" to \"Notification service\"; separate Notification service→Client arrow along bottom lane labelled \"Long polling\"; Notification service→\"Offline backup queue\" labelled \"Pending notifications\". Queue subtitle \"Replay on reconnect\". Lanes align horizontally with no connector through boxes. Cloud object storage→API servers thin dashed route around right gutter labelled \"Upload complete\". If space tight omit this callback connector only, retain all named components. No provider logos, no real company infrastructure claim.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

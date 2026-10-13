@@ -1,0 +1,1095 @@
+{
+  "at": "2026-10-13T02:15:27.653571+00:00",
+  "decoded": 272,
+  "images": [
+    {
+      "path": "_wiki/Book/Real_MySQL/\uc544\ud0a4\ud14d\ucc98/img/1-generated.png",
+      "sha256": "0442bbaecadbd1bed7f1f0fce8bdd0e5a3c91e27425ffee0af410123f48e4ab3"
+    },
+    {
+      "path": "_wiki/Book/Real_MySQL/\uc544\ud0a4\ud14d\ucc98/img/2-generated.png",
+      "sha256": "091495481ed609c52da4b3ccca55cec7c3a2e528256954afdf9259c301d3d471"
+    },
+    {
+      "path": "_wiki/Book/Real_MySQL/\uc544\ud0a4\ud14d\ucc98/img/3-generated.png",
+      "sha256": "4cbc4613378c24a6918b37dde1a49ee6017d08c3b1314b41d54dd9c65f9eedef"
+    },
+    {
+      "path": "_wiki/Book/Real_MySQL/\uc544\ud0a4\ud14d\ucc98/img/4-generated.png",
+      "sha256": "33d894419e2738c18bc3831302d2f0c1487f458ca74bc725c589e3c9aebf92bd"
+    },
+    {
+      "path": "_wiki/Book/Real_MySQL/\uc544\ud0a4\ud14d\ucc98/img/5-generated.png",
+      "sha256": "75f8593d09e3b9d19ed132bc0a0291a5fedb0d0a0b22db40d17dba096215f582"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uad6c\uae00_\ub4dc\ub77c\uc774\ube0c_\uc124\uacc4/img/1-generated.png",
+      "sha256": "ea689c3dd1b39adf37be1fa99fc164fbf89ba99257b58cab6e15fdb7590c0f9c"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uad6c\uae00_\ub4dc\ub77c\uc774\ube0c_\uc124\uacc4/img/2-generated.png",
+      "sha256": "b7f78c2801b17a28eff05bcbab92ec2493c4e663e9b60a330cec2ded4405a02d"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\ub274\uc2a4_\ud53c\ub4dc_\uc2dc\uc2a4\ud15c_\uc124\uacc4/img/1-generated.png",
+      "sha256": "1726f52d868c0ecf1e396b046af0ad5532add8abacb3800bb9f52cbe49fb73e0"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uc0ac\uc6a9\uc790_\uc218\uc5d0_\ub530\ub978_\uaddc\ubaa8_\ud655\uc7a5\uc131/img/1-generated.png",
+      "sha256": "1fec37066be28a22bcb06a732ef704f7c8d3b4c9ea2e4263e56bd347e2401f66"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uc0ac\uc6a9\uc790_\uc218\uc5d0_\ub530\ub978_\uaddc\ubaa8_\ud655\uc7a5\uc131/img/2-generated.png",
+      "sha256": "775ee304cc3c496b71b9bf0ba0b1f1e293a1be5381c1c55e7f60402eb5403944"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uc0ac\uc6a9\uc790_\uc218\uc5d0_\ub530\ub978_\uaddc\ubaa8_\ud655\uc7a5\uc131/img/3-generated.png",
+      "sha256": "39d0fd80e330e16016ee1922bb26b9701d49d5a0caaf88862c2333f28989e90f"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uc0ac\uc6a9\uc790_\uc218\uc5d0_\ub530\ub978_\uaddc\ubaa8_\ud655\uc7a5\uc131/img/4-generated.png",
+      "sha256": "38010bba22d34db7936c8ea79d27baaca678e12ad1309d97ee47537a7bb62c6a"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uc0ac\uc6a9\uc790_\uc218\uc5d0_\ub530\ub978_\uaddc\ubaa8_\ud655\uc7a5\uc131/img/5-generated.png",
+      "sha256": "b829dd3337c89fc33e61efce31683b70099b3004afa8ed64716174f0e0930d2a"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uc0ac\uc6a9\uc790_\uc218\uc5d0_\ub530\ub978_\uaddc\ubaa8_\ud655\uc7a5\uc131/img/6-generated.png",
+      "sha256": "fe59612ca3e79a5ac738e158657462d9a3d93d4943fdc81641b4d64f5640c9f8"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uc54c\ub9bc_\uc2dc\uc2a4\ud15c_\uc124\uacc4/img/1-generated.png",
+      "sha256": "e30ca2ae270195c1759fb41710d10f611a617a36b979fcae352d8b99a6eb50e3"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uc54c\ub9bc_\uc2dc\uc2a4\ud15c_\uc124\uacc4/img/2-generated.png",
+      "sha256": "34e9edfe9126cff3500059c5006478fb1437fef23f8e7aa9aaeed760fb4df112"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uc6f9_\ud06c\ub864\ub7ec_\uc124\uacc4/img/1-generated.png",
+      "sha256": "b990382c823a216034cd79ee80e408f3905ea54ad0bac051b8270038d977539e"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uc720\ud29c\ube0c_\uc124\uacc4/img/1-generated.png",
+      "sha256": "210bfd32ee0b603f2033e41ef6f7de217c62bfa3ec0a5c173d5e8850234f1878"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uc720\ud29c\ube0c_\uc124\uacc4/img/2-generated.png",
+      "sha256": "542a837e93c115fc20c8c3e0d9d83026313367cf62f44d50aabde05e6762aa9d"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\uc720\ud29c\ube0c_\uc124\uacc4/img/3-generated.png",
+      "sha256": "a6ae798528f79adb2d57e5378d077c8b50f8ebc711e2297706c14b1af317f644"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\ucc44\ud305_\uc2dc\uc2a4\ud15c_\uc124\uacc4/img/1-generated.png",
+      "sha256": "6e6cfb98d825b969d7a2abb7c00956ecd8eb2bb8db97d629c6d0ac1b8680be47"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\ucc98\ub9ac\uc728_\uc81c\ud55c_\uc7a5\uce58\uc758_\uc124\uacc4/img/1-generated.png",
+      "sha256": "844c242a0fba449b6a057b41cdc85664d1d1ee319022fcf0f917d097fbe25a7c"
+    },
+    {
+      "path": "_wiki/Book/\uac00\uc0c1_\uba74\uc811_\uc0ac\ub840\ub85c_\ubc30\uc6b0\ub294_\ub300\uaddc\ubaa8_\uc2dc\uc2a4\ud15c_\uc124\uacc4_\uae30\ucd08_1\uad8c/\ucc98\ub9ac\uc728_\uc81c\ud55c_\uc7a5\uce58\uc758_\uc124\uacc4/img/2-generated.png",
+      "sha256": "edda52934782ab77abf3fd7f1c7ea4f078f8d9f81d31e7bad2ae8d5555b8daca"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/DB_Introduction/img/1-generated.png",
+      "sha256": "704ecb12fa2685aed8711f4e26779429b843e2d0b5af639b48a99ebd71321014"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/DB_Introduction/img/2-generated.png",
+      "sha256": "3a9ed5029e08316b471c2e979bc2ca1abdf91bacf94df206b2c9383f84a3e77a"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/DB_Introduction/img/3-generated.png",
+      "sha256": "35e99cb4911cc04521b47d5d40ee4488a28cce15542a16b93a973d981ce14508"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/DB_Introduction/img/4-generated.png",
+      "sha256": "9fca6a1a9cd3debf0853a0574b65d4f1f7d32470cc40a1b9571491d9ff3cbb19"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Intermediate_SQL/img/1-generated.png",
+      "sha256": "ca9d66b1290e1e2707dcd62dae628470184d2da68ec4292362ed0a1912ebef2b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Intermediate_SQL/img/2-generated.png",
+      "sha256": "9359004cbc13a4281a47477baf986fce7c434bb1cae0223929969771e5f86545"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Intermediate_SQL/img/3-generated.png",
+      "sha256": "9405370ae5683b4aa7ead7f71f959609579a690eb850d99cd23a1da30467e0d9"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Intermediate_SQL/img/4-generated.png",
+      "sha256": "d266731502f23b0c1ef3709b4ea63d902bdbe6516e27f94b18e29d8358c56161"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Intermediate_SQL/img/5-generated.png",
+      "sha256": "1be3a867a15f9a61539375af9295b2d6388389a36d13dcb662ac86e04ce06c06"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Intermediate_SQL/img/6-generated.png",
+      "sha256": "b787acc7e527a980d155ee922c70ea15f7f6493fd180cf84b568964eceeabdab"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Intermediate_SQL/img/7-generated.png",
+      "sha256": "8eebd76070a30ce7ded63f3f6559263b2754d7ab808dec128b5f5f1751fb3ba2"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Intermediate_SQL/img/8-generated.png",
+      "sha256": "441dc9740455ae11651034a87189a884028da176950bf62b77afa246824d5a29"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Introduction_to_SQL/img/1-generated.png",
+      "sha256": "9c5a469c3bcb1fe8bed0d60a495220cb55e4d3625332e7aa6621c74aefd12892"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Introduction_to_SQL/img/2-generated.png",
+      "sha256": "f92059b88474eddb605a624151c7aa81466b577295c8e7b7c48e3251a2a88d72"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Introduction_to_SQL/img/3-generated.png",
+      "sha256": "6ef015f028f5d5ec1d589ec43cba0f5085792ec09267de39f5f9b1cd5af0f1a1"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Relational_Model/img/1-generated.png",
+      "sha256": "87112c8789685d65aa1969eafd8138d9b2f3a3b8da3032a7cbc198d63fe794e6"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Relational_Model/img/10-generated.png",
+      "sha256": "d87e32a944d9dbe0b8c8b4c60be00128d5f77730df5c977e6945078eeb498019"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Relational_Model/img/2-generated.png",
+      "sha256": "48b494b29e557bce005eb0165af817da653fbc6d2146fdb209ad31b191e6b34b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Relational_Model/img/3-generated.png",
+      "sha256": "32b97db41384c92d3fe3dd8accc3411b143a0c06a823707e7217c3ed03a85529"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Relational_Model/img/4-generated.png",
+      "sha256": "3f019ce4cd9548df8d39d13d1e347983fc684cd6ae8180427ea845ae24acaa61"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Relational_Model/img/5-generated.png",
+      "sha256": "d4b28b1918484733a9ee22d3e0841ee2ca0664e0b7c91b3129fe10b95300c402"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Relational_Model/img/6-generated.png",
+      "sha256": "daea845a8956c0752a2f88898041749fd4308011a7fc4e1f8619d761eda820ea"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Relational_Model/img/7-generated.png",
+      "sha256": "563620d6ee955414c0110d16818b9996be32b823461aa3aef85441c6cb1f4f25"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Relational_Model/img/8-generated.png",
+      "sha256": "a34dce21eaa9f249a12d438ad94aeb164f7046e801f663792b994cfd3882849e"
+    },
+    {
+      "path": "_wiki/Computer_Science/Database/Relational_Model/img/9-generated.png",
+      "sha256": "4696ca057085550321492133918fcbcaf84f2055270a5c1e4252c0bedc0ce493"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Abstract_Factory_Pattern/img/1-generated.png",
+      "sha256": "91ab76e5db64b07e96199c2dbc7d04c2c49e31e0b41531159818f1b7041d10f2"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Abstract_Factory_Pattern/img/2-generated.png",
+      "sha256": "a99a4ada9a9fb41147aab6c69663be5c50b6b5f296a01e07253d02265427a048"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Abstract_Factory_Pattern/img/3-generated.png",
+      "sha256": "e48e0fa9a34cdd97be30105d01791a1708ba35a5d43b520c7fad110f66c5f630"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Abstract_Factory_Pattern/img/4-generated.png",
+      "sha256": "9213140fa99df4ba9b0a9541a1e2636a5961577c1a1ebeb7e57a10044cf2398b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Abstract_Factory_Pattern/img/5-generated.png",
+      "sha256": "9ef01ca507628e11e992c60ca11a1a1970b8a13d62c79b1bc11c04654ae4daaa"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Adapter_Pattern/img/1-generated.png",
+      "sha256": "056aca075e8f054d057ee51ac2089e1aa3458f95861f0e503c53a1b6083742b2"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Adapter_Pattern/img/2-generated.png",
+      "sha256": "e2802000d64dc28ac2131d4406bc2bf30ddc6445f34cbcc0049d31e01602389e"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Adapter_Pattern/img/3-generated.png",
+      "sha256": "80adc37dd993f003274347050e87be2090891731f44bc13592b83661135b36c3"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/img/1-generated.png",
+      "sha256": "9a55ade8de1a737538d856d57c1b1f2d9f30c4a8f28767005ea57df3ecee2991"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/img/2-generated.png",
+      "sha256": "a42091b7fc3babc7f1566aa22e6400fe793e9297ddabc39f4120572b3695976b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/img/3-generated.png",
+      "sha256": "742fa33ff31458cccd06a512b548a4f3ec8df32f2184d66ef615d1857e62e5e2"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/img/4-generated.png",
+      "sha256": "57cae93cc095fc949f487437870b6a5feb82b6219c98b54eebcbfbe205cec1ff"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/img/5-generated.png",
+      "sha256": "10234ceb4134724e28fcadac3e4c22e2ff1fff1c5e87ad2b098b682836d84cef"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/img/6-generated.png",
+      "sha256": "177ef315b93e35b3653ad9796d4061862a35408690abc8a23196193bffb33edd"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/img/7-generated.png",
+      "sha256": "9366df71529ce86a7b0bb037827a91d6efe7558f5dfd0808df9465aa1e253332"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/img/1-generated.png",
+      "sha256": "6a90432c642afdcb5354d5c8b478a6b14e1ef310031371ba3d4f8ecc584165e5"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/img/2-generated.png",
+      "sha256": "d2263e1a1c699799128e03770484c3bad512324b46542b40329bdfa458a4d6fb"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/img/3-generated.png",
+      "sha256": "cd135698dcd2095222fe410f1fe0fc359cf7d7632eb370b9aad10226611b395c"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/img/4-generated.png",
+      "sha256": "8633cd668aace3c90bdd63d3871e10110e0e488d8e4c0ff84f2723b906ec943c"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/img/5-generated.png",
+      "sha256": "dba50d6d0e715d818224302dddf0477e068062a5c35796dd223f32ef6b044dab"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/img/6-generated.png",
+      "sha256": "68e8df299ca9a04242c8d2c9f61a7966a51914aa2c1fba87b4d9ffc4667a6f05"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Facade_Pattern/img/7-generated.png",
+      "sha256": "3a1c03216ab3741b9b172c22237c819a1841b2785be9fa844868e1e93bad1159"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Factory_Method_Pattern/img/1-generated.png",
+      "sha256": "f2c31dc1e3ca2139b6b8378b602056302f8a0887ffc124911ed53fb91db36aac"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Factory_Method_Pattern/img/2-generated.png",
+      "sha256": "e8e30d6c89ec6bdefe804a6277a9c53bc05520d888b10b2672df61ee0e349831"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Factory_Method_Pattern/img/3-generated.png",
+      "sha256": "548bd07da405247828614c422c1e51992e91abe9eac21ed097a790db5a66647e"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Factory_Method_Pattern/img/4-generated.png",
+      "sha256": "9fef7c33dca1883732dceb25f5d2e1eeb5567e50bf0203703032f7543dcd85a1"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Factory_Method_Pattern/img/5-generated.png",
+      "sha256": "cd483390be33b7ca894d15b012da322bf5d6b45f08266f2c302b0e2ec64fb68c"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/img/1-generated.png",
+      "sha256": "f5038b27aba521682ee315c60c65f771714be80406eaf9c81f3b845b877c2f7b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/img/10-generated.png",
+      "sha256": "31bd9ecd35ac779d944810bec6a5432188e9ca5bc257996366169ca1329c45f3"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/img/11-generated.png",
+      "sha256": "e1a22f376dd8445b241d2baaeb9ac6f24f0d30a6927af61fc7c66db6fd35befc"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/img/2-generated.png",
+      "sha256": "ca7f9f75bbfb0e3bc8234eef7080b2d9cd3181f98fc27708ab113edf2980ba07"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/img/3-generated.png",
+      "sha256": "5597bb457dd56c866d6d34dc12c53c7881ddd325956e8e0672a4874453291d10"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/img/4-generated.png",
+      "sha256": "d46548f8b9eef78b549791e9bd814b570e3817dc93099319f02d93a3095f3938"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/img/5-generated.png",
+      "sha256": "d3510c29b96e494e8acab6344d4cddde8928cb19af73784364385bc8aa5f7944"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/img/6-generated.png",
+      "sha256": "4832d01f1680a6eef5e7a25d6bf0acc32f151d44d8bcdfbd51a523d8b5127aa2"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/img/7-generated.png",
+      "sha256": "e9d208076ef136396ffbffdf9a27fdb9a3126e24e8f7adfe09f3b9752df823a5"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/img/8-generated.png",
+      "sha256": "2e55f906c39f7cbfae4a1799b8642679db9f2f6b4ba3cdbae42f9c068e1d82a7"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Observer_Pattern/img/9-generated.png",
+      "sha256": "5c5c65ba398b22a73dc8ea2b1ea07da268224612937d4e26cdf5a123e8afbd18"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/1-generated.png",
+      "sha256": "708021a94e210fc05cf46b20683d94a0488844ca82dc0f44a940ff0ae0583f27"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/10-generated.png",
+      "sha256": "5a7c83ac3a6577ef454e8a39075e67d77f092f81d30d8c25d0a8a0cf11999006"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/11-generated.png",
+      "sha256": "d5a6c8fd2f5c22071a7c2c614dfe6ac6a66ca0df31a33e56ca888291460f262c"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/12-generated.png",
+      "sha256": "d13249103b4249105a4681988baa6d011af9e618317b9c75152f5179480d795f"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/13-generated.png",
+      "sha256": "dbe47e0197aa58af67899aad5eea0e99dd009fc9972acf2b31a6396ce9559f75"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/14-generated.png",
+      "sha256": "38e8bdcf4691ea732f227a5c74e6b3db3e2f86dd36d5a7d8309bff586ce1ae7b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/15-generated.png",
+      "sha256": "a16415e0ece627640d88e1e54a95a78a89d72c75939243e07044b5bcb2e329ce"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/2-generated.png",
+      "sha256": "c149ef1e9152df8afa53c812fefcbb5881d8f18ce1cf9e95b5c042918263c197"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/3-generated.png",
+      "sha256": "e1d47c99be0590c77c1a1e920e484449e8f9d3282e48c09ddb5bdf5e2d8123fa"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/4-generated.png",
+      "sha256": "09ddc19ff61f59774ed5e0c01ffd1c2a65249c147454cb0d412f60a314223c1f"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/5-generated.png",
+      "sha256": "5a7310ea20aaa46c3811df872f265d9716be5dee450061fb3c9a993e108112f1"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/6-generated.png",
+      "sha256": "eb0ddfb5a08924b1bb03db408a0913f30f93dc3ef181bca5c0cb6b43eda8aab9"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/7-generated.png",
+      "sha256": "b83b65f9462ca20f8e3ce973c413e4e27014632780a691c0688c8dbb697ce52b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/8-generated.png",
+      "sha256": "ac638ad6c2744baee29122a8d656e193fc058e35804294a0ba1d24461c7fc8ba"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/9-generated.png",
+      "sha256": "cb0ab994efbadd3c78b59920d01b6b47b84a397799502c02a90bf2fff9615029"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/img/1-generated.png",
+      "sha256": "9b67bc1bd52bc0e6e7ec4242fcaf1c81daa140ef2db1d402b7a08ff1517c096f"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/img/10-generated.png",
+      "sha256": "8d98f34f5e06e4f39e434b9705cd3e2cbe006d1357217212a500ea11733759e5"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/img/2-generated.png",
+      "sha256": "fca296a3a883765ec9f8b46a560eaa8d8d2375ad5413fb2378fd1c58865eb9d4"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/img/3-generated.png",
+      "sha256": "34c4e0e484cbb8d4f967eaf1c607cf17996f7f52d9bd752a4c55ea7998b2b078"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/img/4-generated.png",
+      "sha256": "2f2fe5aa0e63574c66a1ab2e71cd7bde155cd998f4e372479569e911f7554ad1"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/img/5-generated.png",
+      "sha256": "2aaeed81dc690679b2a0a30f51b61a90ddd5d65d40aa2a77f1dd61252ab4f300"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/img/6-generated.png",
+      "sha256": "e57d1df03e79a43a65420b634718d662cbe4700cde09f41156c6ff2a20ebb59c"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/img/7-generated.png",
+      "sha256": "cf4c7e2d6a655b06ce005265ad89889b4f19adf1fbd1bdf94c3a7edcd8ff39a0"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/img/8-generated.png",
+      "sha256": "a9b66c1d3b1d098c60afea087f86c9ec3663bd3d9a33c96225e36eb123e8b6c8"
+    },
+    {
+      "path": "_wiki/Computer_Science/Design_Pattern/Strategy_Pattern/img/9-generated.png",
+      "sha256": "5d7ac6145e60102e9cd09072a3fa009ce904e2245bf5cf3454eed395296c151e"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/1-generated.png",
+      "sha256": "2af23f88463db8da5f3c8020f904250be8213d5880c4a8a5f3d191e93c763e7e"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/10-generated.png",
+      "sha256": "8966303aafd33c3fd9fd0ab19c90bd158ebc175d79a8d2a04bb5e87d3d3e1b6e"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/11-generated.png",
+      "sha256": "c937a42253368910906b1c7216dcf96cd1809e4c1a38a11af04e7e87e2c6f741"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/12-generated.png",
+      "sha256": "a00c7f9030fb15520671f29dd9b5f76ca28564cb65952b39270d1e81f9681f4a"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/13-generated.png",
+      "sha256": "f789351ee927ae9eb3d93720fdb3ce222489586700f81616a08047a4849742e9"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/14-generated.png",
+      "sha256": "005f9d2565cf79ce7a39bc636ec0bb7fcd3bdc5b6a2adf89cc10aa9b1b3a723a"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/15-generated.png",
+      "sha256": "e8eafe1fe87fbf3f208ab7a5326fb6dff411d815ec0dbbec557ae11463892b4c"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/16-generated.png",
+      "sha256": "3549aee311a636e3087680d3f87077e25ff9ca263f0852621e7c417593b83851"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/17-generated.png",
+      "sha256": "383a48ab6b362a21cd1a307c54a29f4f38f46678a94a9d1f511acbd014f02112"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/18-generated.png",
+      "sha256": "2aa77ec768e22c3260083d9af1ee4255b4a2ab2cb0af7693701a5446530610a1"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/19-generated.png",
+      "sha256": "fa3aef081e3f870a7c15840e7c47d4da15ca5afe338c429bc62eac40fe072418"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/2-generated.png",
+      "sha256": "af0b6425f762a1289bdd4aec1519f567e4c8110470e18d3c0d973b3e63801142"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/20-generated.png",
+      "sha256": "921de03f767686e070866cbd176209a41dc26a563347d6d0d5ace1c78f729519"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/21-generated.png",
+      "sha256": "75db30b6f0522bb7511793e59f3c08d2807ed218ee95a510d34f61e8c395d632"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/3-generated.png",
+      "sha256": "9c555736e9304b81fcc5765804fce592d23eb5b5148f87fb3c62d4151760f334"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/4-generated.png",
+      "sha256": "f8d3c2369dcdabff7b1b0f889602a4396650dfc5853a2d4400efbadd3929385b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/5-generated.png",
+      "sha256": "e040433e67b39aef8ab773b55c3f2ce6d36d63caeafe242d7c9c16fbc15be69a"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/6-generated.png",
+      "sha256": "5023645fd7c0672fd1ea0cd539ee391377c96e3da28c232ee50996598930784d"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/7-generated.png",
+      "sha256": "e30682076305011f55e282a9d53f09f06f48d4bdae6b153af0ad3e1acfc36046"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/8-generated.png",
+      "sha256": "7be0319ce73b8f6a4142465db6736e8ce6af32cc08acf73bcfc67a4ccdca6c94"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/CPU_Scheduling/img/9-generated.png",
+      "sha256": "e9c7641c069eb36702fa4b1ac15ea3aba85a5cbc055a390bb270aea2f95e44ed"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/1-generated.png",
+      "sha256": "c611bcd6d1b481c397622fa0fe9b43074bd39547b9d51fd6660c0bc5cdf4c5e8"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/10-generated.png",
+      "sha256": "63f016ccb7e338b2373f69434aa8965fec7cfc874f1dc5c96f16514573bb7db3"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/11-generated.png",
+      "sha256": "1f5f8f5e5f2368060ccfec5d5c26f0f52edf01b403fc73eebbee4ad42c614695"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/12-generated.png",
+      "sha256": "69eb81d082284df18e01732ff9b660ff47fac508550f11ca9829786c2f170558"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/13-generated.png",
+      "sha256": "5bdf2eb04f85729650361890866eed19a0f8035620b30dfe328937fe9a83ec5f"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/2-generated.png",
+      "sha256": "de0051ed79540aceebf9e72dae3a015e99bda3ce9d33f1aaed866d154021eb2d"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/3-generated.png",
+      "sha256": "7db8a09a17f916732b4be5a94063543ba68d15af75633d6cce52f71816987ab0"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/4-generated.png",
+      "sha256": "53dc55886860eeccd7dba8b47caa1ffa46c67be22355518efd0d1d9448600380"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/5-generated.png",
+      "sha256": "45a3de6e70d6e99bff3e3001b7867623c60a3c5c1c7db9e72a96446cd9712691"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/6-generated.png",
+      "sha256": "a0f76de2853f3b1ab7fb0ee8e4a81d88d9158ae4b5c4e6db6394f2d4e3b8096f"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/7-generated.png",
+      "sha256": "d324ff6842608c087c58143f6b384101d492e300c7a7728fa1f61892814bff17"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/8-generated.png",
+      "sha256": "9f9a3747e90a7bb2fd00dcb78be4da6ff8849c69175c78c4c49eda40b3b39e14"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Deadlocks/img/9-generated.png",
+      "sha256": "25d0a88b43e625ab5a1acddf202810d318b1ea7e35f7843caf377ee9421b26c9"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/1-generated.png",
+      "sha256": "914eabb33666b24a0f1879da1b8fb8fdb7ba0851397e679eb8aefd06d3e67b82"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/10-generated.png",
+      "sha256": "3a557a5785aa4ec59315edd1ebba7d6b55904ac4c82fd2aca22281079efe68bc"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/11-generated.png",
+      "sha256": "2c61f797f42f221ab65095e7dd2f9eaf1ddb3178ac1dbfdf510340c6458573a6"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/12-generated.png",
+      "sha256": "608d3ecc8f34f3ab20f0bc6360301c7be7a8bcfa63c033311bca8d3a2b049988"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/13-generated.png",
+      "sha256": "95fb2492ef81985961527f4b4b1d23b9366847b746787c1e5207a4c730aae6cd"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/14-generated.png",
+      "sha256": "ecbc3f7f20d1254da1daddea74e235d0c1de42efe242508b6ffb81877ad5b92a"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/15-generated.png",
+      "sha256": "51bff52cb16811c754bef319855d06d061667cc8c6ce2b2672eb0053ddd2b6d0"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/16-generated.png",
+      "sha256": "8fe32d00eefe9ebc23d492204e45b767878663964b515eed105f4d8e6ad86e43"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/17-generated.png",
+      "sha256": "30639cd41d6c0a0aaf4ca7cccdda22ac991146a3fcb0ed1c0b0b8e5a73627295"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/18-generated.png",
+      "sha256": "2a9263cd8e3b6b3d3cec0608ce3b4fe437b94e3fe33c7d0c5698319042dbf754"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/19-generated.png",
+      "sha256": "78361d91a20dfdf8301a97d1b8bf57f1b48f9b62e979826b907800ae8c817bcb"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/2-generated.png",
+      "sha256": "97ff524ff264a5c74ee2db30315181804cd141d803704ee6604d70ce973fe49e"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/20-generated.png",
+      "sha256": "8c201eb7f4f7396cd0109ace74c68b30a358296ed72d93f182a86fbc9e1af053"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/21-generated.png",
+      "sha256": "db59283ae73fd6bb2e8ee59ff8b2d7809321943e9a3038228b2b1d834ddf2c60"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/22-generated.png",
+      "sha256": "422ded7f27407947cb6c8c39bbbf7affecb908437c59d699b4d8ede9364fa0d3"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/3-generated.png",
+      "sha256": "e7fe8e4b092d7c9fb610d2735ce6e0e8d69d862b1c6c8b0f0c63ab3dd85950a6"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/4-generated.png",
+      "sha256": "a132d56f778f6ad26169e3aa4a78fc1710e309122dfb43b76749f91d77967fe4"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/5-generated.png",
+      "sha256": "68af9f1a58363d2ca6aca156c6656dd6ab8eef9c17ad41f16f0f0cff4fba130f"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/6-generated.png",
+      "sha256": "3f857728c235d067b91b4687c62c04c742412afcf9e3cf2ac0af6d2e2c25e6bd"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/7-generated.png",
+      "sha256": "eb507ecb76a5ae512026bcf8009ae31213bd67b9c5e027f1fd1a8a7cedf4b43b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/8-generated.png",
+      "sha256": "8a2628874f92278ed57525b20284f40bdb713b6a35502ecaeb62c5df12450a36"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Main_Memory/img/9-generated.png",
+      "sha256": "baca673955a4f23115eaf1cc3c287eae9c1d5828d53174c2ee05f2222090ed26"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/1-generated.png",
+      "sha256": "8fc3d5a155f599e359feed5d99393ff8a1764fa35304e719dfc6712bfd020a27"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/10-generated.png",
+      "sha256": "b88ca8220036b0c5616a1ca17ac8f434dac106ad503fee9b024425022a19e01b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/11-generated.png",
+      "sha256": "9ee91c1430e7c6f1f7a9c82e6e7c0be6672faa9684d81decaa234e16876cf51a"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/12-generated.png",
+      "sha256": "f2302b5f1be2122191392991c38d7ce17353a28c71a206ca04c85f18013900ed"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/13-generated.png",
+      "sha256": "838ef762f6e844c22d45ee0dda4a2f259d75720cbeb6480ed3e1b0fa5b2d5173"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/14-generated.png",
+      "sha256": "0c1e5f30a14a51269c740b7079e1851dad41f652528e85df18932be5aaa9ea77"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/15-generated.png",
+      "sha256": "97b0abe81c1fa30445a28b96dcf5d6a5b300255db22ee27d5cb641119b8755cd"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/16-generated.png",
+      "sha256": "110d1ae1954bfb8669e72a15bedceac09cc69fd6efc4482465e7f015e9d4e924"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/2-generated.png",
+      "sha256": "0af8fefa1f2405f66720c16f0522bf04a3d5317f752d59547f531acd1f10c43a"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/3-generated.png",
+      "sha256": "a99003eb81e82ce7b3b166cec72aeff13f2bb3f6759588ab7c7aa6e27f6ec91e"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/4-generated.png",
+      "sha256": "c202c34952f575174881f2474ef82970ceabb0fd7a9de7215e4b76cdfca0ba38"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/5-generated.png",
+      "sha256": "3efaa5404fb1d3465dd4102b217b22cb955bfe8a209bba70113b113516ec9502"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/6-generated.png",
+      "sha256": "9fa18311efed0f954ad249b87af4dd3d36ec662527f42674d462dbaa97614c8b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/7-generated.png",
+      "sha256": "14d29256077fb90a9b502a249d7798ce9db5946957902846665528cf0d884716"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/8-generated.png",
+      "sha256": "4e1532b23443e44f7286e4bcc3ca6d1556768d377acd927d8420a859b5b291ee"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Operating_System_Introduction/img/9-generated.png",
+      "sha256": "1c64d1fa019af80d29ea2802704a9728cec5b35aaa9a14295665fc922150ed88"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Process/img/1-generated.png",
+      "sha256": "46f57a6b00754916083caaa232405700a4101ba35daf29ce1919241f83a2ef04"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Process/img/10-generated.png",
+      "sha256": "f2f7789a0b905d5df46070b4872020226a23b7ecc42ad139705d1a2251dd434d"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Process/img/11-generated.png",
+      "sha256": "e3245c933a67a8fa2389e16ee5d3b558906233b1c590e53ecf486963e8af5948"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Process/img/2-generated.png",
+      "sha256": "acf0a9107b1e7303edfa2cf8e018ccff4c84dcd1cf56db81e4f0b115fc4d7085"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Process/img/3-generated.png",
+      "sha256": "d71fdf07e76d85306d87fb8fe2425e622b367d8a4a7695c381cc1a10b99d995c"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Process/img/4-generated.png",
+      "sha256": "f37f96bcdb229c28b1d10938b0560eadc25c2900c915057937ace5c584ee7cc1"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Process/img/5-generated.png",
+      "sha256": "6236213986de14fb8340700176a7d8db806b6ea584329b5af77327689689d294"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Process/img/6-generated.png",
+      "sha256": "53cb238f14694aab0b1b25efb0cb1f15c80e40f5fa49e2c5374be5c88669c48b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Process/img/7-generated.png",
+      "sha256": "86181864c061b56e1ae78e8716ccac3537a90f032f68bc3034fb4c8abf55e082"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Process/img/8-generated.png",
+      "sha256": "434b8a6091322c0a1ae371fceeebad50e1cebd95f41fe9c50a4122a1d3792701"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Process/img/9-generated.png",
+      "sha256": "cf40c7c6d4bfd0f5aa5fd8f03b926a93542b0bd4ffe8313384d6cfb333c75184"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/1-generated.png",
+      "sha256": "1f31aeaa287ffdba43e5e8f9a6a2318d2fd35e601b37318b5a63b1d5ccb1d7ac"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/10-generated.png",
+      "sha256": "d9ce22ba4771d37affe2a45a7919d321a9498b00070bba8259e4dca524042bfa"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/11-generated.png",
+      "sha256": "024bbb3ce3febdf8fe588b0c8ab797b588aabbddb3e31ecc8d9ee349153248dc"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/12-generated.png",
+      "sha256": "6d74d91bc30ae4f03c21f2a17e20700b48788a0a13b504f5c1c0fbbf11a2371f"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/13-generated.png",
+      "sha256": "21e04b64e8807797782c092508fd210b10fe08ab5488548634dc7f7f8b87b301"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/14-generated.png",
+      "sha256": "5ae60632e649a4d946a433ecdd8da10481d1a3014848fd49acb624598cc6c719"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/15-generated.png",
+      "sha256": "7a903622201d92b2f315310fdc4606d31365d3d0df1331ad4d3f7217a0b324f2"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/16-generated.png",
+      "sha256": "3c15f996ab4b416c6d28e1911c0cbb3161cb79dfe84dddae07a435a177c51495"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/17-generated.png",
+      "sha256": "48db7cce3658b96ba20bff7e85296d211e8d261045bd554560e3353cffbebda5"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/18-generated.png",
+      "sha256": "adc28e759878a14bea4361e0788737e6a76b35bada1ef4fa9023bdab15bd7fd7"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/19-generated.png",
+      "sha256": "c5cf12baf13bbd98d5b66cbb344efeb3dd6a18b62cf3fe53b93fd097752195e0"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/2-generated.png",
+      "sha256": "58816b2f4af132abfe8a65580fb093283a1a2ae88f7519b75ef5d049a0c6efa5"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/20-generated.png",
+      "sha256": "d017f4e3271c93e349795715e98e0e8383b1ffba1f5ccca01d8119f595bcaf24"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/21-generated.png",
+      "sha256": "5cfb50417ff1dca568c1a4853bea7bc04ca0deda7325b55e26308e9d96573bf4"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/22-generated.png",
+      "sha256": "0f0c5492dcc56d87fa5474474aaa169c8c9c078fecad9faac068ff710067cc63"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/23-generated.png",
+      "sha256": "8888ed0e025888876512d0ea12742ef5ffefe7f536d8131b78680653d6fe65d8"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/24-generated.png",
+      "sha256": "7daa89ce6ab4dafb94b3afa42172d49736c9599d63f2ef21926e923d3281a6fb"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/25-generated.png",
+      "sha256": "a2a4fe3709636c969618790af940667a2cc61e56fc5dc1137f7b095da135834e"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/26-generated.png",
+      "sha256": "a0c4b7ea89041b2197a936daf146b9897369ed1e77d4e6ce5d3907942ffff91b"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/3-generated.png",
+      "sha256": "e4fb01218fe5d82766a38b491ba51e742d32b161c11698c2805ee7787b220255"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/4-generated.png",
+      "sha256": "3657d97213e205792e8370102bf26ac9df04ead90d976d01b0e910dc9daac234"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/5-generated.png",
+      "sha256": "28f98b4392872239f94135b271556e266e3dfab53375b81ead756d5e641545a4"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/6-generated.png",
+      "sha256": "02a0ede1e5301762f2a00fdc0a30d02ee66e0fb0a9796081c3766908282ac420"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/7-generated.png",
+      "sha256": "b57819736543d728237c697270f55bf856e62b1644b8d68f096abc0af3941094"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/8-generated.png",
+      "sha256": "9f84875f8c761441da66ed80f81136264b571dcfb7d85a7ffff8aa9f796920e1"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Storage_Management/img/9-generated.png",
+      "sha256": "a2bda4c7d68827a0dca311e3314cdbb336629850ec6cb10775a652ac211e57e2"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Synchronization_Examples/img/1-generated.png",
+      "sha256": "1153e4046e60e4154474175480f1bb46549c34eee4c24064ce4d0e9b6fc5fb18"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/img/1-generated.png",
+      "sha256": "018e12caefcc4e3b7aec168e8ea30e921d49e92534a925442a5e506df587951a"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/img/2-generated.png",
+      "sha256": "2e23c721e96ffec7c2125fbeb6b726017b7a387049b91a241c8e40a113d27120"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/img/3-generated.png",
+      "sha256": "0d3d3824de0a4c58a415d15090f315198edc3365150c914496409f59cdf12f34"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/img/4-generated.png",
+      "sha256": "d866e540dc41d99f4e972ae469fb2c716a0062e10c35ec4cb659ceb3ca04659a"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/img/5-generated.png",
+      "sha256": "6fd8e1b0b96316d39e59bc4dc0f5cc848c1409de1722099c9a2de7e1dbb33383"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Synchronization_Tools/img/6-generated.png",
+      "sha256": "d713a543114bb41b9efa2d194983c21b38e7ecd59b162a4ca3163918112880da"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/img/1-generated.png",
+      "sha256": "ea8a6e44365f2dd197eab3d4ee8e2e657a1fd38945cfec288bb1ccff201dedb6"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/img/2-generated.png",
+      "sha256": "876833d57ee656d38334727e44b4f308fb77ab5387ed0320971c151482fba55d"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/img/3-generated.png",
+      "sha256": "06517f30a0c3c34598a9a311a551f4b573227938c593e23bd8c798195dc927fc"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/img/4-generated.png",
+      "sha256": "2ef31036975fd1be0b7985c6031bb48c3a563c2608af892e77f41f9c274a1406"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/img/5-generated.png",
+      "sha256": "0aa30c84425658838a4f6d86b23dd93dc7b88054a9de827ec6ccf9e8f3a822d8"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/img/6-generated.png",
+      "sha256": "3c8d085b5687b17458d08fa445162d4f619c1c4cb0be615c5e048ed8d09bcd4c"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/img/7-generated.png",
+      "sha256": "4c4f52c8443b9052b8ac4c0196aa8825e39474eb6553ab6d7829f6fc63de315f"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Thread_&_Concurrency/img/8-generated.png",
+      "sha256": "c3840e4244d274186c070d2efdabfbe074821c3b5508a5da5a6791abea7845b3"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/1-generated.png",
+      "sha256": "e906b49edc0374e0927b6cfe2001d74a1b5814806f757adf927fcefc82ab94cf"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/10-generated.png",
+      "sha256": "3f6e4fe283adebbaea28675d7076ecce5ae47b0c44d1a46d56a9a9f7d799d687"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/11-generated.png",
+      "sha256": "2a900c098cacecb3c53e5844fe6497fad6a2d46d636747e8c79cd09252793fbf"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/12-generated.png",
+      "sha256": "1a9ca620402c4ba9616bac2dcece028af64360876d8e587fb696dad5b9f8c834"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/13-generated.png",
+      "sha256": "d345f6ce8a91aed59ef9778d86525f5afb868100c214c1c96c98932ea526932e"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/14-generated.png",
+      "sha256": "0a7012452f4ed159fc65173f0d2a95415d5676e61dab4b5fb9648649a9f2a620"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/15-generated.png",
+      "sha256": "cf5a51a7c47e1106e2d88ed223b4724c3f94de01d3ef89b2e1ea4f3377042c7c"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/16-generated.png",
+      "sha256": "dfed1e70aad3cbc59454176d7dbd03b079461be44a7ae723eedc85f67cc8104a"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/17-generated.png",
+      "sha256": "d3c9381121f585a11353093d5888876f1a720460dd74849bdf5dc184bbac0bcb"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/18-generated.png",
+      "sha256": "aadd5ff1117ecb0944edbcf7094ae7d9b25b489ffe6e81956d783e6f8355db50"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/19-generated.png",
+      "sha256": "f6ef1852d89089d3beb6621b6e6a08c790e3d228a84f77f5c4a20fbbd274eb52"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/2-generated.png",
+      "sha256": "895a001a5cb4a20d5d53c320775114b365d26c0daddcc5d5a4d4cf197c5e4d5f"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/20-generated.png",
+      "sha256": "a10a628cee1af2228ee85ed18d8cbe9fdcc3497507f75c2a6db736e98d6ca5ee"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/21-generated.png",
+      "sha256": "b896bc46823101d1894af0179cd84ee5fea336bbdde351c43c0429b78fdf5d0f"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/3-generated.png",
+      "sha256": "c8a44af626e195b92f1e51686903bbe37cce0d810b976d550fa1adaa33b39e55"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/4-generated.png",
+      "sha256": "7ac1d019b857cf90255a9ed7501c661ec3cca81d772e8da60e137e1b90bc7df3"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/5-generated.png",
+      "sha256": "df0e44c150b0117880688f5ea1f067777c1a9e702782ade8577b1eb14c286cd8"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/6-generated.png",
+      "sha256": "6054a7f6b2cb01179b9ac761242786b4400ef5f604207c390798ec2aa09e8d9f"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/7-generated.png",
+      "sha256": "bdb37b4819965c9d358f9880024bab28887f4bd41bdf0b76b27f4c2a7ab415a1"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/8-generated.png",
+      "sha256": "a56cfe7a4e6a862f87c260d66d455e7585a86be50e8c7c9c07f69065e9d9330f"
+    },
+    {
+      "path": "_wiki/Computer_Science/Operating_System/Virtual_Memory/img/9-generated.png",
+      "sha256": "d25216ca03fcfc93fbffbf950a715d71df6078c3231b25584d4d30908918ce52"
+    },
+    {
+      "path": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance\uc640_@MappedSuperClass/img/1-generated.png",
+      "sha256": "8c52d8168836a3cf06de3e2f6277dac905aa9bea85f2a4c6d08785455188b1b2"
+    },
+    {
+      "path": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance\uc640_@MappedSuperClass/img/2-generated.png",
+      "sha256": "e2bbc4bb103ae8e8b6a8051d24b57303169c3ea1ba9c2f8a385047b621947a4c"
+    },
+    {
+      "path": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance\uc640_@MappedSuperClass/img/3-generated.png",
+      "sha256": "f5e70b884c46efb338c127d7e9b699abcf71ec31a1d47fa3c69f49aead1e8159"
+    },
+    {
+      "path": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance\uc640_@MappedSuperClass/img/4-generated.png",
+      "sha256": "4309d3c5d4c244cd7386e9fc3a5e275ae3fac947a2c467ac84324674c2ded9e0"
+    },
+    {
+      "path": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance\uc640_@MappedSuperClass/img/5-generated.png",
+      "sha256": "1523443d2b1884626861b0405980798fa85575fab4e2e581f8de6a7e9c52843d"
+    },
+    {
+      "path": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance\uc640_@MappedSuperClass/img/6-generated.png",
+      "sha256": "62a23968fb32d1c016e2d0b10d200e787380484bb4f240ba9bd53aa8174a37bf"
+    },
+    {
+      "path": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance\uc640_@MappedSuperClass/img/7-generated.png",
+      "sha256": "fc0d3fef651e46bb5cd1ecb39813e540f86036ced42e437b0eb46542062aee76"
+    },
+    {
+      "path": "_wiki/Framework/Spring/JPA/Annotation_@Inheritance\uc640_@MappedSuperClass/img/8-generated.png",
+      "sha256": "720a8ad5f9dae21df14ea7c96a73a08aeefb4efcc4a3873abdcd550290cf46bd"
+    },
+    {
+      "path": "_wiki/Programming_Language/Java/Functional_Interface/img/1-generated.png",
+      "sha256": "6114d538543d3b199979736c0b47948ea6b92db62530c47c37403fcc191c878f"
+    },
+    {
+      "path": "_wiki/Programming_Language/Java/Functional_Interface/img/2-generated.png",
+      "sha256": "23aec1a65d45bdb7a5cb036d434b501bbe6a2a170b0344e742c296b25a0d3d33"
+    },
+    {
+      "path": "_wiki/Programming_Language/Java/\uc2a4\ud2b8\ub9bc_\uc18c\uac1c\uc640_\ud30c\uc774\ud504\ub77c\uc778/img/1-generated.png",
+      "sha256": "f4b06139fa5d538e62eaa6cca9f26d68442c8d9e61e186dfaa00f9f1ec37b72e"
+    },
+    {
+      "path": "_wiki/Programming_Language/Java/\uc2a4\ud2b8\ub9bc_\uc18c\uac1c\uc640_\ud30c\uc774\ud504\ub77c\uc778/img/2-generated.png",
+      "sha256": "7aaa25bb73780874217dfd67c3862660b18617062704badd09883ad44f556400"
+    },
+    {
+      "path": "_wiki/Programming_Language/Java/\uc2a4\ud2b8\ub9bc_\uc18c\uac1c\uc640_\ud30c\uc774\ud504\ub77c\uc778/img/3-generated.png",
+      "sha256": "3e148eca6f54fda355cbe1a7ecaa07331c8b6ba868b05f8c802033eaa9200d73"
+    },
+    {
+      "path": "_wiki/Programming_Language/Java/\uc2a4\ud2b8\ub9bc\uacfc_\ubcd1\ub82c_\ucc98\ub9ac/img/1-generated.png",
+      "sha256": "853c45a2856100634e4b7c4dbc445395809a47c63fa4ce9e98a6f96fb6d058da"
+    },
+    {
+      "path": "_wiki/Programming_Language/Java/\uc2a4\ud2b8\ub9bc\uacfc_\uc5ec\ub7ec_\uba54\uc18c\ub4dc/img/1-generated.png",
+      "sha256": "d08564eb720e53e6d0e53d456de4d059372a9b0175fe9069cac908b50528e699"
+    },
+    {
+      "path": "_wiki/Programming_Language/Java/\uc2a4\ud2b8\ub9bc\uacfc_\uc5ec\ub7ec_\uba54\uc18c\ub4dc/img/2-generated.png",
+      "sha256": "4371b34eff37a09e599be337efc42b70d07c0f30805b6fcf67fd4a04ce8b689f"
+    }
+  ],
+  "issues": []
+}

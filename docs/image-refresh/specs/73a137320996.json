@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Interrupt-driven I/O cycle",
+  "alt": "장치 드라이버 시작부터 완료 신호·인터럽트 처리·CPU 재개까지의 입출력 주기",
+  "requiredChecks": [
+    "DriverinitiatesI/O→controllerstarts→ready/completed/errorinterruptsignal→CPUreceive/ISR.",
+    "CPUexecutesbetweenrequest/completion;handlerprocessesdata/returns→CPUresumes→nextI/O;exactsevennumberedsteps."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Interrupt-driven I/O cycle. Twoverticalswimlanes CPU / Device driver andI/O controller. 1Device driver initiates I/O lefttop;arrow2→right Initiates I/O;3down→Input ready, output complete, or error generates interrupt signal;4arrowleft→CPU receives interrupt and transfers control to handler;5down→Interrupt handler processes data and returns;6down→CPU resumes interrupted task;7outerloop→step1 fornextI/O. Dottedseparateleftpath CPU executes/checks interrupts between instructions whilecontrollerbusy; dottedpath joinsCPUreceivesinterrupt. Precisedirectionallabelled1..7."
+}

@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "CPU logical(pid,p,d); searchtableby(pid,p) matching rowfields(pid,p), rowindex iisphysicalframenumber.",
+      "passed": true,
+      "evidence": "Logicalpid,p,d andsearch(pid,p)label to matchingrowi,pid,p."
+    },
+    {
+      "requirement": "Oneentryperphysicalframe, tableindexedbyphysicalframe, notper-processoneentrypervirtualpage.",
+      "passed": true,
+      "evidence": "Globaltableperphysicalframecaptionandframeindexcolumncorrect."
+    },
+    {
+      "requirement": "Outputphysical(i,d), offsetunchanged; no pidusedasframeorvirtualpindexinterpretedframe.",
+      "passed": true,
+      "evidence": "Selectedindexi→(i,d)→framei,offsetdseparateunchanged; noincorrectpid/pasphysicalframe."
+    }
+  ],
+  "notes": "Direct full visual graph review; exact per-entry destination and source fields checked; incorrect arrows reject.",
+  "at": "2026-10-12T23:36:35.599Z",
+  "generatedSha256": "8c201eb7f4f7396cd0109ace74c68b30a358296ed72d93f182a86fbc9e1af053",
+  "specSha256": "77728674ffa98dc01a9ebe9b7d65a924e349fb66a9be6203723a6366f8f56072"
+}

@@ -1,0 +1,13 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Resource graph to wait-for graph",
+  "alt": "단일 인스턴스 자원 그래프를 스레드 간 대기 그래프로 변환하는 예제",
+  "requiredChecks": [
+    "Left RAG T1..T5,R1..R5 one instance each. Requests T1→R1,T2→R3,T2→R4,T2→R5,T3→R5,T4→R2.",
+    "Assignments R1→T2,R2→T1,R3→T5,R4→T3,R5→T4, exactly eleven edges left.",
+    "Right wait-for edges exactly T1→T2,T2→T5,T2→T3,T2→T4,T3→T4,T4→T1; no resource nodes right.",
+    "Clear conversion rule Ti→Rk→Tj becomes Ti→Tj. T1,T2,T3,T4 blocked cycle, T5 no outgoing edge. No reversed or missing arrowheads."
+  ],
+  "prompt": "Use case: scientific-educational. Original raster PNG educational diagram for IT technical blog. White opaque background, clean dark navy sans-serif text, blue and teal accents, no logo/watermark/decoration. Big readable English labels, generous spacing, original composition. For graphs thread circles, resource boxes, distinct arrowhead at destination. Blue solid requests, teal solid assignments, gray dashed potential claims. Title: From resource allocation to a wait-for graph. Two large side-by-side panels (a) Resource-allocation graph and (b) Wait-for graph; arrows clean separate paths, ample space. Left five thread circles T1,T2,T3,T4,T5; five resource boxes R1..R5 each one dot. EXACT blue requests T1→R1,T2→R3,T2→R4,T2→R5,T3→R5,T4→R2. EXACT teal assignments R1→T2,R2→T1,R3→T5,R4→T3,R5→T4. Right circles only T1..T5. EXACT directed edges T1→T2,T2→T5,T2→T3,T2→T4,T3→T4,T4→T1. Use clockwise ring T1,T2,T3,T4 with additional T2→T4 diagonal and T5 leaf off T2. No outgoing T5. Footer Conversion: Ti → Rk → Tj becomes Ti → Tj. Single instance per resource type. Avoid edge crossings in left with fresh layout and curved paths."
+}

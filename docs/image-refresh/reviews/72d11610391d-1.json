@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "ThreetimecolumnsP0,OS,P1; downwardtime; P0execution→savePCB0→restorePCB1→P1execution.",
+      "passed": true,
+      "evidence": "P0→OS 저장PCB0→복원PCB1→P1 실행과 시간 아래 방향이 맞다."
+    },
+    {
+      "requirement": "SecondinterruptfromP1→savePCB1→restorePCB0→P0execution; otherprocessidleandbothnotexecutingduringswitch.",
+      "passed": true,
+      "evidence": "두 번째 P1→저장PCB1→복원PCB0→P0 실행이 맞고 실행 교대·Idle·교환 비용 표시가 정확하다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:23:54.488Z",
+  "generatedSha256": "53cb238f14694aab0b1b25efb0cb1f15c80e40f5fa49e2c5374be5c88669c48b",
+  "specSha256": "c32bbac393003dc93e3e665bcd5312c684d3566817e5e4745b1246f6023a08b6"
+}

@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Headers in exact order: ID | name | dept_name | salary",
+      "passed": true,
+      "evidence": "Headers ID,name,dept_name,salary in exact order."
+    },
+    {
+      "requirement": "Exactly 4 rows: 201 | Dana | Comp. Sci. | 60000 ; 202 | Eli | Comp. Sci. | 80000 ; 203 | Faye | Physics | 90000 ; 204 | Gus | Physics | 110000",
+      "passed": true,
+      "evidence": "Four rows Dana201Comp. Sci.60000;Eli202Comp. Sci.80000;Faye203Physics90000;Gus204Physics110000 exactly match base table fixture."
+    },
+    {
+      "requirement": "One tuple per row; ID, name, dept_name and salary are attributes.",
+      "passed": true,
+      "evidence": "Caption identifies rows as tuples and four columns as attributes."
+    },
+    {
+      "requirement": "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer; all four rows readable, no copied textbook names."
+    }
+  ],
+  "notes": "Pass. Every cell inspected against examples/relational-algebra.json.",
+  "at": "2026-10-12T13:58:46.008Z",
+  "generatedSha256": "87112c8789685d65aa1969eafd8138d9b2f3a3b8da3032a7cbc198d63fe794e6",
+  "specSha256": "4ad5962885895ee22932fd4e96fcd03a8e92e2cc9f8f946a5e3d3176ea6380d2"
+}

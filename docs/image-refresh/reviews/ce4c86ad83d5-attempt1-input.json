@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "ColumnsPRICE,ID,ITEM_TYPE,URL.",
+      "passed": true,
+      "evidence": "Four headers exact and legible."
+    },
+    {
+      "requirement": "Rows1000|1|prop|propUrl1and2000|2|Background|backUrl1exactcase.",
+      "passed": true,
+      "evidence": "Both rows exact: 1000/1/prop/propUrl1 and 2000/2/Background/backUrl1."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

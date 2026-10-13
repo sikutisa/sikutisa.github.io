@@ -9,7 +9,7 @@ tags: [computer science, os]
     * sometimes, magnetic tapes, optical disks, or cloud storage.
         * using the structure of RAID systems.
 
-![HDD](./img/1.png){: w="330" h = "320"}
+![회전하는 플래터의 트랙·섹터·실린더와 읽기 쓰기 헤드·암 구조](./img/1-generated.png){: w="760"}
 *HDD moving-head disk mechanism*
 
 * HDD Scheduling
@@ -23,7 +23,7 @@ tags: [computer science, os]
 * Intrinsically fair, but generally does not provide the fastest services.
 * Total head movement of 640 cylinders.
 
-![FIFO](./img/2.png){: w="360" h = "320"}
+![헤드 53에서 요청 순서대로 이동하는 FCFS와 총 640 실린더 이동](./img/2-generated.png){: w="760"}
 *FCFS disk scheduling*
 
 ### SCAN Scheduling
@@ -33,7 +33,7 @@ tags: [computer science, os]
 * **SCAN Scheduling**: if the direction of head movement is moving towards 0.
 * total head movement of 236 cylinders.
 
-![SCAN](./img/3.png){: w="360" h = "320"}
+![헤드 53에서 0 방향으로 이동·반전하여 요청들을 처리하는 SCAN 예시](./img/3-generated.png){: w="760"}
 *SCAN disk scheduling*
 
 ### C-SCAN (Circular-SCAN) Scheduling
@@ -45,14 +45,14 @@ tags: [computer science, os]
 * **C-SCAN Scheduling**
     * total head movement of 183 cylinders. (ignore from 199 to 0)
 
-![C-SCAN](./img/4.png){: w="360" h = "320"}
+![상향 C-SCAN 순서와 199에서 0으로 무서비스 복귀하는 이동 비용](./img/4-generated.png){: w="760"}
 *C-SCAN disk scheduling*
 
 ### Boot Block
 * For a computer to start running, when it is powered up, it must have an initial program to run.
 * A bootstrap loader is stored in NVM flash memory, and mapped to a known memory location.
 
-![Boot](./img/5.png){: w="320" h = "300"}
+![MBR의 부트 코드·파티션 테이블에서 부트 파티션 3을 선택하는 예시](./img/5-generated.png){: w="760"}
 *Booting from a storage device in Windows*
 
 ### RAID
@@ -82,10 +82,10 @@ tags: [computer science, os]
         * It enable us to detect an error if f one of the bits is damaged.
     * **RAID levels**: classify these schemes according to different *cost-performance trade-offs*.
 
-![RAID](./img/6.png){: w="420" h = "350"}
+![RAID 0·1·4·5·6과 다차원 RAID 6의 스트라이핑·복제·P/Q 중복 비교](./img/6-generated.png){: w="760"}
 *RAID levels*
 
-![RAID](./img/7.png){: w="340" h = "380"}
+![RAID 0+1의 스트라이프 그룹 미러와 RAID 1+0의 미러 쌍 스트라이프를 단일 디스크 고장으로 비교](./img/7-generated.png){: w="760"}
 *RAID 0 + 1 and 1 + 0 with a single disk failure*
 
 ## I/O System
@@ -93,7 +93,7 @@ tags: [computer science, os]
     * In many cases, the main job is I/O, for instance, web browsing, file editing, youtube, game, and so force.
     * The role of Operating System in I/O is to manage and control I/O operations and I/O devices.
 
-![IO](./img/8.png){: w="400" h = "370"}
+![프로세서·캐시·메모리·PCIe 버스와 그래픽·SAS·확장 버스 장치 연결](./img/8-generated.png){: w="760"}
 *A typical PC bus architecture*
 
 * **Memory-Mapped I/O**
@@ -106,7 +106,7 @@ tags: [computer science, os]
     * If the device supports the memory-mapped I/O, control registers are mapped into the address space of the processor.
     * The CPU executes I/O requests using the standard data-transfer instructions to read and write the device-control registers at their mapped locations in physical memory.
 
-![port](./img/9.png){: w="320" h = "300"}
+![전통적 PC의 16진수 입출력 포트 주소 일부와 장치 대응 표](./img/9-generated.png){: w="760"}
 *Device I/O port locations on PCs (partial)*
 
 ### Three types of I/O
@@ -117,13 +117,13 @@ tags: [computer science, os]
  * **DMA** (Direct Memory Access): used to avoid programmed I/O (one byte at a time).
     * useful for handling large data transfer.
 
-![Interrupt](./img/10.png){: w="320" h = "360"}
+![장치 드라이버 시작부터 완료 신호·인터럽트 처리·CPU 재개까지의 입출력 주기](./img/10-generated.png){: w="760"}
 *Interrupt-driven I/O cycle*
 
-![Interrupt](./img/11.png){: w="320" h = "340"}
+![기존 Pentium의 예외·인터럽트 벡터와 2번 NMI를 정리한 역사적 표](./img/11-generated.png){: w="760"}
 *Intel Pentium processor event-vector table*
 
-![DMA](./img/12.png){: w="360" h = "360"}
+![드라이브 2의 c바이트를 주소 x 버퍼로 DMA 전송하고 완료 인터럽트를 보내는 과정](./img/12-generated.png){: w="760"}
 *Steps in a DMA transfer*
 
 ### Blocking I/O vs Non-blocking I/O
@@ -140,7 +140,7 @@ tags: [computer science, os]
     * An asynchronous read() call 
         * *requests a transfer* that will be performed in its entirety but will complete at some future time.
 
-![Models](./img/13.png){: w="370" h = "340"}
+![동기 블로킹 I/O의 완료 대기와 비동기 I/O의 요청 수락·완료 통지 비교](./img/13-generated.png){: w="760"}
 *Two I/O methods: (a) synchronous (b) asynchronous*
 
 ## File-System Interface
@@ -153,10 +153,10 @@ tags: [computer science, os]
     * Sequential access: Information in the file is processed in order, one record after the other.
     * Direct access: relative access: A file is made up of fixed-length logical records that allow programs to read and write records rapidly in no particular order.
 
-![Seq](./img/14.png){: w="310" h = "240"}
+![현재 위치에서 읽고 쓰며 처음으로 되감는 순차 파일 접근](./img/14-generated.png){: w="760"}
 *Sequential-access file*
 
-![Dir](./img/15.png){: w="310" h = "280"}
+![직접 접근으로 구현한 reset·read_next·write_next와 현재 위치 cp](./img/15-generated.png){: w="760"}
 *Simulation of sequential access on a directed-access file*
 
 * Directory Structure
@@ -167,25 +167,25 @@ tags: [computer science, os]
         * Tree-Structured Directories
         * Acyclic-Graph Directories
 
-![Single](./img/16.png){: w="350" h = "250"}
+![cat·bo·a·test·data·mail·cont·hex·records 파일이 하나의 디렉터리에 있는 구조](./img/16-generated.png){: w="760"}
 *Single-level directory*
 
-![Two](./img/17.png){: w="370" h = "300"}
+![사용자별 디렉터리에서 같은 이름을 별개 파일로 사용하는 2단계 디렉터리](./img/17-generated.png){: w="760"}
 *Two-level directory*
 
-![Tree](./img/18.png){: w="380" h = "370"}
+![spell·bin·programs 아래 하위 폴더와 파일의 단일 부모 트리](./img/18-generated.png){: w="760"}
 *Tree-structured directory structure*
 
-![Acyclic](./img/19.png){: w="340" h = "340"}
+![dict와 spell이 파일·하위 디렉터리를 공유하지만 순환은 없는 그래프](./img/19-generated.png){: w="760"}
 *Acyclic-graph directory structure*
 
-![General](./img/20.png){: w="350" h = "340"}
+![avi와 book의 순환 및 jim과 공유 객체를 갖는 일반 디렉터리 그래프](./img/20-generated.png){: w="760"}
 *General graph directory*
 
 ## File-System Implementation
 * The file system itself is generally composed of many different levels.
 
-![Layer](./img/21.png){: w="240" h = "300"}
+![응용 프로그램부터 장치까지 이어지는 파일 시스템의 6계층](./img/21-generated.png){: w="760"}
 *Layered file system*
 
 * **Allocation Method** 
@@ -198,7 +198,7 @@ tags: [computer science, os]
 ### Contiguous Allocation
 * Requires that each file occupy a set of contiguous blocks on the device.
 
-![Contiguous](./img/22.png){: w="350" h = "370"}
+![시작 블록과 길이로 연속 구간을 지정하는 count·tr·mail·list·f의 할당](./img/22-generated.png){: w="760"}
 *Contiguous allocation of disk space*
 
 ### Linked Allocation
@@ -207,7 +207,7 @@ tags: [computer science, os]
     * *need for compaction*
 * **Linked Allocation** solves all problems of contiguous allocation each file is a linked list of storage blocks the blocks may be scattered anywhere on the device.
 
-![Linked](./img/23.png){: w="350" h = "370"}
+![jeep 파일의 9→16→1→10→25 연결 할당과 시작·끝 항목](./img/23-generated.png){: w="760"}
 *Linked allocation of disk space*
 
 ### FAT: File Allocation Table
@@ -219,7 +219,7 @@ tags: [computer science, os]
 * A section of storage at the beginning of each volume is set aside to contain the table. 
     * the table has one entry for each block and is indexed by block number.
 
-![FAT](./img/24.png){: w="330" h = "350"}
+![test의 시작 블록 217에서 FAT 618·339를 따라가는 중앙 포인터 표](./img/24-generated.png){: w="760"}
 *File Allocation Table*
 
 ### Indexed Allocation
@@ -228,11 +228,11 @@ tags: [computer science, os]
 * Each file has its own index block, which is an array of storage-block addresses.
     * the i-th entry in the index block points to the i-th block of the file.
 
-![Indexed](./img/25.png){: w="350" h = "370"}
+![jeep의 인덱스 블록 19가 데이터 블록 9·16·1·10·25를 가리키는 할당](./img/25-generated.png){: w="760"}
 *Indexed allocation of disk space*
 
 ### Free-Space Management
 * To keep track of free disk space, the system maintains a *free-space list*.
 
-![Free](./img/26.png){: w="330" h = "370"}
+![빈 블록 2부터 27까지 연결된 free-space list와 종료 표시](./img/26-generated.png){: w="760"}
 *Linked free-space list on disk*

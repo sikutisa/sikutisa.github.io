@@ -1,0 +1,13 @@
+{
+  "title": "Receivers expose different operations",
+  "purpose": "Explain heterogeneous vendor receiver interfaces that Command hides from the invoker.",
+  "alt": "서로 다른 메서드를 제공하는 13개 가전 수신자 클래스와 공통 명령 인터페이스가 필요한 이유",
+  "requiredChecks": [
+    "All thirteen original receiver classes are present with their listed operations.",
+    "Methods remain associated with the correct receiver; no invented shared vendor superclass.",
+    "The diagram explains varying receiver interfaces rather than claiming every receiver only supports on/off."
+  ],
+  "prompt": "Create a NEW ORIGINAL raster technical diagram for an IT study blog, opaque white background, clean navy sans-serif typography, restrained blue/teal/amber flat cards, spacious margins, exact monospaced class and method identifiers, no logos, source screenshots or copied slide composition. All English text clearly readable. Title 'Receivers expose different operations'. Draw thirteen distinct class cards in a spacious 4-column grid with exact monospaced identifiers and operations. ApplianceControl: on(), off(). CeilingLight: on(), off(), dim(). OutdoorLight: on(), off(). TV: on(), off(), setInputChannel(), setVolume(). Stereo: on(), off(), setCd(), setDvd(), setRadio(), setVolume(). FaucetControl: openValue(), closeValue() [retain the source's method spelling]. CeilingFan: high(), medium(), low(), off(), getSpeed(). Hottub: circulate(), jetsOn(), jetsOff(), setTemperature(). GardenLight: setDuskTime(), setDawnTime(), manualOn(), manualOff(). GarageDoor: up(), down(), stop(), lightOn(), lightOff(). Thermostat: setTemperature(). Sprinkler: waterOn(), waterOff(). Light: on(), off(). No inheritance arrows; independent receiver cards. Footer 'Different receiver APIs → wrap each request in a Command'. Large landscape or portrait canvas with enough space for every method; clean text more important than ornament.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

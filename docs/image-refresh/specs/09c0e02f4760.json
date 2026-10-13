@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Variable partition sequence",
+  "alt": "프로세스 종료로 생긴 홀에 새 프로세스를 할당하는 가변 파티션 과정",
+  "requiredChecks": [
+    "Four snapshots high memorytoplowbottom.1OS,P5,P8,P2;2OS,P5,Hole,P2;3OS,P5,P9,Hole,P2;4OS,Hole,P9,Hole,P2.",
+    "Transitions P8 exits→P9 allocated in prior hole with remainder→P5 exits; no compaction or moving P2/P9; blue holes distinct."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Variable-sized memory partitions. Four vertical memory columns linked by three arrows, high memory at top and low memoryatbottom. EXACT snapshots top-to-bottom: 1 OS | Process 5 | Process 8 | Process 2. 2 OS | Process 5 | Hole | Process 2. 3 OS | Process 5 | Process 9 | Hole | Process 2. 4 OS | Hole | Process 9 | Hole | Process 2. OS persistent top and P2persistentbottom. Firstarrow Process8 exits; second Process9allocated; third Process5exits. Blue/teal holes labelled Hole, allocated blocks white/pale. Keep P9samepositionstate3/4; no compaction depicted. Schematic blocks, nottoScale."
+}

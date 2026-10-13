@@ -5,6 +5,7 @@ const { marked } = require('marked');
 const { JSDOM } = require('jsdom');
 const { execSync } = require('child_process');
 const Handlebars = require('handlebars');
+const { prepareImages, copyImageAssets } = require('./image-assets');
 
 const {
   WIKI_DIR,
@@ -28,9 +29,11 @@ function getGitLastModifiedTime(filePath) {
 }
 
 // 목차 생성 + HTML에 id 반영
-function generateTableOfContentsAndUpdateHtml(html) {
+function generateTableOfContentsAndUpdateHtml(html, filePath) {
   const dom = new JSDOM(html);
   const document = dom.window.document;
+  prepareImages(document);
+  copyImageAssets(document, filePath, WIKI_DIR, OUTPUT_DIR);
   const headings = [...document.querySelectorAll('h2, h3')];
 
   let toc = '';
@@ -74,7 +77,7 @@ function convertMarkdownFile(filePath) {
   const patchedMarkdown = patchVimWikiLinks(content);
   let html = marked.parse(patchedMarkdown);
 
-  const { html: updatedHtml, toc } = generateTableOfContentsAndUpdateHtml(html);
+  const { html: updatedHtml, toc } = generateTableOfContentsAndUpdateHtml(html, filePath);
   html = updatedHtml;
 
   const relPath = path.relative(WIKI_DIR, filePath).replace(/\\/g, '/');

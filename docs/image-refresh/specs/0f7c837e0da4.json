@@ -1,0 +1,14 @@
+{
+  "title": "Average salary by department",
+  "purpose": "Illustrate Average salary by department with an original small dataset and independently calculated product/means.",
+  "alt": "Comp. Sci. 평균 70000·Physics 평균 100000으로 집계한 GROUP BY 결과",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "requiredChecks": [
+    "Column order: dept_name | avg_salary",
+    "Exactly 2 rows: Comp. Sci. | 70000 ; Physics | 100000",
+    "Comp. Sci.: (60000 + 80000) / 2 = 70000; Physics: (90000 + 110000) / 2 = 100000.",
+    "Original illustrative dataset footer; no copied textbook names, all cells legible."
+  ],
+  "prompt": "Create a NEW original raster educational table graphic for an English IT blog. White background, navy sans-serif text, blue header, pale teal alternating rows, light rules, generous padding, crisp identifiers. Title \"Average salary by department\". ONE table, EXACT headers: dept_name | avg_salary. EXACT 2 data rows:\nComp. Sci. | 70000\nPhysics | 100000\nNo extra rows or header duplicates. Footer \"Original illustrative dataset\". Separate note \"Comp. Sci.: (60000 + 80000) / 2 = 70000; Physics: (90000 + 110000) / 2 = 100000.\". Do not include an ID/name column or grand total. Averages are exact integers as written."
+}

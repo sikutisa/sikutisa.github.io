@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Head points to frame7, then97,15,126,ellipsis,75 in this order.",
+      "passed": true,
+      "evidence": "Chain reads head→7→97→15→126→ellipsis→75 in exact source order."
+    },
+    {
+      "requirement": "Every link is unidirectional to the next free frame and no circular link is invented.",
+      "passed": true,
+      "evidence": "All connectors point right to the next token. No link back to the head or cyclic pointer is drawn."
+    },
+    {
+      "requirement": "Title and annotation identify this as a list of available physical frames, not a page reference string.",
+      "passed": true,
+      "evidence": "Title is Free-frame list, subtitle Available physical frames, and footer describes allocation when a page is loaded."
+    },
+    {
+      "requirement": "All six example tokens and the head label are readable.",
+      "passed": true,
+      "evidence": "Head and all five numeric identifiers, plus ellipsis, are large, fully visible and correctly spelled."
+    }
+  ],
+  "notes": "Direct visual comparison with original and full Virtual_Memory.md; verified every identifier and connector endpoint. PIL verify/load succeeded. Page-fault control-flow correction is confirmed where applicable.",
+  "at": "2026-10-12T12:14:49.509Z",
+  "generatedSha256": "6054a7f6b2cb01179b9ac761242786b4400ef5f604207c390798ec2aa09e8d9f",
+  "specSha256": "80ce0b25764751fd07ce85927c43737fa8df5c172b8dd0bc820d9ebd9051965e"
+}

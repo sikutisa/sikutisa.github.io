@@ -1,0 +1,14 @@
+{
+  "title": "An observer requests removal",
+  "purpose": "Show Mouse unsubscribes with current membership before removal.",
+  "alt": "Mouse가 Subject에 등록 해제를 요청하며 현재 상태 5와 기존 네 관찰자 목록을 보여주는 단계",
+  "requiredChecks": [
+    "Mouse→Subject removal request is explicit.",
+    "Subject state remains 5.",
+    "Cat, Dog, Mouse, Duck are current observers before removal completes.",
+    "Unsubscribe request is not a notification or a state change."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference study blog. Opaque white background, large readable navy sans-serif text, monospaced identifiers, blue/teal/amber flat cards and roomy gutters. No copied irregular bubbles, photographed source or logos. Use plain labelled rectangles for Cat/Dog/Mouse/Duck object names, no animal illustration needed. Include only listed identifiers; do not invent code bodies, modifiers, state values, extra arrows or recipients. Title 'An observer requests removal'. LEFT Subject 'state: int = 5', RIGHT roster 'Current registered observers — removal requested' fourcards Cat, Dog, Mouse, Duck. Mouse highlightedamber with one arrow fromMouse LEFT toSubject labelled 'removeObserver(mouse)'. ArrowheadpointsatSubject notMouse. Footer 'Mouse requests removal; the Subject updates its observer list'. No updatearrows, no statechange. Ensure rosterstillcontainsMouseuntilnextdiagram.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

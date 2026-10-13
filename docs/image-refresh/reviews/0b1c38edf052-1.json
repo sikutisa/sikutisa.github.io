@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "ITEMID/PRICE/ITEM_TYPE/URL;BACKGROUNDID/BACKGROUND_NAME;PROPID/PROP_NAME.",
+      "passed": true,
+      "evidence": "All three tables and columns correct."
+    },
+    {
+      "requirement": "ChildIDPK+FKtoITEM.ID;discriminatorITEM_TYPEinparentforthisconfiguredexample.",
+      "passed": false,
+      "evidence": "BACKGROUND connector has unintended arrowhead toward child; direction ambiguous; repair required."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T02:02:49.664Z",
+  "generatedSha256": "94fb5a39e44db9667337baa231cdac6dd6681e57f2dd437f6d3fe5cd09081640",
+  "specSha256": "a12bef4ca18c3d0ee2591da63f3ed3ff6abf1abe24fdcde34647ea59a78cbd87"
+}

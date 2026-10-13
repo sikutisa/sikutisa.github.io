@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Gantt P1[0,24],P2[24,27],P3[27,30], proportional durations24:3:3.",
+      "passed": false,
+      "evidence": "Intervals0/24/27/30 and labels correct but P1≈75% instead of80%, P2/P3≈12.5%; proportional requirement fails."
+    },
+    {
+      "requirement": "All arrivals0; nonpreemptive order P1,P2,P3.",
+      "passed": true,
+      "evidence": "Allarrivals0,nonpreemptive,correct order."
+    },
+    {
+      "requirement": "Waiting P1=0,P2=24,P3=27, average17ms.",
+      "passed": true,
+      "evidence": "Wait0,24,27 average17 exact."
+    },
+    {
+      "requirement": "Turnaround24,27,30 average27ms; no context-switch overhead included.",
+      "passed": true,
+      "evidence": "Turnaround24,27,30 average27 exact."
+    }
+  ],
+  "notes": "Failed time scale; preserve original, redesign representation before new approval."
+}

@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "View level contains multiple views View 1, View 2, …, View n.",
+      "passed": true,
+      "evidence": "View level contains View 1, View 2, ellipsis and View n cards under User-specific representations."
+    },
+    {
+      "requirement": "All views map to one shared Logical level, which maps to Physical level.",
+      "passed": true,
+      "evidence": "The shared view boundary maps by plain lines to one Logical level, then one Physical level."
+    },
+    {
+      "requirement": "Logical describes data/relationships; Physical describes storage, not additional independent databases.",
+      "passed": true,
+      "evidence": "Logical is captioned Data and relationships; Physical Storage structures and access paths; footer explicitly one logical database."
+    },
+    {
+      "requirement": "No arrow suggests a SQL execution order; mappings are explicitly abstraction boundaries.",
+      "passed": true,
+      "evidence": "Connectors lack arrowheads and are labelled Abstraction mappings, so not a query execution sequence."
+    }
+  ],
+  "notes": "Pass after full visual review; labels/arrows match article and specification.",
+  "at": "2026-10-12T13:36:59.822Z",
+  "generatedSha256": "704ecb12fa2685aed8711f4e26779429b843e2d0b5af639b48a99ebd71321014",
+  "specSha256": "07f922b207812ccaee295867b79a52346eb9c50f3b76ef0f7e9dc069d84c2d9b"
+}

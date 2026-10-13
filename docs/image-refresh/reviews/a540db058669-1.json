@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Web application writes to one Primary and reads from two Replicas; no write request to replicas.",
+      "passed": true,
+      "evidence": "ApplicationWritesarrow toPrimary, Readsarrows toReplicaA/B."
+    },
+    {
+      "requirement": "Replication arrows run only Primary→Replica A/B, not bidirectional.",
+      "passed": true,
+      "evidence": "Dashedreplicationprimary→A andlongbottomrouteprimary→B, headsatreplicas only."
+    },
+    {
+      "requirement": "Caption notes replicas may lag; does not promise zero loss or automatic safe promotion.",
+      "passed": true,
+      "evidence": "Footer Replicas may lag; promotion requires coordination."
+    },
+    {
+      "requirement": "Read/write/replication arrows are distinct and all labels readable.",
+      "passed": true,
+      "evidence": "Solidrequestarrows anddashedreplicationroutesdistinct, allreadable."
+    }
+  ],
+  "notes": "Inspected each generated label and connector against full document. PIL verify/load passed. Missing shared query routes rejected.",
+  "at": "2026-10-12T12:49:45.243Z",
+  "generatedSha256": "775ee304cc3c496b71b9bf0ba0b1f1e293a1be5381c1c55e7f60402eb5403944",
+  "specSha256": "32e37cabc04982ac6ab942d824da4d7a9d32c8e456e0b4b0ba41ccf1b698738b"
+}

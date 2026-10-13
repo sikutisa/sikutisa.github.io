@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Fork/Join 분할 및 결과 결합",
+  "alt": "작업을 네 부분으로 나누어 처리한 뒤 결과를 병합하는 Fork Join",
+  "requiredChecks": [
+    "Task forks into2 then4 subtasks; four leaf results join pairwise then final.",
+    "Correct directed fork down, join down, four workers illustration not fixed-core rule."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Fork / Join. Top Task box → two subtasks → four leaf task boxes labeled Task 1,Task 2,Task 3,Task 4. FORK label left. Below each leaf Result 1,Result 2,Result 3,Result 4. JOIN below: results1+2 → Combine A; results3+4 → Combine B; Combine A and B → Final result. All arrows downward. Caption Four leaf tasks shown as an example; scheduling depends on runtime. No fixed core count.",
+  "referenceSource": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/package-summary.html"
+}

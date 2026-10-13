@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Hashed page table collision chain",
+  "alt": "가상 페이지 p의 해시 버킷에서 충돌 항목 q를 건너뛰고 일치 항목 p의 프레임 r을 찾는 과정",
+  "requiredChecks": [
+    "Logical(p,d); p→hashfunction→hashbucket collisionchain(q,s,next)→(p,r,next)→ellipsis.",
+    "Comparevirtualpagekeys q≠p thenp=p; selectedframe r; physicaladdress(r,d) memory; d unchangedbypass.",
+    "Pointer chainforward, q mapsframe s but isnotselected, nohashvalueuseddirectlyasphysicalframe."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Hashed page-table lookup. Logicaladdress(p|d). p→Hash function→Hash table highlightedbucket→linkedentryfields Virtualpage q | Frame s | Next → nextentry Virtualpage p | Frame r | Next → … . Label firstcomparison q ≠ p: continue; second p matches: selectr. FrommatchedrfieldarrowtoPhysicaladdress(r|d)→Physicalmemory. Separatetopdunchangedpathfromlogicald tooutputd. Exactq/s/p/ridentifiers; clearforwardnextpointers. No randomnumericentries."
+}

@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "DNS exchanges endpoint with Client, while HTTP goes Client→Load balancer→two parallel Web servers.",
+      "passed": true,
+      "evidence": "DNSlookupup/endpointdown separately; Client→LB→WebA/B."
+    },
+    {
+      "requirement": "Both web servers can write to Primary and read from Replica through distinct labeled group buses.",
+      "passed": false,
+      "evidence": "REJECT: Writes originates onlyWebA, Reads onlyWebB, falsely splitting roles; no sharedbus orgrouporigin."
+    },
+    {
+      "requirement": "Primary→Replica replication is one-way, unlike request/response pairs.",
+      "passed": true,
+      "evidence": "DashedPrimary→Replica singleheadeddownward."
+    },
+    {
+      "requirement": "Public/private network boundaries and operation labels are readable.",
+      "passed": true,
+      "evidence": "Privateboundary andpublicHTTPlabel legible."
+    }
+  ],
+  "notes": "Inspected each generated label and connector against full document. PIL verify/load passed. Missing shared query routes rejected.",
+  "at": "2026-10-12T12:49:52.946Z",
+  "generatedSha256": "2bc0358acf16ba4440b03731eea5e76a49dc97ba38b6813ffbae977f43a33018",
+  "specSha256": "49c705aed01b2e99e452cb17b5a790b71c07287c631eee137a7806355a8096f6"
+}

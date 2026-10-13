@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Sixcategories andalllistedAPIidentifiersaccurate, exactGetCurrentProcessIdcamelcase.",
+      "passed": false,
+      "evidence": "범주 여섯 및 대부분 식별자는 맞지만 UNIX Information maintenance 마지막 함수가 Sleep() 대문자로 생성되었다. sleep()로 수정 필요."
+    },
+    {
+      "requirement": "Functions are examples bycategory, notstrictone-to-one/nativekernel equivalence; Windows/UNIXcolumnsseparate.",
+      "passed": true,
+      "evidence": "Windows API / UNIX가 분리되고 범주별 예시 및 일대일 동등성이 아니라는 표기가 정확하다."
+    }
+  ],
+  "notes": "직접 시각 검수와 PNG 디코딩. 실패한 결과는 원본 참조 유지.",
+  "at": "2026-10-13T00:07:50.034Z",
+  "generatedSha256": "f271f13d35f9d86dcab194ac3708eb3188fad11a4eb03366bd458995fe7a0122",
+  "specSha256": "a049b130c99d6121a5dd030dddbad5ed0ef9d57ccf883ac704084cfa65157670"
+}

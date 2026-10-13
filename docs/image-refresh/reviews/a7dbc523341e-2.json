@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "ColumnsID,PROP_NAME;singlerow1,prop1.",
+      "passed": true,
+      "evidence": "Single PROP table ID/PROP_NAME row1/prop1."
+    },
+    {
+      "requirement": "ID1sameITEMID1PK/FK,commonfieldsnotduplicatedchild.",
+      "passed": true,
+      "evidence": "PK+FK refers ITEM.ID1; common fields not in child."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T02:08:08.140Z",
+  "generatedSha256": "1523443d2b1884626861b0405980798fa85575fab4e2e581f8de6a7e9c52843d",
+  "specSha256": "a01136d4351319c74e9d1c6e2b6be64bad7893b5d17f40ba68038e88b9599a98"
+}

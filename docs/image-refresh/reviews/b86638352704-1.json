@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Column headers in exact order: course_id | title | dept_name | credits | prereq_id",
+      "passed": true,
+      "evidence": "Headers course_id,title,dept_name,credits,prereq_id in exact order."
+    },
+    {
+      "requirement": "Exactly 3 data rows in exact order: CS-210 | Systems | Comp. Sci. | 4 | CS-101 ; CS-315 | Robot Control | Comp. Sci. | 3 | NULL ; CS-347 | NULL | NULL | NULL | CS-101",
+      "passed": true,
+      "evidence": "Three rows CS-210 Systems Comp. Sci.4 CS-101;CS-315 Robot Control Comp. Sci.3 NULL;CS-347 NULL NULL NULL CS-101 match calculated full join."
+    },
+    {
+      "requirement": "Preserve both unmatched sides: CS-315 prereq_id NULL; CS-347 title/dept_name/credits NULL.",
+      "passed": true,
+      "evidence": "Both unmatched rows retained with appropriate NULL fields, corresponding to the article'sCS-315/CS-347 explanation."
+    },
+    {
+      "requirement": "Footer explicitly identifies an original illustrative dataset; all table cells readable without copied textbook names/data.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer present; complete cells including everyNULL are readable."
+    }
+  ],
+  "notes": "Pass. Each row, field and NULL position compared visually with independently computed examples/sql-joins.json.",
+  "at": "2026-10-12T13:41:46.640Z",
+  "generatedSha256": "441dc9740455ae11651034a87189a884028da176950bf62b77afa246824d5a29",
+  "specSha256": "7ce1d38a0cd8b582470eb31eb4d161a84361033801768d9ca53899c3e5b61216"
+}

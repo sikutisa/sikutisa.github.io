@@ -1,0 +1,9 @@
+{
+  "path": "_wiki/Computer_Science/Design_Pattern/SOLID_Design_Principle/img/temp.png",
+  "sha256": "65912dab36902ea6886e1f01e4623e80a918b06b3850df06c44280ba24b1001f",
+  "viewed": true,
+  "documentReviewed": true,
+  "passed": true,
+  "evidence": "Full SOLID article read. Image is an unused StudentEnrollment/roster/account/course interface-segregation draft. All live Markdown, generated HTML and site JavaScript searched with rg; no temp.png references. One identical public/wikis copy located. Explicit absolute paths and original SHA-256 verified before bounded literal deletion. Referenced SOLID images 14/15 remain pending separate replacements.",
+  "decision": "Retire unused original and hash-identical public copy; no replacement needed for an unreferenced draft."
+}

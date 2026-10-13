@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Reference string is1 2 3 4 1 2 5 1 2 3 4 5 and policy is FIFO.",
+      "passed": true,
+      "evidence": "FIFO reference string reads1,2,3,4,1,2,5,1,2,3,4,5 exactly."
+    },
+    {
+      "requirement": "Plot points are(1,12),(2,12),(3,9),(4,10),(5,5),(6,5),(7,5).",
+      "passed": true,
+      "evidence": "Seven chart points and attached labels read12,12,9,10,5,5,5 at frame counts1–7. Recomputed FIFO values agree."
+    },
+    {
+      "requirement": "Axes are Number of frames and Page faults; point3/9 and4/10 are clearly annotated.",
+      "passed": true,
+      "evidence": "Axes Number of frames/Page faults are correct. Callout separately spells3frames:9faults and4frames:10faults."
+    },
+    {
+      "requirement": "The highlighted anomaly shows adding a frame increases faults9→10, without claiming this for all policies.",
+      "passed": true,
+      "evidence": "Only3→4 segment is highlighted upward, and the footer qualifies the anomaly as possible with FIFO, not every policy."
+    }
+  ],
+  "notes": "Viewed all labels, digits and frame/axis values against original and document. The Belady curve was also checked against independently simulated data in examples/virtual-memory.json. PIL verify/load succeeded."
+}

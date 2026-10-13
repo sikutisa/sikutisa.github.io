@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Relocation with limit check",
+  "alt": "논리 주소가 limit 미만인지 검사한 뒤 재배치 값을 더하는 보호 회로",
+  "requiredChecks": [
+    "CPU logical address checked logical address<limit; Yes goes to plus adder with relocation register; output physical address→memory.",
+    "No branch to OS trap addressing error; limit controls comparison, relocation controls adder; no reversed yes/no."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Protection and relocation. Left-to-right CPU —Logical address→ diamond Logical address < limit? —Yes→ circular + adder —Physical address→ Memory. Limit register card above diamondfeedscomparison. Relocation register aboveadderfeedsaddition. No branch diamond down to Trap: addressing error. Footer: Check the logical offset before adding the relocation value. Exactly one comparison andoneaddition; labels no inventednumber."
+}

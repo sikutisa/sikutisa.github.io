@@ -1,0 +1,33 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Seed URLs→URL frontier→HTML downloader→Parser/validator→Content duplicate check in order; DNS resolver is a side dependency of downloader.",
+      "passed": true,
+      "evidence": "Seed→Frontier→Downloader→Parser→Duplicate? topflow; DNSsideexchangeonlydownloader."
+    },
+    {
+      "requirement": "Duplicate-content Yes discards; No both stores Content storage and continues to URL extractor→URL filter→Seen URL check.",
+      "passed": false,
+      "evidence": "REJECT: Yes→Discard andNo→Extractor correct, but unqualifiedthirdStorebranch fromdiamonddoesnotrestrictstorage toNo outcome."
+    },
+    {
+      "requirement": "Seen URL Yes discards, while No records URL in Seen/queued URL store and enqueues in URL frontier.",
+      "passed": true,
+      "evidence": "SeenYes→DiscardURL, No→RecordURL→Seenstore andEnqueuebacktoFrontier correct."
+    },
+    {
+      "requirement": "Content storage and Seen/queued URL store are separate; feedback arrow joins frontier, not downloader/parser.",
+      "passed": true,
+      "evidence": "SeparateContentstorage/Seenstore; feedbackjoinsFrontierbottom."
+    },
+    {
+      "requirement": "Labels and Yes/No branch directions are legible; no DNS forwards HTML or duplicate URLs endlessly loop.",
+      "passed": true,
+      "evidence": "Allnamesreadable, DNSnotHTMLtransit; contentstoragebranchneedsNojunction."
+    }
+  ],
+  "notes": "Individually viewed all components and traced arrows against full document. Generated outputs decoded with PIL verify/load. Failed result is not applied."
+}

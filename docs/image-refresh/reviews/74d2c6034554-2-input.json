@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Five rows T0..T4, A B C; Allocation 0 1 0;2 0 0;3 0 2;2 1 1;0 0 2 and Max 7 5 3;3 2 2;9 0 2;2 2 2;4 3 3.",
+      "passed": true,
+      "evidence": "All Allocation/Max rows exact; extraneous graph removed."
+    },
+    {
+      "requirement": "Need=Max−Allocation rows 7 4 3;1 2 2;6 0 0;0 1 1;4 3 1; Available=(3,3,2).",
+      "passed": true,
+      "evidence": "Need743/122/600/011/431, Available332 and formula exact."
+    },
+    {
+      "requirement": "Safe sequence T1→T3→T4→T0→T2 is valid; Work final10 5 7; exact aligned table, readable.",
+      "passed": true,
+      "evidence": "SequenceT1,T3,T4,T0,T2; finalWork1057, no inventednodes."
+    }
+  ],
+  "notes": "Second output inspected in full; numeric tables and calculations match originals and article; incorrect added graph removed."
+}

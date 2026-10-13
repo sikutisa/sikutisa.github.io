@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Client uploads bytes directly to Original blob storage, while metadata requests go via Load balancer→API servers.",
+      "passed": true,
+      "evidence": "MediauploadClient→Originalblob andmetadataClient→LB→API preserved."
+    },
+    {
+      "requirement": "Original storage→Transcoding workers→Encoded video storage→CDN; client playback uses CDN independently from API metadata path.",
+      "passed": true,
+      "evidence": "Original→Transcoding→Encodedstorage→CDN, outerPlaybackarrowtoClient retained."
+    },
+    {
+      "requirement": "Transcoding workers also emit Completion events→Completion handler, which updates both Metadata DB and Metadata cache.",
+      "passed": true,
+      "evidence": "Corrected TranscoderdirectCompletionevent→Queue→Handler; eventroute bypassesAPI. Handlerdirectupdatecache andfar-rightpathupdateDB, cache→DBlink removed."
+    },
+    {
+      "requirement": "API servers separately access DB/cache; completion queue contains events, not video bytes, and diagram is illustrative.",
+      "passed": true,
+      "evidence": "APIseparatebidirectionalDB/cachelinks, eventnotbytes andillustrativecaptions remain."
+    }
+  ],
+  "notes": "Viewed targeted edit and traced every control/data endpoint against fulldocument. All other labels and nodes preserved. PNG verify/load succeeded with PIL."
+}

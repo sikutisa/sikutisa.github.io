@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Demand-paged page table",
+  "purpose": "Show resident/absent pages and exact present-bit/frame relationships from original demand-paging example.",
+  "requiredChecks": [
+    "Virtual pages 0–7 contain A–H respectively.",
+    "Page table resident rows are 0/A/frame4/1, 2/C/frame6/1, 5/F/frame9/1; rows 1,3,4,6,7 are absent with dash frame and present0.",
+    "Physical memory shows frames4:A,6:C,9:F consistently; backing storage includes nonresident B,D,E,G,H.",
+    "Legend clearly equates present1 with resident and present0 with not currently resident; all table labels/counts are legible."
+  ],
+  "alt": "Demand paging: pages A, C and F are resident in frames 4, 6 and 9; other pages are nonresident",
+  "prompt": "Create a NEW original technical educational diagram for an English operating-systems blog. White background, dark navy crisp sans-serif text, blue and teal flat boxes, clean thin arrows, ample whitespace, large legible labels, no copied textbook artwork, no logos or watermark. TITLE \"Demand-paged page table\". Wide layout, a readable TABLE on the left with headers exactly \"Page\", \"Contents\", \"Frame\", \"Present\". Eight rows, exact data:\n0 | A | 4 | 1\n1 | B | — | 0\n2 | C | 6 | 1\n3 | D | — | 0\n4 | E | — | 0\n5 | F | 9 | 1\n6 | G | — | 0\n7 | H | — | 0.\nOn right show a box \"Physical memory\" containing three NON-CONTIGUOUS resident-frame entries \"Frame 4: A\", \"Frame 6: C\", \"Frame 9: F\" and a small label \"Other frames omitted\" so these are NOT depicted as all physical frames. Below it a box \"Backing storage — nonresident pages\" with B,D,E,G,H exactly once each. Do not copy cylindrical disk graphics. Legend verbatim \"Present 1: resident\" and \"Present 0: not currently resident\". No invented numeric frame mappings. Do not map B,D,E,G,H to RAM. The table itself communicates mapping; no mapping arrows are required, to avoid clutter. Keep all eight rows correct."
+}

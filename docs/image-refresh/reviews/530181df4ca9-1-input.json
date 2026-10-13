@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Memory range0..1024000 with boundaries256000,300040,420940,880000,1024000; OS880000..1024000.",
+      "passed": true,
+      "evidence": "Increasing addresses0/256000/300040/420940/880000/1024000 and OS intervalcorrect."
+    },
+    {
+      "requirement": "Selected process base300040 and exclusive upper base+limit420940; limit120900; legal range300040≤address<420940.",
+      "passed": true,
+      "evidence": "Base300040 exclusiveupper420940 limit120900 and ≤/< formulacorrect."
+    },
+    {
+      "requirement": "Other processes occupy256000..300040 and420940..880000, low0..256000 free; schematic marked not to scale.",
+      "passed": true,
+      "evidence": "Free andotherprocesssegmentsmatch; explicitnottoScale avoidswidthmisrepresentation."
+    }
+  ],
+  "notes": "Full generated image visually compared with original and complete Main Memory article; numbers, predicates, directions, dependencies and clipping checked."
+}

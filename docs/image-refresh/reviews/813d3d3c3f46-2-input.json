@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Abstract Rectangle contains length,width,getLength/getWidth only.",
+      "passed": true,
+      "evidence": "Abstract Rectangle only length,width and two getters."
+    },
+    {
+      "requirement": "GeometricRectangle extends Rectangle and owns area(); GraphicalRectangle extends Rectangle and owns draw().",
+      "passed": true,
+      "evidence": "GeometricRectangle owns area():float, GraphicalRectangle draw():void; both explicitly extend Rectangle. Ambiguous outside panel arrows removed."
+    },
+    {
+      "requirement": "Geometry application depends on GeometricRectangle; graphical application on GraphicalRectangle.",
+      "passed": true,
+      "evidence": "Each app uses only matching class operation via right-pointing connector."
+    },
+    {
+      "requirement": "GUI dependency belongs to graphical side only; no GeometricRectangle→GUI coupling.",
+      "passed": true,
+      "evidence": "GraphicalRectangle alone depends on GUI, geometric panel independent."
+    }
+  ],
+  "notes": "Direct visual inspection confirms required text and dependency semantics; PNG decode performed before approval."
+}

@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Passing parameters by table",
+  "alt": "시스템 호출 13이 레지스터에 전달한 테이블 주소 X를 통해 매개변수를 읽는 과정",
+  "requiredChecks": [
+    "UserparametersstoredattableX; loadaddressX into register; call13invokesOS code.",
+    "Register contains addressX, OSreadsparametersfromtableXnotactualparametersinregister; systemcall13illustrative."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Passing system-call parameters as a table. Left User program card contains Table X: parameters for call, Load address X, Invoke system call 13. Center Register card with X (address of table). Right Operating system card includes Code for system call 13 / Read parameters from table X. ArrowLoadaddressX→Register. ArrowInvoke13→Code13. ArrowRegisterX→Readparameters. Optionaldotted Readparameters→TableX lookup withlabelRead. Caption Register carries the table address. Footer Call number 13 is illustrative. No inventedparameternames."
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Three levels of data abstraction",
+  "purpose": "Separate multiple user views from a shared logical schema and physical storage representation.",
+  "alt": "여러 사용자 뷰와 하나의 논리 스키마·물리 저장 구조로 구분되는 데이터 추상화 3단계",
+  "requiredChecks": [
+    "View level contains multiple views View 1, View 2, …, View n.",
+    "All views map to one shared Logical level, which maps to Physical level.",
+    "Logical describes data/relationships; Physical describes storage, not additional independent databases.",
+    "No arrow suggests a SQL execution order; mappings are explicitly abstraction boundaries."
+  ],
+  "prompt": "Create a new original English raster technical diagram for an IT study blog. White background, flat blue and teal cards, navy large sans-serif text, generous whitespace, clean orthogonal connectors, no logos or copied textbook composition. All labels readable and uncropped. Title \"Three levels of data abstraction\". Vertical stack of 3 broad horizontal sections. Top \"View level\" contains cards \"View 1\", \"View 2\", \"…\", \"View n\", subtitle \"User-specific representations\". Middle ONE card \"Logical level\", subtitle \"Data and relationships\". Bottom ONE card \"Physical level\", subtitle \"Storage structures and access paths\". Thin plain lines (NO arrowheads) connect top view group to Logical, then Logical to Physical. Caption \"Abstraction mappings\" alongside lines. Footer \"Different views, one logical database\". Keep this as schema abstraction, not execution workflow. No example table or SQL.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

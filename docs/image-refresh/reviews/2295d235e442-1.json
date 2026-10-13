@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Subject changes from 2 to 5.",
+      "passed": true,
+      "evidence": "Subject state2→5 and notifyObservers exact."
+    },
+    {
+      "requirement": "Registered roster exactly Cat, Dog, Mouse, Duck.",
+      "passed": true,
+      "evidence": "Exactly four recipient cards Cat,Dog,Mouse,Duck with footer confirming registration."
+    },
+    {
+      "requirement": "Each of four receives update(5) from Subject.",
+      "passed": true,
+      "evidence": "Four rightward arrows each update(5)."
+    },
+    {
+      "requirement": "No ordering guarantee between the four observers is implied.",
+      "passed": true,
+      "evidence": "No numbering or claimed order between observers."
+    }
+  ],
+  "notes": "Pass. Native visual inspection verified object membership, state transitions, notification/removal directions and abstraction dependency.",
+  "at": "2026-10-12T15:21:44.337Z",
+  "generatedSha256": "d3510c29b96e494e8acab6344d4cddde8928cb19af73784364385bc8aa5f7944",
+  "specSha256": "991fcc975f1382cd77ba265ed3bea51aac913d00440ad35cc69a6deb85cb1520"
+}

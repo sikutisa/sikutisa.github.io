@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Sequence P0 executing→save state to PCB0→restore state from PCB1→P1 executing.",
+      "passed": true,
+      "evidence": "P0 executing→save P0→restore P1→P1 executing left to right."
+    },
+    {
+      "requirement": "PCB identities matched to outgoing/incoming processes.",
+      "passed": true,
+      "evidence": "Save into PCB0; restore from PCB1 exact matching."
+    },
+    {
+      "requirement": "Dispatch latency bracket spans switching interval between P0 and P1 execution.",
+      "passed": true,
+      "evidence": "Bracket spans only save/restore interval between execution cards."
+    },
+    {
+      "requirement": "No claim context switching is productive user execution or I/O.",
+      "passed": true,
+      "evidence": "Amber switching versus blue process execution, no I/O."
+    }
+  ],
+  "notes": "Direct visual inspection confirms exact labels, chronology and input data. PNG decode before approval."
+}

@@ -12,12 +12,12 @@ use_math: true
     * We need to make sure that each process has a *separate memory space*.
     * A pair of registers: *base register* and *limit register* provides the ability to determine the range of *legal* addresses.
 
-![AddressSpace](./img/1.png){: w="290" h = "360"}
+![base=300040, limit=120900으로 정해지는 프로세스의 메모리 주소 구간](./img/1-generated.png){: w="760"}
 *A base and a limit register define a logical address space*
 
 * Protection of memory space is accomplished by having the CPU hardware compare every address generated in user mode with the registers.
 
-![Hardware](./img/2.png){: w="360" h = "320"}
+![CPU 주소를 base 이상·base+limit 미만 조건으로 검사하는 보호 회로](./img/2-generated.png){: w="760"}
 *Hardware address protection with base and limit registers*
 
 ### Address Binding
@@ -29,7 +29,7 @@ use_math: true
     * A linker or loader in turn binds the *relocatable* addresses to *absolute* addresses.
 
 
-![Multistep](./img/3.png){: w="310" h = "390"}
+![소스·컴파일러·링커·로더를 거쳐 실행 중인 프로그램이 되는 과정](./img/3-generated.png){: w="760"}
 *Multistep processing of a user program*
 
 ### Logical vs Physical Address Space
@@ -41,10 +41,10 @@ use_math: true
 * **MMU** (Memory Management Unit): a hardware device that maps from logical address to physical address.
     * *relocation register*: a base register in MMU.
 
-![MMU](./img/4.png){: w="320" h = "280"}
+![CPU의 논리 주소를 MMU가 물리 주소로 변환하는 경로](./img/4-generated.png){: w="760"}
 *Memory management unit (MMU)*
 
-![relocation register](./img/5.png){: w="320" h = "280"}
+![재배치 레지스터 14000을 논리 주소 346에 더해 물리 주소 14346을 얻는 MMU](./img/5-generated.png){: w="760"}
 *Dynamic relocation using a relocation register*
 
 ### Dynamic Loading
@@ -75,7 +75,7 @@ use_math: true
 * Prevent a process from accessing memory that it does not own.
     * by combining two ideas: *relocation register + limit register*.
 
-![HWSupport](./img/6.png){: w="320" h = "280"}
+![논리 주소가 limit 미만인지 검사한 뒤 재배치 값을 더하는 보호 회로](./img/6-generated.png){: w="760"}
 *Hardware support for relocation and limit registers*
 
 ### Memory Allocation
@@ -83,7 +83,7 @@ use_math: true
     * Assign processes to variably sized partitions in memory, where each partition may contain exactly one process.
 * **Hole**: a block of available memory.
 
-![Partition](./img/7.png){: w="340" h = "280"}
+![프로세스 종료로 생긴 홀에 새 프로세스를 할당하는 가변 파티션 과정](./img/7-generated.png){: w="760"}
 *Variable partition*
 
 * The Problem of *Dynamic* Storage Allocation
@@ -115,11 +115,11 @@ use_math: true
         * a **page number** (p)
         * a **page offset** (d)
 
-![address](./img/8.png){: w="340" h = "200"}
+![논리 주소를 페이지 번호 p와 페이지 내부 오프셋 d로 나눈 구조](./img/8-generated.png){: w="760"}
 
 * The page number is used as an index into a per-process **page table**.
 
-![Paging hardware](./img/9.png){: w="380" h = "360"}
+![페이지 테이블로 p를 프레임 f로 변환하면서 오프셋 d는 유지하는 페이징 하드웨어](./img/9-generated.png){: w="760"}
 *Paging hardware*
 
 * Outlines of the steps taken by the CPU to translate a *logical address* to a *physical address*.
@@ -127,21 +127,21 @@ use_math: true
     2. Extract the corresponding frame number 𝑓 from the page table.
     3. Replace the page number 𝑝 with the frame number 𝑓.
 
-![Paging hardware](./img/10.png){: w="360" h = "360"}
+![논리 페이지 0·1·2·3이 물리 프레임 1·4·3·7에 흩어져 배치되는 예제](./img/10-generated.png){: w="760"}
 *Paging model of logical and physical memory*
 
 * The *page size* (like the *frame size*) is defined by the hardware.
     * A power of 2: typically varying bet5ween 4KB and 1GB per page.
     * If the size of **logical address space** is $2^𝑚$, and a page size is $2^𝑛$, then the high-order 𝑚 − 𝑛 bits designate the *page number*, and the low-order 𝑛 bits designate *the page offset*.
 
-![address](./img/11.png){: w="340" h = "210"}
+![m비트 논리 주소를 m−n비트 페이지 번호와 n비트 오프셋으로 분할](./img/11-generated.png){: w="760"}
 
-![Example](./img/12.png){: w="330" h = "420"}
+![4바이트 페이지를 사용하는 32바이트 물리 메모리의 정확한 바이트 매핑](./img/12-generated.png){: w="760"}
 *Paging example for a 32-byte memory with a 4-byte pages*
 
 * When a process arrives in the system to be executed, its size expressed in pages is examined for memory allocation.
 
-![Example](./img/13.png){: w="360" h = "340"}
+![네 페이지를 프레임 14·13·18·20에 배치하고 free list에 15가 남는 과정](./img/13-generated.png){: w="760"}
 *Free frames (a) before allocation and (b) after allocation*
 
 * Hardware Support
@@ -156,7 +156,7 @@ use_math: true
 ### Translation Look-aside Buffer (TLB)
 * **TLB** is a special, small, fast-lookup hardware cache memory. 
 
-![TLB](./img/14.png){: w="360" h = "350"}
+![TLB 적중 시 프레임을 바로 얻고 미적중 시 페이지 테이블을 조회하는 주소 변환](./img/14-generated.png){: w="760"}
 *Paging hardware with TLB*
 
 * Effective Memory-Access Time
@@ -174,7 +174,7 @@ use_math: true
     * When this bit is set to **invalid**: the page is not in the process’s logical address space. (*illegal*)
     * Illegal addresses are trapped by use of the valid-invalid bit.
 
-![bits](./img/15.png){: w="350" h = "370"}
+![유효 비트가 있는 페이지 0∼5와 무효 페이지 6·7의 보호 예제](./img/15-generated.png){: w="760"}
 *Valid bit (v) or invalid bit (i) in a page table*
 
 ### Shared Pages
@@ -184,7 +184,7 @@ use_math: true
     * however, it can be *shared* if the code is *reentrant code*.
 * *Reentrant code* is non-self-modifying code, that is, it never changes during execution.
 
-![Sharing](./img/16.png){: w="350" h = "380"}
+![세 프로세스가 동일한 libc 코드 페이지를 같은 물리 프레임에서 공유](./img/16-generated.png){: w="760"}
 *Sharing of standard C library in a paging environment*
 
 ## Structure of the Page Table
@@ -197,22 +197,22 @@ use_math: true
 ### Hierarchical Paging
 * Breaks up the logical address space into multiple tables.
 
-![Hierarchical](./img/17.png){: w="340" h = "380"}
+![외부 페이지 테이블이 내부 테이블의 페이지를 가리키고 각 항목이 물리 프레임을 가리키는 구조](./img/17-generated.png){: w="760"}
 *A two-level page-table architecture*
 
-![Hierarchical](./img/18.png){: w="320" h = "280"}
+![32비트 주소의 p1·p2·d를 순서대로 사용하여 두 단계 페이지 테이블을 조회](./img/18-generated.png){: w="760"}
 *Address translation for a two-level 32-bit paging architecture*
 
 ### Hashed Page Tables
 * Hashed Page Tables for handling address space larger than 32 bits, use a hashed table with the hash value being the virtual page number.
 
-![Hashed](./img/19.png){: w="350" h = "300"}
+![가상 페이지 p의 해시 버킷에서 충돌 항목 q를 건너뛰고 일치 항목 p의 프레임 r을 찾는 과정](./img/19-generated.png){: w="760"}
 *Hashed page table*
 
 ### Inverted Page Tables
 * Rather than having a page table, use an inverted page table one entry for each real page consisting of the virtual address with information about the process.
 
-![Inverted](./img/20.png){: w="350" h = "300"}
+![프로세스 식별자와 페이지 번호로 역 페이지 테이블을 검색해 물리 프레임 인덱스 i를 얻는 과정](./img/20-generated.png){: w="760"}
 *Inverted page table*
 
 ## Swapping
@@ -224,7 +224,7 @@ use_math: true
 * Standard Swapping moves entire processes between main memory and a backing store.
 * The cost of swapping entire processes is too prohibitive.
 
-![Swap](./img/21.png){: w="340" h = "330"}
+![전체 프로세스 P1을 메모리에서 내보내고 P2를 디스크에서 불러오는 스와핑](./img/21-generated.png){: w="760"}
 *Standard swapping of two processes using a disk as a backing store*
 
 ### Swapping with Paging
@@ -235,5 +235,5 @@ use_math: true
     * **page in**: moves a page from backing store to memory.
 * Paging works well in conjunction with the *virtual memory*.
 
-![Swap](./img/22.png){: w="330" h = "360"}
+![프로세스 A의 b·c·e 페이지를 내보내고 B의 f·h·j 페이지를 불러오는 페이징 스와핑](./img/22-generated.png){: w="760"}
 *Swapping with paging*

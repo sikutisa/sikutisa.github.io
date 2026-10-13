@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Page number and offset",
+  "alt": "논리 주소를 페이지 번호 p와 페이지 내부 오프셋 d로 나눈 구조",
+  "requiredChecks": [
+    "Single logical address split left Page number p and right Page offset d.",
+    "p selects a page-table entry; d is displacement insidepage; no specific bit width or sample values."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: A logical address has two parts. One wide horizontal bit-fieldbar separatedinto two clean colored blocks. Leftlabel Page number with largep. Rightlabel Page offset withlarged. Under leftshortcaption Selects page-table entry; underright Displacement inside page. No arrows, graphs, numericalwidths, matricesoradditionaldiagrams."
+}

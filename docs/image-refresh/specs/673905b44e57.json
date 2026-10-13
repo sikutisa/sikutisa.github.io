@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Page-granularity swapping",
+  "alt": "프로세스 A의 b·c·e 페이지를 내보내고 B의 f·h·j 페이지를 불러오는 페이징 스와핑",
+  "requiredChecks": [
+    "ProcessA pagesa,b,c,d,e; selectedb,c,e pageoutmemory→backingstoreslots4,5,6 respectively; a,dremainresident.",
+    "ProcessB pagesf,g,h,i,j; selectedf,h,j pageinfrombackingstoreslots17,18,19 respectively→memory; g,i alreadyresident.",
+    "Backingstoreillustratedslots0..23; selectedpage granularitynotwholeprocess; no direction/mappingreversal."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Swapping individual pages. Two cleanhorizontalpanels. Top Page out—ProcessA pagecards a b c d e inMainmemory,highlightb,c,e. Three exact rightwardarrows b→Disk slot4,c→Disk slot5,e→Disk slot6. Text a and d remain resident. Bottom Page in—ProcessB hasg andi already inMainmemory; diskcards Slot17:f,Slot18:h,Slot19:j onright. Three leftwardarrows fromdiskf/h/j to processBmemorypagepositionsf/h/j; resultinglogicalorderf g h i j. Text g and i are already resident. Diskheader Backing store, slots0–23 illustrated range; show exactsixselectedslotsandnote Other slots omitted. Keep pageoutandpageinstepsdistinct. No wholeprocess swap, no arrows towrongpage."
+}

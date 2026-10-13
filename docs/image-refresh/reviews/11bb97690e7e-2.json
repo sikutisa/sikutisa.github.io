@@ -1,0 +1,27 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "All fourteen original receiver classes are present, including SecurityControl.arm() and disarm().",
+      "passed": true,
+      "evidence": "Counted 14 cards against the recovered original: ApplianceControl, CeilingLight, OutdoorLight, TV, Stereo, FaucetControl, CeilingFan, Hottub, GardenLight, GarageDoor, Thermostat, Sprinkler, Light, SecurityControl."
+    },
+    {
+      "requirement": "All methods remain under the correct receiver; FaucetControl uses openValve() and closeValve().",
+      "passed": true,
+      "evidence": "Visually read each method at full resolution; SecurityControl has arm/disarm and FaucetControl openValve/closeValve."
+    },
+    {
+      "requirement": "Independent class cards show varied APIs and the Command-wrapping caption; no invented superclass.",
+      "passed": true,
+      "evidence": "Cards are independent with varied operations and the Different receiver APIs caption."
+    }
+  ],
+  "notes": "Independent second review: full-size generated PNG inspected against document and available original. Restore omitted SecurityControl with arm/disarm; correct Valve spelling and class count.",
+  "at": "2026-10-13T04:01:37.861Z",
+  "generatedSha256": "9e97ba8433f7da67a741edf75541a109a2d68909ca752c17018811d7761de643",
+  "specSha256": "375f137aaf425eecfcbbc8c11d553e51393269ca3a6cd75f1ddaeb90be7f5533",
+  "originalReviewBasis": "Recovered original PNG hash matches inventory; original and generated pixels compared side by side."
+}

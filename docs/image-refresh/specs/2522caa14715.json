@@ -1,0 +1,16 @@
+{
+  "title": "Multi-level queues by process class",
+  "purpose": "Show original fixed process-class hierarchy.",
+  "alt": "실시간·시스템·대화형·배치 프로세스를 고정된 다단계 큐에 분류한 우선순위 계층",
+  "requiredChecks": [
+    "Fourlevels real-time,system,interactive,batch highesttolowest.",
+    "Separate fixed queues; no automaticfeedbackmigration.",
+    "Priority order indicated clearly; no invented quantumvalues.",
+    "Illustrative policy, not universal OS scheduling guarantee.",
+    "Queues feed one shared scheduler and CPU; do not imply one separate CPU per class."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT reference blog. Opaque white, navy highly legible type, restrained blue/teal/amber flat cards, generous gutters. Exact specified numericdata and arrows, no copied textbook arrangement. Title 'Multi-level queues by process class'. Four horizontal readyqueue cards stacked TOP 'Real-time processes', then 'System processes', then 'Interactive processes', BOTTOM 'Batch processes'. Arrowbeside stack 'Highest priority' top 'Lowest priority' bottom. Smallsubtitle 'Illustrative fixed-queue policy'. EachrowhasseparateentryandCPUselectionflow to right; noverticalarrowfromqueuetoqueue (priorityindicatoroutside). Footer 'Classify processes into separate queues'. No deadlines/quantum oruniversalguarantee. All four queues feed ONE shared scheduler card 'Select highest-priority nonempty queue', then ONE CPU. Never show four separate CPU icons.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "designRevision": "Initial generated figure duplicated CPUs by process class. Enforce shared scheduling resource so hierarchy cannot imply dedicated processors."
+}

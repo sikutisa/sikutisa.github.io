@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "ExactlyCPU0,CPU1,CPU2 each has registers and cache.",
+      "passed": true,
+      "evidence": "CPU0/1/2 각 열에 Registers와 Cache가 있다."
+    },
+    {
+      "requirement": "AllthreepeerCPUs join shared bus and one shared memory; no master/slave roles.",
+      "passed": true,
+      "evidence": "세 동등한 열의 Cache가 Shared bus를 통해 단일 Main memory에 연결되며 역할 위계는 없다."
+    }
+  ],
+  "notes": "직접 시각 검수 및 PNG 디코딩. 불합격 그림은 원본 참조를 유지한다."
+}

@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "RootaviDirA,tcfile,jimDirJ;Atext/mail/countC/bookB;JbookB/mail/unhexU/hypH.",
+      "passed": true,
+      "evidence": "root avi A/tc T/jim J, A text X/mail M1/count C/book B, J book B/mail M2/unhex U/hyp H 정확."
+    },
+    {
+      "requirement": "Bavi→A,count→C;Hunhex→U,hexfile;A↔Bcyclehighlight;sharedCandUconverge.",
+      "passed": true,
+      "evidence": "B avi A/count C, H unhex U/hex Z, C/U 공유와 M1/M2 구분. A↔B 순환 행 및 A→B→A 표시 정확."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "CPU and RAM joined by bus; RAM contains instructions and data.",
+      "passed": true,
+      "evidence": "CPU와 Instructions/Data 포함 RAM이 Bus 양방향 화살표로 연결된다."
+    },
+    {
+      "requirement": "CPU fetches instructions from RAM and data/result exchanges are bidirectional, no disk required.",
+      "passed": true,
+      "evidence": "Fetch/Execute 단계와 메모리 명령 가져오기 캡션이 정확하며 추가 디스크가 없다."
+    }
+  ],
+  "notes": "직접 원본 해상도에서 글자·관계·방향을 확인. PNG 디코딩 후 해시 승인.",
+  "at": "2026-10-12T23:56:53.105Z",
+  "generatedSha256": "0af8fefa1f2405f66720c16f0522bf04a3d5317f752d59547f531acd1f10c43a",
+  "specSha256": "1f6e3f49ca5fe7d906f8d8dddafa5a543b1abd8d3925885b689f1c9640e72255"
+}

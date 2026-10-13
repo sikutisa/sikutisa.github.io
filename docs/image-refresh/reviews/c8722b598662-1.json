@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "DiskMBRtopthenpartitions1,2,3,4;MBRexpandsBootcode+Partitiontable.",
+      "passed": true,
+      "evidence": "MBR 아래 Partition 1~4 순서와 Boot code·Partition table 확대 영역 확인."
+    },
+    {
+      "requirement": "PartitiontablepointsBootpartition3;legacyMBRillustrationnotmodernUEFIuniversal.",
+      "passed": true,
+      "evidence": "Partition table에서 Boot partition 화살표가 Partition 3에 도달하며 legacy BIOS/MBR 설명이 명시됨."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:55:49.789Z",
+  "generatedSha256": "28f98b4392872239f94135b271556e266e3dfab53375b81ead756d5e641545a4",
+  "specSha256": "1fdf1b9cb4a12e89f8f9cba5eb353977adfa613903bb6d6bd268ded956f840fb"
+}

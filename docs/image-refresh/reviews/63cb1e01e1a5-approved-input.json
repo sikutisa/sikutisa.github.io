@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Process1 table is A/page0/frame6/resident, B/page1/absent, C/page2/frame3/resident, D/page3/frame2/resident.",
+      "passed": true,
+      "evidence": "Four table rows are0/A/6/1,1/B/dash/0,2/C/3/1,3/D/2/1, with B highlighted."
+    },
+    {
+      "requirement": "Available user frames are all occupied: frame2 D,3 C,4 F,5 H,6 A,7 E.",
+      "passed": true,
+      "evidence": "RAM user-frame rows exactly2:D,3:C,4:F,5:H,6:A,7:E; none is labeled free. Other frames reserved is explicit."
+    },
+    {
+      "requirement": "Backing storage contains B and G, with B the referenced missing page.",
+      "passed": true,
+      "evidence": "Backing storage has B and G once, and B fault is labeled beside the Process1 table."
+    },
+    {
+      "requirement": "The request to load B requires selecting a victim; diagram does not invent a selected victim or place B into a free frame.",
+      "passed": true,
+      "evidence": "Dashed B-load arrow points toward occupied RAM boundary and says select a victim before loadingB. It does not enter a specific frame or show B already resident."
+    }
+  ],
+  "notes": "Directly compared frame states and all connector endpoints to the full document/original; PNG verify/load succeeded. Page replacement uses a generic new storage-cylinder shape despite the prompt preference for flat boxes, but the composition and facts are newly constructed and no distinctive source artwork is embedded."
+}

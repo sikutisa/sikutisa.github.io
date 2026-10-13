@@ -1,0 +1,14 @@
+{
+  "title": "ISP: one interface serves unrelated clients",
+  "purpose": "Show student enrollment fat interface coupling two applications.",
+  "alt": "RoasterApplication과 AccountApplication이 서로 다른 메서드 집합을 쓰지만 하나의 StudentEnrollment에 의존하는 구조",
+  "requiredChecks": [
+    "StudentEnrollment has getSSN/getName/getInvoice/postPayment.",
+    "RoasterApplication uses getSSN/getName only; AccountApplication uses getInvoice/postPayment only.",
+    "Both depend on same broad interface, so unrelated method changes can affect client dependency.",
+    "Course association retains one Course to zero-or-more StudentEnrollment records; clients also use Course."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif typography, readable monospaced identifiers, restrained blue/teal/amber cards, wide gutters, no copied slide composition or logo. Include only the listed operations and labels: do not invent full code bodies, access modifiers, methods or extra relationships. Title 'ISP: one interface serves unrelated clients'. CENTER large StudentEnrollmentcard fourmethods grouped two colors 'getSSN(); getName()' 'getInvoice(); postPayment()'. LEFTRoasterApplication arrowtoStudentEnrollment 'uses name / SSN only'. RIGHTAccountApplication arrowtoStudentEnrollment 'uses invoice / payment only'. BOTTOMCoursecard withnondirectionalassociationlabel '1 Course ↔ 0..* StudentEnrollment records', draw0..* nearEnrollmentand1nearCourse. BothclientsthinusesarrowstoCourse ifclear. Footer 'A change to postPayment() can affect a client that never calls it'. No claimbothclientsuseallmethods, no reverseassociationmultiplicity.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

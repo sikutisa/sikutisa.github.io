@@ -1,0 +1,36 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Gantt P1[0,1],P2[1,5],P4[5,10],P1[10,17],P3[17,26], proportional1:4:5:7:9.",
+      "passed": true,
+      "evidence": "Exact fiveslicesP1[0,1],P2[1,5],P4[5,10],P1[10,17],P3[17,26]; durations1/4/5/7/9, widths approximately proportional."
+    },
+    {
+      "requirement": "P1 preempted at1 by P2, resumes10; no unneeded preemption at2 or3.",
+      "passed": true,
+      "evidence": "Annotation at1P2preemptsP1, nextP1resume10."
+    },
+    {
+      "requirement": "Wait P1=9,P2=0,P3=15,P4=2 avg6.5ms.",
+      "passed": true,
+      "evidence": "Waiting9,0,15,2average6.5 exact."
+    },
+    {
+      "requirement": "Turnaround17,4,24,7 avg13ms.",
+      "passed": true,
+      "evidence": "Turnaround17,4,24,7average13 exact."
+    },
+    {
+      "requirement": "Arrivals0,1,2,3; overhead excluded.",
+      "passed": true,
+      "evidence": "Input arrival table verified, overhead omitted subtitle."
+    }
+  ],
+  "notes": "Full visual inspection and independently computed numerical checks agree; decode before approval.",
+  "at": "2026-10-12T22:13:06.058Z",
+  "generatedSha256": "c937a42253368910906b1c7216dcf96cd1809e4c1a38a11af04e7e87e2c6f741",
+  "specSha256": "1ae4300456aa21c391537037e9d152268f85e0d64d8be829ed3dbb9b9a73c51f"
+}

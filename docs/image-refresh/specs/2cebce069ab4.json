@@ -1,0 +1,14 @@
+{
+  "title": "Behavior families behind interfaces",
+  "purpose": "Show independent interchangeable flying and quacking implementations.",
+  "alt": "FlyBehavior와 QuackBehavior 인터페이스 뒤에 교체 가능한 비행·울음 구현을 둔 구조",
+  "requiredChecks": [
+    "FlyBehavior interface fly(); FlyWithWings and FlyNoWay implement it.",
+    "QuackBehavior interface quack(); Quack, Squeak, MuteQuack implement it.",
+    "Concrete semantics wings fly, no-way cannot fly, Quack quacks, Squeak squeaks, MuteQuack silent.",
+    "Interface contracts are distinct; no duck inheritance mixed into behavior families."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT blog, opaque white background. Navy readable sans serif, monospaced method names, blue/teal/amber flat cards and generous padding. Use exact identifiers, no extra methods/access modifiers/complexity claims/copied slide arrangement. Title 'Behavior families behind interfaces'. Two equal panels, FlyBehavior(interface) fly() above FlyWithWings 'implements FlyBehavior; fly(): fly with wings' and FlyNoWay 'implements FlyBehavior; fly(): do nothing'. Second QuackBehavior(interface) quack() above Quack 'implements QuackBehavior; quack(): quack', Squeak 'implements QuackBehavior; quack(): squeak', MuteQuack 'implements QuackBehavior; quack(): silence'. Explicit implements captions; no connectors needed. Footer 'Program to a behavior contract; choose its implementation'. No ducks or added methods.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

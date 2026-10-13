@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Before: DependentPizzaStore directly creates concrete regional pizza classes.",
+      "passed": true,
+      "evidence": "DependentPizzaStore now uses plain direct-creation responsibility caption; three concrete creates arrows correct with no invented method signatures."
+    },
+    {
+      "requirement": "After: abstract PizzaStore uses abstract Pizza instead of directly creating concrete products.",
+      "passed": true,
+      "evidence": "Base PizzaStore uses abstract Pizza only; no concrete creates arrows from base."
+    },
+    {
+      "requirement": "Regional creator subclasses perform concrete instantiation; creation dependencies still exist in subclasses.",
+      "passed": true,
+      "evidence": "Regional subclass note retains concrete creation dependency in actual subclasses."
+    },
+    {
+      "requirement": "Concrete NYStyleCheesePizza, NYStyleClamPizza, ChicagoStyleCheesePizza extend Pizza in the after panel.",
+      "passed": true,
+      "evidence": "All three original regional concrete product names extend Pizza in after panel."
+    }
+  ],
+  "notes": "Pass. Native visual inspection verified object membership, state transitions, notification/removal directions and abstraction dependency."
+}

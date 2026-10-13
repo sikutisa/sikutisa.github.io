@@ -1,0 +1,14 @@
+{
+  "title": "One call coordinates three classes",
+  "purpose": "Explain facade client call delegates to existing package classes in order.",
+  "alt": "두 클라이언트의 doSomething 호출을 파사드가 세 패키지의 클래스 작업으로 조율하는 예시",
+  "requiredChecks": [
+    "Client1 and Client2 both call Facade.doSomething().",
+    "Facade uses Class1 in package1, Class2 in package2, Class3 in package3.",
+    "Facade orchestration creates c1/c2/c3, calls c1.doStuff(c2), then c3.setX(c1.getX()), then returns c3.getY().",
+    "The clients do not directly coordinate the three subsystem classes."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif labels, exact monospaced code identifiers, restrained blue/teal cards, ample spacing, no logos or copied source composition. Title 'One call coordinates three classes'. Top two cards Client1 and Client2 arrows downward to Facade 'doSomething()'. Facade below branches to three package cards 'package1: Class1', 'package2: Class2', 'package3: Class3'. Separate numbered orchestration strip under diagram: '1. Create c1: Class1, c2: Class2, c3: Class3' '2. c1.doStuff(c2)' '3. c3.setX(c1.getX())' '4. return c3.getY()'. Keep exact syntax. No subsystem→Facade reverse arrows; no direct client→packages.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

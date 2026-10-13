@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "HDD moving-head mechanism",
+  "alt": "회전하는 플래터의 트랙·섹터·실린더와 읽기 쓰기 헤드·암 구조",
+  "requiredChecks": [
+    "Platters,spindle,armassembly,arms,read-writeheads;rotationaroundspindle.",
+    "Track t circularring,sector s wedgepartoftrack,cylinder c alignedsam eradiustracksonplatters; preciseannotationtargets."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Moving-head hard disk mechanism. Clean original technical cutaway illustration showing3stackedplatters onverticalspindle, rightarmassembly with3arms eachendingread-writeheadaboveplatter. Labels withthinleaderlinespointtoexactparts: Platter,Spindle,Arm assembly,Arm,Read-write head. Highlightoneannular Track t ontopplatter andonewedge Sector s. Transparentverticalannular Cylinder c dashedguide connecting equal-radius tracks all3platters. Curved Rotationarrow aroundspindle. SeparatelegendCylinder=alignedtracksatsameradius. No fakeelectroniccircuits,notphotorealistic."
+}

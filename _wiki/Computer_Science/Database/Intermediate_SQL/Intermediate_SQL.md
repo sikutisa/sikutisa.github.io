@@ -26,13 +26,13 @@ select name, course_id
 from student natural join takes
 ```
 
-![Student](./img/1.png){: w="340" h = "360"}
+![학생 3명의 ID·이름·학과·이수 학점 예시 테이블](./img/1-generated.png){: w="760"}
 *Student Relation*
 
-![Takes](./img/2.png){: w="350" h = "430"}
+![수강 기록 3개의 ID·과목·분반·학기·연도·성적 예시 테이블](./img/2-generated.png){: w="760"}
 *Takes Relation*
 
-![Result](./img/3.png){: w="450" h = "440"}
+![ID 기준 자연 조인으로 결합된 학생·수강 기록 3행](./img/3-generated.png){: w="760"}
 *student natural join takes*
 
 * The from clause can have *multiple relations* combined using natural join
@@ -106,10 +106,10 @@ from student natural join takes;
     * right outer join
     * full outer join
 
-![Course](./img/4.png){: w="330" h = "290"}
+![CS-210·CS-315 과목의 제목·학과·학점 예시 테이블](./img/4-generated.png){: w="760"}
 *Relation course*
 
-![Prereq](./img/5.png){: w="270" h = "250"}
+![CS-210·CS-347 과목의 선수 과목 예시 테이블](./img/5-generated.png){: w="760"}
 *Relation prereq*
 
 * Observe that 
@@ -117,19 +117,19 @@ from student natural join takes;
     * prereq information is missing CS-315
 
 ### Left Outer Join
-![Result](./img/6.png){: w="340" h = "290"}
+![왼쪽 외부 조인에서 CS-315의 선수 과목을 NULL로 보존한 결과](./img/6-generated.png){: w="760"}
 *course natural left outer join prereq*
 
 * In relational algebra: course ⟕ prereq
 
 ### Right Outer Join
-![Result](./img/7.png){: w="340" h = "290"}
+![오른쪽 외부 조인에서 CS-347의 과목 정보를 NULL로 보존한 결과](./img/7-generated.png){: w="760"}
 *course natural right outer join prereq*
 
 * In relational algebra: course ⟖ prereq
 
 ### Full Outer Join
-![Result](./img/8.png){: w="340" h = "300"}
+![양쪽 외부 조인에서 CS-315·CS-347 미일치 행을 모두 보존한 결과](./img/8-generated.png){: w="760"}
 *course natural full outer join prereq*
 
 * In relational algebra: course ⟗ prereq

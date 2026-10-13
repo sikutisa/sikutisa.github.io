@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "HRMgr incAll(Employee[]) only calls employee.incSalary().",
+      "passed": true,
+      "evidence": "HRMgr incAll(Employee[]) invokes employee.incSalary() and uses abstract Employee."
+    },
+    {
+      "requirement": "Employee declares incSalary(); Faculty,Staff,Secretary override it.",
+      "passed": true,
+      "evidence": "Employee abstract declares incSalary()."
+    },
+    {
+      "requirement": "Engineer can extend Employee and implement incSalary without a new type branch in HRMgr.",
+      "passed": true,
+      "evidence": "Faculty, Staff, Secretary and Engineer all explicitly extend Employee and each owns incSalary()."
+    },
+    {
+      "requirement": "High-level manager depends on Employee abstraction, not direct concrete salary handlers.",
+      "passed": true,
+      "evidence": "New Engineer subtype extends common abstraction; no concrete dependency from HRMgr, salary-increase loop unchanged."
+    }
+  ],
+  "notes": "Direct visual inspection confirms required text and dependency semantics; PNG decode performed before approval."
+}

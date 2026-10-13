@@ -1,0 +1,14 @@
+{
+  "title": "Duck inheritance: the original design",
+  "purpose": "Show shared quack/swim inheritance with concrete display specializations.",
+  "alt": "추상 Duck의 공통 quack·swim 동작을 상속하고 MallardDuck과 RedheadDuck이 display를 구현하는 최초 설계",
+  "requiredChecks": [
+    "Abstract Duck provides shared quack() and swim(), abstract display(); no fly().",
+    "MallardDuck and RedheadDuck extend Duck and each implement display().",
+    "Other duck subclasses also inherit Duck; do not invent species or behaviors.",
+    "Caption separates shared inherited behavior from per-duck display."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT blog, opaque white background. Navy readable sans serif, monospace method names, blue/teal/amber flat cards, generous padding. Use exact identifiers, no extra methods or access modifiers or copied slide arrangement. Title 'Duck inheritance: the original design'. Top abstract Duck card 'quack(): shared implementation', 'swim(): shared implementation', 'display(): abstract'. Bottom three equal cards MallardDuck 'extends Duck' 'display(): mallard appearance'; RedheadDuck 'extends Duck' 'display(): redhead appearance'; 'Other duck subclasses' 'extends Duck'. Explicit extends captions suffice: DO NOT draw inheritance arrows. Footer 'Share quack and swim; specialize display'. No fly method.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Show the generic Strategy pattern: Context holds an interface reference and delegates algorithm calls to interchangeable concrete implementations. Preserve the original three-strategy relationship, using a new readable layout.",
+  "requiredChecks": [
+    "Exactly five boxes: Context, Strategy interface, ConcreteStrategyA, ConcreteStrategyB, ConcreteStrategyC.",
+    "Context contains strategy: Strategy and ContextInterface(); Strategy and each concrete strategy contain AlgorithmInterface().",
+    "Solid directed association goes from Context to Strategy and is labeled delegates to; no diamond or inheritance at Context.",
+    "Three dashed realization connectors have hollow triangular heads pointing to Strategy, one per concrete implementation.",
+    "Title, identifiers, punctuation and footer are legible and complete without clipping."
+  ],
+  "alt": "Strategy pattern: Context delegates to the Strategy interface implemented by three interchangeable concrete strategies",
+  "prompt": "Use case: infographic-diagram. Create an entirely new original UML-style class diagram for an English technical blog explaining the Strategy pattern. White background, crisp dark navy sans-serif text, flat blue and teal panels, thin clean connectors, no gradients, no logos, no decorative illustrations, generous margins. Landscape composition with large readable labels. Do not copy textbook artwork.\nTitle verbatim \"Strategy pattern\".\nThere are exactly FIVE class/interface boxes. Context at upper left; Strategy interface at upper right; ConcreteStrategyA, ConcreteStrategyB, ConcreteStrategyC arranged on bottom row.\nExact box text:\nContext\n- strategy: Strategy\n+ ContextInterface()\nStrategy\n<<interface>>\n+ AlgorithmInterface()\nConcreteStrategyA\n+ AlgorithmInterface()\nConcreteStrategyB\n+ AlgorithmInterface()\nConcreteStrategyC\n+ AlgorithmInterface()\nShow one SOLID directed association from Context toward Strategy, arrowhead pointing at Strategy, labeled \"delegates to\". Use this as an ordinary association, NOT inheritance or composition (no diamond).\nShow exactly THREE DASHED realization connectors: each concrete strategy to Strategy, each with an unfilled hollow triangle pointing toward Strategy. Route them with ample blank space; each path has an unambiguous endpoint. No connector arrow points to a concrete class. Do not add a fourth concrete strategy or any other boxes.\nFooter verbatim: \"Swap algorithms without changing the client.\"\nThe diagram should convey Context holds a Strategy interface reference and interchangeable concrete implementations fulfill AlgorithmInterface(). All spellings, capitalization, parentheses, realization direction and counts mandatory."
+}

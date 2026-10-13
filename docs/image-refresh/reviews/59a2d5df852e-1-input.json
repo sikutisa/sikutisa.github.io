@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Command interface declares execute(); Invoker stores Command and invokes execute().",
+      "passed": false,
+      "evidence": "Command interface execute and Invoker command:Command field are exact, but uses Command arrow points at ConcreteCommand instead of abstract Command; edit abstraction dependency."
+    },
+    {
+      "requirement": "ConcreteCommand implements Command and stores receiver: Receiver.",
+      "passed": true,
+      "evidence": "ConcreteCommand explicitly states implements Command and receiver:Receiver."
+    },
+    {
+      "requirement": "ConcreteCommand.execute() delegates to receiver.action(); Receiver declares action().",
+      "passed": true,
+      "evidence": "ConcreteCommand execute body receiver.action() and rightward delegates arrow to Receiver.action() verified."
+    },
+    {
+      "requirement": "Client creates receiver/command and configures invoker; no Invoker→Receiver dependency.",
+      "passed": true,
+      "evidence": "Client creates receiver/concrete command and configures Invoker; no Invoker→Receiver shortcut."
+    }
+  ],
+  "notes": "Fail. Invoker uses dependency arrow points at concrete rather than abstract Command; revise before replacement."
+}

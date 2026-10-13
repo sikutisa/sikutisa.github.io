@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Locality of memory references",
+  "purpose": "Replace the unrecoverable recorded trace with an explicitly illustrative trace showing clustered references and shifts.",
+  "requiredChecks": [
+    "Plot is explicitly labeled Illustrative reference trace, not presented as original measured data.",
+    "Horizontal axis Execution time and vertical Page number are correct.",
+    "Four phases show clusters at18–20,22–24,30–32,then18–20, rather than uniform random references.",
+    "The caption explains clustering and changing locality; all labels remain legible."
+  ],
+  "alt": "Illustrative memory-reference trace: page accesses cluster within one locality before moving to another",
+  "prompt": "Create a NEW original English technical educational diagram. White background, crisp large navy sans-serif text, flat blue/teal shapes, minimal clean connectors, generous margins, no logos or watermark, no decorative or traced textbook artwork. TITLE \"Locality of memory references\". Create an original schematic scatter plot, explicitly captioned \"Illustrative reference trace\". Horizontal axis \"Execution time\" with FOUR ordered phase labels \"Phase A\",\"Phase B\",\"Phase C\",\"Phase D\"; do NOT add numeric time measurements. Vertical axis \"Page number\" with clear ticks18,20,22,24,30,32. Show small navy/blue dots clustering at pages18,19,20 in PhaseA; at22,23,24 in PhaseB; at30,31,32 in PhaseC; and back at18,19,20 in PhaseD. Each phase should contain about12 schematic dots across its time interval, clearly restricted to its three specified integer page levels. Use subtle teal rectangular highlights around these four clusters. Do NOT join dots into a continuous line and do NOT copy a scanned reference trace. Footer exactly \"References cluster, then shift to a new locality\". All phases and axis labels readable."
+}

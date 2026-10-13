@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Program depends on two concrete Modules.",
+      "passed": true,
+      "evidence": "Program top has exactly two downward concrete Module A/B dependencies."
+    },
+    {
+      "requirement": "First Module depends on one Function; second on two Functions.",
+      "passed": true,
+      "evidence": "Module A targets Function A; Module B Function B1 and B2."
+    },
+    {
+      "requirement": "All dependencies point from high-level program/module toward concrete lower-level details.",
+      "passed": true,
+      "evidence": "All five dashed dependencies point toward concrete lower details."
+    },
+    {
+      "requirement": "Caption identifies direct implementation dependency, not data-flow or inheritance.",
+      "passed": true,
+      "evidence": "Each connector labelled depends on concrete implementation; footer direct lower-level detail dependency."
+    }
+  ],
+  "notes": "Direct visual inspection confirms text, dependencies and boundaries; PNG decode before approval.",
+  "at": "2026-10-12T15:53:11.840Z",
+  "generatedSha256": "5a7c83ac3a6577ef454e8a39075e67d77f092f81d30d8c25d0a8a0cf11999006",
+  "specSha256": "2f18299fc850e69d00fc47c8aafe3cfd377f14160b647b05ca1bac9128b5e66a"
+}

@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Five rows T0..T4, A B C columns; Allocation rows 0 1 0;2 0 0;3 0 2;2 1 1;0 0 2.",
+      "passed": true,
+      "evidence": "Five Allocation rows010/200/302/211/002 exact alignedABC."
+    },
+    {
+      "requirement": "Max rows 7 5 3;3 2 2;9 0 2;2 2 2;4 3 3. Available A B C=3 3 2.",
+      "passed": true,
+      "evidence": "Max753/322/902/222/433 and single Available332 exact."
+    },
+    {
+      "requirement": "Totals A10 B5 C7; no Available repeated as per-thread entitlement; digits and matrix columns aligned.",
+      "passed": true,
+      "evidence": "Totals10/5/7 and explanatorycaptionscorrect; extra graph removed, no invented arrows."
+    }
+  ],
+  "notes": "Second output inspected in full. Earlier graph/shape error repaired; all numeric and relationship checks passed.",
+  "at": "2026-10-12T22:49:42.176Z",
+  "generatedSha256": "9f9a3747e90a7bb2fd00dcb78be4da6ff8849c69175c78c4c49eda40b3b39e14",
+  "specSha256": "8625d034bd6c51c2b3c9a913221b2719b9a85e5c71849b438499fff4422d9f17"
+}

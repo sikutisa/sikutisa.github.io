@@ -1,0 +1,1 @@
+{"prompt":"Correct the diagram to show physical connectivity without directional data claims. Remove every arrowhead on every connector, especially Monitor—Graphics controller—PCIe bus. Replace them with simple undirected lines. Preserve all existing devices, four disks, two USB ports, labels and bus/controller topology unchanged."}

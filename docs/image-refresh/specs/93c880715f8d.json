@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Race assigning pid",
+  "alt": "두 프로세스가 보호되지 않은 PID 할당자에서 같은 2615를 받는 오류",
+  "requiredChecks": [
+    "P0andP1forkrequestPIDsharednext_available_pid2615bothread.",
+    "Bothreceivechild2615asincorrectrace,explicitconceptualbrokenallocatornotrealOSnormalfork."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title PID allocation race (incorrect example). Two parallel lanes P0 and P1. Each pid_t child = fork(); then request PID downarrow to central UNPROTECTED allocator next_available_pid = 2615. Both read 2615 before update. Two return arrows to separate lane boxes child = 2615. Time axis downward. Big footer Incorrect: duplicate PID due to missing synchronization. Conceptual broken allocator; normal OS PID allocation protects uniqueness. Never imply real fork routinely duplicates live child PID."
+}

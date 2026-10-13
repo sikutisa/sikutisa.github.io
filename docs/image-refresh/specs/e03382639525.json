@@ -1,0 +1,14 @@
+{
+  "title": "instructor relation for GROUP BY",
+  "purpose": "Illustrate instructor relation for GROUP BY with an original small dataset and independently calculated product/means.",
+  "alt": "학과별 평균을 계산하기 위한 강사 4명의 자체 예시 데이터",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "requiredChecks": [
+    "Column order: ID | name | dept_name | salary",
+    "Exactly 4 rows: 201 | Dana | Comp. Sci. | 60000 ; 202 | Eli | Comp. Sci. | 80000 ; 203 | Faye | Physics | 90000 ; 204 | Gus | Physics | 110000",
+    "Group instructors by dept_name, then average salary.",
+    "Original illustrative dataset footer; no copied textbook names, all cells legible."
+  ],
+  "prompt": "Create a NEW original raster educational table graphic for an English IT blog. White background, navy sans-serif text, blue header, pale teal alternating rows, light rules, generous padding, crisp identifiers. Title \"instructor relation for GROUP BY\". ONE table, EXACT headers: ID | name | dept_name | salary. EXACT 4 data rows:\n201 | Dana | Comp. Sci. | 60000\n202 | Eli | Comp. Sci. | 80000\n203 | Faye | Physics | 90000\n204 | Gus | Physics | 110000\nNo extra rows or header duplicates. Footer \"Original illustrative dataset\". Separate note \"Group instructors by dept_name, then average salary.\". Four instructors, two per department, exactly. No old names or salaries."
+}

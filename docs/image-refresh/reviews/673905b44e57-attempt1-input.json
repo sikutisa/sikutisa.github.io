@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "ProcessA pagesa,b,c,d,e; selectedb,c,e pageoutmemory→backingstoreslots4,5,6 respectively; a,dremainresident.",
+      "passed": false,
+      "evidence": "a,b,c,d,e와 b/c/e 선택은 정확하지만 세 Page out 선이 모두 Slot 4로 향해 c→5,e→6이 실패한다."
+    },
+    {
+      "requirement": "ProcessB pagesf,g,h,i,j; selectedf,h,j pageinfrombackingstoreslots17,18,19 respectively→memory; g,i alreadyresident.",
+      "passed": true,
+      "evidence": "f/g/h/i/j와 슬롯17=f,18=h,19=j 값과 방향은 맞다. j 선은 메모리 외곽에 닿아 목적지를 더 명확히 수정한다."
+    },
+    {
+      "requirement": "Backingstoreillustratedslots0..23; selectedpage granularitynotwholeprocess; no direction/mappingreversal.",
+      "passed": true,
+      "evidence": "Slots 0–23, Other slots omitted 표기와 개별 페이지 단위가 명확하다."
+    }
+  ],
+  "notes": "직접 원본 해상도에서 시각 검수. PNG 디코딩 확인. "
+}

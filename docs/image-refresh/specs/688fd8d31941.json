@@ -1,0 +1,15 @@
+{
+  "title": "SRTF example: arrivals and bursts",
+  "purpose": "Provide exact staggered arrival inputs.",
+  "alt": "SRTF 예시의 P1·P2·P3·P4 도착 시각 0·1·2·3ms와 burst 8·4·9·5ms",
+  "requiredChecks": [
+    "P1 arrival0 burst8;P2 arrival1 burst4;P3 arrival2 burst9;P4 arrival3 burst5.",
+    "Units milliseconds for both time columns.",
+    "Input table only, no priorities added.",
+    "SRTF considers remaining time when newly arrived processes become ready."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog. Opaque white background, navy highly readable type, restrained blue/teal/amber, flat graphics generous margins. Exact listed calculations only, no logos or copied textbook arrangement. Title 'SRTF example: arrivals and bursts'. Threecolumn table Process|Arrival(ms)|CPU burst(ms), rows P1|0|8,P2|1|4,P3|2|9,P4|3|5. Footer 'SRTF compares the remaining CPU times of ready processes'. No schedule metrics or additional priority values.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "calculationVerified": true
+}

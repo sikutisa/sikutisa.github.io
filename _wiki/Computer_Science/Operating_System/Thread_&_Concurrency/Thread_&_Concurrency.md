@@ -9,13 +9,13 @@ tags: [computer science, os]
     * a basic unit of CPU utilization.
     * comprises a *thread ID*, a *program counter*, a *register set*, and a *stack*.
 
-![Threads](./img/1.png){: w="460" h = "350"}
+![한 개·여러 개 스레드의 공유 코드·데이터·파일과 개별 PC·레지스터·스택](./img/1-generated.png){: w="760"}
 *Single-threaded and multithreaded processes*
 
 ## Multithreading
 * Let us consider the case of client-server system, e.g., a web server.
 
-![Multithread](./img/2.png){: w="420" h = "320"}
+![클라이언트 요청·작업 스레드 생성·서버 재수신의 3단계](./img/2-generated.png){: w="760"}
 *Multithread server architecture*
 
 * The benefits of multithreaded programming:
@@ -119,10 +119,10 @@ public class ThreadExample3 {
     * single-core: threads will be interleaved over time.
     * multiple-cores: some threads can run in parallel.
 
-![SingleCore](./img/3.png){: w="480" h = "270"}
+![단일 코어에서 T1·T2·T3·T4가 시간에 따라 교차 실행](./img/3-generated.png){: w="760"}
 *Concurrent execution on a single-core system*
 
-![DualCore](./img/4.png){: w="400" h = "330"}
+![두 코어에서 T1·T3와 T2·T4가 동시에 실행되는 시간표](./img/4-generated.png){: w="760"}
 *Parallel execution on a multicore system*
 
 * Programming Challenges in Multicore systems.
@@ -135,7 +135,7 @@ public class ThreadExample3 {
 ### Types of parallelism
 * 최근에는 분산 시스템의 발전으로 아래처럼 단순한 예시가 덜 의미있음
 
-![parallelism](./img/5.png){: w="380" h = "350"}
+![분할 데이터에 같은 연산을 적용하는 데이터 병렬성과 서로 다른 작업 병렬성](./img/5-generated.png){: w="760"}
 *Data parallelism and task parallelism*
 
 ### [Amdahl’s Law](https://en.wikipedia.org/wiki/Amdahl%27s_law)
@@ -151,17 +151,17 @@ public class ThreadExample3 {
 * Three relationships between user and kernel threads
 * Many-to-One Model
 
-![ManyToOne](./img/6.png){: w="370" h = "330"}
+![4개의 사용자 스레드가 한 개의 커널 스레드에 대응하는 모델](./img/6-generated.png){: w="760"}
 *Many-to-one model*
 
 * One-to-One Model
 
-![OneToOne](./img/7.png){: w="370" h = "330"}
+![각 사용자 스레드가 별개의 커널 스레드에 대응하는 모델](./img/7-generated.png){: w="760"}
 *One-to-one model*
 
 * Many-to-Many Model
 
-![ManyToMany](./img/8.png){: w="370" h = "330"}
+![사용자 스레드 4개를 커널 스레드 3개에 다중화하는 모델](./img/8-generated.png){: w="760"}
 *Many-to-Many model*
 
 ## Thread Libraries

@@ -113,13 +113,13 @@ int main()
 * How these results can happen?
     * Note that two statements “count++” and “count--” may be implemented in machine language as follows:
 
-![Example](./img/1.png){: w="360" h = "270"}
+![count 증감의 읽기·연산·쓰기 3단계](./img/1-generated.png){: w="760"}
 
 * Even though 𝑟𝑒𝑔𝑖𝑠𝑡𝑒𝑟1 and 𝑟𝑒𝑔𝑖𝑠𝑡𝑒𝑟2 may be the same physical register, the contents of these registers will be **saved** and **restored** by the interrupt handler (or scheduler).
 * The concurrent execution of “count++” and “count--” is equivalent to a sequential execution in which the lower-level statements presented previously are *interleaved* in some *arbitrary order*.
 * 연산이 진행되는 3단계의 instruction에서, 어느 시점에 contxt switch가 발생하느냐가 연산 결과에 영향을 끼칠 수 있음
 
-![Example](./img/2.png){: w="380" h = "350"}
+![초기 count 5가 생산자·소비자 명령 교차 실행으로 4가 되는 예시](./img/2-generated.png){: w="760"}
 
 ### Race Condition
 * A situation where several processes (or threads) access and manipulate the *same* (or *shared*) *data concurrently* and the outcome of the execution depends on the *particular order* in which the access takes place.
@@ -195,7 +195,7 @@ while (true) {
     * **Progress**(avoid **deadlock**):  If no process is executing in its critical section and some processes wish to enter their critical section, then the selection of next process will enter its critical section next cannot be postponed indefinitely.
     * **Bounded Waiting**(avoid **starvation**): A bound (or limit) on the number of times that other processes are allowed to enter their critical sections after a process has made a request to enter its critical section and before that request is granted.
 
-![RaceCondition](./img/3.png){: w="400" h = "420"}
+![두 프로세스가 보호되지 않은 PID 할당자에서 같은 2615를 받는 오류](./img/3-generated.png){: w="760"}
 *Race condition when assigning a pid*
 
 * A simple solution in a *single-core* environment: 
@@ -740,7 +740,7 @@ monitor monitor_name
 }
 ```
 
-![Schema](./img/4.png){: w="360" h = "350"}
+![진입 대기 큐와 공유 데이터·연산·초기화 코드가 있는 모니터](./img/4-generated.png){: w="760"}
 *Schematic view of a monitorl*
 
 ### Condition Variables
@@ -759,7 +759,7 @@ x.wait();
 y.wait();
 ```
 
-![Schema2](./img/5.png){: w="420" h = "350"}
+![진입 대기 큐와 x·y 조건 대기 큐가 분리된 모니터](./img/5-generated.png){: w="760"}
 *Monitor with condition variables*
 
 ### Java Monitors
@@ -968,7 +968,7 @@ public class SynchExample5 {
 ### Deadlock
 * A situation where two or more processes are *waiting indefinitely* for an event that *can be caused only by* one of the *waiting process*.
 
-![Deadlock](./img/6.png){: w="340" h = "340"}
+![S와 Q를 반대 순서로 획득하는 P0·P1의 교착 상태](./img/6-generated.png){: w="760"}
 
 ### Priority Inversion
 * A situation where a higher-priority processes have to wait for a lower-priority one to finish the resource.

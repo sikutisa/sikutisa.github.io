@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Input java8 lambda, stream mapping; each splits to2, flattened java8 lambda stream mapping in order.",
+      "passed": true,
+      "evidence": "Two input strings split to exact2+2words; outputjava8/lambda/stream/mapping ordered."
+    },
+    {
+      "requirement": "flatMap operation one-to-many and flatten not map one-to-one.",
+      "passed": true,
+      "evidence": "flatMap expression correct with3closing parentheses; one-to-many flattened stream depicted."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

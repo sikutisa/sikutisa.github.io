@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "P1 burst24,P2 burst3,P3 burst3ms.",
+      "passed": true,
+      "evidence": "Exactthreebursts24,3,3."
+    },
+    {
+      "requirement": "All arrivals0 initial orderP1,P2,P3.",
+      "passed": true,
+      "evidence": "Allarrivals0initialP1→P2→P3queue."
+    },
+    {
+      "requirement": "Input table only; next figure uses quantum4ms.",
+      "passed": true,
+      "evidence": "Tableonly,nextquantum4mscaption."
+    },
+    {
+      "requirement": "No priority or context overhead values added.",
+      "passed": true,
+      "evidence": "No added priority/overhead values."
+    }
+  ],
+  "notes": "Full visual inspection and independently computed numerical checks agree; decode before approval."
+}

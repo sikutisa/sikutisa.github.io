@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Shared libc code pages",
+  "alt": "세 프로세스가 동일한 libc 코드 페이지를 같은 물리 프레임에서 공유",
+  "requiredChecks": [
+    "ThreeprocessesP1/P2/P3 eachlogicalcodepageslibc1..4; eachpagetablemaps3,4,6,1 respectively.",
+    "Singlephysicalsharedcopy libc1frame3,libc2frame4,libc3frame6,libc4frame1.",
+    "Commonreentrantnon-self-modifyingcodeshared, private data notshownasone shared mutablecopy; no triplicatedphysicalcode."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Three processes share one copy of libc code. LeftthreeprocesscardsP1,P2,P3 eachwithrowslibc1→3,libc2→4,libc3→6,libc4→1 labelledPer-process page table. ArrowsfromthethreecardsconvergeononeShared physicalmemorytableFrame1libc4,Frame3libc1,Frame4libc2,Frame6libc3; onlyONEphysicalcopyofeachlibcpage. Footer Reentrant, non-self-modifying code can be shared; each process keeps its own data. Eachindividualmappingexact. Do not suggest sharedmutabledataorresourcegraphs."
+}

@@ -322,7 +322,7 @@ for each tuple t_1 in relation r_1
         * *Each tuple in instructor is combined with every tuple in teaches, even those that refer to a different instrutor*.
         * The result can be and **extremely large relation**, and it rarely makes sense to create such a Cartesian product.
 
-![Example](./img/1.png){: w="400" h = "460"}
+![강사 2명×강의 2행의 직적으로 ID 미일치도 남기는 4행](./img/1-generated.png){: w="760"}
 *The Cartesian product of the instructor relation with the teaches relation*
 
 * Instead, the predicate in the **where** clause is used to restrict the combinations created by the Cartesian product to those that are meaningful for the desired answer.
@@ -593,7 +593,7 @@ from course;
     * we specify this in SQL using the **group by** clause.
 * Tuple with the same value on all attributes in the group by clause are placed in one group.
 
-![Example](./img/2.png){: w="340" h = "360"}
+![학과별 평균을 계산하기 위한 강사 4명의 자체 예시 데이터](./img/2-generated.png){: w="760"}
 
 ```sql
 --find the average salary in each department
@@ -602,7 +602,7 @@ from instructor
 group by dept_name;
 ```
 
-![Example](./img/3.png){: w="320" h = "340"}
+![Comp. Sci. 평균 70000·Physics 평균 100000으로 집계한 GROUP BY 결과](./img/3-generated.png){: w="760"}
 *result*
 
 * In this case the group by clause has been omitted, so the entire relation is treated as a single group.

@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Storage hierarchy",
+  "alt": "레지스터부터 자기 테이프까지 저장장치 계층과 상대적인 접근 속도·용량",
+  "requiredChecks": [
+    "Seven levels registers, cache, main memory, solid-state disk, hard disk, optical disk, magnetic tapes in this order.",
+    "Adjacent levels permit movement both ways; trend top faster/smaller, bottom slower/larger is qualitative, no numeric price/speed claim."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Storage-device hierarchy. Seven vertically stacked flat bands ordered Registers, Cache, Main memory, Solid-state disk, Hard disk, Optical disk, Magnetic tapes. Bands gradually wider toward bottom. Tiny bidirectional arrows between adjacent bands. Left upward arrow Faster access (typical). Right downward arrow Larger capacity (typical). Footer Conceptual hierarchy; actual devices vary. No speed/cost figures and no invented levels."
+}

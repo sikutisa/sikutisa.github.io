@@ -1,0 +1,14 @@
+{
+  "title": "Adding another product family",
+  "purpose": "Show adding a third family without changing interfaces or client logic.",
+  "alt": "추상 인터페이스를 유지하며 ConcreteFactory3와 ProductA3·ProductB3를 추가하는 확장",
+  "requiredChecks": [
+    "AbstractFactory still has only createProductA()/createProductB(); Client and AbstractProductA/B unchanged.",
+    "Existing ConcreteFactory1 ProductA1/B1 and ConcreteFactory2 ProductA2/B2 remain.",
+    "New ConcreteFactory3 implements AbstractFactory and creates ProductA3/ProductB3 implementing corresponding abstract product types.",
+    "Caption distinguishes new family from product category and selects factory in setup only."
+  ],
+  "prompt": "Create a NEW original English raster technical diagram for a design-pattern study blog. White background, navy large sans-serif labels, flat blue and teal cards, spacious connectors, no copied slide layout or logos. Monospaced class/method identifiers. Distinguish uses, implements and creates via labels on directional connectors. Title \"Adding another product family\". TOP \"Unchanged contract: AbstractFactory\" lists createProductA(): AbstractProductA, createProductB(): AbstractProductB. Client card→factory uses with subtitle Client logic unchanged. BELOW three family columns. First two muted cards \"Existing family 1\" ConcreteFactory1 / ProductA1 / ProductB1, \"Existing family 2\" ConcreteFactory2 / ProductA2 / ProductB2; caption implements AbstractFactory each. Third teal \"NEW family 3\" ConcreteFactory3 with upward implements arrow toAbstractFactory; downward creates branch ProductA3 caption implements AbstractProductA and ProductB3 caption implements AbstractProductB. Footer \"Add one factory and its A/B products; select it during setup\". No createProductC, no changed interfaces, no client→concrete product links.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

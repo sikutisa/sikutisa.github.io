@@ -1,0 +1,14 @@
+{
+  "title": "Two-tier and three-tier applications",
+  "purpose": "Compare direct client application database calls with middle application-server tier.",
+  "alt": "클라이언트의 직접 DB 호출과 애플리케이션 서버를 경유하는 2계층·3계층 비교",
+  "requiredChecks": [
+    "Two-tier has user/application in Client tier connected directly over network to Database server.",
+    "Three-tier has UI/application client→Application server→Database server, all three tiers separately labelled.",
+    "Three-tier UI has no direct Database server link.",
+    "User boxes are not mistaken for separate server tiers; application server performs DB calls."
+  ],
+  "prompt": "Create a new original English raster technical diagram for an IT study blog. White background, flat blue and teal cards, navy large sans-serif text, generous whitespace, clean orthogonal connectors, no logos or copied textbook composition. All labels readable and uncropped. Title \"Two-tier and three-tier applications\". Two side-by-side panels, left \"Two-tier\", right \"Three-tier\". LEFT vertical: bounded \"Client tier\" containing \"User interface + application\", downward doubleheaded link label \"Database calls / results\" through thin horizontal \"Network\" separator, bounded \"Database tier\" containing \"Database server\". RIGHT vertical THREE separate boundaries: \"Client tier\" contains \"User interface / application client\", bidirectional arrow label \"Requests / responses\" through Network separator to \"Application tier\" containing \"Application server\", bidirectional arrow label \"Database calls / results\" to \"Database tier\" containing \"Database server\". No rightclient→DB shortcut. Footer left \"Application calls the database directly\"; footer right \"Application server mediates database access\". Keep panels independent, no connectors across panels.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

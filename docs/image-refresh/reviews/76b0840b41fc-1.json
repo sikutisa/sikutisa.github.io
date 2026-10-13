@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Nonpreemptive Gantt P4[0,3],P1[3,9],P3[9,16],P2[16,24], proportional3:6:7:8.",
+      "passed": true,
+      "evidence": "P4[0,3],P1[3,9],P3[9,16],P2[16,24]; widthsapprox3:6:7:8 and durationlabels."
+    },
+    {
+      "requirement": "All arrivals0 and order ascending bursts3,6,7,8.",
+      "passed": true,
+      "evidence": "Allarrive0,nonpreemptive,ascendingburstorder."
+    },
+    {
+      "requirement": "Waiting P1=3,P2=16,P3=9,P4=0 average7ms.",
+      "passed": true,
+      "evidence": "Wait3,16,9,0avg7exact."
+    },
+    {
+      "requirement": "Turnaround P1=9,P2=24,P3=16,P4=3 average13ms.",
+      "passed": true,
+      "evidence": "Turnaround9,24,16,3avg13exact."
+    }
+  ],
+  "notes": "Visual inspection confirms all data and proportional chart. PNG decoded before approval.",
+  "at": "2026-10-12T22:08:10.880Z",
+  "generatedSha256": "7be0319ce73b8f6a4142465db6736e8ce6af32cc08acf73bcfc67a4ccdca6c94",
+  "specSha256": "405f18fbe4c9a22b504e2d36acf1f7f5db559c85ba67f98c028f627ff6c22db5"
+}

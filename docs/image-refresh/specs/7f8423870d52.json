@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Process address-space layout",
+  "alt": "하위 주소의 text·data·heap과 상위 주소의 stack 및 서로 향하는 성장 방향",
+  "requiredChecks": [
+    "Bottom0,text,data,heap,freegap,stack,max top in order.",
+    "Heap grows toward higheraddresses/up, stacktowardlower/down into gap; no mandatory universalarchitecture."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title A process in memory. Tall vertical bar from Address0 bottom to Max address top. Bottomtotop Text (code), Data (globals), Heap, Free space, Stack. Arrow Heap upwardintoFree space; Stack downwardintoFree space. Caption Illustrative address-space layout. Text/Data fixedarea, Heap dynamicallocation, Stack functioncalls smalllegend. No inventedaddresses."
+}

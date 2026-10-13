@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "MonitorShareddata/Operations/Initialization,entryqueueoutside;conditionx3waiters,y2.",
+      "passed": true,
+      "evidence": "진입·x3개·y2개 큐와 모니터3영역·active 하나가 유지됨."
+    },
+    {
+      "requirement": "x.waitreleasesmonitorandsuspendsconditionqueue;x.signalnotifyconditionwaiter,noguaranteeimmediatelockhandoff.",
+      "passed": true,
+      "evidence": "wait 해제와 조건대기, signal 통지. 하단 scheduling depends on monitor semantics로 수정돼 일반적인 handoff 단정 없음."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

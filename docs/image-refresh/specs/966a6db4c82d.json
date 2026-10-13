@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Tree-structured directory",
+  "alt": "spell·bin·programs 아래 하위 폴더와 파일의 단일 부모 트리",
+  "requiredChecks": [
+    "Rootspell/bin/programs;spellstat/mail/dist;mailprog/copy/prt/exp;proglist/obj/spell;copyall;prtlast/first.",
+    "Binfind/count/hex/reorder;programsp/e/mail;p reorder/list/find;ehex/count;on eparentpernode,nosharingcycle."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Tree-structured directories. Use THREE large readable vertical branch cards below root /, one card for spell/, one bin/, one programs/. Within cards use nested indentation and faint parent-tree lines plus directory/file icons, not dense crossing arrows. Exact tree: root spell/ contains files stat and dist and directory mail/. spell/mail/ contains directories prog/, copy/, prt/, and file exp. prog/ contains files list,obj,spell. copy/ contains file all. prt/ contains files last,first. root bin/ contains files find,count,hex,reorder. root programs/ contains directories p/, e/, and file mail. programs/p/ files reorder,list,find. programs/e/ files hex,count. Directories end slash; files no slash. Every entry one parent; no shared edges or cycles."
+}

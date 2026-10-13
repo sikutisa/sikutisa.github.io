@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Allocation T0 0 1 0,T1 2 0 0,T2 3 0 3,T3 2 1 1,T4 0 0 2.",
+      "passed": true,
+      "evidence": "Allocation010/200/303/211/002 correct."
+    },
+    {
+      "requirement": "Request T0 0 0 0,T1 2 0 2,T2 0 0 0,T3 1 0 0,T4 0 0 2; Available=(0,0,0); totals7,2,6.",
+      "passed": true,
+      "evidence": "Request000/202/000/100/002 and Available000 correct."
+    },
+    {
+      "requirement": "Detection uses current Request, not Max/Need. Completion sequence T0→T2→T3→T1→T4; no deadlock; Work final=(7,2,6).",
+      "passed": false,
+      "evidence": "Completion order and Work726 correct, but extra graph falsely assigns A to T0 and B to T1; mixes claimlegend into detection. Removegraph."
+    }
+  ],
+  "notes": "Rejected despite correct matrix entries: additional graph relationships or actual graph endpoints inconsistent with source. Preserve original until repaired."
+}

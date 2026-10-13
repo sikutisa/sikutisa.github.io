@@ -1,0 +1,101 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "The full reference string has22 references: 7 0 1 2 0 3 0 4 2 3 0 3 0 3 2 1 2 0 1 7 0 1; capacity is3 frames, initially empty.",
+      "passed": true,
+      "evidence": "Visually read the complete22-digit reference sequence:7 0 1 2 0 3 0 4 2 3 0 3 0 3 2 1 2 0 1 7 0 1. Subtitle states3frames. First three rows show initially empty slots filled in order."
+    },
+    {
+      "requirement": "Policy isFIFO and total faults is15; table shows only page-fault steps, omitting hit steps.",
+      "passed": true,
+      "evidence": "The FIFO title, subtitle and footer agree on 15 faults. The table has exactly that many rows, and caption explicitly omits hit steps."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 1 | 7 | 7, —, — | —",
+      "passed": true,
+      "evidence": "Read directly from generated table: 1 | 7 | 7, —, — | —. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 2 | 0 | 7, 0, — | —",
+      "passed": true,
+      "evidence": "Read directly from generated table: 2 | 0 | 7, 0, — | —. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 3 | 1 | 7, 0, 1 | —",
+      "passed": true,
+      "evidence": "Read directly from generated table: 3 | 1 | 7, 0, 1 | —. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 4 | 2 | 2, 0, 1 | 7",
+      "passed": true,
+      "evidence": "Read directly from generated table: 4 | 2 | 2, 0, 1 | 7. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 6 | 3 | 2, 3, 1 | 0",
+      "passed": true,
+      "evidence": "Read directly from generated table: 6 | 3 | 2, 3, 1 | 0. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 7 | 0 | 2, 3, 0 | 1",
+      "passed": true,
+      "evidence": "Read directly from generated table: 7 | 0 | 2, 3, 0 | 1. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 8 | 4 | 4, 3, 0 | 2",
+      "passed": true,
+      "evidence": "Read directly from generated table: 8 | 4 | 4, 3, 0 | 2. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 9 | 2 | 4, 2, 0 | 3",
+      "passed": true,
+      "evidence": "Read directly from generated table: 9 | 2 | 4, 2, 0 | 3. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 10 | 3 | 4, 2, 3 | 0",
+      "passed": true,
+      "evidence": "Read directly from generated table: 10 | 3 | 4, 2, 3 | 0. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 11 | 0 | 0, 2, 3 | 4",
+      "passed": true,
+      "evidence": "Read directly from generated table: 11 | 0 | 0, 2, 3 | 4. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 16 | 1 | 0, 1, 3 | 2",
+      "passed": true,
+      "evidence": "Read directly from generated table: 16 | 1 | 0, 1, 3 | 2. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 17 | 2 | 0, 1, 2 | 3",
+      "passed": true,
+      "evidence": "Read directly from generated table: 17 | 2 | 0, 1, 2 | 3. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 20 | 7 | 7, 1, 2 | 0",
+      "passed": true,
+      "evidence": "Read directly from generated table: 20 | 7 | 7, 1, 2 | 0. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 21 | 0 | 7, 0, 2 | 1",
+      "passed": true,
+      "evidence": "Read directly from generated table: 21 | 0 | 7, 0, 2 | 1. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "Exact fault-table row Step | Page | Frames(F1,F2,F3) | Evicted: 22 | 1 | 7, 0, 1 | 2",
+      "passed": true,
+      "evidence": "Read directly from generated table: 22 | 1 | 7, 0, 1 | 2. Compared with independently simulated transition in examples/virtual-memory.json."
+    },
+    {
+      "requirement": "All text/table digits are legible, empty frames and no-victim entries are em dashes, and frame order is fixed.",
+      "passed": true,
+      "evidence": "All table headers, step numbers, page digits, frame triples and victims are readable; fixed F1,F2,F3 header and em-dash entries are intact. Inspected both continuation panels where used."
+    }
+  ],
+  "notes": "Individually read every generated row, including frame-slot order and victim values; transcribed observations before matching against the specification. Full22-reference sequence matches Markdown, unlike the shorter original figure. Totals15/9/12 independently verified. PIL verify/load passed.",
+  "at": "2026-10-12T12:28:40.003Z",
+  "generatedSha256": "d345f6ce8a91aed59ef9778d86525f5afb868100c214c1c96c98932ea526932e",
+  "specSha256": "f8159300666b6ab2464a7d67576b5a2a75c3c88879f6f7df34415b43c2d21189"
+}

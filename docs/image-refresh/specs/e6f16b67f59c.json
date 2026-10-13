@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Banker tentative T1 request",
+  "alt": "T1의 추가 요청 (1,0,2)를 반영한 임시 할당과 Need·Available 변화",
+  "requiredChecks": [
+    "Request T1=(1,0,2); Allocation T0 0 1 0,T1 3 0 2,T2 3 0 2,T3 2 1 1,T4 0 0 2.",
+    "Need T0 7 4 3,T1 0 2 0,T2 6 0 0,T3 0 1 1,T4 4 3 1; new Available=(2,3,0).",
+    "Highlight only changed T1 Allocation/Need and Available; safe sequence T1→T3→T4→T0→T2; caption safe request may be granted."
+  ],
+  "prompt": "Use case: scientific-educational. Original raster PNG educational diagram for IT technical blog. White opaque background, clean dark navy sans-serif text, blue and teal accents, no logo/watermark/decoration. Big readable English labels, generous spacing, original composition. For graphs thread circles, resource boxes, distinct arrowhead at destination. Blue solid requests, teal solid assignments, gray dashed potential claims. Title: T1 requests (1, 0, 2). Tentative-allocation table Thread | Allocation (A B C) | Need (A B C). Exact rows T0 |0 1 0|7 4 3; T1 |3 0 2|0 2 0; T2 |3 0 2|6 0 0; T3 |2 1 1|0 1 1; T4 |0 0 2|4 3 1. Accent ONLY changed T1 entries. Below system card Available: (3, 3, 2) − (1, 0, 2) = (2, 3, 0), highlight new available. Footer Safe sequence: T1 → T3 → T4 → T0 → T2. Result: Safe; request can be granted. No invented Max/otherrequest."
+}

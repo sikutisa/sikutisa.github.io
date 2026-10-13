@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Beginning,currentposition,Endofonefile;read/writeadvancesright.",
+      "passed": true,
+      "evidence": "Beginning·Current position·End의 한 파일 막대와 오른쪽 읽기/쓰기 진행 확인."
+    },
+    {
+      "requirement": "Rewindreturnslefttobeginning,noarbitrarydirectindex.",
+      "passed": true,
+      "evidence": "Rewind 화살표는 왼쪽 처음 방향이며 직접 인덱스나 임의 수치 없음."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

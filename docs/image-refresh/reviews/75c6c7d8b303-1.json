@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Browser→Web Server→Application Server facade entry path is clear.",
+      "passed": true,
+      "evidence": "Browser request→WebServer→Facade exact direction and endpoints."
+    },
+    {
+      "requirement": "Facade and subsystem services reside inside Application Server boundary.",
+      "passed": true,
+      "evidence": "Application Server encloses Facade and three services only."
+    },
+    {
+      "requirement": "Facade delegates to subsystem services, which access Database Server.",
+      "passed": true,
+      "evidence": "Facade branches to service A/B/C; service connectors merge into outgoing data access arrow."
+    },
+    {
+      "requirement": "Database Server is outside application server; no claim facade replaces networking or database.",
+      "passed": true,
+      "evidence": "Database Server outside boundary, no network or database replacement claim."
+    }
+  ],
+  "notes": "Pass. Visual inspection at native resolution confirmed correct dependency direction, layer boundaries, code identifiers and internal delegation.",
+  "at": "2026-10-12T14:54:24.887Z",
+  "generatedSha256": "dba50d6d0e715d818224302dddf0477e068062a5c35796dd223f32ef6b044dab",
+  "specSha256": "4bf1b1f1f79c51852406028c5b348eb23a228cc31b30eb4672c399632c53a677"
+}

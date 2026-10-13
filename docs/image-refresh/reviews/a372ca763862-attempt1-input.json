@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Input x → B → A → Output A(B(x)).",
+      "passed": true,
+      "evidence": "x passes B then A to A(B(x))."
+    },
+    {
+      "requirement": "A.compose(B), Function case, B before A.",
+      "passed": true,
+      "evidence": "compose subtitle and Step1B/Step2A correct, text readable."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

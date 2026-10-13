@@ -69,16 +69,16 @@ void *do_work_two(void *param)
     * A directed edge: 𝑅𝑗 → 𝑇𝑖 (**assignment edge**)
         * signifies that an instance of 𝑅𝑗 has been allocated to a thread 𝑇𝑖.
 
-![Example](./img/1.png){: w="340" h = "300"}
+![first_mutex를 보유한 thread_one과 second_mutex를 보유한 thread_two의 순환 대기](./img/1-generated.png){: w="760"}
 *Resource-allocation graph for program in upper example code*
 
-![Resource-allocation graph](./img/2.png){: w="480" h = "360"}
+![세 스레드와 네 자원 유형으로 구성된 비순환 자원 할당 그래프](./img/2-generated.png){: w="760"}
 *Resource-allocation graph*
 
-![DeadlockGraph](./img/3.png){: w="460" h = "360"}
+![R2의 두 인스턴스가 점유되어 두 순환을 갖는 교착 상태](./img/3-generated.png){: w="760"}
 *Resource-allocation graph with a deadlock*
 
-![DeadlockGraph](./img/4.png){: w="420" h = "360"}
+![자원 인스턴스가 여러 개일 때 순환이 있어도 교착 상태가 아닌 사례](./img/4-generated.png){: w="760"}
 *Resource-allocation graph with a cycle but no deadlock*
 
 * An important observation
@@ -166,7 +166,7 @@ transaction(saving_account, checking_account, 50.0);
 * A system is in a safe state if only if there exists a **safe sequence**.
 * A sequence of threads *〈𝑇1, 𝑇2, ⋯ , 𝑇𝑛〉* is a *safe sequence*, if, for each thread 𝑇𝑖, the resources that 𝑇𝑖 can still request can be satisfied by the currently available resources + resources held by all 𝑇𝑗, with 𝑗 < 𝑖.
 
-![State](./img/5.png){: w="310" h = "310"}
+![안전 상태와 불안전 상태의 구분 및 불안전 상태에 포함되는 교착 상태](./img/5-generated.png){: w="760"}
 *Safe, unsafe, and deadlocked state spaces*
 
 * Basic facts
@@ -189,10 +189,10 @@ transaction(saving_account, checking_account, 50.0);
 * If **no cycle** exists, the request can be *granted* immediately, since the resource allocation will leave the system in a *safe state*.
 * If a *cycle* is *detected*, then the request *cannot be granted*, since the resource allocation will put the system in an *unsafe state*.
 
-![Graph1](./img/6.png){: w="300" h = "300"}
+![R1은 T1에 할당되고 T2가 요청하며 R2에는 미래 요청 가능성을 표시한 그래프](./img/6-generated.png){: w="760"}
 *Resource-allocation graph for deadlock avoidance*
 
-![Graph2](./img/7.png){: w="300" h = "300"}
+![R2를 T2에 할당하면 미래 요청 간선을 포함한 순환이 생기는 불안전 상태](./img/7-generated.png){: w="760"}
 *An unsafe state in a resource-allocation graph*
 
 ### Banker's Algorithm
@@ -236,11 +236,11 @@ transaction(saving_account, checking_account, 50.0);
 * The number of instances of each resource types: 𝐴 = 10,𝐵 = 5, 𝐶 = 7
 * The snapshot representing the current state of the system:
 
-![Snapshot1](./img/8.png){: w="340" h = "300"}
+![은행원 알고리즘의 초기 Allocation·Max 표와 Available 벡터](./img/8-generated.png){: w="760"}
 
 * Note that 𝑁𝑒𝑒𝑑[𝑖][𝑗] = 𝑀𝑎𝑥[𝑖][𝑗] − 𝐴𝑙𝑙𝑜𝑐𝑎𝑡𝑖𝑜𝑛[𝑖][𝑗].
 
-![Snapshot2](./img/9.png){: w="370" h = "300"}
+![초기 상태의 Need=Max−Allocation 표와 안전 순서](./img/9-generated.png){: w="760"}
 
 * Now we claim that the system is currently in a safe state.
     * In deed, the sequence 〈𝑇1, 𝑇3, 𝑇4, 𝑇2, 𝑇0〉 satisfies the safety criteria.
@@ -301,7 +301,7 @@ all elements in Finish vector are true
         * (3,3,2) − (1,0,2) = (2,3,0)
         * (1,2,2) − (1,0,2) = (0,2,0)
 
-![Snapshot3](./img/10.png){: w="330" h = "290"}
+![T1의 추가 요청 (1,0,2)를 반영한 임시 할당과 Need·Available 변화](./img/10-generated.png){: w="760"}
 
 * Now, determine whether this new system state is safe.
     * Safety algorithm finds that 〈𝑇1, 𝑇3, 𝑇4, 𝑇0, 𝑇2〉 satisfies the safety. 
@@ -331,7 +331,7 @@ all elements in Finish vector are true
     * Maintain a **wait-for graph**, a variant of the resource-allocation graph.
     * *Periodically, invoke an algorithm* that searches for a cycle in the wait-for graph.
 
-![Graphs](./img/11.png){: w="400" h = "340"}
+![단일 인스턴스 자원 그래프를 스레드 간 대기 그래프로 변환하는 예제](./img/11-generated.png){: w="760"}
 *(a) Resource-allocation graph (b) Corresponding wait-for graph*
 
 * *Several Instances* of a Resource Type
@@ -360,14 +360,14 @@ all elements in Finish vector are true
 * The number of instances of each resource types: 𝐴 = 7, 𝐵 = 2, 𝐶 = 6.
 * The snapshot representing the current state of the system:
 
-![Snapshot4](./img/12.png){: w="330" h = "300"}
+![현재 Request가 충족되어 모든 스레드가 완료될 수 있는 교착 탐지 표](./img/12-generated.png){: w="760"}
 
 * Now we claim that the system is not in a deadlocked state.
     * the sequence 〈𝑇0, 𝑇2, 𝑇3, 𝑇1, 𝑇4〉 results in 𝐹𝑖𝑛𝑖𝑠ℎ[𝑖] == 𝑡𝑟𝑢𝑒 for all 𝑖.
 * Now we claim that the system is now deadlocked.
     * a deadlock exists, consisting of threads 𝑇1, 𝑇2, 𝑇3, and 𝑇4.
 
-![Snapshot5](./img/13.png){: w="330" h = "300"}
+![T2의 추가 C 요청으로 T1·T2·T3·T4가 교착되는 표](./img/13-generated.png){: w="760"}
 
 ## Recovery from Deadlock
 * *When* should we invoke the detection algorithm?

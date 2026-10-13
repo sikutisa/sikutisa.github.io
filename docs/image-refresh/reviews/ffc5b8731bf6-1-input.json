@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Allocation T0 0 1 0,T1 2 0 0,T2 3 0 3,T3 2 1 1,T4 0 0 2.",
+      "passed": true,
+      "evidence": "Allocation010/200/303/211/002 correct."
+    },
+    {
+      "requirement": "Request T0 0 0 0,T1 2 0 2,T2 0 0 1,T3 1 0 0,T4 0 0 2; Available=(0,0,0); only T2 Request changed.",
+      "passed": true,
+      "evidence": "Request000/202/001/100/002 and Available000 correct, T2 rowhighlighted."
+    },
+    {
+      "requirement": "T0 finishes releases B, Work=(0,1,0); none of T1,T2,T3,T4 can proceed. Deadlocked set exactly T1,T2,T3,T4.",
+      "passed": false,
+      "evidence": "T0 finish, Work010 and deadlockedsetT1..4 correct; extra graph falsely assigns A to T0 and B to T1 and encodes outstandingrequests as claims. Removegraph."
+    }
+  ],
+  "notes": "Rejected despite correct matrix entries: additional graph relationships or actual graph endpoints inconsistent with source. Preserve original until repaired."
+}

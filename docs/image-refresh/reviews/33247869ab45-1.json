@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "MainmemoryOS/user space; backingstorecontainsprocesses; step1P1swapoutmemory→disk, step2P2swapindisk→memory.",
+      "passed": true,
+      "evidence": "메모리 OS/user space와 Backing store가 분리되고 위쪽 P1 swap out은 디스크로, 아래쪽 P2 swap in은 사용자 영역으로 향한다."
+    },
+    {
+      "requirement": "Wholeprocessmovement notpagefragment; OSremainsresident; arrowsdifferentdirectionscorrect.",
+      "passed": true,
+      "evidence": "P1/P2는 전체 프로세스 카드이며 운영체제는 메모리에 상주한다는 캡션이 정확하다."
+    }
+  ],
+  "notes": "직접 원본 해상도에서 시각 검수. PNG 디코딩 확인. 단계 번호는 없으나 위/아래 순서와 두 방향이 명확하다.",
+  "at": "2026-10-12T23:50:32.160Z",
+  "generatedSha256": "db59283ae73fd6bb2e8ee59ff8b2d7809321943e9a3038228b2b1d834ddf2c60",
+  "specSha256": "78b033bf256d4eb833e276b6cf4a7c99975c8dc14a1bfcf729dac4c187c9603f"
+}

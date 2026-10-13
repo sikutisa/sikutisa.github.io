@@ -1,0 +1,18 @@
+{
+  "title": "MySQL thread roles",
+  "purpose": "Explain client foreground threads, reusable thread cache and background flushing without implying query completion waits for all data-page writes.",
+  "alt": "MySQL 기본 연결 스레드 모델과 스레드 캐시 재사용, InnoDB 백그라운드 I/O 역할",
+  "requiredChecks": [
+    "Default one-thread-per-connection model is identified; two clients have two independent active foreground threads.",
+    "Thread cache is idle foreground threads, with arrows reuse into active and return on disconnect back to cache.",
+    "Foreground accesses shared buffers; background flushes dirty pages and writes redo logs to respective disk files.",
+    "Data-page flushing and redo writing are separate; no claim that every commit avoids synchronous durability waits."
+  ],
+  "sources": [
+    "https://dev.mysql.com/doc/refman/8.0/en/connection-interfaces.html",
+    "https://dev.mysql.com/doc/refman/8.0/en/memory-use.html"
+  ],
+  "prompt": "Create a NEW original raster diagram for a technical study blog. English labels verbatim, large crisp navy sans-serif text on white, restrained flat blue and teal cards, orthogonal connectors, generous whitespace, no gears, gradients, stock icons, copied textbook composition, logos or watermark. Labels must be comfortably legible. TITLE \"MySQL thread roles\". Subtitle \"Default: one thread per connection\". Fresh wide three-band diagram. Top band \"Connections\": Client A→Foreground thread A and Client B→Foreground thread B, four distinct labelled cards. Beside active threads place \"Thread cache\" card with subtitle \"Idle foreground threads\"; connect this cache to active-thread group with TWO separate arrows labelled \"Reuse on connect\" toward active, and \"Return on disconnect\" toward cache. Middle band \"Shared memory\": a \"Data caches / InnoDB buffer pool\" card and a separate \"Redo log buffer\" card. Foreground threads connect to shared data card with double-headed arrow \"Read / modify pages\"; to redo card arrow \"Append redo\". Bottom band split runtime/disk: show two small runtime cards \"Page-flush workers\" and \"Redo-log writer\". Data card→Page-flush workers→disk card \"Data files\" with label \"Flush dirty pages\". Redo buffer→Redo-log writer→disk card \"Redo log files\" with label \"Write redo\". Mark the two runtime cards collectively \"InnoDB background I/O\". Distinguish disk cards from memory cards. Footer \"Simplified roles; commit durability depends on configuration\". Do not imply commits always asynchronous or data/redo interchangeable. All arrows unambiguous, no crossed connector through unrelated cards.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

@@ -1,0 +1,13 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "MappedSuperclass PROP data",
+  "alt": "PROP 한 테이블에 가격 1000·ID 1·prop1·propUrl1이 저장된 예시",
+  "requiredChecks": [
+    "ColumnsPRICE,ID,PROP_NAME,URL.",
+    "Row1000|1|prop1|propUrl1;ID1examplewithinownentitytable,noparentFK."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title @MappedSuperclass: PROP data. Single table columns PRICE | ID | PROP_NAME | URL. One row 1000 | 1 | prop1 | propUrl1. Caption Inherited and subtype fields in one entity table. No parent ITEM table or FK. Keep example ID 1, do not derive cross-table uniqueness rule.",
+  "referenceSource": "https://jakarta.ee/specifications/persistence/3.1/apidocs/jakarta.persistence/jakarta/persistence/mappedsuperclass",
+  "repairPrompt2": "Replace entire diagram with a single centered PROP table only. Title @MappedSuperclass: PROP data. Columns exactly PRICE | ID | PROP_NAME | URL. One row exactly 1000 | 1 | prop1 | propUrl1. Footer 'Inherited and subtype fields in one entity table.' Delete all class boxes and all arrows. No extra facts or fields."
+}

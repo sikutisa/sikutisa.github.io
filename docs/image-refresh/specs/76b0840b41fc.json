@@ -1,0 +1,15 @@
+{
+  "title": "SJF: shortest available burst first",
+  "purpose": "Show exact SJF ordering and verified metrics.",
+  "alt": "비선점 SJF의 P4·P1·P3·P2 실행 순서와 경계 0·3·9·16·24ms, 평균 대기 7ms",
+  "requiredChecks": [
+    "Nonpreemptive Gantt P4[0,3],P1[3,9],P3[9,16],P2[16,24], proportional3:6:7:8.",
+    "All arrivals0 and order ascending bursts3,6,7,8.",
+    "Waiting P1=3,P2=16,P3=9,P4=0 average7ms.",
+    "Turnaround P1=9,P2=24,P3=16,P4=3 average13ms."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog. Opaque white background, navy large readable type, restrained blue/teal/amber flat cards, generous spacing. Draw precise listed data only, no logos or textbook composition. Title 'SJF: shortest available burst first'. Subtitle 'All arrive at 0; non-preemptive SJF'. PROPORTIONAL Gantt foursegments P4 duration3,P1 duration6,P3 duration7,P2 duration8, ONLYticks0,3,9,16,24 ms. Table Process|Waiting(ms)|Turnaround(ms): P1|3|9,P2|16|24,P3|9|16,P4|0|3. Footer 'Average waiting: 7 ms • Average turnaround: 13 ms'. No preemption.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "calculationVerified": true
+}

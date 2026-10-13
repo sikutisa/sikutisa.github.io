@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Control path is Rules on disk→Rule-loader workers→Rule cache; no client is mistaken for rule storage.",
+      "passed": true,
+      "evidence": "Top Policy updates lane explicitly shows Rules on disk→Rule-loader workers→Rule cache."
+    },
+    {
+      "requirement": "Middleware reads Rule cache and atomically checks/updates separate Redis counters/timestamps.",
+      "passed": true,
+      "evidence": "Read policy doubleheaded connector joins middleware only to Rule cache; separate Atomic check/update connects middleware to Redis state."
+    },
+    {
+      "requirement": "Client request→Middleware→API servers only if Allowed, with explicit rejected HTTP429 response to Client.",
+      "passed": true,
+      "evidence": "Request→middleware→Allowed→API servers is distinct from bent Rejected: HTTP 429 Too Many Requests return to Client."
+    },
+    {
+      "requirement": "Rule cache and runtime Redis state are distinct; loader workers are not on the synchronous API request path.",
+      "passed": true,
+      "evidence": "Rule cache above and Redis state below are distinct cards; loader exists only in Policy updates lane and footer describes separate policy loading/shared runtime state."
+    }
+  ],
+  "notes": "Pass after visual inspection of labels, arrow directions and PNG decoding.",
+  "at": "2026-10-12T13:29:36.066Z",
+  "generatedSha256": "edda52934782ab77abf3fd7f1c7ea4f078f8d9f81d31e7bad2ae8d5555b8daca",
+  "specSha256": "d50583c90459ba7f1dfa9af4149ef4cbc284f98917e6b0e72c28a79198c07084"
+}

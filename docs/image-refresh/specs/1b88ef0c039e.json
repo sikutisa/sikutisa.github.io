@@ -1,0 +1,14 @@
+{
+  "title": "Multi-level queues by priority",
+  "purpose": "Show distinct fixed-priority ready queues.",
+  "alt": "Priority 0·1·2·n마다 별도의 준비 큐를 두고 높은 우선순위 큐부터 선택하는 구조",
+  "requiredChecks": [
+    "priority0queueT0,T1,T2,T3,T4;priority1T5,T6,T7;priority2T8,T9,T10,T11;prioritynTx,Ty,Tz.",
+    "Highestpriority0top,lowestn bottom.",
+    "Separate queues, no feedback migration depicted.",
+    "Thread identifiers and queue membership exact."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT reference blog. Opaque white, navy highly legible type, restrained blue/teal/amber flat cards, generous gutters. Exact specified numericdata and arrows, no copied textbook arrangement. Title 'Multi-level queues by priority'. Fourstacked rowboxes withcells, labelled Priority0(highest):T0|T1|T2|T3|T4;Priority1:T5|T6|T7;Priority2:T8|T9|T10|T11;ellipsis;Priorityn(lowest):Tx|Ty|Tz. Beside rows arrow 'Decreasing priority' pointing down. Footer 'Each priority has a separate ready queue'. No crossqueuefeedbackarrows/no quantum assignment.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

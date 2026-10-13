@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Headers in exact order: ID | name | salary",
+      "passed": true,
+      "evidence": "Headers ID,name,salary exactly, dept_name omitted."
+    },
+    {
+      "requirement": "Exactly 4 rows: 201 | Dana | 60000 ; 202 | Eli | 80000 ; 203 | Faye | 90000 ; 204 | Gus | 110000",
+      "passed": true,
+      "evidence": "Four rows201Dana60000,202Eli80000,203Faye90000,204Gus110000 match projection."
+    },
+    {
+      "requirement": "Keep ID, name and salary; omit dept_name.",
+      "passed": true,
+      "evidence": "Caption explicitlyKeepIDname salary omitdept_name; noextra attributes orlosttuples."
+    },
+    {
+      "requirement": "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer; allrowslegible."
+    }
+  ],
+  "notes": "Pass. Every cell inspected against examples/relational-algebra.json."
+}

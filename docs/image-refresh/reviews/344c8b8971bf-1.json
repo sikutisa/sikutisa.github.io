@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Seven levels registers, cache, main memory, solid-state disk, hard disk, optical disk, magnetic tapes in this order.",
+      "passed": true,
+      "evidence": "Registers,Cache,Main memory,Solid-state disk,Hard disk,Optical disk,Magnetic tapes 순서의 7단계를 확인했다."
+    },
+    {
+      "requirement": "Adjacent levels permit movement both ways; trend top faster/smaller, bottom slower/larger is qualitative, no numeric price/speed claim.",
+      "passed": true,
+      "evidence": "인접 층 양방향과 typical faster/larger 방향, 장치에 따라 다를 수 있다는 캡션이 보인다."
+    }
+  ],
+  "notes": "직접 시각 검수 및 PNG 디코딩. 불합격 그림은 원본 참조를 유지한다.",
+  "at": "2026-10-13T00:00:17.060Z",
+  "generatedSha256": "9fa18311efed0f954ad249b87af4dd3d36ec662527f42674d462dbaa97614c8b",
+  "specSha256": "780917620d87ac5094e39a8179af46cf64b90db0dfb6222bb5e8f968eef1abc9"
+}

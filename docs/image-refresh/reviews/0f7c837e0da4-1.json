@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Column order: dept_name | avg_salary",
+      "passed": true,
+      "evidence": "Headers dept_name,avg_salary appear withnoadditionalcolumns."
+    },
+    {
+      "requirement": "Exactly 2 rows: Comp. Sci. | 70000 ; Physics | 100000",
+      "passed": true,
+      "evidence": "Two rows Comp. Sci.70000 andPhysics100000, matching calculated averages."
+    },
+    {
+      "requirement": "Comp. Sci.: (60000 + 80000) / 2 = 70000; Physics: (90000 + 110000) / 2 = 100000.",
+      "passed": true,
+      "evidence": "Caption explicitly computes(60000+80000)/2=70000 and(90000+110000)/2=100000."
+    },
+    {
+      "requirement": "Original illustrative dataset footer; no copied textbook names, all cells legible.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer present and bothrowslegible; noID/name or grandtotal."
+    }
+  ],
+  "notes": "Pass after checking every cell and the independent product/mean calculations in examples/sql-product-aggregation.json.",
+  "at": "2026-10-12T13:54:14.897Z",
+  "generatedSha256": "6ef015f028f5d5ec1d589ec43cba0f5085792ec09267de39f5f9b1cd5af0f1a1",
+  "specSha256": "0281c9ce3beb966f8d9ed6f5991ae7b46a0c4e800261a36118b3b95c04fe1988"
+}

@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Two-level page table structure",
+  "alt": "외부 페이지 테이블이 내부 테이블의 페이지를 가리키고 각 항목이 물리 프레임을 가리키는 구조",
+  "requiredChecks": [
+    "Outerpage-tableentries pointtothreeinnerpage-tablepages; sixleafentryvalues1,500;100,708;929,900.",
+    "Eachleafentryselectsitsmatchingphysicalframe1/500/100/708/929/900; no interpretation ofleafvaluesasvirtualpageindexes.",
+    "Page table itself split into pages, intermediate leaf-tablepagesdistinctfromfinaldataframes; readablearrows."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: A two-level page table. Left Outer page table withthreeillustratedentriesplusellipsis; eacharrowpoints toone ofTHREEseparateinner-page-tableboxesstackedmiddle. Inner page table A containsexactentriesFrame1,Frame500; B Frame100,Frame708; C Frame929,Frame900. Labelthese boxesPages of the page table. Rightphysicalmemorysixframecardsordered1,100,500,708,900,929. Connecteachinnerleafentry tocorrespondingexactframe usingclearlabeledarrowswithdestinationheads; noframesomitted. Can groupmapsintwo-columnlookupcards toavoidcrossings. Footer Outer entries locate a page-table page; inner entries locate a data frame. NoinventedoffsetsorASID."
+}

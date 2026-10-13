@@ -1,0 +1,14 @@
+{
+  "title": "Selection: dept_name = Physics",
+  "purpose": "Teach Selection: dept_name = Physics using original illustrative data and independently computed algebra.",
+  "alt": "Physics 학과의 튜플만 선택한 결과",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "requiredChecks": [
+    "Headers in exact order: ID | name | dept_name | salary",
+    "Exactly 2 rows: 203 | Faye | Physics | 90000 ; 204 | Gus | Physics | 110000",
+    "Keep only instructors with dept_name = Physics.",
+    "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset."
+  ],
+  "prompt": "Create a NEW original English raster table diagram for an IT blog, white background, navy crisp sans-serif, blue header and pale teal alternating rows, light rules and ample padding. Title \"Selection: dept_name = Physics\". ONE table. EXACT headers: ID | name | dept_name | salary. EXACT data rows:\n203 | Faye | Physics | 90000\n204 | Gus | Physics | 110000\nExactly 2 rows. No extra row, no ellipsis, no duplicate headers. Footer \"Original illustrative dataset\". Separate note \"Keep only instructors with dept_name = Physics.\". Keep row order precisely as provided for visual verification; tuples remain a set."
+}

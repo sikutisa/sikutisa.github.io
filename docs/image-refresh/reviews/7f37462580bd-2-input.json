@@ -1,0 +1,33 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Seed URLs→URL frontier→HTML downloader→Parser/validator→Content duplicate check in order; DNS resolver is a side dependency of downloader.",
+      "passed": true,
+      "evidence": "Seed→Frontier→Downloader→Parser→Duplicatedecision andDNSsideexchange preserved."
+    },
+    {
+      "requirement": "Duplicate-content Yes discards; No both stores Content storage and continues to URL extractor→URL filter→Seen URL check.",
+      "passed": true,
+      "evidence": "Contentdecision nowexactlyYes→Discard andNo→junction; junctionbothStore→Contentstorage and→Extractor→Filter→Seen."
+    },
+    {
+      "requirement": "Seen URL Yes discards, while No records URL in Seen/queued URL store and enqueues in URL frontier.",
+      "passed": true,
+      "evidence": "SeenYesDiscard; NoRecord→Seenstore andEnqueueupintoFrontier."
+    },
+    {
+      "requirement": "Content storage and Seen/queued URL store are separate; feedback arrow joins frontier, not downloader/parser.",
+      "passed": true,
+      "evidence": "Twoindependentstores andfeedbacktoFrontier notDownloader."
+    },
+    {
+      "requirement": "Labels and Yes/No branch directions are legible; no DNS forwards HTML or duplicate URLs endlessly loop.",
+      "passed": true,
+      "evidence": "No/Newcontentjunction obvious andStorebranch joinedbelowNo label; allreadable."
+    }
+  ],
+  "notes": "Viewed raster, traced branch directions/task graph and compared to fullarticle; PIL verify/load passed. Completion-event topology and task/assignment wording flagged for correction."
+}

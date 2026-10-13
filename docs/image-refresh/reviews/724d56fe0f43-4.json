@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Left RAG T1..T5,R1..R5 one instance each. Requests T1→R1,T2→R3,T2→R4,T2→R5,T3→R5,T4→R2.",
+      "passed": true,
+      "evidence": "All six request edges exact: T1R1,T2R3/R4/R5,T3R5,T4R2."
+    },
+    {
+      "requirement": "Assignments R1→T2,R2→T1,R3→T5,R4→T3,R5→T4, exactly eleven edges left.",
+      "passed": true,
+      "evidence": "Now exact five assignmentsR1T2,R2T1 via far-left curve,R3T5,R4T3,R5T4; extraT2T1 removed."
+    },
+    {
+      "requirement": "Right wait-for edges exactly T1→T2,T2→T5,T2→T3,T2→T4,T3→T4,T4→T1; no resource nodes right.",
+      "passed": true,
+      "evidence": "Right exactT1T2,T2T5/T3/T4,T3T4,T4T1; sixarrows."
+    },
+    {
+      "requirement": "Clear conversion rule Ti→Rk→Tj becomes Ti→Tj. T1,T2,T3,T4 blocked cycle, T5 no outgoing edge. No reversed or missing arrowheads.",
+      "passed": true,
+      "evidence": "Five singledotresources left, noresource right; conversioncorrect, T5leafnooutgoing, allreadable."
+    }
+  ],
+  "notes": "Direct full-image visual review against article and original, all arrow endpoints/branches/values checked. Failed item keeps original reference.",
+  "at": "2026-10-12T23:03:48.695Z",
+  "generatedSha256": "1f5f8f5e5f2368060ccfec5d5c26f0f52edf01b403fc73eebbee4ad42c614695",
+  "specSha256": "1d46817aff8b6a5854f75d6341aa4e16eaa87170f7297a835161fb30636c83e0"
+}

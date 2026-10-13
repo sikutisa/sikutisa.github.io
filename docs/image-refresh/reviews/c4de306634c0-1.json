@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "ThreeprocessesP1/P2/P3 eachlogicalcodepageslibc1..4; eachpagetablemaps3,4,6,1 respectively.",
+      "passed": true,
+      "evidence": "P1/P2/P3 tablesalllibc1..4→3,4,6,1 exact."
+    },
+    {
+      "requirement": "Singlephysicalsharedcopy libc1frame3,libc2frame4,libc3frame6,libc4frame1.",
+      "passed": true,
+      "evidence": "Onesharedphysicaltableframe1libc4,3libc1,4libc2,6libc3."
+    },
+    {
+      "requirement": "Commonreentrantnon-self-modifyingcodeshared, private data notshownasone shared mutablecopy; no triplicatedphysicalcode.",
+      "passed": false,
+      "evidence": "Private-data/reentrantcaptioncorrectbutfiveextraneousarrowsfromP3/tablemidrowstophysicalrowsambiguous; removearrowstobindmeaningthrough exactmatching tables."
+    }
+  ],
+  "notes": "Exact original values and complete article checked; reject misleading field connections or ambiguous per-row mapping arrows.",
+  "at": "2026-10-12T23:26:47.494Z",
+  "generatedSha256": "aff4c335c579324bae872d5bee05b3bce9ede07c5f1f8f72481ddb8a393b7bc1",
+  "specSha256": "22f4f21af4a076b770a1ebc20e7145bd4e09e06f7831ada5f5f9476421d3388f"
+}

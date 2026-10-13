@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Processor→bridge/memorycontroller→PCIebus;cacheoffprocessorlink,memoryoffbridge;monitorvia graphicscontroller.",
+      "passed": true,
+      "evidence": "CPU·캐시·브리지·메모리·PCIe와 그래픽·모니터가 무방향 선으로 정확히 연결됨."
+    },
+    {
+      "requirement": "PCIe→SAScontroller→4disks;PCIe→expansioninterface→expansionbus→keyboard+2USBports.",
+      "passed": true,
+      "evidence": "SAS의 4디스크와 확장 버스의 키보드·USB 2개가 유지되고 모든 화살촉 제거 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

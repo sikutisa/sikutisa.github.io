@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "ColumnsPRICE,ID,BACKGROUND_NAME,URL.",
+      "passed": true,
+      "evidence": "All four headers exact."
+    },
+    {
+      "requirement": "Row2000|1|back1|backUrl1;inheritedcommonfieldsinline,noparenttablejoin.",
+      "passed": false,
+      "evidence": "Correct row but authoring instruction leaked as footer; remove Preserve line."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "외부·내부 반복 제어 비교",
+  "alt": "개발자 루프와 스트림 내부 반복의 제어 위치 비교",
+  "requiredChecks": [
+    "External: developer loops, next() retrieves element and developer processes it.",
+    "Internal: developer supplies action to stream.forEach(action); stream handles traversal, no guaranteed speedup."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title External vs internal iteration. Two panels. LEFT Developer box containing loop: next() → element → process, return curved arrow from process to next() labeled repeat. Collection of elements outside connected to next() by arrow labeled retrieve. RIGHT Developer action box → stream.forEach(action) box labeled supplies action; that box contains traversal loop and three element tiles all marked process. Caption External: caller controls loop. Internal: stream controls traversal. Do not claim parallel or faster always.",
+  "referenceSource": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/package-summary.html"
+}

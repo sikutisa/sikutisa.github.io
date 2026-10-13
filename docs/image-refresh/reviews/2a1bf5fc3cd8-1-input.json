@@ -1,0 +1,33 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Prediction formula tau[n+1]=alpha*t[n]+(1-alpha)*tau[n]; measured t and previous tau distinct.",
+      "passed": true,
+      "evidence": "Formula tau[n+1]=alpha*t[n]+(1-alpha)*tau[n] exact; actual and previous estimate defined."
+    },
+    {
+      "requirement": "Alpha0.5 initial tau1=10; measured bursts6,4,6,4,13,13,13.",
+      "passed": true,
+      "evidence": "Alpha 0,5 decimal-comma notation equals0.5;initial10;actual6,4,6,4,13,13,13 exact."
+    },
+    {
+      "requirement": "Next predictions8,6,6,5,9,11,12 exact without smoothing-derived extra values.",
+      "passed": true,
+      "evidence": "All seven nextvalues8,6,6,5,9,11,12 exact."
+    },
+    {
+      "requirement": "Table or plotted series aligns prediction before versus after observation.",
+      "passed": true,
+      "evidence": "Each row aligns actual,previous,next; no ambiguous smoothed points."
+    },
+    {
+      "requirement": "Explain alpha weighs latest actual burst; no repeat-tau typo.",
+      "passed": true,
+      "evidence": "Footer measured burst and previous estimate equally weighted, no repeated-tau error."
+    }
+  ],
+  "notes": "Full visual inspection and independently computed numerical checks agree; decode before approval."
+}

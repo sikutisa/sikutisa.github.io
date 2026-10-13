@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Gantt P2[0,3],P3[3,6],P1[6,30], proportional3:3:24.",
+      "passed": true,
+      "evidence": "P2[0,3],P3[3,6],P1[6,30] at approx10/10/80% widths, ticks exact."
+    },
+    {
+      "requirement": "All arrivals0, chosen order P2,P3,P1, nonpreemptive.",
+      "passed": true,
+      "evidence": "Subtitleallarrive0/nonpreemptive,ordercorrect."
+    },
+    {
+      "requirement": "Waiting P1=6,P2=0,P3=3 average3ms.",
+      "passed": true,
+      "evidence": "WaitP1=6,P2=0,P3=3avg3."
+    },
+    {
+      "requirement": "Turnaround P1=30,P2=3,P3=6 average13ms.",
+      "passed": true,
+      "evidence": "Turnaround30,3,6avg13."
+    }
+  ],
+  "notes": "Visual inspection confirms all data and proportional chart. PNG decoded before approval."
+}

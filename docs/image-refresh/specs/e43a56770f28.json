@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "RAID organizations",
+  "alt": "RAID 0·1·4·5·6과 다차원 RAID 6의 스트라이핑·복제·P/Q 중복 비교",
+  "requiredChecks": [
+    "SixpanelsRAID0 nonredundantstriping,RAID1 mirrors,RAID4dedicatedparity,RAID5distributedparity.",
+    "RAID6twoindependentP/Q redundancy;multidimensionalRAID6illustrative4x4dataarraywithrightP/QcolumnsandbottomP/Qrows;nobackupclaim."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title RAID organization examples. Six clearly separated panels 2columns3rows. (a) RAID0: fourdiskcolumnswithdataA/B/C/D stripes;label No redundancy. (b) RAID1:fourpairsof identicaldatacopies, labelMirroreddisks. (c) RAID4:fourdatadisksplusdedicatedPparitydisk. (d) RAID5:fivecolumns3stripe rows;P rotatesbetweenlast,secondlast,thirdlastcolumnsonePperrow. (e) RAID6: sixcolumns3striperows,eachrow4datacells+P+Q, P/Q positionsrotate;label P+Qindependentredundancy. (f) MultidimensionalRAID6:conceptualgrid6x6:top-left4x4Data cells;lasttwo rightcolumns P thenQ foreachof4datarows;bottomtwo rows P thenQ under4datacolumns;bottomright2x2cornerblank. LabelRow/columnredundancy. Flatblocksnoactualnumericbits,noinventedrecoverycounts. P and Q distinctblue/teal. Do notmixmirroringwithparity."
+}

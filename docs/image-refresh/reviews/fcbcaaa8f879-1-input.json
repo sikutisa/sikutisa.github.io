@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Client creates Light receiver and LightOnCommand(light), then passes that command to SimpleRemoteControl.setCommand().",
+      "passed": true,
+      "evidence": "Setup client lists creation of Light and LightOnCommand(light), then remote.setCommand(lightOn); correct arrow to invoker."
+    },
+    {
+      "requirement": "Invoker holds a Command and buttonWasPressed() calls slot.execute().",
+      "passed": true,
+      "evidence": "Invoker stores slot:Command, and later buttonWasPressed()→slot.execute()."
+    },
+    {
+      "requirement": "LightOnCommand encapsulates the Light receiver; its execute() delegates to light.on().",
+      "passed": true,
+      "evidence": "LightOnCommand holds receiver:Light and delegates execute to light.on() on Light."
+    },
+    {
+      "requirement": "Creation/configuration precede later invocation; invoker does not call Light.on() directly.",
+      "passed": true,
+      "evidence": "Separate Setup and Later stages; no Invoker→Light shortcut."
+    }
+  ],
+  "notes": "Pass. All labels, operations, slot counts, stage order and direction verified visually against full article and original."
+}

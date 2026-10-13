@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "System states partition into disjoint Safe and Unsafe regions; Deadlocked is a proper subset fully inside Unsafe.",
+      "passed": true,
+      "evidence": "System states container holds two disjoint Safe/Unsafe regions; Deadlocked inset fully inside Unsafe with space outside."
+    },
+    {
+      "requirement": "Unsafe includes states outside Deadlocked; clearly states unsafe does not necessarily mean deadlocked and Safe has a completion sequence.",
+      "passed": true,
+      "evidence": "Safe completion sequence text and Not necessarily deadlocked, Deadlocked⊂Unsafe correct; all extraneous graphs removed."
+    }
+  ],
+  "notes": "Second output inspected in full. Earlier graph/shape error repaired; all numeric and relationship checks passed.",
+  "at": "2026-10-12T22:49:40.853Z",
+  "generatedSha256": "45a3de6e70d6e99bff3e3001b7867623c60a3c5c1c7db9e72a96446cd9712691",
+  "specSha256": "e1d895f059c09ff587069308e55a308e4481b5bba18ba320d70be966a8edc89a"
+}

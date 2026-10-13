@@ -1,0 +1,14 @@
+{
+  "title": "Load-balanced web tier",
+  "purpose": "Explain DNS resolution separately from HTTP requests and distribution to two private web servers.",
+  "alt": "DNS 조회 후 공인 주소의 로드밸런서를 거쳐 사설 웹 서버에 요청하는 흐름",
+  "requiredChecks": [
+    "DNS lookup and public endpoint response are separate from the HTTP path; DNS does not forward HTTP.",
+    "Client HTTP enters public Load balancer, which distributes to two Web servers within Private network.",
+    "Private connections are clearly labeled; server pair is parallel, not chained.",
+    "Labels and arrow directions readable; no guarantee that a single balancer removes all failure points."
+  ],
+  "prompt": "Create a NEW original English technical educational raster diagram, white background, large navy sans-serif labels, flat blue/teal cards, clear separated orthogonal arrows and generous gutters. No logos, decorative imagery, copied textbook composition, numeric benchmarks or absolute availability promises. TITLE \"Load-balanced web tier\". Left-to-right request row: \"Client\"→\"Load balancer\"→parallel \"Web server A\" and \"Web server B\". Loadbalancer subtitle \"Public endpoint\"; both webservers enclosed in \"Private network\" boundary. Connections from balancer toward each server labelled \"Private IP\". Above Client a separate \"DNS resolver\" card with Client→DNS arrow \"1. DNS lookup\" and a separate DNS→Client arrow \"2. Public endpoint\". Main Client→Loadbalancer arrow labelled \"3. HTTP request\". No DNS→loadbalancer connector, no HTTP throughDNS. Footer \"Distribute requests across healthy web servers\". Give two DNS arrows distinct tracks and labels; align everything to avoid intersections.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

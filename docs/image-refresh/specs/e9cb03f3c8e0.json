@@ -1,0 +1,14 @@
+{
+  "title": "Removed observers stop receiving updates",
+  "purpose": "Show state 8 broadcast excluding removed Mouse.",
+  "alt": "Mouse 등록 해제 후 Subject 상태가 5에서 8로 바뀌면 Cat·Dog·Duck에만 8을 전달하는 과정",
+  "requiredChecks": [
+    "Subject changes from 5 to 8.",
+    "Registered roster exactly Cat, Dog and Duck.",
+    "Each of those three receives update(8).",
+    "Mouse is outside roster and receives no arrow/update."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference study blog. Opaque white background, large readable navy sans-serif text, monospaced identifiers, blue/teal/amber flat cards and roomy gutters. No copied irregular bubbles, photographed source or logos. Use plain labelled rectangles for Cat/Dog/Mouse/Duck object names, no animal illustration needed. Include only listed identifiers; do not invent code bodies, modifiers, state values, extra arrows or recipients. Title 'Removed observers stop receiving updates'. LEFT Subject 'state: 5 → 8' 'notifyObservers()'. RIGHT registeredroster exactlyCat/Dog/Duck, threeSubject→cardsarrowslabelupdate(8). BELOW outsidecontainer greyMousecard 'Unsubscribed — no notification'; no Subject→Mouse connector. Footer 'Removing an observer stops future notifications'. No Mousewithinroster, no extra arrows.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

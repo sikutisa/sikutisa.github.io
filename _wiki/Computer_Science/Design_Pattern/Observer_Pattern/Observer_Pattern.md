@@ -18,7 +18,7 @@ tags: [computer science, oop, design pattern]
 
 ## Example
 ### Application Overview
-![Overview](./img/1.png){: w="420" h = "370"}
+![기상 센서와 Weather Station에서 WeatherData가 최신 측정값을 읽고 세 종류 화면을 갱신하는 구조](./img/1-generated.png){: w="760"}
 *Create an application using the WeatherData object to update three displays*
 
 ### The WeatherData class
@@ -71,32 +71,32 @@ public class WeatherData {
 * Publisher & Subscriber Model
     * Publisher : Subscriber = Subject : Observer
 
-![Overview](./img/2.png){: w="440" h = "380"}
+![상태 2를 가진 Subject가 등록된 Cat·Dog·Mouse에만 알리고 미등록 Duck에는 알리지 않는 모델](./img/2-generated.png){: w="760"}
 *Model Overview*
 
-![Example](./img/3.png){: w="440" h = "350"}
+![Duck이 Subject에 등록을 요청하고 기존 관찰자 목록에는 Cat·Dog·Mouse가 있는 단계](./img/3-generated.png){: w="760"}
 *Duck wants to subscribe*
 
-![Example](./img/4.png){: w="400" h = "350"}
+![Duck 등록이 완료되어 Cat·Dog·Mouse·Duck 네 객체가 관찰자 목록에 포함된 단계](./img/4-generated.png){: w="760"}
 *Duck is now an observer, too*
 
-![Example](./img/5.png){: w="400" h = "350"}
+![Subject 상태가 2에서 5로 바뀌면 등록된 Cat·Dog·Mouse·Duck 네 관찰자에게 5를 전달하는 과정](./img/5-generated.png){: w="760"}
 *Notifying the observers*
 
-![Example](./img/6.png){: w="400" h = "350"}
+![Mouse가 Subject에 등록 해제를 요청하며 현재 상태 5와 기존 네 관찰자 목록을 보여주는 단계](./img/6-generated.png){: w="760"}
 *Mouse wants to unsubscribe*
 
-![Example](./img/7.png){: w="410" h = "350"}
+![Mouse 등록 해제 후 Subject 상태가 5에서 8로 바뀌면 Cat·Dog·Duck에만 8을 전달하는 과정](./img/7-generated.png){: w="760"}
 *Notifying the observers*
 
 ### The Observer Pattern Defined
 * The Observer Pattern defines a **one-to-many dependency** between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
-![Example](./img/8.png){: w="440" h = "360"}
+![하나의 Subject 상태 변화가 여러 등록 Observer의 자동 알림·갱신으로 이어지는 일대다 관계](./img/8-generated.png){: w="760"}
 
 ### Class Diagram for Observer Pattern
 
-![Diagram](./img/9.png){: w="380" h = "360"}
+![Subject·Observer 인터페이스와 구체 구현, 관찰자 목록 및 상태 조회 관계](./img/9-generated.png){: w="760"}
 
 ## The Power of Loose Coupling
 * Principle of loose coupling
@@ -106,7 +106,7 @@ public class WeatherData {
 
 ## Designing the Weather Station
 
-![Diagram](./img/10.png){: w="450" h = "390"}
+![WeatherData의 Subject 구현과 Observer·DisplayElement를 구현한 세 디스플레이의 측정값 푸시 갱신](./img/10-generated.png){: w="760"}
 
 ### Preparing Interfaces
 ```java
@@ -210,7 +210,7 @@ public class WeatherStation {
 ```
 
 ## Using Java’s Official Observable Class
-![Diagram](./img/11.png){: w="450" h = "390"}
+![레거시 Java Observable을 상속한 WeatherData와 Observer·DisplayElement 구현, setChanged 알림과 데이터 조회 흐름](./img/11-generated.png){: w="760"}
 
 ### How to Use Observable Class
 * Observable (Publisher) side

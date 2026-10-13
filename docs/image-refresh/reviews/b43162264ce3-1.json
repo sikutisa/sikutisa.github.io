@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Shared region includes InnoDB buffer pool, MyISAM key cache, binary log buffer, redo log buffer and table cache.",
+      "passed": true,
+      "evidence": "Read shared column all5 required names, including binary and redo log buffers separately."
+    },
+    {
+      "requirement": "Two separate session regions each contain join, sort, network and read buffers, with no cross-session sharing connector.",
+      "passed": true,
+      "evidence": "SessionA/B each shows join,sort,network,read; no connector between localbuffer lists."
+    },
+    {
+      "requirement": "Shared scope is accessible by both sessions; local scope is owned by each connection.",
+      "passed": true,
+      "evidence": "Shared access bus from both connection regions to sharedgroup; both private-to-each-connection captions."
+    },
+    {
+      "requirement": "Caption states query buffers are allocated as needed; no fixed startup-allocation or size claims.",
+      "passed": true,
+      "evidence": "Footer Query buffers are allocated as needed; no bytecounts or startupallocationclaims."
+    }
+  ],
+  "notes": "Inspected each arrow endpoint, region boundary and label. PIL verify/load passed. Failed results are not applied.",
+  "at": "2026-10-12T12:42:35.724Z",
+  "generatedSha256": "4cbc4613378c24a6918b37dde1a49ee6017d08c3b1314b41d54dd9c65f9eedef",
+  "specSha256": "4d7437615729afa4ae1b0598ec495ff40b328698b2ff1034c71dbd35ac808b31"
+}

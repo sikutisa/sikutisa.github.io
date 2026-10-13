@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Choosing a victim page",
+  "purpose": "Show first three references filling three frames and leave fourth reference2 as an unanswered replacement choice.",
+  "requiredChecks": [
+    "Five snapshots show empty, after7, after0, after1, and request2.",
+    "Three-frame states are [—,—,—], [7,—,—], [7,0,—], [7,0,1], and [7,0,1] unchanged while2 is pending.",
+    "The fourth requested page2 is outside the full frames; no victim is selected.",
+    "The question explicitly asks which of7,0,1 should be replaced; labels and all frame counts are exact."
+  ],
+  "alt": "Three frames fill with 7, 0 and 1; requesting page 2 then requires choosing a victim",
+  "prompt": "Create a NEW original English technical educational diagram. White background, crisp large navy sans-serif text, flat blue/teal shapes, minimal clean connectors, generous margins, no logos or watermark, no decorative or traced textbook artwork. TITLE \"Choosing a victim page\". Show FIVE equally spaced snapshot panels left-to-right, each with exactly THREE frame cells. Panel headings and TOP-TO-BOTTOM values:\n\"Initially empty\": —, —, —\n\"After reference 7\": 7, —, —\n\"After reference 0\": 7, 0, —\n\"After reference 1\": 7, 0, 1\n\"Request page 2\": 7, 0, 1.\nThe final snapshot must still contain7,0,1: page2 is requested but NOT loaded. Above final snapshot put a separate teal box \"2\" and a dashed arrow toward the full three frames labeled \"Page fault\". Under the panels, exact question \"Which page should be replaced: 7, 0, or 1?\" Do not select or mark any victim and do not add a fourth frame. Keep all empty cells as em dash."
+}

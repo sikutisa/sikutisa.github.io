@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Five rows T0..T4, A B C; Allocation 0 1 0;2 0 0;3 0 2;2 1 1;0 0 2 and Max 7 5 3;3 2 2;9 0 2;2 2 2;4 3 3.",
+      "passed": true,
+      "evidence": "All 30 Allocation/Max entries match original."
+    },
+    {
+      "requirement": "Need=Max−Allocation rows 7 4 3;1 2 2;6 0 0;0 1 1;4 3 1; Available=(3,3,2).",
+      "passed": true,
+      "evidence": "Need 743/122/600/011/431 and Available332 correct."
+    },
+    {
+      "requirement": "Safe sequence T1→T3→T4→T0→T2 is valid; Work final10 5 7; exact aligned table, readable.",
+      "passed": false,
+      "evidence": "Safe sequence and final Work correct, but unsolicited graph labels available counts as total instances and has impossible reversed requests. Reject extra graph."
+    }
+  ],
+  "notes": "Rejected despite correct matrix entries: additional graph relationships or actual graph endpoints inconsistent with source. Preserve original until repaired.",
+  "at": "2026-10-12T22:47:47.664Z",
+  "generatedSha256": "22809d5f04f44d50d4b05e699e813ca08efe9c92b05e2ff8d115dbafb64ec4c3",
+  "specSha256": "4106f92ec3f8ee803fdfea8fb5d3fade05741443435649152c0ce0675fbb1d9d"
+}

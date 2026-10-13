@@ -1,0 +1,15 @@
+{
+  "title": "FCFS: P2 → P3 → P1",
+  "purpose": "Show FCFS outcome with shorter jobs preceding long P1.",
+  "alt": "FCFS에서 P2·P3·P1 순으로 실행할 때 시간 경계 0·3·6·30ms와 평균 대기 3ms",
+  "requiredChecks": [
+    "Gantt P2[0,3],P3[3,6],P1[6,30], proportional3:3:24.",
+    "All arrivals0, chosen order P2,P3,P1, nonpreemptive.",
+    "Waiting P1=6,P2=0,P3=3 average3ms.",
+    "Turnaround P1=30,P2=3,P3=6 average13ms."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog. Opaque white background, navy large readable type, restrained blue/teal/amber flat cards, generous spacing. Draw precise listed data only, no logos or textbook composition. Title 'FCFS: P2 → P3 → P1'. Subtitle 'All arrive at 0; non-preemptive FCFS'. PROPORTIONAL Gantt P2 first10%,P3 next10%,P1 last80%. Onlyboundaryticks0,3,6,30 ms. Table Process|Waiting(ms)|Turnaround(ms), P1|6|30,P2|0|3,P3|3|6. Footer 'Average waiting: 3 ms • Average turnaround: 13 ms'. No other process segments.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "calculationVerified": true
+}

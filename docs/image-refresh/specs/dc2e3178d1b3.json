@@ -1,0 +1,14 @@
+{
+  "title": "Command collaboration over time",
+  "purpose": "Separate setup and invocation in a four-participant sequence.",
+  "alt": "Receiver·Client·Command·Invoker 사이에서 생성, 등록, execute, action 순서로 진행되는 시퀀스",
+  "requiredChecks": [
+    "Four lifelines labelled Receiver, Client, Command, Invoker run top to bottom.",
+    "Setup: Client→Command new Command(receiver), then Client→Invoker setCommand(command).",
+    "Invocation: Invoker→Command execute(), then Command→Receiver action().",
+    "Time flows downward; the receiver action follows execute and no reverse delegation."
+  ],
+  "prompt": "Create a NEW ORIGINAL raster technical diagram for an IT study blog, opaque white background, clean navy sans-serif typography, restrained blue/teal/amber flat cards, spacious margins, exact monospaced class and method identifiers, no logos, source screenshots or copied slide composition. All English text clearly readable. Title 'Command collaboration over time'. Draw a large spacious sequence diagram. Columns LEFT TO RIGHT Receiver, Client, Command, Invoker; dashed vertical lifelines. Time DOWN with small 'time ↓' on left. At row1 Client→Command arrow labelled '1. new Command(receiver)'. row2 Client→Invoker arrow labelled '2. setCommand(command)'. Clear horizontal divider 'Later: invocation'. row3 Invoker→Command left-pointing arrow '3. execute()'. row4 Command→Receiver left-pointing arrow '4. action()'. Each arrow must end on the correct lifeline with arrowhead. Avoid returns, extra messages, crossed lifelines or huge activation boxes. Footer 'Setup binds receiver and request; invoker later executes the command'.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

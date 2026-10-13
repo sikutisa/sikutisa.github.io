@@ -1,0 +1,14 @@
+{
+  "title": "News feed read path",
+  "purpose": "Illustrate article's ordered feed retrieval, post-ID cache and content hydration, with DB fallback on cache miss instead of mandatory DB reads.",
+  "alt": "뉴스 피드 읽기 요청의 인증·처리율 제한, 피드 ID 조회 및 사용자·포스팅 캐시 결합",
+  "requiredChecks": [
+    "GET feed request travels Client→Load balancer→Web servers→News feed service; Web servers authenticate and rate limit.",
+    "News feed cache provides Post IDs, while User cache and Post cache provide profile and post content to service.",
+    "User DB and Post DB are fallback sources through cache-miss paths, not mandatory sequential reads for each cached response.",
+    "JSON feed response goes back to Client; request/response directions and labels legible."
+  ],
+  "prompt": "Create a NEW original raster diagram for a technical blog. Clear English labels, large navy sans-serif on white, flat blue/teal cards, no logos, no copied-book layout or decorations, generous connector gutters. TITLE \"News feed read path\". Fresh landscape flow. Top row LEFT→RIGHT \"Client\"→\"Load balancer\"→\"Web servers\"→\"News feed service\". First request arrow \"GET feed\"; Web servers subtitle \"Authenticate / rate limit\". Below service three parallel cache cards connected bidirectionally to service: \"News feed cache\" subtitle \"Post IDs\"; \"User cache\" subtitle \"Names / photos\"; \"Post cache\" subtitle \"Post content / media\". Under User cache place \"User DB\" with bidirectional DASHED link \"Cache miss\". Under Post cache place \"Post DB\" with bidirectional DASHED link \"Cache miss\". No database under news feed cache required. Dedicated empty upper gutter for long return arrow from News feed service back to Client labelled \"JSON feed\"; no return arrow through intermediate boxes. Bottom caption \"Resolve feed IDs, then hydrate user and post data\". Content cache hits must visibly avoid databases. No posting/fanout or notification pipeline in this read-only diagram.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

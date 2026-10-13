@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Free-frame list",
+  "purpose": "Show a linked list of available physical-frame numbers, preserving the example values.",
+  "requiredChecks": [
+    "Head points to frame7, then97,15,126,ellipsis,75 in this order.",
+    "Every link is unidirectional to the next free frame and no circular link is invented.",
+    "Title and annotation identify this as a list of available physical frames, not a page reference string.",
+    "All six example tokens and the head label are readable."
+  ],
+  "alt": "Free-frame linked list: head points through available frames 7, 97, 15, 126, …, 75",
+  "prompt": "Create a NEW original technical educational diagram for an English operating-systems blog. White background, dark navy crisp sans-serif text, blue and teal flat boxes, clean thin arrows, ample whitespace, large legible labels, no copied textbook artwork, no logos or watermark. TITLE \"Free-frame list\". A wide landscape educational diagram with exactly this simple left-to-right chain: \"head\" → box \"7\" → box \"97\" → box \"15\" → box \"126\" → plain ellipsis \"…\" → box \"75\". Connectors all point to the right. Uniform blue/teal boxes and clear navy arrows; no circular pointer, no extra frame values. Subtitle exactly \"Available physical frames\". Footer exactly \"Allocate a free frame when a page must be loaded\". Frame identifiers are examples, NOT a memory-reference string. Keep a compact layout with generous margins; no other illustrations."
+}

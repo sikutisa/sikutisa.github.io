@@ -17,7 +17,7 @@ tags: [computer science, os]
 * Heap section: memory that is dynamically allocated during program run time
 * Stack section: temporary data storage when invoking functions such as function parameters, return addresses, and local variables
 
-![Process in Memory](./img/1.png){: w="290" h = "400"}
+![하위 주소의 text·data·heap과 상위 주소의 stack 및 서로 향하는 성장 방향](./img/1-generated.png){: w="760"}
 *Layout of a process in memory*
 
 ### State of Process New: the process is being created.
@@ -28,7 +28,7 @@ tags: [computer science, os]
 * **Ready**: The process is waiting to be assigned to a processor.
 * **Terminated**: The process has finished execution.
 
-![Process State](./img/2.png){: w="380" h = "300"}
+![new·ready·running·waiting·terminated 상태와 여섯 전이](./img/2-generated.png){: w="760"}
 *Diagram of process state*
 
 ### Process Control Block
@@ -42,7 +42,7 @@ tags: [computer science, os]
     * Accounting information
     * I/O status information
 
-![PCB](./img/3.png){: w="280" h = "365"}
+![프로세스 상태·번호·프로그램 카운터·레지스터·메모리 한계·열린 파일을 포함한 PCB](./img/3-generated.png){: w="760"}
 *Process control block (PCB)*
 
 ### Summary
@@ -68,13 +68,13 @@ tags: [computer science, os]
 * These queues are generally implemented 
     * in the linked lists of PCBs.
 
-![ReadyQueueWaitQueue](./img/4.png){: w="400" h = "400"}
+![head·tail 포인터와 PCB 연결 리스트로 구현한 준비 큐 및 장치 대기 큐](./img/4-generated.png){: w="760"}
 *The ready queue and wait queues*
 
 * Queueing Diagram
     * as a common represemtation of process scheduling.
 
-![QueueingDiagram](./img/5.png){: w="440" h = "380"}
+![CPU 실행 후 I/O·시간 만료·자식 대기·인터럽트 대기로 분기하고 준비 큐로 돌아가는 스케줄링](./img/5-generated.png){: w="760"}
 *Queueing-diagram representation of process scheduling*
 
 ### Context Switch
@@ -85,7 +85,7 @@ tags: [computer science, os]
     * performs a *state save* of the current process
     * and a *state restore* of a different process.
 
-![ContextSwitch](./img/6.png){: w="400" h = "430"}
+![P0 상태 저장·P1 복원 후 P1 실행, 다시 P1 저장·P0 복원하는 문맥 교환](./img/6-generated.png){: w="760"}
 *Diagram showing context switch from process to process*
 
 ## Operations on Processes
@@ -94,7 +94,7 @@ tags: [computer science, os]
     * the creating process: a *parent* process
     * a newly created process: a *child* process
 
-![ProcessTree](./img/7.png){: w="500" h = "450"}
+![init PID1에서 로그인·커널 스레드·sshd와 그 자식들로 이어지는 예시 프로세스 트리](./img/7-generated.png){: w="760"}
 *A tree of processes on a typical Linux system*
 
 * Two possibilities for execution
@@ -129,7 +129,7 @@ int main()
 }
 ```
 
-![CodeExample](./img/8.png){: w="400" h = "350"}
+![fork() 반환값으로 분기한 부모 wait()와 자식 exec()·exit() 후 부모 재개](./img/8-generated.png){: w="760"}
 *Process creation using the fork() system call*
 
 * A process terminates
@@ -311,7 +311,7 @@ int main()
     * **shared memory**
     * **message passing**
 
-![IPCModel](./img/9.png){: w="430" h = "400"}
+![프로세스 A·B의 공유 메모리 접근과 커널 메시지 큐를 통한 통신 비교](./img/9-generated.png){: w="760"}
 *Communication models: (a) Shared memory and (b) Message Passing*
 
 ## IPC in Shared-Memory Systems
@@ -557,7 +557,7 @@ int main()
 * *unidirectional*: only *one-way* communication is possible.
 * *two-way* communication? use two pipes!
 
-![OrdinaryPipe](./img/10.png){: w="420" h = "360"}
+![fork 후 물려받은 읽기·쓰기 디스크립터를 정리하고 부모에서 자식으로 데이터를 보내는 파이프](./img/10-generated.png){: w="760"}
 *File descriptors for an ordinary pipe*
 
 * On UNIX systems, ordinary pipes are constructed using the function:
@@ -617,7 +617,7 @@ int main()
 ### Socket
 A socket is identified by an *IP address* concatenated with a *port* number.
 
-![Socket](./img/11.png){: w="330" h = "370"}
+![호스트 IP와 포트 번호를 조합한 두 소켓 끝점의 통신 예시](./img/11-generated.png){: w="760"}
 *Communication using sockets*
 
 * Java provides a much easier interface to sockets and provides three different types of sockets.

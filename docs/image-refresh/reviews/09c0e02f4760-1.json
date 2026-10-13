@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Four snapshots high memorytoplowbottom.1OS,P5,P8,P2;2OS,P5,Hole,P2;3OS,P5,P9,Hole,P2;4OS,Hole,P9,Hole,P2.",
+      "passed": true,
+      "evidence": "Four snapshots exact OS/P5/P8/P2; OS/P5/Hole/P2; OS/P5/P9/Hole/P2; OS/Hole/P9/Hole/P2; highabove/lowbelow."
+    },
+    {
+      "requirement": "Transitions P8 exits→P9 allocated in prior hole with remainder→P5 exits; no compaction or moving P2/P9; blue holes distinct.",
+      "passed": true,
+      "evidence": "Transition labelsP8exits/P9allocated/P5exitscorrect; holesclearlylabelled, P9retainedsamepositionbetween3/4, nocompactionoperation."
+    }
+  ],
+  "notes": "Direct full-image visual review against article and original, all arrow endpoints/branches/values checked. Failed item keeps original reference.",
+  "at": "2026-10-12T23:03:50.281Z",
+  "generatedSha256": "eb507ecb76a5ae512026bcf8009ae31213bd67b9c5e027f1fd1a8a7cedf4b43b",
+  "specSha256": "daa9a74db23fc8e18d3b610e5ecd1d768bcefc0bfe0e1cfc6866befa515b03f8"
+}

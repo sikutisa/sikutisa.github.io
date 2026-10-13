@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "UIToolKit uses only WidgetFactory, TextBox and ScrollBar abstractions; no client→concrete product creation.",
+      "passed": true,
+      "evidence": "UIToolKit uses both abstract factory and product interface card via correctly originating arrows."
+    },
+    {
+      "requirement": "WidgetFactory declares createTextBox(): TextBox and createScrollBar(): ScrollBar.",
+      "passed": true,
+      "evidence": "Factory createTextBox and createScrollBar exact return signatures."
+    },
+    {
+      "requirement": "WinXPWidgetFactory and MotifWidgetFactory implement WidgetFactory; each creates its matching TextBox/ScrollBar family.",
+      "passed": true,
+      "evidence": "Both actual factory cards explicitly state implements WidgetFactory; creates branches lead to their matching pair."
+    },
+    {
+      "requirement": "WinXPTextBox/MotifTextBox implement TextBox; WinXPScrollBar/MotifScrollBar implement ScrollBar; no cross-family creation.",
+      "passed": true,
+      "evidence": "TextBox and ScrollBar product captions match their interface and family."
+    }
+  ],
+  "notes": "Pass after visual inspection. Previously detached implements arrows removed and replaced by explicit relation inside actual concrete factory cards; other dependencies preserved."
+}

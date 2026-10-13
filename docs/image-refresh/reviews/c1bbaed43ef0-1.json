@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "5philosophersP0..P4and5chopsticksC0..C4aroundtable.",
+      "passed": false,
+      "evidence": "P0~P4 다섯 명의 배열과 C0~C4 위치는 맞지만 각 C가 두 개의 젓가락으로 생성됨."
+    },
+    {
+      "requirement": "Ci betweenPi andP(i+1)mod5;eachneeds2adjacentsticks,not10independentsticks.",
+      "passed": false,
+      "evidence": "실제로 젓가락 10개이므로 단일 자원 5개 공유 명세 위반. 각 쌍을 한 막대로 수정 필요."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:30:38.972Z",
+  "generatedSha256": "b95f475873ea88d8ad2473e3e513fe2364e1af4429829dd4a0268aaeaf96eff4",
+  "specSha256": "17497d1542906f2ccfa611bd2c6c408aca273536752a806e7d821b4591fee559"
+}

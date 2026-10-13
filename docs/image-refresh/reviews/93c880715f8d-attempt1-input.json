@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "P0andP1forkrequestPIDsharednext_available_pid2615bothread.",
+      "passed": true,
+      "evidence": "P0·P1 request/read2615 및 중앙 next_available_pid2615와 양쪽 반환2615 연결 정확."
+    },
+    {
+      "requirement": "Bothreceivechild2615asincorrectrace,explicitconceptualbrokenallocatornotrealOSnormalfork.",
+      "passed": false,
+      "evidence": "잘못된 할당자/정상 OS 구분은 맞으나 마지막 줄이 제작 지시문을 그대로 노출. 제거 후 교체."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Address bit split",
+  "alt": "m비트 논리 주소를 m−n비트 페이지 번호와 n비트 오프셋으로 분할",
+  "requiredChecks": [
+    "Logicaladdressm bits split high-orderp(m−n bits) andlow-orderd(n bits).",
+    "Page size=2^n bytes, logicaladdressspace=2^m bytes; nofixedbitcounts or wrongexponents."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Splitting an m-bit logical address. Wide two-partbarleftPage numberp annotated m−n bits; rightPage offsetd annotated n bits. Topbraceacrosswholebar m bits. High-orderbitslabelleft,low-orderbitsright. Footer Page size = 2^n bytes; Logical address space = 2^m bytes. Use readable superscript forpowers. No numbers or otherdiagrams."
+}

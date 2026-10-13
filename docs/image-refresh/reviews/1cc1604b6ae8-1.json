@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Directoryjeepindexblock19;indexentries9,16,1,10,25,-1,-1,-1.",
+      "passed": true,
+      "evidence": "jeep index block19, 9·16·1·10·25·-1·-1·-1 순서 확인."
+    },
+    {
+      "requirement": "Eachvalidindexentryindependentlypointsitsdatablock;nochainbetween data; -1unusedillustrative.",
+      "passed": true,
+      "evidence": "유효 인덱스 각 행이 대응 데이터에 별개 화살표 연결, 데이터끼리 연결 없음. -1 미사용 안내."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:13:21.861Z",
+  "generatedSha256": "a2a4fe3709636c969618790af940667a2cc61e56fc5dc1137f7b095da135834e",
+  "specSha256": "1d7fac27ae1660069c45b835faba94550278b5fc4dd22b77ab567c9a1305e76c"
+}

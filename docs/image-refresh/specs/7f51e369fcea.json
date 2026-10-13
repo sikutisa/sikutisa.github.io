@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Many-to-one",
+  "alt": "4개의 사용자 스레드가 한 개의 커널 스레드에 대응하는 모델",
+  "requiredChecks": [
+    "UserthreadsU1..U4aboveboundary,maponeK1below.",
+    "Four→one,nounintendedextraKthreads;clearuserspace/kernelspace."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Many-to-one model. User space above line four nodes U1,U2,U3,U4 labelled User threads. Four clear links converge to ONE Kernel thread K1 in Kernel space below. Exactly4user1kernel. Lines signify mapping not message flow. No extra threads."
+}

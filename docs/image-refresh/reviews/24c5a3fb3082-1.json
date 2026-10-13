@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Producers→Notification API; API validates/authenticates and separately accesses Metadata DB and Metadata cache.",
+      "passed": true,
+      "evidence": "Producers→API Authenticate/validate/preferences; separatebidirectionalMetadataDB/cache links."
+    },
+    {
+      "requirement": "Four separate APNs/FCM/SMS/Email queues feed matching worker pools, which call matching providers and endpoints.",
+      "passed": true,
+      "evidence": "Read4queues/workerpools/provider/endpoints APNs/iOS,FCM/Android,SMS/Phone,Email/Mailbox allindependent."
+    },
+    {
+      "requirement": "Failure from worker delivery returns through Retry queue to corresponding channel queue; no retry arrow from successful user delivery.",
+      "passed": true,
+      "evidence": "Dashed Failedsends fromWorkerpools boundary→Retryqueue; Retrymatchingchannel dottedreturn tocommonqueueinputbus, notendpoints."
+    },
+    {
+      "requirement": "Caption mentions event-ID deduplication; no guaranteed exactly-once delivery, all labels legible.",
+      "passed": true,
+      "evidence": "Footer UseeventIDstodetectduplicatesends; alllabelslegible, noexactlyonceclaim."
+    }
+  ],
+  "notes": "Individually viewed all components and traced arrows against full document. Generated outputs decoded with PIL verify/load. Failed result is not applied.",
+  "at": "2026-10-12T13:01:33.618Z",
+  "generatedSha256": "34e9edfe9126cff3500059c5006478fb1437fef23f8e7aa9aaeed760fb4df112",
+  "specSha256": "e24d23246bf4def18db59eae5ce78f6c017eac77ccb40b6cb125c8c4e4515a80"
+}

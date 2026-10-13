@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Abstract Rectangle contains length,width,getLength/getWidth only.",
+      "passed": true,
+      "evidence": "Abstract Rectangle only primitive fields and getters."
+    },
+    {
+      "requirement": "GeometricRectangle extends Rectangle and owns area(); GraphicalRectangle extends Rectangle and owns draw().",
+      "passed": false,
+      "evidence": "Both class captions extend Rectangle correctly, but redundant extends arrows begin at enclosing responsibility-panel borders that also contain applications, not actual class cards. Remove these ambiguous extra connectors."
+    },
+    {
+      "requirement": "Geometry application depends on GeometricRectangle; graphical application on GraphicalRectangle.",
+      "passed": true,
+      "evidence": "Each app correctly targets own geometric or graphical class operation."
+    },
+    {
+      "requirement": "GUI dependency belongs to graphical side only; no GeometricRectangle→GUI coupling.",
+      "passed": true,
+      "evidence": "Only graphical class renders to GUI, no geometric GUI dependency."
+    }
+  ],
+  "notes": "Fail. Relationship connector direction/origin requires repair; retain original until reinspection.",
+  "at": "2026-10-12T15:40:21.073Z",
+  "generatedSha256": "8451c0d39af0ea5909884b603ff7785fa978291c37c081e9079695b27c8a9dc2",
+  "specSha256": "abff42baae55d96248714c27ac2118754352ff59525d20543b0679b20070f1ab"
+}

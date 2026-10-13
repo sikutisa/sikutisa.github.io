@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Lost update interleaving",
+  "alt": "초기 count 5가 생산자·소비자 명령 교차 실행으로 4가 되는 예시",
+  "requiredChecks": [
+    "T0producerread5,T1increment6,T2consumerread5,T3decrement4,T4producerstore6,T5consumerstore4.",
+    "Initialcount5,final4vsserial5;6exactrowsregisterandcountvalues."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Interleaving example: lost update. Initial count = 5. Table columns Time | Process | Instruction | Result. Exact rows T0 | Producer | register1 = count | register1 = 5 ; T1 | Producer | register1 = register1 + 1 | register1 = 6 ; T2 | Consumer | register2 = count | register2 = 5 ; T3 | Consumer | register2 = register2 - 1 | register2 = 4 ; T4 | Producer | count = register1 | count = 6 ; T5 | Consumer | count = register2 | count = 4 . Footer Final count = 4; a serial increment and decrement would leave 5. Preserve all instructions, no shortcuts."
+}

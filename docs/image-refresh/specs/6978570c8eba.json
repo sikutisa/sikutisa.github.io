@@ -1,0 +1,14 @@
+{
+  "title": "Composition: depend on a contract",
+  "purpose": "Show static type-level composition and runtime implementation object.",
+  "alt": "ClassA가 인터페이스를 통해 Implementation 객체를 합성하는 타입 관계와 실행 시 객체 참조",
+  "requiredChecks": [
+    "Type view ClassA has an Interface reference; Implementation implements Interface.",
+    "Runtime view :ClassA holds a reference to :Implementation object.",
+    "No ClassA extends Implementation relationship.",
+    "Caption distinguishes compile-time contract from selected runtime implementation."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT blog, opaque white background. Navy readable sans serif, monospaced method names, blue/teal/amber flat cards and generous padding. Use exact identifiers, no extra methods/access modifiers/complexity claims/copied slide arrangement. Title 'Composition: depend on a contract'. Two panels. LEFT 'Type view': ClassA card 'contains an Interface reference' arrow 'has a' to Interface card marked interface; Implementation card 'implements Interface' below with upward implements arrow to Interface. RIGHT 'Runtime object view': :ClassA object rightward 'holds reference to' :Implementation object. Footer 'Depend on the contract; compose an implementation object'. No methods, no inheritance ClassA→Implementation.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

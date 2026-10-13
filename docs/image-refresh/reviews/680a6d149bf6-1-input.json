@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Client uses Target.request() with no direct Adaptee dependency.",
+      "passed": true,
+      "evidence": "Client→Targetusesarrow,Targetrequest(),nodirectAdapteeuse."
+    },
+    {
+      "requirement": "Adapter inherits both Target and Adaptee in the class-adapter concept, with arrows pointing toward base types.",
+      "passed": true,
+      "evidence": "AdaptertwoinheritsarrowspointtobaseTargetandAdapteeactualcards."
+    },
+    {
+      "requirement": "Target has request(); Adaptee has specificRequest(); Adapter overrides request().",
+      "passed": true,
+      "evidence": "Targetrequest(),AdapteespecificRequest(),Adapterrequest()visible;bottomstatesinheritedspecificRequestcall."
+    },
+    {
+      "requirement": "No stored adaptee field or composition link; inherited specificRequest() translation explicit and language dependence acknowledged.",
+      "passed": true,
+      "evidence": "Noadapteefieldorwrapsline;footeracknowledgesdependsonlanguagesupport."
+    }
+  ],
+  "notes": "Pass. Interfaces, fields, relationship direction and method mappings verified visually against article/code."
+}

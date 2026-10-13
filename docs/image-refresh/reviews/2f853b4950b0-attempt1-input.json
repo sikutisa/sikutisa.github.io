@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "CPU, memory, disk controller, USB controller, graphics adapter connected to shared bus.",
+      "passed": true,
+      "evidence": "CPU와 disk/USB/graphics controller 및 Main memory가 공유 버스에 연결된다."
+    },
+    {
+      "requirement": "Disks→diskcontroller; mouse/keyboard/printer→USBcontroller; monitor→graphicsadapter; peripherals not directly on main bus.",
+      "passed": true,
+      "evidence": "두 디스크는 disk controller, mouse/keyboard/printer는 USB controller, monitor는 graphics adapter에만 연결된다."
+    }
+  ],
+  "notes": "직접 원본 해상도에서 글자·관계·방향을 확인. PNG 디코딩 후 해시 승인."
+}

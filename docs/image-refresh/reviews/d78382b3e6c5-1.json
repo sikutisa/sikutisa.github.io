@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Thread nodes T1,T2,T3; resource R1 one instance, R2 two, R3 one, R4 three unallocated.",
+      "passed": true,
+      "evidence": "T1/T2/T3 circles; R1/R3 one dot, R2 two and R4 three unused dots visible."
+    },
+    {
+      "requirement": "Requests exactly T1→R1 and T2→R3. Assignments exactly R1→T2, R2→T1, R2→T2, R3→T3.",
+      "passed": true,
+      "evidence": "Chain T1→R1→T2→R3→T3 plus R2 assignments to T1 and T2; exactly six edges."
+    },
+    {
+      "requirement": "No outgoing request from T3; no directed cycle and no deadlock; clear arrowheads and no extra edges.",
+      "passed": true,
+      "evidence": "T3 has no outgoing arrow; no cycle, caption and legend correct."
+    }
+  ],
+  "notes": "Direct visual comparison with original graph and full article. Exact edge endpoints and instance counts checked; PNG decoder checked separately.",
+  "at": "2026-10-12T22:43:55.516Z",
+  "generatedSha256": "de0051ed79540aceebf9e72dae3a015e99bda3ce9d33f1aaed866d154021eb2d",
+  "specSha256": "7b9d7908c0d87860682ab575e15f967f80205d4c747c52650ac2c2d9e06bf0af"
+}

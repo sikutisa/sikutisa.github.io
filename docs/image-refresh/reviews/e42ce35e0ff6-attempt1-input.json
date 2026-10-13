@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "CPU(s) with cache and thread of execution; memory instructions/data; I/O devices.",
+      "passed": true,
+      "evidence": "CPU(s)의 실행 스레드/Cache와 Main memory Instructions/Data 및 I/O device(s)가 정확하다."
+    },
+    {
+      "requirement": "CPU↔memory instruction/data paths, CPU→device I/O request, device↔CPU data, device→CPU interrupt, device↔memory DMA bypasses CPU.",
+      "passed": false,
+      "evidence": "요청·인터럽트·DMA와 CPU-memory는 맞지만 Data 양방향 선의 윗끝이 허공에 떠 있어 CPU 연결이 누락되었다."
+    }
+  ],
+  "notes": "직접 시각 검수 및 PNG 디코딩. 불합격 그림은 원본 참조를 유지한다."
+}

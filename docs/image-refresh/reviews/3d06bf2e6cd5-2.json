@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Policy Layer→Mechanism Layer→Utility Layer dependency order.",
+      "passed": true,
+      "evidence": "Generic Policy Layer→Mechanism Layer→Utility Layer row, exactly two rightward depends-on arrows."
+    },
+    {
+      "requirement": "Arrows represent compile/source dependencies, not response flow.",
+      "passed": true,
+      "evidence": "Footer source dependencies, no runtime flow interpretation."
+    },
+    {
+      "requirement": "High-level policy is tied to concrete lower-layer implementation.",
+      "passed": true,
+      "evidence": "Before subtitle explicitly direct dependencies on lower layers."
+    },
+    {
+      "requirement": "No inversion or abstraction shown in this before design.",
+      "passed": true,
+      "evidence": "No abstraction/inversion; invented concrete example names removed."
+    }
+  ],
+  "notes": "Direct visual inspection confirms all contract labels, ownership, arrow directions and multiplicities; PNG decode before approval.",
+  "at": "2026-10-12T15:56:51.259Z",
+  "generatedSha256": "d13249103b4249105a4681988baa6d011af9e618317b9c75152f5179480d795f",
+  "specSha256": "3b816c090a49bedcf29a2d76ea7bb37c9b783c9c12d4ce59a8e258c0e4ea663d"
+}

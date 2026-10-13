@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "C-SCAN disk scheduling",
+  "alt": "상향 C-SCAN 순서와 199에서 0으로 무서비스 복귀하는 이동 비용",
+  "requiredChecks": [
+    "53→65→67→98→122→124→183→199;wrap199→0withoutservice;0→14→37.",
+    "Countedmovement146+37=183excludingwrap199;physicalmovementincludingwrap382;labelsconventionexplicit."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title C-SCAN disk scheduling. Header Queue98,183,37,122,14,124,65,67;Head53;range0–199;directionincreasing. Mainpathnumbercards53→65→67→98→122→124→183→199, dashedwraparrow199→0label No requests serviced during return, then0→14→37. Mark0/199boundarynotqueuedrequests. Footer Countedmovementexcludingreturn: (199−53)+37=183cylinders. Smallsecondline Including199→0return:183+199=382cylinders. Arrowsallclear,wrapdashed,toavoidmistake. Thisisorderedtraversalnotproportionalplot."
+}

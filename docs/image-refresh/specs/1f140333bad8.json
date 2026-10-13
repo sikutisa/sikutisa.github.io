@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Frames and page faults",
+  "purpose": "Illustrate a decreasing conceptual trend without falsely claiming all algorithms are monotone.",
+  "requiredChecks": [
+    "Horizontal axis is Number of frames and vertical axis is Number of page faults.",
+    "A smooth decreasing illustrative curve is shown, without invented numeric data/tick values.",
+    "Caption states Conceptual trend, not measured data.",
+    "A visible caveat states Some policies, such as FIFO, can exhibit Belady’s anomaly; no universal monotonicity claim."
+  ],
+  "alt": "Conceptual trend of fewer page faults with more frames, with a caveat that FIFO can exhibit Belady’s anomaly",
+  "prompt": "Create a NEW original English technical blog diagram. White background, crisp dark navy large sans-serif labels, flat blue/teal outlined shapes, generous whitespace, simple unambiguous connectors, no decorative art, no logos or watermark. TITLE \"Frames and page faults\". A clear original scientific schematic plot on a white background with thin navy axes. Exact horizontal axis label \"Number of frames\". Exact vertical axis label \"Number of page faults\". Draw ONE smooth blue decreasing curve: steep near the left, flattening toward the right. Add axis arrowheads toward increasing values but NO numeric tick values or numeric data points, since this is qualitative. Caption under the plot exactly \"Conceptual trend, not measured data\". Below that a clearly legible teal-outlined note exactly \"Some policies, such as FIFO, can exhibit Belady’s anomaly.\" Keep this caveat separate from axis labels and in frame. No legend or additional curves; no universal claim that every algorithm is monotone."
+}

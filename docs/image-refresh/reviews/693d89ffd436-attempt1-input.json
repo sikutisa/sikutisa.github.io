@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Samequeue/start53;53→37→14→0→65→67→98→122→124→183.",
+      "passed": true,
+      "evidence": "53→37→14→0で反転、0→65→67→98→122→124→183の順を確認。"
+    },
+    {
+      "requirement": "Directionfirsttoward0,reverseat0;movement53+183=236 throughlastrequest;no199edgeincludedafterlastrequest.",
+      "passed": true,
+      "evidence": "0は要求でない折り返し点、全要求処理まで53+183=236。199まで余分な辺なし。"
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

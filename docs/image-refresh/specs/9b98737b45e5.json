@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Cycle without deadlock",
+  "alt": "자원 인스턴스가 여러 개일 때 순환이 있어도 교착 상태가 아닌 사례",
+  "requiredChecks": [
+    "Four threads T1,T2,T3,T4; resources R1 and R2 each two instances, all allocated.",
+    "Requests T1→R1,T3→R2; assignments R1→T2,R1→T3,R2→T1,R2→T4; exactly these six edges.",
+    "Cycle T1→R1→T3→R2→T1; T2 or T4 can finish and release resources, so a cycle does not imply deadlock with multiple instances."
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: original raster PNG diagram for an IT technical blog. White opaque background, crisp dark navy sans-serif text, blue request arrows and teal assignment arrows, generous spacing, flat professional educational design. Large legible English identifiers, no logos/watermark, no shadows/decoration. Recompose from this semantic specification, not a source slide. Directed arrows must have one clear arrowhead at the stated destination; circles are threads, boxes resources, dots are instances. Title: A cycle does not always mean deadlock. Main clockwise ring T1→R1→T3→R2→T1. R1,R2 boxes each two distinct instance dots. Additional side leaf T2 assigned from second R1 instance, and side leaf T4 assigned from second R2 instance. T2 and T4 have NO outgoing requests. Only six edges total: blue requests T1→R1,T3→R2; teal assignments R1→T2,R1→T3,R2→T1,R2→T4. Exact text below: Cycle: T1 → R1 → T3 → R2 → T1. T2 or T4 can finish and release an instance. Status: Cycle, but no deadlock. Use fresh horizontal ring composition."
+}

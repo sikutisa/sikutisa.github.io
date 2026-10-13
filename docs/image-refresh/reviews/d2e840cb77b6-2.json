@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Readyqueue→CPU→exit;I/Orequest→I/Oqueue→I/Ocompletion→Ready;timesliceexpired→Ready.",
+      "passed": true,
+      "evidence": "Incoming→Ready→CPU→Exit와 CPU outcomes 공통선이 연결된다. I/O분기는 queue→completion→Ready다."
+    },
+    {
+      "requirement": "Forkchild→childexecutes/completes→Ready;waitforinterrupt→interruptoccurs→Ready; waitingparentpathillustrative notallforkblock.",
+      "passed": true,
+      "evidence": "공통 CPU선에서 만료/자식/인터럽트 세 행으로 각각 연결해 Ready로 돌아간다. fork parent-wait case 캡션이 있다. 반복 Ready 라벨은 동일 큐로의 반환을 나타낸다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:31:14.071Z",
+  "generatedSha256": "6236213986de14fb8340700176a7d8db806b6ea584329b5af77327689689d294",
+  "specSha256": "4b874b27c45f3f53fad6c9a4d4df52c931f76255cf356ac5acd6799af1d4ae84"
+}

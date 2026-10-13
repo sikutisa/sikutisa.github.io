@@ -1,0 +1,14 @@
+{
+  "title": "Remote slots dispatch commands",
+  "purpose": "Explain seven-slot intended dispatch, empty commands, receiver binding and undo.",
+  "alt": "리모컨의 ON·OFF 명령 배열과 장치 수신자 연결, 빈 슬롯 NoCommand, 최근 명령 UNDO",
+  "requiredChecks": [
+    "RemoteControl contains onCommands[7] and offCommands[7]; ON slot i uses onCommands[i].execute(), OFF uses offCommands[i].execute().",
+    "Slot 0 binds Living Room LightOnCommand/LightOffCommand and slot 1 Kitchen LightOnCommand/LightOffCommand to their matching receiver.",
+    "Seven total slots are shown; unconfigured slots 2–6 contain NoCommand for both actions.",
+    "Global UNDO invokes undoCommand.undo() for last executed command; no ON/OFF array mix-up."
+  ],
+  "prompt": "Create a NEW ORIGINAL raster technical diagram for an IT study blog, opaque white background, clean navy sans-serif typography, restrained blue/teal/amber flat cards, spacious margins, exact monospaced class and method identifiers, no logos, source screenshots or copied slide composition. All English text clearly readable. Title 'Remote slots dispatch commands'. Use large table instead of copied photographed remote. Title Remote slots dispatch commands. Top card RemoteControl fields 'onCommands[7]' 'offCommands[7]'. Table columns SLOT / ON command / OFF command / RECEIVER. Rows exactly 0: LightOnCommand, LightOffCommand, Living Room Light; 1 samecommandnames, Kitchen Light; 2–6 individually NoCommand, NoCommand, —. Under table three separate flow strips with explicit arrows: 'ON(i) → onCommands[i].execute() → receiver.on()'; 'OFF(i) → offCommands[i].execute() → receiver.off()'; 'UNDO → undoCommand.undo()'. Label ON/OFF strips 'Light example'. Caption 'Record the command after execution; NoCommand.execute() does nothing'. Source body contains typos in arrays; draw intended correct mapping exactly as above, do not reproduce code typos. No extra slots or mismatched receiver.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

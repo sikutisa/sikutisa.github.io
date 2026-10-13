@@ -1,0 +1,14 @@
+{
+  "title": "Weather data drives three displays",
+  "purpose": "Introduce provided sensors/station and application data/display responsibilities.",
+  "alt": "기상 센서와 Weather Station에서 WeatherData가 최신 측정값을 읽고 세 종류 화면을 갱신하는 구조",
+  "requiredChecks": [
+    "Humidity, Temperature and Pressure sensors feed the provided Weather Station.",
+    "WeatherData reads latest temperature, humidity and pressure from station; getters reflect latest readings.",
+    "Current Conditions, Statistics and Forecast are three distinct display types.",
+    "Application side supports new/removed displays; not tightly fixed to three forever."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference study blog. Opaque white background, large readable navy sans-serif text, monospaced identifiers, blue/teal/amber flat cards and roomy gutters. No copied irregular bubbles, photographed source or logos. Use plain labelled rectangles for Cat/Dog/Mouse/Duck object names, no animal illustration needed. Include only listed identifiers; do not invent code bodies, modifiers, state values, extra arrows or recipients. Title 'Weather data drives three displays'. Two separated zones 'Provided hardware' and 'Application'. Hardware three compact sensor cards Humidity/Temperature/Pressure → Weather Station. Application WeatherData card 'getTemperature(); getHumidity(); getPressure(); measurementsChanged()' arrow back to WeatherStation labelled 'reads latest measurements'. WeatherData branches three right-pointing update arrows to Current Conditions Display, Statistics Display, Forecast Display. CurrentConditions sample '72°F; humidity 60%' only; do not invent pressure. Footer 'Start with three displays; allow displays to be added or removed'. Distinguish read-request arrow from update arrows.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

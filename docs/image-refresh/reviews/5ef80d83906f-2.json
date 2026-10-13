@@ -1,0 +1,36 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Student keeps only domain fields/getters; no compareTo or sorting responsibility.",
+      "passed": true,
+      "evidence": "Student SSN/name/major and three getters; no sorting operation."
+    },
+    {
+      "requirement": "SortStudentBySSN and SortStudentByName implement Comparator<Student>, compare(Student a,Student b): int.",
+      "passed": true,
+      "evidence": "Both SortStudent classes implement Comparator<Student> with two-argument int compare."
+    },
+    {
+      "requirement": "AClient calls Collections.sort(group,new SortStudentBySSN()); BClient uses SortStudentByName.",
+      "passed": true,
+      "evidence": "Client A and B exact Collections.sort(group,new matching Comparator()) examples."
+    },
+    {
+      "requirement": "Register still uses Student; sorting policy can change independently of domain data.",
+      "passed": true,
+      "evidence": "Register uses arrow now points UP into Student; client policy arrows terminate on matching class cards. Sorting remains separate."
+    },
+    {
+      "requirement": "Use Comparator rather than erroneous original Comparable label for two-argument compare.",
+      "passed": true,
+      "evidence": "Comparator<Student>, not erroneous Comparable; method takes a and b."
+    }
+  ],
+  "notes": "Direct visual inspection confirms required text and dependency semantics; PNG decode performed before approval.",
+  "at": "2026-10-12T15:47:44.937Z",
+  "generatedSha256": "c149ef1e9152df8afa53c812fefcbb5881d8f18ce1cf9e95b5c042918263c197",
+  "specSha256": "1b472a1f09c844c0d7981de41f74348bbf99c32fbfe8d8a7c8bb5c5f965c4ddf"
+}

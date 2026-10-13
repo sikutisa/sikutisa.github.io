@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "P1burst10priority3;P2burst1priority1;P3burst2priority4;P4burst1priority5;P5burst5priority2.",
+      "passed": true,
+      "evidence": "Five exact burst/priority pairs10/3,1/1,2/4,1/5,5/2."
+    },
+    {
+      "requirement": "Lower priority number means higher priority.",
+      "passed": true,
+      "evidence": "Footer smallernumber=higherpriority."
+    },
+    {
+      "requirement": "All arrivals0 for next nonpreemptive schedule.",
+      "passed": true,
+      "evidence": "Allarriveat0 caption."
+    },
+    {
+      "requirement": "Exact five identifiers andmsunits, no wrongorderingimplied.",
+      "passed": true,
+      "evidence": "Five exactP1..P5,msburstcolumn, inputtableonly."
+    }
+  ],
+  "notes": "Direct visual inspection and independently calculated schedule/plot agree. Explicit schematic scale where appropriate; decode before approval.",
+  "at": "2026-10-12T22:27:36.113Z",
+  "generatedSha256": "3549aee311a636e3087680d3f87077e25ff9ca263f0852621e7c417593b83851",
+  "specSha256": "edf2eab6c1994df084706b9b35dad6096b384f4be8855c1d64c9e4966b3631a5"
+}

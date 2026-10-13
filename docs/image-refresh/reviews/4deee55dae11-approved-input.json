@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Six numbered steps appear in correct order: reference, trap, validate/locate, acquire frame/load, update page table, restart.",
+      "passed": true,
+      "evidence": "Corrected control path is visibly1→2→3; step3's elbow goes down/left/down to4; then4→5→6. There is no3→5 arrow."
+    },
+    {
+      "requirement": "Illegal address terminates/raises an error; only a valid nonresident page proceeds to disk load.",
+      "passed": true,
+      "evidence": "Illegal address still branches right to Terminate/report error; Valid address labels the elbow that enters4."
+    },
+    {
+      "requirement": "Backing storage supplies the missing page to a free frame, and present bit becomes1 before restart.",
+      "passed": true,
+      "evidence": "The backing storage→freeframe→step4 read path is intact. The main path now traverses step4 before reaching step5 Present=1."
+    },
+    {
+      "requirement": "Restart is the interrupted instruction, not a new process; every label is complete and arrows follow the stated order.",
+      "passed": true,
+      "evidence": "The last box says Restart the interrupted instruction; all required text and branch labels remain legible."
+    }
+  ],
+  "notes": "Direct visual comparison with original and full Virtual_Memory.md; verified every identifier and connector endpoint. PIL verify/load succeeded. Page-fault control-flow correction is confirmed where applicable."
+}

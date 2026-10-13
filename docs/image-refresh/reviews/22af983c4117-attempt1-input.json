@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Two conceptual columns: 튜링 머신, 유니버설 튜링 머신, 헤드, 테이프; 컴퓨터, 응용 프로그램, 운영체제, CPU, 메모리.",
+      "passed": true,
+      "evidence": "두 열의 튜링 머신/유니버설 튜링 머신/헤드/테이프와 컴퓨터/응용 프로그램/운영체제/CPU/메모리 한글이 정확하다."
+    },
+    {
+      "requirement": "Head reads/writes tape and CPU accesses memory; correspondence is an analogy, not OS equality to universal Turing machine.",
+      "passed": true,
+      "evidence": "헤드↔테이프와 CPU↔메모리 양방향이며 학습을 위한 개념적 비교 캡션으로 비유임을 명시한다."
+    }
+  ],
+  "notes": "직접 원본 해상도에서 글자·관계·방향을 확인. PNG 디코딩 후 해시 승인."
+}

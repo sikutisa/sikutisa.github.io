@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Source4 shapes square,circle,square,square; filter squares3; map each square to triangle3; count returns3.",
+      "passed": true,
+      "evidence": "Four source tokens 3squares1circle; filter3squares, map3triangles, count3."
+    },
+    {
+      "requirement": "filter/map labeled intermediate, count terminal, arrows in order; conceptual values not physical buffers.",
+      "passed": true,
+      "evidence": "Intermediate bracket filter/map and terminal count correct; lazy execution caption."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

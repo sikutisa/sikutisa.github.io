@@ -1,0 +1,14 @@
+{
+  "title": "Adding fly() to the base class",
+  "purpose": "Show how new base fly behavior is inherited by every duck subtype.",
+  "alt": "Duck 기본 클래스에 fly를 추가하면 모든 하위 오리 타입이 비행 동작을 물려받는 첫 시도",
+  "requiredChecks": [
+    "Abstract Duck contains quack/swim, abstract display and new shared fly().",
+    "MallardDuck and RedheadDuck extend Duck with own display().",
+    "All subclasses including other duck types inherit the new fly behavior.",
+    "Highlight base-class change and inherited effect without introducing RubberDuck yet."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT blog, opaque white background. Navy readable sans serif, monospace method names, blue/teal/amber flat cards, generous padding. Use exact identifiers, no extra methods or access modifiers or copied slide arrangement. Title 'Adding fly() to the base class'. Top abstract Duck card quack/shared, swim/shared, display/abstract, highlighted 'fly(): NEW shared implementation'. Bottom MallardDuck and RedheadDuck own display plus third Other duck subclasses, all explicit 'extends Duck' captions; no inheritance connector arrows. Footer 'Adding fly() to Duck changes behavior inherited by every subtype'. No RubberDuck or other invented class.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

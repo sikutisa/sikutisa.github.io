@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "5philosophersP0..P4and5chopsticksC0..C4aroundtable.",
+      "passed": true,
+      "evidence": "P0~P4 다섯 명, 각 C0~C4가 단일 막대 하나로 총5개 확인."
+    },
+    {
+      "requirement": "Ci betweenPi andP(i+1)mod5;eachneeds2adjacentsticks,not10independentsticks.",
+      "passed": true,
+      "evidence": "C0 P0/P1, C1 P1/P2, C2 P2/P3, C3 P3/P4, C4 P4/P0 위치 정확. 인접 두 자원 필요 안내."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:44:02.073Z",
+  "generatedSha256": "1153e4046e60e4154474175480f1bb46549c34eee4c24064ce4d0e9b6fc5fb18",
+  "specSha256": "17497d1542906f2ccfa611bd2c6c408aca273536752a806e7d821b4591fee559"
+}

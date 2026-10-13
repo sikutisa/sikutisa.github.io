@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "GUIFactory declares createButton(): Button, createTextBox(): TextBox, createScrollBar(): ScrollBar.",
+      "passed": true,
+      "evidence": "GUIFactory methodscreateButton/TextBox/ScrollBar have correct abstractreturntypes."
+    },
+    {
+      "requirement": "MotifFactory, WinXPFactory and MacFactory implement GUIFactory.",
+      "passed": false,
+      "evidence": "WinXPFactory upwardimplementsarrowreachesGUIFactory, butMotifFactory/MacFactoryarrows terminateinblankspaceoutsideGUIFactorycard ratherthanconnectingtoit; fail."
+    },
+    {
+      "requirement": "Each factory creates matching Button/TextBox/ScrollBar classes within its family.",
+      "passed": true,
+      "evidence": "Eachfamilyproductlist correctlycontainsmatchingButton/TextBox/ScrollBar, createsarrowownfamily."
+    },
+    {
+      "requirement": "Client uses Button b = guiFactory.createButton(); new MotifButton() appears only as concrete-coupling comparison.",
+      "passed": true,
+      "evidence": "Bothcodeexamples readable: newMotifButton concretecoupling and guiFactory.createButton interfacecall."
+    }
+  ],
+  "notes": "Fail: diagram has missing/misattributed dependency connectors; edit and re-inspect before replacement."
+}

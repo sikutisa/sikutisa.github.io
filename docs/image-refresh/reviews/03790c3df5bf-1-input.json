@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Compiler exposes Compile(input, output) and coordinates Scanner, Parser, ProgramNodeBuilder, CodeGenerator.",
+      "passed": true,
+      "evidence": "Compiler Compile(input,output) coordinates all four numbered stages."
+    },
+    {
+      "requirement": "Input→Scanner→Parser/Builder→ProgramNode tree→CodeGenerator→BytecodeStream output is clear.",
+      "passed": false,
+      "evidence": "Pipeline and BytecodeStream output correct, but code expression parsetree.Traverse(generator) mis-capitalizes source variable parseTree. Must correct exact code identifier."
+    },
+    {
+      "requirement": "RISCCodeGenerator and StackMachineCodeGenerator are CodeGenerator implementations; StatementNode, ExpressionNode, VariableNode are ProgramNode specializations.",
+      "passed": true,
+      "evidence": "Both generator subclasses extend CodeGenerator; three tree nodes extend ProgramNode; RISC example included."
+    },
+    {
+      "requirement": "Token, Symbol and Stream/BytecodeStream supporting types appear without reversing inheritance.",
+      "passed": true,
+      "evidence": "Scanner Token, Parser Symbol, BytecodeStream extends Stream all exact, inheritance not reversed."
+    }
+  ],
+  "notes": "Fail. One code variable has wrong capitalization; correct before replacement."
+}

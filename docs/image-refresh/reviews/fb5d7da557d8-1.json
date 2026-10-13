@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "T0producerread5,T1increment6,T2consumerread5,T3decrement4,T4producerstore6,T5consumerstore4.",
+      "passed": true,
+      "evidence": "T0~T5 프로세스·명령·결과 5,6,5,4,6,4를 전 행 대조."
+    },
+    {
+      "requirement": "Initialcount5,final4vsserial5;6exactrowsregisterandcountvalues.",
+      "passed": true,
+      "evidence": "초기5, 최종4, 직렬 증감 결과5 설명 정확."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:30:49.567Z",
+  "generatedSha256": "2e23c721e96ffec7c2125fbeb6b726017b7a387049b91a241c8e40a113d27120",
+  "specSha256": "5788948ba75f8fc0f86dc993c2cf179516a29797ae7ea0662b5041b3ddf31ad2"
+}

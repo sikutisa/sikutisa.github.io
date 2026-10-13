@@ -1,0 +1,15 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Ordinary pipe descriptors",
+  "alt": "fork 후 물려받은 읽기·쓰기 디스크립터를 정리하고 부모에서 자식으로 데이터를 보내는 파이프",
+  "requiredChecks": [
+    "pipefd0read,fd1write inheritedbybothparentandchild; no pipebidirectionalclaim.",
+    "Illustratedbodyparentclosesfd0/writesfd1;childclosesfd1/readsfd0; dataflowparent→pipe→child."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title An ordinary pipe after fork(). Left Parent card has fd[0] (read end) CLOSED and fd[1] (write end) OPEN. Right Child card has fd[0] (read end) OPEN and fd[1] (write end) CLOSED. Center ONE unidirectional Pipe labelled Kernel buffer. BluearrowParentfd[1]→Pipe left; bluearrowPipe right→Childfd[0]. Grey CLOSED descriptors no active arrows. Caption Both processes inherit both descriptors; unused ends are closed. Footer Example: parent writes, child reads. No reverse arrow and no singlepipe two-waytransfer. Descriptors0/1exact.",
+  "sourceClarification": "원본의 양쪽 fd 화살표는 fork 뒤 디스크립터 상속과 혼동될 수 있다. 본문 코드의 부모 쓰기/자식 읽기, 불필요한 끝 close를 정확히 표현한다.",
+  "sources": [
+    "https://man7.org/linux/man-pages/man2/pipe.2.html"
+  ]
+}

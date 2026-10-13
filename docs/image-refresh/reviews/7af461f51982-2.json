@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Two-tier has user/application in Client tier connected directly over network to Database server.",
+      "passed": true,
+      "evidence": "Left Client tier contains User interface/application and connects directly with Database tier through a continuous doubleheaded line crossing the dashed Network separator; extra intermediary arrowhead removed."
+    },
+    {
+      "requirement": "Three-tier has UI/application client→Application server→Database server, all three tiers separately labelled.",
+      "passed": true,
+      "evidence": "Right Client tier↔Application tier↔Database tier connections now terminate on actual card boundaries; each has exactly two endpoint arrowheads and Network label moved to side."
+    },
+    {
+      "requirement": "Three-tier UI has no direct Database server link.",
+      "passed": true,
+      "evidence": "Right panel shows no direct Client→Database connector bypassing application server."
+    },
+    {
+      "requirement": "User boxes are not mistaken for separate server tiers; application server performs DB calls.",
+      "passed": true,
+      "evidence": "UI is within client; application server is within Application tier; footer clearly describes mediated DB access, no separate user tier."
+    }
+  ],
+  "notes": "Pass after fixing three continuous network-crossing connections. Text and endpoint topology rechecked visually.",
+  "at": "2026-10-12T13:44:27.613Z",
+  "generatedSha256": "9fca6a1a9cd3debf0853a0574b65d4f1f7d32470cc40a1b9571491d9ff3cbb19",
+  "specSha256": "01ecefca494a2f67ad0ded232e057a46f3d0059973b19dc1e0609690e440df3d"
+}

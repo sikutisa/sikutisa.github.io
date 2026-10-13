@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Outerpage-tableentries pointtothreeinnerpage-tablepages; sixleafentryvalues1,500;100,708;929,900.",
+      "passed": true,
+      "evidence": "외부 Entry 0/1/2가 내부 A/B/C를 가리키며 A=1,500 B=100,708 C=929,900이다."
+    },
+    {
+      "requirement": "Eachleafentryselectsitsmatchingphysicalframe1/500/100/708/929/900; no interpretation ofleafvaluesasvirtualpageindexes.",
+      "passed": true,
+      "evidence": "각 화살표의 프레임 값과 오른쪽 도착 값이 일치한다. 오른쪽 순서는 매핑에 맞춰 재배치되었다."
+    },
+    {
+      "requirement": "Page table itself split into pages, intermediate leaf-tablepagesdistinctfromfinaldataframes; readablearrows.",
+      "passed": true,
+      "evidence": "내부 테이블 세 상자와 물리 메모리 상자가 분리되고 각 화살표 및 캡션을 읽을 수 있다."
+    }
+  ],
+  "notes": "직접 원본 해상도에서 시각 검수. PNG 디코딩 확인. ",
+  "at": "2026-10-12T23:50:18.027Z",
+  "generatedSha256": "30639cd41d6c0a0aaf4ca7cccdda22ac991146a3fcb0ed1c0b0b8e5a73627295",
+  "specSha256": "4728d0adafdc50a110513c81ef4226282271710d4c32a843358589f7cc6597c0"
+}

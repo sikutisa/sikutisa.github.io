@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Logicalbytes0..15=a..p: page0abcd,page1efgh,page2ijkl,page3mnop; page/frame size4bytes.",
+      "passed": false,
+      "evidence": "Logicalrange0..15andpagescorrect, but logicalPage2 finalglyphlooksuppercaseL instead ofrequiredlowercasel."
+    },
+    {
+      "requirement": "Pagetable0→5,1→6,2→1,3→2; physicalmemory32bytes eightframes.",
+      "passed": true,
+      "evidence": "Table0→5,1→6,2→1,3→2;32-bytephysicalmemoryeightframes."
+    },
+    {
+      "requirement": "Frame1 addresses4..7=ijkl,frame2addresses8..11=mnop,frame5addresses20..23=abcd,frame6addresses24..27=efgh; frames0/3/4/7unused.",
+      "passed": true,
+      "evidence": "Physical4..7ijkl,8..11mnop,20..23abcd,24..27efgh; unusedotherscorrect."
+    },
+    {
+      "requirement": "Byte ordering preserved, no counts/addresses dropped or invented; label 32-bytephysicalmemory not32-byteslogical.",
+      "passed": false,
+      "evidence": "Lowercasecaseconsistencyrequiresrepair; allnumericrangesandcountsotherwiseexact."
+    }
+  ],
+  "notes": "All mappings and memory bytes compared visually. Reject size/identifier/case ambiguities before applying."
+}

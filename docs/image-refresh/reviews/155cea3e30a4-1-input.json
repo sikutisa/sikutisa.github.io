@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "CPU logical(pid,p,d); searchtableby(pid,p) matching rowfields(pid,p), rowindex iisphysicalframenumber.",
+      "passed": true,
+      "evidence": "Logicalpid,p,d andsearch(pid,p)label to matchingrowi,pid,p."
+    },
+    {
+      "requirement": "Oneentryperphysicalframe, tableindexedbyphysicalframe, notper-processoneentrypervirtualpage.",
+      "passed": true,
+      "evidence": "Globaltableperphysicalframecaptionandframeindexcolumncorrect."
+    },
+    {
+      "requirement": "Outputphysical(i,d), offsetunchanged; no pidusedasframeorvirtualpindexinterpretedframe.",
+      "passed": true,
+      "evidence": "Selectedindexi→(i,d)→framei,offsetdseparateunchanged; noincorrectpid/pasphysicalframe."
+    }
+  ],
+  "notes": "Direct full visual graph review; exact per-entry destination and source fields checked; incorrect arrows reject."
+}

@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Safe, unsafe and deadlocked states",
+  "alt": "안전 상태와 불안전 상태의 구분 및 불안전 상태에 포함되는 교착 상태",
+  "requiredChecks": [
+    "System states partition into disjoint Safe and Unsafe regions; Deadlocked is a proper subset fully inside Unsafe.",
+    "Unsafe includes states outside Deadlocked; clearly states unsafe does not necessarily mean deadlocked and Safe has a completion sequence."
+  ],
+  "prompt": "Use case: scientific-educational. Original raster PNG educational diagram for IT technical blog. White opaque background, clean dark navy sans-serif text, blue and teal accents, no logo/watermark/decoration. Big readable English labels, generous spacing, original composition. For graphs thread circles, resource boxes, distinct arrowhead at destination. Blue solid requests, teal solid assignments, gray dashed potential claims. Title: Safe, unsafe and deadlocked states. Draw outer rounded container System states partitioned into two side-by-side panels Safe and Unsafe. Safe panel contains text A completion sequence exists. Unsafe panel contains a smaller inset fully enclosed region Deadlocked, leaving substantial visible unsafe space outside. Text outside inset but inside Unsafe: Not necessarily deadlocked. No overlap between Safe and Unsafe; no arrow suggesting all unsafe deadlock. Footer: Deadlocked ⊂ Unsafe. Flat accessible diagram."
+}

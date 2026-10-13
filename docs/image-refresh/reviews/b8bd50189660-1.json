@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Nodes T1,T2 and single-instance resources R1,R2.",
+      "passed": true,
+      "evidence": "T1,T2 circles; R1 single dot and R2 one unallocated outlined instance."
+    },
+    {
+      "requirement": "Solid assignment R1→T1, solid request T2→R1; dashed claim edges T1→R2 and T2→R2 only.",
+      "passed": true,
+      "evidence": "Solid R1→T1 and T2→R1; exactly two dashed claims T1→R2,T2→R2."
+    },
+    {
+      "requirement": "R2 unallocated; no cycle even including claims; legend separates claim from current request.",
+      "passed": true,
+      "evidence": "R2 unallocated caption, no cycle; separate solid/dashed legend readable."
+    }
+  ],
+  "notes": "Direct visual inspection. Reject invented or misleading graph content even when numeric table is accurate. Only passed image may replace original.",
+  "at": "2026-10-12T22:45:03.745Z",
+  "generatedSha256": "a0f76de2853f3b1ab7fb0ee8e4a81d88d9158ae4b5c4e6db6394f2d4e3b8096f",
+  "specSha256": "9a1ead342dea50bab8802d5c16430414c0215e8ab4d31e4b8e2353516c307fa6"
+}

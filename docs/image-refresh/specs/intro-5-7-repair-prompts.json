@@ -1,0 +1,10 @@
+[
+  {
+    "id": "ef5c85ab06e3",
+    "prompt": "Correct the CPU timeline ONLY. The second Interrupt processing block incorrectly starts BEFORE Completion2. Move it to start EXACTLY at the vertical Completion2 guide and extend briefly rightward AFTER that guide. User process executing must continue up to Completion2, then Interrupt processing, then User process executing. First interrupt already correctly begins at Completion1 and must stay. Device transfer intervals and four guides stay fixed. Remove the extra bottom sentence 'Interrupts are generated only at I/O completion, not at request times.' Keep the first bottom sentence. All other text/layout intact."
+  },
+  {
+    "id": "e42ce35e0ff6",
+    "prompt": "Fix ONLY the Data transfer arrow between CPU(s) and I/O device(s). Currently its upper end hangs in empty white space. Reroute that blue DOUBLEHEADED Data arrow so one end touches CPU(s) bottom/right boundary, other end touches I/O device(s) upper boundary. Both arrowheads must touch the two correct boxes. Keep it separate from I/O request and Interrupt arrows. Preserve CPU↔Main memory both arrows and device↔Main memory DMA, all text and boxes. No dangling paths."
+  }
+]

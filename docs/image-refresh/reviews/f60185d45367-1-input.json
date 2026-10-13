@@ -1,0 +1,33 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "InputP1=6,P2=3,P3=1,P4=7,allarrivals0,initialorderP1P2P3P4.",
+      "passed": true,
+      "evidence": "Input6,3,1,7; allarrivals0/initialP1P2P3P4."
+    },
+    {
+      "requirement": "Quantum1..7 averageTT11,11.5,10.75,11.5,12.25,10.5,10.5ms exact.",
+      "passed": true,
+      "evidence": "Sevenpointvalues11,11.5,10.75,11.5,12.25,10.5,10.5 exact."
+    },
+    {
+      "requirement": "Discrete plotted points clearly labelled, nonmonotonic relation.",
+      "passed": true,
+      "evidence": "Points correctlyaligned axes; line nonmonotonic, exact labels unclipped."
+    },
+    {
+      "requirement": "Context overhead excluded; values example-specific, not universal optimization.",
+      "passed": true,
+      "evidence": "Overheadomittedsubtitle, footer 'in thisexample'."
+    },
+    {
+      "requirement": "Timequantumxaxis,averageTTyaxis with units.",
+      "passed": true,
+      "evidence": "xTimequantum(ms),yAverageturnaround(ms),zoom9..13clearlylabelled."
+    }
+  ],
+  "notes": "Direct visual inspection and independently calculated schedule/plot agree. Explicit schematic scale where appropriate; decode before approval."
+}

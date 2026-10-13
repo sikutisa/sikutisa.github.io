@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Dual-core chip",
+  "alt": "하나의 프로세서 칩에 두 코어가 있고 각 레지스터·캐시에서 공유 메모리로 연결되는 구조",
+  "requiredChecks": [
+    "One chip enclosesCPUcore0 andCPUcore1, eachRegistersandCache.",
+    "Twocores join one sharedmemory outsidechip; distinguishsamechipmulticorefromthreeprocessorSMP."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title A dual-core processor. One large enclosing box labelled One processor chip. Inside two equal cards CPU core0 and CPU core1, each Registers then Cache connected locally. Their caches connect to shared connection line exiting chip into ONE Main memory outsidebelow. No thirdcore, no sharedcache added."
+}

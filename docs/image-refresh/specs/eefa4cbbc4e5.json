@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Dynamic relocation arithmetic",
+  "alt": "재배치 레지스터 14000을 논리 주소 346에 더해 물리 주소 14346을 얻는 MMU",
+  "requiredChecks": [
+    "CPU logical address346 enters MMU adder; relocation register14000 supplies addition.",
+    "Output physical address14346 reaches Memory; formula346+14000=14346; plus operation not comparator."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: Dynamic relocation. Three boxes CPU → MMU → Memory. Inside MMU a clear ADDER marked +; Relocation register card14000 feeds adder fromabove. CPU arrowlabel Logical address346. MMU outputarrowlabel Physical address14346. Exact equation346+14000=14346 beneath. No limit check/comparison arrows; only addition. Text Physical address = logical address + relocation value.",
+  "sourceClarification": "Original adder icon resembles a comparison glyph, but caption/body and numeric example require addition, 346+14000=14346."
+}

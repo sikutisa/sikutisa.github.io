@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Deadlock detection blocked snapshot",
+  "alt": "T2의 추가 C 요청으로 T1·T2·T3·T4가 교착되는 표",
+  "requiredChecks": [
+    "Allocation T0 0 1 0,T1 2 0 0,T2 3 0 3,T3 2 1 1,T4 0 0 2.",
+    "Request T0 0 0 0,T1 2 0 2,T2 0 0 1,T3 1 0 0,T4 0 0 2; Available=(0,0,0); only T2 Request changed.",
+    "T0 finishes releases B, Work=(0,1,0); none of T1,T2,T3,T4 can proceed. Deadlocked set exactly T1,T2,T3,T4."
+  ],
+  "prompt": "Use case: scientific-educational. Original raster PNG educational diagram for IT technical blog. White opaque background, clean dark navy sans-serif text, blue and teal accents, no logo/watermark/decoration. Big readable English labels, generous spacing, original composition. For graphs thread circles, resource boxes, distinct arrowhead at destination. Blue solid requests, teal solid assignments, gray dashed potential claims. Title: One additional request causes deadlock. Table Thread | Allocation A B C | Current Request A B C. Exact rows T0|0 1 0|0 0 0; T1|2 0 0|2 0 2; T2|3 0 3|0 0 1; T3|2 1 1|1 0 0; T4|0 0 2|0 0 2. Clearly highlight T2 Request=(0,0,1) as changed. Single system card Available=(0,0,0). Below: T0 finishes → Work=(0,1,0). Then no remaining Request fits Work. Deadlocked threads: T1, T2, T3, T4. T0 must not be labelleddeadlocked. Accentdeadlockred sparingly."
+}

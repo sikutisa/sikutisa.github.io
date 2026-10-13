@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Process 1 and Process 2 each have virtual pages A,B,C.",
+      "passed": true,
+      "evidence": "Process1 and Process2 each have three labeled virtual boxes A,B,C."
+    },
+    {
+      "requirement": "There are exactly three physical page boxes A,B,C, each shared by both processes.",
+      "passed": true,
+      "evidence": "Central Physical memory contains oneA,oneB,oneC (COW protected), with no duplicateC."
+    },
+    {
+      "requirement": "Exactly six distinct mapping arrows connect each process page to its matching physical page; no private copy exists yet.",
+      "passed": true,
+      "evidence": "Followed six horizontal arrows: left/rightA→physicalA, left/rightB→physicalB, left/rightC→physicalC. All heads enter RAM and none point at another page."
+    },
+    {
+      "requirement": "The title states before a write and the shared page C is visibly read-only/COW-protected, with legible labels.",
+      "passed": true,
+      "evidence": "Title specifies before a write. C is marked COW protected and footer says pages are copied only when written. Labels are complete."
+    }
+  ],
+  "notes": "Direct visual comparison with original and full Virtual_Memory.md; verified every identifier and connector endpoint. PIL verify/load succeeded. Page-fault control-flow correction is confirmed where applicable.",
+  "at": "2026-10-12T12:14:51.999Z",
+  "generatedSha256": "bdb37b4819965c9d358f9880024bab28887f4bd41bdf0b76b27f4c2a7ab415a1",
+  "specSha256": "d8752ff40bb13542c30dc62d03c206b88805b1e8522d23a62fb8bbf76f54d99c"
+}

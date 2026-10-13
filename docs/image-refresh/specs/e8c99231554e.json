@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Ready and wait queues",
+  "alt": "head·tail 포인터와 PCB 연결 리스트로 구현한 준비 큐 및 장치 대기 큐",
+  "requiredChecks": [
+    "ReadyheadPCB7→PCB2→null,tailPCB2;diskunit0headPCB3→PCB14→PCB6→null,tailPCB6.",
+    "Magnetic tapeunits0/1 emptyheadtailnull;Terminalunit0headandtailPCB5→null;queueheaderslabelled."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Ready queue and wait queues. Five clearlyseparatedhorizontalrows. EachstartsqueueheaderwithHEADandTAILfields; plaincardsPCBnodeslinkedforward. Ready queue: HEAD→PCB7→PCB2→null; TAIL→PCB2. Magnetic tape unit0: HEAD→null,TAIL→null. Magnetic tape unit1: HEAD→null,TAIL→null. Disk unit0: HEAD→PCB3→PCB14→PCB6→null;TAIL→PCB6. Terminal unit0: HEAD→PCB5→null;TAIL→PCB5. PCBnodescancontainRegisters/… smalltext. Tailarrowfromheaderbelowchain andonlytolastnode. Nolinkingbetweenrows."
+}

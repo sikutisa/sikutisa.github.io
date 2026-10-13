@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Singlethread1PC/registers/stack;multithread3separatePC/registers/stacks.",
+      "passed": true,
+      "evidence": "좌측1개·우측3개 스레드 모두 개별 Registers·PC·Stack 확인."
+    },
+    {
+      "requirement": "Code/data/filessharedwithinprocess;twoprocessboundariesnotcrossshared.",
+      "passed": true,
+      "evidence": "각 프로세스 내부에 Code·Data·Files 공유 영역 하나씩, 프로세스 사이 공유 연결 없음."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:38:02.853Z",
+  "generatedSha256": "ea8a6e44365f2dd197eab3d4ee8e2e657a1fd38945cfec288bb1ccff201dedb6",
+  "specSha256": "ff4b5e00fe1b822ce7f8c70a07653f500aee491c71b20d751c29b69821323c5c"
+}

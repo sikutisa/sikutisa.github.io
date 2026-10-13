@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Two I/O cycles: request→device transferring→transferdone; device idle between cycles.",
+      "passed": true,
+      "evidence": "장치 두 전송 및 요청·완료 가이드는 정확하다."
+    },
+    {
+      "requirement": "CPU executes user process during transfers and briefly handles interrupt after each completion, then resumes; shared time axis no numerical durations.",
+      "passed": false,
+      "evidence": "두 번째 CPU 인터럽트의 왼쪽 경계가 Completion2 가이드보다 약70px 앞이다. 완료 뒤 시작해야 한다."
+    }
+  ],
+  "notes": "직접 시각 검수와 PNG 디코딩. 실패한 결과는 원본 참조 유지.",
+  "at": "2026-10-13T00:07:17.163Z",
+  "generatedSha256": "ad48b69f36cbcef3cd90d07e9e58a034852d687009bb40221fba3b4f9a2c9652",
+  "specSha256": "42cb446897f691b2fa624cd2b6d2915b383b64fe3f84b82a6555b1d61b677494"
+}

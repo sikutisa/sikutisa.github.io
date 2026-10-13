@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Semaphore deadlock",
+  "alt": "S와 Q를 반대 순서로 획득하는 P0·P1의 교착 상태",
+  "requiredChecks": [
+    "P0waitSthenwaitQthen signalS/Q;P1waitQthenwaitSthen signalQ/S.",
+    "S=Q=1 initially;P0holdsSwaitsQ,P1holdsQwaitsS;deadlockcycleaccurate."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Deadlock from opposite lock order. Two code panels P0: wait(S); wait(Q); …; signal(S); signal(Q); . P1: wait(Q); wait(S); …; signal(Q); signal(S); . Caption S = Q = 1 initially. Lower two process boxes: P0 Holds S, waits for Q; P1 Holds Q, waits for S. Reciprocal arrows P0→P1 Waiting for Q, P1→P0 Waiting for S. Footer If each acquires its first semaphore, neither can reach signal(). Distinguish possible interleaving, not always deadlock."
+}

@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Five rows T0..T4, A B C columns; Allocation rows 0 1 0;2 0 0;3 0 2;2 1 1;0 0 2.",
+      "passed": true,
+      "evidence": "Allocation rows 010/200/302/211/002 exact."
+    },
+    {
+      "requirement": "Max rows 7 5 3;3 2 2;9 0 2;2 2 2;4 3 3. Available A B C=3 3 2.",
+      "passed": true,
+      "evidence": "Max rows753/322/902/222/433 and Available332 exact."
+    },
+    {
+      "requirement": "Totals A10 B5 C7; no Available repeated as per-thread entitlement; digits and matrix columns aligned.",
+      "passed": false,
+      "evidence": "Totals and table correct, but unsolicited right-side graph contains bidirectional teal arrows and invented requests/claims inconsistent with snapshot. Remove it."
+    }
+  ],
+  "notes": "Direct visual inspection. Reject invented or misleading graph content even when numeric table is accurate. Only passed image may replace original."
+}

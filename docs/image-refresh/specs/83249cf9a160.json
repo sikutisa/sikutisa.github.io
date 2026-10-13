@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Process virtual address space",
+  "purpose": "Explain conventional process virtual-address-space organization and opposing stack/heap growth.",
+  "requiredChecks": [
+    "Address 0 is at the bottom and higher addresses are at the top.",
+    "The region order from bottom to top is text, data, heap, unallocated space, stack.",
+    "The heap growth arrow points upward into unallocated space; the stack growth arrow points downward into unallocated space.",
+    "All region and growth labels are readable, and the layout is explicitly conceptual."
+  ],
+  "alt": "Conceptual process virtual address space, with text and data at low addresses and the heap and stack growing toward unused space",
+  "prompt": "Create a NEW original technical educational diagram for an English operating-systems blog. White background, dark navy crisp sans-serif text, blue and teal flat boxes, clean thin arrows, ample whitespace, large legible labels, no copied textbook artwork, no logos or watermark. Use a tall central segmented column. Exact TITLE \"Process virtual address space\". Label above the column \"Higher addresses\" and below \"Address 0\". Region order TOP TO BOTTOM must be \"stack\", then a large white region \"Unallocated space\", then \"heap\", then \"data\", then \"text\". Distinguish allocated regions by soft blue/teal fills; unallocated stays white. Draw a short DOWNWARD arrow from stack into the upper portion of unallocated space with label \"Stack grows down\". Draw a separate UPWARD arrow from heap into the lower portion of unallocated space with label \"Heap grows up\". These arrows must point toward each other in unallocated space, without colliding with labels. Do not add any other numeric addresses. Footer exactly \"Conceptual layout\". Maintain complete word spellings. This is a conceptual diagram, not a measured address map."
+}

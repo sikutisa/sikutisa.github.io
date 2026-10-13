@@ -8,18 +8,18 @@ use_math: true
 * Abstracts main memory into an extremely large array of storage, separating logical memory from physical memory.
 * Provides an efficient mechanism for sharing files and libraries and process creation.
 
-![Diagram](./img/1.png){: w="370" h = "350"}
+![Illustrative virtual-memory mapping: six virtual pages, a page table, four physical frames, and backing storage](./img/1-generated.png){: w="760"}
 *Diagram showing virtual memory that is larger than physical memory*
 
 * **Virtual Address Space** is the logical (or virtual) view of how a process is stored in memory.
 * Typically, begins a certain logical address, to say, address 0, and exists in contiguous memory.
 
-![Addr](./img/2.png){: w="260" h = "300"}
+![Conceptual process virtual address space, with text and data at low addresses and the heap and stack growing toward unused space](./img/2-generated.png){: w="760"}
 *Virtual address space of a process in memory*
 
 * Virtual Memory allows *files* and *memory* to be shared by two or more processes through **page sharing**.
 
-![Share](./img/3.png){: w="350" h = "340"}
+![Two processes map their shared-library regions to the same physical library pages](./img/3-generated.png){: w="760"}
 *Shared library using virtual memory*
 
 ## Demand Paging
@@ -35,18 +35,18 @@ use_math: true
         * *valid*: the page is both legal and in memory.
         * *invalid*: the either is not valid or currently in secondary storage.
 
-![PageTable](./img/4.png){: w="370" h = "370"}
+![Demand paging: pages A, C and F are resident in frames 4, 6 and 9; other pages are nonresident](./img/4-generated.png){: w="760"}
 *Page table when some pages are not in main memory*
 
 * The procedure for handling the **Page Fault**:
     1. *Check an internal table* for the process to determine whether the reference was *valid or invalid* memory access.
-    2. If the reference was valid, terminate the process, or valid but page fault, we now *page it in*.
+    2. If the reference was invalid, terminate the process or report an error. If the address was valid but its page was not resident, we now *page it in*.
     3. Find a *free frame* (by taking one from the free-frame list)
     4. Schedule a secondary storage operation to *read the desired page* into the newly allocated frame.
     5. When the storage read is complete, *modify the internal table* and the page table to indicate that the page is now in memory.
     6. *Restart the instruction* that was interrupted by the trap.
 
-![PageFault](./img/5.png){: w="360" h = "350"}
+![Page fault handling: trap, validate the address, load a valid missing page, update the page table, and restart the interrupted instruction](./img/5-generated.png){: w="760"}
 *Steps in handling a page fault*
 
 ### Pure Demand Paging
@@ -108,14 +108,14 @@ for (i = 0; i < 128; ++i)
 * To resolve page faults, OS maintains the **free frame list**: a pool of free frames for satisfying such requests.
 * Free frames must also be allocated when the stack or heap segments from a process expand.
 
-![List](./img/6.png){: w="320" h = "160"}
+![Free-frame linked list: head points through available frames 7, 97, 15, 126, …, 75](./img/6-generated.png){: w="760"}
 *List of free frames*
 
 ### Performance of Demand Paging
 * How to compute the *effective access time* for a *demand-paged* memory?
 * Let *ma* to denote the *memory-access time*.
 * Let *p* be the *probability of a page fault*.
-    * EAT = 1 − 𝑝 × 𝑚𝑎 + 𝑝 ∗ (𝑝𝑎𝑔𝑒 𝑓𝑎𝑢𝑙𝑡 𝑡𝑖𝑚𝑒).
+    * EAT = (1 − 𝑝) × 𝑚𝑎 + 𝑝 × (𝑝𝑎𝑔𝑒 𝑓𝑎𝑢𝑙𝑡 𝑡𝑖𝑚𝑒).
 * How much time is needed to service a page fault?
     * three major activities:
         * Service the page-fault interrupt.
@@ -132,10 +132,10 @@ for (i = 0; i < 128; ++i)
 * *Copy* a shared page *only when* a process *writes* to a shared page.
 * Recall the process creation with **fork()** and **exec()**.
 
-![Before](./img/7.png){: w="350" h = "300"}
+![Before copy-on-write: both processes share the same physical pages A, B and C](./img/7-generated.png){: w="760"}
 *Before process 1 modifies page C*
 
-![After](./img/8.png){: w="350" h = "310"}
+![After Process 1 writes page C: A and B remain shared, Process 1 uses a private copy, and Process 2 retains the original C](./img/8-generated.png){: w="760"}
 *After process 1 modifies page C*
 
 ## Page Replacement
@@ -145,7 +145,7 @@ for (i = 0; i < 128; ++i)
         * Then, we manage to demand-paged system with 10 frames spared.
     * However, what if the processes suddenly want to use all 10 pages, or need a huge buffer consuming more pages than available ones?
 
-![Need](./img/9.png){: w="420" h = "380"}
+![Page B causes a fault while all user frames are occupied, so a victim frame must be selected](./img/9-generated.png){: w="760"}
 *Need for page replacement*
 
 * **Page Replacement**
@@ -153,7 +153,7 @@ for (i = 0; i < 128; ++i)
     * Free a frame by writing its contents to swap space and changing the page table to indicate that the page is no longer in memory (invalid or dirty).
     * Now, use the freed frame to hold page for which the process faulted.
 
-![PR](./img/10.png){: w="360" h = "350"}
+![Page replacement reuses frame f: save a dirty victim if needed, invalidate its mapping, load the requested page, and update the page table](./img/10-generated.png){: w="760"}
 *Page replacement*
 
 * Page Fault Service Routine includes Page Replacement
@@ -176,28 +176,28 @@ for (i = 0; i < 128; ++i)
 * What about the number of page frames?
     * Obviously, the more frames, the less page faults.
 
-![Graph](./img/11.png){: w="330" h = "300"}
+![Conceptual trend of fewer page faults with more frames, with a caveat that FIFO can exhibit Belady’s anomaly](./img/11-generated.png){: w="760"}
 *Graph of page faults versus number of frames*
 
 * An example to evaluate algorithms:
     * reference string: 7 0 1 2 0 3 0 4 2 3 0 3 0 3 2 1 2 0 1 7 0 1 in a memory with *three* frames.
     * 2가 도착했을 때, 7 0 1 중에 누구와 교체할 것 인가?
 
-![Ex](./img/12.png){: w="330" h = "200"}
+![Three frames fill with 7, 0 and 1; requesting page 2 then requires choosing a victim](./img/12-generated.png){: w="760"}
 
 ### FIFO Page Replacement
 * FIFO: First-In-First-Out: the simplest algorithm.
 * Choose **the oldest page** when a page must be replaced.
 * There are 15 page faults with our example.
 
-![FIFO](./img/13.png){: w="350" h = "240"}
+![FIFO page replacement with three frames: 15 page faults and the frame state at each fault](./img/13-generated.png){: w="760"}
 *FIFO page-replacement algorithm*
 
 ### Belady’s Anomaly
 * The page-fault rate **may increase** as *the number of allocated frames* **increases**.
     * e.g. • reference string: 1 2 3 4 1 2 5 1 2 3 4 5
 
-![Graph](./img/14.png){: w="340" h = "300"}
+![FIFO Belady’s anomaly: increasing from three frames to four increases page faults from nine to ten](./img/14-generated.png){: w="760"}
 *Page-fault curve of FIFO replacement on a reference string*
 
 ### Optimal Page Replacement
@@ -210,7 +210,7 @@ for (i = 0; i < 128; ++i)
     * OPT requires *future knowledge* of the reference string.
         * used mainly for comparison studies.
 
-![OPT](./img/15.png){: w="350" h = "240"}
+![OPT page replacement with three frames: 9 page faults and the frame state at each fault](./img/15-generated.png){: w="760"}
 *Optimal page-replacement algorithm*
 
 ### LRU Page Replacement
@@ -225,7 +225,7 @@ for (i = 0; i < 128; ++i)
 * Locality of reference 관점에서 보면, 합리적일 수 있는 방법.
 * There are 12 page faults with our example.
 
-![LRU](./img/16.png){: w="350" h = "240"}
+![LRU page replacement with three frames: 12 page faults and the frame state at each fault](./img/16-generated.png){: w="760"}
 *LRU page-replacement algorithm*
 
 * LRU policy is considered to be good and is often used.
@@ -242,7 +242,7 @@ for (i = 0; i < 128; ++i)
         * Keep a stack of page numbers.
         * Note that entries must be removed from the middle of the stack.
 
-![LRU](./img/17.png){: w="320" h = "280"}
+![LRU stack update on reference to page 7: move 7 from the middle to the most-recent position](./img/17-generated.png){: w="760"}
 *Use of a stack to record the most recent page reference*
 
 * LRU-Approximation
@@ -258,7 +258,7 @@ for (i = 0; i < 128; ++i)
     * If the value is 1, give the page a second change and move on to select the next FIFO page.
 * When a page gets a second chance, its reference bit is cleared, and its arrival time is reset to the current time.
 
-![SC](./img/18.png){: w="330" h = "350"}
+![Second-chance scan: clear reference bits for C and D, advance the hand, and select zero-bit page E](./img/18-generated.png){: w="760"}
 *Second-chance (clock) page-replacement algorithm*
 
 ## Allocation of Frames
@@ -281,7 +281,7 @@ for (i = 0; i < 128; ++i)
 * **Thrashing** is a situation that a process is busy swapping pages in and out.
 * If a process *does not have enough pages*, the page-fault rate is very high.
 
-![Thrashing](./img/19.png){: w="330" h = "300"}
+![Conceptual thrashing curve: CPU utilization drops when too many processes spend time paging](./img/19-generated.png){: w="760"}
 *Thrashing*
 
 ### Working-Set Model
@@ -292,8 +292,8 @@ for (i = 0; i < 128; ++i)
 * If a page is in active use, it will be in the working set.
 * If it is no longer being used, it will drop from the working set time units after its last reference.
 
-![Locality](./img/20.png){: w="310" h = "340"}
+![Illustrative memory-reference trace: page accesses cluster within one locality before moving to another](./img/20-generated.png){: w="760"}
 *Locality in a memory-reference pattern*
 
-![Working](./img/21.png){: w="340" h = "260"}
+![Working-set examples with a ten-reference window: five distinct pages at t1 and two at t2](./img/21-generated.png){: w="760"}
 *Working-set model*

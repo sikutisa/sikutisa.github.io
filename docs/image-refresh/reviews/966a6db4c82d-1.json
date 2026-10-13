@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Rootspell/bin/programs;spellstat/mail/dist;mailprog/copy/prt/exp;proglist/obj/spell;copyall;prtlast/first.",
+      "passed": true,
+      "evidence": "root 3분기와 spell/mail/prog·copy·prt의 각 파일 및 exp 부모 확인."
+    },
+    {
+      "requirement": "Binfind/count/hex/reorder;programsp/e/mail;p reorder/list/find;ehex/count;on eparentpernode,nosharingcycle.",
+      "passed": true,
+      "evidence": "bin의 4파일, programs/p의 3파일·e의 2파일·mail 파일 모두 정확. 각 항목 부모 1개, 공유·순환 없음."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:09:09.384Z",
+  "generatedSha256": "adc28e759878a14bea4361e0788737e6a76b35bada1ef4fa9023bdab15bd7fd7",
+  "specSha256": "adb0b241c8b6e06ca19d1521133bf7ab32429ff245fbbe40e342daffacad95ca"
+}

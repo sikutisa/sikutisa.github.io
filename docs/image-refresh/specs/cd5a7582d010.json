@@ -1,0 +1,14 @@
+{
+  "title": "Abstract Factory: related products",
+  "purpose": "Show generic participants and two consistent product families.",
+  "alt": "클라이언트의 추상 팩토리·제품 의존과 두 구체 팩토리의 일관된 A/B 제품군",
+  "requiredChecks": [
+    "Client uses AbstractFactory and AbstractProductA/AbstractProductB only.",
+    "AbstractFactory createProductA(): AbstractProductA and createProductB(): AbstractProductB are readable.",
+    "ConcreteFactory1 creates ProductA1/ProductB1; ConcreteFactory2 creates ProductA2/ProductB2.",
+    "Concrete factories implement AbstractFactory; concrete A/B products implement corresponding abstract A/B product; no client→concrete dependency."
+  ],
+  "prompt": "Create a NEW original English raster technical diagram for a design-pattern study blog. White background, navy large sans-serif labels, flat blue and teal cards, spacious connectors, no copied slide layout or logos. Monospaced class/method identifiers. Distinguish uses, implements and creates via labels on directional connectors. Title \"Abstract Factory: related products\". TOP Client→AbstractFactory uses. Factory lists createProductA(): AbstractProductA, createProductB(): AbstractProductB. Top-right abstract product card lists AbstractProductA, AbstractProductB; Client→card uses. BELOW two family panels. ConcreteFactory1 implements AbstractFactory via upwards arrow; creates ProductA1 caption implements AbstractProductA and ProductB1 caption implements AbstractProductB via downwards branch. ConcreteFactory2 implements same factory; creates ProductA2 caption implements AbstractProductA and ProductB2 caption implements AbstractProductB. No client→concrete links, no mixed families. Footer \"One factory supplies a consistent product family\".",
+  "originalViewed": true,
+  "documentReviewed": true
+}

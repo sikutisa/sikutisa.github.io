@@ -1,0 +1,10 @@
+[
+  {
+    "id": "d2e840cb77b6",
+    "prompt": "Fix CPU branching paths ONLY. The three blue vertical lines below CPU end in empty space at row1, and rows2/3/4 have unattachedstarts. Replace those danglinglines with ONE connected vertical CPU-outcome bus along LEFTEDGE of allfourreturnpanels, labelled CPU outcomes, joined by a continuous line starting CPU bottom and routed in left margin. Branchthisbus intoeachof4rows. Row1→I/O queue→I/O completion→Ready queue;Row2→Ready queue;Row3→Childexecutes/completes→Readyqueue;Row4→Interruptoccurs→Readyqueue. Every row incomingarrow must start on SAME continuous CPU-outcome bus, no connection to I/O queue for Row2. Preserve all labels,cards,mainIncoming→Ready→CPU→Exit. No danglinglines."
+  },
+  {
+    "id": "72955e208c58",
+    "prompt": "Move ONLY the dashed Child termination unblocks wait arrow. Currently it starts at exec(), WRONG. Delete that dashed segment fromexec towait. New dasheddependency starts at TOPedge of exit() card, routes up thenleft, ends at BOTTOMedge of wait() card with upwardarrowhead. exit()→wait(), notexec()→wait(). Keep horizontal child exec()→exit() arrow, allotherbranches andcaptionunchanged. Clearrouteaboveexitoutsideparentresume."
+  }
+]

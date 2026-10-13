@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "flatMap으로 하위 스트림 펼치기",
+  "alt": "두 문자열을 단어 스트림으로 변환하고 네 단어로 평탄화",
+  "requiredChecks": [
+    "Input java8 lambda, stream mapping; each splits to2, flattened java8 lambda stream mapping in order.",
+    "flatMap operation one-to-many and flatten not map one-to-one."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title flatMap: expand and flatten. Two input strings exact 'java8 lambda' and 'stream mapping'. First splits into mini stream [java8, lambda], second into [stream, mapping]. Both mini streams → one output stream [java8, lambda, stream, mapping]. Label operator flatMap(line -> Arrays.stream(line.split(\" \"))). Caption One input can produce multiple output elements. Arrows correctly preserve grouping and order. No extra words.",
+  "referenceSource": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/package-summary.html"
+}

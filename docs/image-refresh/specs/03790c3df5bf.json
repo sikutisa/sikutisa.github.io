@@ -1,0 +1,14 @@
+{
+  "title": "Compiler as a facade",
+  "purpose": "Explain Compiler orchestrates scanning parsing tree and code generation; preserve related class families.",
+  "alt": "Compiler 파사드가 Scanner·Parser·ProgramNodeBuilder·CodeGenerator를 조율하는 컴파일 과정",
+  "requiredChecks": [
+    "Compiler exposes Compile(input, output) and coordinates Scanner, Parser, ProgramNodeBuilder, CodeGenerator.",
+    "Input→Scanner→Parser/Builder→ProgramNode tree→CodeGenerator→BytecodeStream output is clear.",
+    "RISCCodeGenerator and StackMachineCodeGenerator are CodeGenerator implementations; StatementNode, ExpressionNode, VariableNode are ProgramNode specializations.",
+    "Token, Symbol and Stream/BytecodeStream supporting types appear without reversing inheritance."
+  ],
+"prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif labels, exact monospaced code identifiers, restrained blue/teal cards, ample spacing, no logos or copied source composition. Title 'Compiler as a facade'. Use two sections, no dense copied UML network. Top Compiler (Facade) 'Compile(input, output)' above four numbered pipeline cards 1 Scanner(input) 'Token', 2 Parser 'Symbol' / 'Parse(scanner, builder)', 3 ProgramNodeBuilder 'GetRootNode() → ProgramNode tree', 4 CodeGenerator 'parseTree.Traverse(generator)' → BytecodeStream output. Arrows pipeline left-to-right; input labelled 'input stream'. Compiler label 'coordinates all stages', not another pipeline transformation stage. Bottom compact supporting type cards: CodeGenerator family lists 'RISCCodeGenerator extends CodeGenerator' and 'StackMachineCodeGenerator extends CodeGenerator'; ProgramNode family lists 'StatementNode extends ProgramNode', 'ExpressionNode extends ProgramNode', 'VariableNode extends ProgramNode'; Stream family 'BytecodeStream extends Stream'. Include all exact identifiers readable. Article instantiates RISCCodeGenerator(output); note 'Example uses RISCCodeGenerator(output)'. No false inheritance direction or tree→scanner.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

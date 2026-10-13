@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Rectangle stores length/width, getLength/getWidth and both area()/draw().",
+      "passed": true,
+      "evidence": "Rectangle length/width getters and area(float)/draw(void) correct."
+    },
+    {
+      "requirement": "Computational Geometry Application uses area(); Graphical Application uses draw().",
+      "passed": true,
+      "evidence": "Geometry client uses area and graphical client uses draw with arrows toward Rectangle."
+    },
+    {
+      "requirement": "Rectangle.draw() depends on GUI, creating unnecessary graphical dependency for geometry client.",
+      "passed": true,
+      "evidence": "Rectangle rendering dependency arrow points down toward GUI; shared coupling clear."
+    },
+    {
+      "requirement": "Two distinct change sources are labelled without claiming every build tool recompiles everything.",
+      "passed": true,
+      "evidence": "Two colored operations and footer distinguish geometry rules vs rendering platforms."
+    }
+  ],
+  "notes": "Pass. Exact responsibilities, method names, client dependencies and scoped SRP explanation visually verified against full article and original."
+}

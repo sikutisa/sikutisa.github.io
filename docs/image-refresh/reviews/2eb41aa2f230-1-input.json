@@ -1,0 +1,33 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "WeatherData extends java.util.Observable class; display classes implement java.util.Observer and DisplayElement.",
+      "passed": true,
+      "evidence": "WeatherData extends java.util.Observable; all three display types implement java.util.Observer and DisplayElement."
+    },
+    {
+      "requirement": "Observable addObserver(o), deleteObserver(o), protected setChanged(), notifyObservers() methods are correct.",
+      "passed": true,
+      "evidence": "Observable exact add/delete/protected setChanged/notify methods verified."
+    },
+    {
+      "requirement": "WeatherData measurementsChanged calls setChanged() then notifyObservers(); no-arg notification passes null argument.",
+      "passed": true,
+      "evidence": "measurementsChanged setChanged then notify, outgoing update(this,null) exact no-arg notification."
+    },
+    {
+      "requirement": "Observer update(Observable o,Object arg) pulls data via WeatherData getters; CurrentConditionsDisplay does not depend on pushed float arguments here.",
+      "passed": true,
+      "evidence": "Opposite pull getters arrow plus CurrentConditions update/cast/getters/display example, no pushed float signature."
+    },
+    {
+      "requirement": "Legacy APIs are labelled deprecated since Java 9; no guarantee of observer notification order.",
+      "passed": true,
+      "evidence": "Legacy footer deprecated since Java9 matches Oracle reference; no delivery order guarantee."
+    }
+  ],
+  "notes": "Pass. Visually verified abstraction implementations, observer membership, state direction, custom push vs legacy pull signatures, and changed-flag notification semantics against original and article; legacy API checked against Oracle documentation."
+}

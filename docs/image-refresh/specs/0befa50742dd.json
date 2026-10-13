@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "map의 일대일 변환",
+  "alt": "Item 두 개를 이름 두 개로 변환하는 map 일대일 관계",
+  "requiredChecks": [
+    "Input Item computer, Item car; map(Item::getName) outputs computer,car exactly2.",
+    "One output per input with distinct arrows preserves order; no flatten or duplicates."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title map: one-to-one transformation. Two input cards Item{name=computer} and Item{name=car}. Operator map(Item::getName). Each card arrow to own output token computer or car. Output stream [computer, car] exact2. Caption Each input becomes one output. Clear two independent matching arrows, no other values.",
+  "referenceSource": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/package-summary.html"
+}

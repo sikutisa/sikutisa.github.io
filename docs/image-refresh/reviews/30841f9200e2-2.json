@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "ColumnsPRICE,ID,BACKGROUND_NAME,URL.",
+      "passed": true,
+      "evidence": "Four exact headers readable."
+    },
+    {
+      "requirement": "Row2000|1|back1|backUrl1;inheritedcommonfieldsinline,noparenttablejoin.",
+      "passed": true,
+      "evidence": "Row2000/1/back1/backUrl1 exact; instruction removed, own table no FK."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T02:08:15.402Z",
+  "generatedSha256": "fc0d3fef651e46bb5cd1ecb39813e540f86036ced42e437b0eb46542062aee76",
+  "specSha256": "d9c35f0452b41aa938f7edbed1b1da82c8e5723528cf45e98f1b10f17e883c89"
+}

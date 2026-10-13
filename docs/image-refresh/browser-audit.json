@@ -1,0 +1,106 @@
+{
+  "at": "2026-10-13T04:05:04.795Z",
+  "pages": 36,
+  "images": 272,
+  "captures": [
+    {
+      "document": "_wiki/Book/Real_MySQL/아키텍처/아키텍처.md",
+      "imageId": "b43162264ce3",
+      "viewportWidth": 1440,
+      "screenshot": ".cache/image-refresh/아키텍처-b43162264ce3-1440.png",
+      "bounds": {
+        "x": 8,
+        "y": 246.375,
+        "width": 760,
+        "height": 506.65625
+      },
+      "natural": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "document": "_wiki/Book/Real_MySQL/아키텍처/아키텍처.md",
+      "imageId": "b43162264ce3",
+      "viewportWidth": 390,
+      "screenshot": ".cache/image-refresh/아키텍처-b43162264ce3-390.png",
+      "bounds": {
+        "x": 8,
+        "y": 482.71875,
+        "width": 374,
+        "height": 249.328125
+      },
+      "natural": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "document": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/Command_Pattern.md",
+      "imageId": "11bb97690e7e",
+      "viewportWidth": 1440,
+      "screenshot": ".cache/image-refresh/Command_Pattern-11bb97690e7e-1440.png",
+      "bounds": {
+        "x": 8,
+        "y": 246.25,
+        "width": 760,
+        "height": 506.65625
+      },
+      "natural": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "document": "_wiki/Computer_Science/Design_Pattern/Command_Pattern/Command_Pattern.md",
+      "imageId": "11bb97690e7e",
+      "viewportWidth": 390,
+      "screenshot": ".cache/image-refresh/Command_Pattern-11bb97690e7e-390.png",
+      "bounds": {
+        "x": 8,
+        "y": 374.921875,
+        "width": 374,
+        "height": 249.328125
+      },
+      "natural": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "imageId": "5324d78f9010",
+      "viewportWidth": 1440,
+      "screenshot": ".cache/image-refresh/Process-5324d78f9010-1440.png",
+      "bounds": {
+        "x": 8,
+        "y": 482.8125,
+        "width": 760,
+        "height": 380
+      },
+      "natural": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "document": "_wiki/Computer_Science/Operating_System/Process/Process.md",
+      "imageId": "5324d78f9010",
+      "viewportWidth": 390,
+      "screenshot": ".cache/image-refresh/Process-5324d78f9010-390.png",
+      "bounds": {
+        "x": 8,
+        "y": 482.40625,
+        "width": 374,
+        "height": 187
+      },
+      "natural": {
+        "width": 1774,
+        "height": 887
+      }
+    }
+  ],
+  "issues": [],
+  "visualInspection": "passed: manually inspected all six screenshots for corrected images at 1440px and 390px; no clipping or aspect distortion; dense text requires full-image enlargement on mobile",
+  "visuallyReviewedAt": "2026-10-13T04:07:51.527Z"
+}

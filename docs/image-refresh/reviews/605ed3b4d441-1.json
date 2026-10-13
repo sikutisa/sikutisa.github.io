@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Usermodemodebit1; kernelmodemodebit0; userprocess→call→trap→executesystemcall→return→user.",
+      "passed": true,
+      "evidence": "User1/Kernel0 구역에서 실행→호출→Trap→커널 실행→Return→사용자 재개가 순서대로 연결된다."
+    },
+    {
+      "requirement": "Trap enters kernel0, return restores user1, no swappedmodebitvalues.",
+      "passed": true,
+      "evidence": "Trap0은 아래로,Return1은 위로 향하고 모드비트가 뒤바뀌지 않았다."
+    }
+  ],
+  "notes": "직접 시각 검수와 PNG 디코딩.",
+  "at": "2026-10-13T00:04:03.111Z",
+  "generatedSha256": "9ee91c1430e7c6f1f7a9c82e6e7c0be6672faa9684d81decaa234e16876cf51a",
+  "specSha256": "d8537dbdb198bb421262e54ac2aa260b3ef44cf14fef4d5cf58afbce95d37327"
+}

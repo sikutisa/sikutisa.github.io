@@ -1,0 +1,15 @@
+{
+  "title": "SJF example: CPU burst times",
+  "purpose": "Provide exact four-process input for shortest-job-first schedule.",
+  "alt": "SJF 예시의 P1·P2·P3·P4 burst 시간이 각각 6·8·7·3ms인 입력표",
+  "requiredChecks": [
+    "P1=6,P2=8,P3=7,P4=3ms.",
+    "All processes arrive at0 for subsequent nonpreemptive SJF example.",
+    "Table only, no unprovided priorities or deadlines.",
+    "Units and four identifiers exact."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog. Opaque white background, navy large readable type, restrained blue/teal/amber flat cards, generous spacing. Draw precise listed data only, no logos or textbook composition. Title 'SJF example: CPU burst times'. Large table Process|CPU burst(ms), P1|6,P2|8,P3|7,P4|3. Subtitle 'All arrive at time 0'. Footer 'SJF selects the smallest next CPU burst'. No priority column/Gantt/extra values.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "calculationVerified": true
+}

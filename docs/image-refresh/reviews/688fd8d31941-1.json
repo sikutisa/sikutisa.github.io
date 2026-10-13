@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "P1 arrival0 burst8;P2 arrival1 burst4;P3 arrival2 burst9;P4 arrival3 burst5.",
+      "passed": true,
+      "evidence": "P1(0,8),P2(1,4),P3(2,9),P4(3,5)exact."
+    },
+    {
+      "requirement": "Units milliseconds for both time columns.",
+      "passed": true,
+      "evidence": "Arrival and burst both explicitly ms."
+    },
+    {
+      "requirement": "Input table only, no priorities added.",
+      "passed": true,
+      "evidence": "Onlyinputtable, no priorities."
+    },
+    {
+      "requirement": "SRTF considers remaining time when newly arrived processes become ready.",
+      "passed": true,
+      "evidence": "Footer compares remaining CPU time of ready processes."
+    }
+  ],
+  "notes": "Full visual inspection and independently computed numerical checks agree; decode before approval.",
+  "at": "2026-10-12T22:13:05.418Z",
+  "generatedSha256": "8966303aafd33c3fd9fd0ab19c90bd158ebc175d79a8d2a04bb5e87d3d3e1b6e",
+  "specSha256": "323883cd21ddadafcd9b784a0463e9bda3119e7e577a72c36ff7a553bf7c7b10"
+}

@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Two I/O cycles: request→device transferring→transferdone; device idle between cycles.",
+      "passed": true,
+      "evidence": "요청1/2 후 장치 전송 및 완료1/2 후 Idle 전환이 네 가이드와 맞는다."
+    },
+    {
+      "requirement": "CPU executes user process during transfers and briefly handles interrupt after each completion, then resumes; shared time axis no numerical durations.",
+      "passed": true,
+      "evidence": "두 CPU Interrupt processing 모두 해당 Completion 가이드에서 시작해 오른쪽으로 이어지고 앞뒤는 User process executing이다."
+    }
+  ],
+  "notes": "수정본을 직접 원본 크기로 시각 검수. 모든 글자·시간 관계 확인 및 PNG 디코딩.",
+  "at": "2026-10-13T00:11:33.195Z",
+  "generatedSha256": "3efaa5404fb1d3465dd4102b217b22cb955bfe8a209bba70113b113516ec9502",
+  "specSha256": "42cb446897f691b2fa624cd2b6d2915b383b64fe3f84b82a6555b1d61b677494"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Multiple data centers",
+  "purpose": "Separate geographic DNS endpoint selection from direct regional HTTP routing and illustrate regional DB/cache plus sharedstorage with data synchronization caveats.",
+  "alt": "지리 기반 DNS 주소 선택, 지역별 로드밸런서·서버·DB·캐시 및 지역 간 데이터 동기화",
+  "sources": [
+    "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route-53-concepts.html",
+    "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-values-geo.html"
+  ],
+  "requiredChecks": [
+    "GeoDNS exchanges DNS query/selected regional endpoint with Client, while HTTP connects Client directly to regional load balancer, not through DNS.",
+    "Two data-center boundaries each contain local Load balancer→Web servers and local DB/Cache.",
+    "Regional DBs have a dashed data synchronization link with policy-dependent qualification; both regional web tiers access external Shared storage.",
+    "CDN serves client static assets separately; failover caption acknowledges health checks and DNS caching."
+  ],
+  "prompt": "Create a NEW original technical blog raster diagram. English labels with large navy sans-serif text on white, flat blue/teal cards, wide clean routing gutters, no copied textbook composition, vendor logos or decoration. TITLE \"Multiple data centers\". At topcenter \"Client\". Topleft \"GeoDNS\" connected ONLYtoClient by two separateoppositedirection arrows \"DNS query\" and \"Regional endpoint\"; top-right \"CDN\" doubleheadedClientlink \"Static assets\". Two largebottomhalf side-by-side boundaries \"Data center A\" and \"Data center B\". Each has vertically \"Regional load balancer\"→\"Web servers\", then branches fromwebservers to two localcards \"Database\" and \"Cache\". Client has separate DOWNWARDHTTParrows to each regionalLoadbalancer, labelled \"HTTP to selected endpoint\" collectively; no globalLB sending toDCs andnoHTTPthroughGeoDNS. BothDatabasecards connected by dashedbidirectionallink in clearbottomroutinggutter labelled \"Data synchronization (policy dependent)\". BelowbothDCs external \"Shared storage\" card, connected bidirectionally by thinoutergutterroutes from both WEBservergroups, notfromDBs. Footer \"Failover uses health checks; DNS caching affects convergence\". Do not promise instantfailoverorstrongcrossregionconsistency. Alllabels legible. Keep sharedstoragepaths clearly separated fromdata synchronization path; noarrows throughunrelatedcards.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

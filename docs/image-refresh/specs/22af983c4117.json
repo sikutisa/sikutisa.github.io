@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "계산 모델과 컴퓨터 계층의 개념적 대응",
+  "alt": "튜링 머신의 헤드·테이프와 컴퓨터의 CPU·메모리를 개념적으로 비교한 도식",
+  "requiredChecks": [
+    "Two conceptual columns: 튜링 머신, 유니버설 튜링 머신, 헤드, 테이프; 컴퓨터, 응용 프로그램, 운영체제, CPU, 메모리.",
+    "Head reads/writes tape and CPU accesses memory; correspondence is an analogy, not OS equality to universal Turing machine."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title 계산 모델과 컴퓨터의 개념적 대응. Two columns separated by whitespace. LEFT title 튜링 머신, layered small cards 유니버설 튜링 머신 then 헤드, bidirectional arrow from 헤드 to horizontal segmented tape labelled 테이프 with ellipsis on both ends. RIGHT title 컴퓨터, stack 응용 프로그램, 운영체제, CPU; CPU bidirectional arrow to horizontal memory card 메모리. Subtle horizontal dotted alignment lines between 헤드 and CPU and between 테이프 and 메모리 only. Footer 학습을 위한 개념적 비교. Do not label operating system as literally equal to universal machine."
+}

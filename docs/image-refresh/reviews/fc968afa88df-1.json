@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Exactly two mutex boxes first_mutex and second_mutex, each one instance; two thread circles thread_one and thread_two.",
+      "passed": true,
+      "evidence": "Two mutex boxes each contain one dot; circles read thread_one/thread_two."
+    },
+    {
+      "requirement": "Assignment first_mutex→thread_one and second_mutex→thread_two; request thread_one→second_mutex and thread_two→first_mutex.",
+      "passed": true,
+      "evidence": "Clockwise held first_mutex→thread_one and second_mutex→thread_two; blue waiting thread_one→second_mutex/thread_two→first_mutex."
+    },
+    {
+      "requirement": "Legend clearly distinguishes held assignment and waiting request; closed cycle communicates deadlock; all labels readable.",
+      "passed": true,
+      "evidence": "Legend matches held/waiting directions; closed loop and Deadlock caption clear, no clipping."
+    }
+  ],
+  "notes": "Direct visual comparison with original graph and full article. Exact edge endpoints and instance counts checked; PNG decoder checked separately.",
+  "at": "2026-10-12T22:43:54.855Z",
+  "generatedSha256": "c611bcd6d1b481c397622fa0fe9b43074bd39547b9d51fd6660c0bc5cdf4c5e8",
+  "specSha256": "5b5049d9d5cdf0f3799cf5005ccd1db55ff7e23375e7c0eff494663850358445"
+}

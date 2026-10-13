@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "IPC models",
+  "alt": "프로세스 A·B의 공유 메모리 접근과 커널 메시지 큐를 통한 통신 비교",
+  "requiredChecks": [
+    "SharedmemorybothAandBaccesssameuserregion;kernelbelownotper-messagedatapath.",
+    "MessagepassingA/Bsend/receiveviakernelqueue m0,m1,m2,m3,…mn; modelsdistinct."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Two models of interprocess communication. LEFT Shared memory: ProcessA andProcessB two cards aboveKernel band; central Shared memory userregion; bothbidirectionalarrows to sharedregion,notthroughkernel. RIGHT Message passing: ProcessA andProcessB cards aboveseparate Kernelband containing Message queue cells m0,m1,m2,m3,…,mn. Bothprocessesbidirectionalarrows toqueue,clearsend/receive; no directAtoBdataarrow. Bothpanels equalwide, no extraaddressnumbers."
+}

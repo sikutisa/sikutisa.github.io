@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "CPUlogical(p,d); pagepsearchedinTLB; hitreturnsf withoutpage-tablelookup.",
+      "passed": false,
+      "evidence": "TLBhitfcorrectbutpindexpathincorrectlystartsunderlogicaldfield ratherthanpfield."
+    },
+    {
+      "requirement": "Miss→pagetableindexedp→f; bothpathsconstructphysical(f,d); offsetd bypasseslookupunchanged.",
+      "passed": true,
+      "evidence": "Misspagetable→f/output(f,d),dtopbypasslabelunchanged."
+    },
+    {
+      "requirement": "No hitpaththroughpagetable; physicaladdressreachesphysicalmemory; cachemissnotautomaticallypagefault.",
+      "passed": true,
+      "evidence": "Hitdirect,noautomaticpagefaultcaptioncorrect; memoryforward."
+    }
+  ],
+  "notes": "Exact original values and complete article checked; reject misleading field connections or ambiguous per-row mapping arrows.",
+  "at": "2026-10-12T23:26:46.553Z",
+  "generatedSha256": "2a1018173472b6744bbfeae36dfa0731c4f524cbea6a00d97419c275ad6fe5cc",
+  "specSha256": "38ed34ed5dba62135dd60ae7ea64b4bef55ab3b2b228739e7b549bd1f0cc61ba"
+}

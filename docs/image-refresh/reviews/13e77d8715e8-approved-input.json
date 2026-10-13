@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Five snapshots show empty, after7, after0, after1, and request2.",
+      "passed": true,
+      "evidence": "Five snapshots are labeled Initially empty, After reference7, After reference0, After reference1, and Request page2."
+    },
+    {
+      "requirement": "Three-frame states are [—,—,—], [7,—,—], [7,0,—], [7,0,1], and [7,0,1] unchanged while2 is pending.",
+      "passed": true,
+      "evidence": "Top-to-bottom states are dash/dash/dash;7/dash/dash;7/0/dash;7/0/1;7/0/1. Every snapshot has exactly3frames."
+    },
+    {
+      "requirement": "The fourth requested page2 is outside the full frames; no victim is selected.",
+      "passed": true,
+      "evidence": "Requested2 is outside the last snapshot, which still contains7,0,1; no replaced value or selected victim marker appears."
+    },
+    {
+      "requirement": "The question explicitly asks which of7,0,1 should be replaced; labels and all frame counts are exact.",
+      "passed": true,
+      "evidence": "Footer explicitly asks Which page should be replaced:7,0,or1? Labels and digits are readable, and the dashed fault arrow ends at the frame-panel boundary."
+    }
+  ],
+  "notes": "Viewed all labels, digits and frame/axis values against original and document. The Belady curve was also checked against independently simulated data in examples/virtual-memory.json. PIL verify/load succeeded."
+}

@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Mouse→Subject removal request is explicit.",
+      "passed": true,
+      "evidence": "Mouse-originating removeObserver(mouse) arrow reaches Subject leftwards."
+    },
+    {
+      "requirement": "Subject state remains 5.",
+      "passed": true,
+      "evidence": "Subject state5 unchanged."
+    },
+    {
+      "requirement": "Cat, Dog, Mouse, Duck are current observers before removal completes.",
+      "passed": true,
+      "evidence": "Four typed object rows cat/Cat,dog/Dog,mouse/Mouse,duck/Duck remain in current pre-removal roster."
+    },
+    {
+      "requirement": "Unsubscribe request is not a notification or a state change.",
+      "passed": true,
+      "evidence": "Only removal request arrow, no notification/state-change arrows."
+    }
+  ],
+  "notes": "Pass. Native visual inspection verified object membership, state transitions, notification/removal directions and abstraction dependency."
+}

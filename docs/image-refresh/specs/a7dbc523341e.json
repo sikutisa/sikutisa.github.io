@@ -1,0 +1,13 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "JOINED PROP data",
+  "alt": "PROP의 ID 1과 prop1이 ITEM의 ID 1을 참조",
+  "requiredChecks": [
+    "ColumnsID,PROP_NAME;singlerow1,prop1.",
+    "ID1sameITEMID1PK/FK,commonfieldsnotduplicatedchild."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title JOINED: PROP data. Table columns ID | PROP_NAME, one row 1 | prop1. Note ID 1 references ITEM.ID 1 (PK + FK). Only2columns, no price/url added.",
+  "referenceSource": "https://jakarta.ee/specifications/persistence/3.1/apidocs/jakarta.persistence/jakarta/persistence/mappedsuperclass",
+  "repairPrompt2": "Replace entire diagram with a single centered PROP table only. Title JOINED: PROP data. Columns exactly ID | PROP_NAME. One row exactly 1 | prop1. Underneath plain text 'ID 1 references ITEM.ID 1 (PK + FK)'. Delete all ITEM table cards and all arrows. No other columns, tables or data."
+}

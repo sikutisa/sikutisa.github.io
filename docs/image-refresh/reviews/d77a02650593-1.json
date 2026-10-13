@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "SixexplicitfieldsProcessstate,Processnumber,Programcounter,Registers,Memorylimits,Listofopenfiles plusellipsis.",
+      "passed": true,
+      "evidence": "Process state,Process number,Program counter,Registers,Memory limits,List of open files와 Other… 행이 정확하다."
+    },
+    {
+      "requirement": "PCBholdsper-processcontextnotCPUitself; readablefieldlabels.",
+      "passed": true,
+      "evidence": "PCB는 하나의 레코드이며 saved information for one process 캡션이 정확하다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:20:52.339Z",
+  "generatedSha256": "d71fdf07e76d85306d87fb8fe2425e622b367d8a4a7695c381cc1a10b99d995c",
+  "specSha256": "b0d742d3b7f0cd2b7da8c3ea81e4dd4164cdf87c06969339313b47e3d3519b3c"
+}

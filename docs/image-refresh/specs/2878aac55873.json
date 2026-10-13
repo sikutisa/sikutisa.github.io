@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Illustrative Linux process tree",
+  "alt": "init PID1에서 로그인·커널 스레드·sshd와 그 자식들로 이어지는 예시 프로세스 트리",
+  "requiredChecks": [
+    "init1childrenlogin8415,kthreadd2,sshd3028;login→bash8416→ps9298andemacs9204.",
+    "kthreadd→khelper6,pdflush200;sshd3028→sshd3610→tcsh4005; exacthistoricalexample notcurrentdefault claim."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title An illustrative Linux process tree. Root init (pid=1). THREEchildbranches login(pid=8415),kthreadd(pid=2),sshd(pid=3028). login→bash(pid=8416); bash→ps(pid=9298) andemacs(pid=9204). kthreadd→khelper(pid=6) andpdflush(pid=200). sshd3028→sshd(pid=3610)→tcsh(pid=4005). Plainparentchildlinesnoadditionaledges. EXACT11nodes/IDs. Footer Historical example; process names and PIDs vary by system. Clearreadabletreenesting."
+}

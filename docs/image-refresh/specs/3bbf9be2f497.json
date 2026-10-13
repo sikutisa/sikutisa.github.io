@@ -1,0 +1,14 @@
+{
+  "title": "Dispatcher: switch the running process",
+  "purpose": "Show outgoing state save and incoming state restore within dispatch latency.",
+  "alt": "Dispatcher가 P0 상태를 PCB0에 저장하고 PCB1에서 P1 상태를 복원해 실행을 전환하는 과정",
+  "requiredChecks": [
+    "Sequence P0 executing→save state to PCB0→restore state from PCB1→P1 executing.",
+    "PCB identities matched to outgoing/incoming processes.",
+    "Dispatch latency bracket spans switching interval between P0 and P1 execution.",
+    "No claim context switching is productive user execution or I/O."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog. Opaque white background, navy highly readable type, restrained blue/teal/amber, flat design, generous margins. Exact data and labels only, no logos/copying textbook composition. Title 'Dispatcher: switch the running process'. Four vertical cards with down arrows: 'P0 executing'; 'Save P0 state into PCB0'; 'Restore P1 state from PCB1'; 'P1 executing'. Right bracket starts after P0 executing and ends before P1 executing, labelled 'Dispatch latency'. Footer 'The dispatcher resumes the process chosen by the scheduler'. P0/P1 execution blue, switching amber; exact PCB0/PCB1 labels. No timing or I/O.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

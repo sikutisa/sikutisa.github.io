@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "One-to-one",
+  "alt": "각 사용자 스레드가 별개의 커널 스레드에 대응하는 모델",
+  "requiredChecks": [
+    "FouruserU1..U4mappedrespectivelyK1..K4.",
+    "Separate4verticallinksacrossuser/kernelboundarynocrossmaps."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title One-to-one model. User space four User threads U1,U2,U3,U4 in row. Kernel space below four Kernel threads K1,K2,K3,K4 aligned. One vertical line U1—K1,U2—K2,U3—K3,U4—K4. Exactly4each; horizontal boundary clearly separates. No converging links."
+}

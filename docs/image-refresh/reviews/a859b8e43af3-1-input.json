@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "UIToolKit uses only WidgetFactory, TextBox and ScrollBar abstractions; no client→concrete product creation.",
+      "passed": false,
+      "evidence": "UIToolKit→WidgetFactory uses is correct, but uses returned products originates from WidgetFactory rather than UIToolKit; explicit client product dependency missing."
+    },
+    {
+      "requirement": "WidgetFactory declares createTextBox(): TextBox and createScrollBar(): ScrollBar.",
+      "passed": true,
+      "evidence": "WidgetFactory lists exact createTextBox():TextBox andcreateScrollBar():ScrollBar."
+    },
+    {
+      "requirement": "WinXPWidgetFactory and MotifWidgetFactory implement WidgetFactory; each creates its matching TextBox/ScrollBar family.",
+      "passed": false,
+      "evidence": "WinXPfactory implements line reachesfactory, butMotiffactory implementsline beginsatpanelboundary and doesnotextendtoMotifWidgetFactorycard. Bothfamilycreatebranchescorrect."
+    },
+    {
+      "requirement": "WinXPTextBox/MotifTextBox implement TextBox; WinXPScrollBar/MotifScrollBar implement ScrollBar; no cross-family creation.",
+      "passed": true,
+      "evidence": "All four product captions map TextBox/ScrollBarcorrectly and factorycreatesownfamilyonly."
+    }
+  ],
+  "notes": "Fail: diagram has missing/misattributed dependency connectors; edit and re-inspect before replacement."
+}

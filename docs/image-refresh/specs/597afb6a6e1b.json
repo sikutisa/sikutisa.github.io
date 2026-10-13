@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "title": "Page replacement",
+  "purpose": "Show victim page out, invalidation, incoming page in, and updated resident mapping.",
+  "requiredChecks": [
+    "Four numbered stages are page out dirty victim if needed, invalidate victim mapping, page in requested page to same frame f, update requested mapping.",
+    "Outgoing transfer points RAM→storage and incoming transfer points storage→RAM.",
+    "Victim ends present0 and requested page ends framef/present1; both cannot remain mapped to framef.",
+    "The dirty-page condition is explicit; do not imply every clean victim needs disk write."
+  ],
+  "alt": "Page replacement reuses frame f: save a dirty victim if needed, invalidate its mapping, load the requested page, and update the page table",
+  "prompt": "Create a NEW original English technical blog diagram. White background, crisp dark navy large sans-serif labels, flat blue/teal outlined shapes, generous whitespace, simple unambiguous connectors, no decorative art, no logos or watermark. TITLE \"Page replacement\". Landscape educational workflow with four numbered boxes connected left-to-right by clear arrows. Exact labels, allow line breaks:\n\"1  Page out dirty victim if needed\"\n\"2  Invalidate victim mapping\"\n\"3  Page in requested page\"\n\"4  Update requested-page mapping\".\nBelow workflow put TWO well-separated supporting panels \"Physical frame f\" and \"Backing storage\". Show an arrow labeled \"Victim page out\" pointing from frame f to storage, and a separate arrow labeled \"Requested page in\" pointing from storage to frame f. Label the first arrow with additional small text \"Only if dirty\". Below panels put a small final page-table summary with headers \"Page\",\"Frame\",\"Present\"; rows \"Victim | — | 0\" and \"Requested | f | 1\". All transfers reuse the SAME frame f. Footer exactly \"Restart after the new mapping is ready\". No invented numeric addresses, no duplicate valid mapping to f, no copied cylindrical disk graphics."
+}

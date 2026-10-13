@@ -1,0 +1,14 @@
+{
+  "title": "Observer pattern participants",
+  "purpose": "Show subject/observer abstractions and concrete pull-style state access.",
+  "alt": "Subject·Observer 인터페이스와 구체 구현, 관찰자 목록 및 상태 조회 관계",
+  "requiredChecks": [
+    "Subject interface registerObserver(), removeObserver(), notifyObservers(); Observer interface update().",
+    "ConcreteSubject implements Subject; has getState()/setState() and an observer list.",
+    "ConcreteObserver implements Observer and references ConcreteSubject for state access.",
+    "Subject notifies Observer.update(); observer reads subject state, not reverse inheritance."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference study blog. Opaque white background, large readable navy sans-serif text, monospaced identifiers, blue/teal/amber flat cards and roomy gutters. No copied irregular bubbles, photographed source or logos. Use plain labelled rectangles for Cat/Dog/Mouse/Duck object names, no animal illustration needed. Include only listed identifiers; do not invent code bodies, modifiers, state values, extra arrows or recipients. Title 'Observer pattern participants'. TOP Subject <<interface>> 'registerObserver(o); removeObserver(o); notifyObservers()' arrowrighttoObserver<<interface>> 'update()', label 'observers: many / notify update()'. BELOWConcreteSubjectcard 'implements Subject' 'state' 'getState(); setState()'. BELOWRIGHTConcreteObservercard 'implements Observer' 'subject: ConcreteSubject' 'update(): read subject.getState()'. ConcreteObserver→ConcreteSubject arrowleft labelled 'reads state (pull example)'. Explicit implementsinsidecards ratherthan complextriangles. Footer 'The Subject talks to the Observer interface; concrete observers react to changes'. No ConcreteSubjectextendsObserver.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

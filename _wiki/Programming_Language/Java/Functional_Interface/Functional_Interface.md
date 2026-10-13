@@ -257,7 +257,7 @@ public class Example {
 InterfaceAB interfaceAB = interfaceA.andThen(interfaceB);
 intrefaceAB.method();
 ```
-![andthen](./img/1.png){: w="330" h = "300"}
+![A.andThen(B)가 입력을 A, B 순서로 처리하는 함수 합성](./img/1-generated.png){: w="760"}
 *andThen*
 
 * andThen의 경우 interfaceAB의 method를 호출하면
@@ -269,7 +269,7 @@ InterfaceAB interfaceAB = interfaceA.compose(interfaceB);
 intrefaceAB.method();
 ```
 
-![compose](./img/2.png){: w="330" h = "300"}
+![A.compose(B)가 입력을 B, A 순서로 처리하는 함수 합성](./img/2-generated.png){: w="760"}
 *compose*
 
 

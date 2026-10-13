@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Process A and Process B have distinct virtual address-space rows, each with text, data, heap, shared library and stack regions.",
+      "passed": true,
+      "evidence": "Both process columns contain text,data,heap,Shared library,stack with correct spelling; changing the stacked bars to side-by-side columns preserves the conceptual regions."
+    },
+    {
+      "requirement": "Both shared-library regions point to the same one physical shared-pages container.",
+      "passed": true,
+      "evidence": "Each Shared library cell has an independent connector starting from its inward side edge and routed through white central space to the same physical shared-pages container. No connector crosses the other process or a private cell."
+    },
+    {
+      "requirement": "The physical container has Library page 0 and Library page 1 exactly once; it is not duplicated per process.",
+      "passed": true,
+      "evidence": "One container contains exactly Library page0 and Library page1 once each."
+    },
+    {
+      "requirement": "Private-region labels remain separate from shared library; all text and arrows are legible.",
+      "passed": true,
+      "evidence": "The corrected two arrows do not start at or cross heap, text, data, stack. All labels and the footer remain legible."
+    }
+  ],
+  "notes": "Compared all content and connector endpoints with original/document; corrected library mapping has no private-region intersections. PNG decoding verified."
+}

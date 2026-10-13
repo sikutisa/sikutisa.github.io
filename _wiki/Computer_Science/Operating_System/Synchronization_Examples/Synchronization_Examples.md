@@ -377,7 +377,7 @@ class SharedDB {
 
 * Need to allocate *several resources* among *several processes* in a **deadlock-free** and **starvation-free manner**.
 
-![Philosopher](./img/1.png){: w="320" h = "320"}
+![5명의 철학자가 이웃한 젓가락 두 개를 공유하는 식사 문제](./img/1-generated.png){: w="760"}
 *The situation of the dining philosophers*
 
 ### Semaphore Solution

@@ -41,14 +41,14 @@ tags: [computer science, os]
 
 ### Turing Machine
 * Alan Turing이 현대 컴퓨터의 원형을 제시함
-![Turing Machine](./img/1.png){: w="600" h = "300"}
+![튜링 머신의 헤드·테이프와 컴퓨터의 CPU·메모리를 개념적으로 비교한 도식](./img/1-generated.png){: w="760"}
 
 ### ISA
 * Neumann이 stored-program 방식을 처음으로 제시
     * A **stored-program** computer is a computer that stores *programs* in a memory.
     * Memory에서 Instruction을 fetch를 해오고 CPU에서 Execute하는 구조
 
-![Stored Program](./img/2.png){: w="400" h = "400"}
+![메모리에 저장한 명령어와 데이터를 버스로 읽고 쓰는 CPU 구조](./img/2-generated.png){: w="760"}
 
 * 따라서, a program is a set of *instructions* that tells a computer's hardware to perform a task.
 
@@ -68,7 +68,7 @@ tags: [computer science, os]
 * The application programs
 * And a user
 
-![Computer System](./img/3.png){: w="420" h = "400"}
+![사용자·시스템 및 응용 프로그램·운영체제·하드웨어의 네 계층](./img/3-generated.png){: w="760"}
 *Abstract view of the components of a computer system*
 
 ### Defining Operating Systems
@@ -84,7 +84,7 @@ tags: [computer science, os]
     * one or more CPUs and
     * a number of device controllers connected through a common **bus**.
 
-![Typical PC](./img/4.png){: w="500" h = "380"}
+![CPU·메모리·디스크 및 USB·그래픽 컨트롤러가 공유 버스로 연결된 PC 구조](./img/4-generated.png){: w="760"}
 *A typical PC computer system*
 
 ### Bootstrap
@@ -93,7 +93,7 @@ A **bootstrap** program is the first program to run on computer power-on, and th
 ### Interrupt
 Hardware may trigger and interrupt at any time by sending a signal to the CPU, usually by way of the system bus.
 
-![Interrupts](./img/5.png){: w="520" h = "380"}
+![입출력 전송 중 CPU는 사용자 프로세스를 실행하고 완료 인터럽트 때 잠시 처리하는 타임라인](./img/5-generated.png){: w="760"}
 *Interrupt timeline for a single program doing output*
 
 ### von Neumann architecture
@@ -113,13 +113,13 @@ The wide variety of *storage* systems can be organized in a hierarchy according 
 * storage capacity
 * and access time
 
-![Memory Hierarchy](./img/6.png){: w="440" h = "480"}
+![레지스터부터 자기 테이프까지 저장장치 계층과 상대적인 접근 속도·용량](./img/6-generated.png){: w="760"}
 *Storage-device hierarchy*
 
 ### I/O Structure
 A large portion of OS code is dedicated to managing I/O
 
-![Computer System](./img/7.png){: w="400" h = "400"}
+![CPU·캐시·메모리·장치 간 명령 실행·데이터·인터럽트·DMA 경로](./img/7-generated.png){: w="760"}
 *How a modern computer system works*
 
 ## Computer System Architecture
@@ -134,13 +134,13 @@ A large portion of OS code is dedicated to managing I/O
 * The most common multiprocessor systems, in which each peer CPU processor performs all tasks.
 * *Asymmetric* multiprocessing: each processor is assigned a specific task.
 
-![SMP](./img/8.png){: w="400" h = "300"}
+![각 레지스터·캐시를 가진 CPU 세 개가 동일한 메모리를 공유하는 SMP 구조](./img/8-generated.png){: w="760"}
 *Symmetric multiprocessing architecture*
 
 ### Multi-core design
 * With several cores on the same processor chip.
 
-![Multi-core](./img/9.png){: w="360" h = "300"}
+![하나의 프로세서 칩에 두 코어가 있고 각 레지스터·캐시에서 공유 메모리로 연결되는 구조](./img/9-generated.png){: w="760"}
 *_A dual-core design with two cores on the same chip_*
 
 ## Operating System Operations
@@ -149,7 +149,7 @@ A large portion of OS code is dedicated to managing I/O
 * keeps several processes in memory simultaneously.
 * to increase CPU utilization.
 
-![Multiprogramming](./img/10.png){: w="300" h = "420"}
+![주소 0부터 512M까지 운영체제와 작업 네 개가 동시에 상주하는 예시 메모리](./img/10-generated.png){: w="760"}
 *Memory layout for a multiprogramming system*
 
 ### Multiprocessing (=multitasking)
@@ -162,7 +162,7 @@ A large portion of OS code is dedicated to managing I/O
 * Two separate mode of operations: **user mode** and **kernel mode** to ensure that an incorrect program.
     * cannot cause other programs to execute incorrectly
 
-![User mode & Kernel mode](./img/11.png){: w="460" h = "320"}
+![사용자 모드에서 시스템 호출로 커널 모드로 전환하고 반환하는 과정](./img/11-generated.png){: w="760"}
 *Transition from user to kernel mode*
 
 ## Virtualization
@@ -172,7 +172,7 @@ A large portion of OS code is dedicated to managing I/O
 * **VMM**: Virtual Machine Manager
     * VMware, XEN, WSL, ...
 
-![Virtualization](./img/12.png){: w="480" h = "400"}
+![단일 운영체제와 VMM 위의 독립 커널을 가진 세 가상 머신 비교](./img/12-generated.png){: w="760"}
 *A computer running (a) a single operating system and (b) three virtual machines*
 
 ## Operating System Services
@@ -187,7 +187,7 @@ A large portion of OS code is dedicated to managing I/O
     * Logging
     * Protection and securit
 
-![Operating System Services](./img/13.png){: w="600" h = "480"}
+![사용자 인터페이스·시스템 호출·운영체제 서비스와 하드웨어의 계층](./img/13-generated.png){: w="760"}
 *A view of operating system services*
 
 ## User and Operating System Interface
@@ -203,11 +203,11 @@ A large portion of OS code is dedicated to managing I/O
 * System calls provides an interface to the services made available by the OS
 * API: Application Programming Interface
 
-![System calls](./img/14.png){: w="370" h = "330"}
+![사용자 open() 호출이 시스템 호출 인터페이스에서 테이블 항목 i를 거쳐 커널 구현으로 전달되고 반환하는 과정](./img/14-generated.png){: w="760"}
 *The handling of a user application invoking the open() system call*
 
-![Passing of parameters](./img/15.png){: w="360" h = "320"}
+![시스템 호출 13이 레지스터에 전달한 테이블 주소 X를 통해 매개변수를 읽는 과정](./img/15-generated.png){: w="760"}
 *Passing of parameters as a table*
 
-![Examples](./img/16.png){: w="420" h = "440"}
+![프로세스·파일·장치·정보·통신·보호에 대한 Windows API와 UNIX 계열 호출 예시](./img/16-generated.png){: w="760"}
 *Examples of Windows and UNIX system calls*

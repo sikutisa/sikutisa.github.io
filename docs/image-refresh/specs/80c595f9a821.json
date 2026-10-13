@@ -1,0 +1,14 @@
+{
+  "title": "GUIFactory selects a product family",
+  "purpose": "Explain interface factory calls across three GUI families.",
+  "alt": "GUIFactory 인터페이스로 Motif·WinXP·Mac 제품군을 선택하는 생성 구조",
+  "requiredChecks": [
+    "GUIFactory declares createButton(): Button, createTextBox(): TextBox, createScrollBar(): ScrollBar.",
+    "MotifFactory, WinXPFactory and MacFactory implement GUIFactory.",
+    "Each factory creates matching Button/TextBox/ScrollBar classes within its family.",
+    "Client uses Button b = guiFactory.createButton(); new MotifButton() appears only as concrete-coupling comparison."
+  ],
+  "prompt": "Create a NEW original English raster technical diagram for a design-pattern study blog. White background, navy large sans-serif labels, flat blue and teal cards, spacious connectors, no copied slide layout or logos. Monospaced class/method identifiers. Distinguish uses, implements and creates via labels on directional connectors. Title \"GUIFactory selects a product family\". TOP GUIFactory card lists exact createButton(): Button, createTextBox(): TextBox, createScrollBar(): ScrollBar. MIDDLE THREE parallel columns MotifFactory, WinXPFactory, MacFactory; each upward implements arrow toGUIFactory. Each downward creates arrow to ONE matching product-list card: MotifButton/MotifTextBox/MotifScrollBar; WinXPButton/WinXPTextBox/WinXPScrollBar; MacButton/MacTextBox/MacScrollBar. Footer two separate code examples: \"Concrete coupling: Button b = new MotifButton();\" muted grey, \"Through interface: Button b = guiFactory.createButton();\" teal. No client connection to concrete product, no mismatched factory family.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

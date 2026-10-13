@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Synchronousrequestwaitsuntiltransfercompletion;asynchronousrequestreturnsacceptanceearlyandcompletionnotificationlater.",
+      "passed": true,
+      "evidence": "동기 그림의 WAIT가 장치 전송과 완료 인터럽트 처리까지 지속하고 완료 후 복귀."
+    },
+    {
+      "requirement": "Twotimepanelsuserprocess/kerneldriver/handler/hardwaretransfer;timeincreasesright,noconfusionacceptance/completion.",
+      "passed": true,
+      "evidence": "비동기 요청 수락은 초기에 복귀, 완료 통지는 전송 끝에 별도 표시. 두 패널 시간·사용자/커널/장치 층과 화살표 일치."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

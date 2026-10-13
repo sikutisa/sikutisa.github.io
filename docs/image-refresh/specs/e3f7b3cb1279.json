@@ -1,0 +1,14 @@
+{
+  "title": "LSP: reuse with composition",
+  "purpose": "Compare inappropriate Queue-as-List contract with composition and interface-based backing list.",
+  "alt": "List 계약을 충족하지 못하는 Queue 상속과 List 객체·인터페이스를 합성하는 재사용 방식 비교",
+  "requiredChecks": [
+    "Three designs shown: Queue extends List; Queue contains List; Queue contains List interface implemented by MyList.",
+    "List operations insert/delete/find; Queue operations insert/delete/isEmpty.",
+    "Bad inheritance is explicitly conditional on Queue not honoring the full List contract in this example.",
+    "Composition arrows mean has-a/delegates, not inheritance; MyList implements List interface."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif typography, readable monospaced identifiers, restrained blue/teal/amber cards, wide gutters, no copied slide composition or logo. Include only the listed operations and labels: do not invent full code bodies, access modifiers, methods or extra relationships. Title 'LSP: reuse with composition'. Three equalpanels. LEFT 'Problematic inheritance (this example)': List 'insert(); delete(); find()'; Queue 'extends List' 'insert(); delete(); isEmpty()'; note 'Queue cannot honor the full List contract'. CENTER 'Composition': Queue 'backingList: List' 'insert(); delete(); isEmpty()' arrow 'contains / delegates' to List 'insert(); delete(); find()'. RIGHT 'Interface-backed composition': Queue 'backingList: List' arrow 'contains' to List(interface) 'insert(); delete(); find()', MyList card 'implements List'. Footer 'A subtype must preserve the base contract; use composition when it cannot'. Do not claim all queues or Java LinkedList violate LSP, do not add indexedAPIorFIFOalgorithm.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

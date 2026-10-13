@@ -1,0 +1,14 @@
+{
+  "title": "Basic notification delivery",
+  "purpose": "Explain one central notification service between independent producers, channel providers and user endpoints; make baseline bottleneck clear.",
+  "alt": "여러 서비스에서 중앙 알림 서비스와 채널별 외부 제공자를 거쳐 사용자에게 전달되는 기본 구조",
+  "requiredChecks": [
+    "Service1/ServiceN independently send notification requests to one Notification service.",
+    "Notification service routes to four channel alternatives APNs, FCM, SMS provider and Email provider, not a sequential chain.",
+    "Providers deliver to appropriate endpoints iOS device, Android device, Phone, Mailbox.",
+    "Baseline subtitle identifies single-service bottleneck; no guaranteed delivery or provider logos."
+  ],
+  "prompt": "Create a NEW original raster system-design diagram for a technical blog. English labels, large navy sans-serif text on white, flat blue/teal cards, clear numbered or labelled arrows with empty routing gutters. No logos, copied textbook composition or guarantee of exactly-once delivery. TITLE \"Basic notification delivery\". Subtitle \"Baseline: one central notification service\". Left two separatecards \"Service 1\" and \"Service N\", with ellipsisbetween. Eacharrowrightinto SINGLE \"Notification service\" center. Fromservice branch through routinggutter into FOURparallel rightside rowcards \"APNs\",\"FCM\",\"SMS provider\",\"Email provider\"; groupheader \"Channel providers\". Eachprovider→its endpointcard in nextcolumn, respectively \"iOS device\",\"Android device\",\"Phone\",\"Mailbox\". Providerflows left→rightone-way, no linkprovider-to-provider. Footer \"The central service can become a bottleneck\". No retries/queuesinthisbaseline image, no universalzero-lossclaim.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

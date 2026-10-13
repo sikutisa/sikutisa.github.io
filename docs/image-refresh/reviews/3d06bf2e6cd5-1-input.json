@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Policy Layer→Mechanism Layer→Utility Layer dependency order.",
+      "passed": true,
+      "evidence": "Policy→Mechanism→Utility chain correctly labelled depends on."
+    },
+    {
+      "requirement": "Arrows represent compile/source dependencies, not response flow.",
+      "passed": true,
+      "evidence": "Footer these are source dependencies, not flow."
+    },
+    {
+      "requirement": "High-level policy is tied to concrete lower-layer implementation.",
+      "passed": true,
+      "evidence": "Direct concrete lower-layer dependency before design."
+    },
+    {
+      "requirement": "No inversion or abstraction shown in this before design.",
+      "passed": false,
+      "evidence": "No abstraction or inversion but invented OrderService/EmailSender/SmtpClient examples violate specified generic diagram; remove."
+    }
+  ],
+  "notes": "Fail: connectors or invented examples need revision; preserve original."
+}

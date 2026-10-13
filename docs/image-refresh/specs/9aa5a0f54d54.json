@@ -1,0 +1,14 @@
+{
+  "title": "Chat service architecture",
+  "purpose": "Explain HTTP stateless APIs versus persistent WebSocket real-time services, presence/history storage and offline push notifications.",
+  "alt": "HTTP API와 웹소켓 실시간 채팅·접속 상태, 채팅 이력 및 오프라인 푸시 알림 구조",
+  "requiredChecks": [
+    "Client HTTP→Load balancer→API servers is separate from bidirectional WebSocket path Client↔Real-time services.",
+    "Real-time services boundary contains Chat servers and Presence servers; KV store contains chat history and presence state.",
+    "API handles Login/profile and user data DB; API service discovery returns server endpoint without relaying every chat message.",
+    "Offline notifications go through Notification server and Push provider to Client, distinct from online WebSocket messages."
+  ],
+  "prompt": "Create a NEW original English technical diagram, raster image for a study blog. White background, large navy sans-serif text, flat blue/teal cards, uncluttered orthogonal arrows, plenty of routing gutters, no logos, copied book layout or availability guarantees. TITLE \"Chat service architecture\". SingleClientleft, twohorizontal lanes. Upperlane \"HTTP\": Client→Loadbalancer→APIservers subtitle\"Login / profile\"; API↔\"User data DB\" subtitle\"Profiles / settings\". Small \"Service discovery\"card belowAPI doubleheadedAPIlink\"Select chat endpoint\", noHTTPrequestthroughthatcardandnochatdatathroughAPI. Lowerlane \"WebSocket\": Client↔large\"Real-time services\"boundary containing twoflatcards \"Chat servers\" and \"Presence servers\"; WS arrowlabel\"Persistent / bidirectional\". BelowRealtimegroup ONE\"Key-value store\"card subtitle\"Chat history / presence state\", bidirectionalgrouplink\"Persist / read\". To rightRealtimegroup→\"Notification server\" labelled\"Offline recipient\"; Notification→\"Push provider\"→outertopreturnarrowtoClient labelled\"Push notification\". NoPushprovider→Chatserver link. API/servicediscovery dottedcontrolconnector toRealtimegroup label\"Server registry\" ifclearspace. Footer \"HTTP for account APIs; WebSocket for real-time messages\". MakeonlineWSpathandofflinepushpathvisiblyseparate, no reconnectoravailabilitypromises.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

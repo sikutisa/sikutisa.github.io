@@ -1,0 +1,14 @@
+{
+  "title": "CDN and application cache",
+  "purpose": "Show CDN direct static path independently from dynamic app caching and primary/replica database roles.",
+  "alt": "정적 콘텐츠의 CDN 경로와 동적 요청의 웹·애플리케이션 캐시·DB 경로 분리",
+  "requiredChecks": [
+    "Client requests static assets directly from CDN and dynamic requests through Load balancer to Web tier.",
+    "Application cache is accessed by Web tier, while CDN and application cache are separate systems.",
+    "Web tier writes to Primary and reads from Replica, with one-way Primary→Replica replication; DB reads on cache miss clearly qualified.",
+    "DNS lookup resolves endpoints separately and no HTTP request is sent to DNS."
+  ],
+  "prompt": "Create a NEW original English technical educational raster diagram, white background, large navy sans-serif labels, flat blue/teal cards, clear separated orthogonal arrows and generous gutters. No logos, decorative imagery, copied textbook composition, numeric benchmarks or absolute availability promises. TITLE \"CDN and application cache\". Two separated lanes. Upper \"Static assets\": Client→\"CDN\" labelled \"Images / CSS / JS\", bidirectionalresponseconcept; do not connect CDNtoDB. Lower \"Dynamic requests\": same Client→\"Load balancer\"→\"Web tier\" (2small WebA/Bcards). BesideWebtier \"Application cache\" doubleheadedlink \"Cached data\". Onfar-right Primaryupper/Replica lower, webtier→Primary label\"Writes\", webtier→Replica label\"Reads on cache miss\", Primary→Replica dashed one-waylabel\"Replication\". At upper-left small DNSresolverconnected ONLY toClient by dotted doubleheadedarrow\"Resolve endpoints\", outsidebothHTTPpaths. Cache and CDN distinctcards, no directClient→Applicationcache, nopath throughDNS. Footer \"CDN caches static assets; application cache reduces database reads\".",
+  "originalViewed": true,
+  "documentReviewed": true
+}

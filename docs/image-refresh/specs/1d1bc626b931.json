@@ -1,0 +1,15 @@
+{
+  "title": "Strategy: the Duck design in full",
+  "purpose": "Show behavioral composition and runtime setters alongside concrete display subtypes.",
+  "alt": "Duck의 동작 객체 합성·런타임 setter와 하위 오리의 display 구현을 함께 표현한 전체 구조",
+  "requiredChecks": [
+    "Abstract Duck includes two behavior fields, performFly/performQuack delegation, swim/display and setFlyBehavior/setQuackBehavior.",
+    "MallardDuck and RedheadDuck extend Duck and own display implementations.",
+    "Duck contains FlyBehavior and QuackBehavior interfaces, with correct distinct methods.",
+    "FlyWithWings/FlyNoWay implement FlyBehavior; Quack/Squeak/MuteQuack implement QuackBehavior.",
+    "Setters allow behavior replacement at runtime; no concrete type dependency forced on Duck."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT blog, opaque white background. Navy readable sans serif, monospaced method names, blue/teal/amber flat cards and generous padding. Use exact identifiers, no extra methods/access modifiers/complexity claims/copied slide arrangement. Title 'Strategy: the Duck design in full'. Wide readable diagram with LEFT abstract Duck card fields flyBehavior:FlyBehavior and quackBehavior:QuackBehavior; performFly()→flyBehavior.fly(), performQuack()→quackBehavior.quack(), swim():shared, display():abstract, setFlyBehavior(FlyBehavior), setQuackBehavior(QuackBehavior). Below MallardDuck and RedheadDuck each explicit extends Duck and own display(). RIGHT TOP FlyBehavior(interface) fly() with two cards FlyWithWings 'implements FlyBehavior; fly():wings', FlyNoWay 'implements FlyBehavior; fly():do nothing'. RIGHT BOTTOM QuackBehavior(interface) quack() with Quack,Squeak,MuteQuack explicit implements QuackBehavior and matching quack()/squeak/silence. Draw ONLY Duck→two interface contains/delegates arrows, all inheritance/implementation represented by exact captions inside cards not arrows. Footer 'Replace composed behaviors at runtime using the setters'.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

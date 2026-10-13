@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "CPU→MMU edge labelled Logical address; MMU→Physical memory edge labelled Physical address.",
+      "passed": true,
+      "evidence": "ExactlyCPU→MMU→Physicalmemory; firstLogicaladdress,secondPhysicaladdress."
+    },
+    {
+      "requirement": "MMU maps logical to physical addresses; no direction reversal, numerical assumption or unrelated protection check.",
+      "passed": true,
+      "evidence": "MMUAddressmappingandexpandednamecorrect; noextraneousstages."
+    }
+  ],
+  "notes": "Full generated image visually compared with original and complete Main Memory article; numbers, predicates, directions, dependencies and clipping checked."
+}

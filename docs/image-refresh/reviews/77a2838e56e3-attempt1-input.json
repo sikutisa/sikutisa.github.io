@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Dataparallel4partitionsA/B/C/Dsameoperationoncores0..3.",
+      "passed": true,
+      "evidence": "A~D 분할 데이터가 Core0~3 각각 같은 연산에 대응."
+    },
+    {
+      "requirement": "TaskparalleloneinputdatasetdistinctTaskA/B/C/Dcores0..3;noconfusewithdata partitions.",
+      "passed": true,
+      "evidence": "공유 입력에서 Core0~3의 서로 다른 Task A~D 연결. 성능 수치 없음."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

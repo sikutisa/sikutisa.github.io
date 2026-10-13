@@ -1,0 +1,16 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Windows and UNIX API comparison",
+  "alt": "프로세스·파일·장치·정보·통신·보호에 대한 Windows API와 UNIX 계열 호출 예시",
+  "requiredChecks": [
+    "Sixcategories andalllistedAPIidentifiersaccurate, exactGetCurrentProcessIdcamelcase.",
+    "Functions are examples bycategory, notstrictone-to-one/nativekernel equivalence; Windows/UNIXcolumnsseparate."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Windows and UNIX: API / system-call examples. Clean readable THREE COLUMN table Category | Windows API | UNIX. SIX rows with multiline lists, reproduce EXACT: Process control: CreateProcess(), ExitProcess(), WaitForSingleObject() | fork(), exit(), wait(). File manipulation: CreateFile(), ReadFile(), WriteFile(), CloseHandle() | open(), read(), write(), close(). Device manipulation: SetConsoleMode(), ReadConsole(), WriteConsole() | ioctl(), read(), write(). Information maintenance: GetCurrentProcessId(), SetTimer(), Sleep() | getpid(), alarm(), sleep(). Communication: CreatePipe(), CreateFileMapping(), MapViewOfFile() | pipe(), shm_open(), mmap(). Protection: SetFileSecurity(), InitializeSecurityDescriptor(), SetSecurityDescriptorGroup() | chmod(), umask(), chown(). Use wide portraitlayout forlongnames,noabbreviation,noextraarrows. Footer Examples by category; functions are not one-to-one equivalents. Windows names are APIs, not a literal list of native kernel system-call entrypoints.",
+  "sourceClarification": "원본 GetCurrentProcessID를 공식 GetCurrentProcessId로 정정. Windows 열은 API로 정확히 표기하고 범주별 예시이며 일대일 동등성은 주장하지 않음.",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentprocessid",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-settimer"
+  ]
+}

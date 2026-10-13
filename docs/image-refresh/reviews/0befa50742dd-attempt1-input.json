@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Input Item computer, Item car; map(Item::getName) outputs computer,car exactly2.",
+      "passed": true,
+      "evidence": "Item computer/car map to names computer/car exactly2."
+    },
+    {
+      "requirement": "One output per input with distinct arrows preserves order; no flatten or duplicates.",
+      "passed": true,
+      "evidence": "Separate matching paths via map(Item::getName), outputStream<String> and ordered list correct."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Non-atomic increment and decrement",
+  "alt": "count 증감의 읽기·연산·쓰기 3단계",
+  "requiredChecks": [
+    "Producerregister1=count;register1=register1+1;count=register1.",
+    "Consumerregister2=count;register2=register2−1;count=register2;notatomiccombined."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable.  Title Why count++ and count-- can race. Two side-by-side code cards. Producer (count++): register1 = count; register1 = register1 + 1; count = register1; . Consumer (count--): register2 = count; register2 = register2 - 1; count = register2; . Label rows Read, Modify, Write. Separate downward arrows within each card, no cross arrows. Footer Three separate steps; interleaving changes the result. This is conceptual pseudocode."
+}

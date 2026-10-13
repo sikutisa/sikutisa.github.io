@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Base and limit memory interval",
+  "alt": "base=300040, limit=120900으로 정해지는 프로세스의 메모리 주소 구간",
+  "requiredChecks": [
+    "Memory range0..1024000 with boundaries256000,300040,420940,880000,1024000; OS880000..1024000.",
+    "Selected process base300040 and exclusive upper base+limit420940; limit120900; legal range300040≤address<420940.",
+    "Other processes occupy256000..300040 and420940..880000, low0..256000 free; schematic marked not to scale."
+  ],
+  "prompt": "Use case: scientific-educational. Create one original raster PNG illustration for operating-system technical blog. White background, dark navy sans-serif type, restrained blue/teal accents, flat clean boxes, generous whitespace, all text readable. Only the EXACT subject/components specified; do not add resource-allocation graphs, unrelated diagrams, process/resource nodes, legends or numeric tables from other images. No logo/watermark. Title: A process’s legal memory range. Draw a horizontal schematic memory strip with increasing address left to right, explicitly label Schematic — not to scale. Segment boundaries EXACT 0,256000,300040,420940,880000,1024000. Segments Free / Other process / Selected process / Other process / Operating system. Highlight selected interval300040to420940. Label arrows from base=300040 to its start and base+limit=420940 to its end. Below bracket selected process limit=120900. Formula Legal address: 300040 ≤ address < 420940. Do not imply upper endpointinclusive."
+}

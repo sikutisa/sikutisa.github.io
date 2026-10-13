@@ -1,0 +1,14 @@
+{
+  "title": "A process alternates CPU and I/O bursts",
+  "purpose": "Show alternating execution and I/O waiting phases.",
+  "alt": "프로세스가 CPU 연산과 I/O 대기 구간을 번갈아 수행하는 실행 순서",
+  "requiredChecks": [
+    "CPU burst and I/O burst alternate in sequence at least three times.",
+    "CPU bursts execute instructions; I/O bursts wait for I/O completion.",
+    "Read/write requests occur on CPU side before waiting; no CPU execution during wait.",
+    "Schematic sequence has no invented time values or parallel execution."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog. Opaque white background, navy highly readable type, restrained blue/teal/amber, flat design, generous margins. Exact data and labels only, no logos/copying textbook composition. Title 'A process alternates CPU and I/O bursts'. Vertical timeline of six large alternating cards: CPU burst 'Execute instructions; issue I/O request', I/O burst 'Wait for I/O completion', CPU burst same, I/O burst same, CPU burst same, I/O burst same. Downward arrows show temporal order, ellipses top/bottom. Blue CPU, teal I/O. Footer 'CPU execution resumes when I/O completes'. No durations or code body.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

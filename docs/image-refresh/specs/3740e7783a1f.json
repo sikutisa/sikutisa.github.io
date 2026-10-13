@@ -1,0 +1,14 @@
+{
+  "title": "Duck delegates to composed behaviors",
+  "purpose": "Show delegation through fields rather than inherited concrete behavior.",
+  "alt": "Duck이 FlyBehavior·QuackBehavior 필드를 보유하고 performFly·performQuack에서 동작 객체에 위임하는 구조",
+  "requiredChecks": [
+    "Duck fields flyBehavior:FlyBehavior, quackBehavior:QuackBehavior.",
+    "performFly delegates flyBehavior.fly(); performQuack quackBehavior.quack().",
+    "swim remains shared; display abstract.",
+    "Delegation/composition distinct from inheritance; no direct concrete behavior dependency."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical diagram for an IT blog, opaque white background. Navy readable sans serif, monospaced method names, blue/teal/amber flat cards and generous padding. Use exact identifiers, no extra methods/access modifiers/complexity claims/copied slide arrangement. Title 'Duck delegates to composed behaviors'. Large abstract Duck card fields flyBehavior: FlyBehavior, quackBehavior: QuackBehavior, then performFly() → flyBehavior.fly(), performQuack() → quackBehavior.quack(), swim(): shared implementation, display(): abstract. Two side interface cards FlyBehavior fly(), QuackBehavior quack(); labelled contains/delegates arrows from Duck into interfaces, not extends/implements. Footer 'Compose behavior objects; delegate the changing operations'. No concrete behavior classes.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

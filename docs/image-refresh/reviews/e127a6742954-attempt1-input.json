@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "ColumnsPRICE,ID,PROP_NAME,URL.",
+      "passed": true,
+      "evidence": "Table columns and row correct."
+    },
+    {
+      "requirement": "Row1000|1|prop1|propUrl1;ID1examplewithinownentitytable,noparentFK.",
+      "passed": false,
+      "evidence": "Extra class diagram wrongly implies only PRICE inherited; simplify to exact table."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

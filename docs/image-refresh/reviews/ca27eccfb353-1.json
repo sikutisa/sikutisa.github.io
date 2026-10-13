@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "CPU address checks address≥base then address<base+limit; both Yes lead memory.",
+      "passed": true,
+      "evidence": "Two diamonds address≥base/address<base+limit with twoYesforward arrows toMemory."
+    },
+    {
+      "requirement": "Either No branches to OS trap illegal addressing error; upper check strictly< not≤.",
+      "passed": true,
+      "evidence": "BothNo downwardarrows toshared OSillegaladdressingtrap; strict<upperbound."
+    },
+    {
+      "requirement": "Distinguishes absolute physical address comparison from adding relocation; no invented add stage.",
+      "passed": true,
+      "evidence": "BasefeedsfirstandBase+limitfeedssecond; noadderstage; captionmatches."
+    }
+  ],
+  "notes": "Full generated image visually compared with original and complete Main Memory article; numbers, predicates, directions, dependencies and clipping checked.",
+  "at": "2026-10-12T23:01:17.976Z",
+  "generatedSha256": "97ff524ff264a5c74ee2db30315181804cd141d803704ee6604d70ce973fe49e",
+  "specSha256": "d64f18be0f5e9a01b47a84acc958a085b94dcddde01fd37fe4ec82df4a19ed3c"
+}

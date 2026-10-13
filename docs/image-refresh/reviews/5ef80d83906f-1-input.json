@@ -1,0 +1,33 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Student keeps only domain fields/getters; no compareTo or sorting responsibility.",
+      "passed": true,
+      "evidence": "Student domain data/getters only; no compareTo."
+    },
+    {
+      "requirement": "SortStudentBySSN and SortStudentByName implement Comparator<Student>, compare(Student a,Student b): int.",
+      "passed": true,
+      "evidence": "Two sorting policy classes compare(Student a,Student b):int implement Comparator<Student>."
+    },
+    {
+      "requirement": "AClient calls Collections.sort(group,new SortStudentBySSN()); BClient uses SortStudentByName.",
+      "passed": true,
+      "evidence": "Client A/B exact Collections.sort(group,new matchingpolicy) examples."
+    },
+    {
+      "requirement": "Register still uses Student; sorting policy can change independently of domain data.",
+      "passed": false,
+      "evidence": "Register method add(Course,Student) correct, but uses arrow reversed from Student down to Register. Client-policy arrows also end on external captions; need point at actual policy cards."
+    },
+    {
+      "requirement": "Use Comparator rather than erroneous original Comparable label for two-argument compare.",
+      "passed": true,
+      "evidence": "Correct Comparator not original mistaken Comparable; two-argument compares exact."
+    }
+  ],
+  "notes": "Fail. Relationship connector direction/origin requires repair; retain original until reinspection."
+}

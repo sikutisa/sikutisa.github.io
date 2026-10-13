@@ -1,0 +1,14 @@
+{
+  "title": "Join: instructor.ID = teaches.ID",
+  "purpose": "Teach Join: instructor.ID = teaches.ID using original illustrative data and independently computed algebra.",
+  "alt": "ID 일치 조건으로 직적을 필터링한 세타 조인 2행",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "requiredChecks": [
+    "Headers in exact order: instructor.ID | name | dept_name | salary | teaches.ID | course_id | sec_id | semester | year",
+    "Exactly 2 rows: 201 | Dana | Comp. Sci. | 60000 | 201 | CS-210 | 1 | Fall | 2017 ; 202 | Eli | Comp. Sci. | 80000 | 202 | CS-315 | 1 | Spring | 2018",
+    "Filter the Cartesian product by equal IDs; both ID columns are retained.",
+    "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset."
+  ],
+  "prompt": "Create a NEW original English raster table diagram for an IT blog, white background, navy crisp sans-serif, blue header and pale teal alternating rows, light rules and ample padding. Title \"Join: instructor.ID = teaches.ID\". ONE table. EXACT headers: instructor.ID | name | dept_name | salary | teaches.ID | course_id | sec_id | semester | year. EXACT data rows:\n201 | Dana | Comp. Sci. | 60000 | 201 | CS-210 | 1 | Fall | 2017\n202 | Eli | Comp. Sci. | 80000 | 202 | CS-315 | 1 | Spring | 2018\nExactly 2 rows. No extra row, no ellipsis, no duplicate headers. Footer \"Original illustrative dataset\". Separate note \"Filter the Cartesian product by equal IDs; both ID columns are retained.\". Retain BOTH ID columns because this is selection over product/theta join; do not collapse to a natural join."
+}

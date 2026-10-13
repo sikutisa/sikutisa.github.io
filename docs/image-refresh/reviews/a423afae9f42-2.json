@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Sixcategories andalllistedAPIidentifiersaccurate, exactGetCurrentProcessIdcamelcase.",
+      "passed": true,
+      "evidence": "여섯 범주,모든함수이름을 재검수했다. Windows GetCurrentProcessId(),Sleep()와 UNIX getpid(),alarm(),sleep() 대소문자가 정확하다. 나머지 긴 보호 API도 누락 없이 읽힌다."
+    },
+    {
+      "requirement": "Functions are examples bycategory, notstrictone-to-one/nativekernel equivalence; Windows/UNIXcolumnsseparate.",
+      "passed": true,
+      "evidence": "Windows API/UNIX 열과 category examples 및 동등성이 아니라는 캡션이 정확하다."
+    }
+  ],
+  "notes": "수정본을 직접 원본 크기로 시각 검수. 모든 글자·시간 관계 확인 및 PNG 디코딩.",
+  "at": "2026-10-13T00:11:40.172Z",
+  "generatedSha256": "110d1ae1954bfb8669e72a15bedceac09cc69fd6efc4482465e7f015e9d4e924",
+  "specSha256": "a049b130c99d6121a5dd030dddbad5ed0ef9d57ccf883ac704084cfa65157670"
+}

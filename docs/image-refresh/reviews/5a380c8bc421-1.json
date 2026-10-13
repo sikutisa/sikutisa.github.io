@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Column headers in exact order: ID | name | dept_name | tot_cred | course_id | sec_id | semester | year | grade",
+      "passed": true,
+      "evidence": "Nine headers ID,name,dept_name,tot_cred,course_id,sec_id,semester,year,grade appear once in correct order."
+    },
+    {
+      "requirement": "Exactly 3 data rows in exact order: 101 | Ari | Comp. Sci. | 32 | CS-210 | 1 | Fall | 2026 | A ; 101 | Ari | Comp. Sci. | 32 | CS-315 | 1 | Spring | 2027 | B+ ; 102 | Bo | History | 28 | HIS-220 | 1 | Fall | 2026 | A-",
+      "passed": true,
+      "evidence": "Three rows exactly combine Ari32 withCS-210 Fall2026 A andCS-315 Spring2027 B+, andBo28 withHIS-220 Fall2026 A-; section1 each."
+    },
+    {
+      "requirement": "Join on ID only; each matching pair produces one row and only one ID column; no student 103 row.",
+      "passed": true,
+      "evidence": "Single ID column present; no student103 row; note explicitly Join on ID only."
+    },
+    {
+      "requirement": "Footer explicitly identifies an original illustrative dataset; all table cells readable without copied textbook names/data.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer present; three-row wide table remains crisp, no clipped cells."
+    }
+  ],
+  "notes": "Pass. Every cell visually compared to independently calculated examples/sql-joins.json.",
+  "at": "2026-10-12T13:39:32.846Z",
+  "generatedSha256": "9405370ae5683b4aa7ead7f71f959609579a690eb850d99cd23a1da30467e0d9",
+  "specSha256": "723d2b5cda9817b88fc06ff65739e5be2f96d7fd24a54a61d5e8e33310775e35"
+}

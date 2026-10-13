@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "SixpanelsRAID0 nonredundantstriping,RAID1 mirrors,RAID4dedicatedparity,RAID5distributedparity.",
+      "passed": true,
+      "evidence": "RAID 0/1/4/5의 분산·미러·전용/분산 패리티 구분 유지."
+    },
+    {
+      "requirement": "RAID6twoindependentP/Q redundancy;multidimensionalRAID6illustrative4x4dataarraywithrightP/QcolumnsandbottomP/Qrows;nobackupclaim.",
+      "passed": true,
+      "evidence": "RAID 6 세 행을 A B C D P Q / E F Q G H P / I P J K Q L로 대조해 각 P·Q 하나씩 확인. 다차원 4×4 데이터 및 오른쪽·아래 P/Q, 백업 주장 없음."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:00:22.456Z",
+  "generatedSha256": "02a0ede1e5301762f2a00fdc0a30d02ee66e0fb0a9796081c3766908282ac420",
+  "specSha256": "5d596cb57c76898082dd3ca8bc39510ece917ed4d4c11683597d8c6961f9e05b"
+}

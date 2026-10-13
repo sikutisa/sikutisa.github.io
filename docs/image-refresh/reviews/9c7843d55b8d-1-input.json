@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Column headers in exact order: ID | name | dept_name | tot_cred",
+      "passed": true,
+      "evidence": "Header reads ID,name,dept_name,tot_cred in exact order."
+    },
+    {
+      "requirement": "Exactly 3 data rows in exact order: 101 | Ari | Comp. Sci. | 32 ; 102 | Bo | History | 28 ; 103 | Cy | Biology | 20",
+      "passed": true,
+      "evidence": "Three rows are 101 Ari Comp. Sci.32;102 Bo History28;103 Cy Biology20, matching fixture."
+    },
+    {
+      "requirement": "ID is the matching key shared with takes; student 103 has no takes record.",
+      "passed": true,
+      "evidence": "Caption explicitly says matching key ID and student103 no takes record; table retains103 for demonstration of unmatched student."
+    },
+    {
+      "requirement": "Footer explicitly identifies an original illustrative dataset; all table cells readable without copied textbook names/data.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer present; Ari/Bo/Cy differ from textbook dataset and all cells readable."
+    }
+  ],
+  "notes": "Pass. Every cell visually compared to independently calculated examples/sql-joins.json."
+}

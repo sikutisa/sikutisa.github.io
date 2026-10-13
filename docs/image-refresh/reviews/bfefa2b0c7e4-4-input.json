@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Gantt intervals P1[0,24],P2[24,27],P3[27,30] and durations24,3,3ms exact; explicitly mark schematic timeline not to scale when widths are illustrative.",
+      "passed": true,
+      "evidence": "Exact intervals0..24..27..30 and P1duration24/P2duration3/P3duration3. Prominent Schematic timeline—not to scale prevents false metric-width inference."
+    },
+    {
+      "requirement": "All arrivals0; nonpreemptive order P1,P2,P3.",
+      "passed": true,
+      "evidence": "Allarrivals0 nonpreemptive FCFS orderP1P2P3."
+    },
+    {
+      "requirement": "Waiting P1=0,P2=24,P3=27, average17ms.",
+      "passed": true,
+      "evidence": "Waiting0,24,27average17 exact."
+    },
+    {
+      "requirement": "Turnaround24,27,30 average27ms; no context-switch overhead included.",
+      "passed": true,
+      "evidence": "Turnaround24,27,30average27exact."
+    }
+  ],
+  "notes": "Direct visual inspection and independently calculated schedule/plot agree. Explicit schematic scale where appropriate; decode before approval."
+}

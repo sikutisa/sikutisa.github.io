@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Client uploads bytes directly to Original blob storage, while metadata requests go via Load balancer→API servers.",
+      "passed": true,
+      "evidence": "MediaClientuploadsOriginalblob, metadataClient→LB→API correct."
+    },
+    {
+      "requirement": "Original storage→Transcoding workers→Encoded video storage→CDN; client playback uses CDN independently from API metadata path.",
+      "passed": true,
+      "evidence": "Original→Transcoder→Encodedstore→CDN andPlaybackreturnClient correct."
+    },
+    {
+      "requirement": "Transcoding workers also emit Completion events→Completion handler, which updates both Metadata DB and Metadata cache.",
+      "passed": false,
+      "evidence": "REJECT: Transcoder→API→Completionqueue instead ofdirectevents; Handlerupdatestwocacheconnectors andcache→DB rather thanbothdirect."
+    },
+    {
+      "requirement": "API servers separately access DB/cache; completion queue contains events, not video bytes, and diagram is illustrative.",
+      "passed": true,
+      "evidence": "APIseparateDB/cache links andqueueEventnotbytescaption visible; illustrativequalifier."
+    }
+  ],
+  "notes": "Viewed raster, traced branch directions/task graph and compared to fullarticle; PIL verify/load passed. Completion-event topology and task/assignment wording flagged for correction.",
+  "at": "2026-10-12T13:09:39.760Z",
+  "generatedSha256": "c82e8b4684cf97ec8d8ee0da14b8c1e2bcdb9ebcde1cc0d855e29e716594b0a9",
+  "specSha256": "a137b9ea463412364e1de32db9dce51d7b981ee59885096e3364b564efa30b87"
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ef5c85ab06e3",
+    "attempt": 3,
+    "prompt": "Fix ONLY second Interrupt processing CPU interval. Input is1774x887. Completion2 dashed vertical guide is x1414. Current second green interval starts x1344 and ends x1480, straddling completion, INCORRECT. Move LEFT EDGE of secondgreen CPU interval to exactly x1414 where Completion2 dottedguide is. Move rightedge to x1550 so it retains width. Extend blue User process executing block before it to x1414. After x1550 draw finalblue User process executing. CPU row y363..460. Do NOT move the Completion2 guide, which remains x1414 and aligned with device Transferring→Idle edge. Interrupt must begin AT completion not BEFORE. All firstcycle,device lane,labels preserved."
+  },
+  {
+    "id": "a423afae9f42",
+    "attempt": 2,
+    "prompt": "Change ONLY the UNIX column Information maintenance third function from capital Sleep() to lowercase sleep(). The Windows API column Sleep() stays capital. All other functions, identifiers, punctuation, categories and visual composition unchanged. UNIX list must be getpid(), alarm(), sleep()."
+  }
+]

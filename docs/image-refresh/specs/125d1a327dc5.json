@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "FCFS disk scheduling",
+  "alt": "헤드 53에서 요청 순서대로 이동하는 FCFS와 총 640 실린더 이동",
+  "requiredChecks": [
+    "Queue98,183,37,122,14,124,65,67;start53;servicedexactqueueorder.",
+    "Stepdistances45,85,146,85,108,110,59,2 sum640; cylinderbounds0..199; no shortestpathclaim."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title FCFS disk scheduling. Header Queue:98,183,37,122,14,124,65,67 andHead starts at53; Cylinder range0–199. Mainoriginaldiagram nineconnectednumbercards inzigzagpath withnumberedorder 53→98→183→37→122→14→124→65→67. Arrowheadsoneforwarddirection. Distancetablebelow legdistances45+85+146+85+108+110+59+2=640cylinders. Bottom Total head movement:640cylinders. Avoidfakeplottedpositions—thisisorderedtraversaldiagram,notproportionalchart."
+}

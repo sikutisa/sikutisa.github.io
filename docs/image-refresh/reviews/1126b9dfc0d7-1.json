@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "OnecoretimelineT1,T2,T3,T4,T1,T2,T3,T4,T1,...",
+      "passed": true,
+      "evidence": "T1 T2 T3 T4 T1 T2 T3 T4 T1 아홉 슬롯 대조."
+    },
+    {
+      "requirement": "Time→rightoneexecutingatonce,noparallelclaim.",
+      "passed": true,
+      "evidence": "단일 Core 한 줄·오른쪽 Time·교차 실행 안내 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:38:17.208Z",
+  "generatedSha256": "06517f30a0c3c34598a9a311a551f4b573227938c593e23bd8c798195dc927fc",
+  "specSha256": "39d7fe20f90b64592d0ea929b8d193c3a36f34c34bb3b3a172011d94efe17a43"
+}

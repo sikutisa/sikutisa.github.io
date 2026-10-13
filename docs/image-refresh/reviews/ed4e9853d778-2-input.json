@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Load balancer sends requests to interchangeable Web A/B/C within Autoscaling group, with no per-node session store.",
+      "passed": true,
+      "evidence": "IncomingLB targets AutoscalinggroupWebA/B/C, anynodecaption; no localstateboxes."
+    },
+    {
+      "requirement": "All web nodes access one external Shared session store, so routing is not tied to a particular node.",
+      "passed": true,
+      "evidence": "Allnodesjoin sessionbus; external Sharedsessionstore linkedRead/update session."
+    },
+    {
+      "requirement": "Application cache and primary/replica data routes are distinct from session store; replication is Primary→Replica.",
+      "passed": true,
+      "evidence": "Writes→Primary, new lowerReadsroute goes directlyReplica bottom, no solidPrimary→Replicareadchain; dashedreplicationretained."
+    },
+    {
+      "requirement": "Client static content goes to CDN separately; captions and routes readable.",
+      "passed": true,
+      "evidence": "Client↔CDNstaticassetsseparate; alllabelsreadable."
+    }
+  ],
+  "notes": "Individually viewed all components and traced arrows against full document. Generated outputs decoded with PIL verify/load. Failed result is not applied."
+}

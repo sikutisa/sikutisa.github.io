@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Humidity, Temperature and Pressure sensors feed the provided Weather Station.",
+      "passed": true,
+      "evidence": "Three sensors feed station with arrowheads correct."
+    },
+    {
+      "requirement": "WeatherData reads latest temperature, humidity and pressure from station; getters reflect latest readings.",
+      "passed": true,
+      "evidence": "WeatherData reads latest station measurements with dashed backward read request and all three getters."
+    },
+    {
+      "requirement": "Current Conditions, Statistics and Forecast are three distinct display types.",
+      "passed": true,
+      "evidence": "Three separate CurrentConditions/Statistics/Forecast displays updated; 72F/60% sample exact."
+    },
+    {
+      "requirement": "Application side supports new/removed displays; not tightly fixed to three forever.",
+      "passed": true,
+      "evidence": "Footer explicitly allows added/removed displays."
+    }
+  ],
+  "notes": "Pass. Article and original roles, state values, registration membership, direction and class semantics visually verified.",
+  "at": "2026-10-12T15:10:12.326Z",
+  "generatedSha256": "f5038b27aba521682ee315c60c65f771714be80406eaf9c81f3b845b877c2f7b",
+  "specSha256": "2a24d01a83dd7ea7921e0971fee6393d421631765d1666e9cc6ef2af66757b96"
+}

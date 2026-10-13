@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Parentfork→parentpid>0wait→resume;childpid0exec→exit.",
+      "passed": true,
+      "evidence": "fork 반환값 pid>0 부모 wait→resume,pid0 자식 exec→exit 경로는 맞다."
+    },
+    {
+      "requirement": "Childexitunblocksparentwait,execchangeschildprogramnotnewprocess; forkfailure optionalnotneeded.",
+      "passed": false,
+      "evidence": "대기 해제 점선이 exit()이 아니라 exec()에서 출발한다. 자식 종료가 아니라 exec가 wait를 해제하는 오해를 유발해 실패."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:24:08.824Z",
+  "generatedSha256": "ccfd4a679b4e372bbbb957a16e0379d93359b5c18b054268de6b2ab24cccfbb4",
+  "specSha256": "1fd9dc3aea10cd8bdeb5d05234ea40ae49af55167613832d63352957d91e1270"
+}

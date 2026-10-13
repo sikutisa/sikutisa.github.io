@@ -1,0 +1,17 @@
+{
+  "title": "MySQL memory scopes",
+  "purpose": "Show one shared scope versus independent session-local allocations, matching examples from document and original.",
+  "alt": "MySQL 공유 메모리와 세션별 독립 메모리의 대표 버퍼 및 캐시",
+  "requiredChecks": [
+    "Shared region includes InnoDB buffer pool, MyISAM key cache, binary log buffer, redo log buffer and table cache.",
+    "Two separate session regions each contain join, sort, network and read buffers, with no cross-session sharing connector.",
+    "Shared scope is accessible by both sessions; local scope is owned by each connection.",
+    "Caption states query buffers are allocated as needed; no fixed startup-allocation or size claims."
+  ],
+  "sources": [
+    "https://dev.mysql.com/doc/refman/8.0/en/memory-use.html"
+  ],
+  "prompt": "Create a NEW original raster diagram for a technical study blog. English labels verbatim, large crisp navy sans-serif text on white, restrained flat blue and teal cards, orthogonal connectors, generous whitespace, no gears, gradients, stock icons, copied textbook composition, logos or watermark. Labels must be comfortably legible. TITLE \"MySQL memory scopes\". Large three-column diagram enclosed by single \"MySQL server\" boundary. Left wide column \"Shared across threads\" contains exactly FIVE stacked named cards: \"InnoDB buffer pool\", \"MyISAM key cache\", \"Binary log buffer\", \"Redo log buffer\", \"Table cache\". Right two distinct columns \"Session A\" and \"Session B\". Each contains a small \"Connection thread A\" or \"Connection thread B\" heading, and exactly FOUR cards: \"Join buffer\", \"Sort buffer\", \"Network buffer\", \"Read buffer\". Show one access arrow from each connection heading via an empty top routing gutter to the shared-region header, labelled \"Shared access\"; do not target a specific cache as universally used. No arrow between Session A and B. Session cards are enclosed in independent boundaries and visibly duplicated. Under two session columns caption \"Private to each connection\". Bottom footer \"Query buffers are allocated as needed\". No quantitative sizes or claim all memory allocated at startup. Avoid cramped or intersecting arrows; design top routing space before placing any boxes.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

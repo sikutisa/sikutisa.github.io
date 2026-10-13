@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Before-reference order from top to bottom is2,1,0,7,4.",
+      "passed": true,
+      "evidence": "Read left stack top to bottom:2,1,0,7,4."
+    },
+    {
+      "requirement": "Referencing7 produces after-order7,2,1,0,4; no duplicate7 is present.",
+      "passed": true,
+      "evidence": "Read right stack:7,2,1,0,4; single7."
+    },
+    {
+      "requirement": "Top is most recently used, bottom least recently used;4 remains bottom.",
+      "passed": true,
+      "evidence": "Most recently used label above7, least recently used below4."
+    },
+    {
+      "requirement": "The requested page7 is identified, promotion arrow points toward the top of the after-stack, all text legible.",
+      "passed": true,
+      "evidence": "Before/After reference to7 headings and arrow from left7 to right7; text clearly readable."
+    }
+  ],
+  "notes": "Individually inspected full generated raster and decoded via PIL verify/load."
+}

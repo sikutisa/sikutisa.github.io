@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Client1 and Client2 both call Facade.doSomething().",
+      "passed": true,
+      "evidence": "Both Client1/Client2 call facade.doSomething() and arrows reach Facade."
+    },
+    {
+      "requirement": "Facade uses Class1 in package1, Class2 in package2, Class3 in package3.",
+      "passed": true,
+      "evidence": "Facade branches to package1/Class1, package2/Class2, package3/Class3."
+    },
+    {
+      "requirement": "Facade orchestration creates c1/c2/c3, calls c1.doStuff(c2), then c3.setX(c1.getX()), then returns c3.getY().",
+      "passed": true,
+      "evidence": "Numbered orchestration creates c1/c2/c3, doStuff(c2), setX(getX()), return getY() in exact order."
+    },
+    {
+      "requirement": "The clients do not directly coordinate the three subsystem classes.",
+      "passed": true,
+      "evidence": "No client package shortcuts or reverse subsystem dependencies."
+    }
+  ],
+  "notes": "Pass. Full visual review of participants, delegation, call order, identifiers and queue semantics against article and original."
+}

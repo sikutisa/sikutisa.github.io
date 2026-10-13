@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Users1,2,3,…n top; programs with compilers, assemblers, text editors, database systems.",
+      "passed": true,
+      "evidence": "User1/2/3/…/n 및 Compilers/Assemblers/Text editors/Database systems가 정확하다."
+    },
+    {
+      "requirement": "Operating system mediates programs above and computer hardware below; separate four layers.",
+      "passed": true,
+      "evidence": "네 층이 인접한 양방향 관계로 연결되고 OS가 프로그램과 하드웨어 사이에 있다."
+    }
+  ],
+  "notes": "직접 원본 해상도에서 글자·관계·방향을 확인. PNG 디코딩 후 해시 승인."
+}

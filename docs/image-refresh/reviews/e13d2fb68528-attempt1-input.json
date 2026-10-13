@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Processor→bridge/memorycontroller→PCIebus;cacheoffprocessorlink,memoryoffbridge;monitorvia graphicscontroller.",
+      "passed": false,
+      "evidence": "프로세서·캐시·메모리·브리지 연결은 맞으나 Monitor→Graphics controller→PCIe 단방향 화살표가 출력 데이터 방향과 반대. 무방향 연결로 수정 필요."
+    },
+    {
+      "requirement": "PCIe→SAScontroller→4disks;PCIe→expansioninterface→expansionbus→keyboard+2USBports.",
+      "passed": true,
+      "evidence": "PCIe와 SAS 및 4디스크, 확장 인터페이스·버스와 키보드·두 USB 포트 연결 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지."
+}

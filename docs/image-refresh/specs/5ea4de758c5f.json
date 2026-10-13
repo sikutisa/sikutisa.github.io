@@ -1,0 +1,14 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Explain a larger virtual address space, resident-page mapping through a page table, and backing storage for nonresident pages. Use an explicitly illustrative six-page/four-frame example rather than copy the original composition.",
+  "requiredChecks": [
+    "Six virtual pages P0–P5 and four physical frames F0–F3, marked as an illustrative example.",
+    "Page-table rows are P0/F2/1, P1/—/0, P2/—/0, P3/F0/1, P4/—/0, P5/—/0.",
+    "Physical memory contains F0:P3, F1:free, F2:P0, F3:free; backing storage contains P1,P2,P4,P5.",
+    "Mapping arrows connect P0 to F2 and P3 to F0; no nonresident mapping to RAM; page-in/page-out is bidirectional.",
+    "All English labels are legible and complete, including the six-page/four-frame footer; no decorative copied artwork."
+  ],
+  "alt": "Illustrative virtual-memory mapping: six virtual pages, a page table, four physical frames, and backing storage",
+  "prompt": "Use case: scientific-educational / infographic-diagram.\nCreate a NEW original technical diagram for an English operating-systems blog, not a restyling or tracing of any book illustration. Title: \"Virtual memory and physical memory\". White background, dark navy crisp sans-serif labels, flat blue and teal outlined boxes, generous whitespace, no gradients, no shadows, no watermark, no decorative artwork. Wide landscape layout with readable large text.\nThe purpose is to explain that a process's virtual address space can contain more pages than RAM can hold, and a page table maps resident pages to physical frames while nonresident pages remain in backing storage.\nUse this explicitly labeled \"Illustrative example\" and exact consistent data:\nLeft panel \"Virtual pages\": six equal rows \"P0\", \"P1\", \"P2\", \"P3\", \"P4\", \"P5\".\nMiddle panel \"Page table\": headers \"Page\", \"Frame\", \"Present\"; exactly six rows:\nP0 | F2 | 1\nP1 | — | 0\nP2 | — | 0\nP3 | F0 | 1\nP4 | — | 0\nP5 | — | 0.\nRight upper panel \"Physical frames\": exactly four equal rows \"F0: P3\", \"F1: free\", \"F2: P0\", \"F3: free\". Color the P0 and P3 rows blue.\nRight lower panel \"Backing storage\": four simple teal page boxes labeled \"P1\", \"P2\", \"P4\", \"P5\". Label immediately below \"Nonresident pages\".\nShow exactly two mapping arrows from middle page-table row P0/F2 to right frame F2/P0 and from middle row P3/F0 to right frame F0/P3; route these neatly without crossing label text. Use one arrow from the Virtual pages panel to the Page table panel labeled \"Address translation\". A separate bidirectional dashed arrow between Backing storage and Physical frames is labeled \"Page in / page out\". Do not draw nonresident-page mappings to RAM.\nFooter sentence verbatim: \"6 virtual pages · 4 physical frames\". All text must be accurate and fully legible. Frame labels must match page-table mappings. All labels and counts are mandatory; no other numbers or claims."
+}

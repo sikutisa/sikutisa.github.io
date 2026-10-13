@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "open system-call dispatch",
+  "alt": "사용자 open() 호출이 시스템 호출 인터페이스에서 테이블 항목 i를 거쳐 커널 구현으로 전달되고 반환하는 과정",
+  "requiredChecks": [
+    "Userapplicationcallsopen()→systemcallinterface→dispatchtableentryi→kernelopenimplementation.",
+    "User/kernel boundary clear; returnflowimplementation→interface→application distinct fromrequest."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title Handling an open() system call. Top User mode card User application. Beneath border Kernel mode begins; card System-call interface straddlesboundary. Belowleft System-call table withellipsis,index i highlighted; belowright Implementation of open(). Clear request arrows User application→interface labelled open(), interface→tablei, tablei→implementation. Separate return arrows implementation→interface→userapplication labelled Return. Not directtabletouser. Exactopen()andindexi. Readable3-stagepaths."
+}

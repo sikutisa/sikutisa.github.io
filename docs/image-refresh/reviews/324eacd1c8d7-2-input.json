@@ -1,0 +1,18 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Logicaladdressm bits split high-orderp(m−n bits) andlow-orderd(n bits).",
+      "passed": true,
+      "evidence": "p/didentifiersaddedtohighm−n/low n fields, m-bitwholebracecorrect."
+    },
+    {
+      "requirement": "Page size=2^n bytes, logicaladdressspace=2^m bytes; nofixedbitcounts or wrongexponents.",
+      "passed": true,
+      "evidence": "Page2^n/logical2^mformulasunchangedcorrect."
+    }
+  ],
+  "notes": "Second output personally inspected after exact targeted edit; field identifiers, block sizes and lowercase byte values verified."
+}

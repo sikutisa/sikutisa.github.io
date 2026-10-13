@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "MonitorencapsulatesShareddata,OperationsP1/P2/.../Pn,Initializationcode.",
+      "passed": true,
+      "evidence": "Monitor 안 Shared data·Operations P1/P2/…/Pn·Initialization code 3영역 정확."
+    },
+    {
+      "requirement": "Entryqueuewaitersoutside,oneactiveinside;mutualexclusionnotclaimliveness.",
+      "passed": true,
+      "evidence": "외부 진입 큐 3대기자와 모니터 방향 선, P2 하나만 강조. 상호 배제 설명 확인."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T01:31:00.294Z",
+  "generatedSha256": "d866e540dc41d99f4e972ae469fb2c716a0062e10c35ec4cb659ceb3ca04659a",
+  "specSha256": "0e1fce9c2b851b6a142d77251252b87c4cbbb4ee36c4945659946d0878bb5a5d"
+}

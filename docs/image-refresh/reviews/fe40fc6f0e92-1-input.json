@@ -1,0 +1,28 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Client requests static assets directly from CDN and dynamic requests through Load balancer to Web tier.",
+      "passed": true,
+      "evidence": "Staticlane Client↔CDN Images/CSS/JS; dynamiclane Client→LB→Webtier."
+    },
+    {
+      "requirement": "Application cache is accessed by Web tier, while CDN and application cache are separate systems.",
+      "passed": true,
+      "evidence": "Webtier↔Applicationcache Cacheddata; cache andCDN separate."
+    },
+    {
+      "requirement": "Web tier writes to Primary and reads from Replica, with one-way Primary→Replica replication; DB reads on cache miss clearly qualified.",
+      "passed": true,
+      "evidence": "WebtierWrites→Primary, Reads on cachemiss→Replica; dashedprimary→replica."
+    },
+    {
+      "requirement": "DNS lookup resolves endpoints separately and no HTTP request is sent to DNS.",
+      "passed": true,
+      "evidence": "DNSdottedresolveendpoints onlyClient, notinHTTPpipeline; Clienticon duplicatedacrosslanesfortworequesttypes."
+    }
+  ],
+  "notes": "Inspected each generated label and connector against full document. PIL verify/load passed. Missing shared query routes rejected."
+}

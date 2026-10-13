@@ -1,0 +1,11 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "CPU memory and I/O data flow",
+  "alt": "CPU·캐시·메모리·장치 간 명령 실행·데이터·인터럽트·DMA 경로",
+  "requiredChecks": [
+    "CPU(s) with cache and thread of execution; memory instructions/data; I/O devices.",
+    "CPU↔memory instruction/data paths, CPU→device I/O request, device↔CPU data, device→CPU interrupt, device↔memory DMA bypasses CPU."
+  ],
+  "prompt": "Create ONE original raster PNG technical educational diagram for a Korean IT blog. White opaque background, navy readable sans-serif text, flat blue/teal boxes, generous whitespace. Use only the exact subject and components below. No logos, watermark, decorative illustrations, unrelated graphs, extra numeric values or invented facts. Redesign composition rather than copy source. Every connection must be accurate and labels fully readable. Title CPU, memory and I/O. Place CPU(s) top left with inner Thread of execution and Cache; Main memory top right with Instructions and data; I/O device(s) bottom center. CPU↔memory two parallel doubleheaded arrows labelled Instruction execution cycle and Data movement. CPU→device blue arrow I/O request. Device→CPU teal arrow Interrupt. Separate doubleheaded CPU↔device Data arrow. Device↔memory doubleheaded arrow DMA, direct not through CPU. Exactly5connectiontypes; clearheads/nocrossings."
+}

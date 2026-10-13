@@ -1,0 +1,16 @@
+{
+  "title": "Quantum size and average turnaround",
+  "purpose": "Show nonmonotonic RR quantum effects using original example verified by simulation.",
+  "alt": "Burst 6·3·1·7ms인 네 프로세스에서 quantum 1~7ms에 따라 평균 반환 시간이 비단조적으로 달라지는 그래프",
+  "requiredChecks": [
+    "InputP1=6,P2=3,P3=1,P4=7,allarrivals0,initialorderP1P2P3P4.",
+    "Quantum1..7 averageTT11,11.5,10.75,11.5,12.25,10.5,10.5ms exact.",
+    "Discrete plotted points clearly labelled, nonmonotonic relation.",
+    "Context overhead excluded; values example-specific, not universal optimization.",
+    "Timequantumxaxis,averageTTyaxis with units."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog, opaque white. Navy readable typography, restrained blue/teal/amber, generous padding, flat graphics. Exact listed data only, no copied textbook layout. Title 'Quantum size and average turnaround'. Clean main lineplot x='Time quantum (ms)' ticks1,2,3,4,5,6,7; y='Average turnaround (ms)' visibly zoomed ticks9,10,11,12,13. Seven connected dotsprecisely q1→11,q2→11.5,q3→10.75,q4→11.5,q5→12.25,q6→10.5,q7→10.5. Place exact numeric value labels beside each point without overlap. Right smallinput table Process|Burst(ms):P1|6,P2|3,P3|1,P4|7. Subtitle 'All arrive at0; ready orderP1→P2→P3→P4; switching overhead omitted'. Footer 'Turnaround does not vary monotonically with quantum in this example'. No universal best-quantumclaim.",
+  "originalViewed": true,
+  "documentReviewed": true,
+  "calculationVerified": true
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Distributed rate-limit policy and state",
+  "purpose": "Correct source diagram's mistaken client-as-rule-source and show disk rules loaded into cache separately from Redis runtime counters and 429 decisions.",
+  "alt": "디스크 규칙→작업 프로세스→규칙 캐시의 설정 경로와 레디스 공유 상태·API 허용·429 거부 경로",
+  "sources": [
+    "https://www.rfc-editor.org/rfc/rfc6585#section-4",
+    "https://redis.io/docs/latest/develop/programmability/eval-intro/"
+  ],
+  "requiredChecks": [
+    "Control path is Rules on disk→Rule-loader workers→Rule cache; no client is mistaken for rule storage.",
+    "Middleware reads Rule cache and atomically checks/updates separate Redis counters/timestamps.",
+    "Client request→Middleware→API servers only if Allowed, with explicit rejected HTTP429 response to Client.",
+    "Rule cache and runtime Redis state are distinct; loader workers are not on the synchronous API request path."
+  ],
+  "prompt": "Create a NEW original English technical diagram, raster image for a study blog. White background, large navy sans-serif text, flat blue/teal cards, uncluttered orthogonal arrows, plenty of routing gutters, no logos, copied book layout or availability guarantees. TITLE \"Distributed rate-limit policy and state\". Twohorizontalbands. TOP \"Policy updates\": \"Rules on disk\"→\"Rule-loader workers\"→\"Rule cache\". Bottom \"Request path\": \"Client\"→\"Rate-limit middleware\"→\"API servers\", arrows\"Request\" then\"Allowed\". Rate-limitmiddlewarehasthinUPbidirectionallinkonlytoRulecache labelled\"Read policy\", NOT toloaderordisk. Beneathmiddleware separate\"Redis state\"card subtitle\"Counters / timestamps\", bidirectionallink\"Atomic check / update\". Independentlowerreturnarrow middleware→Clientlabel\"Rejected: HTTP 429 Too Many Requests\". ToprulecacheandRedisstateareseparatecards; noClientinpolicyupdateband. Footer \"Load policy separately; share runtime state across limiter instances\". Depictone middlewareforlegibility, distributedsharinginRedisstatecaption. No numericquota, no mandatoryqueueorretry flow.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

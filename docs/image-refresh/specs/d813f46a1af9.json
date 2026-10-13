@@ -1,0 +1,14 @@
+{
+  "title": "FCFS example: CPU burst times",
+  "purpose": "Provide exact input process burst data for two FCFS schedules.",
+  "alt": "동시에 도착한 P1·P2·P3의 CPU burst 시간이 각각 24·3·3ms인 FCFS 입력 예시",
+  "requiredChecks": [
+    "Table P1 burst24ms, P2 3ms, P3 3ms.",
+    "All processes arrive at time0.",
+    "Input data only; no schedule implied by table row order.",
+    "Units milliseconds and process identifiers unambiguous."
+  ],
+  "prompt": "Create an ORIGINAL English raster technical figure for an IT reference blog. Opaque white background, navy highly readable type, restrained blue/teal/amber, flat design, generous margins. Exact data and labels only, no logos/copying textbook composition. Title 'FCFS example: CPU burst times'. Large two-column table Process | CPU burst (ms), rows P1|24, P2|3, P3|3. Subtitle 'All arrive at time 0'. Footer 'The selected arrival order determines the FCFS schedule'. Clean original data table, no Gantt or extra numbers.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

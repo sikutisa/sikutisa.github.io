@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Headers in exact order: ID | name | dept_name | salary",
+      "passed": true,
+      "evidence": "Headers ID,name,dept_name,salary in exact order."
+    },
+    {
+      "requirement": "Exactly 4 rows: 203 | Faye | Physics | 90000 ; 201 | Dana | Comp. Sci. | 60000 ; 204 | Gus | Physics | 110000 ; 202 | Eli | Comp. Sci. | 80000",
+      "passed": true,
+      "evidence": "Same four tuples rearranged203Faye90000,201Dana60000,204Gus110000,202Eli80000 withcorrectdepartments."
+    },
+    {
+      "requirement": "The same four tuples in a different order; relation rows are unordered.",
+      "passed": true,
+      "evidence": "Title and footer state same relation in different order; tuples unchanged from base."
+    },
+    {
+      "requirement": "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer; all values readable."
+    }
+  ],
+  "notes": "Pass. Every cell inspected against examples/relational-algebra.json.",
+  "at": "2026-10-12T13:58:46.644Z",
+  "generatedSha256": "48b494b29e557bce005eb0165af817da653fbc6d2146fdb209ad31b191e6b34b",
+  "specSha256": "925433165d4eb3b716afacda44648c63e513a9181b956323a520ceec79bed03b"
+}

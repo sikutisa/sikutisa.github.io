@@ -1,0 +1,12 @@
+{
+  "originalViewed": true,
+  "documentReviewed": true,
+  "purpose": "Banker algorithm initial snapshot",
+  "alt": "은행원 알고리즘의 초기 Allocation·Max 표와 Available 벡터",
+  "requiredChecks": [
+    "Five rows T0..T4, A B C columns; Allocation rows 0 1 0;2 0 0;3 0 2;2 1 1;0 0 2.",
+    "Max rows 7 5 3;3 2 2;9 0 2;2 2 2;4 3 3. Available A B C=3 3 2.",
+    "Totals A10 B5 C7; no Available repeated as per-thread entitlement; digits and matrix columns aligned."
+  ],
+  "prompt": "Use case: scientific-educational. Original raster PNG educational diagram for IT technical blog. White opaque background, clean dark navy sans-serif text, blue and teal accents, no logo/watermark/decoration. Big readable English labels, generous spacing, original composition. For graphs thread circles, resource boxes, distinct arrowhead at destination. Blue solid requests, teal solid assignments, gray dashed potential claims. Title: Banker’s algorithm: initial snapshot. Combined table with grouped column headers Thread | Allocation (A B C) | Max (A B C). EXACT rows: T0 | 0 1 0 | 7 5 3; T1 | 2 0 0 | 3 2 2; T2 | 3 0 2 | 9 0 2; T3 | 2 1 1 | 2 2 2; T4 | 0 0 2 | 4 3 3. Below a single system-wide card Available (A, B, C) = (3, 3, 2). Small footer Total instances: A = 10, B = 5, C = 7. Exact numeric table no invented values. Allocation = held now; Max = declared maximum. Do not add Need yet."
+}

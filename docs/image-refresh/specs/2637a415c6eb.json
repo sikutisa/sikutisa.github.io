@@ -1,0 +1,14 @@
+{
+  "title": "Object Adapter: composition and delegation",
+  "purpose": "Show target-interface implementation with a wrapped adaptee instance and translated request.",
+  "alt": "Target 인터페이스를 구현하고 Adaptee 인스턴스를 감싸 요청을 위임하는 객체 어댑터",
+  "requiredChecks": [
+    "Client uses Target.request(), not Adaptee.specificRequest().",
+    "Adapter implements Target, with request() and stored adaptee: Adaptee field.",
+    "Adapter wraps/delegates to an Adaptee instance instead of inheriting Adaptee.",
+    "Mapping request()→adaptee.specificRequest() is explicit with correct direction."
+  ],
+  "prompt": "Create a NEW original English raster technical diagram for an IT design-pattern blog. White background, navy large text, flat blue/teal cards, generous whitespace, precise method spelling, arrows labelled for semantics. No logos or copied slide composition. Title \"Object Adapter: composition and delegation\". TOP left Client→TOP middle \"Target interface\" card containing request(), arrow label uses. BELOW middle \"Adapter\" card with field \"- adaptee: Adaptee\" and method \"+ request()\". Adapter→Target upward dashed arrow labelled implements. RIGHT alignedbelow Adaptee card contains specificRequest(). Adapter→Adaptee horizontal arrow labelled wraps / delegates. Bottom separate code callout \"request() → adaptee.specificRequest()\". Footer \"Implement the target interface; hold an adaptee instance\". No Adapter inherits Adaptee, no Client→Adaptee direct link. No unlabeled triangle arrows.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Service1/ServiceN independently send notification requests to one Notification service.",
+      "passed": true,
+      "evidence": "Service1/N arrows separatelyenteronecentralNotificationservice."
+    },
+    {
+      "requirement": "Notification service routes to four channel alternatives APNs, FCM, SMS provider and Email provider, not a sequential chain.",
+      "passed": true,
+      "evidence": "CentraloutputbusbranchesAPNs/FCM/SMSprovider/Emailprovider,4parallelrows."
+    },
+    {
+      "requirement": "Providers deliver to appropriate endpoints iOS device, Android device, Phone, Mailbox.",
+      "passed": true,
+      "evidence": "Fourrowsendat iOSdevice,Androiddevice,Phone,Mailbox respectively."
+    },
+    {
+      "requirement": "Baseline subtitle identifies single-service bottleneck; no guaranteed delivery or provider logos.",
+      "passed": true,
+      "evidence": "Baselineoneservicesubtitle andbottleneckfooter, no logosordeliveryguarantees."
+    }
+  ],
+  "notes": "Individually viewed all components and traced arrows against full document. Generated outputs decoded with PIL verify/load. Failed result is not applied.",
+  "at": "2026-10-12T13:01:25.711Z",
+  "generatedSha256": "e30ca2ae270195c1759fb41710d10f611a617a36b979fcae352d8b99a6eb50e3",
+  "specSha256": "2f8ad414e13f18823f60f8fb3fe5a99da41c8af435a401afc1669ef2f890ed68"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Move concrete dependencies into creators",
+  "purpose": "Compare direct concrete coupling with abstraction dependency via factory method.",
+  "alt": "구체 피자에 직접 의존하는 DependentPizzaStore와 추상 Pizza에 의존하는 Factory Method 구조 비교",
+  "requiredChecks": [
+    "Before: DependentPizzaStore directly creates concrete regional pizza classes.",
+    "After: abstract PizzaStore uses abstract Pizza instead of directly creating concrete products.",
+    "Regional creator subclasses perform concrete instantiation; creation dependencies still exist in subclasses.",
+    "Concrete NYStyleCheesePizza, NYStyleClamPizza, ChicagoStyleCheesePizza extend Pizza in the after panel."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for a design-pattern reference blog. Opaque white background, large navy sans-serif typography, readable monospaced class/method names, restrained blue/teal panels, large gutters, no logos or copied slide. Title 'Move concrete dependencies into creators'. Two panels. LEFT 'Direct concrete dependencies': DependentPizzaStore top with three down createsarrows to NYStyleCheesePizza, NYStyleClamPizza, ChicagoStyleCheesePizza. RIGHT 'Factory Method': PizzaStore (abstract) arrow uses to Pizza (abstract); belowproductthreecards exactsameconcretenames each 'extends Pizza'. Smaller textnote inright 'NYPizzaStore / ChicagoPizzaStore extend PizzaStore and contain concrete creation'. No high-level PizzaStore→concretecreates arrows. Footer 'Move new ConcretePizza() into regional creator subclasses; the base workflow uses Pizza'. Do not claim concrete dependencies are eliminated.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

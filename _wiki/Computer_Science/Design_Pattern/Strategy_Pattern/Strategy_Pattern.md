@@ -19,7 +19,7 @@ tags: [computer science, oop, design pattern]
     * Every duck swims in the same way.
     * Every duck requires its own display implementation.
 
-![Original](./img/1.png){: w="420" h = "380"}
+![추상 Duck의 공통 quack·swim 동작을 상속하고 MallardDuck과 RedheadDuck이 display를 구현하는 최초 설계](./img/1-generated.png){: w="760"}
 *Our Original Design*
 
 ### Requirement Changes...
@@ -27,14 +27,14 @@ tags: [computer science, oop, design pattern]
 * We just got additional requirement - We need to add fly behavior to ducks.
 * Let's add it to the base class!
 
-![First](./img/2.png){: w="420" h = "380"}
+![Duck 기본 클래스에 fly를 추가하면 모든 하위 오리 타입이 비행 동작을 물려받는 첫 시도](./img/2-generated.png){: w="760"}
 *Our First Attempt*
 
 ### Add a Rubber Duck
 * A rubber duck can't fly, at least in our application!
 * Overriding RubberDuck would solve the problem.
 
-![Override](./img/3.png){: w="420" h = "380"}
+![RubberDuck이 Duck을 상속하면서 quack은 squeak으로, fly는 아무것도 하지 않도록 재정의하는 예시](./img/3-generated.png){: w="760"}
 *Overriding RubberDuck*
 
 ### More and More Ducks to Override
@@ -47,7 +47,7 @@ tags: [computer science, oop, design pattern]
 * A great use of inheritance for the purpose of *reuse* hasn't turned out so well when time comes to *maintenance*.
 
 ### Our Second Attempt: How about an Interface?
-![Second](./img/4.png){: w="450" h = "350"}
+![Flyable·Quackable 능력을 인터페이스로 분리하지만 각 오리 클래스에서 구현이 중복되는 두 번째 시도](./img/4-generated.png){: w="760"}
 *Our Second Attempt*
 
 * Completely **destroy code reuse**.
@@ -73,7 +73,7 @@ tags: [computer science, oop, design pattern]
 * The declared type of the variables should be a super type.
     * The class declaring them doesn't have to know the actual object types.
 
-![Interface](./img/5.png){: w="430" h = "330"}
+![FlyBehavior와 QuackBehavior 인터페이스 뒤에 교체 가능한 비행·울음 구현을 둔 구조](./img/5-generated.png){: w="760"}
 
 * **Programming to an implementation** would be:
 
@@ -97,7 +97,7 @@ a.makeSound();
 ```
 
 ## Improved Design
-![Improved](./img/6.png){: w="340" h = "360"}
+![Duck이 FlyBehavior·QuackBehavior 필드를 보유하고 performFly·performQuack에서 동작 객체에 위임하는 구조](./img/6-generated.png){: w="760"}
 
 ### Class Duck
 ```java
@@ -212,7 +212,7 @@ public abstract class Duck {
 ```
 
 ### The Big Picture
-![BigPicture](./img/7.png){: w="480" h = "440"}
+![Duck의 동작 객체 합성·런타임 setter와 하위 오리의 display 구현을 함께 표현한 전체 구조](./img/7-generated.png){: w="760"}
 
 ## Design principle: Favor Composition Over Inheritance (or Composing Objects Principle)
 * Classes should achieve polymorphic behavior and code reuse
@@ -222,7 +222,7 @@ public abstract class Duck {
 * **Favor (Object) Composition over (Class) Inheritance**
     * Most design patterns emphasize object composition over inheritance whenever it is possible.
 
-![Eg](./img/8.png){: w="370" h = "310"}
+![ClassA가 인터페이스를 통해 Implementation 객체를 합성하는 타입 관계와 실행 시 객체 참조](./img/8-generated.png){: w="760"}
 
 ## Reuse in Object-Oriented System
 1. Class Inheritance
@@ -251,7 +251,7 @@ public abstract class Duck {
     * And makes them interchangeable.
 * Strategy Pattern lets the algorithm vary independently from clients that use it.
 
-![StrategyPattern](./img/9.png){: w="380" h = "340"}
+![Strategy pattern: Context delegates to the Strategy interface implemented by three interchangeable concrete strategies](./img/9-generated.png){: w="760"}
 *Strategy Pattern*
 
 ### Sorting Example
@@ -260,5 +260,5 @@ public abstract class Duck {
 * One way to solve this problem is to write a function for each sorting algorithm.
 * A better way is to use the Strategy pattern.
 
-![StrategyPattern](./img/10.png){: w="380" h = "340"}
+![SortedList가 SortStrategy에 정렬을 위임하고 QuickSort·HashSort·MergeSort 구현을 교체하는 예시](./img/10-generated.png){: w="760"}
 *Sorting Example*

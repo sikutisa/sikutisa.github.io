@@ -1,0 +1,26 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "All thirteen original receiver classes are present with their listed operations.",
+      "passed": true,
+      "evidence": "Thirteen class cards and every listed method verified at original resolution, including Stereo six methods, fan five, garage five."
+    },
+    {
+      "requirement": "Methods remain associated with the correct receiver; no invented shared vendor superclass.",
+      "passed": true,
+      "evidence": "Each operation remains under its original receiver; independent cards have no superclass/inheritance."
+    },
+    {
+      "requirement": "The diagram explains varying receiver interfaces rather than claiming every receiver only supports on/off.",
+      "passed": true,
+      "evidence": "Varied operations (dimming, temperature, input, radio, water, fan speed) and footer explicitly explain differing receiver APIs."
+    }
+  ],
+  "notes": "Pass. All labels, operations, slot counts, stage order and direction verified visually against full article and original.",
+  "at": "2026-10-12T14:37:33.469Z",
+  "generatedSha256": "a42091b7fc3babc7f1566aa22e6400fe793e9297ddabc39f4120572b3695976b",
+  "specSha256": "5c8370a95a2ca94746a2de4a89670a839dd63a1ea8d6c02fcc5507a9cd28c94c"
+}

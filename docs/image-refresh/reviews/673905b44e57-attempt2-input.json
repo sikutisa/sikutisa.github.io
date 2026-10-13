@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "ProcessA pagesa,b,c,d,e; selectedb,c,e pageoutmemory→backingstoreslots4,5,6 respectively; a,dremainresident.",
+      "passed": false,
+      "evidence": "修正版에서도 b 시작 선이 Slot6로, c 선이 Slot4로 이어지고 e 선도 Slot4에 도착한다. Slot6 레이블도 사라졌다. 실패."
+    },
+    {
+      "requirement": "ProcessB pagesf,g,h,i,j; selectedf,h,j pageinfrombackingstoreslots17,18,19 respectively→memory; g,i alreadyresident.",
+      "passed": true,
+      "evidence": "아래 f/h/j의 슬롯17/18/19→메모리 방향은 각 대상 카드로 이어진다."
+    },
+    {
+      "requirement": "Backingstoreillustratedslots0..23; selectedpage granularitynotwholeprocess; no direction/mappingreversal.",
+      "passed": true,
+      "evidence": "Slots0–23과 페이지 단위는 보존되었다."
+    }
+  ],
+  "notes": "상단 연결 관계 재실패. 다음 수정은 선 교차를 없애는 세 개의 독립 매핑 행으로 구성한다."
+}

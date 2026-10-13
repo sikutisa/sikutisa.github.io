@@ -1,0 +1,14 @@
+{
+  "title": "Video processing DAG",
+  "purpose": "Show an original acyclic example with video/audio/metadata branches, optional watermark, encoding merge and independent thumbnail artifact.",
+  "alt": "비디오·오디오·메타데이터 분기와 검사·워터마크·인코딩·병합·섬네일 산출을 표현한 DAG 예시",
+  "requiredChecks": [
+    "Source video splits to Video, Audio and Metadata; no directed edge returns to an ancestor.",
+    "Video→Inspection, then Optional watermark→Video encoding→Mux/package; Audio→Audio encoding→Mux/package and Metadata→Mux/package.",
+    "Thumbnail generation branches from inspected video and produces Thumbnail output separately from mux/package.",
+    "Caption clearly says example DAG; all task labels and branch directions legible."
+  ],
+  "prompt": "Create a NEW original English raster diagram for a technical study blog. White background, large navy sans-serif labels, flat blue/teal cards, generous whitespace, clearly separated arrows. No copied book composition, provider logos, numeric prices or promise of uninterrupted service. TITLE \"Video processing DAG\". Subtitle \"Example task dependencies\". Left \"Source video\" branches into THREEparallel rows \"Video\",\"Audio\",\"Metadata\". TopVideo→\"Inspection\"→\"Optional watermark\"→\"Video encoding\"→rightmost \"Mux / package\". MiddleAudio→\"Audio encoding\"→SAME\"Mux / package\". BottomMetadata→SAME\"Mux / package\", routebelowAudioencoding. Separate secondary branch fromInspectionupward→\"Thumbnail generation\"→\"Thumbnail output\" alongtoppartofcanvas, endingasindependentartifact, NEVERjointhumbnailintomux. Muxhasoneoutput \"Encoded video\". Allarrowheadslefttorightorbranchout, no cycles andnoarrowbacktosource. Optional watermark is clearly labelledOptional. Do not makeaudioencode dependonvideoencode. KeepexactlyoneMuxcard andthreeinputs fromvideoencode/audioencode/metadata. Generousroutinggutter, no lines throughunrelatedtaskboxes.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

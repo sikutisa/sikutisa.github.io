@@ -1,0 +1,38 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Client API tier lists Java, C++, .NET, PHP, Python, Go and Ruby; it lies outside MySQL server.",
+      "passed": true,
+      "evidence": "Client API lists exactly Java,C++,.NET,PHP,Python,Go,Ruby outside the MySQL server outline."
+    },
+    {
+      "requirement": "MySQL engine contains connection handler, SQL parser/preprocessor, optimizer, execution engine, and a separate cache/buffer supporting box.",
+      "passed": true,
+      "evidence": "Inside MySQL engine there are four SQL stages and a separate cache/buffer band. Labels spell 커넥션 핸들러, SQL 파서·전처리기, 옵티마이저, 실행 엔진, 캐시·버퍼."
+    },
+    {
+      "requirement": "SQL pipeline arrows run client→connection→parser/preprocessor→optimizer→execution, and execution accesses Handler API.",
+      "passed": true,
+      "evidence": "Requests enter the connection handler, arrows go right through parser→optimizer→execution, then execution points down to Handler API."
+    },
+    {
+      "requirement": "Storage engines InnoDB, MyISAM, Memory are peers separate from SQL-processing; each connects bidirectionally with Handler API.",
+      "passed": true,
+      "evidence": "InnoDB, MyISAM, Memory appear as peers in the storage-engine outline. Three independent bidirectional links meet Handler API."
+    },
+    {
+      "requirement": "Operating system/disk tier includes data files and log files outside server; InnoDB and MyISAM reach disk; Memory has no direct disk connector.",
+      "passed": true,
+      "evidence": "Corrected InnoDB/MyISAM connectors both meet one 파일 I/O bus. One bidirectional connector from that bus ends at the disk boundary. Data and log files remain peers without exclusive engine-to-file arrows, and Memory has no disk link."
+    },
+    {
+      "requirement": "All required Korean labels and MySQL-server boundaries are readable and accurate; no copied logos or gears.",
+      "passed": true,
+      "evidence": "All Korean/English labels remain complete after correction. MySQL server contains SQL engine/API/storage and excludes client/disk. Footer is entirely visible."
+    }
+  ],
+  "notes": "Directly inspected all labels/topology against the document and original. PNG verify/load passed; this result is suitable for replacement."
+}

@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "init1childrenlogin8415,kthreadd2,sshd3028;login→bash8416→ps9298andemacs9204.",
+      "passed": true,
+      "evidence": "init1 아래 login8415,kthreadd2,sshd3028 및 login→bash8416→ps9298/emacs9204가 정확하다."
+    },
+    {
+      "requirement": "kthreadd→khelper6,pdflush200;sshd3028→sshd3610→tcsh4005; exacthistoricalexample notcurrentdefault claim.",
+      "passed": true,
+      "evidence": "kthreadd→khelper6/pdflush200,sshd3028→sshd3610→tcsh4005가 정확하며 historical example 캡션이 있다."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T00:24:01.661Z",
+  "generatedSha256": "86181864c061b56e1ae78e8716ccac3537a90f032f68bc3034fb4c8abf55e082",
+  "specSha256": "20763e89fb7a6afc6a092410c9f7fbb3a231594bfff45986bf3ef708d2cf94c4"
+}

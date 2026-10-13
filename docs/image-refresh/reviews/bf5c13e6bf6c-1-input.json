@@ -1,0 +1,23 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "Nodes T1,T2; R1,R2 single instances assigned respectively to T1 and T2.",
+      "passed": false,
+      "evidence": "Correct identifiers/count, but R1 and R2 incorrectly drawn as circles, indistinguishable from threads; resources must be boxes."
+    },
+    {
+      "requirement": "Solid assignment R1→T1 and R2→T2; solid request T2→R1; dashed claim T1→R2 only.",
+      "passed": true,
+      "evidence": "Four exact arrows verified: teal R1→T1,R2→T2; blue T2→R1; dashed T1→R2."
+    },
+    {
+      "requirement": "Cycle R1→T1⇢R2→T2→R1 includes a potential claim; label Unsafe allocation, not asserted currently deadlocked.",
+      "passed": true,
+      "evidence": "Unsafe and not necessarily already deadlocked text correct."
+    }
+  ],
+  "notes": "Direct visual inspection. Reject invented or misleading graph content even when numeric table is accurate. Only passed image may replace original."
+}

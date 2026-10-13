@@ -1,0 +1,31 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Headers in exact order: ID | name | dept_name | salary",
+      "passed": true,
+      "evidence": "Headers ID,name,dept_name,salary in exact order."
+    },
+    {
+      "requirement": "Exactly 2 rows: 203 | Faye | Physics | 90000 ; 204 | Gus | Physics | 110000",
+      "passed": true,
+      "evidence": "Exactly203FayePhysics90000 and204GusPhysics110000, matching computed Physics selection."
+    },
+    {
+      "requirement": "Keep only instructors with dept_name = Physics.",
+      "passed": true,
+      "evidence": "NoComp. Sci. row, caption dept_name=Physics; selection retainsallattributes."
+    },
+    {
+      "requirement": "Original illustrative dataset footer; entire table readable, no omitted rows or copied textbook dataset.",
+      "passed": true,
+      "evidence": "Original illustrative dataset footer; bothrowslegible."
+    }
+  ],
+  "notes": "Pass. Every cell inspected against examples/relational-algebra.json.",
+  "at": "2026-10-12T13:58:47.290Z",
+  "generatedSha256": "3f019ce4cd9548df8d39d13d1e347983fc684cd6ae8180427ea845ae24acaa61",
+  "specSha256": "36089049fc9141a07a7e08ab6245e506c9b6a770c3461a1f27a22b08b8637bb6"
+}

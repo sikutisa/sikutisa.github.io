@@ -1,0 +1,21 @@
+{
+  "viewed": true,
+  "decoded": true,
+  "passed": false,
+  "checks": [
+    {
+      "requirement": "ColumnsID,PROP_NAME;singlerow1,prop1.",
+      "passed": false,
+      "evidence": "PROP row correct but extra ITEM table invents ITEM_NAME/item1."
+    },
+    {
+      "requirement": "ID1sameITEMID1PK/FK,commonfieldsnotduplicatedchild.",
+      "passed": false,
+      "evidence": "Parent schema invented; use single child table plus note."
+    }
+  ],
+  "notes": "직접 원본 크기로 시각 검수하고 PNG 디코딩. 실패한 그림은 원본 참조 유지.",
+  "at": "2026-10-13T02:03:04.361Z",
+  "generatedSha256": "8235f4e27950486e32fcfa87cb69b16f4cb16710d73f5ef14d8489355225e187",
+  "specSha256": "a01136d4351319c74e9d1c6e2b6be64bad7893b5d17f40ba68038e88b9599a98"
+}

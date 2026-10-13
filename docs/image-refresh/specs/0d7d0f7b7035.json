@@ -1,0 +1,15 @@
+{
+  "title": "ISP: give each client its own contract",
+  "purpose": "Split student enrollment API by client responsibility.",
+  "alt": "StudentEnrollment가 EnrolmentAPI와 AccountAPI를 구현하고 각 클라이언트가 필요한 인터페이스만 사용하는 구조",
+  "requiredChecks": [
+    "EnrolmentAPI contains getSSN/getName; AccountAPI contains getInvoice/postPayment.",
+    "RoasterApplication uses EnrolmentAPI only; AccountApplication uses AccountAPI only.",
+    "StudentEnrollment implements both interfaces and retains four operations.",
+    "Course has zero-or-more StudentEnrollment records; client Course dependencies remain.",
+    "Client-facing segregation does not require two separate domain entities."
+  ],
+  "prompt": "Create a NEW ORIGINAL English raster technical diagram for an IT reference blog. Opaque white background, large navy sans-serif typography, readable monospaced identifiers, restrained blue/teal/amber cards, wide gutters, no copied slide composition or logo. Include only the listed operations and labels: do not invent full code bodies, access modifiers, methods or extra relationships. Title 'ISP: give each client its own contract'. TOPtwointerfacecards EnrolmentAPI 'getSSN(); getName()', AccountAPI 'getInvoice(); postPayment()'. LEFT RoasterApplication→EnrolmentAPI 'uses'; RIGHT AccountApplication→AccountAPI 'uses'. CENTERlower StudentEnrollmentcard 'implements EnrolmentAPI, AccountAPI' exactallfourmethods; twoimplementsarrowstocorrectinterfacesifspaceotherwiseexplicitimplementscaptionenough. BOTTOMCourseassociation '1 Course ↔ 0..* StudentEnrollment records' withmultiplicitycorrectends; clientthinusesCoursearrowsifspace. Footer 'One domain object; separate cohesive contracts for each client'. No Roaster→AccountAPIorAccount→EnrolmentAPI.",
+  "originalViewed": true,
+  "documentReviewed": true
+}

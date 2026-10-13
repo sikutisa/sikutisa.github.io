@@ -1,0 +1,869 @@
+{
+  "source": "_wiki/Computer_Science/Operating_System/Virtual_Memory/Virtual_Memory.md",
+  "note": "Original figures use a 20-reference version; the Markdown contains two additional hit references 0,3. New tables use the complete 22-reference Markdown sequence. Fault totals remain 15/9/12.",
+  "examples": [
+    {
+      "policy": "FIFO",
+      "capacity": 3,
+      "references": [
+        7,
+        0,
+        1,
+        2,
+        0,
+        3,
+        0,
+        4,
+        2,
+        3,
+        0,
+        3,
+        0,
+        3,
+        2,
+        1,
+        2,
+        0,
+        1,
+        7,
+        0,
+        1
+      ],
+      "faults": 15,
+      "steps": [
+        {
+          "step": 1,
+          "page": 7,
+          "frames": [
+            7,
+            null,
+            null
+          ],
+          "fault": true,
+          "victim": null
+        },
+        {
+          "step": 2,
+          "page": 0,
+          "frames": [
+            7,
+            0,
+            null
+          ],
+          "fault": true,
+          "victim": null
+        },
+        {
+          "step": 3,
+          "page": 1,
+          "frames": [
+            7,
+            0,
+            1
+          ],
+          "fault": true,
+          "victim": null
+        },
+        {
+          "step": 4,
+          "page": 2,
+          "frames": [
+            2,
+            0,
+            1
+          ],
+          "fault": true,
+          "victim": 7
+        },
+        {
+          "step": 5,
+          "page": 0,
+          "frames": [
+            2,
+            0,
+            1
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 6,
+          "page": 3,
+          "frames": [
+            2,
+            3,
+            1
+          ],
+          "fault": true,
+          "victim": 0
+        },
+        {
+          "step": 7,
+          "page": 0,
+          "frames": [
+            2,
+            3,
+            0
+          ],
+          "fault": true,
+          "victim": 1
+        },
+        {
+          "step": 8,
+          "page": 4,
+          "frames": [
+            4,
+            3,
+            0
+          ],
+          "fault": true,
+          "victim": 2
+        },
+        {
+          "step": 9,
+          "page": 2,
+          "frames": [
+            4,
+            2,
+            0
+          ],
+          "fault": true,
+          "victim": 3
+        },
+        {
+          "step": 10,
+          "page": 3,
+          "frames": [
+            4,
+            2,
+            3
+          ],
+          "fault": true,
+          "victim": 0
+        },
+        {
+          "step": 11,
+          "page": 0,
+          "frames": [
+            0,
+            2,
+            3
+          ],
+          "fault": true,
+          "victim": 4
+        },
+        {
+          "step": 12,
+          "page": 3,
+          "frames": [
+            0,
+            2,
+            3
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 13,
+          "page": 0,
+          "frames": [
+            0,
+            2,
+            3
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 14,
+          "page": 3,
+          "frames": [
+            0,
+            2,
+            3
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 15,
+          "page": 2,
+          "frames": [
+            0,
+            2,
+            3
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 16,
+          "page": 1,
+          "frames": [
+            0,
+            1,
+            3
+          ],
+          "fault": true,
+          "victim": 2
+        },
+        {
+          "step": 17,
+          "page": 2,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "fault": true,
+          "victim": 3
+        },
+        {
+          "step": 18,
+          "page": 0,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 19,
+          "page": 1,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 20,
+          "page": 7,
+          "frames": [
+            7,
+            1,
+            2
+          ],
+          "fault": true,
+          "victim": 0
+        },
+        {
+          "step": 21,
+          "page": 0,
+          "frames": [
+            7,
+            0,
+            2
+          ],
+          "fault": true,
+          "victim": 1
+        },
+        {
+          "step": 22,
+          "page": 1,
+          "frames": [
+            7,
+            0,
+            1
+          ],
+          "fault": true,
+          "victim": 2
+        }
+      ]
+    },
+    {
+      "policy": "OPT",
+      "capacity": 3,
+      "references": [
+        7,
+        0,
+        1,
+        2,
+        0,
+        3,
+        0,
+        4,
+        2,
+        3,
+        0,
+        3,
+        0,
+        3,
+        2,
+        1,
+        2,
+        0,
+        1,
+        7,
+        0,
+        1
+      ],
+      "faults": 9,
+      "steps": [
+        {
+          "step": 1,
+          "page": 7,
+          "frames": [
+            7,
+            null,
+            null
+          ],
+          "fault": true,
+          "victim": null
+        },
+        {
+          "step": 2,
+          "page": 0,
+          "frames": [
+            7,
+            0,
+            null
+          ],
+          "fault": true,
+          "victim": null
+        },
+        {
+          "step": 3,
+          "page": 1,
+          "frames": [
+            7,
+            0,
+            1
+          ],
+          "fault": true,
+          "victim": null
+        },
+        {
+          "step": 4,
+          "page": 2,
+          "frames": [
+            2,
+            0,
+            1
+          ],
+          "fault": true,
+          "victim": 7
+        },
+        {
+          "step": 5,
+          "page": 0,
+          "frames": [
+            2,
+            0,
+            1
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 6,
+          "page": 3,
+          "frames": [
+            2,
+            0,
+            3
+          ],
+          "fault": true,
+          "victim": 1
+        },
+        {
+          "step": 7,
+          "page": 0,
+          "frames": [
+            2,
+            0,
+            3
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 8,
+          "page": 4,
+          "frames": [
+            2,
+            4,
+            3
+          ],
+          "fault": true,
+          "victim": 0
+        },
+        {
+          "step": 9,
+          "page": 2,
+          "frames": [
+            2,
+            4,
+            3
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 10,
+          "page": 3,
+          "frames": [
+            2,
+            4,
+            3
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 11,
+          "page": 0,
+          "frames": [
+            2,
+            0,
+            3
+          ],
+          "fault": true,
+          "victim": 4
+        },
+        {
+          "step": 12,
+          "page": 3,
+          "frames": [
+            2,
+            0,
+            3
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 13,
+          "page": 0,
+          "frames": [
+            2,
+            0,
+            3
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 14,
+          "page": 3,
+          "frames": [
+            2,
+            0,
+            3
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 15,
+          "page": 2,
+          "frames": [
+            2,
+            0,
+            3
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 16,
+          "page": 1,
+          "frames": [
+            2,
+            0,
+            1
+          ],
+          "fault": true,
+          "victim": 3
+        },
+        {
+          "step": 17,
+          "page": 2,
+          "frames": [
+            2,
+            0,
+            1
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 18,
+          "page": 0,
+          "frames": [
+            2,
+            0,
+            1
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 19,
+          "page": 1,
+          "frames": [
+            2,
+            0,
+            1
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 20,
+          "page": 7,
+          "frames": [
+            7,
+            0,
+            1
+          ],
+          "fault": true,
+          "victim": 2
+        },
+        {
+          "step": 21,
+          "page": 0,
+          "frames": [
+            7,
+            0,
+            1
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 22,
+          "page": 1,
+          "frames": [
+            7,
+            0,
+            1
+          ],
+          "fault": false,
+          "victim": null
+        }
+      ]
+    },
+    {
+      "policy": "LRU",
+      "capacity": 3,
+      "references": [
+        7,
+        0,
+        1,
+        2,
+        0,
+        3,
+        0,
+        4,
+        2,
+        3,
+        0,
+        3,
+        0,
+        3,
+        2,
+        1,
+        2,
+        0,
+        1,
+        7,
+        0,
+        1
+      ],
+      "faults": 12,
+      "steps": [
+        {
+          "step": 1,
+          "page": 7,
+          "frames": [
+            7,
+            null,
+            null
+          ],
+          "fault": true,
+          "victim": null
+        },
+        {
+          "step": 2,
+          "page": 0,
+          "frames": [
+            7,
+            0,
+            null
+          ],
+          "fault": true,
+          "victim": null
+        },
+        {
+          "step": 3,
+          "page": 1,
+          "frames": [
+            7,
+            0,
+            1
+          ],
+          "fault": true,
+          "victim": null
+        },
+        {
+          "step": 4,
+          "page": 2,
+          "frames": [
+            2,
+            0,
+            1
+          ],
+          "fault": true,
+          "victim": 7
+        },
+        {
+          "step": 5,
+          "page": 0,
+          "frames": [
+            2,
+            0,
+            1
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 6,
+          "page": 3,
+          "frames": [
+            2,
+            0,
+            3
+          ],
+          "fault": true,
+          "victim": 1
+        },
+        {
+          "step": 7,
+          "page": 0,
+          "frames": [
+            2,
+            0,
+            3
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 8,
+          "page": 4,
+          "frames": [
+            4,
+            0,
+            3
+          ],
+          "fault": true,
+          "victim": 2
+        },
+        {
+          "step": 9,
+          "page": 2,
+          "frames": [
+            4,
+            0,
+            2
+          ],
+          "fault": true,
+          "victim": 3
+        },
+        {
+          "step": 10,
+          "page": 3,
+          "frames": [
+            4,
+            3,
+            2
+          ],
+          "fault": true,
+          "victim": 0
+        },
+        {
+          "step": 11,
+          "page": 0,
+          "frames": [
+            0,
+            3,
+            2
+          ],
+          "fault": true,
+          "victim": 4
+        },
+        {
+          "step": 12,
+          "page": 3,
+          "frames": [
+            0,
+            3,
+            2
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 13,
+          "page": 0,
+          "frames": [
+            0,
+            3,
+            2
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 14,
+          "page": 3,
+          "frames": [
+            0,
+            3,
+            2
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 15,
+          "page": 2,
+          "frames": [
+            0,
+            3,
+            2
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 16,
+          "page": 1,
+          "frames": [
+            1,
+            3,
+            2
+          ],
+          "fault": true,
+          "victim": 0
+        },
+        {
+          "step": 17,
+          "page": 2,
+          "frames": [
+            1,
+            3,
+            2
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 18,
+          "page": 0,
+          "frames": [
+            1,
+            0,
+            2
+          ],
+          "fault": true,
+          "victim": 3
+        },
+        {
+          "step": 19,
+          "page": 1,
+          "frames": [
+            1,
+            0,
+            2
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 20,
+          "page": 7,
+          "frames": [
+            1,
+            0,
+            7
+          ],
+          "fault": true,
+          "victim": 2
+        },
+        {
+          "step": 21,
+          "page": 0,
+          "frames": [
+            1,
+            0,
+            7
+          ],
+          "fault": false,
+          "victim": null
+        },
+        {
+          "step": 22,
+          "page": 1,
+          "frames": [
+            1,
+            0,
+            7
+          ],
+          "fault": false,
+          "victim": null
+        }
+      ]
+    }
+  ],
+  "anomalyReferences": [
+    1,
+    2,
+    3,
+    4,
+    1,
+    2,
+    5,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "anomaly": [
+    {
+      "frames": 1,
+      "faults": 12
+    },
+    {
+      "frames": 2,
+      "faults": 12
+    },
+    {
+      "frames": 3,
+      "faults": 9
+    },
+    {
+      "frames": 4,
+      "faults": 10
+    },
+    {
+      "frames": 5,
+      "faults": 5
+    },
+    {
+      "frames": 6,
+      "faults": 5
+    },
+    {
+      "frames": 7,
+      "faults": 5
+    }
+  ]
+}
