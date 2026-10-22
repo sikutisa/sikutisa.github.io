@@ -9,7 +9,9 @@ const sha = data => crypto.createHash('sha256').update(data).digest('hex');
 const bodyHash = text => sha(text.replace(/!\[[^\]\r\n]*\]\([^)\r\n]+\)(?:\{:\s*[^}\r\n]*\})?/g, '[IMAGE]'));
 const write = (file, value) => fs.writeFileSync(file, JSON.stringify(value, null, 2) + '\n');
 const manifest = JSON.parse(fs.readFileSync('docs/image-refresh/manifest.json'));
-const sourceDir = 'C:/Users/luke1046/.codex/generated_images/01a13349-6ff4-7122-b1a7-cb95b88e8257/';
+const inputDirectory = process.argv[2] || process.env.IMAGE_REVIEW_SOURCE_DIR;
+if (!inputDirectory) throw new Error('Usage: node scripts/apply-image-second-review.cjs <reviewed-images-directory>');
+const sourceDir = path.resolve(inputDirectory);
 const corrections = [
   { id: 'b43162264ce3', file: 'exec-7bfbd28b-61db-4cb8-8280-46f7549249a6.png',
     reason: 'Binary log cache is private per connection; restore omitted adaptive hash index.',
@@ -46,7 +48,7 @@ const staged = corrections.map(c => {
   Object.assign(spec, { requiredChecks: c.requirements, prompt: c.prompt, ...(c.alt ? {alt:c.alt}:{}), ...(c.sources ? {sources:c.sources}:{}), secondReviewOriginalViewed: !c.originalBasis });
   if (c.originalBasis) spec.secondReviewOriginalBasis = c.originalBasis;
   validateSpec(spec);
-  const info = pngInfo(sourceDir + c.file);
+  const info = pngInfo(path.join(sourceDir, c.file));
   const specBytes = Buffer.from(JSON.stringify(spec, null, 2) + '\n');
   const review = { viewed:true, decoded:true, passed:true, checks:c.requirements.map((requirement,i)=>({requirement,passed:true,evidence:c.evidence[i]})), notes:'Independent second review: full-size generated PNG inspected against document and available original. ' + c.reason, at, generatedSha256:info.sha256, specSha256:sha(specBytes), originalReviewBasis:c.originalBasis || 'Recovered original PNG hash matches inventory; original and generated pixels compared side by side.' };
   validateReview(spec, review);
@@ -58,9 +60,9 @@ for (const {c,item,previousSpec,previousInfo,info,specBytes,review,spec} of stag
   fs.copyFileSync(item.generated, backup);
   const specSnapshot = 'docs/image-refresh/specs/' + c.id + '-before-second-review.json';
   fs.writeFileSync(specSnapshot, previousSpec);
-  fs.copyFileSync(sourceDir + c.file, item.generated);
+  fs.copyFileSync(path.join(sourceDir, c.file), item.generated);
   fs.writeFileSync(item.spec, specBytes);
-  item.attempts.push({at,tool:'built-in image_gen',sourcePath:sourceDir+c.file,...info,reason:c.reason});
+  item.attempts.push({at,tool:'built-in image_gen',sourcePath:path.join(sourceDir, c.file),...info,reason:c.reason});
   const record = 'docs/image-refresh/reviews/' + c.id + '-' + item.attempts.length + '.json';
   write(record, review);
   const previousReview = item.review;

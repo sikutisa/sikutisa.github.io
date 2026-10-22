@@ -19,18 +19,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: "22"
+          node-version-file: ".nvmrc"
           cache: "npm"
 
+      - name: Setup npm
+        run: npm install --global npm@12.2.1
+
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Test
+        run: npm test
 
       - name: Set BASE_URL for project pages
         id: base
@@ -44,16 +50,10 @@ jobs:
             echo "base_url=$REPO_NAME" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Clean
-        run: npm run clean
-
-      - name: Ensure clean output
-        run: rm -rf public
-
       - name: Build
         env:
           BASE_URL: ${{ steps.base.outputs.base_url }}
-        run: npm run build:docs
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

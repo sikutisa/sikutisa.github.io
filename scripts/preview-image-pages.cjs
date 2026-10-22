@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const http = require('node:http');
 const root = path.resolve(__dirname, '..');
-const { chromium } = require(process.argv[2] || 'playwright');
+const { chromium } = require(process.argv[2] || process.env.PLAYWRIGHT_MODULE || 'playwright');
 const manifest = require('../docs/image-refresh/manifest.json');
 const { imagePage } = require('./image-output-path.cjs');
 const artifacts = path.join(root, '.cache', 'image-refresh');
@@ -32,11 +32,12 @@ const pilotItems = pilotIds.map(id => {
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   const origin = 'http://127.0.0.1:' + server.address().port;
   const pageUrl = html => origin + '/' + path.relative(publicRoot, html).split(path.sep).map(encodeURIComponent).join('/');
-  const browser = await chromium.launch({ headless: true, executablePath: process.argv[3] || undefined });
-  const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
-  await page.route(/^https?:\/\//, route => route.request().url().startsWith(origin + '/') ? route.continue() : route.abort());
+  let browser;
   const issues = [], captures = []; let pages = 0, images = 0;
   try {
+    browser = await chromium.launch({ headless: true, executablePath: process.argv[3] || process.env.PLAYWRIGHT_EXECUTABLE_PATH || undefined, channel: process.env.PLAYWRIGHT_CHANNEL || undefined });
+    const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+    await page.route(/^https?:\/\//, route => route.request().url().startsWith(origin + '/') ? route.continue() : route.abort());
     for (const baseline of manifest.documentBaselines) {
       const html = imagePage(root, baseline.path);
       if (!fs.existsSync(html)) continue;
@@ -73,5 +74,5 @@ const pilotItems = pilotIds.map(id => {
     fs.writeFileSync(path.join(root, 'docs', 'image-refresh', 'browser-audit.json'), JSON.stringify(report, null, 2) + '\n');
     console.log(JSON.stringify({ pages, images, captures: captures.length, issues }, null, 2));
     if (issues.length) process.exitCode = 1;
-  } finally { await browser.close(); await new Promise(resolve => server.close(resolve)); }
+  } finally { await browser?.close(); await new Promise(resolve => server.close(resolve)); }
 })().catch(error => { console.error(error); process.exitCode = 1; });
